@@ -42,5 +42,6 @@ selection:
   fallback: vggt
 
 output:
-  feature_cache: revisit3d/cache/EXP-009/key_backbone_features_train_v14.pt
+  vggt_feature_cache: revisit3d/cache/EXP-009/key_backbone_vggt_train_v14.pt
+  dinov2_feature_cache: revisit3d/cache/EXP-009/key_backbone_dinov2_train_v14.pt
   result: revisit3d/results/EXP-009/stage4_key_backbone_train_v14.json

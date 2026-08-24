@@ -35,14 +35,20 @@ def main() -> None:
     if output.exists():
         raise RuntimeError(f"EXP-009 key result already exists: {output}")
     pairs = json.loads(Path(config["data"]["pair_manifest"]).read_text())
-    cache = torch.load(config["output"]["feature_cache"], map_location="cpu", weights_only=False)
-    if not (
+    caches = {
+        name: torch.load(
+            config["output"][f"{name}_feature_cache"], map_location="cpu", weights_only=False,
+        ) for name in ("vggt", "dinov2")
+    }
+    if not all(
         cache.get("split") == "train"
         and cache.get("validation_accessed") is False
         and cache.get("test_accessed") is False
         and cache.get("protocol_revision") == config["protocol_revision"]
+        and cache.get("model") == name
+        for name, cache in caches.items()
     ):
-        raise RuntimeError("EXP-009 key evaluation requires the locked train-only cache")
+        raise RuntimeError("EXP-009 key evaluation requires both locked train-only caches")
     labels = np.asarray([int(row["label"]) for row in pairs], dtype=np.int64)
     locations = np.asarray([row["location"] for row in pairs])
     if set(labels.tolist()) != {0, 1} or len(set(locations.tolist())) != 4:
@@ -50,6 +56,7 @@ def main() -> None:
 
     representations = []
     for name in ("vggt", "dinov2"):
+        cache = caches[name]
         feature_rows = []
         pooled = []
         for pair in pairs:
