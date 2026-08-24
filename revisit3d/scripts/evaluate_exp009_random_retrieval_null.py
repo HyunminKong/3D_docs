@@ -178,7 +178,7 @@ def main() -> None:
     head.eval().requires_grad_(False)
     router_models, router_thresholds, router_columns = _router_models(stage7_config)
 
-    panel_size = int(config["null"]["uniform_panel_size"])
+    panel_size = int(config["random_null"]["uniform_panel_size"])
     strength = float(stage7_config["adaptation"]["reuse_strength"])
     memory, bank, panel_rows = {}, [], []
     panel_by_episode = {}
@@ -278,8 +278,8 @@ def main() -> None:
                     "reused_candidates": reused,
                 }), flush=True)
 
-    repetitions = int(config["null"]["repetitions"])
-    candidate_count = int(config["null"]["candidate_count"])
+    repetitions = int(config["random_null"]["repetitions"])
+    candidate_count = int(config["random_null"]["candidate_count"])
     ordered_episodes = sorted(group_by_episode)
     oracle_matrix = np.zeros((repetitions, len(ordered_episodes)), dtype=np.float64)
     router_matrix = np.zeros_like(oracle_matrix)

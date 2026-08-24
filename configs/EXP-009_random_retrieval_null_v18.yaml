@@ -7,7 +7,7 @@ source:
   stage7_result: revisit3d/results/EXP-009/stage7_causal_dino_retrieval_train_v17.json
   stage7_candidate_cache: revisit3d/cache/EXP-009/causal_dino_candidates_train_v17.json
 
-null:
+random_null:
   uniform_panel_size: 64
   candidate_count: 5
   repetitions: 2000
