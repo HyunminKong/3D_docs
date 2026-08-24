@@ -8,7 +8,7 @@ Status: Accepted
 Build a new TTT method and geometry head. Use foundation models only as backbones/priors. tttLRM remains a baseline and literature reference.
 
 ## D002 — VGGT as the first frozen backbone
-
+00
 Date: 2026-08-20
 Status: Accepted for the first implementation
 
