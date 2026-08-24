@@ -3,21 +3,26 @@
 독립적인 **foundation-model 기반 reusable test-time adaptation** 연구 코드다.
 tttLRM의 fast weight나 기존 `ttt_continual` bank를 재사용하지 않는다.
 
-첫 수직 슬라이스는 다음 두 부분이다.
+현재 수직 슬라이스는 다음 세 부분이다.
 
 1. converted nuScenes pose에서 실제 location overlap을 확인하는 cross-episode
    `A → B → A'` benchmark manifest;
-2. frozen VGGT/DINO feature 위에서만 동작하는 compact state `z` 기반 geometry head.
+2. frozen VGGT feature 위에서 동작하는 8-D per-token plasticity code와 one-step TTT head;
+3. visual code transport, utility routing, capacity-bounded continual atom bank.
 
 ```text
-frozen foundation features → StreamingGeometryHead(features, z)
-                                      ↑
-                          test-time update only on z
+frozen VGGT tokens → local plasticity head → one-step TTT code
+        │                                      │
+        ├→ frozen consolidation key → atom bank│
+        └→ learned visual transport ← stored codes
+                               ↓
+                       utility-routed residual
 ```
 
-출력은 token-level pointmap/depth/confidence와 view-level relative pose다. 아직
-memory bank는 없다. 다음 milestone은 reprojection/depth consistency online loss와
-revisit-aware outer-loop 학습이며, 그 효과가 검증된 뒤에만 long-term memory를 넣는다.
+현재 static-revisit milestone은 token-level depth correction을 대상으로 한다. EXP-006은
+local visual transport와 utility ranking의 feasibility를 지지했고, EXP-007은 서로 다른
+transport/consolidation key를 쓰는 capacity-bounded bank를 선택했다. pose adaptation,
+point tracking, dynamic 4D, 실제 timestamp stream과 paper-scale 일반화는 다음 단계다.
 
 `revisit3d.backbones.FrozenVGGTFeatures`는 FastVGGT의 pretrained prediction
 head가 아니라 마지막 aggregator patch token만 추출한다. 따라서 pointmap/depth/
@@ -46,9 +51,10 @@ scene, to avoid location leakage.
 blocks with RGB, resized intrinsics, and `w2c`. It does not call any target a
 test-time supervision signal.
 
-`RevisitMetaLearner` is still memory-free. It trains an oracle matched-prior
-signed residual map on an unrolled `A → B → A'` episode. A bank/retriever is
-not allowed until this oracle condition beats cold TTT on held-out locations.
+Earlier `RevisitMetaLearner` probes are historical. The active path is
+`SpatialPlasticityHead` plus visual transport, the locked EXP-006 utility router,
+and EXP-007 consolidation simulators. See `3D_docs/research_state.md` for the
+authoritative architecture and evidence boundary.
 
 ## First training plumbing
 

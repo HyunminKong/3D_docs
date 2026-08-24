@@ -173,3 +173,87 @@ Date: 2026-08-25
 Status: Accepted after the single locked validation evaluation
 
 The locked router achieved +0.01785 mean validation utility, zero deadband harm, and +0.00503 regret, exceeding all D024 controls. All five checks passed without tuning. This closes EXP-006 as feasibility support for visual local-code reuse and utility ranking. It does not establish learned rejection: the router accepted all 14 episodes, and the two-component absolute bootstrap interval crosses zero. EXP-007 may now study causal bank capacity and consolidation on train only. EXP-006 validation is closed to all EXP-007 design/model selection, and the exposed test split remains prohibited.
+
+## D026 — EXP-007 starts with an exhaustive train-only causal utility table
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 execution
+
+EXP-007 does not begin by training a merge network. Stage 0 first computes, on expanded train only, the future utility and locked-router score of every unique observed context against every train current episode. Query frames are read only for offline utility labels. Causal simulations then expose a record only after its context is observed: within an event, A/B are written before A′ retrieval and the current A′ context is written afterward. Ten fixed pseudo-stream orders, appearance top-5 prefiltering, capacities {4,8,16,32,64}, and FIFO/reservoir/scene-latest/appearance-diversity controls are registered in `configs/EXP-007_causal_bank_v10.yaml`. These synthetic episode orders test memory mechanics, not real temporal generalization. A bounded policy is a promising consolidation direction only if capacity at most 32 retains at least 90% of unbounded-router utility without higher deadband harm.
+
+## D027 — Full-train bank scaling is diagnostic; OOF banks cannot mix head coordinates
+
+Date: 2026-08-25
+Status: Accepted after EXP-007 v1.0/v1.1 train diagnostics
+
+The v1.0 registered ratio gate mechanically passed for FIFO-8, but this is not consolidation evidence. Appearance top-5 recalled only 11–13% of the causal all-bank utility oracle, and the locked router's deadband harm increased to 14–20% as the candidate set grew. Small FIFO banks benefited partly by deleting distractors. Moreover, a global OOF stream cannot mix atoms produced by different fold-specific heads because their learned code/key coordinates are not identical. Authoritative v1.2 evidence therefore runs a separate causal stream inside each held-out fold, using one fold head and a router trained on the other folds. Only contexts observed within that fold stream can be written. Full-train v1.0/v1.1 results are preserved as scaling diagnostics, not architecture-selection evidence.
+
+## D028 — Utility-history consolidation must beat the scene baseline
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.3 execution
+
+Fold-local OOF streams show that scene-latest capacity 8 improves over unbounded all-write top-5 by +0.00466 utility with a paired component-bootstrap CI [0.00189, 0.00725], while reducing the maximum bank from 83 to 8. This establishes bounded-memory feasibility but not adaptation-aware novelty because the benchmark contains repeated scene contexts. EXP-007 v1.3 therefore compares fixed online statistics at capacities 4/8/16: mean predicted utility history, selected-memory realized-utility UCB, delayed top-5 counterfactual utility, and a hybrid. A noncausal future-coverage coreset is an upper bound only. At capacity 8, a utility-history method is admitted as the primary consolidation mechanism only if it exceeds scene-latest mean utility without higher deadband harm. Otherwise scene identity remains a strong baseline and learned consolidation requires a richer stream/benchmark rather than an embellished mechanism.
+
+## D029 — Calibrate acceptance for candidate-set size and causal history
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.4 execution
+
+At capacity 8, hybrid history increased OOF mean utility from scene-latest's 0.02615 to 0.02808 but increased deadband harm from 6.32% to 6.71%, so D028 did not pass. The frozen EXP-006 router accepted essentially every causal-bank event and was trained on fixed K=5 pools, not on the max-score distribution induced by persistent banks. EXP-007 v1.4 keeps hybrid eviction fixed and trains only a compact acceptance calibrator from current-observable candidate-score distribution, bank size, current objective, and selected-record causal history. Evaluation is leave-one-physical-component-out across all 19 groups; all pseudo-order copies of a component stay in one fold. The primary gate accepts only when calibrated utility exceeds the existing 0.01 utility deadband. It must beat scene-latest mean utility without higher harm and retain at least 20% acceptance. Query utility is the target and delayed history only; it never enters same-event gate features.
+
+## D030 — Replace pointwise max selection with a set-normalized utility reranker
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.5 execution
+
+The v1.4 gate failed: it retained 6.71% harm, and the raw winning router score was negatively correlated with its realized utility (Spearman −0.457). This is a winner's-curse/list-distribution failure, not evidence that causal history is useless. EXP-007 v1.5 freezes the hybrid capacity-8 bank trajectory and represents every appearance-top-5 candidate by raw router/current/appearance values, within-set normalized values and ranks, and that record's past-only utility/prediction history. A leave-one-component-out Ridge utility reranker is primary; pairwise Ridge and non-set pointwise features are controls. Same-event query utility is the target only. The primary applies a memory only above the fixed 0.01 deadband and must exceed scene-latest utility without higher harm. This off-policy test may authorize an on-policy rerun but cannot by itself establish a final recurrent bank.
+
+## D031 — Scene is a consolidation bucket, not the memory correctness label
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.6 execution
+
+The v1.5 set-normalized reranker raised mean utility but retained 6.71% harm and failed the scene-latest safety requirement. Further pointwise/listwise gate complexity is not justified on the current data. EXP-007 v1.6 instead keeps the empirically safe one-record-per-scene bucket, replaces its atom with the latest observed context, transfers causal utility/prediction history within that bucket, and uses adaptation history rather than FIFO age to evict across scene buckets at capacity 8. Scene identity is therefore a coarse redundancy constraint, not a claim that the matched place is the correct update. Predicted, selected-realized, delayed-top-5, and hybrid history variants are fixed. If none beats scene-latest mean utility without higher harm, learned continual consolidation is not supported by this benchmark and H5 must remain partial/open pending richer streams.
+
+## D032 — Replace oracle scene buckets with OOF-calibrated visual buckets
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.7 execution
+
+The oracle-scene delayed-top-5 history policy passed D031 at 0.02674 utility and 6.18% harm, with a small positive paired component interval over scene-latest. Manifest scene IDs are unavailable at deployment and remain an oracle grouping baseline. EXP-007 v1.7 learns only a scalar cosine threshold for same-bucket decisions from the other atom folds, optimizing balanced accuracy, then applies that threshold online to fold-held-out descriptors. Ground-truth scene labels never enter runtime writes, retrieval, eviction, or routing. Visual-bucket predicted-history and delayed-top-5 variants keep capacity 8 and all other v1.6 settings fixed. A deployable bucket is promising if it beats appearance-diversity capacity 8 without higher harm and retains at least 90% of the oracle-scene utility.
+
+## D033 — Consolidation keys must preserve token-set correspondence
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.8 execution
+
+The v1.7 pooled-key threshold failed because held-out same-scene precision was only about 5–10%, producing hundreds of false merges and 84–85% oracle-scene utility retention. EXP-006 had already shown that per-token visual transport succeeds while global pooled descriptors are weak. EXP-007 v1.8 therefore computes deployable token-set statistics from the fold head: pooled cosine, bidirectional nearest-token means, lower-tail coverage, mutual-nearest coverage, and high-similarity quantiles. A balanced logistic bucket classifier is trained on other folds' scene-equality labels and evaluated on the held-out fold; runtime receives only token statistics and predicted probability. Capacity, history policies, and success criteria remain identical to v1.7. Failure closes the current H5 implementation as partial and redirects future work to a stronger place-recognition/consolidation backbone rather than further threshold tuning.
+
+## D034 — Separate frozen consolidation features from learned transport features
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v1.9 execution
+
+The learned atom-key token classifier reached only 0.654 OOF AUC and failed D033, suggesting that meta-training for local code transport does not preserve traversal-level place separability. One final control uses the frozen VGGT feature tokens projected by the already fixed train PCA, while retaining the identical token-set classifier, bank, and success criteria. If this frozen representation also fails, EXP-007 closes without a deployable consolidation key and the next architecture must add a separately trained/frozen place-recognition encoder such as DINOv3/AnyLoc rather than reuse either plasticity or VGGT reconstruction tokens.
+
+## D035 — Correct the frozen-key control with fold-local PCA
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v2.0 execution
+
+The v1.9 frozen-token control mechanically passed its registered point-estimate gate, but the PCA projection had been fit once on all train episodes. This does not access validation/test or labels, yet it is transductive with respect to the held-out OOF fold and is too weak a basis for an architecture decision. EXP-007 v2.0 is a leakage-correction control: for each held-out atom fold, it fits a 64-D PCA using only context tokens from the other folds, then keeps the same token-set statistics, crossfit logistic classifier, capacity-8 bank, policies, threshold, orders, and success criteria. No v1.9 result is used to tune these settings. The frozen consolidation key is provisional only if the v2.0 point-estimate gate reproduces; statistical uncertainty and real-stream generalization remain separate requirements.
+
+## D036 — A consolidation key must beat a merge-rate-matched permutation null
+
+Date: 2026-08-25
+Status: Accepted before EXP-007 v2.1 execution
+
+The strict crossfit frozen key reproduced the point-estimate gate at 0.02618 utility, 8.03% harm, and 97.9% oracle-scene retention, but its same-scene AUC was only 0.650, 773 of 1,839 merges crossed scene labels, and the component bootstrap interval versus appearance diversity included zero. This leaves a capacity-regularization explanation: arbitrary merging may simply remove router distractors. EXP-007 v2.1 therefore shuffles the OOF bucket probabilities among context pairs within each held-out fold, preserving each fold's score distribution and the fixed 0.5 threshold while destroying the learned pair association. The primary predicted-history key is supported only if its observed mean utility exceeds at least 95% of 1,000 matched permutations and does not exceed appearance-diversity harm. This diagnostic uses train only and cannot establish real-stream generalization.
+
+## D037 — Close EXP-007 with a dual-address, bounded-memory architecture
+
+Date: 2026-08-25
+Status: Accepted after EXP-007 v2.1 execution
+
+The strict frozen-token predicted-history bank achieved 0.02618 utility, 8.03% harm, 97.9% oracle-scene retention, and capacity 8. Its utility exceeded 99.4% of 1,000 fold-matched probability permutations (p=0.00699), so the key contributes beyond arbitrary memory shrinkage. Harm was not lower than the permutation-null mean, same-scene AUC was 0.650, and all streams were pseudo-orders. EXP-007 therefore partially supports H5 and selects a dual-address architecture: learned local keys for code transport, separately frozen token-set keys for consolidation/prefiltering, past-only predicted utility history for retention, and the bounded residual—not bucket similarity—as the present damage-control mechanism. Capacity 8 and the frozen VGGT key are provisional benchmark choices. EXP-008 must test unique writes in true capture-time order before any new holdout or larger learned bank is authorized.

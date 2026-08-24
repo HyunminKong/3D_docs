@@ -10,7 +10,7 @@ The first milestone targets depth/point geometry under static revisits. Pose ada
 
 ## Current central claim
 
-> **A spatial local TTT update is reusable after visual transport, and a learned utility model conditioned on appearance and observable adaptation history can choose useful past updates better than place identity, appearance similarity, current loss, random retrieval, or uniform memory averaging.**
+> **A spatial local TTT update is reusable after visual transport; a learned observable-utility model can rank candidate updates; and a distinct frozen token-set address plus causal utility history can bound a continual atom bank while retaining most reuse benefit.**
 
 Predicted 3D alignment is neither the fast-code carrier nor a primary router input. Correct memory is defined by causal future utility, not paired episode identity.
 
@@ -26,6 +26,17 @@ Predicted 3D alignment is neither the fast-code carrier nor a primary router inp
 8. A second TTT step is prohibited in the primary path because it was unstable.
 
 The locked Stage-2 router is `StandardScaler → PCA(16) → Ridge(alpha=1)` over descriptor interactions plus 20 non-alignment adaptation-history scalars. This compact linear model generalized better than the tested neural risk head on current data.
+
+## Provisional EXP-007 continual bank
+
+1. The learned per-token key is used only for local code transport.
+2. A separate frozen VGGT token-set key, projected by fold-local train-only PCA, predicts consolidation compatibility.
+3. The bank is capacity-bounded; capacity 8 is the current benchmark setting, not a universal architectural constant.
+4. Past-only predicted utility history prioritizes records for retention.
+5. Consolidation produces a small candidate set; the EXP-006 utility router ranks transported codes.
+6. Bucket similarity does not accept/reject reuse. Safety still comes from the fixed 0.10 residual and current-only fallback.
+
+The dual-address design is selected because the learned transport key failed as a consolidation key, while the strict frozen key retained 97.9% of the oracle-scene utility and exceeded a merge-rate-matched permutation null (p=0.00699). Same-scene AUC remained 0.650 and harm was not better than the null mean, so the consolidation key remains provisional.
 
 ## Authoritative expanded train evidence
 
@@ -71,7 +82,8 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 - EXP-004 — retrieval keys and vector routing: completed, partial/negative.
 - EXP-005 — dense oracle 3D transport: completed as controlled evidence; test split closed.
 - EXP-006 — completed; expanded train OOF and one-shot validation support the locked utility-routed visual-memory feasibility claim.
-- EXP-007 — continual bank capacity/consolidation feasibility: starting with train-only causal-stream construction.
+- EXP-007 — completed as train-only pseudo-stream feasibility; H5 partially supported and the dual-address bounded bank selected provisionally.
+- EXP-008 — next: true capture-time causal stream with unique context writes, followed by a newly locked paper-scale benchmark.
 
 ## Current hypothesis status
 
@@ -81,9 +93,9 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 - H3 online utility observability: supported on expanded train OOF and descriptive validation.
 - H4-U learned utility routing: supported for ranking on expanded train OOF and descriptive validation; reject behavior remains unproven.
 - H4-R explicit risk classifier: rejected in current form.
-- H5 continual consolidation: active in EXP-007.
+- H5 continual consolidation: partially supported; real chronological and independent-benchmark generalization remain open.
 - H6 dynamic 4D extension: open.
 
 ## Next step
 
-Build EXP-007 Stage 0 on train only: construct a causally ordered bank from already-observed contexts, measure full-bank/top-K oracle and locked-router utility, then test capacity curves before designing merge/eviction learning. The EXP-006 validation and exposed test split are closed to EXP-007 model selection.
+Run EXP-008 Stage 0 on train only. Replace pseudo-orders with nuScenes capture timestamps, write each unique context once, evaluate only after earlier contexts are available, and compare unbounded, FIFO, appearance-diversity, oracle-scene, and strict frozen-key capacity-8 banks. No EXP-006 validation or exposed test data may be used. If the dual-address gain does not survive true time order, redesign the benchmark/key before adding a learned bank-aware router. If it survives, define a new location-disjoint paper-scale benchmark and retrain routing on causal candidate sets.

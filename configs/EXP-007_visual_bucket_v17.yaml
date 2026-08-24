@@ -1,0 +1,42 @@
+experiment: EXP-007
+protocol_revision: v1.7
+seed: 700
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  split: train
+
+source:
+  oof_utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  oof_capacity_result: revisit3d/results/EXP-007/stage0_causal_capacity_oof_train_v12.json
+  oracle_scene_result: revisit3d/results/EXP-007/stage4_scene_utility_consolidation_oof_train_v16.json
+
+bank:
+  capacity: 8
+  top_k: 5
+  policies: [visual_bucket_predicted_history, visual_bucket_delayed_topk_utility]
+  prior_utility: 0.018
+  prior_count: 1.0
+  exploration_bonus: 0.01
+  threshold_objective: balanced_accuracy
+  stream_orders:
+    - lexicographic
+    - reverse_lexicographic
+    - random_700
+    - random_701
+    - random_702
+    - random_703
+    - random_704
+    - random_705
+    - random_706
+    - random_707
+  result: revisit3d/results/EXP-007/stage5_visual_bucket_consolidation_oof_train_v17.json
+
+success:
+  must_beat_appearance_diversity_mean_utility: true
+  must_not_exceed_appearance_diversity_harm: true
+  minimum_oracle_scene_utility_retention: 0.90
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 700017

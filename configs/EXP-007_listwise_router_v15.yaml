@@ -1,0 +1,46 @@
+experiment: EXP-007
+protocol_revision: v1.5
+seed: 700
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  split: train
+
+source:
+  oof_utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  oof_capacity_result: revisit3d/results/EXP-007/stage0_causal_capacity_oof_train_v12.json
+
+bank:
+  policy: hybrid_history
+  capacity: 8
+  top_k: 5
+  prior_utility: 0.018
+  prior_count: 1.0
+  exploration_bonus: 0.01
+  stream_orders:
+    - lexicographic
+    - reverse_lexicographic
+    - random_700
+    - random_701
+    - random_702
+    - random_703
+    - random_704
+    - random_705
+    - random_706
+    - random_707
+
+router:
+  primary: set_normalized_pointwise_ridge
+  ridge_alpha: 1.0
+  utility_threshold: 0.01
+  zero_threshold_control: 0.0
+  result: revisit3d/results/EXP-007/stage3_listwise_router_logo_train_v15.json
+
+success:
+  must_beat_scene_latest_mean_utility: true
+  must_not_exceed_scene_latest_harm: true
+  minimum_accept_rate: 0.20
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 700015

@@ -42,7 +42,7 @@ Status: **Rejected for the current explicit classifier.** Expansion produced 17 
 
 Merging compatible local memories and preserving uncertainty/utility statistics can bound memory while retaining revisit benefit.
 
-Status: **Open and active in EXP-007.** H4-U passed the registered descriptive validation gate. H4-R remains rejected, so initial consolidation relies on bounded reuse and utility ranking rather than claiming a learned risk classifier.
+Status: **Partially supported in EXP-007.** A fold-local-PCA frozen token key with capacity-8 predicted-history retention preserved 97.9% of oracle-scene utility and beat 99.4% of 1,000 merge-score permutation controls (one-sided p=0.00699). The learned transport key failed as a consolidation key. The result is limited to a train-only causal pseudo-stream; semantic bucket precision is weak, harm is not better than the permutation null, and real chronological/paper-scale generalization remains open.
 
 ## H6 — Extension to dynamic 4D
 

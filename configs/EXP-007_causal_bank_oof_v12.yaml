@@ -1,0 +1,55 @@
+experiment: EXP-007
+protocol_revision: v1.2
+seed: 700
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  scene_root: tttLRM/data_example/nuscenes_exp006_all
+  split: train
+  image_height: 224
+  image_width: 224
+
+foundation:
+  feature_dim: 2048
+
+atom:
+  cache: revisit3d/cache/EXP-006_stage1_train_expanded_v27.pt
+  crossfit: revisit3d/results/EXP-006/stage1_crossfit_heads_expanded_train_v27.json
+  source_protocol_revision: v2.7
+  ttt_steps: 1
+  ttt_step_size: 0.05
+  reuse_strength: 0.10
+  utility_deadband: 0.01
+
+router:
+  train_features: revisit3d/results/EXP-006/stage1_router_features_crossfit_expanded_train_v27.json
+  pca_components: 16
+  pca_random_state: 600
+  ridge_alpha: 1.0
+  utility_threshold: 0.0
+  prefilter_k: 5
+
+stage0:
+  utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  simulation_result: revisit3d/results/EXP-007/stage0_causal_capacity_oof_train_v12.json
+  bootstrap_result: revisit3d/results/EXP-007/stage0_oof_capacity_bootstrap_train_v12.json
+  stream_orders:
+    - lexicographic
+    - reverse_lexicographic
+    - random_700
+    - random_701
+    - random_702
+    - random_703
+    - random_704
+    - random_705
+    - random_706
+    - random_707
+  capacities: [2, 4, 8, 16, 32]
+  policies: [fifo, reservoir, scene_latest, appearance_diversity]
+  retention_target: 0.90
+  maximum_success_capacity: 16
+  top_k: 5
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 700012

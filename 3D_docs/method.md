@@ -15,7 +15,9 @@ exactly one current-context TTT step on per-token code z_t
         │
         ├──────── current-only prediction / reject path
         │
-memory candidates ── visual token correspondence ──> transported local codes
+frozen token-set consolidation key ──> capacity-bounded candidate bank
+        │                                      │
+memory candidates ── learned visual correspondence ──> transported local codes
         │
         └── current/source adaptation-history statistics
                          ↓
@@ -67,17 +69,16 @@ An invalid predicted-geometry alignment does not hard-mask a visually transporta
 
 ## Continual-learning role
 
-After routing generalizes, continual learning will manage the long-term local-code store:
+EXP-007 selects a provisional two-address continual store:
 
-- write only useful, confident adaptations;
-- cluster by adaptation utility/regime, not place identity alone;
-- merge visually/semantically compatible local codes;
-- preserve frequently useful memories;
-- age or evict low-utility records;
-- reactivate or split records when new evidence contradicts consolidated state.
+- **Transport address:** the learned per-token key remains local and moves a stored 8-D code to current tokens.
+- **Consolidation address:** separately normalized frozen foundation token sets predict redundant/place-compatible records. The transport key must not be reused for this role.
+- **Retention statistic:** past-only predicted utility history prioritizes records under a capacity bound.
+- **Retrieval:** consolidation prefiltering produces a small candidate set; the utility router ranks transported candidates.
+- **Safety:** the fixed 0.10 residual bounds damage. Consolidation similarity is not an accept/reject gate, and learned rejection is still unresolved.
 
 Generic parameter-protection methods remain ablations rather than the central mechanism.
 
 ## Current evidence boundary
 
-The architecture choice is based on exact train-only OOF estimates from 19 overlap components. The explicit neural risk head was identifiable after expansion but did not reduce selected harm, so it is not part of the locked model. The regularized utility router passed its one-shot 14-episode/two-component descriptive validation gate at +1.79% utility and zero deadband harm, but accepted every episode. Thus candidate ranking and bounded reuse are supported; learned rejection and broad generalization are not. EXP-007 uses train-only causal streams for continual-bank design, and both the EXP-006 validation and exposed test split are closed to its model selection.
+The local reuse choice is based on exact train-only OOF estimates from 19 overlap components plus one locked two-component validation. EXP-007 adds train-only pseudo-stream evidence: a strict crossfit frozen consolidation key retained 97.9% of the oracle-scene utility at capacity 8 and exceeded a matched permutation null (p=0.00699). Its same-scene AUC was only 0.650 and its harm was not lower than random-score merging, so it is a provisional prefilter, not a safety or place-recognition claim. The current utility router was trained on fixed K=5 pools and exhibits winner-distribution shift as banks grow; a future bank-aware router must be trained on causal candidate sets. Real timestamp order, independent locations, learned rejection, pose adaptation, and dynamic 4D remain unverified.

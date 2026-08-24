@@ -1,0 +1,45 @@
+experiment: EXP-007
+protocol_revision: v2.1
+seed: 700021
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  split: train
+
+source:
+  oof_utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  oof_capacity_result: revisit3d/results/EXP-007/stage0_causal_capacity_oof_train_v12.json
+  frozen_bucket_result: revisit3d/results/EXP-007/stage8_crossfit_frozen_token_bucket_oof_train_v20.json
+
+bank:
+  capacity: 8
+  top_k: 5
+  primary_policy: token_bucket_predicted_history
+  policies: [token_bucket_predicted_history, token_bucket_delayed_topk_utility]
+  probability_threshold: 0.5
+  prior_utility: 0.018
+  prior_count: 1.0
+  exploration_bonus: 0.01
+  stream_orders:
+    - lexicographic
+    - reverse_lexicographic
+    - random_700
+    - random_701
+    - random_702
+    - random_703
+    - random_704
+    - random_705
+    - random_706
+    - random_707
+
+permutation_null:
+  permutations: 1000
+  shuffle_within_fold: true
+  preserve_fold_probability_distribution: true
+
+success:
+  one_sided_alpha: 0.05
+  require_observed_harm_not_above_appearance: true
+
+output:
+  result: revisit3d/results/EXP-007/stage9_crossfit_bucket_permutation_null_train_v21.json
