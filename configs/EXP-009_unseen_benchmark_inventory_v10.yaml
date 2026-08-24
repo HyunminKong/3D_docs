@@ -1,0 +1,33 @@
+experiment: EXP-009
+protocol_revision: v1.0
+seed: 900
+
+metadata:
+  root: /mnt/ssd/nuscenes
+  version: v1.0-trainval
+  channel: CAM_FRONT
+  minimum_frames: 200
+
+blacklist:
+  converted_roots:
+    - tttLRM/data_example/nuscenes_processed
+    - tttLRM/data_example/nuscenes_prereg
+    - tttLRM/data_example/nuscenes_exp006_all
+  manifest_glob: revisit3d/manifests/*.json
+
+overlap:
+  maximum_distance_m: 2.0
+  use_all_camera_frames: true
+  same_location_only: true
+
+split:
+  unit: connected_overlap_component
+  ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+  balancing: deterministic_greedy_by_undirected_edges_within_location
+
+output:
+  inventory_cache: revisit3d/cache/EXP-009/unseen_overlap_inventory_v10.json
+  summary: revisit3d/results/EXP-009/stage0_unseen_overlap_inventory_v10.json

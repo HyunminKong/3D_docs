@@ -278,3 +278,10 @@ Date: 2026-08-25
 Status: Accepted after EXP-008 Stage-1 execution
 
 The true-time primary exceeded 96.1% of 1,000 matched probability permutations (one-sided p=0.03996) while keeping lower harm than appearance diversity. Together with the positive component interval, this closes the chronology correction and selects the dual-address bounded bank for the static-revisit milestone. Further tuning on the 76 expanded-train episodes is prohibited because the remaining uncertainty is independent-scene generalization, not another threshold. EXP-009 must blacklist every scene used by EXP-001–008 and construct a new component-disjoint benchmark from untouched nuScenes scenes using pose/location metadata only. No new learned bank-aware router, DINO/AnyLoc selector, or validation evaluation is authorized before that manifest is frozen.
+
+## D041 — Build the new benchmark from metadata before converting images
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-0 execution
+
+EXP-009 first inventories all unused nuScenes trainval scenes using only official camera/ego pose, timestamp, calibration, log location, and scene metadata. Every scene present in prior converted roots or manifests is blacklisted conservatively. Within each location, scene pairs receive an overlap edge at 2.0 m camera-center distance; connected overlap components are indivisible split units. A fixed deterministic greedy procedure targets 70/15/15 undirected-edge balance within each location. No image is opened and no model signal is available. If graph connectivity prevents credible independent splits, the protocol must be revised from metadata alone before any new scene is converted or encoded.

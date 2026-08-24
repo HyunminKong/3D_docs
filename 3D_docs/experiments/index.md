@@ -10,5 +10,6 @@
 | [EXP-006](EXP-006_trainable_3d_atom_risk_routing.md) | Can local TTT memory and observable utility/risk routing generalize without oracle poses? | Completed | One-shot descriptive validation supports visual local reuse and utility ranking; learned rejection and paper-scale generalization remain open. |
 | [EXP-007](EXP-007_continual_atom_consolidation.md) | Can a causal, capacity-bounded atom bank retain routed revisit benefit? | Completed (partial) | Capacity-8 reuse is feasible and a separate frozen token key beats a matched permutation null; real-time order and safety remain open. |
 | [EXP-008](EXP-008_true_timestamp_stream.md) | Does the dual-address bank survive unique writes in true capture-time order? | Completed (train) | The primary beat appearance diversity and 96.1% of matched compression nulls; independent unseen-scene generalization remains open. |
+| [EXP-009](EXP-009_unseen_paperscale_benchmark.md) | Does the selected architecture generalize to fully unseen overlap components at paper scale? | Registered | Stage 0 builds a metadata-only overlap inventory after blacklisting every prior scene. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
