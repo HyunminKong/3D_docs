@@ -1,0 +1,29 @@
+experiment: EXP-009
+protocol_revision: v1.8
+seed: 900018
+
+source:
+  stage7_config: configs/EXP-009_causal_dino_retrieval_v17.yaml
+  stage7_result: revisit3d/results/EXP-009/stage7_causal_dino_retrieval_train_v17.json
+  stage7_candidate_cache: revisit3d/cache/EXP-009/causal_dino_candidates_train_v17.json
+
+null:
+  uniform_panel_size: 64
+  candidate_count: 5
+  repetitions: 2000
+  sampling_without_replacement: true
+  panel_sampled_from_same_causal_bank: true
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 900018
+  utility_deadband: 0.01
+
+success:
+  maximum_one_sided_p: 0.05
+  require_positive_component_bootstrap_lower_bound: true
+  dinov2_router_harm_not_above_random_median: true
+
+output:
+  candidate_cache: revisit3d/cache/EXP-009/random_retrieval_null_candidates_train_v18.json
+  result: revisit3d/results/EXP-009/stage8_random_retrieval_null_train_v18.json

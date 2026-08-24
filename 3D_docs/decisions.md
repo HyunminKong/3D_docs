@@ -348,3 +348,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-7 feature extraction
 
 Place-pair AUC alone does not prove that a consolidation address retrieves reusable plasticity. Stage 7 replays every unique A/B/A′ train context once in true capture-time order and evaluates unique A′ targets before their own write. Frozen DINOv2, the learned VGGT-side transport key, FIFO, and deterministic random each retrieve K=5 from the same causal history. The primary outcome is oracle utility within each candidate set; the existing nested router is secondary. DINOv2 is causally supported only if its oracle top-K and routed utility both exceed the VGGT key and routed harm is no higher. Query frames remain offline labels only, and EXP-009 validation/test pixels remain unopened.
+
+## D051 — DINOv2 beats the transport key but misses the causal safety gate
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-7 execution
+
+In the 557-context true-time replay, DINO top-K increased oracle utility from the VGGT transport key's 0.01958 to 0.02412 and routed utility from 0.00889 to 0.01208. Both paired 25-component intervals were positive. Routed harm was 10.55% versus 10.09%, so the registered gate failed by one of 218 targets. A stronger warning is that one deterministic-random top-K achieved 0.02632 oracle and 0.01663 routed utility, and DINO retrieval score had Spearman -0.038 with realized utility. DINO remains a place-compatible representation, but it is not yet accepted as a plasticity-utility address.
+
+## D052 — Require a matched random retrieval null before designing the bank
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-8 candidate evaluation
+
+Stage 8 samples a fixed uniform panel of at most 64 memories from each target's exact causal history, evaluates their locked future utility, and simulates 2,000 random K=5 policies. DINO is causally supported only if both oracle and routed mean utility exceed 95% of this matched null, their component-bootstrap differences over per-target random expectation have positive lower bounds, and routed harm is no higher than the null median. No DINO score, router threshold, or transport mechanism is changed. If the gate fails, generic place recognition is retired as the consolidation objective and the next key must be trained directly on future adaptation utility using train-only observable context pairs.

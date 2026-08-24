@@ -93,3 +93,13 @@ Nested component calibration reduced harm relative to the ungated new router and
 Test the selected consolidation address by adaptation utility rather than place-pair AUC. Replay all unique A/B/A′ contexts from the 225 train episodes in true nuScenes capture-time order, evaluate each unique A′ target before writing it, and retrieve K=5 causal memories using frozen DINOv2, the learned VGGT-side transport key, FIFO, and a deterministic-random control. Query frames remain utility labels only and never enter retrieval, adaptation, or router features.
 
 The primary diagnostic is oracle utility contained in each top-K set; the secondary diagnostic applies the already registered nested component router. DINOv2 passes only if its oracle top-K utility exceeds the VGGT transport-key top-K utility, its routed mean utility also exceeds VGGT, and its routed harm is no higher. This stage isolates address quality and does not yet impose a capacity-bounded consolidation policy.
+
+### Stage-7 result
+
+DINOv2 improved over the learned VGGT transport key: oracle top-K utility was **+0.02412** versus **+0.01958**, and routed utility was **+0.01208** versus **+0.00889**. The paired component intervals for DINO minus VGGT were [+0.00385, +0.00588] oracle and [+0.00125, +0.00744] routed. However, routed harm was 10.55% versus VGGT's 10.09%, failing the registered safety check by one target. More importantly, the single deterministic-random top-K reached +0.02632 oracle and +0.01663 routed utility, while DINO retrieval score had no positive association with candidate utility (Spearman -0.038, p=0.210). DINO is therefore better than the inappropriate transport-key address, but causal utility beyond chance is not established.
+
+## Stage-8 matched random-retrieval null
+
+For every Stage-7 target, draw a fixed uniform panel of up to 64 records from the exact causal bank and evaluate their locked transported-code utility. From each panel, simulate 2,000 independent random K=5 retrieval policies. This estimates the random-policy distribution without changing the DINO model, router, residual strength, stream, or target set.
+
+DINO is supported as a causal utility address only if both its oracle-top-K and routed mean utility exceed at least 95% of matched random policies, both paired component-bootstrap differences over the per-target random expectation have positive lower bounds, and DINO routed harm does not exceed the median random-policy harm. Failure retires generic place compatibility as the consolidation objective and motivates a utility-supervised prefilter key.
