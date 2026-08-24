@@ -1,0 +1,33 @@
+experiment: EXP-009
+protocol_revision: v2.3
+seed: 900023
+
+source:
+  validation_config: configs/EXP-009_validation_lock_v22.yaml
+  locked_validation_result: revisit3d/results/EXP-009/stage13_locked_validation_v22.json
+  locked_validation_candidates: revisit3d/cache/EXP-009/validation_candidates_v22.json
+
+capacity_selection:
+  candidates: [8, 16, 32, 64]
+  candidate_count: 5
+  retention: deterministic_reservoir
+  address: locked_utility_mips
+  random_address_repetitions: 2000
+  selection_rule: smallest_passing_capacity
+
+statistics:
+  utility_deadband: 0.01
+  bootstrap_samples: 10000
+  bootstrap_seed: 900023
+
+success:
+  minimum_routed_utility: 0.01
+  minimum_retention_of_unbounded_utility: 0.90
+  harm_not_above_unbounded: true
+  must_beat_same_capacity_fifo: true
+  must_beat_same_bank_random_address: true
+  random_address_component_interval_positive: true
+
+output:
+  candidate_cache: revisit3d/cache/EXP-009/capacity_selection_candidates_val_v23.json
+  result: revisit3d/results/EXP-009/stage14_capacity_selection_val_v23.json

@@ -143,3 +143,11 @@ History retention failed: although it reached +0.01747 routed utility, harm was 
 Fit the transport-descriptor Ridge on every train-only Stage-8 pair and compile it exactly into a 64-D maximum-inner-product score. Fit the fixed PCA-16 Ridge router on all train-only Stage-5 candidates and select its single threshold from component-OOF train predictions under the visual-harm constraint. Freeze the atom checkpoint, 0.10 residual, reservoir capacity 8, K=5, artifact hash, and one canonical direction for each of the 117 unseen validation overlaps before any validation pixel is decoded.
 
 The one-shot validation compares reservoir-8 utility-MIPS with FIFO-8, an unbounded utility-address bank, and random K=5 addressing within the same reservoir bank. The primary must keep current/base at most 1.05, exceed +0.01 routed utility, retain at least 90% of unbounded utility, beat FIFO without more harm, beat the matched random address, and have a positive 17-component interval over random. Failure is reported without validation tuning.
+
+### Stage-13 one-shot validation result
+
+The locked full-model gate failed, but isolated the failure to capacity. Current TTT was healthy (current/base **0.715**). The unbounded utility-MIPS bank generalized strongly at **+0.02642** routed utility and 5.83% harm. Reservoir-8 reached **+0.01937** and beat FIFO-8 (+0.01359), but retained only **73.3%** of unbounded utility, had slightly higher harm than FIFO (8.74% vs 7.77%), and its advantage over same-bank random addressing had a component interval crossing zero. No model or threshold is changed based on this result.
+
+## Stage-14 validation capacity selection
+
+Validation is now exposed for model selection; locked test remains unopened. Keep the atom, utility-MIPS address, visual transport, residual strength, router, threshold, retention algorithm, and K fixed. Evaluate deterministic reservoir and FIFO at capacities {8,16,32,64}, plus random K=5 addressing inside each reservoir bank. Select the smallest capacity with routed utility above 0.01, at least 90% retention of the same unbounded bank, harm no higher than unbounded, utility above same-capacity FIFO and random address, and a positive component-bootstrap lower bound over random. If none passes, bounded consolidation is not locked for test.

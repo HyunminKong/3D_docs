@@ -418,3 +418,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 validation pixel access
 
 Stage 12 fits the transport-descriptor Ridge and final PCA-16 Ridge router on all permitted train pairs, compiles the address exactly to 64-D MIPS, and records the artifact hash. The validation pilot contains one metadata-selected direction for each of 117 unseen validation overlaps across 17 components and four locations. The locked method is one current TTT step, reservoir capacity 8, utility-MIPS K=5, visual local-code transport, fixed 0.10 residual, and the fixed router/threshold. One-shot validation requires healthy current TTT, routed utility above 0.01, at least 90% unbounded retention, superiority to FIFO without more harm, superiority to a matched random address, and a positive component interval over random. No validation result may change these choices.
+
+## D061 — Validation supports the address but rejects capacity 8
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-13 one-shot validation
+
+The fixed utility-MIPS address with an unbounded bank reached 0.02642 routed utility and 5.83% harm on 103 unique targets across 17 unseen components. Reservoir-8 reached 0.01937 and beat FIFO-8, but retained only 73.3% of unbounded utility; its harm was 8.74%, and its random-address interval crossed zero. The failure is therefore attributed to the provisional capacity-8 assumption, not to local adaptation or the utility address. Capacity 8 is rejected as a universal constant. The validation split is now exposed for explicit capacity selection; the 22-component test split remains untouched.
+
+## D062 — Select the smallest passing capacity without changing the model
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-14 validation reuse
+
+Stage 14 changes only the reservoir/FIFO capacity over the fixed set {8,16,32,64}. Atom weights, TTT step, utility-MIPS coefficients, router, threshold, K=5, residual 0.10, and stream partition remain frozen. For each capacity, random K=5 addressing is evaluated inside the identical reservoir bank. The smallest capacity is selected only if it retains at least 90% of unbounded routed utility, has no more harm than unbounded, beats FIFO and random addressing, and has a positive component interval over random. No passing capacity means the bounded-bank claim is withheld from test.
