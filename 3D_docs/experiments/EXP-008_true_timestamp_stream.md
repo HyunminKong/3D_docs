@@ -1,6 +1,6 @@
 # EXP-008 — True Capture-Time Continual Stream
 
-Status: **Stage 0 passed; Stage 1 permutation control registered.**
+Status: **Completed on train; true-time feasibility supported.**
 
 ## Question
 
@@ -43,3 +43,23 @@ Component bootstrap uncertainty is reported but is not a Stage-0 pass requiremen
 Across 71 unique target contexts, the primary frozen-bucket predicted-history bank reached +0.02650 mean utility and 5.63% harm. Appearance-diversity reached +0.02387/7.04%, scene-latest +0.02486/5.63%, and unbounded unique +0.02339/7.04%. Primary minus appearance-diversity had a 19-component bootstrap mean +0.00244 with CI [+0.00019, +0.00486]. The registered gate passed.
 
 The primary made 85 bucket merges, including 51 cross-scene diagnostic merges. Stage 1 therefore preserves each fold's OOF probability distribution but permutes scores among context pairs 1,000 times. The key association is supported only if observed utility exceeds 95% of this matched null while retaining no more harm than appearance diversity.
+
+## Stage-1 result
+
+The matched null had mean utility +0.02409 and 2.5/50/97.5 percentiles [+0.02155, +0.02407, +0.02662]. The observed +0.02650 result was at the 96.1st percentile (one-sided p=0.03996), and its 5.63% harm remained below appearance-diversity's 7.04%. The registered gate passed.
+
+## Conclusion
+
+The EXP-007 architecture choice survives the chronology correction. A dual-address capacity-bounded bank is therefore the selected static-revisit design:
+
+- learned local key for token-level code transport;
+- separate frozen token-set key for consolidation/prefiltering;
+- past-only predicted utility history for retention;
+- small utility-ranked candidate set;
+- fixed 0.10 residual and current-only fallback for present damage control.
+
+This is still train-only evidence derived from selected overlap episodes. It does not validate a final place encoder, universal capacity, bank-aware rejection, or paper-scale generalization. The next experiment must use scenes that were never part of EXP-001–008.
+
+## Compact artifact
+
+`revisit3d/results/EXP-008/summary_v11.json` records raw-result hashes and all decision metrics. Full event rows remain local and Git-ignored.

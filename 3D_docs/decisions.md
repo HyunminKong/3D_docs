@@ -271,3 +271,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-008 Stage-1 execution
 
 Stage 0 passed strongly: the frozen-bucket predicted-history bank reached 0.02650 utility and 5.63% harm versus appearance diversity's 0.02387/7.04%, with a 19-component bootstrap CI [+0.00019, +0.00486]. It also exceeded the oracle scene-latest grouping baseline. However, 51 of 85 merges crossed scene labels, so compression itself remains a possible explanation. Stage 1 shuffles the strict OOF bucket probabilities within fold 1,000 times, preserving the score distribution, threshold, timestamp order, write count, capacity, and policy. The observed primary is attributed to the consolidation key only if it exceeds at least 95% of matched-null utilities and keeps no more harm than appearance diversity.
+
+## D040 — True-time feasibility passes; new scenes are now mandatory
+
+Date: 2026-08-25
+Status: Accepted after EXP-008 Stage-1 execution
+
+The true-time primary exceeded 96.1% of 1,000 matched probability permutations (one-sided p=0.03996) while keeping lower harm than appearance diversity. Together with the positive component interval, this closes the chronology correction and selects the dual-address bounded bank for the static-revisit milestone. Further tuning on the 76 expanded-train episodes is prohibited because the remaining uncertainty is independent-scene generalization, not another threshold. EXP-009 must blacklist every scene used by EXP-001–008 and construct a new component-disjoint benchmark from untouched nuScenes scenes using pose/location metadata only. No new learned bank-aware router, DINO/AnyLoc selector, or validation evaluation is authorized before that manifest is frozen.

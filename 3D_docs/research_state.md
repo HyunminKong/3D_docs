@@ -38,6 +38,8 @@ The locked Stage-2 router is `StandardScaler → PCA(16) → Ridge(alpha=1)` ove
 
 The dual-address design is selected because the learned transport key failed as a consolidation key, while the strict frozen key retained 97.9% of the oracle-scene utility and exceeded a merge-rate-matched permutation null (p=0.00699). Same-scene AUC remained 0.650 and harm was not better than the null mean, so the consolidation key remains provisional.
 
+EXP-008 corrected the stream order: across 71 unique target contexts in true nuScenes capture time, the frozen-key bank reached +2.650% utility and 5.63% harm versus appearance diversity +2.387%/7.04%. The paired component interval was [+0.019%, +0.486%], and the observed utility exceeded 96.1% of 1,000 matched compression nulls (p=0.03996). Thus the dual-address bank is the selected static-revisit architecture, while its independent-scene generalization is still open.
+
 ## Authoritative expanded train evidence
 
 All results are exact train-only OOF estimates over 76 directional episodes, 38 undirected overlaps, 19 physical-overlap components, and 380 candidates. Original validation/test episodes were protected by scene-disjoint component construction and remain unchanged.
@@ -83,7 +85,8 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 - EXP-005 — dense oracle 3D transport: completed as controlled evidence; test split closed.
 - EXP-006 — completed; expanded train OOF and one-shot validation support the locked utility-routed visual-memory feasibility claim.
 - EXP-007 — completed as train-only pseudo-stream feasibility; H5 partially supported and the dual-address bounded bank selected provisionally.
-- EXP-008 — next: true capture-time causal stream with unique context writes, followed by a newly locked paper-scale benchmark.
+- EXP-008 — completed on train; true capture-time replay supports the dual-address bounded bank beyond a matched compression null.
+- EXP-009 — next: construct a fully unseen-scene, component-disjoint paper-scale nuScenes benchmark before training any new bank-aware modules.
 
 ## Current hypothesis status
 
@@ -98,4 +101,4 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 
 ## Next step
 
-Run EXP-008 Stage 0 on train only. Replace pseudo-orders with nuScenes capture timestamps, write each unique context once, evaluate only after earlier contexts are available, and compare unbounded, FIFO, appearance-diversity, oracle-scene, and strict frozen-key capacity-8 banks. No EXP-006 validation or exposed test data may be used. If the dual-address gain does not survive true time order, redesign the benchmark/key before adding a learned bank-aware router. If it survives, define a new location-disjoint paper-scale benchmark and retrain routing on causal candidate sets.
+Build EXP-009 from nuScenes scenes never used by EXP-001–008. Use pose/location metadata only to construct the overlap graph and component-disjoint train/development/locked-test splits; blacklist every previously converted scene. Freeze the manifest and evaluation protocol before extracting foundation features. Only after the new train split exists may a bank-aware candidate-set router or stronger consolidation encoder be selected. Do not open the new validation/test during benchmark construction.

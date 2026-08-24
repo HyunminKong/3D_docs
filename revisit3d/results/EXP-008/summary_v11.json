@@ -1,0 +1,74 @@
+{
+  "experiment": "EXP-008",
+  "summary_revision": "v1.1",
+  "split": "train",
+  "validation_accessed": false,
+  "test_accessed": false,
+  "true_capture_timestamp_order": true,
+  "unique_context_write_once": true,
+  "stage0": {
+    "raw_result": "stage0_true_timestamp_stream_train_v10.json",
+    "raw_bytes": 315170,
+    "raw_sha256": "e0721d8918d14e6b68df102bab3252690389ac1a60d78ca9e6c1391b2ef0424a",
+    "unique_target_events": 71,
+    "variants": {
+      "unbounded_unique_context": {
+        "mean_utility": 0.023391521637472257,
+        "harmful_rate": 0.07042253521126761,
+        "max_bank_records": 38,
+        "oracle_topk_recall": 0.5070422535211268
+      },
+      "fifo_capacity8": {
+        "mean_utility": 0.023460855651778023,
+        "harmful_rate": 0.056338028169014086,
+        "max_bank_records": 8,
+        "oracle_topk_recall": 0.6619718309859155
+      },
+      "appearance_diversity_capacity8": {
+        "mean_utility": 0.023874803354002824,
+        "harmful_rate": 0.07042253521126761,
+        "max_bank_records": 8,
+        "oracle_topk_recall": 0.676056338028169
+      },
+      "oracle_scene_latest_capacity8": {
+        "mean_utility": 0.024863716116516103,
+        "harmful_rate": 0.056338028169014086,
+        "max_bank_records": 8,
+        "oracle_topk_recall": 0.7746478873239436
+      },
+      "frozen_bucket_predicted_history_capacity8": {
+        "mean_utility": 0.026496610978067343,
+        "harmful_rate": 0.056338028169014086,
+        "max_bank_records": 8,
+        "mean_bank_records": 4.422535211267606,
+        "oracle_topk_recall": 0.8732394366197183,
+        "writes": 123,
+        "merges": 85,
+        "diagnostic_true_scene_merges": 34,
+        "diagnostic_cross_scene_merges": 51
+      }
+    },
+    "primary_minus_appearance_component_bootstrap": {
+      "mean": 0.0024372040027876006,
+      "ci95": [0.00018579920509538927, 0.004860835010802968]
+    },
+    "primary_scene_latest_utility_ratio": 1.0656738057134816,
+    "registered_gate_passed": true
+  },
+  "stage1": {
+    "raw_result": "stage1_true_timestamp_bucket_null_train_v11.json",
+    "raw_bytes": 2143,
+    "raw_sha256": "876b1d9da794801355213dd908aeacb28cc3918c36596fe0c5d271b8a384af85",
+    "matched_permutations": 1000,
+    "null_mean_utility": 0.02409077998940238,
+    "null_utility_q025_q50_q975": [
+      0.021545178610550705,
+      0.02407356894646384,
+      0.026620289815456975
+    ],
+    "observed_utility_percentile": 0.961,
+    "one_sided_utility_p": 0.03996003996003996,
+    "registered_gate_passed": true
+  },
+  "conclusion": "Dual-address bounded memory survives true capture-time replay and exceeds a fold-matched compression null, but remains train-only feasibility evidence."
+}

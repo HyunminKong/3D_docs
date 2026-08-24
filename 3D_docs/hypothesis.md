@@ -42,7 +42,7 @@ Status: **Rejected for the current explicit classifier.** Expansion produced 17 
 
 Merging compatible local memories and preserving uncertainty/utility statistics can bound memory while retaining revisit benefit.
 
-Status: **Partially supported in EXP-007.** A fold-local-PCA frozen token key with capacity-8 predicted-history retention preserved 97.9% of oracle-scene utility and beat 99.4% of 1,000 merge-score permutation controls (one-sided p=0.00699). The learned transport key failed as a consolidation key. The result is limited to a train-only causal pseudo-stream; semantic bucket precision is weak, harm is not better than the permutation null, and real chronological/paper-scale generalization remains open.
+Status: **Partially supported through EXP-008.** EXP-007 showed that a fold-local-PCA frozen token key with capacity-8 predicted-history retention preserved 97.9% of oracle-scene utility and beat 99.4% of matched pseudo-stream permutations. EXP-008 then replayed 71 unique targets in true capture-time order: utility was +2.650% with 5.63% harm versus appearance-diversity +2.387%/7.04%, with component CI [+0.019%, +0.486%]. It exceeded 96.1% of 1,000 true-time matched permutations (p=0.03996). The learned transport key failed as a consolidation key. Independent unseen-scene and paper-scale generalization, learned safety, and universal capacity remain open.
 
 ## H6 — Extension to dynamic 4D
 

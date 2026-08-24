@@ -25,6 +25,8 @@ venv/
 # EXP-007 keeps full causal tables locally and commits one compact audit summary.
 /revisit3d/results/EXP-007/*.json
 !/revisit3d/results/EXP-007/summary_v21.json
+/revisit3d/results/EXP-008/*.json
+!/revisit3d/results/EXP-008/summary_v11.json
 
 # External reference repositories; install/clone separately
 /CUT3R/
