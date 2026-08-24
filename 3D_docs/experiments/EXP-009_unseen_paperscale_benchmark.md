@@ -1,6 +1,6 @@
 # EXP-009 — Fully Unseen Paper-Scale Revisit Benchmark
 
-Status: **Stage 2 metadata conversion completed; train-only key benchmark next.**
+Status: **Stage 4 completed; DINOv2 selected for consolidation, utility transfer next.**
 
 ## Question
 
@@ -60,3 +60,12 @@ Exactly 636 scene metadata files were generated: 454 train, 86 validation, and 9
 Before full geometry caching, select up to 64 undirected positive train edges per location by a fixed hash. Require at least 40 positives from every location. Pair each positive with one same-location negative whose scene bounding boxes are at least 20 m apart and which has no direct 2 m overlap edge. Use four fixed context views. This pilot chooses the long-term consolidation representation only; it does not change the learned local transport key.
 
 The frozen selection contains 225 positive and 225 negative pairs over 247 train scenes. Compare four-view token-set statistics from VGGT mean-patch descriptors and DINOv2 ViT-L/14 CLS descriptors with leave-one-location-out logistic evaluation. DINOv2 is selected only if its OOF AUC exceeds VGGT by at least 0.03 and every held-out location reaches AUC 0.70; otherwise VGGT remains the consolidation fallback. Validation/test pixels remain unopened.
+
+## Stage-4 result
+
+- VGGT token-set OOF AUC: **0.744**; per-location range 0.702–0.772.
+- DINOv2 token-set OOF AUC: **0.936**; per-location range 0.900–0.971.
+- DINOv2 margin: **+0.193 AUC**.
+- DINOv2 pooled-cosine AUC without the classifier: 0.917.
+
+The registered DINOv2 gate passed. DINOv2 is selected only for long-term consolidation/prefiltering. VGGT remains the reconstruction/TTT backbone, and the learned plasticity key remains the local code-transport address. Stage 4 measures geometric place compatibility, not causal adaptation utility; the selected DINOv2 key must next improve a causal bank on new train scenes.

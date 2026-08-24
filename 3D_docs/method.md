@@ -15,7 +15,7 @@ exactly one current-context TTT step on per-token code z_t
         │
         ├──────── current-only prediction / reject path
         │
-frozen token-set consolidation key ──> capacity-bounded candidate bank
+frozen DINOv2 token-set consolidation key ──> capacity-bounded candidate bank
         │                                      │
 memory candidates ── learned visual correspondence ──> transported local codes
         │
@@ -72,7 +72,7 @@ An invalid predicted-geometry alignment does not hard-mask a visually transporta
 EXP-007 selects a provisional two-address continual store:
 
 - **Transport address:** the learned per-token key remains local and moves a stored 8-D code to current tokens.
-- **Consolidation address:** separately normalized frozen foundation token sets predict redundant/place-compatible records. The transport key must not be reused for this role.
+- **Consolidation address:** separately normalized frozen DINOv2 view-token sets predict redundant/place-compatible records. The transport key and VGGT reconstruction tokens must not be assumed optimal for this role.
 - **Retention statistic:** past-only predicted utility history prioritizes records under a capacity bound.
 - **Retrieval:** consolidation prefiltering produces a small candidate set; the utility router ranks transported candidates.
 - **Safety:** the fixed 0.10 residual bounds damage. Consolidation similarity is not an accept/reject gate, and learned rejection is still unresolved.
@@ -81,4 +81,4 @@ Generic parameter-protection methods remain ablations rather than the central me
 
 ## Current evidence boundary
 
-The local reuse choice is based on exact train-only OOF estimates from 19 overlap components plus one locked two-component validation. EXP-007's strict crossfit consolidation key retained 97.9% of oracle-scene utility and exceeded a matched pseudo-stream null (p=0.00699). EXP-008 then replayed 71 unique targets in real capture-time order: the primary reached +2.650% utility/5.63% harm and exceeded 96.1% of matched compression nulls (p=0.03996). This supports the dual-address mechanism on train, but the key's semantic precision remains weak and the current utility router exhibits candidate-set shift as banks grow. The consolidation key is a provisional prefilter, not a safety or place-recognition claim. Independent unseen scenes, learned rejection, pose adaptation, and dynamic 4D remain unverified.
+The local reuse choice is based on exact train-only OOF estimates from 19 overlap components plus one locked two-component validation. EXP-007/008 support bounded dual-address memory and true-time benefit on the original train. EXP-009 replaces the weak VGGT consolidation address: on 450 fully unseen-train pairs, frozen DINOv2 reached 0.936 leave-one-location-out AUC versus VGGT 0.744. DINOv2 is therefore the selected long-term prefilter, but it has not yet shown causal adaptation utility. The current utility router also exhibits candidate-set shift as banks grow. Independent locked validation, learned rejection, pose adaptation, and dynamic 4D remain unverified.

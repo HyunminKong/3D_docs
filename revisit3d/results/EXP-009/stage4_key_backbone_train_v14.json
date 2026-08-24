@@ -1,0 +1,99 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage4_train_key_backbone_selection",
+  "protocol_revision": "v1.4",
+  "split": "train",
+  "validation_accessed": false,
+  "test_accessed": false,
+  "config": "configs/EXP-009_key_backbone_v14.yaml",
+  "pairs": 450,
+  "representations": [
+    {
+      "representation": "vggt",
+      "oof_roc_auc": 0.7435061728395062,
+      "oof_balanced_accuracy": 0.6844444444444444,
+      "pooled_cosine_auc": 0.7444543209876544,
+      "pooled_cosine_spearman": 0.4234083774132534,
+      "folds": [
+        {
+          "held_out_location": "boston-seaport",
+          "pairs": 128,
+          "positives": 64,
+          "roc_auc": 0.75048828125,
+          "balanced_accuracy": 0.6875,
+          "pooled_cosine_auc": 0.71728515625
+        },
+        {
+          "held_out_location": "singapore-hollandvillage",
+          "pairs": 84,
+          "positives": 42,
+          "roc_auc": 0.7018140589569161,
+          "balanced_accuracy": 0.6904761904761905,
+          "pooled_cosine_auc": 0.6609977324263039
+        },
+        {
+          "held_out_location": "singapore-onenorth",
+          "pairs": 128,
+          "positives": 64,
+          "roc_auc": 0.75537109375,
+          "balanced_accuracy": 0.6875,
+          "pooled_cosine_auc": 0.809326171875
+        },
+        {
+          "held_out_location": "singapore-queenstown",
+          "pairs": 110,
+          "positives": 55,
+          "roc_auc": 0.7722314049586777,
+          "balanced_accuracy": 0.6727272727272727,
+          "pooled_cosine_auc": 0.7672727272727272
+        }
+      ]
+    },
+    {
+      "representation": "dinov2",
+      "oof_roc_auc": 0.936395061728395,
+      "oof_balanced_accuracy": 0.8866666666666667,
+      "pooled_cosine_auc": 0.9174716049382716,
+      "pooled_cosine_spearman": 0.7230838634754476,
+      "folds": [
+        {
+          "held_out_location": "boston-seaport",
+          "pairs": 128,
+          "positives": 64,
+          "roc_auc": 0.94970703125,
+          "balanced_accuracy": 0.9375,
+          "pooled_cosine_auc": 0.930908203125
+        },
+        {
+          "held_out_location": "singapore-hollandvillage",
+          "pairs": 84,
+          "positives": 42,
+          "roc_auc": 0.9002267573696144,
+          "balanced_accuracy": 0.7619047619047619,
+          "pooled_cosine_auc": 0.8718820861678005
+        },
+        {
+          "held_out_location": "singapore-onenorth",
+          "pairs": 128,
+          "positives": 64,
+          "roc_auc": 0.970947265625,
+          "balanced_accuracy": 0.8984375,
+          "pooled_cosine_auc": 0.966064453125
+        },
+        {
+          "held_out_location": "singapore-queenstown",
+          "pairs": 110,
+          "positives": 55,
+          "roc_auc": 0.9593388429752067,
+          "balanced_accuracy": 0.9090909090909091,
+          "pooled_cosine_auc": 0.9375206611570248
+        }
+      ]
+    }
+  ],
+  "dinov2_margin_over_vggt": 0.1928888888888889,
+  "selected_consolidation_representation": "dinov2",
+  "registered_gate": {
+    "dinov2_selected": true
+  }
+}

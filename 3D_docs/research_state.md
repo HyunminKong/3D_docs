@@ -30,13 +30,13 @@ The locked Stage-2 router is `StandardScaler → PCA(16) → Ridge(alpha=1)` ove
 ## Provisional EXP-007 continual bank
 
 1. The learned per-token key is used only for local code transport.
-2. A separate frozen VGGT token-set key, projected by fold-local train-only PCA, predicts consolidation compatibility.
+2. A separate frozen DINOv2 ViT-L/14 four-view token-set key predicts consolidation compatibility; EXP-009 train OOF selected it over VGGT reconstruction tokens.
 3. The bank is capacity-bounded; capacity 8 is the current benchmark setting, not a universal architectural constant.
 4. Past-only predicted utility history prioritizes records for retention.
 5. Consolidation produces a small candidate set; the EXP-006 utility router ranks transported codes.
 6. Bucket similarity does not accept/reject reuse. Safety still comes from the fixed 0.10 residual and current-only fallback.
 
-The dual-address design is selected because the learned transport key failed as a consolidation key, while the strict frozen key retained 97.9% of the oracle-scene utility and exceeded a merge-rate-matched permutation null (p=0.00699). Same-scene AUC remained 0.650 and harm was not better than the null mean, so the consolidation key remains provisional.
+The dual-address design was selected because the learned transport key failed as a consolidation key. EXP-009 then resolved the provisional backbone choice: on 225 positive/225 strict-negative fully unseen train pairs, DINOv2 achieved 0.936 leave-one-location-out AUC versus VGGT 0.744, with a minimum location AUC of 0.900. DINOv2 is now the selected consolidation representation, pending causal utility validation.
 
 EXP-008 corrected the stream order: across 71 unique target contexts in true nuScenes capture time, the frozen-key bank reached +2.650% utility and 5.63% harm versus appearance diversity +2.387%/7.04%. The paired component interval was [+0.019%, +0.486%], and the observed utility exceeded 96.1% of 1,000 matched compression nulls (p=0.03996). Thus the dual-address bank is the selected static-revisit architecture, while its independent-scene generalization is still open.
 
@@ -86,7 +86,7 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 - EXP-006 — completed; expanded train OOF and one-shot validation support the locked utility-routed visual-memory feasibility claim.
 - EXP-007 — completed as train-only pseudo-stream feasibility; H5 partially supported and the dual-address bounded bank selected provisionally.
 - EXP-008 — completed on train; true capture-time replay supports the dual-address bounded bank beyond a matched compression null.
-- EXP-009 — next: construct a fully unseen-scene, component-disjoint paper-scale nuScenes benchmark before training any new bank-aware modules.
+- EXP-009 — active: unseen benchmark frozen; train-only DINOv2 consolidation screening passed; causal local-reuse and bank utility transfer are next.
 
 ## Current hypothesis status
 
@@ -101,4 +101,4 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 
 ## Next step
 
-Build EXP-009 from nuScenes scenes never used by EXP-001–008. Use pose/location metadata only to construct the overlap graph and component-disjoint train/development/locked-test splits; blacklist every previously converted scene. Freeze the manifest and evaluation protocol before extracting foundation features. Only after the new train split exists may a bank-aware candidate-set router or stronger consolidation encoder be selected. Do not open the new validation/test during benchmark construction.
+On a fixed EXP-009 train-only geometry pilot, test whether the locked VGGT plasticity head and one-step TTT objective retain positive local visual-reuse utility on unseen scenes. Then replace only the bank consolidation address with the selected frozen DINOv2 key and test causal utility against VGGT, appearance-diversity, FIFO, oracle-scene, and matched-permutation controls. Do not access EXP-009 validation/test pixels until the new train router/bank is locked.

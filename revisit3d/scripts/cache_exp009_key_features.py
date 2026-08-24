@@ -82,9 +82,14 @@ def main() -> None:
             images = (_images(segment, scene_root, size).to(device) - mean) / std
             with torch.inference_mode(), torch.autocast("cuda", dtype=torch.bfloat16):
                 features = model.forward_features(images)
-                if not isinstance(features, dict) or "x_norm_clstoken" not in features:
+                if isinstance(features, dict) and "x_norm_clstoken" in features:
+                    cls_token = features["x_norm_clstoken"]
+                elif isinstance(features, torch.Tensor) and features.ndim == 3:
+                    # timm 1.0 returns [CLS, register, patch] tokens directly.
+                    cls_token = features[:, 0]
+                else:
                     raise RuntimeError("unexpected DINOv2 forward_features contract")
-                descriptor = F.normalize(features["x_norm_clstoken"].float(), dim=-1)
+                descriptor = F.normalize(cls_token.float(), dim=-1)
             rows[key][args.model] = descriptor.cpu().half()
             if (position + 1) % 25 == 0 or position + 1 == len(segments):
                 print(json.dumps({"model": args.model, "completed": position + 1, "total": len(segments)}), flush=True)

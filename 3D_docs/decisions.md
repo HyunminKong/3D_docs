@@ -313,3 +313,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-4 feature extraction
 
 The Stage-3 pilot contains 225 positive and 225 strict negative pairs across 247 train scenes. Stage 4 extracts frozen four-view sets: per-view mean patch tokens from VGGT and per-view normalized CLS tokens from locally cached DINOv2 ViT-L/14. A shared eight-statistic token-set classifier is evaluated leave-one-location-out. DINOv2 becomes the long-term consolidation representation only if OOF ROC-AUC is at least 0.03 above VGGT and every held-out location reaches at least 0.70 AUC. Otherwise the current VGGT representation remains. This decision affects only long-term bucketing/prefiltering; VGGT remains the geometry backbone and the learned plasticity key remains the transport address.
+
+## D046 — Separate reconstruction, transport, and consolidation representations
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-4 execution
+
+DINOv2 achieved 0.936 leave-one-location-out OOF AUC versus VGGT's 0.744, a +0.193 margin; its weakest held-out location reached 0.900. The registered gate passed. The selected architecture now has three explicit representation roles: frozen VGGT dense tokens for reconstruction and current TTT evidence, a learned local key/code for token-level adaptation transport, and frozen DINOv2 view tokens for long-term consolidation and candidate prefiltering. This is not redundant backbone stacking: the experiment shows reconstruction tokens and place-compatible memory addresses have materially different invariances. DINOv2 is not a safety gate and has not yet established causal adaptation utility. EXP-009 Stage 5 must verify locked plasticity/reuse transfer on new train scenes before training a bank-aware router or opening validation.
