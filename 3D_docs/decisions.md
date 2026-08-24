@@ -327,3 +327,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-5 execution
 
 One direction of each Stage-3 positive edge forms a 225-episode train-only geometry pilot. Stage 5 first transfers the fully locked EXP-006 local plasticity path without retraining: custom VGGT-token head, one current TTT step, visual code transport, fixed 0.10 residual, K=5 candidate pool, and locked linear utility router. The gate requires a healthy current/base ratio, visual-mean utility above 0.01 with under 10% harm, at least 10 physical components, and router utility above visual mean without higher harm. This ordering prevents a stronger place key from hiding failure of the underlying adaptation. Validation/test pixels remain unopened.
+
+## D048 — Retain local plasticity; recalibrate utility routing by nested components
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-6 execution
+
+Stage 5 separated transfer outcomes. Current TTT was healthy (current/base 0.682), visual reuse remained useful (+0.01227), and the oracle candidate reached +0.02600, so the local head/transport mechanism transfers. The old router raised utility to +0.01695 but increased harm to 14.22% versus visual mean's 11.11%, failing safety. Stage 6 therefore keeps every adaptation mechanism fixed and retrains only the same PCA-16 Ridge utility model. Evaluation is outer leave-one-component-out over 25 physical components; each outer threshold is calibrated solely from inner component-OOF predictions to maximize utility under the outer-train visual-harm bound and at least 20% acceptance. Success requires higher utility than visual mean, no higher harm, nontrivial acceptance, and a positive paired component-bootstrap lower bound.

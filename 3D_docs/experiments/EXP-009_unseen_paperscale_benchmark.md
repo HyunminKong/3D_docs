@@ -75,3 +75,11 @@ The registered DINOv2 gate passed. DINOv2 is selected only for long-term consoli
 Freeze one direction of each of the 225 Stage-3 positive edges as a geometry pilot. Without retraining, apply the locked EXP-006 custom plasticity head, exactly one TTT step, visual code transport, 0.10 residual, and locked utility router. Candidate pools remain matched A, distant B, and three deterministic foreign contexts. This isolates whether local TTT/reuse and utility ranking transfer to fully unseen train scenes before DINOv2 is introduced into a causal bank.
 
 The gate requires mean current/base ratio at most 1.05, visual-mean utility above 0.01 with less than 10% deadband harm, at least 10 physical components, and locked-router utility above visual mean without higher harm. Failure requires retraining the local head/router on new train; success authorizes isolating the DINOv2 bank contribution.
+
+### Stage-5 result
+
+Current TTT remained healthy (mean current/base 0.682), visual mean retained +0.01227 utility, and the candidate oracle reached +0.02600. The locked old router improved utility to +0.01695, but harm rose to 14.22% versus visual mean 11.11%. Thus local plasticity/reuse transferred, while the old router failed the new-distribution safety gate.
+
+## Stage-6 nested router correction
+
+Keep the head, TTT, candidate pool, features, and residual fixed. Retrain only the same compact PCA-16 Ridge utility router with outer leave-one-physical-component-out evaluation. For each outer fold, choose the acceptance threshold using inner leave-one-component-out predictions from outer-train components only. The threshold maximizes utility subject to no more harm than visual mean and at least 20% acceptance. The outer primary must beat visual mean without higher harm and have a positive component-bootstrap lower bound.
