@@ -1,0 +1,21 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage5_geometry_pilot_selection",
+  "protocol_revision": "v1.5",
+  "split": "train",
+  "metadata_only": true,
+  "image_pixels_accessed": false,
+  "model_output_accessed": false,
+  "manifest": "revisit3d/manifests/exp009_geometry_pilot_train_v15.json",
+  "manifest_sha256": "2545a440478f625a4283fadb2ff03f637002c853b9516b7a05e1999e77cbbee9",
+  "episodes": 225,
+  "components": 25,
+  "locations": {
+    "singapore-onenorth": 64,
+    "boston-seaport": 64,
+    "singapore-queenstown": 55,
+    "singapore-hollandvillage": 42
+  },
+  "validation_accessed": false,
+  "test_accessed": false
+}
