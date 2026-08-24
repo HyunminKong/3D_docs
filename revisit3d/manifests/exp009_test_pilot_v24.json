@@ -1,0 +1,7724 @@
+[
+  {
+    "episode_id": "scene-0048__scene-0353",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0048",
+    "target_scene": "scene-0353",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.0957342740000566,
+    "a": {
+      "scene": "scene-0048",
+      "frames": [
+        113,
+        116,
+        119,
+        122,
+        125,
+        128,
+        130,
+        133
+      ],
+      "query_frames": [
+        136,
+        139,
+        142,
+        145
+      ]
+    },
+    "b": {
+      "scene": "scene-0048",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        17,
+        20
+      ],
+      "query_frames": [
+        23,
+        26,
+        29,
+        32
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0353",
+      "frames": [
+        28,
+        31,
+        34,
+        37,
+        40,
+        43,
+        46,
+        49
+      ],
+      "query_frames": [
+        52,
+        55,
+        58,
+        61
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0051__scene-0380",
+    "split": "test",
+    "component_id": 46,
+    "source_scene": "scene-0051",
+    "target_scene": "scene-0380",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.968818125522816,
+    "a": {
+      "scene": "scene-0051",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0051",
+      "frames": [
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217
+      ],
+      "query_frames": [
+        220,
+        223,
+        226,
+        229
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0380",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0128__scene-0375",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0128",
+    "target_scene": "scene-0375",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.16135383789695834,
+    "a": {
+      "scene": "scene-0128",
+      "frames": [
+        153,
+        156,
+        159,
+        162,
+        165,
+        168,
+        171,
+        174
+      ],
+      "query_frames": [
+        177,
+        180,
+        183,
+        186
+      ]
+    },
+    "b": {
+      "scene": "scene-0128",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0375",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0128__scene-0971",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0128",
+    "target_scene": "scene-0971",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.45479774372779014,
+    "a": {
+      "scene": "scene-0128",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0128",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0971",
+      "frames": [
+        86,
+        89,
+        92,
+        95,
+        98,
+        101,
+        104,
+        107
+      ],
+      "query_frames": [
+        110,
+        113,
+        116,
+        119
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0128__scene-0988",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0128",
+    "target_scene": "scene-0988",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.5235763902411351,
+    "a": {
+      "scene": "scene-0128",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0128",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0988",
+      "frames": [
+        119,
+        122,
+        125,
+        128,
+        131,
+        134,
+        138,
+        141
+      ],
+      "query_frames": [
+        144,
+        147,
+        150,
+        153
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0128__scene-0989",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0128",
+    "target_scene": "scene-0989",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.566935473915734,
+    "a": {
+      "scene": "scene-0128",
+      "frames": [
+        123,
+        126,
+        129,
+        132,
+        135,
+        138,
+        141,
+        144
+      ],
+      "query_frames": [
+        147,
+        150,
+        153,
+        156
+      ]
+    },
+    "b": {
+      "scene": "scene-0128",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0989",
+      "frames": [
+        42,
+        45,
+        48,
+        51,
+        54,
+        57,
+        60,
+        63
+      ],
+      "query_frames": [
+        66,
+        69,
+        72,
+        75
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0128__scene-0990",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0128",
+    "target_scene": "scene-0990",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.30925025916941734,
+    "a": {
+      "scene": "scene-0128",
+      "frames": [
+        180,
+        183,
+        186,
+        189,
+        192,
+        195,
+        198,
+        201
+      ],
+      "query_frames": [
+        204,
+        207,
+        210,
+        213
+      ]
+    },
+    "b": {
+      "scene": "scene-0128",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0990",
+      "frames": [
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        43,
+        46
+      ],
+      "query_frames": [
+        49,
+        52,
+        55,
+        58
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0129__scene-0374",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0129",
+    "target_scene": "scene-0374",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.2596854855944978,
+    "a": {
+      "scene": "scene-0129",
+      "frames": [
+        193,
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214
+      ],
+      "query_frames": [
+        217,
+        220,
+        223,
+        226
+      ]
+    },
+    "b": {
+      "scene": "scene-0129",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0374",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0129__scene-0375",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0129",
+    "target_scene": "scene-0375",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.012460323858322046,
+    "a": {
+      "scene": "scene-0129",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0129",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0375",
+      "frames": [
+        77,
+        80,
+        83,
+        86,
+        89,
+        92,
+        95,
+        98
+      ],
+      "query_frames": [
+        101,
+        104,
+        107,
+        110
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0129__scene-0990",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0129",
+    "target_scene": "scene-0990",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.026372894308413594,
+    "a": {
+      "scene": "scene-0129",
+      "frames": [
+        72,
+        75,
+        78,
+        81,
+        84,
+        87,
+        90,
+        93
+      ],
+      "query_frames": [
+        96,
+        99,
+        102,
+        105
+      ]
+    },
+    "b": {
+      "scene": "scene-0129",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0990",
+      "frames": [
+        193,
+        196,
+        199,
+        202,
+        205,
+        208,
+        212,
+        215
+      ],
+      "query_frames": [
+        218,
+        221,
+        224,
+        227
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0178__scene-0866",
+    "split": "test",
+    "component_id": 44,
+    "source_scene": "scene-0178",
+    "target_scene": "scene-0866",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.02406639829604329,
+    "a": {
+      "scene": "scene-0178",
+      "frames": [
+        95,
+        98,
+        101,
+        104,
+        107,
+        110,
+        113,
+        116
+      ],
+      "query_frames": [
+        119,
+        122,
+        125,
+        128
+      ]
+    },
+    "b": {
+      "scene": "scene-0178",
+      "frames": [
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217
+      ],
+      "query_frames": [
+        220,
+        223,
+        226,
+        229
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0866",
+      "frames": [
+        141,
+        144,
+        147,
+        150,
+        153,
+        156,
+        160,
+        163
+      ],
+      "query_frames": [
+        166,
+        169,
+        172,
+        175
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0178__scene-0930",
+    "split": "test",
+    "component_id": 44,
+    "source_scene": "scene-0178",
+    "target_scene": "scene-0930",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.08566797485117877,
+    "a": {
+      "scene": "scene-0178",
+      "frames": [
+        89,
+        92,
+        95,
+        98,
+        101,
+        104,
+        107,
+        110
+      ],
+      "query_frames": [
+        113,
+        116,
+        119,
+        122
+      ]
+    },
+    "b": {
+      "scene": "scene-0178",
+      "frames": [
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217
+      ],
+      "query_frames": [
+        220,
+        223,
+        226,
+        229
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0930",
+      "frames": [
+        167,
+        170,
+        173,
+        176,
+        179,
+        182,
+        186,
+        189
+      ],
+      "query_frames": [
+        192,
+        195,
+        198,
+        201
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0184__scene-0919",
+    "split": "test",
+    "component_id": 56,
+    "source_scene": "scene-0184",
+    "target_scene": "scene-0919",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.025848458025818557,
+    "a": {
+      "scene": "scene-0184",
+      "frames": [
+        164,
+        167,
+        170,
+        173,
+        176,
+        179,
+        183,
+        186
+      ],
+      "query_frames": [
+        189,
+        192,
+        195,
+        198
+      ]
+    },
+    "b": {
+      "scene": "scene-0184",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0919",
+      "frames": [
+        89,
+        92,
+        95,
+        98,
+        101,
+        104,
+        108,
+        111
+      ],
+      "query_frames": [
+        114,
+        117,
+        120,
+        123
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0192__scene-0270",
+    "split": "test",
+    "component_id": 43,
+    "source_scene": "scene-0192",
+    "target_scene": "scene-0270",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 1.8138933781616278,
+    "a": {
+      "scene": "scene-0192",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "b": {
+      "scene": "scene-0192",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0270",
+      "frames": [
+        106,
+        109,
+        112,
+        115,
+        118,
+        121,
+        124,
+        127
+      ],
+      "query_frames": [
+        130,
+        133,
+        136,
+        139
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0194__scene-0221",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0194",
+    "target_scene": "scene-0221",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.023728228314418696,
+    "a": {
+      "scene": "scene-0194",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "b": {
+      "scene": "scene-0194",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0221",
+      "frames": [
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39
+      ],
+      "query_frames": [
+        42,
+        45,
+        48,
+        51
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0194__scene-0353",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0194",
+    "target_scene": "scene-0353",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.03786822605115212,
+    "a": {
+      "scene": "scene-0194",
+      "frames": [
+        72,
+        75,
+        78,
+        81,
+        84,
+        87,
+        91,
+        94
+      ],
+      "query_frames": [
+        97,
+        100,
+        103,
+        106
+      ]
+    },
+    "b": {
+      "scene": "scene-0194",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0353",
+      "frames": [
+        100,
+        103,
+        106,
+        109,
+        112,
+        115,
+        118,
+        121
+      ],
+      "query_frames": [
+        124,
+        127,
+        130,
+        133
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0195__scene-0221",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0195",
+    "target_scene": "scene-0221",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.037366126597219405,
+    "a": {
+      "scene": "scene-0195",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0195",
+      "frames": [
+        197,
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        218
+      ],
+      "query_frames": [
+        221,
+        224,
+        227,
+        230
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0221",
+      "frames": [
+        187,
+        190,
+        193,
+        196,
+        199,
+        202,
+        205,
+        208
+      ],
+      "query_frames": [
+        211,
+        214,
+        217,
+        220
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0221__scene-0353",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0221",
+    "target_scene": "scene-0353",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.47533875912137546,
+    "a": {
+      "scene": "scene-0221",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0221",
+      "frames": [
+        195,
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216
+      ],
+      "query_frames": [
+        219,
+        222,
+        225,
+        228
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0353",
+      "frames": [
+        146,
+        149,
+        152,
+        155,
+        158,
+        161,
+        164,
+        167
+      ],
+      "query_frames": [
+        170,
+        173,
+        176,
+        179
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0274__scene-0354",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0274",
+    "target_scene": "scene-0354",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.07163363798820119,
+    "a": {
+      "scene": "scene-0274",
+      "frames": [
+        54,
+        57,
+        60,
+        63,
+        66,
+        69,
+        72,
+        75
+      ],
+      "query_frames": [
+        78,
+        81,
+        84,
+        87
+      ]
+    },
+    "b": {
+      "scene": "scene-0274",
+      "frames": [
+        194,
+        197,
+        200,
+        203,
+        206,
+        209,
+        212,
+        215
+      ],
+      "query_frames": [
+        218,
+        221,
+        224,
+        227
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0354",
+      "frames": [
+        165,
+        168,
+        171,
+        174,
+        177,
+        180,
+        183,
+        186
+      ],
+      "query_frames": [
+        189,
+        192,
+        195,
+        198
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0317__scene-0922",
+    "split": "test",
+    "component_id": 25,
+    "source_scene": "scene-0317",
+    "target_scene": "scene-0922",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.04371213169066592,
+    "a": {
+      "scene": "scene-0317",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0317",
+      "frames": [
+        195,
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216
+      ],
+      "query_frames": [
+        219,
+        222,
+        225,
+        228
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0922",
+      "frames": [
+        96,
+        99,
+        102,
+        105,
+        108,
+        111,
+        115,
+        118
+      ],
+      "query_frames": [
+        121,
+        124,
+        127,
+        130
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0318__scene-0923",
+    "split": "test",
+    "component_id": 6,
+    "source_scene": "scene-0318",
+    "target_scene": "scene-0923",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.0337659625003482,
+    "a": {
+      "scene": "scene-0318",
+      "frames": [
+        165,
+        168,
+        171,
+        174,
+        177,
+        180,
+        183,
+        186
+      ],
+      "query_frames": [
+        189,
+        192,
+        195,
+        198
+      ]
+    },
+    "b": {
+      "scene": "scene-0318",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0923",
+      "frames": [
+        168,
+        171,
+        174,
+        177,
+        180,
+        183,
+        186,
+        189
+      ],
+      "query_frames": [
+        192,
+        195,
+        198,
+        201
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0353__scene-0354",
+    "split": "test",
+    "component_id": 17,
+    "source_scene": "scene-0353",
+    "target_scene": "scene-0354",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.09906139579011881,
+    "a": {
+      "scene": "scene-0353",
+      "frames": [
+        193,
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214
+      ],
+      "query_frames": [
+        217,
+        220,
+        223,
+        226
+      ]
+    },
+    "b": {
+      "scene": "scene-0353",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0354",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0375__scene-0990",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0375",
+    "target_scene": "scene-0990",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.04451618402334221,
+    "a": {
+      "scene": "scene-0375",
+      "frames": [
+        137,
+        140,
+        143,
+        146,
+        149,
+        152,
+        155,
+        158
+      ],
+      "query_frames": [
+        161,
+        164,
+        167,
+        170
+      ]
+    },
+    "b": {
+      "scene": "scene-0375",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0990",
+      "frames": [
+        165,
+        168,
+        171,
+        174,
+        177,
+        180,
+        184,
+        187
+      ],
+      "query_frames": [
+        190,
+        193,
+        196,
+        199
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0392__scene-0648",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0392",
+    "target_scene": "scene-0648",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.048600808267309434,
+    "a": {
+      "scene": "scene-0392",
+      "frames": [
+        112,
+        115,
+        118,
+        121,
+        124,
+        127,
+        131,
+        134
+      ],
+      "query_frames": [
+        137,
+        140,
+        143,
+        146
+      ]
+    },
+    "b": {
+      "scene": "scene-0392",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0648",
+      "frames": [
+        138,
+        141,
+        144,
+        147,
+        150,
+        153,
+        157,
+        160
+      ],
+      "query_frames": [
+        163,
+        166,
+        169,
+        172
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0392__scene-0914",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0392",
+    "target_scene": "scene-0914",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.08272691975093305,
+    "a": {
+      "scene": "scene-0392",
+      "frames": [
+        61,
+        64,
+        67,
+        70,
+        73,
+        76,
+        80,
+        83
+      ],
+      "query_frames": [
+        86,
+        89,
+        92,
+        95
+      ]
+    },
+    "b": {
+      "scene": "scene-0392",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0914",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0393__scene-0649",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0393",
+    "target_scene": "scene-0649",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.32245639752506916,
+    "a": {
+      "scene": "scene-0393",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0393",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0649",
+      "frames": [
+        90,
+        93,
+        96,
+        99,
+        102,
+        105,
+        109,
+        112
+      ],
+      "query_frames": [
+        115,
+        118,
+        121,
+        124
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0499__scene-0515",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0499",
+    "target_scene": "scene-0515",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.17479279304934128,
+    "a": {
+      "scene": "scene-0499",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0499",
+      "frames": [
+        197,
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        218
+      ],
+      "query_frames": [
+        221,
+        224,
+        227,
+        230
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0515",
+      "frames": [
+        32,
+        35,
+        38,
+        42,
+        45,
+        48,
+        51,
+        54
+      ],
+      "query_frames": [
+        57,
+        61,
+        64,
+        67
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0499__scene-0517",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0499",
+    "target_scene": "scene-0517",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.04745510892471127,
+    "a": {
+      "scene": "scene-0499",
+      "frames": [
+        174,
+        177,
+        180,
+        183,
+        186,
+        189,
+        192,
+        195
+      ],
+      "query_frames": [
+        198,
+        201,
+        204,
+        207
+      ]
+    },
+    "b": {
+      "scene": "scene-0499",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0517",
+      "frames": [
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "query_frames": [
+        40,
+        43,
+        46,
+        49
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0517",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0517",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.038044895743619245,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0517",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0518",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0518",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.027188498868812663,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        173,
+        176,
+        179,
+        182,
+        185,
+        188,
+        192,
+        195
+      ],
+      "query_frames": [
+        198,
+        201,
+        204,
+        207
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0518",
+      "frames": [
+        143,
+        146,
+        149,
+        152,
+        155,
+        158,
+        162,
+        165
+      ],
+      "query_frames": [
+        168,
+        171,
+        174,
+        177
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0888",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0888",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.052543632773159966,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        58,
+        61,
+        64,
+        67,
+        70,
+        73,
+        77,
+        80
+      ],
+      "query_frames": [
+        83,
+        86,
+        89,
+        92
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0888",
+      "frames": [
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        220,
+        223
+      ],
+      "query_frames": [
+        226,
+        229,
+        232,
+        235
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0889",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0889",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.01762583241460309,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        84,
+        87,
+        90,
+        93,
+        96,
+        99,
+        103,
+        106
+      ],
+      "query_frames": [
+        109,
+        112,
+        115,
+        118
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0889",
+      "frames": [
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        33,
+        36
+      ],
+      "query_frames": [
+        39,
+        42,
+        45,
+        48
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0890",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0890",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.020187419204387408,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        109,
+        112,
+        115,
+        118,
+        121,
+        124,
+        128,
+        131
+      ],
+      "query_frames": [
+        134,
+        137,
+        140,
+        143
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0890",
+      "frames": [
+        70,
+        73,
+        76,
+        79,
+        82,
+        85,
+        88,
+        91
+      ],
+      "query_frames": [
+        94,
+        97,
+        100,
+        103
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0500__scene-0891",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0500",
+    "target_scene": "scene-0891",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.0893628394228697,
+    "a": {
+      "scene": "scene-0500",
+      "frames": [
+        193,
+        196,
+        199,
+        202,
+        205,
+        208,
+        212,
+        215
+      ],
+      "query_frames": [
+        218,
+        221,
+        224,
+        227
+      ]
+    },
+    "b": {
+      "scene": "scene-0500",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0891",
+      "frames": [
+        82,
+        85,
+        88,
+        91,
+        94,
+        97,
+        100,
+        103
+      ],
+      "query_frames": [
+        106,
+        109,
+        112,
+        115
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0515__scene-0517",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0515",
+    "target_scene": "scene-0517",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.2691935110574399,
+    "a": {
+      "scene": "scene-0515",
+      "frames": [
+        204,
+        207,
+        210,
+        214,
+        217,
+        220,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        233,
+        236,
+        239
+      ]
+    },
+    "b": {
+      "scene": "scene-0515",
+      "frames": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        29,
+        32,
+        35
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0517",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0517__scene-0888",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0517",
+    "target_scene": "scene-0888",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.23341816595126066,
+    "a": {
+      "scene": "scene-0517",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-0517",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0888",
+      "frames": [
+        148,
+        151,
+        154,
+        157,
+        160,
+        163,
+        167,
+        170
+      ],
+      "query_frames": [
+        173,
+        176,
+        179,
+        182
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0517__scene-0904",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0517",
+    "target_scene": "scene-0904",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.1517337953721385,
+    "a": {
+      "scene": "scene-0517",
+      "frames": [
+        151,
+        154,
+        157,
+        160,
+        163,
+        166,
+        169,
+        172
+      ],
+      "query_frames": [
+        175,
+        178,
+        181,
+        184
+      ]
+    },
+    "b": {
+      "scene": "scene-0517",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0904",
+      "frames": [
+        56,
+        59,
+        62,
+        65,
+        68,
+        71,
+        75,
+        78
+      ],
+      "query_frames": [
+        81,
+        84,
+        87,
+        90
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0518__scene-0889",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0518",
+    "target_scene": "scene-0889",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.1933997816795716,
+    "a": {
+      "scene": "scene-0518",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "b": {
+      "scene": "scene-0518",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0889",
+      "frames": [
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        35,
+        38
+      ],
+      "query_frames": [
+        41,
+        44,
+        47,
+        50
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0518__scene-0890",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0518",
+    "target_scene": "scene-0890",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.02031859148654018,
+    "a": {
+      "scene": "scene-0518",
+      "frames": [
+        31,
+        34,
+        37,
+        40,
+        43,
+        46,
+        50,
+        53
+      ],
+      "query_frames": [
+        56,
+        59,
+        62,
+        65
+      ]
+    },
+    "b": {
+      "scene": "scene-0518",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0890",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0518__scene-0891",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0518",
+    "target_scene": "scene-0891",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.033874477788894526,
+    "a": {
+      "scene": "scene-0518",
+      "frames": [
+        128,
+        131,
+        134,
+        137,
+        140,
+        143,
+        147,
+        150
+      ],
+      "query_frames": [
+        153,
+        156,
+        159,
+        162
+      ]
+    },
+    "b": {
+      "scene": "scene-0518",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0891",
+      "frames": [
+        55,
+        58,
+        61,
+        64,
+        67,
+        70,
+        73,
+        76
+      ],
+      "query_frames": [
+        79,
+        82,
+        85,
+        88
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0525__scene-0566",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0525",
+    "target_scene": "scene-0566",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.030102655956430316,
+    "a": {
+      "scene": "scene-0525",
+      "frames": [
+        110,
+        113,
+        116,
+        119,
+        122,
+        125,
+        128,
+        131
+      ],
+      "query_frames": [
+        134,
+        137,
+        140,
+        143
+      ]
+    },
+    "b": {
+      "scene": "scene-0525",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0566",
+      "frames": [
+        105,
+        108,
+        111,
+        115,
+        118,
+        121,
+        124,
+        127
+      ],
+      "query_frames": [
+        130,
+        134,
+        137,
+        140
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0525__scene-0583",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0525",
+    "target_scene": "scene-0583",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.6695040836023685,
+    "a": {
+      "scene": "scene-0525",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0525",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0525__scene-0739",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0525",
+    "target_scene": "scene-0739",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.056176403979252186,
+    "a": {
+      "scene": "scene-0525",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "b": {
+      "scene": "scene-0525",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0739",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0525__scene-0740",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0525",
+    "target_scene": "scene-0740",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.0026115419565269048,
+    "a": {
+      "scene": "scene-0525",
+      "frames": [
+        32,
+        35,
+        38,
+        41,
+        44,
+        47,
+        50,
+        53
+      ],
+      "query_frames": [
+        56,
+        59,
+        62,
+        65
+      ]
+    },
+    "b": {
+      "scene": "scene-0525",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0740",
+      "frames": [
+        22,
+        25,
+        28,
+        31,
+        34,
+        37,
+        41,
+        44
+      ],
+      "query_frames": [
+        47,
+        50,
+        53,
+        56
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0525__scene-0741",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0525",
+    "target_scene": "scene-0741",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.36457204010356464,
+    "a": {
+      "scene": "scene-0525",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-0525",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0741",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0526__scene-0566",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0526",
+    "target_scene": "scene-0566",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.015783782158287,
+    "a": {
+      "scene": "scene-0526",
+      "frames": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        20,
+        23
+      ],
+      "query_frames": [
+        26,
+        29,
+        32,
+        35
+      ]
+    },
+    "b": {
+      "scene": "scene-0526",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0566",
+      "frames": [
+        204,
+        207,
+        210,
+        214,
+        217,
+        220,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        233,
+        236,
+        239
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0526__scene-0741",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0526",
+    "target_scene": "scene-0741",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.03732784323401451,
+    "a": {
+      "scene": "scene-0526",
+      "frames": [
+        89,
+        92,
+        95,
+        98,
+        101,
+        104,
+        108,
+        111
+      ],
+      "query_frames": [
+        114,
+        117,
+        120,
+        123
+      ]
+    },
+    "b": {
+      "scene": "scene-0526",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0741",
+      "frames": [
+        127,
+        130,
+        133,
+        136,
+        139,
+        142,
+        146,
+        149
+      ],
+      "query_frames": [
+        152,
+        155,
+        158,
+        161
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0538__scene-0539",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0538",
+    "target_scene": "scene-0539",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.9574017675580426,
+    "a": {
+      "scene": "scene-0538",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-0538",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0539",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0538__scene-0577",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0538",
+    "target_scene": "scene-0577",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.05313395725822153,
+    "a": {
+      "scene": "scene-0538",
+      "frames": [
+        162,
+        165,
+        168,
+        171,
+        174,
+        177,
+        180,
+        183
+      ],
+      "query_frames": [
+        186,
+        189,
+        192,
+        195
+      ]
+    },
+    "b": {
+      "scene": "scene-0538",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0577",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0538__scene-0762",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0538",
+    "target_scene": "scene-0762",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.014813292086568638,
+    "a": {
+      "scene": "scene-0538",
+      "frames": [
+        157,
+        160,
+        163,
+        166,
+        169,
+        172,
+        175,
+        178
+      ],
+      "query_frames": [
+        181,
+        184,
+        187,
+        190
+      ]
+    },
+    "b": {
+      "scene": "scene-0538",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0762",
+      "frames": [
+        111,
+        114,
+        117,
+        120,
+        123,
+        126,
+        130,
+        133
+      ],
+      "query_frames": [
+        136,
+        139,
+        142,
+        145
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0539__scene-0577",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0539",
+    "target_scene": "scene-0577",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.01868737667930682,
+    "a": {
+      "scene": "scene-0539",
+      "frames": [
+        143,
+        146,
+        149,
+        152,
+        155,
+        158,
+        162,
+        165
+      ],
+      "query_frames": [
+        168,
+        171,
+        174,
+        177
+      ]
+    },
+    "b": {
+      "scene": "scene-0539",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0577",
+      "frames": [
+        121,
+        124,
+        127,
+        130,
+        133,
+        136,
+        140,
+        143
+      ],
+      "query_frames": [
+        146,
+        149,
+        152,
+        155
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0539__scene-0762",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0539",
+    "target_scene": "scene-0762",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.04090437805513461,
+    "a": {
+      "scene": "scene-0539",
+      "frames": [
+        61,
+        64,
+        67,
+        70,
+        73,
+        76,
+        80,
+        83
+      ],
+      "query_frames": [
+        86,
+        89,
+        92,
+        95
+      ]
+    },
+    "b": {
+      "scene": "scene-0539",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0762",
+      "frames": [
+        172,
+        175,
+        178,
+        181,
+        184,
+        187,
+        191,
+        194
+      ],
+      "query_frames": [
+        197,
+        200,
+        203,
+        206
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0541__scene-0542",
+    "split": "test",
+    "component_id": 28,
+    "source_scene": "scene-0541",
+    "target_scene": "scene-0542",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.1404439258154837,
+    "a": {
+      "scene": "scene-0541",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "b": {
+      "scene": "scene-0541",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0542",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0541__scene-0764",
+    "split": "test",
+    "component_id": 28,
+    "source_scene": "scene-0541",
+    "target_scene": "scene-0764",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.024289681309266467,
+    "a": {
+      "scene": "scene-0541",
+      "frames": [
+        67,
+        70,
+        73,
+        76,
+        79,
+        82,
+        86,
+        89
+      ],
+      "query_frames": [
+        92,
+        95,
+        98,
+        101
+      ]
+    },
+    "b": {
+      "scene": "scene-0541",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0764",
+      "frames": [
+        183,
+        186,
+        189,
+        192,
+        195,
+        198,
+        202,
+        205
+      ],
+      "query_frames": [
+        208,
+        211,
+        214,
+        217
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0542__scene-0765",
+    "split": "test",
+    "component_id": 28,
+    "source_scene": "scene-0542",
+    "target_scene": "scene-0765",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.3221526178006234,
+    "a": {
+      "scene": "scene-0542",
+      "frames": [
+        135,
+        138,
+        141,
+        144,
+        147,
+        150,
+        154,
+        157
+      ],
+      "query_frames": [
+        160,
+        163,
+        166,
+        169
+      ]
+    },
+    "b": {
+      "scene": "scene-0542",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0765",
+      "frames": [
+        59,
+        62,
+        65,
+        68,
+        71,
+        74,
+        78,
+        81
+      ],
+      "query_frames": [
+        84,
+        87,
+        90,
+        93
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0566__scene-0583",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0566",
+    "target_scene": "scene-0583",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.20638521635554352,
+    "a": {
+      "scene": "scene-0566",
+      "frames": [
+        19,
+        22,
+        25,
+        29,
+        32,
+        35,
+        38,
+        41
+      ],
+      "query_frames": [
+        44,
+        48,
+        51,
+        54
+      ]
+    },
+    "b": {
+      "scene": "scene-0566",
+      "frames": [
+        204,
+        207,
+        210,
+        214,
+        217,
+        220,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        233,
+        236,
+        239
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0566__scene-0739",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0566",
+    "target_scene": "scene-0739",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.4945727660270652,
+    "a": {
+      "scene": "scene-0566",
+      "frames": [
+        15,
+        18,
+        21,
+        25,
+        28,
+        31,
+        34,
+        37
+      ],
+      "query_frames": [
+        40,
+        44,
+        47,
+        50
+      ]
+    },
+    "b": {
+      "scene": "scene-0566",
+      "frames": [
+        204,
+        207,
+        210,
+        214,
+        217,
+        220,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        233,
+        236,
+        239
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0739",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0566__scene-0740",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0566",
+    "target_scene": "scene-0740",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.03527266694253921,
+    "a": {
+      "scene": "scene-0566",
+      "frames": [
+        64,
+        67,
+        70,
+        74,
+        77,
+        80,
+        83,
+        86
+      ],
+      "query_frames": [
+        89,
+        93,
+        96,
+        99
+      ]
+    },
+    "b": {
+      "scene": "scene-0566",
+      "frames": [
+        204,
+        207,
+        210,
+        214,
+        217,
+        220,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        233,
+        236,
+        239
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0740",
+      "frames": [
+        29,
+        32,
+        35,
+        38,
+        41,
+        44,
+        48,
+        51
+      ],
+      "query_frames": [
+        54,
+        57,
+        60,
+        63
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0566__scene-0741",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0566",
+    "target_scene": "scene-0741",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.9040803047855863,
+    "a": {
+      "scene": "scene-0566",
+      "frames": [
+        199,
+        202,
+        205,
+        209,
+        212,
+        215,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0566",
+      "frames": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        29,
+        32,
+        35
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0741",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0577__scene-0762",
+    "split": "test",
+    "component_id": 50,
+    "source_scene": "scene-0577",
+    "target_scene": "scene-0762",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.07065081558543906,
+    "a": {
+      "scene": "scene-0577",
+      "frames": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        21,
+        24
+      ],
+      "query_frames": [
+        27,
+        30,
+        33,
+        36
+      ]
+    },
+    "b": {
+      "scene": "scene-0577",
+      "frames": [
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        220,
+        223
+      ],
+      "query_frames": [
+        226,
+        229,
+        232,
+        235
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0762",
+      "frames": [
+        117,
+        120,
+        123,
+        126,
+        129,
+        132,
+        136,
+        139
+      ],
+      "query_frames": [
+        142,
+        145,
+        148,
+        151
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0578__scene-0763",
+    "split": "test",
+    "component_id": 28,
+    "source_scene": "scene-0578",
+    "target_scene": "scene-0763",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.5532838068597636,
+    "a": {
+      "scene": "scene-0578",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-0578",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0763",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0739",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0739",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.8456088877279968,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0739",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0740",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0740",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.6230617258491298,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0740",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0770",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0770",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.36055070304157416,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        34,
+        37,
+        40,
+        43,
+        46,
+        49,
+        53,
+        56
+      ],
+      "query_frames": [
+        59,
+        62,
+        65,
+        68
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0770",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0771",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0771",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.3550043866137008,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        34,
+        37,
+        40,
+        43,
+        46,
+        49,
+        53,
+        56
+      ],
+      "query_frames": [
+        59,
+        62,
+        65,
+        68
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0771",
+      "frames": [
+        185,
+        188,
+        191,
+        194,
+        197,
+        200,
+        204,
+        207
+      ],
+      "query_frames": [
+        210,
+        213,
+        216,
+        219
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0775",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0775",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.3544303748772229,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        34,
+        37,
+        40,
+        43,
+        46,
+        49,
+        53,
+        56
+      ],
+      "query_frames": [
+        59,
+        62,
+        65,
+        68
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0775",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0777",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0777",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.3559646981450613,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        34,
+        37,
+        40,
+        43,
+        46,
+        49,
+        53,
+        56
+      ],
+      "query_frames": [
+        59,
+        62,
+        65,
+        68
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0777",
+      "frames": [
+        143,
+        146,
+        149,
+        152,
+        155,
+        158,
+        162,
+        165
+      ],
+      "query_frames": [
+        168,
+        171,
+        174,
+        177
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0583__scene-0778",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0583",
+    "target_scene": "scene-0778",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.0865909221045149,
+    "a": {
+      "scene": "scene-0583",
+      "frames": [
+        36,
+        39,
+        42,
+        45,
+        48,
+        51,
+        55,
+        58
+      ],
+      "query_frames": [
+        61,
+        64,
+        67,
+        70
+      ]
+    },
+    "b": {
+      "scene": "scene-0583",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0778",
+      "frames": [
+        39,
+        42,
+        45,
+        48,
+        51,
+        54,
+        58,
+        61
+      ],
+      "query_frames": [
+        64,
+        67,
+        70,
+        73
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0629__scene-0634",
+    "split": "test",
+    "component_id": 45,
+    "source_scene": "scene-0629",
+    "target_scene": "scene-0634",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.2642906842240425,
+    "a": {
+      "scene": "scene-0629",
+      "frames": [
+        168,
+        171,
+        174,
+        177,
+        180,
+        183,
+        187,
+        190
+      ],
+      "query_frames": [
+        193,
+        196,
+        199,
+        202
+      ]
+    },
+    "b": {
+      "scene": "scene-0629",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0634",
+      "frames": [
+        52,
+        55,
+        58,
+        61,
+        64,
+        67,
+        71,
+        74
+      ],
+      "query_frames": [
+        77,
+        80,
+        83,
+        86
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0629__scene-0817",
+    "split": "test",
+    "component_id": 45,
+    "source_scene": "scene-0629",
+    "target_scene": "scene-0817",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.010643481646881864,
+    "a": {
+      "scene": "scene-0629",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "b": {
+      "scene": "scene-0629",
+      "frames": [
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        220,
+        223
+      ],
+      "query_frames": [
+        226,
+        229,
+        232,
+        235
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0817",
+      "frames": [
+        135,
+        138,
+        141,
+        144,
+        147,
+        150,
+        154,
+        157
+      ],
+      "query_frames": [
+        160,
+        163,
+        166,
+        169
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0633__scene-0634",
+    "split": "test",
+    "component_id": 45,
+    "source_scene": "scene-0633",
+    "target_scene": "scene-0634",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.7763534187771767,
+    "a": {
+      "scene": "scene-0633",
+      "frames": [
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        220,
+        223
+      ],
+      "query_frames": [
+        226,
+        229,
+        232,
+        235
+      ]
+    },
+    "b": {
+      "scene": "scene-0633",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0634",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0634__scene-0635",
+    "split": "test",
+    "component_id": 45,
+    "source_scene": "scene-0634",
+    "target_scene": "scene-0635",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.4165024610822549,
+    "a": {
+      "scene": "scene-0634",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "b": {
+      "scene": "scene-0634",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0635",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0648__scene-0649",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0648",
+    "target_scene": "scene-0649",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.406328914334235,
+    "a": {
+      "scene": "scene-0648",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0648",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0649",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0648__scene-0914",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0648",
+    "target_scene": "scene-0914",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.2013527240528027,
+    "a": {
+      "scene": "scene-0648",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "b": {
+      "scene": "scene-0648",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0914",
+      "frames": [
+        118,
+        121,
+        124,
+        127,
+        130,
+        133,
+        137,
+        140
+      ],
+      "query_frames": [
+        143,
+        146,
+        149,
+        152
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0649__scene-0914",
+    "split": "test",
+    "component_id": 7,
+    "source_scene": "scene-0649",
+    "target_scene": "scene-0914",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.08488315324510183,
+    "a": {
+      "scene": "scene-0649",
+      "frames": [
+        23,
+        26,
+        29,
+        32,
+        35,
+        38,
+        42,
+        45
+      ],
+      "query_frames": [
+        48,
+        51,
+        54,
+        57
+      ]
+    },
+    "b": {
+      "scene": "scene-0649",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0914",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0739__scene-0740",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0739",
+    "target_scene": "scene-0740",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.25841054208462744,
+    "a": {
+      "scene": "scene-0739",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0739",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0740",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0740__scene-0741",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0740",
+    "target_scene": "scene-0741",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.41710292601602866,
+    "a": {
+      "scene": "scene-0740",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "b": {
+      "scene": "scene-0740",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0741",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0763__scene-0764",
+    "split": "test",
+    "component_id": 28,
+    "source_scene": "scene-0763",
+    "target_scene": "scene-0764",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.6415035729625105,
+    "a": {
+      "scene": "scene-0763",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0763",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0764",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0770__scene-0771",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0770",
+    "target_scene": "scene-0771",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.7212073935375567e-05,
+    "a": {
+      "scene": "scene-0770",
+      "frames": [
+        134,
+        137,
+        140,
+        143,
+        146,
+        149,
+        153,
+        156
+      ],
+      "query_frames": [
+        159,
+        162,
+        165,
+        168
+      ]
+    },
+    "b": {
+      "scene": "scene-0770",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0771",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0770__scene-0775",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0770",
+    "target_scene": "scene-0775",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.024484283286009528,
+    "a": {
+      "scene": "scene-0770",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0770",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0775",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0770__scene-0777",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0770",
+    "target_scene": "scene-0777",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.019871112041870982,
+    "a": {
+      "scene": "scene-0770",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0770",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0777",
+      "frames": [
+        180,
+        183,
+        186,
+        189,
+        192,
+        195,
+        199,
+        202
+      ],
+      "query_frames": [
+        205,
+        208,
+        211,
+        214
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0770__scene-0778",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0770",
+    "target_scene": "scene-0778",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.01841934020578739,
+    "a": {
+      "scene": "scene-0770",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0770",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0778",
+      "frames": [
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        29,
+        32
+      ],
+      "query_frames": [
+        35,
+        38,
+        41,
+        44
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0771__scene-0775",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0771",
+    "target_scene": "scene-0775",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.021362815568690827,
+    "a": {
+      "scene": "scene-0771",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-0771",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0775",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0771__scene-0777",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0771",
+    "target_scene": "scene-0777",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.017538156046681207,
+    "a": {
+      "scene": "scene-0771",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-0771",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0777",
+      "frames": [
+        180,
+        183,
+        186,
+        189,
+        192,
+        195,
+        199,
+        202
+      ],
+      "query_frames": [
+        205,
+        208,
+        211,
+        214
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0771__scene-0778",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0771",
+    "target_scene": "scene-0778",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.016407227169608383,
+    "a": {
+      "scene": "scene-0771",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-0771",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0778",
+      "frames": [
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        29,
+        32
+      ],
+      "query_frames": [
+        35,
+        38,
+        41,
+        44
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0775__scene-0777",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0775",
+    "target_scene": "scene-0777",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.001609396612340271,
+    "a": {
+      "scene": "scene-0775",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0775",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0777",
+      "frames": [
+        146,
+        149,
+        152,
+        155,
+        158,
+        161,
+        165,
+        168
+      ],
+      "query_frames": [
+        171,
+        174,
+        177,
+        180
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0775__scene-0778",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0775",
+    "target_scene": "scene-0778",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.003963999821942569,
+    "a": {
+      "scene": "scene-0775",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0775",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0778",
+      "frames": [
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        34,
+        37
+      ],
+      "query_frames": [
+        40,
+        43,
+        46,
+        49
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0777__scene-0778",
+    "split": "test",
+    "component_id": 22,
+    "source_scene": "scene-0777",
+    "target_scene": "scene-0778",
+    "location": "boston-seaport",
+    "min_overlap_m": 3.270146267982802e-06,
+    "a": {
+      "scene": "scene-0777",
+      "frames": [
+        191,
+        194,
+        197,
+        200,
+        203,
+        206,
+        210,
+        213
+      ],
+      "query_frames": [
+        216,
+        219,
+        222,
+        225
+      ]
+    },
+    "b": {
+      "scene": "scene-0777",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0778",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0780__scene-0781",
+    "split": "test",
+    "component_id": 60,
+    "source_scene": "scene-0780",
+    "target_scene": "scene-0781",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.00015362577347910564,
+    "a": {
+      "scene": "scene-0780",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0780",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0781",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0866__scene-0930",
+    "split": "test",
+    "component_id": 44,
+    "source_scene": "scene-0866",
+    "target_scene": "scene-0930",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.022947808599182707,
+    "a": {
+      "scene": "scene-0866",
+      "frames": [
+        182,
+        185,
+        188,
+        191,
+        194,
+        197,
+        201,
+        204
+      ],
+      "query_frames": [
+        207,
+        210,
+        213,
+        216
+      ]
+    },
+    "b": {
+      "scene": "scene-0866",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0930",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0886__scene-0888",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0886",
+    "target_scene": "scene-0888",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.002655050031431194,
+    "a": {
+      "scene": "scene-0886",
+      "frames": [
+        197,
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        218
+      ],
+      "query_frames": [
+        221,
+        224,
+        227,
+        230
+      ]
+    },
+    "b": {
+      "scene": "scene-0886",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0888",
+      "frames": [
+        23,
+        26,
+        29,
+        32,
+        35,
+        38,
+        42,
+        45
+      ],
+      "query_frames": [
+        48,
+        51,
+        54,
+        57
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0889__scene-0890",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0889",
+    "target_scene": "scene-0890",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.00013725943822356476,
+    "a": {
+      "scene": "scene-0889",
+      "frames": [
+        103,
+        106,
+        109,
+        112,
+        115,
+        118,
+        122,
+        125
+      ],
+      "query_frames": [
+        128,
+        131,
+        134,
+        137
+      ]
+    },
+    "b": {
+      "scene": "scene-0889",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0890",
+      "frames": [
+        41,
+        44,
+        47,
+        50,
+        53,
+        56,
+        59,
+        62
+      ],
+      "query_frames": [
+        65,
+        68,
+        71,
+        74
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0890__scene-0891",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0890",
+    "target_scene": "scene-0891",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.4353856611670475,
+    "a": {
+      "scene": "scene-0890",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-0890",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0891",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0895__scene-0896",
+    "split": "test",
+    "component_id": 57,
+    "source_scene": "scene-0895",
+    "target_scene": "scene-0896",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.3025602573607755,
+    "a": {
+      "scene": "scene-0895",
+      "frames": [
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        220,
+        223
+      ],
+      "query_frames": [
+        226,
+        229,
+        232,
+        235
+      ]
+    },
+    "b": {
+      "scene": "scene-0895",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0896",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0901__scene-0902",
+    "split": "test",
+    "component_id": 62,
+    "source_scene": "scene-0901",
+    "target_scene": "scene-0902",
+    "location": "boston-seaport",
+    "min_overlap_m": 0.990802186115982,
+    "a": {
+      "scene": "scene-0901",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "b": {
+      "scene": "scene-0901",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0902",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0904__scene-0905",
+    "split": "test",
+    "component_id": 20,
+    "source_scene": "scene-0904",
+    "target_scene": "scene-0905",
+    "location": "boston-seaport",
+    "min_overlap_m": 1.5643985812423686,
+    "a": {
+      "scene": "scene-0904",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0904",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0905",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0919__scene-0920",
+    "split": "test",
+    "component_id": 56,
+    "source_scene": "scene-0919",
+    "target_scene": "scene-0920",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.6815983440110096,
+    "a": {
+      "scene": "scene-0919",
+      "frames": [
+        203,
+        206,
+        209,
+        212,
+        215,
+        218,
+        222,
+        225
+      ],
+      "query_frames": [
+        228,
+        231,
+        234,
+        237
+      ]
+    },
+    "b": {
+      "scene": "scene-0919",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0920",
+      "frames": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        29,
+        32,
+        35
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0971__scene-0988",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0971",
+    "target_scene": "scene-0988",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.029845212773650643,
+    "a": {
+      "scene": "scene-0971",
+      "frames": [
+        123,
+        126,
+        129,
+        132,
+        135,
+        138,
+        141,
+        144
+      ],
+      "query_frames": [
+        147,
+        150,
+        153,
+        156
+      ]
+    },
+    "b": {
+      "scene": "scene-0971",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0988",
+      "frames": [
+        151,
+        154,
+        157,
+        160,
+        163,
+        166,
+        170,
+        173
+      ],
+      "query_frames": [
+        176,
+        179,
+        182,
+        185
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0971__scene-0989",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0971",
+    "target_scene": "scene-0989",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.11139148225999934,
+    "a": {
+      "scene": "scene-0971",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "b": {
+      "scene": "scene-0971",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0989",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0988__scene-0989",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0988",
+    "target_scene": "scene-0989",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.6420526012813557,
+    "a": {
+      "scene": "scene-0988",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0988",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0989",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0989__scene-0990",
+    "split": "test",
+    "component_id": 3,
+    "source_scene": "scene-0989",
+    "target_scene": "scene-0990",
+    "location": "singapore-onenorth",
+    "min_overlap_m": 0.746581848088259,
+    "a": {
+      "scene": "scene-0989",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "b": {
+      "scene": "scene-0989",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0990",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0997__scene-0998",
+    "split": "test",
+    "component_id": 42,
+    "source_scene": "scene-0997",
+    "target_scene": "scene-0998",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.015930984780951604,
+    "a": {
+      "scene": "scene-0997",
+      "frames": [
+        196,
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217
+      ],
+      "query_frames": [
+        220,
+        223,
+        226,
+        229
+      ]
+    },
+    "b": {
+      "scene": "scene-0997",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-0998",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-0999__scene-1000",
+    "split": "test",
+    "component_id": 15,
+    "source_scene": "scene-0999",
+    "target_scene": "scene-1000",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.5008837218896212,
+    "a": {
+      "scene": "scene-0999",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-0999",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1000",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1021__scene-1022",
+    "split": "test",
+    "component_id": 26,
+    "source_scene": "scene-1021",
+    "target_scene": "scene-1022",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 1.3467080448350932,
+    "a": {
+      "scene": "scene-1021",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1021",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1022",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1022__scene-1023",
+    "split": "test",
+    "component_id": 26,
+    "source_scene": "scene-1022",
+    "target_scene": "scene-1023",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 0.2116579805691014,
+    "a": {
+      "scene": "scene-1022",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1022",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1023",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1023__scene-1024",
+    "split": "test",
+    "component_id": 26,
+    "source_scene": "scene-1023",
+    "target_scene": "scene-1024",
+    "location": "singapore-queenstown",
+    "min_overlap_m": 1.0191518171606038,
+    "a": {
+      "scene": "scene-1023",
+      "frames": [
+        200,
+        203,
+        206,
+        209,
+        212,
+        215,
+        219,
+        222
+      ],
+      "query_frames": [
+        225,
+        228,
+        231,
+        234
+      ]
+    },
+    "b": {
+      "scene": "scene-1023",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1024",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1044__scene-1045",
+    "split": "test",
+    "component_id": 48,
+    "source_scene": "scene-1044",
+    "target_scene": "scene-1045",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.08640819701600881,
+    "a": {
+      "scene": "scene-1044",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "b": {
+      "scene": "scene-1044",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1045",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1044__scene-1046",
+    "split": "test",
+    "component_id": 48,
+    "source_scene": "scene-1044",
+    "target_scene": "scene-1046",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.1487194021600843,
+    "a": {
+      "scene": "scene-1044",
+      "frames": [
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        221,
+        224
+      ],
+      "query_frames": [
+        227,
+        230,
+        233,
+        236
+      ]
+    },
+    "b": {
+      "scene": "scene-1044",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1046",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1045__scene-1046",
+    "split": "test",
+    "component_id": 48,
+    "source_scene": "scene-1045",
+    "target_scene": "scene-1046",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.00012008271958733337,
+    "a": {
+      "scene": "scene-1045",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-1045",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1046",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1095__scene-1096",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1095",
+    "target_scene": "scene-1096",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.029180762532734227,
+    "a": {
+      "scene": "scene-1095",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1095",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1096",
+      "frames": [
+        122,
+        125,
+        128,
+        131,
+        134,
+        137,
+        141,
+        144
+      ],
+      "query_frames": [
+        147,
+        150,
+        153,
+        156
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1095__scene-1097",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1095",
+    "target_scene": "scene-1097",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.2523417540842384,
+    "a": {
+      "scene": "scene-1095",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1095",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1097",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1096__scene-1097",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1096",
+    "target_scene": "scene-1097",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.12076863228101316,
+    "a": {
+      "scene": "scene-1096",
+      "frames": [
+        204,
+        207,
+        210,
+        213,
+        216,
+        219,
+        223,
+        226
+      ],
+      "query_frames": [
+        229,
+        232,
+        235,
+        238
+      ]
+    },
+    "b": {
+      "scene": "scene-1096",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1097",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1097__scene-1098",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1097",
+    "target_scene": "scene-1098",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.22050014494946452,
+    "a": {
+      "scene": "scene-1097",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1097",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1098",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        19,
+        22
+      ],
+      "query_frames": [
+        25,
+        28,
+        31,
+        34
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1097__scene-1100",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1097",
+    "target_scene": "scene-1100",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 1.6250891703888124,
+    "a": {
+      "scene": "scene-1097",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        217,
+        220
+      ],
+      "query_frames": [
+        223,
+        226,
+        229,
+        232
+      ]
+    },
+    "b": {
+      "scene": "scene-1097",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1100",
+      "frames": [
+        42,
+        45,
+        48,
+        51,
+        54,
+        57,
+        60,
+        63
+      ],
+      "query_frames": [
+        66,
+        69,
+        72,
+        75
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1098__scene-1100",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1098",
+    "target_scene": "scene-1100",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 0.20195198699534203,
+    "a": {
+      "scene": "scene-1098",
+      "frames": [
+        47,
+        50,
+        53,
+        56,
+        59,
+        62,
+        66,
+        69
+      ],
+      "query_frames": [
+        72,
+        75,
+        78,
+        81
+      ]
+    },
+    "b": {
+      "scene": "scene-1098",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1100",
+      "frames": [
+        42,
+        45,
+        48,
+        51,
+        54,
+        57,
+        60,
+        63
+      ],
+      "query_frames": [
+        66,
+        69,
+        72,
+        75
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1098__scene-1101",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1098",
+    "target_scene": "scene-1101",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 1.2370873744843036,
+    "a": {
+      "scene": "scene-1098",
+      "frames": [
+        47,
+        50,
+        53,
+        56,
+        59,
+        62,
+        66,
+        69
+      ],
+      "query_frames": [
+        72,
+        75,
+        78,
+        81
+      ]
+    },
+    "b": {
+      "scene": "scene-1098",
+      "frames": [
+        199,
+        202,
+        205,
+        208,
+        211,
+        214,
+        218,
+        221
+      ],
+      "query_frames": [
+        224,
+        227,
+        230,
+        233
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1101",
+      "frames": [
+        28,
+        31,
+        34,
+        37,
+        40,
+        43,
+        46,
+        49
+      ],
+      "query_frames": [
+        52,
+        55,
+        58,
+        61
+      ]
+    }
+  },
+  {
+    "episode_id": "scene-1100__scene-1101",
+    "split": "test",
+    "component_id": 21,
+    "source_scene": "scene-1100",
+    "target_scene": "scene-1101",
+    "location": "singapore-hollandvillage",
+    "min_overlap_m": 1.660037283306411e-05,
+    "a": {
+      "scene": "scene-1100",
+      "frames": [
+        198,
+        201,
+        204,
+        207,
+        210,
+        213,
+        216,
+        219
+      ],
+      "query_frames": [
+        222,
+        225,
+        228,
+        231
+      ]
+    },
+    "b": {
+      "scene": "scene-1100",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    },
+    "a_prime": {
+      "scene": "scene-1101",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "query_frames": [
+        24,
+        27,
+        30,
+        33
+      ]
+    }
+  }
+]

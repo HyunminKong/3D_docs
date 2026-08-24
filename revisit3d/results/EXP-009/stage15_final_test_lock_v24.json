@@ -1,0 +1,18 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage15_final_test_lock",
+  "protocol_revision": "v2.4",
+  "split": "train_val_lock",
+  "validation_accessed": true,
+  "test_accessed": false,
+  "query_or_future_router_input": false,
+  "config": "configs/EXP-009_final_test_v24.yaml",
+  "artifact": "revisit3d/checkpoints/exp009_utility_mips_router_final_v24.joblib",
+  "artifact_sha256": "b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98",
+  "source_artifact_sha256": "f63422524853c6656e79c8670eecff3e47207f9bf5f60edd34fbe123e4247a2e",
+  "selected_capacity": 64,
+  "retention": "deterministic_reservoir",
+  "candidate_count": 5,
+  "capacity_selection_result": "revisit3d/results/EXP-009/stage14_capacity_selection_val_v23.json",
+  "test_accessed_after_lock": false
+}

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -12,6 +13,14 @@ import yaml
 
 from revisit3d.data import RevisitEpisodeDataset
 from revisit3d.scripts.cache_exp006_frozen_outputs import _geometry_pass, _tracker_pass
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def main() -> None:
@@ -30,13 +39,18 @@ def main() -> None:
         raise RuntimeError("locked test cache already exists")
     lock = json.loads(Path(config["output"]["lock_result"]).read_text())
     audit = json.loads(Path(config["output"]["pilot_audit"]).read_text())
+    manifest_path = Path(config["data"]["manifest"])
+    artifact_path = Path(config["output"]["artifact"])
     if not (
         lock.get("test_accessed") is False
         and lock.get("selected_capacity") == 64
+        and lock.get("artifact_sha256") == _sha256(artifact_path)
         and audit.get("split") == "test"
         and audit.get("image_pixels_accessed") is False
         and audit.get("directional_episodes") == 117
         and audit.get("components") == 22
+        and Path(audit.get("pilot_manifest", "")) == manifest_path
+        and audit.get("pilot_manifest_sha256") == _sha256(manifest_path)
     ):
         raise RuntimeError("test cache requested before complete final lock")
     dataset = RevisitEpisodeDataset(
