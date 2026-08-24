@@ -123,3 +123,13 @@ The primary passed all checks. Its candidate OOF Spearman was **0.299**; top-K o
 Stage 9 held out target components, but one source memory can occur in training pairs for other targets. Correct this by leave-one-location-out evaluation: for a held location, remove every training pair whose target **or source** belongs to that location, then test all target pairs from the held location. This prevents direct source-entity exposure and tests geographic transfer.
 
 The exactly factorable 256-D transport-descriptor pair features are primary; their linear score can later be compiled into a 64-D maximum-inner-product address. DINO, adaptation history, and all-observable features remain fixed ablations. The primary must have positive pooled and per-location utility association, positive component-bootstrap gains over matched random for oracle and routed utility, and no higher routed harm.
+
+### Stage-10 result
+
+The source-safe correction passed all checks. The transport-descriptor address retained pooled OOF Spearman **0.203**, with every unseen location positive (0.182–0.235). It achieved **+0.03149** oracle top-K and **+0.01933** routed utility with 9.17% harm. Relative to matched random, the component-bootstrap gains were [+0.00380, +0.00630] oracle and [+0.00037, +0.00512] routed. DINO-only remained negative. This authorizes the factorized utility address, but not yet a capacity policy.
+
+## Stage-11 source-safe capacity-8 replay
+
+Before opening validation, replay a separate true-time stream per official location. For each held location, train the transport-descriptor address and source-history retention score only on pairs whose target and source are both outside that location. Compare an unbounded utility-addressed bank with capacity-8 history retention, FIFO, and deterministic reservoir sampling. Every policy uses K=5 and the same transported code/router.
+
+History retention passes only if it retains at least 90% of unbounded routed utility, beats FIFO and reservoir, has no more harm than FIFO, and has a positive component-bootstrap lower bound over FIFO. If it fails, choose the safest passing simple retention policy rather than tuning the history score.

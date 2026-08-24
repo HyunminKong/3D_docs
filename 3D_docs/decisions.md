@@ -390,3 +390,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-10 fitting
 
 Target-component OOF does not exclude a memory source from appearing in another target's training pairs. The audit found 147 to 4,002 held-location source rows in the corresponding naive training folds. Stage 10 therefore leaves out an entire location and removes every training row whose target or source belongs to that location. The transport-descriptor Ridge is the registered primary because it is both strong and exactly factorable into a 64-D MIPS query/source score; DINO-only, history-only, and all-observable models are ablations. Positive pooled and each-location association plus random-null utility and harm gates are required before fitting a deployable artifact.
+
+## D057 — Accept the factorized utility address after source-safe transfer
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-10 execution
+
+With held-location targets and sources excluded from training, the transport-descriptor scorer retained positive association in all four locations (0.182–0.235), 0.03149 oracle top-K utility, 0.01933 routed utility, and 9.17% harm. Its random-relative component intervals remained positive. Because its linear features are `[c, s, c-s, c*s]`, the score can be rearranged exactly into a current-conditioned 64-D maximum-inner-product query against each stored source descriptor. This utility-MIPS form is the provisional long-term address. A capacity policy must still pass a causal replay before validation is opened.
+
+## D058 — Test history retention at capacity 8 before validation
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-11 execution
+
+The strong history-only utility signal may be useful for retention even though the transport descriptor is the retrieval address. Stage 11 runs independent true-time streams per location and trains both scores with the held location entirely excluded. The primary bank keeps the eight records with highest source-only adaptation-history priority and retrieves five by utility-MIPS. Unbounded, FIFO-8, and deterministic reservoir-8 are controls. History retention is accepted only if it retains at least 90% of unbounded routed utility, beats FIFO and reservoir, has no greater harm than FIFO, and has a positive component interval over FIFO. A failed learned policy is not repaired; the safest simple policy becomes the validation bank.

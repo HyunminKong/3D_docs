@@ -1,0 +1,38 @@
+experiment: EXP-009
+protocol_revision: v2.1
+seed: 900021
+
+source:
+  stage7_config: configs/EXP-009_causal_dino_retrieval_v17.yaml
+  stage8_candidate_cache: revisit3d/cache/EXP-009/random_retrieval_null_candidates_train_v18.json
+  stage10_result: revisit3d/results/EXP-009/stage10_location_crossfit_prefilter_train_v20.json
+
+bank:
+  stream_partition: official_location
+  true_timestamp_order: true
+  unique_context_writes: true
+  capacity: 8
+  candidate_count: 5
+  address: strict_location_crossfit_transport_descriptor_ridge
+  policies:
+    - unbounded_utility_address
+    - history_capacity8
+    - fifo_capacity8
+    - reservoir_capacity8
+  history_retention_features: adaptation_history_source_only
+
+statistics:
+  utility_deadband: 0.01
+  bootstrap_samples: 10000
+  bootstrap_seed: 900021
+
+success:
+  minimum_retention_of_unbounded_router_utility: 0.90
+  history_router_must_beat_fifo: true
+  history_router_must_beat_reservoir: true
+  history_harm_not_above_fifo: true
+  history_minus_fifo_component_interval_positive: true
+
+output:
+  candidate_cache: revisit3d/cache/EXP-009/capacity_bank_candidates_train_v21.json
+  result: revisit3d/results/EXP-009/stage11_capacity_bank_train_v21.json
