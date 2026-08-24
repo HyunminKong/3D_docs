@@ -7,6 +7,7 @@
 | [EXP-003](EXP-003_compact_state_reuse.md) | Can global/slot compact TTT states be reused? | Completed | Generic warm-start exists, but state-specific utility and retrieval selectivity fail. |
 | [EXP-004](EXP-004_keys_and_update_routing.md) | Can learned keys and update compatibility retrieve the right experience? | Completed | Keys are weak and learned update vectors collapse; vector cosine is not an adequate reranker. |
 | [EXP-005](EXP-005_dense_3d_atom_transport.md) | Does a spatially transported local atom show reusable causal utility? | Completed | Feasibility supported; learned utility/risk is required for safety. |
-| [EXP-006](EXP-006_trainable_3d_atom_risk_routing.md) | Can local TTT memory and observable utility/risk routing generalize without oracle poses? | In progress; train OOF architecture gate complete | Visual local reuse is causal and reusable; predicted geometry is evidence rather than carrier; utility routing is feasible, but grouped risk supervision requires more train components. |
+| [EXP-006](EXP-006_trainable_3d_atom_risk_routing.md) | Can local TTT memory and observable utility/risk routing generalize without oracle poses? | Completed | One-shot descriptive validation supports visual local reuse and utility ranking; learned rejection and paper-scale generalization remain open. |
+| [EXP-007](EXP-007_continual_atom_consolidation.md) | Can a causal, capacity-bounded atom bank retain routed revisit benefit? | Starting | Stage 0 will measure causal full-bank/top-K utility and capacity curves before merge/eviction learning. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

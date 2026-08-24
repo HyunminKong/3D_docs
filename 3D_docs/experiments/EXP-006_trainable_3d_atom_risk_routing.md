@@ -2,7 +2,7 @@
 
 ## Status
 
-In progress. Expanded train-only OOF model selection is complete and the v2.8 one-shot validation lock is active as of 2026-08-25. Exact OOF evidence supports visual local-code reuse and regularized utility routing, rejects predicted 3D alignment as carrier/primary router input, and rejects the current explicit neural risk classifier. Official validation remains unopened.
+Completed. Expanded train-only OOF model selection and the pre-registered v2.8 one-shot validation are complete as of 2026-08-25. Exact OOF evidence and descriptive validation support visual local-code reuse and regularized utility ranking, reject predicted 3D alignment as carrier/primary router input, and reject the current explicit neural risk classifier.
 
 ## Question
 
@@ -319,3 +319,27 @@ The result supports utility observability but not a separate risk-classifier cla
 The validation model, features, normalization, PCA rank, ridge alpha, utility threshold, candidate set, visual transport, one-step TTT, and reuse strength are frozen in D023 and the v2.8 brief. Validation may now be evaluated exactly once. No validation result may be used to modify this EXP-006 model.
 
 D024 additionally freezes the descriptive go/no-go checks before validation cache/model-output access. The train-only final router artifact and its hashes must be recorded before the guarded validation command is run.
+
+## One-shot v2.8 validation — descriptive gate passed
+
+Result: `revisit3d/results/EXP-006/stage2_router_validation_v28.json`
+
+Pre-validation commit: `2458626`
+
+The unchanged validation split contains 14 directional episodes in two physical-overlap components. The cache reused the v2.7 train PCA; query/future quantities were evaluation targets only; the closed test split was not accessed.
+
+| Selector | Mean utility | Deadband harm | Mean regret |
+|---|---:|---:|---:|
+| Locked router | **+0.01785** | **0.00%** | **0.00503** |
+| Visual mean | +0.01407 | 7.14% | 0.00881 |
+| Current objective | +0.01290 | 0.00% | 0.00998 |
+| Appearance similarity | +0.01073 | 14.29% | 0.01215 |
+| Matched identity | +0.00788 | 14.29% | 0.01500 |
+| Random expectation | +0.01402 | 7.14% | 0.00886 |
+| Oracle candidate | +0.02288 | 0.00% | 0.00000 |
+
+All D024 checks passed. Router minus visual mean was +0.00378; its two-component descriptive bootstrap interval was [+0.00064, +0.00430]. The router accepted all 14 episodes. Two selected utilities were slightly negative by raw sign, and the smaller component mean was −0.00670, but neither crossed the fixed −0.01 harm deadband. Therefore the result supports ranking and bounded residual reuse, not learned rejection. The absolute router bootstrap interval crosses zero and the split has only two components, so this closes only the EXP-006 feasibility gate. A new paper-scale closed benchmark remains required.
+
+## Conclusion
+
+H1, H3, and H4-U are supported at feasibility level. H2-P, H2-E as a primary input, and H4-R are rejected in their tested forms. EXP-007 may begin continual memory capacity/consolidation on train-only streams without revisiting this validation for model selection.

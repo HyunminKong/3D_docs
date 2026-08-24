@@ -80,4 +80,4 @@ Generic parameter-protection methods remain ablations rather than the central me
 
 ## Current evidence boundary
 
-The architecture choice is based on exact train-only OOF estimates from 19 overlap components. The explicit neural risk head was identifiable after expansion but did not reduce selected harm, so it is not part of the locked model. The regularized utility router is locked for one-shot validation; the EXP-005 test split remains closed.
+The architecture choice is based on exact train-only OOF estimates from 19 overlap components. The explicit neural risk head was identifiable after expansion but did not reduce selected harm, so it is not part of the locked model. The regularized utility router passed its one-shot 14-episode/two-component descriptive validation gate at +1.79% utility and zero deadband harm, but accepted every episode. Thus candidate ranking and bounded reuse are supported; learned rejection and broad generalization are not. EXP-007 uses train-only causal streams for continual-bank design, and both the EXP-006 validation and exposed test split are closed to its model selection.

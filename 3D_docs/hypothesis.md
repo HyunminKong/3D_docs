@@ -6,7 +6,7 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Partially supported on train OOF.** Visual local transport achieved +1.62% utility, whereas untransported local reuse was negative and a global vector gave only +0.21%. Generalization beyond 8 overlap components is open.
+Status: **Supported as feasibility evidence.** Expanded train OOF visual transport achieved +1.80% candidate utility, and the utility-routed local memory reproduced at +1.79% on one-shot validation. Validation has only two components, so broader generalization remains open.
 
 ## H2-P — Predicted geometry as the update carrier
 
@@ -24,13 +24,13 @@ Status: **Rejected as a primary input.** The small 8-component increment did not
 
 Current-only loss changes, update statistics, descriptors, and transport/alignment evidence predict the future utility of a past local update without accessing future frames online.
 
-Status: **Supported on expanded train OOF.** Appearance plus current/source adaptation history selected +2.80% utility with 2.63% harm, versus +1.84%/3.95% for visual mean and +1.38%/2.63% for current-objective routing. One-shot validation remains required.
+Status: **Supported as feasibility evidence.** Appearance plus current/source adaptation history selected +2.80% utility with 2.63% harm on expanded train OOF. The locked validation model achieved +1.79% with zero deadband harm and beat all registered mean-utility controls. Its 100% accept rate means rejection behavior is not established.
 
 ## H4-U — Learnable utility routing
 
 A trainable candidate/current utility head can outperform current-loss, appearance-similarity, paired-identity, random-candidate, and visual-mean controls under grouped OOF evaluation.
 
-Status: **Supported on expanded train OOF.** The locked regularized utility router reached +2.80% selected utility and 0.51% regret. Its advantage over visual mean was +0.98 percentage points with component-bootstrap 95% CI [+0.63, +1.45]. Official validation remains unopened.
+Status: **Supported for ranking as feasibility evidence.** The locked regularized utility router reached +2.80% selected utility and 0.51% regret on expanded train OOF. On one-shot validation it reached +1.79% and 0.50% regret versus +1.41% visual mean, +1.29% current objective, and +0.79% matched identity. The two-component result is not paper-level confirmation, and reject-all/negative-transfer detection remains open.
 
 ## H4-R — Learnable negative-transfer risk
 
@@ -42,7 +42,7 @@ Status: **Rejected for the current explicit classifier.** Expansion produced 17 
 
 Merging compatible local memories and preserving uncertainty/utility statistics can bound memory while retaining revisit benefit.
 
-Status: **Open; persistent-bank experiments are gated on H4-U/H4-R.**
+Status: **Open and active in EXP-007.** H4-U passed the registered descriptive validation gate. H4-R remains rejected, so initial consolidation relies on bounded reuse and utility ranking rather than claiming a learned risk classifier.
 
 ## H6 — Extension to dynamic 4D
 

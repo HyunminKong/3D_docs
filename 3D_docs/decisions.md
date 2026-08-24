@@ -166,3 +166,10 @@ Date: 2026-08-25
 Status: Accepted before validation cache creation or model-output access
 
 The v2.8 claim is supported on the one-shot validation only if the locked router satisfies all of the following without tuning: mean selected utility exceeds the fixed 0.01 deadband; mean utility exceeds visual mean, current-objective selection, appearance similarity, matched identity, and random-candidate expectation; no physical-overlap component has mean utility below −0.01; directional harm is no worse than visual mean; and accept rate is at least 0.20. Failure of any item is reported as a failed strict claim rather than repaired on validation. Because validation contains only two physical-overlap components, this decision is descriptive feasibility evidence and cannot serve as paper-level confirmation. The final model is fit on all train-only OOF feature/utility rows after architecture selection; its artifact hash is frozen before validation evaluation.
+
+## D025 — Close EXP-006 and open train-only continual-bank feasibility
+
+Date: 2026-08-25
+Status: Accepted after the single locked validation evaluation
+
+The locked router achieved +0.01785 mean validation utility, zero deadband harm, and +0.00503 regret, exceeding all D024 controls. All five checks passed without tuning. This closes EXP-006 as feasibility support for visual local-code reuse and utility ranking. It does not establish learned rejection: the router accepted all 14 episodes, and the two-component absolute bootstrap interval crosses zero. EXP-007 may now study causal bank capacity and consolidation on train only. EXP-006 validation is closed to all EXP-007 design/model selection, and the exposed test split remains prohibited.

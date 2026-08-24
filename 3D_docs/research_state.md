@@ -48,6 +48,21 @@ All results are exact train-only OOF estimates over 76 directional episodes, 38 
 
 Risk-label diversity now passes: 242 beneficial, 121 neutral, and 17 harmful candidates across three folds. However, neural risk heads did not improve selected harm. The explicit risk-classifier hypothesis is rejected in its current form.
 
+## One-shot validation evidence
+
+The D023/D024-locked model was evaluated exactly once on the unchanged 14-episode validation split (2 physical-overlap components):
+
+- Locked utility router: **+1.785%** mean utility, **0%** deadband harm, **0.503%** regret, **100%** accept.
+- Visual mean: **+1.407%**, 7.14% harm.
+- Current objective: **+1.290%**, 0% harm.
+- Appearance similarity: **+1.073%**, 14.29% harm.
+- Matched identity: **+0.788%**, 14.29% harm.
+- Random candidate expectation: **+1.402%**.
+- Oracle candidate: **+2.288%**.
+- Router minus visual mean: **+0.378 points**; two-component descriptive bootstrap CI **[+0.064, +0.430]**.
+
+All five D024 descriptive checks passed. The router accepted every episode, so validation supports candidate ranking and bounded reuse but does not establish learned rejection. Its absolute two-component bootstrap CI crosses zero because one small component has neutral mean utility (−0.67%). This is a feasibility gate, not paper-level generalization.
+
 ## Experiment status
 
 - EXP-001 — tttLRM fast-weight premise probes: completed, negative.
@@ -55,19 +70,20 @@ Risk-label diversity now passes: 242 beneficial, 121 neutral, and 17 harmful can
 - EXP-003 — compact/global/slot reuse: completed, negative for selectivity.
 - EXP-004 — retrieval keys and vector routing: completed, partial/negative.
 - EXP-005 — dense oracle 3D transport: completed as controlled evidence; test split closed.
-- EXP-006 — expanded train OOF architecture/model selection complete; one-shot validation model locked in D023; validation not yet accessed.
+- EXP-006 — completed; expanded train OOF and one-shot validation support the locked utility-routed visual-memory feasibility claim.
+- EXP-007 — continual bank capacity/consolidation feasibility: starting with train-only causal-stream construction.
 
 ## Current hypothesis status
 
-- H1 local reusable adaptation: supported on expanded train OOF.
+- H1 local reusable adaptation: supported on expanded train OOF and descriptive validation.
 - H2-P predicted geometry carrier: rejected.
 - H2-E predicted geometry primary router evidence: rejected.
-- H3 online utility observability: supported on expanded train OOF.
-- H4-U learned utility routing: supported on expanded train OOF; validation pending.
+- H3 online utility observability: supported on expanded train OOF and descriptive validation.
+- H4-U learned utility routing: supported for ranking on expanded train OOF and descriptive validation; reject behavior remains unproven.
 - H4-R explicit risk classifier: rejected in current form.
-- H5 continual consolidation: gated on one-shot validation.
+- H5 continual consolidation: active in EXP-007.
 - H6 dynamic 4D extension: open.
 
 ## Next step
 
-Run exactly one validation evaluation using the D023-locked model and unchanged 14 validation episodes. Do not tune on that result. If utility routing reproduces with acceptable harm, close EXP-006 and begin EXP-007 continual memory/consolidation. If it fails, report the failure and revisit the scientific hypothesis using train-only/new data rather than adapting to validation.
+Build EXP-007 Stage 0 on train only: construct a causally ordered bank from already-observed contexts, measure full-bank/top-K oracle and locked-router utility, then test capacity curves before designing merge/eviction learning. The EXP-006 validation and exposed test split are closed to EXP-007 model selection.
