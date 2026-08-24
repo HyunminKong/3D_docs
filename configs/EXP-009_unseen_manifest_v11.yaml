@@ -1,0 +1,25 @@
+experiment: EXP-009
+protocol_revision: v1.1
+seed: 900
+
+source:
+  inventory: revisit3d/cache/EXP-009/unseen_overlap_inventory_v10.json
+  inventory_summary: revisit3d/results/EXP-009/stage0_unseen_overlap_inventory_v10.json
+
+segments:
+  context_frames: 8
+  query_frames: 4
+  local_radius_fraction: 0.15
+
+minimum_split_health:
+  train_directional_episodes: 1000
+  val_directional_episodes: 200
+  test_directional_episodes: 200
+  val_scenes: 50
+  test_scenes: 50
+  val_locations: 4
+  test_locations: 4
+
+output:
+  manifest: revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json
+  result: revisit3d/results/EXP-009/stage1_unseen_manifest_v11.json

@@ -285,3 +285,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-0 execution
 
 EXP-009 first inventories all unused nuScenes trainval scenes using only official camera/ego pose, timestamp, calibration, log location, and scene metadata. Every scene present in prior converted roots or manifests is blacklisted conservatively. Within each location, scene pairs receive an overlap edge at 2.0 m camera-center distance; connected overlap components are indivisible split units. A fixed deterministic greedy procedure targets 70/15/15 undirected-edge balance within each location. No image is opened and no model signal is available. If graph connectivity prevents credible independent splits, the protocol must be revised from metadata alone before any new scene is converted or encoded.
+
+## D042 — Freeze all healthy unseen overlap edges before feature extraction
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-1 execution
+
+The metadata inventory found 1,368 unseen undirected edges in 65 components. The fixed split has 2,268/234/234 directional train/validation/test episodes, zero scene overlap, zero component overlap, at least 86 scenes in each holdout, and all four locations in each holdout. The 304-scene giant component is confined to train. This is healthy enough to freeze without resampling. Stage 1 converts every edge in both directions using the established eight-context/four-query segment construction. All health and leakage assertions must pass before any scene conversion, feature extraction, or model training. The new validation and test remain unopened after manifest creation.
