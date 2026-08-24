@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "accept_rate": 0.8571428571428571,
+    "mean_selected_minus_current": -0.0005975144782236644,
+    "harm_rate": 0.07142857142857142
+  },
+  "rows": [
+    {
+      "accepted": false,
+      "selected_minus_current": 0.0,
+      "selected": 0.20394881069660187,
+      "current": 0.20394881069660187
+    },
+    {
+      "accepted": false,
+      "selected_minus_current": 0.0,
+      "selected": 0.27808550000190735,
+      "current": 0.27808550000190735
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.00043465569615364075,
+      "selected": 0.05216623842716217,
+      "current": 0.05260089412331581
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": 0.0003358013927936554,
+      "selected": 0.05477576702833176,
+      "current": 0.0544399656355381
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0006413422524929047,
+      "selected": 0.05102275684475899,
+      "current": 0.05166409909725189
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.00015348196029663086,
+      "selected": 0.07591656595468521,
+      "current": 0.07607004791498184
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0019994229078292847,
+      "selected": 0.1043458804488182,
+      "current": 0.10634530335664749
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0018180683255195618,
+      "selected": 0.11029324680566788,
+      "current": 0.11211131513118744
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0006011240184307098,
+      "selected": 0.0474020317196846,
+      "current": 0.04800315573811531
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0002354644238948822,
+      "selected": 0.05373735353350639,
+      "current": 0.053972817957401276
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0010807700455188751,
+      "selected": 0.05554744601249695,
+      "current": 0.05662821605801582
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0003095194697380066,
+      "selected": 0.09771422296762466,
+      "current": 0.09802374243736267
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0006779804825782776,
+      "selected": 0.03343020752072334,
+      "current": 0.03410818800330162
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0007491745054721832,
+      "selected": 0.035326723009347916,
+      "current": 0.0360758975148201
+    }
+  ]
+}

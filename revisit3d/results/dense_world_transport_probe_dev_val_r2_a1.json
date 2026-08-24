@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "utility_top1": 0.21428571428571427,
+    "utility_recall_at_3": 0.35714285714285715,
+    "mean_positive_rank": 6.0,
+    "matched_minus_current": -0.00033935638410704475,
+    "matched_minus_foreign": -0.00010110873851802208
+  },
+  "rows": [
+    {
+      "positive_rank": 1,
+      "current": 0.2040131539106369,
+      "matched": 0.2036142349243164,
+      "mean_foreign": 0.2039269140133491,
+      "matched_minus_current": -0.0003989189863204956,
+      "matched_minus_foreign": -0.00031267908903268027
+    },
+    {
+      "positive_rank": 1,
+      "current": 0.2780737280845642,
+      "matched": 0.2777968645095825,
+      "mean_foreign": 0.2779969871044159,
+      "matched_minus_current": -0.00027686357498168945,
+      "matched_minus_foreign": -0.00020012259483337402
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.052682407200336456,
+      "matched": 0.05190914496779442,
+      "mean_foreign": 0.052510955585883215,
+      "matched_minus_current": -0.000773262232542038,
+      "matched_minus_foreign": -0.0006018106180887967
+    },
+    {
+      "positive_rank": 6,
+      "current": 0.054701413959264755,
+      "matched": 0.0544690303504467,
+      "mean_foreign": 0.05458641711335916,
+      "matched_minus_current": -0.0002323836088180542,
+      "matched_minus_foreign": -0.00011738676291245947
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.051813188940286636,
+      "matched": 0.05209828540682793,
+      "mean_foreign": 0.05200816060488041,
+      "matched_minus_current": 0.0002850964665412903,
+      "matched_minus_foreign": 9.012480194751926e-05
+    },
+    {
+      "positive_rank": 1,
+      "current": 0.07647955417633057,
+      "matched": 0.0754607543349266,
+      "mean_foreign": 0.07684489110341439,
+      "matched_minus_current": -0.0010187998414039612,
+      "matched_minus_foreign": -0.0013841367684877814
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.10646545886993408,
+      "matched": 0.10563250631093979,
+      "mean_foreign": 0.1056278903896992,
+      "matched_minus_current": -0.0008329525589942932,
+      "matched_minus_foreign": 4.615921240583298e-06
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.11258861422538757,
+      "matched": 0.11216811835765839,
+      "mean_foreign": 0.11166989860626367,
+      "matched_minus_current": -0.000420495867729187,
+      "matched_minus_foreign": 0.0004982197513947184
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.04826956242322922,
+      "matched": 0.0483231320977211,
+      "mean_foreign": 0.0482513251212927,
+      "matched_minus_current": 5.3569674491882324e-05,
+      "matched_minus_foreign": 7.180697642839712e-05
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.054077859967947006,
+      "matched": 0.05359384045004845,
+      "mean_foreign": 0.05404151431643046,
+      "matched_minus_current": -0.00048401951789855957,
+      "matched_minus_foreign": -0.0004476738663820104
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.05667347088456154,
+      "matched": 0.05640094354748726,
+      "mean_foreign": 0.056255790763176404,
+      "matched_minus_current": -0.0002725273370742798,
+      "matched_minus_foreign": 0.00014515278431085493
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.09808747470378876,
+      "matched": 0.09785699844360352,
+      "mean_foreign": 0.09737507311197427,
+      "matched_minus_current": -0.0002304762601852417,
+      "matched_minus_foreign": 0.000481925331629246
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.03413819149136543,
+      "matched": 0.03400466591119766,
+      "mean_foreign": 0.03387818600122745,
+      "matched_minus_current": -0.00013352558016777039,
+      "matched_minus_foreign": 0.00012647990997020908
+    },
+    {
+      "positive_rank": 12,
+      "current": 0.03624330833554268,
+      "matched": 0.03622787818312645,
+      "mean_foreign": 0.035997916299563185,
+      "matched_minus_current": -1.5430152416229248e-05,
+      "matched_minus_foreign": 0.00022996188356326497
+    }
+  ],
+  "radius": 2.0,
+  "appearance_weight": 1.0
+}

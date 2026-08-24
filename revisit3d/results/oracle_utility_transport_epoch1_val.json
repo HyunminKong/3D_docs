@@ -1,0 +1,46 @@
+{
+  "checkpoint": "revisit3d/checkpoints/oracle_utility_transport_epoch1.pt",
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "foreign_episode": "scene-0006__scene-0022",
+      "cold": 0.15932749211788177,
+      "current": 0.1601240336894989,
+      "matched": 0.15898790955543518,
+      "foreign": 0.1589910238981247,
+      "matched_minus_current": -0.0011361241340637207,
+      "matched_minus_foreign": -3.11434268951416e-06,
+      "matched_prior_norm": 0.6402975916862488,
+      "foreign_prior_norm": 0.6607521772384644,
+      "prior_difference_norm": 0.023970402777194977,
+      "prior_cosine": 0.9998154640197754
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "foreign_episode": "scene-0006__scene-0022",
+      "cold": 0.19959485530853271,
+      "current": 0.19603192806243896,
+      "matched": 0.21359030902385712,
+      "foreign": 0.21327733993530273,
+      "matched_minus_current": 0.017558380961418152,
+      "matched_minus_foreign": 0.0003129690885543823,
+      "matched_prior_norm": 0.6527426242828369,
+      "foreign_prior_norm": 0.6568840742111206,
+      "prior_difference_norm": 0.006272512953728437,
+      "prior_cosine": 0.9999740123748779
+    }
+  ],
+  "summary": {
+    "cold": 0.17946117371320724,
+    "current": 0.17807798087596893,
+    "matched": 0.18628910928964615,
+    "foreign": 0.18613418191671371,
+    "matched_minus_current": 0.008211128413677216,
+    "matched_minus_foreign": 0.00015492737293243408,
+    "matched_prior_norm": 0.6465201079845428,
+    "foreign_prior_norm": 0.6588181257247925,
+    "prior_difference_norm": 0.015121457865461707,
+    "prior_cosine": 0.9998947381973267
+  }
+}

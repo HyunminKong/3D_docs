@@ -1,0 +1,107 @@
+{
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "positive": 0.9987043142318726,
+      "b": 0.9857917428016663,
+      "top1": false,
+      "rank": 4
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "positive": 0.9987043142318726,
+      "b": 0.9906802773475647,
+      "top1": false,
+      "rank": 5
+    },
+    {
+      "episode": "scene-0298__scene-0476",
+      "positive": 0.9971306324005127,
+      "b": 0.993043065071106,
+      "top1": false,
+      "rank": 6
+    },
+    {
+      "episode": "scene-0476__scene-0298",
+      "positive": 0.9971306324005127,
+      "b": 0.9989733695983887,
+      "top1": false,
+      "rank": 9
+    },
+    {
+      "episode": "scene-0298__scene-0717",
+      "positive": 0.9958800077438354,
+      "b": 0.9947336316108704,
+      "top1": false,
+      "rank": 9
+    },
+    {
+      "episode": "scene-0717__scene-0298",
+      "positive": 0.9958800077438354,
+      "b": 0.9826803207397461,
+      "top1": false,
+      "rank": 9
+    },
+    {
+      "episode": "scene-0298__scene-0719",
+      "positive": 0.9988687634468079,
+      "b": 0.9927057027816772,
+      "top1": false,
+      "rank": 5
+    },
+    {
+      "episode": "scene-0719__scene-0298",
+      "positive": 0.9988687634468079,
+      "b": 0.9867942929267883,
+      "top1": false,
+      "rank": 4
+    },
+    {
+      "episode": "scene-0476__scene-0717",
+      "positive": 0.9981968998908997,
+      "b": 0.9979143142700195,
+      "top1": false,
+      "rank": 4
+    },
+    {
+      "episode": "scene-0717__scene-0476",
+      "positive": 0.9981968998908997,
+      "b": 0.9863338470458984,
+      "top1": false,
+      "rank": 6
+    },
+    {
+      "episode": "scene-0476__scene-0719",
+      "positive": 0.9974952936172485,
+      "b": 0.9962305426597595,
+      "top1": false,
+      "rank": 6
+    },
+    {
+      "episode": "scene-0719__scene-0476",
+      "positive": 0.9974952936172485,
+      "b": 0.9821456670761108,
+      "top1": false,
+      "rank": 4
+    },
+    {
+      "episode": "scene-0717__scene-0719",
+      "positive": 0.9992020130157471,
+      "b": 0.980050802230835,
+      "top1": false,
+      "rank": 2
+    },
+    {
+      "episode": "scene-0719__scene-0717",
+      "positive": 0.9992020130157471,
+      "b": 0.9619612693786621,
+      "top1": false,
+      "rank": 2
+    }
+  ],
+  "summary": {
+    "top1": 0.0,
+    "mean_rank": 5.357142857142857,
+    "positive_minus_b": 0.010065500225339617
+  }
+}

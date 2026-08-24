@@ -1,0 +1,234 @@
+{
+  "checkpoint": "revisit3d/checkpoints/anchored_router_dev_epoch1.pt",
+  "head_type": "anchored",
+  "split": "train",
+  "rows": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "loss_a": 0.0943896621465683,
+      "loss_b": 0.2426023930311203,
+      "loss_a_prime": 0.08691400289535522,
+      "delta_norm_a": 0.00041283093742094934,
+      "delta_norm_b": 0.0002613264077808708,
+      "delta_norm_a_prime": 0.00035754547570832074,
+      "matched_cosine": 0.7592215538024902,
+      "intervening_cosine": 0.054916393011808395
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "loss_a": 0.08691400289535522,
+      "loss_b": 0.2053506076335907,
+      "loss_a_prime": 0.0943896621465683,
+      "delta_norm_a": 0.00035754547570832074,
+      "delta_norm_b": 0.00018585044017527252,
+      "delta_norm_a_prime": 0.00041283093742094934,
+      "matched_cosine": 0.7592215538024902,
+      "intervening_cosine": 0.26201823353767395
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "loss_a": 0.1047683134675026,
+      "loss_b": 0.025326792150735855,
+      "loss_a_prime": 0.08156745880842209,
+      "delta_norm_a": 0.000636689190287143,
+      "delta_norm_b": 0.00015838259423617274,
+      "delta_norm_a_prime": 0.0010331619996577501,
+      "matched_cosine": 0.4830268919467926,
+      "intervening_cosine": 0.7216208577156067
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "loss_a": 0.08156745880842209,
+      "loss_b": 0.024859828874468803,
+      "loss_a_prime": 0.1047683134675026,
+      "delta_norm_a": 0.0010331619996577501,
+      "delta_norm_b": 0.00013947836123406887,
+      "delta_norm_a_prime": 0.000636689190287143,
+      "matched_cosine": 0.4830268919467926,
+      "intervening_cosine": 0.5427972078323364
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "loss_a": 0.10258430987596512,
+      "loss_b": 0.12276588380336761,
+      "loss_a_prime": 0.024688953533768654,
+      "delta_norm_a": 0.00019804551266133785,
+      "delta_norm_b": 0.0001986655843211338,
+      "delta_norm_a_prime": 0.00019991093722637743,
+      "matched_cosine": 0.9288384318351746,
+      "intervening_cosine": 0.2572823166847229
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "loss_a": 0.024688953533768654,
+      "loss_b": 0.021160650998353958,
+      "loss_a_prime": 0.10258430987596512,
+      "delta_norm_a": 0.00019991093722637743,
+      "delta_norm_b": 0.00017583042790647596,
+      "delta_norm_a_prime": 0.00019804551266133785,
+      "matched_cosine": 0.9288384318351746,
+      "intervening_cosine": 0.9977101683616638
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "loss_a": 0.10748168081045151,
+      "loss_b": 0.0769876092672348,
+      "loss_a_prime": 0.10180895030498505,
+      "delta_norm_a": 0.00044057093327865005,
+      "delta_norm_b": 0.00016461635823361576,
+      "delta_norm_a_prime": 0.0003111418045591563,
+      "matched_cosine": 0.9704774618148804,
+      "intervening_cosine": 0.9468278884887695
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "loss_a": 0.10180895030498505,
+      "loss_b": 0.04938390851020813,
+      "loss_a_prime": 0.10748168081045151,
+      "delta_norm_a": 0.0003111418045591563,
+      "delta_norm_b": 0.00027427845634520054,
+      "delta_norm_a_prime": 0.00044057093327865005,
+      "matched_cosine": 0.9704774618148804,
+      "intervening_cosine": 0.9795246124267578
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "loss_a": 0.12991458177566528,
+      "loss_b": 0.2651962637901306,
+      "loss_a_prime": 0.0762917622923851,
+      "delta_norm_a": 0.0002120460121659562,
+      "delta_norm_b": 0.0013189588207751513,
+      "delta_norm_a_prime": 0.00041302532190456986,
+      "matched_cosine": 0.3623148500919342,
+      "intervening_cosine": 0.033839814364910126
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "loss_a": 0.0762917622923851,
+      "loss_b": 0.11299813538789749,
+      "loss_a_prime": 0.12991458177566528,
+      "delta_norm_a": 0.00041302532190456986,
+      "delta_norm_b": 0.0006435519899241626,
+      "delta_norm_a_prime": 0.0002120460121659562,
+      "matched_cosine": 0.3623148500919342,
+      "intervening_cosine": 0.8989481925964355
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "loss_a": 0.10985901206731796,
+      "loss_b": 0.09795940667390823,
+      "loss_a_prime": 0.1742125004529953,
+      "delta_norm_a": 0.0005937058012932539,
+      "delta_norm_b": 0.0004544445837382227,
+      "delta_norm_a_prime": 0.0003020200820174068,
+      "matched_cosine": 0.7268585562705994,
+      "intervening_cosine": 0.9568228721618652
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "loss_a": 0.1742125004529953,
+      "loss_b": 0.0768824890255928,
+      "loss_a_prime": 0.10985901206731796,
+      "delta_norm_a": 0.0003020200820174068,
+      "delta_norm_b": 0.0005449475720524788,
+      "delta_norm_a_prime": 0.0005937058012932539,
+      "matched_cosine": 0.7268585562705994,
+      "intervening_cosine": 0.6204461455345154
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "loss_a": 0.04960208758711815,
+      "loss_b": 0.05617803707718849,
+      "loss_a_prime": 0.02865561842918396,
+      "delta_norm_a": 0.0004608430608641356,
+      "delta_norm_b": 0.0005729395197704434,
+      "delta_norm_a_prime": 0.00020443034009076655,
+      "matched_cosine": 0.9738883376121521,
+      "intervening_cosine": 0.9980298280715942
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "loss_a": 0.02865561842918396,
+      "loss_b": 0.14136993885040283,
+      "loss_a_prime": 0.04960208758711815,
+      "delta_norm_a": 0.00020443034009076655,
+      "delta_norm_b": 0.00042604623013176024,
+      "delta_norm_a_prime": 0.0004608430608641356,
+      "matched_cosine": 0.9738883376121521,
+      "intervening_cosine": 0.4512946307659149
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "loss_a": 0.04960208758711815,
+      "loss_b": 0.05617803707718849,
+      "loss_a_prime": 0.02785179764032364,
+      "delta_norm_a": 0.0004608430608641356,
+      "delta_norm_b": 0.0005729395197704434,
+      "delta_norm_a_prime": 0.00020616459369193763,
+      "matched_cosine": 0.9547474384307861,
+      "intervening_cosine": 0.9980298280715942
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "loss_a": 0.02785179764032364,
+      "loss_b": 0.03785321116447449,
+      "loss_a_prime": 0.04960208758711815,
+      "delta_norm_a": 0.00020616459369193763,
+      "delta_norm_b": 0.0002452875196468085,
+      "delta_norm_a_prime": 0.0004608430608641356,
+      "matched_cosine": 0.9547474384307861,
+      "intervening_cosine": 0.9736906886100769
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "loss_a": 0.03209921345114708,
+      "loss_b": 0.14136993885040283,
+      "loss_a_prime": 0.02785179764032364,
+      "delta_norm_a": 0.00019440113101154566,
+      "delta_norm_b": 0.00042604623013176024,
+      "delta_norm_a_prime": 0.00020616459369193763,
+      "matched_cosine": 0.9470188021659851,
+      "intervening_cosine": 0.5731171369552612
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "loss_a": 0.02785179764032364,
+      "loss_b": 0.03785321116447449,
+      "loss_a_prime": 0.03209921345114708,
+      "delta_norm_a": 0.00020616459369193763,
+      "delta_norm_b": 0.0002452875196468085,
+      "delta_norm_a_prime": 0.00019440113101154566,
+      "matched_cosine": 0.9470188021659851,
+      "intervening_cosine": 0.9736906886100769
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "loss_a": 0.032483216375112534,
+      "loss_b": 0.02464873716235161,
+      "loss_a_prime": 0.07539372146129608,
+      "delta_norm_a": 0.0002492326602805406,
+      "delta_norm_b": 0.0001609181781532243,
+      "delta_norm_a_prime": 0.0005083362921141088,
+      "matched_cosine": 0.9840167760848999,
+      "intervening_cosine": 0.9830421805381775
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "loss_a": 0.07539372146129608,
+      "loss_b": 0.04692651703953743,
+      "loss_a_prime": 0.032483216375112534,
+      "delta_norm_a": 0.0005083362921141088,
+      "delta_norm_b": 0.00032319704769179225,
+      "delta_norm_a_prime": 0.0002492326602805406,
+      "matched_cosine": 0.9840167760848999,
+      "intervening_cosine": 0.955613374710083
+    }
+  ],
+  "summary": {
+    "matched_cosine": 0.8090409100055694,
+    "intervening_cosine": 0.7089631529524922,
+    "foreign_cosine": 0.7422672441406619,
+    "matched_minus_intervening": 0.10007775705307723,
+    "matched_minus_foreign": 0.06677366586490752
+  }
+}

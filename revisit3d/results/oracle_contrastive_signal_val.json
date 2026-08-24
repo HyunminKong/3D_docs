@@ -1,0 +1,44 @@
+{
+  "checkpoint": "revisit3d/checkpoints/oracle_contrastive_epoch1.pt",
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "known_loss": 8.752912435738835e-06,
+      "known_grad_norm": 0.00044759782031178474,
+      "predicted_loss": 0.3105243146419525,
+      "predicted_grad_norm": 6.889474391937256,
+      "raw_pose_translation_norm": 0.013386818580329418,
+      "raw_pose_rotation_norm": 0.04975580424070358,
+      "relative_translation_norm": 0.014937619678676128,
+      "depth_mean": 0.6419346928596497,
+      "depth_std": 0.008048268966376781,
+      "one_step_state_delta_norm": 0.06889474391937256
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "known_loss": 8.465169230476022e-06,
+      "known_grad_norm": 0.0003679745423141867,
+      "predicted_loss": 0.3231803774833679,
+      "predicted_grad_norm": 6.8369526863098145,
+      "raw_pose_translation_norm": 0.009991789236664772,
+      "raw_pose_rotation_norm": 0.05091902241110802,
+      "relative_translation_norm": 0.02107090689241886,
+      "depth_mean": 0.64049232006073,
+      "depth_std": 0.010410794056952,
+      "one_step_state_delta_norm": 0.06836953014135361
+    }
+  ],
+  "summary": {
+    "known_loss": 8.609040833107429e-06,
+    "known_grad_norm": 0.0004077861813129857,
+    "predicted_loss": 0.3168523460626602,
+    "predicted_grad_norm": 6.863213539123535,
+    "raw_pose_translation_norm": 0.011689303908497095,
+    "raw_pose_rotation_norm": 0.0503374133259058,
+    "relative_translation_norm": 0.018004263285547495,
+    "depth_mean": 0.6412135064601898,
+    "depth_std": 0.00922953151166439,
+    "one_step_state_delta_norm": 0.06863213703036308
+  }
+}

@@ -1,0 +1,61 @@
+# Small enough to train on one A100 while still exhibiting the phenomenon under
+# study. The framework's job is not to be state of the art -- it is to be
+# trainable end to end, including the inner update, and to forget measurably.
+seed: 0
+out_dir: runs/nuscenes_small
+
+model:
+  dim: 384
+  depth: 12
+  head_dim: 64
+  mlp_expansion: 4.0
+  patch_size: 8
+  in_channels: 9
+  image_size: [224, 400]
+  ttt_layers: []          # empty -> every block
+  ttt_expansion: 4
+  muon_steps: 5
+  base_lr: 0.01
+  sh_degree: 1
+  max_depth: 10.0
+  time_dim: 32
+  grad_checkpoint: true
+  use_bank: true
+  bank_layers: [1, 2, 7]
+  n_slots: 16
+  rank: 8
+  write_beta: 0.05
+  revive_after: 200
+
+data:
+  root: /home/khm/3D_4D/tttLRM/data_example/nuscenes_prereg
+  image_size: [224, 400]
+  chunk_size: 4
+  n_chunks: 8
+  stride: 2
+  queries_current: 1
+  queries_revisit: 1
+  regime_window: 12
+  fps: 12.0
+
+train:
+  lr: 3.0e-4
+  weight_decay: 0.05
+  warmup_steps: 500
+  total_steps: 40000
+  grad_accum: 4
+  grad_clip: 1.0
+  amp_dtype: bfloat16
+  truncate: 2
+  reuse_weight: 0.1
+  reuse_candidates: 3
+  reuse_start_step: 2000
+  write_from_step: 1000
+  eval_every: 1000
+  save_every: 2000
+  log_every: 20
+  loss_weights:
+    l2: 1.0
+    ssim: 0.2
+    opacity: 0.01
+    distortion: 0.0

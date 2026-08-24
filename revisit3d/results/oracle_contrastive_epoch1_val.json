@@ -1,0 +1,32 @@
+{
+  "checkpoint": "revisit3d/checkpoints/oracle_contrastive_epoch1.pt",
+  "pose_source": "predicted",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "cold": 0.23601090908050537,
+      "current": 0.23295043408870697,
+      "matched": 0.2301926463842392,
+      "foreign": 0.230213925242424,
+      "matched_minus_current": -0.0027577877044677734,
+      "matched_minus_foreign": -2.1278858184814453e-05
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "cold": 0.17955109477043152,
+      "current": 0.18268528580665588,
+      "matched": 0.17971037328243256,
+      "foreign": 0.1796959936618805,
+      "matched_minus_current": -0.0029749125242233276,
+      "matched_minus_foreign": 1.4379620552062988e-05
+    }
+  ],
+  "summary": {
+    "cold": 0.20778100192546844,
+    "current": 0.20781785994768143,
+    "matched": 0.20495150983333588,
+    "foreign": 0.20495495945215225,
+    "matched_minus_current": -0.0028663501143455505,
+    "matched_minus_foreign": -3.4496188163757324e-06
+  }
+}

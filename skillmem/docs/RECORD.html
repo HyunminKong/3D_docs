@@ -1,0 +1,427 @@
+<title>Fast-weight reuse in streaming 3D — measurement record</title>
+<style>
+  :root {
+    --ground: #f1f2f5;
+    --surface: #ffffff;
+    --surface-sunk: #e8eaef;
+    --ink: #161a21;
+    --ink-soft: #3c434e;
+    --muted: #5d6675;
+    --rule: #d3d7df;
+    --rule-soft: #e3e6ec;
+    --accent: #a86e0d;
+    --accent-soft: #f5ead4;
+    --ok: #2f6f62;
+    --ok-soft: #dcece8;
+    --no: #9c3a27;
+    --no-soft: #f6e2dd;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0e1218;
+      --surface: #151a22;
+      --surface-sunk: #1b212b;
+      --ink: #e2e6ec;
+      --ink-soft: #bcc3cd;
+      --muted: #868f9c;
+      --rule: #2a323e;
+      --rule-soft: #212934;
+      --accent: #d9a63f;
+      --accent-soft: #2a2317;
+      --ok: #63b3a1;
+      --ok-soft: #14251f;
+      --no: #cf7a63;
+      --no-soft: #2a1a16;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0e1218;
+    --surface: #151a22;
+    --surface-sunk: #1b212b;
+    --ink: #e2e6ec;
+    --ink-soft: #bcc3cd;
+    --muted: #868f9c;
+    --rule: #2a323e;
+    --rule-soft: #212934;
+    --accent: #d9a63f;
+    --accent-soft: #2a2317;
+    --ok: #63b3a1;
+    --ok-soft: #14251f;
+    --no: #cf7a63;
+    --no-soft: #2a1a16;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; }
+  .col { max-width: 34rem; }
+
+  /* ---- masthead ---- */
+  header.masthead {
+    padding: 4.5rem 0 2rem;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 2.5rem;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1 {
+    font-size: clamp(2.1rem, 5vw, 3.1rem);
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0.8rem 0 0.9rem;
+  }
+  .standfirst { font-size: 1.12rem; color: var(--ink-soft); max-width: 36rem; margin: 0; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 1.5rem;
+    font-family: var(--mono); font-size: 0.78rem; color: var(--muted);
+    margin-top: 1.8rem;
+  }
+  .meta b { color: var(--ink-soft); font-weight: 500; }
+
+  /* ---- verdict board ---- */
+  .board { display: grid; gap: 2px; background: var(--rule); border: 1px solid var(--rule); margin: 0 0 3.5rem; }
+  .board-row {
+    display: grid; grid-template-columns: 1.6rem 1fr auto;
+    gap: 1rem; align-items: baseline;
+    background: var(--surface); padding: 0.85rem 1.1rem;
+  }
+  .board-row .mark { font-family: var(--mono); font-size: 1rem; font-weight: 700; }
+  .board-row.yes { border-left: 3px solid var(--ok); }
+  .board-row.no { border-left: 3px solid var(--no); }
+  .board-row.yes .mark { color: var(--ok); }
+  .board-row.no .mark { color: var(--no); }
+  .board-row .claim { font-size: 0.98rem; }
+  .board-row .evidence { font-family: var(--mono); font-size: 0.76rem; color: var(--muted); text-align: right; }
+
+  /* ---- sections ---- */
+  section { margin: 0 0 3.5rem; }
+  h2 {
+    font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em;
+    margin: 0 0 0.4rem; text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+    margin: 2rem 0 0.6rem;
+  }
+  p { margin: 0 0 1rem; }
+  .lede { color: var(--ink-soft); }
+
+  /* ---- experiment entries ---- */
+  .exp { border-top: 1px solid var(--rule); padding-top: 1.4rem; margin-top: 2.5rem; }
+  .exp-head { display: flex; align-items: baseline; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 0.7rem; }
+  .tag {
+    font-family: var(--mono); font-size: 0.8rem; font-weight: 700;
+    color: var(--surface); background: var(--ink);
+    padding: 0.12rem 0.45rem; border-radius: 2px;
+  }
+  .exp-head h4 { font-size: 1.18rem; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  .chip {
+    font-family: var(--sans); font-size: 0.64rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.2rem 0.5rem; border-radius: 2px;
+  }
+  .chip.ok { color: var(--ok); background: var(--ok-soft); }
+  .chip.no { color: var(--no); background: var(--no-soft); }
+  .chip.mid { color: var(--accent); background: var(--accent-soft); }
+
+  /* ---- data ---- */
+  .tablewrap { overflow-x: auto; margin: 1.2rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; font-family: var(--mono); font-size: 0.8rem; }
+  caption {
+    font-family: var(--sans); font-size: 0.68rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+    text-align: left; padding-bottom: 0.5rem;
+  }
+  th, td { padding: 0.42rem 0.9rem 0.42rem 0; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; padding-right: 1.4rem; }
+  thead th { border-bottom: 1px solid var(--ink); font-weight: 600; color: var(--ink); }
+  tbody td { border-bottom: 1px solid var(--rule-soft); font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+  tbody tr.hi td { color: var(--ink); font-weight: 700; background: var(--surface-sunk); }
+  td.pos { color: var(--ok); }
+  td.neg { color: var(--no); }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 1rem 1.2rem; margin: 1.4rem 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .label {
+    font-family: var(--sans); font-size: 0.66rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+    display: block; margin-bottom: 0.35rem;
+  }
+  code { font-family: var(--mono); font-size: 0.86em; background: var(--surface-sunk); padding: 0.08em 0.32em; border-radius: 2px; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  ul { margin: 0 0 1rem; padding-left: 1.1rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); padding-top: 1.5rem; color: var(--muted); font-size: 0.86rem; }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="eyebrow">Measurement record · tttLRM · DL3DV</div>
+  <h1>What a streaming reconstructor forgets, and whether it can be handed back</h1>
+  <p class="standfirst">Eight experiments on the fast weights of an autoregressive 3D reconstruction model, asking whether the adaptation performed over one stretch of a trajectory retains any value once the model has streamed through the next.</p>
+  <div class="meta">
+    <span><b>Model</b> tttLRM AR · 24 layers · 169.9 M fast-weight params</span>
+    <span><b>Data</b> DL3DV · 35 scenes · 280 segment pairs</span>
+    <span><b>Date</b> 2026-08-11</span>
+  </div>
+</header>
+
+<section>
+  <h2>Where it landed</h2>
+  <p class="col lede">Three claims survived measurement, three did not. The surviving three say there is something worth recovering and that it could be stored cheaply. The failing three say it cannot currently be recovered, and — more awkwardly — that what makes two adaptations interchangeable is which scene they came from, not how the camera moved.</p>
+
+  <div class="board">
+    <div class="board-row yes"><span class="mark">✓</span><span class="claim">Revisit forgetting is real and large</span><span class="evidence">4.43 dB · 280 cuts · 35/35 scenes</span></div>
+    <div class="board-row yes"><span class="mark">✓</span><span class="claim">Adapted states are specific to their own segment</span><span class="evidence">own 5× gentler · 20/20 units</span></div>
+    <div class="board-row yes"><span class="mark">✓</span><span class="claim">The signal is localised enough to store cheaply</span><span class="evidence">3 layers · 78.8% · 18 MB</span></div>
+    <div class="board-row no"><span class="mark">✕</span><span class="claim">A past state can be reused by linear correction</span><span class="evidence">1.6% of the gap recovered</span></div>
+    <div class="board-row no"><span class="mark">✕</span><span class="claim">A geometric key predicts which skill to retrieve</span><span class="evidence">ρ = −0.04 · learned key n.s.</span></div>
+    <div class="board-row no"><span class="mark">✕</span><span class="claim">Compatibility is governed by motion regime</span><span class="evidence">scene identity +1.18 dB vs 0.73 sd</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>The instrument</h2>
+  <div class="col">
+    <p>Two properties of the architecture make this model an unusually clean substrate, and the whole design leans on them.</p>
+    <p>First, <code>SelfAttention</code> runs inside each image — the block reshapes to <code>(b·v/l, l, d)</code> before attending — and the MLP is pointwise. The TTT fast weight is therefore the <em>only</em> path by which one view influences another. Adding a later segment to the input can change an earlier view's render solely through <span class="num">W</span>, with no attention-context confound to disentangle.</p>
+    <p>Second, the AR schedule updates over input tokens in chunks and then performs a single apply across the whole sequence. Readout is separable from adaptation, so an arbitrary <span class="num">W</span> can be substituted at render time without re-running the update — which makes sweeps cheap.</p>
+    <p>Together these predict that injecting the A-only state into the A+B run at full strength must reproduce the A-only condition <em>exactly</em>. It does, on every scene measured.</p>
+  </div>
+
+  <div class="callout">
+    <span class="label">Plumbing check</span>
+    <p><span class="num">α = 1</span> reproduces the reference condition to <span class="num">+0.0000 dB</span>, on all 35 scenes. Any leak in capture, injection or batching would show here first, so this is verified before any result below is read.</p>
+  </div>
+
+  <h3>Confounds blocked before measuring</h3>
+  <ul class="col">
+    <li><b>Shared normalisation.</b> <code>scene_scale</code> is derived from whichever views are in the batch, so an A-only batch and an A+B batch would be reconstructed at different scales and their PSNRs would not be comparable. Normalisation is computed once over the union of every view any condition uses.</li>
+    <li><b>Deterministic pruning.</b> Gaussian pruning keeps a random fraction by default; set to zero so repeated conditions are bit-comparable.</li>
+    <li><b>Named views.</b> The stock loader picks views by k-means. A, B and the held-out targets are specified explicitly instead.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Experiments</h2>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E1</span><h4>Interference, and blending two adapted states</h4><span class="chip mid">Forgetting confirmed</span></div>
+    <div class="col">
+      <p>Query cameras, targets and Gaussian count are held fixed on segment A; only the input sequence changes. Because the scene is static, B adds information — any degradation is pure interference.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>A-region quality, single scene</caption>
+        <thead><tr><th>Condition</th><th>PSNR</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>input A only</td><td>23.982</td><td>—</td></tr>
+          <tr class="hi"><td>input A + B</td><td>21.107</td><td class="neg">−2.874</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col"><p>Interpolating between the two states collapses between them: the curve bottoms at <span class="num">17.70 dB</span> at <span class="num">α = 0.5</span>, some <span class="num">3.4 dB</span> below the <em>worse</em> endpoint. The two adapted states are not linearly mode-connected.</p></div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E2</span><h4>What A gains against what B loses</h4><span class="chip no">No usable trade-off</span></div>
+    <div class="col"><p>With query cameras spanning both segments, every <span class="num">α &gt; 0</span> degrades A and B simultaneously. There is no blend weight at which recovering A is worth what it costs B.</p></div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E3·E4</span><h4>How low-rank is the adaptation, and its difference</h4><span class="chip no">Rank-8 premise refuted</span></div>
+    <div class="col"><p>The bank was designed to store rank-8 factors. That assumes the adaptation — and especially the <em>difference</em> between two adaptations, which is what a bank actually holds — lives in a few directions. Differences can be far lower rank than their operands. Here the opposite is true.</p></div>
+    <div class="tablewrap">
+      <table>
+        <caption>Singular-value energy retained, mean over 24 layers</caption>
+        <thead><tr><th>Quantity</th><th>r=4</th><th>r=8</th><th>r=16</th><th>r=64</th><th>stable rank</th></tr></thead>
+        <tbody>
+          <tr><td>adaptation W − W<sub>init</sub></td><td>0.25</td><td>0.36</td><td>0.49</td><td>0.76</td><td>35.1</td></tr>
+          <tr class="hi"><td>difference W<sub>A</sub> − W<sub>AB</sub></td><td>0.24</td><td>0.35</td><td>0.48</td><td>0.75</td><td>43.9</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col"><p>The difference is <em>more</em> spread out than the adaptation it came from: stable rank <span class="num">43.9</span> against <span class="num">35.1</span> of 768. Whatever the two adaptations share cancels, and what remains occupies the rest of the spectrum.</p></div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E5</span><h4>Correcting rather than substituting</h4><span class="chip mid">Sign positive, magnitude negligible</span></div>
+    <div class="col"><p>A bank never swaps in a remembered state; it keeps the state the stream arrived at and adds a correction. That intervention behaves differently from the E1 blend — the collapse disappears and the slope at zero turns positive. But the gain is <span class="num">+0.045 dB</span> against a <span class="num">2.874 dB</span> gap, and the B region gains slightly <em>more</em> than the A region it was supposed to restore. That asymmetry is what prompted the controls.</p></div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E5c</span><h4>Four directions at matched magnitude</h4><span class="chip ok">States are specific</span></div>
+    <div class="col"><p>Each correction is rescaled to the same Frobenius norm, so what differs is where it points. <code>shrink</code> moves back toward initialisation; <code>foreign</code> is the same construction built from an unrelated scene.</p></div>
+    <div class="tablewrap">
+      <table>
+        <caption>ΔPSNR by direction, rank 8</caption>
+        <thead><tr><th>Direction</th><th>λ=0.05 · A</th><th>λ=0.05 · B</th><th>λ=0.2 · A</th><th>λ=0.2 · B</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>memory</td><td class="pos">+0.045</td><td>+0.058</td><td>−0.026</td><td>+0.008</td></tr>
+          <tr><td>shrink</td><td>+0.030</td><td class="pos">+0.074</td><td>−0.051</td><td class="pos">+0.189</td></tr>
+          <tr><td>random</td><td>−0.004</td><td>−0.045</td><td>−0.056</td><td>−0.151</td></tr>
+          <tr><td>foreign</td><td>−0.016</td><td>+0.068</td><td class="neg">−1.037</td><td>−0.160</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p>Three things separate. The B-region gain is not memory — <code>shrink</code> beats it outright, so it is de-adaptation, plain regularisation. The A-region gain <em>is</em> specific: only <code>memory</code> lifts it, and <code>foreign</code> actively destroys it, costing <span class="num">1.04 dB</span> where <code>random</code> costs <span class="num">0.06</span>. And the recoverable amount is negligible: <span class="num">1.6%</span> of the gap, or <span class="num">0.5%</span> once the part <code>shrink</code> explains is removed.</p>
+      <p>Without these four arms, <span class="num">+0.045 dB</span> would have been read as a success.</p>
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E6</span><h4>Does the forgetting replicate</h4><span class="chip ok">35/35 scenes</span></div>
+    <div class="tablewrap">
+      <table>
+        <caption>Interference across the benchmark</caption>
+        <thead><tr><th>Sampling</th><th>n</th><th>mean</th><th>sd</th><th>min</th><th>max</th></tr></thead>
+        <tbody>
+          <tr><td>one cut per scene</td><td>35</td><td>4.47</td><td>2.11</td><td>1.10</td><td>9.27</td></tr>
+          <tr class="hi"><td>eight cuts per scene</td><td>280</td><td>4.43</td><td>2.35</td><td>0.07</td><td>16.40</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col"><p>Every scene loses something. The five-fold spread across scenes is what made a descriptor look derivable in the first place.</p></div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E7</span><h4>Localising the signal by layer</h4><span class="chip ok">3 layers · 18 MB</span></div>
+    <div class="col">
+      <p>The memory gain is too small to split 24 ways, so localisation uses the foreign penalty instead — 23× larger, and the same quantity measured where it is visible. A layer that carries scene-specific content is a layer where a <em>wrong</em> correction hurts. Single-layer effects summed to roughly half of what injecting everything did, so groups were injected directly rather than added up.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Share of the all-layer effect retained · 10 scenes, out of sample</caption>
+        <thead><tr><th>Layers stored</th><th>count</th><th>mean</th><th>min</th><th>max</th><th>foreign/random</th></tr></thead>
+        <tbody>
+          <tr><td>12 – 23</td><td>12</td><td>−1.2%</td><td>−5.8%</td><td>+3.7%</td><td>3.4×</td></tr>
+          <tr><td>7</td><td>1</td><td>31.7%</td><td>12.9%</td><td>44.0%</td><td>19.0×</td></tr>
+          <tr class="hi"><td>1, 2, 7</td><td>3</td><td>78.8%</td><td>61.0%</td><td>100.2%</td><td>7.9×</td></tr>
+          <tr><td>0 – 11</td><td>12</td><td>98.6%</td><td>90.2%</td><td>103.9%</td><td>10.6×</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p>The entire second half of the trunk carries nothing, in 10 of 10 scenes. Three layers hold four fifths of the effect, and the interaction that made single layers fail to add up turns out to sit between exactly those three: layers 1–2 alone are worth little, layer 7 alone a third, the group far more than their sum.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Bank cost, K slots × rank 8</caption>
+        <thead><tr><th>Design</th><th>per skill</th><th>bank</th><th>of trunk</th><th>retains</th></tr></thead>
+        <tbody>
+          <tr><td>24 layers, K=64</td><td>2.21 M</td><td>566 MB</td><td>33.7%</td><td>100%</td></tr>
+          <tr class="hi"><td>layers 1,2,7 · K=16</td><td>0.28 M</td><td>18 MB</td><td>1.05%</td><td>78.8%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E8a</span><h4>Finding a descriptor</h4><span class="chip mid">Only within scenes</span></div>
+    <div class="col">
+      <p>Between scenes, nothing works: interference tracks the A-only PSNR at <span class="num">ρ = +0.83</span>, and after partialling that out none of 25 candidate properties survives correction. One measurement per scene means the between-scene variance is scene difficulty.</p>
+      <p>Within scenes — eight cuts each, every variable centred on its own scene — 13 properties survive. But the split parameter itself moves the baseline quality at <span class="num">ρ = −0.86</span>, so raw within-scene correlations up to <span class="num">0.68</span> are mostly protocol. Partialling out both leaves a real but smaller effect, and only <span class="num">24.6%</span> of interference variance is within-scene at all.</p>
+      <p>The surviving descriptor also had to be made causal: the strongest candidate read the whole of segment B, which has not arrived when a skill would be retrieved. Reading only B's first quarter retains <span class="num">98%</span> of it.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Partial ρ with interference, within scene, controlling for a_span and baseline quality</caption>
+        <thead><tr><th>Property</th><th>causal</th><th>ρ</th><th>q (BH)</th></tr></thead>
+        <tbody>
+          <tr><td>parallax_ratio</td><td>no</td><td>+0.377</td><td>&lt;0.0001</td></tr>
+          <tr class="hi"><td>causal_prefix25</td><td>yes</td><td>+0.368</td><td>&lt;0.0001</td></tr>
+          <tr><td>spread_a</td><td>yes</td><td>−0.302</td><td>&lt;0.0001</td></tr>
+          <tr><td>rot_a_deg</td><td>yes</td><td>+0.294</td><td>&lt;0.0001</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E8b</span><h4>Does the descriptor support retrieval</h4><span class="chip no">It does not</span></div>
+    <div class="col">
+      <p>Correlating with interference is not the same as supporting retrieval. Twenty units — ten scenes at two cuts each — had their adapted states cross-injected into one another, restricted to layers 1, 2 and 7 at rank 8, which is the bank as designed rather than the full state.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Mean penalty by source of the correction</caption>
+        <thead><tr><th>Source</th><th>n</th><th>ΔPSNR</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>the unit's own state</td><td>20</td><td>−0.319</td></tr>
+          <tr><td>same scene, different cut</td><td>20</td><td>−0.540</td></tr>
+          <tr><td>a different scene</td><td>360</td><td class="neg">−1.717</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p>Own beats borrowed in 20 of 20 units (<span class="num">p = 4.7 × 10⁻⁸</span>). So the states are specific — there <em>is</em> something to retrieve. But descriptor distance does not predict the damage: <span class="num">ρ = −0.042</span> over 380 borrowed pairs, and clustering the descriptor separates nothing at any K from 2 to 10 — the within-cluster penalty is consistently the <em>worse</em> one.</p>
+    </div>
+  </div>
+
+  <div class="exp">
+    <div class="exp-head"><span class="tag">E8c</span><h4>Is there an interaction a learned key could find</h4><span class="chip no">Mostly main effects</span></div>
+    <div class="col">
+      <p>Before building an encoder, the penalty matrix was decomposed. If the damage is explained by main effects — some sources harm everyone, some targets are fragile — then the best source is the same for every query, which is a constant rather than a retrieval, and no key exists to be learned.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Variance of the 380 borrowed-pair penalties</caption>
+        <thead><tr><th>Component</th><th>share</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>target + source main effects</td><td>68.7%</td></tr>
+          <tr><td>+ same-scene indicator</td><td>72.3%</td></tr>
+          <tr><td>left as interaction</td><td>27.7%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <p>A bilinear key fitted on the causal features, validated leave-one-unit-out, reaches <span class="num">ρ = +0.064</span> (<span class="num">p = 0.14</span>). Aimed at the interaction alone it goes <em>negative</em> and significant — the signature of fitting noise with twenty units.</p>
+    </div>
+    <div class="callout">
+      <span class="label">The conceptual result</span>
+      <p>Whether two adaptations are interchangeable is governed by <b>which scene they came from</b> (<span class="num">+1.177 dB</span>) more than by everything else combined (interaction sd <span class="num">0.726 dB</span>). The project's stated separation from content memory — <em>store the adaptation strategy, not the scene</em> — is contradicted by its own substrate: on this data, what determines reusability is content.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>What this does and does not establish</h2>
+  <div class="col">
+    <p>The forgetting, the localisation and the specificity are solid: replicated across 35 scenes, 280 cuts, and out-of-sample on layers. The 18 MB storage design stands on 10 scenes it was not chosen on.</p>
+    <p>The negative results carry a caveat that matters. Every unit here is a different <em>place</em> — DL3DV scenes share no geography — so scene identity and motion regime are fully confounded. The claim the data supports is not that regime fails to govern compatibility, but that on this substrate the two cannot be told apart. A dynamic driving or egocentric benchmark, where the same manoeuvre recurs across different locations, would separate them.</p>
+    <p>One further limit sits under the storage result. Layer localisation used the foreign penalty because the memory gain does not decompose at <span class="num">+0.045 dB</span>. That the gain lives in the same three layers is assumed, not measured, and is registered as a pre-committed check rather than left to be noticed later.</p>
+    <p>Finally, the oracle no longer functions as a kill test. It was run on a model trained greedily, so what it bounds is reuse <em>without retraining</em> — not the ceiling of a method that changes how the inner loop is trained. That makes the remaining question more expensive to answer, not less open.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Harness, per-experiment JSON and pre-registered criteria in <code>tttLRM/oracle/</code>. Every figure above is reproducible from <code>results/</code> with the scripts named in <code>SUCCESS_CRITERIA.md</code>.</p>
+</footer>
+
+</div>

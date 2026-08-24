@@ -1,0 +1,156 @@
+{
+  "checkpoint": "revisit3d/checkpoints/depth_bootstrap_slot_dev_epoch1.pt",
+  "head_type": "slot",
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "track_3d_loss": 0.22958385944366455,
+      "state_grad_norm": 0.0014038776280358434,
+      "depth_mean": 0.7097604274749756,
+      "depth_std": 0.28020966053009033,
+      "track_coverage": 0.07271770387887955,
+      "mean_track_weight": 0.07271770387887955,
+      "mean_3d_residual": 0.48032763600349426
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "track_3d_loss": 0.19786213338375092,
+      "state_grad_norm": 0.0016561662778258324,
+      "depth_mean": 0.7924002408981323,
+      "depth_std": 0.3399312496185303,
+      "track_coverage": 0.12234272807836533,
+      "mean_track_weight": 0.12234272807836533,
+      "mean_3d_residual": 0.4857989251613617
+    },
+    {
+      "episode": "scene-0298__scene-0476",
+      "track_3d_loss": 0.08955859392881393,
+      "state_grad_norm": 0.0014208444627001882,
+      "depth_mean": 0.5611509680747986,
+      "depth_std": 0.5157540440559387,
+      "track_coverage": 0.23099879920482635,
+      "mean_track_weight": 0.23099879920482635,
+      "mean_3d_residual": 0.14450089633464813
+    },
+    {
+      "episode": "scene-0476__scene-0298",
+      "track_3d_loss": 0.07601634413003922,
+      "state_grad_norm": 0.0009240116341970861,
+      "depth_mean": 0.8166438937187195,
+      "depth_std": 0.6142255663871765,
+      "track_coverage": 0.3090272545814514,
+      "mean_track_weight": 0.3090272545814514,
+      "mean_3d_residual": 0.17452554404735565
+    },
+    {
+      "episode": "scene-0298__scene-0717",
+      "track_3d_loss": 0.06884735077619553,
+      "state_grad_norm": 0.0008741122437641025,
+      "depth_mean": 0.5919084548950195,
+      "depth_std": 0.5804280042648315,
+      "track_coverage": 0.22812986373901367,
+      "mean_track_weight": 0.22812986373901367,
+      "mean_3d_residual": 0.13704358041286469
+    },
+    {
+      "episode": "scene-0717__scene-0298",
+      "track_3d_loss": 0.11670780926942825,
+      "state_grad_norm": 0.0009674170869402587,
+      "depth_mean": 0.8305784463882446,
+      "depth_std": 0.5951537489891052,
+      "track_coverage": 0.2155400514602661,
+      "mean_track_weight": 0.2155400514602661,
+      "mean_3d_residual": 0.25486207008361816
+    },
+    {
+      "episode": "scene-0298__scene-0719",
+      "track_3d_loss": 0.11245233565568924,
+      "state_grad_norm": 0.0019692527130246162,
+      "depth_mean": 0.6483266353607178,
+      "depth_std": 0.5509551763534546,
+      "track_coverage": 0.28347620368003845,
+      "mean_track_weight": 0.28347620368003845,
+      "mean_3d_residual": 0.17031067609786987
+    },
+    {
+      "episode": "scene-0719__scene-0298",
+      "track_3d_loss": 0.06556957960128784,
+      "state_grad_norm": 0.0014317802852019668,
+      "depth_mean": 0.6056276559829712,
+      "depth_std": 0.44079697132110596,
+      "track_coverage": 0.32237502932548523,
+      "mean_track_weight": 0.32237502932548523,
+      "mean_3d_residual": 0.09955236315727234
+    },
+    {
+      "episode": "scene-0476__scene-0717",
+      "track_3d_loss": 0.05479113757610321,
+      "state_grad_norm": 0.0009369980543851852,
+      "depth_mean": 0.793067216873169,
+      "depth_std": 0.5601791143417358,
+      "track_coverage": 0.35473617911338806,
+      "mean_track_weight": 0.35473617911338806,
+      "mean_3d_residual": 0.11070571839809418
+    },
+    {
+      "episode": "scene-0717__scene-0476",
+      "track_3d_loss": 0.11172045022249222,
+      "state_grad_norm": 0.0015705034602433443,
+      "depth_mean": 0.8441582918167114,
+      "depth_std": 0.6285701990127563,
+      "track_coverage": 0.2594912052154541,
+      "mean_track_weight": 0.2594912052154541,
+      "mean_3d_residual": 0.21835334599018097
+    },
+    {
+      "episode": "scene-0476__scene-0719",
+      "track_3d_loss": 0.07134181261062622,
+      "state_grad_norm": 0.001202500076033175,
+      "depth_mean": 0.630317747592926,
+      "depth_std": 0.5488510131835938,
+      "track_coverage": 0.24813902378082275,
+      "mean_track_weight": 0.24813902378082275,
+      "mean_3d_residual": 0.15014901757240295
+    },
+    {
+      "episode": "scene-0719__scene-0476",
+      "track_3d_loss": 0.04970903322100639,
+      "state_grad_norm": 0.0011833314783871174,
+      "depth_mean": 0.6015558242797852,
+      "depth_std": 0.42217642068862915,
+      "track_coverage": 0.3522487282752991,
+      "mean_track_weight": 0.3522487282752991,
+      "mean_3d_residual": 0.06854519248008728
+    },
+    {
+      "episode": "scene-0717__scene-0719",
+      "track_3d_loss": 0.03755611553788185,
+      "state_grad_norm": 0.0007734901155345142,
+      "depth_mean": 0.7422095537185669,
+      "depth_std": 0.5008673071861267,
+      "track_coverage": 0.7136644721031189,
+      "mean_track_weight": 0.7136644721031189,
+      "mean_3d_residual": 0.03967796266078949
+    },
+    {
+      "episode": "scene-0719__scene-0717",
+      "track_3d_loss": 0.02119430899620056,
+      "state_grad_norm": 0.0004880512715317309,
+      "depth_mean": 0.7526603937149048,
+      "depth_std": 0.47084200382232666,
+      "track_coverage": 0.8182514905929565,
+      "mean_track_weight": 0.8182514905929565,
+      "mean_3d_residual": 0.021472983062267303
+    }
+  ],
+  "summary": {
+    "track_3d_loss": 0.09306506173951286,
+    "state_grad_norm": 0.00120016691341464,
+    "depth_mean": 0.7085975536278316,
+    "depth_std": 0.5034957485539573,
+    "track_coverage": 0.3236527666449547,
+    "mean_track_weight": 0.3236527666449547,
+    "mean_3d_residual": 0.18255899367587908
+  }
+}

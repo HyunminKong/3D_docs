@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "utility_top1": 0.07142857142857142,
+    "utility_recall_at_3": 0.2857142857142857,
+    "mean_positive_rank": 6.928571428571429,
+    "matched_minus_current": -0.00027859131140368324,
+    "matched_minus_foreign": 4.8300210427452876e-05
+  },
+  "rows": [
+    {
+      "positive_rank": 5,
+      "current": 0.2042357176542282,
+      "matched": 0.20416128635406494,
+      "mean_foreign": 0.20418480038642883,
+      "matched_minus_current": -7.443130016326904e-05,
+      "matched_minus_foreign": -2.35140323638916e-05
+    },
+    {
+      "positive_rank": 3,
+      "current": 0.27813720703125,
+      "matched": 0.2780423164367676,
+      "mean_foreign": 0.27809789318304795,
+      "matched_minus_current": -9.489059448242188e-05,
+      "matched_minus_foreign": -5.557674628037246e-05
+    },
+    {
+      "positive_rank": 1,
+      "current": 0.052764892578125,
+      "matched": 0.050734393298625946,
+      "mean_foreign": 0.05266440545137112,
+      "matched_minus_current": -0.002030499279499054,
+      "matched_minus_foreign": -0.0019300121527451725
+    },
+    {
+      "positive_rank": 6,
+      "current": 0.0539151132106781,
+      "matched": 0.05357972905039787,
+      "mean_foreign": 0.053814428070416816,
+      "matched_minus_current": -0.00033538416028022766,
+      "matched_minus_foreign": -0.00023469902001894277
+    },
+    {
+      "positive_rank": 14,
+      "current": 0.05231677368283272,
+      "matched": 0.056134968996047974,
+      "mean_foreign": 0.05279383435845375,
+      "matched_minus_current": 0.0038181953132152557,
+      "matched_minus_foreign": 0.003341134637594223
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.0765594094991684,
+      "matched": 0.07564370334148407,
+      "mean_foreign": 0.07730900266995797,
+      "matched_minus_current": -0.0009157061576843262,
+      "matched_minus_foreign": -0.001665299328473896
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.10639771074056625,
+      "matched": 0.10501618683338165,
+      "mean_foreign": 0.1050354133431728,
+      "matched_minus_current": -0.0013815239071846008,
+      "matched_minus_foreign": -1.9226509791150925e-05
+    },
+    {
+      "positive_rank": 14,
+      "current": 0.10806518793106079,
+      "matched": 0.10825975239276886,
+      "mean_foreign": 0.10660706345851605,
+      "matched_minus_current": 0.00019456446170806885,
+      "matched_minus_foreign": 0.0016526889342528134
+    },
+    {
+      "positive_rank": 3,
+      "current": 0.048993367701768875,
+      "matched": 0.04818308725953102,
+      "mean_foreign": 0.04906634212686466,
+      "matched_minus_current": -0.000810280442237854,
+      "matched_minus_foreign": -0.0008832548673336355
+    },
+    {
+      "positive_rank": 4,
+      "current": 0.05446259304881096,
+      "matched": 0.05382866412401199,
+      "mean_foreign": 0.05437854419534023,
+      "matched_minus_current": -0.0006339289247989655,
+      "matched_minus_foreign": -0.0005498800713282376
+    },
+    {
+      "positive_rank": 12,
+      "current": 0.05605591833591461,
+      "matched": 0.0558868832886219,
+      "mean_foreign": 0.05534602185854545,
+      "matched_minus_current": -0.00016903504729270935,
+      "matched_minus_foreign": 0.0005408614300764503
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.09937775880098343,
+      "matched": 0.09844978153705597,
+      "mean_foreign": 0.09813610865519597,
+      "matched_minus_current": -0.0009279772639274597,
+      "matched_minus_foreign": 0.00031367288186000264
+    },
+    {
+      "positive_rank": 6,
+      "current": 0.033762283623218536,
+      "matched": 0.03321428596973419,
+      "mean_foreign": 0.03328587802556845,
+      "matched_minus_current": -0.0005479976534843445,
+      "matched_minus_foreign": -7.159205583425615e-05
+    },
+    {
+      "positive_rank": 11,
+      "current": 0.0354980006814003,
+      "matched": 0.03550661727786064,
+      "mean_foreign": 0.035245717431490235,
+      "matched_minus_current": 8.616596460342407e-06,
+      "matched_minus_foreign": 0.00026089984637040625
+    }
+  ],
+  "radius": 0.5
+}

@@ -1,0 +1,68 @@
+{
+  "checkpoint": "revisit3d/checkpoints/oracle_predicted_pose_smoke.pt",
+  "pose_source": "predicted",
+  "rows": [
+    {
+      "episode": "scene-0001__scene-0011",
+      "cold": 0.22499379515647888,
+      "current": 0.22311294078826904,
+      "matched": 0.2226269245147705,
+      "foreign": 0.22262588143348694,
+      "matched_minus_current": -0.00048601627349853516,
+      "matched_minus_foreign": 1.043081283569336e-06
+    },
+    {
+      "episode": "scene-0011__scene-0001",
+      "cold": 0.2025153934955597,
+      "current": 0.2045726180076599,
+      "matched": 0.20468883216381073,
+      "foreign": 0.20468902587890625,
+      "matched_minus_current": 0.00011621415615081787,
+      "matched_minus_foreign": -1.9371509552001953e-07
+    },
+    {
+      "episode": "scene-0001__scene-0038",
+      "cold": 0.2807387113571167,
+      "current": 0.2611633241176605,
+      "matched": 0.2611986994743347,
+      "foreign": 0.2611982822418213,
+      "matched_minus_current": 3.5375356674194336e-05,
+      "matched_minus_foreign": 4.172325134277344e-07
+    },
+    {
+      "episode": "scene-0038__scene-0001",
+      "cold": 0.23423537611961365,
+      "current": 0.2396925538778305,
+      "matched": 0.2426079511642456,
+      "foreign": 0.24253790080547333,
+      "matched_minus_current": 0.0029153972864151,
+      "matched_minus_foreign": 7.005035877227783e-05
+    },
+    {
+      "episode": "scene-0011__scene-0038",
+      "cold": 0.2579875588417053,
+      "current": 0.25735145807266235,
+      "matched": 0.25789380073547363,
+      "foreign": 0.257895290851593,
+      "matched_minus_current": 0.0005423426628112793,
+      "matched_minus_foreign": -1.4901161193847656e-06
+    },
+    {
+      "episode": "scene-0038__scene-0011",
+      "cold": 0.19363483786582947,
+      "current": 0.20052552223205566,
+      "matched": 0.20192795991897583,
+      "foreign": 0.20193032920360565,
+      "matched_minus_current": 0.001402437686920166,
+      "matched_minus_foreign": -2.3692846298217773e-06
+    }
+  ],
+  "summary": {
+    "cold": 0.23235094547271729,
+    "current": 0.23106973618268967,
+    "matched": 0.2318240279952685,
+    "foreign": 0.23181278506914774,
+    "matched_minus_current": 0.000754291812578837,
+    "matched_minus_foreign": 1.1242926120758057e-05
+  }
+}

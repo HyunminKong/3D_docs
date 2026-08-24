@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "key_recall_at_k": 0.5,
+    "rerank_top1": 0.0,
+    "compat_top1": 0.0,
+    "mean_positive_compat": 0.9121365802628654,
+    "mean_negative_compat": 0.8554324592862811,
+    "update_centered_energy_top1": 0.8220656514167786,
+    "update_centered_energy_top3": 0.983750581741333
+  },
+  "rows": [
+    {
+      "key_rank": 2,
+      "compat_rank": 3,
+      "positive_compat": 0.8950864672660828,
+      "mean_negative_compat": 0.819334864616394,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 2,
+      "compat_rank": 2,
+      "positive_compat": 0.8950864672660828,
+      "mean_negative_compat": 0.5651511549949646,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 13,
+      "compat_rank": 4,
+      "positive_compat": 0.9734334349632263,
+      "mean_negative_compat": 0.900239109992981,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 7,
+      "compat_rank": 7,
+      "positive_compat": 0.9734334349632263,
+      "mean_negative_compat": 0.9002367854118347,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 14,
+      "compat_rank": 14,
+      "positive_compat": 0.6722774505615234,
+      "mean_negative_compat": 0.7935320734977722,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 8,
+      "compat_rank": 13,
+      "positive_compat": 0.6722774505615234,
+      "mean_negative_compat": 0.9074792861938477,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 12,
+      "compat_rank": 6,
+      "positive_compat": 0.9693899750709534,
+      "mean_negative_compat": 0.9202340841293335,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 2,
+      "compat_rank": 8,
+      "positive_compat": 0.9693899750709534,
+      "mean_negative_compat": 0.8883213400840759,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 4,
+      "compat_rank": 3,
+      "positive_compat": 0.9862176179885864,
+      "mean_negative_compat": 0.8874098658561707,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 8,
+      "compat_rank": 3,
+      "positive_compat": 0.9862176179885864,
+      "mean_negative_compat": 0.9121353626251221,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 11,
+      "compat_rank": 3,
+      "positive_compat": 0.9862692356109619,
+      "mean_negative_compat": 0.8967341780662537,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 1,
+      "compat_rank": 5,
+      "positive_compat": 0.9862692356109619,
+      "mean_negative_compat": 0.9174254536628723,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 2,
+      "compat_rank": 4,
+      "positive_compat": 0.9022818803787231,
+      "mean_negative_compat": 0.7807387113571167,
+      "rerank_correct": false
+    },
+    {
+      "key_rank": 1,
+      "compat_rank": 8,
+      "positive_compat": 0.9022818803787231,
+      "mean_negative_compat": 0.8870821595191956,
+      "rerank_correct": false
+    }
+  ]
+}

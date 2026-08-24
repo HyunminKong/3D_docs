@@ -1,0 +1,124 @@
+{
+  "scale": 5.0,
+  "summary": {
+    "utility_top1": 0.07142857142857142,
+    "utility_recall_at_3": 0.21428571428571427,
+    "mean_positive_rank": 6.857142857142857,
+    "mean_positive_minus_current": -7.081297891480582e-05,
+    "mean_positive_minus_best": 6.68431499174663e-05
+  },
+  "rows": [
+    {
+      "positive_rank": 6,
+      "positive_utility": 0.20416660606861115,
+      "best_utility": 0.20413091778755188,
+      "current_utility": 0.20422132313251495,
+      "positive_minus_current": -5.4717063903808594e-05,
+      "positive_minus_best": 3.568828105926514e-05
+    },
+    {
+      "positive_rank": 11,
+      "positive_utility": 0.27812445163726807,
+      "best_utility": 0.27800247073173523,
+      "current_utility": 0.27815788984298706,
+      "positive_minus_current": -3.343820571899414e-05,
+      "positive_minus_best": 0.00012198090553283691
+    },
+    {
+      "positive_rank": 4,
+      "positive_utility": 0.0531928651034832,
+      "best_utility": 0.05314996466040611,
+      "current_utility": 0.05324998497962952,
+      "positive_minus_current": -5.711987614631653e-05,
+      "positive_minus_best": 4.29004430770874e-05
+    },
+    {
+      "positive_rank": 6,
+      "positive_utility": 0.05552024394273758,
+      "best_utility": 0.05550310015678406,
+      "current_utility": 0.05554240196943283,
+      "positive_minus_current": -2.2158026695251465e-05,
+      "positive_minus_best": 1.714378595352173e-05
+    },
+    {
+      "positive_rank": 7,
+      "positive_utility": 0.05239113047719002,
+      "best_utility": 0.052335258573293686,
+      "current_utility": 0.0524354912340641,
+      "positive_minus_current": -4.436075687408447e-05,
+      "positive_minus_best": 5.587190389633179e-05
+    },
+    {
+      "positive_rank": 12,
+      "positive_utility": 0.07735130935907364,
+      "best_utility": 0.07723331451416016,
+      "current_utility": 0.0773877203464508,
+      "positive_minus_current": -3.641098737716675e-05,
+      "positive_minus_best": 0.00011799484491348267
+    },
+    {
+      "positive_rank": 1,
+      "positive_utility": 0.10692798346281052,
+      "best_utility": 0.10692798346281052,
+      "current_utility": 0.10720327496528625,
+      "positive_minus_current": -0.0002752915024757385,
+      "positive_minus_best": 0.0
+    },
+    {
+      "positive_rank": 2,
+      "positive_utility": 0.11441802233457565,
+      "best_utility": 0.11429785937070847,
+      "current_utility": 0.11458452045917511,
+      "positive_minus_current": -0.0001664981245994568,
+      "positive_minus_best": 0.0001201629638671875
+    },
+    {
+      "positive_rank": 9,
+      "positive_utility": 0.04896261915564537,
+      "best_utility": 0.04888990521430969,
+      "current_utility": 0.04900529235601425,
+      "positive_minus_current": -4.2673200368881226e-05,
+      "positive_minus_best": 7.27139413356781e-05
+    },
+    {
+      "positive_rank": 3,
+      "positive_utility": 0.054498422890901566,
+      "best_utility": 0.05447238311171532,
+      "current_utility": 0.054537128657102585,
+      "positive_minus_current": -3.870576620101929e-05,
+      "positive_minus_best": 2.603977918624878e-05
+    },
+    {
+      "positive_rank": 4,
+      "positive_utility": 0.05676475539803505,
+      "best_utility": 0.05668807029724121,
+      "current_utility": 0.05685660243034363,
+      "positive_minus_current": -9.184703230857849e-05,
+      "positive_minus_best": 7.66851007938385e-05
+    },
+    {
+      "positive_rank": 8,
+      "positive_utility": 0.09834373742341995,
+      "best_utility": 0.09820561110973358,
+      "current_utility": 0.09843572974205017,
+      "positive_minus_current": -9.19923186302185e-05,
+      "positive_minus_best": 0.00013812631368637085
+    },
+    {
+      "positive_rank": 10,
+      "positive_utility": 0.03425854444503784,
+      "best_utility": 0.03421933948993683,
+      "current_utility": 0.03427936136722565,
+      "positive_minus_current": -2.0816922187805176e-05,
+      "positive_minus_best": 3.9204955101013184e-05
+    },
+    {
+      "positive_rank": 13,
+      "positive_utility": 0.0365150161087513,
+      "best_utility": 0.03644372522830963,
+      "current_utility": 0.03653036803007126,
+      "positive_minus_current": -1.5351921319961548e-05,
+      "positive_minus_best": 7.129088044166565e-05
+    }
+  ]
+}

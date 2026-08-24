@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "accept_rate": 1.0,
+    "mean_selected_minus_current": -0.000733779122432073,
+    "harm_rate": 0.3333333333333333
+  },
+  "rows": [
+    {
+      "accepted": true,
+      "selected_minus_current": 0.00026011839509010315,
+      "selected": 0.03498212993144989,
+      "current": 0.03472201153635979
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0023995786905288696,
+      "selected": 0.05594579502940178,
+      "current": 0.05834537371993065
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -5.248934030532837e-05,
+      "selected": 0.06111197918653488,
+      "current": 0.06116446852684021
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0017581209540367126,
+      "selected": 0.08773745596408844,
+      "current": 0.08949557691812515
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": 0.0005361512303352356,
+      "selected": 0.07943824678659439,
+      "current": 0.07890209555625916
+    },
+    {
+      "accepted": true,
+      "selected_minus_current": -0.0009887553751468658,
+      "selected": 0.03844883665442467,
+      "current": 0.03943759202957153
+    }
+  ]
+}

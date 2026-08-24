@@ -1,0 +1,172 @@
+{
+  "split": "train",
+  "rows": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "matched_cosine": 0.9982098340988159,
+      "intervening_cosine": 0.954417884349823
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "matched_cosine": 0.9982098340988159,
+      "intervening_cosine": 0.9298255443572998
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "matched_cosine": 0.9719634056091309,
+      "intervening_cosine": 0.9511024355888367
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "matched_cosine": 0.9719634056091309,
+      "intervening_cosine": 0.9384680986404419
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "matched_cosine": 0.9702834486961365,
+      "intervening_cosine": 0.9953038692474365
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "matched_cosine": 0.9702834486961365,
+      "intervening_cosine": 0.9983881115913391
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "matched_cosine": 0.9743925333023071,
+      "intervening_cosine": 0.990620493888855
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "matched_cosine": 0.9743925333023071,
+      "intervening_cosine": 0.9923998117446899
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "matched_cosine": 0.992508590221405,
+      "intervening_cosine": 0.9491360187530518
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "matched_cosine": 0.992508590221405,
+      "intervening_cosine": 0.9858249425888062
+    },
+    {
+      "episode": "scene-0298__scene-0476",
+      "matched_cosine": 0.9718207716941833,
+      "intervening_cosine": 0.9591657519340515
+    },
+    {
+      "episode": "scene-0476__scene-0298",
+      "matched_cosine": 0.9718207716941833,
+      "intervening_cosine": 0.9921000003814697
+    },
+    {
+      "episode": "scene-0298__scene-0717",
+      "matched_cosine": 0.9719323515892029,
+      "intervening_cosine": 0.9697306156158447
+    },
+    {
+      "episode": "scene-0717__scene-0298",
+      "matched_cosine": 0.9719323515892029,
+      "intervening_cosine": 0.9597976803779602
+    },
+    {
+      "episode": "scene-0298__scene-0719",
+      "matched_cosine": 0.9956993460655212,
+      "intervening_cosine": 0.969153881072998
+    },
+    {
+      "episode": "scene-0719__scene-0298",
+      "matched_cosine": 0.9956993460655212,
+      "intervening_cosine": 0.9593001008033752
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "matched_cosine": 0.9808615446090698,
+      "intervening_cosine": 0.9684680104255676
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "matched_cosine": 0.9808615446090698,
+      "intervening_cosine": 0.9840644598007202
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "matched_cosine": 0.9960886240005493,
+      "intervening_cosine": 0.9989367723464966
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "matched_cosine": 0.9960886240005493,
+      "intervening_cosine": 0.9701631665229797
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "matched_cosine": 0.9901759624481201,
+      "intervening_cosine": 0.9989367723464966
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "matched_cosine": 0.9901759624481201,
+      "intervening_cosine": 0.9906861782073975
+    },
+    {
+      "episode": "scene-0476__scene-0717",
+      "matched_cosine": 0.9935324192047119,
+      "intervening_cosine": 0.9925573468208313
+    },
+    {
+      "episode": "scene-0717__scene-0476",
+      "matched_cosine": 0.9935324192047119,
+      "intervening_cosine": 0.9675953984260559
+    },
+    {
+      "episode": "scene-0476__scene-0719",
+      "matched_cosine": 0.9910383224487305,
+      "intervening_cosine": 0.962360680103302
+    },
+    {
+      "episode": "scene-0719__scene-0476",
+      "matched_cosine": 0.9910383224487305,
+      "intervening_cosine": 0.9574497938156128
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "matched_cosine": 0.993005633354187,
+      "intervening_cosine": 0.9754303693771362
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "matched_cosine": 0.993005633354187,
+      "intervening_cosine": 0.9906861782073975
+    },
+    {
+      "episode": "scene-0717__scene-0719",
+      "matched_cosine": 0.9937871694564819,
+      "intervening_cosine": 0.9564943313598633
+    },
+    {
+      "episode": "scene-0719__scene-0717",
+      "matched_cosine": 0.9937871694564819,
+      "intervening_cosine": 0.9351218342781067
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "matched_cosine": 0.9496030807495117,
+      "intervening_cosine": 0.9975743293762207
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "matched_cosine": 0.9496030807495117,
+      "intervening_cosine": 0.9960272312164307
+    }
+  ],
+  "summary": {
+    "matched_cosine": 0.9834314398467541,
+    "intervening_cosine": 0.9730402529239655,
+    "foreign_cosine": 0.9614493878114792,
+    "matched_minus_intervening": 0.01039118692278862,
+    "matched_minus_foreign": 0.021982052035274924
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "fixed": "2026-08-19",
+  "note": "Frozen before meta-training. The five-statistic CAN-bus combination used in the 2x2 oracle was assembled after the fact; this file exists so the definition cannot drift to fit a result. Any change requires a version bump and a re-run of the correlation check.",
+  "inputs": {
+    "source": "camera-to-world poses of the frames preceding the current chunk",
+    "window": 12,
+    "fps": 12.0,
+    "causality": "Only frames strictly before the chunk being adapted to. Nothing derived from the adaptation itself -- a TTT residual would not exist at retrieval time and would make the key self-referential.",
+    "gauge": "Every feature is a frame-to-frame difference. Absolute pose is forbidden: streaming reconstruction drifts, so keying retrieval on world coordinates is circular."
+  },
+  "statistics": [
+    {
+      "name": "speed_mean",
+      "definition": "mean over the window of ||t_i - t_{i-1}|| * fps",
+      "unit": "m/s"
+    },
+    {
+      "name": "speed_sd",
+      "definition": "standard deviation of the same per-step speeds",
+      "unit": "m/s"
+    },
+    {
+      "name": "yaw_mean",
+      "definition": "mean over the window of angle(R_i R_{i-1}^T) * fps",
+      "unit": "rad/s"
+    },
+    {
+      "name": "yaw_sd",
+      "definition": "standard deviation of the same per-step rotation rates",
+      "unit": "rad/s"
+    },
+    {
+      "name": "still_frac",
+      "definition": "fraction of steps whose speed is below still_threshold",
+      "unit": "fraction"
+    },
+    {
+      "name": "dir_consistency",
+      "definition": "mean cosine between consecutive normalised translation directions; 1 for a straight run, near 0 for erratic motion",
+      "unit": "cosine"
+    },
+    {
+      "name": "arc_over_net",
+      "definition": "sum of per-step distances divided by the straight-line distance between the first and last camera; 1 for a straight run, larger for turns and loops",
+      "unit": "ratio"
+    }
+  ],
+  "still_threshold_m_per_s": 0.5,
+  "standardisation": "Running mean and variance collected during training and frozen with the bank. A scale that keeps shifting would make stored keys mean different things at different times.",
+  "excluded": {
+    "can_bus": "Vehicle telemetry adds nothing once pose is controlled for (own contribution -0.038, p=0.29, over 756 pairs) and would restrict the method to driving data.",
+    "spatial_proximity": "Distance between two segments does not predict whether their adaptations are interchangeable (rho = +0.021, p = 0.56). This negative result is what the retrieval design rests on.",
+    "absolute_pose": "Drifts; see gauge above."
+  },
+  "open_checks": {
+    "estimated_pose_from_the_model": "The robustness test injected isotropic per-step odometry error and the correlation held (82% retained at 10 cm / 1 deg per frame). Real pose error is not isotropic: it is largest during fast turns, which is exactly where the descriptor's own value changes most, so the error may correlate with the quantity being measured. Re-check once the model estimates its own poses, not before.",
+    "held_out_scenes": "Confirm rho on 30 scenes never used to build the descriptor."
+  }
+}

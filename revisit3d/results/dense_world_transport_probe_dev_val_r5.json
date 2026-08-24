@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "utility_top1": 0.14285714285714285,
+    "utility_recall_at_3": 0.35714285714285715,
+    "mean_positive_rank": 6.142857142857143,
+    "matched_minus_current": -0.00024092037762914385,
+    "matched_minus_foreign": -5.8475636191422255e-05
+  },
+  "rows": [
+    {
+      "positive_rank": 1,
+      "current": 0.2039860337972641,
+      "matched": 0.20362110435962677,
+      "mean_foreign": 0.20390031314813173,
+      "matched_minus_current": -0.0003649294376373291,
+      "matched_minus_foreign": -0.0002792087885049588
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.27793002128601074,
+      "matched": 0.2777000367641449,
+      "mean_foreign": 0.27783533243032604,
+      "matched_minus_current": -0.00022998452186584473,
+      "matched_minus_foreign": -0.00013529566618114552
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.0529429130256176,
+      "matched": 0.05245621129870415,
+      "mean_foreign": 0.05281213155159584,
+      "matched_minus_current": -0.00048670172691345215,
+      "matched_minus_foreign": -0.0003559202528916894
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.05501219630241394,
+      "matched": 0.054924651980400085,
+      "mean_foreign": 0.05490172511109939,
+      "matched_minus_current": -8.754432201385498e-05,
+      "matched_minus_foreign": 2.292686930069343e-05
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.05202554166316986,
+      "matched": 0.05208878964185715,
+      "mean_foreign": 0.05207791437323277,
+      "matched_minus_current": 6.324797868728638e-05,
+      "matched_minus_foreign": 1.0875268624380152e-05
+    },
+    {
+      "positive_rank": 1,
+      "current": 0.07693358510732651,
+      "matched": 0.07627391815185547,
+      "mean_foreign": 0.07703603288302055,
+      "matched_minus_current": -0.0006596669554710388,
+      "matched_minus_foreign": -0.0007621147311650811
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.10673768073320389,
+      "matched": 0.10617514699697495,
+      "mean_foreign": 0.10619386629416393,
+      "matched_minus_current": -0.0005625337362289429,
+      "matched_minus_foreign": -1.871929718898213e-05
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.11356411874294281,
+      "matched": 0.11324995756149292,
+      "mean_foreign": 0.11298255966259883,
+      "matched_minus_current": -0.00031416118144989014,
+      "matched_minus_foreign": 0.0002673978988940867
+    },
+    {
+      "positive_rank": 10,
+      "current": 0.048638999462127686,
+      "matched": 0.04867453873157501,
+      "mean_foreign": 0.04859226426252952,
+      "matched_minus_current": 3.553926944732666e-05,
+      "matched_minus_foreign": 8.227446904549018e-05
+    },
+    {
+      "positive_rank": 3,
+      "current": 0.05433625727891922,
+      "matched": 0.05409000813961029,
+      "mean_foreign": 0.0542862366598386,
+      "matched_minus_current": -0.00024624913930892944,
+      "matched_minus_foreign": -0.0001962285202283115
+    },
+    {
+      "positive_rank": 7,
+      "current": 0.056744299829006195,
+      "matched": 0.056530870497226715,
+      "mean_foreign": 0.0564711457834794,
+      "matched_minus_current": -0.00021342933177947998,
+      "matched_minus_foreign": 5.9724713747315306e-05
+    },
+    {
+      "positive_rank": 8,
+      "current": 0.09809836000204086,
+      "matched": 0.09790077060461044,
+      "mean_foreign": 0.09765030329044048,
+      "matched_minus_current": -0.00019758939743041992,
+      "matched_minus_foreign": 0.00025046731416995816
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.03421024978160858,
+      "matched": 0.03412596881389618,
+      "mean_foreign": 0.034041677529995255,
+      "matched_minus_current": -8.428096771240234e-05,
+      "matched_minus_foreign": 8.429128390092383e-05
+    },
+    {
+      "positive_rank": 11,
+      "current": 0.03640049323439598,
+      "matched": 0.03637589141726494,
+      "mean_foreign": 0.03622502088546753,
+      "matched_minus_current": -2.460181713104248e-05,
+      "matched_minus_foreign": 0.00015087053179740906
+    }
+  ],
+  "radius": 5.0
+}

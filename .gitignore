@@ -1,0 +1,38 @@
+# Python and editor artifacts
+**/__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+/.claude/
+
+# Environments, datasets, generated outputs, and model weights
+.venv/
+venv/
+/data/
+/dnpc/outputs/
+/revisit3d/checkpoints/
+/skillmem/results/
+*.pt
+*.pth
+*.ckpt
+*.log
+
+# External reference repositories; install/clone separately
+/CUT3R/
+/FastVGGT/
+/Open-d4rt/
+/TTT3R/
+/UniSplat/
+/dust3r/
+/gaussian-splatting/
+/tttLRM/
+/vggt/
+
+# OS and temporary files
+.DS_Store
+*.tmp
+*.swp

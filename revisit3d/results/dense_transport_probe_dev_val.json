@@ -1,0 +1,125 @@
+{
+  "summary": {
+    "utility_top1": 0.07142857142857142,
+    "utility_recall_at_3": 0.2857142857142857,
+    "mean_positive_rank": 6.642857142857143,
+    "matched_minus_current": -0.0002293368535382407,
+    "matched_minus_foreign": -3.296329261182311e-05
+  },
+  "rows": [
+    {
+      "positive_rank": 1,
+      "current": 0.20144715905189514,
+      "matched": 0.20124785602092743,
+      "mean_foreign": 0.20132625446869776,
+      "matched_minus_current": -0.0001993030309677124,
+      "matched_minus_foreign": -7.839844777032812e-05
+    },
+    {
+      "positive_rank": 5,
+      "current": 0.27532634139060974,
+      "matched": 0.27513954043388367,
+      "mean_foreign": 0.275190518452571,
+      "matched_minus_current": -0.00018680095672607422,
+      "matched_minus_foreign": -5.097801868730878e-05
+    },
+    {
+      "positive_rank": 5,
+      "current": 0.052938252687454224,
+      "matched": 0.05275413766503334,
+      "mean_foreign": 0.052788882014843136,
+      "matched_minus_current": -0.00018411502242088318,
+      "matched_minus_foreign": -3.474434980979546e-05
+    },
+    {
+      "positive_rank": 9,
+      "current": 0.054658062756061554,
+      "matched": 0.05454132333397865,
+      "mean_foreign": 0.054498153523756906,
+      "matched_minus_current": -0.000116739422082901,
+      "matched_minus_foreign": 4.3169810221746485e-05
+    },
+    {
+      "positive_rank": 14,
+      "current": 0.05205266550183296,
+      "matched": 0.05200771987438202,
+      "mean_foreign": 0.05189625116494986,
+      "matched_minus_current": -4.494562745094299e-05,
+      "matched_minus_foreign": 0.0001114687094321623
+    },
+    {
+      "positive_rank": 14,
+      "current": 0.07648669183254242,
+      "matched": 0.07646796852350235,
+      "mean_foreign": 0.07606473966286732,
+      "matched_minus_current": -1.872330904006958e-05,
+      "matched_minus_foreign": 0.00040322886063502705
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.10609427094459534,
+      "matched": 0.1055697426199913,
+      "mean_foreign": 0.10583569166752008,
+      "matched_minus_current": -0.0005245283246040344,
+      "matched_minus_foreign": -0.000265949047528774
+    },
+    {
+      "positive_rank": 2,
+      "current": 0.11318778991699219,
+      "matched": 0.11250776797533035,
+      "mean_foreign": 0.11282511743215415,
+      "matched_minus_current": -0.0006800219416618347,
+      "matched_minus_foreign": -0.00031734945682379556
+    },
+    {
+      "positive_rank": 11,
+      "current": 0.04768984019756317,
+      "matched": 0.04756138473749161,
+      "mean_foreign": 0.047479916077393755,
+      "matched_minus_current": -0.00012845546007156372,
+      "matched_minus_foreign": 8.146866009785259e-05
+    },
+    {
+      "positive_rank": 13,
+      "current": 0.054156914353370667,
+      "matched": 0.05413471907377243,
+      "mean_foreign": 0.054054197210531965,
+      "matched_minus_current": -2.2195279598236084e-05,
+      "matched_minus_foreign": 8.052186324046529e-05
+    },
+    {
+      "positive_rank": 3,
+      "current": 0.056198231875896454,
+      "matched": 0.055941421538591385,
+      "mean_foreign": 0.05607813568069385,
+      "matched_minus_current": -0.00025681033730506897,
+      "matched_minus_foreign": -0.0001367141421024648
+    },
+    {
+      "positive_rank": 4,
+      "current": 0.09716064482927322,
+      "matched": 0.09646501392126083,
+      "mean_foreign": 0.09672656368750793,
+      "matched_minus_current": -0.0006956309080123901,
+      "matched_minus_foreign": -0.00026154976624709336
+    },
+    {
+      "positive_rank": 4,
+      "current": 0.03415646031498909,
+      "matched": 0.03408265858888626,
+      "mean_foreign": 0.0341203805918877,
+      "matched_minus_current": -7.380172610282898e-05,
+      "matched_minus_foreign": -3.7722003001436355e-05
+    },
+    {
+      "positive_rank": 6,
+      "current": 0.0358772836625576,
+      "matched": 0.03579863905906677,
+      "mean_foreign": 0.03579657782728855,
+      "matched_minus_current": -7.864460349082947e-05,
+      "matched_minus_foreign": 2.0612317782192635e-06
+    }
+  ],
+  "step_size": 0.05,
+  "temperature": 0.07
+}

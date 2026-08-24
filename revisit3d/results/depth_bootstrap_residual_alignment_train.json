@@ -1,0 +1,42 @@
+{
+  "vectors": "revisit3d/results/depth_bootstrap_updates_train.pt",
+  "n_matched": 32,
+  "n_foreign": 840,
+  "rows": [
+    {
+      "removed_global_rank": 0,
+      "matched_cosine": 0.2597859501838684,
+      "foreign_cosine": 0.06795135140419006,
+      "matched_minus_foreign": 0.19183459877967834,
+      "mean_residual_norm": 0.02411649003624916
+    },
+    {
+      "removed_global_rank": 1,
+      "matched_cosine": 0.2266736477613449,
+      "foreign_cosine": 0.006841584108769894,
+      "matched_minus_foreign": 0.21983206365257502,
+      "mean_residual_norm": 0.010400762781500816
+    },
+    {
+      "removed_global_rank": 2,
+      "matched_cosine": 0.21821007132530212,
+      "foreign_cosine": 0.06412184238433838,
+      "matched_minus_foreign": 0.15408822894096375,
+      "mean_residual_norm": 0.004347900860011578
+    },
+    {
+      "removed_global_rank": 4,
+      "matched_cosine": 0.16561047732830048,
+      "foreign_cosine": 0.0599944032728672,
+      "matched_minus_foreign": 0.10561607405543327,
+      "mean_residual_norm": 0.0030728497076779604
+    },
+    {
+      "removed_global_rank": 8,
+      "matched_cosine": 0.130873441696167,
+      "foreign_cosine": 0.050663672387599945,
+      "matched_minus_foreign": 0.08020976930856705,
+      "mean_residual_norm": 0.0016908696852624416
+    }
+  ]
+}

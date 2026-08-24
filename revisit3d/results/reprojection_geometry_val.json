@@ -1,0 +1,85 @@
+{
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "measurements": [
+        {
+          "depth": 0.25,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 0.5,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 1.0,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 2.0,
+          "photometric_loss": 0.061369288712739944,
+          "valid_fraction": 0.0050223213620483875
+        },
+        {
+          "depth": 4.0,
+          "photometric_loss": 0.10319428890943527,
+          "valid_fraction": 0.0502232126891613
+        },
+        {
+          "depth": 8.0,
+          "photometric_loss": 0.1563338339328766,
+          "valid_fraction": 0.1456473171710968
+        },
+        {
+          "depth": 16.0,
+          "photometric_loss": 0.26058685779571533,
+          "valid_fraction": 0.3376116156578064
+        }
+      ]
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "measurements": [
+        {
+          "depth": 0.25,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 0.5,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 1.0,
+          "photometric_loss": 0.0,
+          "valid_fraction": 0.0
+        },
+        {
+          "depth": 2.0,
+          "photometric_loss": 0.05565832555294037,
+          "valid_fraction": 0.02734375
+        },
+        {
+          "depth": 4.0,
+          "photometric_loss": 0.1800367534160614,
+          "valid_fraction": 0.0970982164144516
+        },
+        {
+          "depth": 8.0,
+          "photometric_loss": 0.39524567127227783,
+          "valid_fraction": 0.2516741156578064
+        },
+        {
+          "depth": 16.0,
+          "photometric_loss": 0.21108250319957733,
+          "valid_fraction": 0.4871651828289032
+        }
+      ]
+    }
+  ]
+}

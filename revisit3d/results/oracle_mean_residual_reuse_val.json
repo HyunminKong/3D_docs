@@ -1,0 +1,35 @@
+{
+  "checkpoint": "revisit3d/checkpoints/depth_bootstrap_epoch1.pt",
+  "split": "val",
+  "remove_rank": 0,
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "foreign_episode": "scene-0006__scene-0022",
+      "cold": 0.15932749211788177,
+      "current": 0.1601240336894989,
+      "matched": 0.16006168723106384,
+      "foreign": 0.1590418815612793,
+      "matched_minus_current": -6.23464584350586e-05,
+      "matched_minus_foreign": 0.001019805669784546
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "foreign_episode": "scene-0006__scene-0022",
+      "cold": 0.19959485530853271,
+      "current": 0.19603192806243896,
+      "matched": 0.1959228217601776,
+      "foreign": 0.20030991733074188,
+      "matched_minus_current": -0.00010910630226135254,
+      "matched_minus_foreign": -0.00438709557056427
+    }
+  ],
+  "summary": {
+    "cold": 0.17946117371320724,
+    "current": 0.17807798087596893,
+    "matched": 0.17799225449562073,
+    "foreign": 0.1796758994460106,
+    "matched_minus_current": -8.572638034820557e-05,
+    "matched_minus_foreign": -0.001683644950389862
+  }
+}

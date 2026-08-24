@@ -1,0 +1,35 @@
+{
+  "checkpoint": "revisit3d/checkpoints/depth_bootstrap_epoch1.pt",
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "loss_a": 0.30947011709213257,
+      "loss_b": 0.09211677312850952,
+      "loss_a_prime": 0.3666587173938751,
+      "delta_norm_a": 0.499215304851532,
+      "delta_norm_b": 0.0018378808163106441,
+      "delta_norm_a_prime": 0.20211850106716156,
+      "matched_cosine": 0.9593523740768433,
+      "intervening_cosine": -0.9304947853088379
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "loss_a": 0.3666587173938751,
+      "loss_b": 0.15116409957408905,
+      "loss_a_prime": 0.30947011709213257,
+      "delta_norm_a": 0.20211850106716156,
+      "delta_norm_b": 0.001252945396117866,
+      "delta_norm_a_prime": 0.499215304851532,
+      "matched_cosine": 0.9593523740768433,
+      "intervening_cosine": 0.8769935369491577
+    }
+  ],
+  "summary": {
+    "matched_cosine": 0.9593523740768433,
+    "intervening_cosine": -0.026750624179840088,
+    "foreign_cosine": 1.0000000596046448,
+    "matched_minus_intervening": 0.9861029982566833,
+    "matched_minus_foreign": -0.040647685527801514
+  }
+}

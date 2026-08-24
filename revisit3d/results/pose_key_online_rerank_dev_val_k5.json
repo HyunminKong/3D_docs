@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "oracle_shortlist_coverage": 0.35714285714285715,
+    "chosen_oracle_utility": 0.07142857142857142,
+    "mean_selected_minus_current": -0.00023928311254296984,
+    "mean_regret": 0.0007749665528535843
+  },
+  "rows": [
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -5.094707012176514e-05,
+      "regret": 0.0003291815519332886
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -7.56978988647461e-05,
+      "regret": 0.00020709633827209473
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00043465569615364075,
+      "regret": 0.000497814267873764
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": 0.0003358013927936554,
+      "regret": 0.000998854637145996
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": true,
+      "selected_minus_current": -0.0006413422524929047,
+      "regret": 0.0
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": 0.00044580549001693726,
+      "regret": 0.0015856623649597168
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006625056266784668,
+      "regret": 0.0013369172811508179
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006451830267906189,
+      "regret": 0.001651570200920105
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006011240184307098,
+      "regret": 0.00016218796372413635
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0002354644238948822,
+      "regret": 0.00036520883440971375
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00017289072275161743,
+      "regret": 0.0009078793227672577
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0003095194697380066,
+      "regret": 0.0016822442412376404
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00015035271644592285,
+      "regret": 0.0005276277661323547
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00015188753604888916,
+      "regret": 0.0005972869694232941
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "checkpoint": "revisit3d/checkpoints/depth_bootstrap_epoch1.pt",
+  "split": "val",
+  "rows": [
+    {
+      "episode": "scene-0030__scene-0959",
+      "track_3d_loss": 0.2135438472032547,
+      "state_grad_norm": 1.4543038606643677,
+      "depth_mean": 0.8674510717391968,
+      "depth_std": 0.27605339884757996,
+      "track_coverage": 0.07271770387887955,
+      "mean_track_weight": 0.07271770387887955,
+      "mean_3d_residual": 0.49000242352485657
+    },
+    {
+      "episode": "scene-0959__scene-0030",
+      "track_3d_loss": 0.17354421317577362,
+      "state_grad_norm": 1.9970909357070923,
+      "depth_mean": 0.9418504238128662,
+      "depth_std": 0.30276671051979065,
+      "track_coverage": 0.12234272807836533,
+      "mean_track_weight": 0.12234272807836533,
+      "mean_3d_residual": 0.4860690236091614
+    }
+  ],
+  "summary": {
+    "track_3d_loss": 0.19354403018951416,
+    "state_grad_norm": 1.72569739818573,
+    "depth_mean": 0.9046507477760315,
+    "depth_std": 0.2894100546836853,
+    "track_coverage": 0.09753021597862244,
+    "mean_track_weight": 0.09753021597862244,
+    "mean_3d_residual": 0.48803572356700897
+  }
+}

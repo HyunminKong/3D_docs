@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "oracle_shortlist_coverage": 0.35714285714285715,
+    "chosen_oracle_utility": 0.14285714285714285,
+    "mean_selected_minus_current": -0.0003799708294016974,
+    "mean_regret": 0.0006342788359948567
+  },
+  "rows": [
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -4.4211745262145996e-05,
+      "regret": 0.0003359168767929077
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -2.2649765014648438e-05,
+      "regret": 0.0002601444721221924
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00043465569615364075,
+      "regret": 0.000497814267873764
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00022241473197937012,
+      "regret": 0.0004406385123729706
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": true,
+      "selected_minus_current": -0.0006413422524929047,
+      "regret": 0.0
+    },
+    {
+      "oracle_in_shortlist": true,
+      "chosen_is_oracle": true,
+      "selected_minus_current": -0.0011398568749427795,
+      "regret": 0.0
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006625056266784668,
+      "regret": 0.0013369172811508179
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006451830267906189,
+      "regret": 0.001651570200920105
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0006011240184307098,
+      "regret": 0.00016218796372413635
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0002354644238948822,
+      "regret": 0.00036520883440971375
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00017289072275161743,
+      "regret": 0.0009078793227672577
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.0003095194697380066,
+      "regret": 0.0016822442412376404
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -3.588572144508362e-05,
+      "regret": 0.000642094761133194
+    },
+    {
+      "oracle_in_shortlist": false,
+      "chosen_is_oracle": false,
+      "selected_minus_current": -0.00015188753604888916,
+      "regret": 0.0005972869694232941
+    }
+  ]
+}

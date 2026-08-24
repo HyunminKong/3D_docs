@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "rank": 2,
+      "top1_score": 1.5287799835205078,
+      "margin": 0.009504437446594238,
+      "correct_top1": false
+    },
+    {
+      "rank": 2,
+      "top1_score": 1.5197287797927856,
+      "margin": 0.0004532337188720703,
+      "correct_top1": false
+    },
+    {
+      "rank": 13,
+      "top1_score": 1.515011191368103,
+      "margin": 0.0013936758041381836,
+      "correct_top1": false
+    },
+    {
+      "rank": 7,
+      "top1_score": 1.4648789167404175,
+      "margin": 0.005394935607910156,
+      "correct_top1": false
+    },
+    {
+      "rank": 14,
+      "top1_score": 1.504872441291809,
+      "margin": 0.002354860305786133,
+      "correct_top1": false
+    },
+    {
+      "rank": 8,
+      "top1_score": 1.4599469900131226,
+      "margin": 0.006113648414611816,
+      "correct_top1": false
+    },
+    {
+      "rank": 12,
+      "top1_score": 1.4802472591400146,
+      "margin": 0.0008399486541748047,
+      "correct_top1": false
+    },
+    {
+      "rank": 2,
+      "top1_score": 1.4589341878890991,
+      "margin": 0.0003094673156738281,
+      "correct_top1": false
+    },
+    {
+      "rank": 4,
+      "top1_score": 1.5030062198638916,
+      "margin": 2.6941299438476562e-05,
+      "correct_top1": false
+    },
+    {
+      "rank": 8,
+      "top1_score": 1.5193634033203125,
+      "margin": 0.00017833709716796875,
+      "correct_top1": false
+    },
+    {
+      "rank": 11,
+      "top1_score": 1.4937152862548828,
+      "margin": 0.0019655227661132812,
+      "correct_top1": false
+    },
+    {
+      "rank": 1,
+      "top1_score": 1.4642306566238403,
+      "margin": 0.0015958547592163086,
+      "correct_top1": true
+    },
+    {
+      "rank": 2,
+      "top1_score": 1.5201071500778198,
+      "margin": 0.01715672016143799,
+      "correct_top1": false
+    },
+    {
+      "rank": 1,
+      "top1_score": 1.5029504299163818,
+      "margin": 0.0009251832962036133,
+      "correct_top1": true
+    }
+  ],
+  "summary": {
+    "recall@1": 0.14285714285714285,
+    "recall@3": 0.42857142857142855,
+    "recall@5": 0.5,
+    "recall@10": 0.7142857142857143,
+    "mean_rank": 6.214285714285714
+  }
+}
