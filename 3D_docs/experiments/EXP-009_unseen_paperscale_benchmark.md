@@ -69,3 +69,9 @@ The frozen selection contains 225 positive and 225 negative pairs over 247 train
 - DINOv2 pooled-cosine AUC without the classifier: 0.917.
 
 The registered DINOv2 gate passed. DINOv2 is selected only for long-term consolidation/prefiltering. VGGT remains the reconstruction/TTT backbone, and the learned plasticity key remains the local code-transport address. Stage 4 measures geometric place compatibility, not causal adaptation utility; the selected DINOv2 key must next improve a causal bank on new train scenes.
+
+## Stage-5 locked local-reuse transfer
+
+Freeze one direction of each of the 225 Stage-3 positive edges as a geometry pilot. Without retraining, apply the locked EXP-006 custom plasticity head, exactly one TTT step, visual code transport, 0.10 residual, and locked utility router. Candidate pools remain matched A, distant B, and three deterministic foreign contexts. This isolates whether local TTT/reuse and utility ranking transfer to fully unseen train scenes before DINOv2 is introduced into a causal bank.
+
+The gate requires mean current/base ratio at most 1.05, visual-mean utility above 0.01 with less than 10% deadband harm, at least 10 physical components, and locked-router utility above visual mean without higher harm. Failure requires retraining the local head/router on new train; success authorizes isolating the DINOv2 bank contribution.

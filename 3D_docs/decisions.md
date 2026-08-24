@@ -320,3 +320,10 @@ Date: 2026-08-25
 Status: Accepted after EXP-009 Stage-4 execution
 
 DINOv2 achieved 0.936 leave-one-location-out OOF AUC versus VGGT's 0.744, a +0.193 margin; its weakest held-out location reached 0.900. The registered gate passed. The selected architecture now has three explicit representation roles: frozen VGGT dense tokens for reconstruction and current TTT evidence, a learned local key/code for token-level adaptation transport, and frozen DINOv2 view tokens for long-term consolidation and candidate prefiltering. This is not redundant backbone stacking: the experiment shows reconstruction tokens and place-compatible memory addresses have materially different invariances. DINOv2 is not a safety gate and has not yet established causal adaptation utility. EXP-009 Stage 5 must verify locked plasticity/reuse transfer on new train scenes before training a bank-aware router or opening validation.
+
+## D047 — Test locked local reuse before attributing benefit to DINOv2
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-5 execution
+
+One direction of each Stage-3 positive edge forms a 225-episode train-only geometry pilot. Stage 5 first transfers the fully locked EXP-006 local plasticity path without retraining: custom VGGT-token head, one current TTT step, visual code transport, fixed 0.10 residual, K=5 candidate pool, and locked linear utility router. The gate requires a healthy current/base ratio, visual-mean utility above 0.01 with under 10% harm, at least 10 physical components, and router utility above visual mean without higher harm. This ordering prevents a stronger place key from hiding failure of the underlying adaptation. Validation/test pixels remain unopened.
