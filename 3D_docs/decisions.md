@@ -264,3 +264,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-008 Stage-0 execution
 
 Before adding a place-recognition backbone or retraining a bank-aware router, EXP-008 reuses the locked train-only OOF utility table and strict crossfit bucket scores in actual nuScenes capture-time order. Every unique context is written once when its final context frame has been observed; a target is evaluated immediately before its own write. Duplicate target episodes are collapsed only if all candidate utilities and predictions are exactly identical. The primary frozen-bucket predicted-history capacity-8 bank must exceed appearance-diversity utility without higher deadband harm and retain at least 90% of oracle scene-latest utility. This stage does not access validation/test and cannot establish paper-scale generalization; it decides whether the dual-address bank survives a real chronology correction.
+
+## D039 — True-time consolidation must also beat a matched merge null
+
+Date: 2026-08-25
+Status: Accepted before EXP-008 Stage-1 execution
+
+Stage 0 passed strongly: the frozen-bucket predicted-history bank reached 0.02650 utility and 5.63% harm versus appearance diversity's 0.02387/7.04%, with a 19-component bootstrap CI [+0.00019, +0.00486]. It also exceeded the oracle scene-latest grouping baseline. However, 51 of 85 merges crossed scene labels, so compression itself remains a possible explanation. Stage 1 shuffles the strict OOF bucket probabilities within fold 1,000 times, preserving the score distribution, threshold, timestamp order, write count, capacity, and policy. The observed primary is attributed to the consolidation key only if it exceeds at least 95% of matched-null utilities and keeps no more harm than appearance diversity.

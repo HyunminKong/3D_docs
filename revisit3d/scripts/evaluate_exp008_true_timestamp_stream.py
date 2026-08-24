@@ -195,7 +195,8 @@ def main() -> None:
                 serial += 1
                 if policy == "frozen_bucket_predicted_history":
                     _write_token(
-                        bank, context, policy, int(config["bank"]["capacity"]), serial,
+                        bank, context, "token_bucket_predicted_history",
+                        int(config["bank"]["capacity"]), serial,
                         probability_by_fold[fold],
                         float(config["bank"]["bucket_probability_threshold"]),
                         config["bank"], aggregate,

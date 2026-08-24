@@ -1,6 +1,6 @@
 # EXP-008 — True Capture-Time Continual Stream
 
-Status: **Registered; Stage 0 not yet executed.**
+Status: **Stage 0 passed; Stage 1 permutation control registered.**
 
 ## Question
 
@@ -37,3 +37,9 @@ Component bootstrap uncertainty is reported but is not a Stage-0 pass requiremen
 - Config: `configs/EXP-008_true_timestamp_stream_v10.yaml`
 - Script: `revisit3d/scripts/evaluate_exp008_true_timestamp_stream.py`
 - Output: `revisit3d/results/EXP-008/stage0_true_timestamp_stream_train_v10.json`
+
+## Stage-0 result
+
+Across 71 unique target contexts, the primary frozen-bucket predicted-history bank reached +0.02650 mean utility and 5.63% harm. Appearance-diversity reached +0.02387/7.04%, scene-latest +0.02486/5.63%, and unbounded unique +0.02339/7.04%. Primary minus appearance-diversity had a 19-component bootstrap mean +0.00244 with CI [+0.00019, +0.00486]. The registered gate passed.
+
+The primary made 85 bucket merges, including 51 cross-scene diagnostic merges. Stage 1 therefore preserves each fold's OOF probability distribution but permutes scores among context pairs 1,000 times. The key association is supported only if observed utility exceeds 95% of this matched null while retaining no more harm than appearance diversity.

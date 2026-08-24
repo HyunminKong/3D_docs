@@ -1,0 +1,35 @@
+experiment: EXP-008
+protocol_revision: v1.1
+seed: 800011
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  scene_root: tttLRM/data_example/nuscenes_exp006_all
+  split: train
+
+source:
+  oof_utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  crossfit_frozen_bucket: revisit3d/results/EXP-007/stage8_crossfit_frozen_token_bucket_oof_train_v20.json
+  true_timestamp_result: revisit3d/results/EXP-008/stage0_true_timestamp_stream_train_v10.json
+
+bank:
+  capacity: 8
+  top_k: 5
+  utility_threshold: 0.0
+  bucket_probability_threshold: 0.5
+  policy: frozen_bucket_predicted_history
+  prior_utility: 0.018
+  prior_count: 1.0
+  exploration_bonus: 0.01
+
+permutation_null:
+  samples: 1000
+  shuffle_within_fold: true
+  preserve_fold_probability_distribution: true
+
+success:
+  one_sided_alpha: 0.05
+  require_observed_harm_not_above_appearance: true
+
+output:
+  result: revisit3d/results/EXP-008/stage1_true_timestamp_bucket_null_train_v11.json
