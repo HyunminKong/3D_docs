@@ -103,3 +103,13 @@ DINOv2 improved over the learned VGGT transport key: oracle top-K utility was **
 For every Stage-7 target, draw a fixed uniform panel of up to 64 records from the exact causal bank and evaluate their locked transported-code utility. From each panel, simulate 2,000 independent random K=5 retrieval policies. This estimates the random-policy distribution without changing the DINO model, router, residual strength, stream, or target set.
 
 DINO is supported as a causal utility address only if both its oracle-top-K and routed mean utility exceed at least 95% of matched random policies, both paired component-bootstrap differences over the per-target random expectation have positive lower bounds, and DINO routed harm does not exceed the median random-policy harm. Failure retires generic place compatibility as the consolidation objective and motivates a utility-supervised prefilter key.
+
+### Stage-8 result
+
+The matched null decisively rejected DINOv2 as a plasticity-utility address. Across 2,000 random K=5 policies, random oracle utility was **+0.02642** and routed utility **+0.01614**, both above DINO's +0.02412/+0.01208; both one-sided p-values were 1.0. Component-bootstrap DINO-minus-random intervals were **[-0.00474, -0.00019]** oracle and **[-0.00772, -0.00011]** routed. Harm matched the random median (10.55%), so safety did not rescue the weaker utility. Generic place compatibility remains an optional feature/control, not the long-term memory address.
+
+## Stage-9 utility-supervised observable prefilter
+
+Use the fixed Stage-8 panels to test whether future adaptation utility is predictable before expensive code transport. The input contains only frozen DINO pair statistics, current/source learned transport descriptors, and their past/current TTT objective histories; transported-code statistics and query/future quantities are excluded. Fit a fixed StandardScaler→Ridge(alpha=1) model by leave-one-physical-component-out cross-fitting. The all-observable 274-D input is primary; DINO-only, transport-descriptor-only, history-only, and DINO+history are fixed ablations.
+
+Rank each panel by the OOF prediction, prefilter K=5, and evaluate both oracle utility in that set and the unchanged nested utility router. The primary passes only with positive OOF score/utility association, positive component-bootstrap lower bounds over the matched random expectation for oracle and routed utility, and routed harm no higher than the Stage-8 random median. This is a feasibility test of a utility-conditioned pair scorer, not yet a scalable dual-encoder address.

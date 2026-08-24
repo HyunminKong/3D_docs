@@ -362,3 +362,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-8 candidate evaluation
 
 Stage 8 samples a fixed uniform panel of at most 64 memories from each target's exact causal history, evaluates their locked future utility, and simulates 2,000 random K=5 policies. DINO is causally supported only if both oracle and routed mean utility exceed 95% of this matched null, their component-bootstrap differences over per-target random expectation have positive lower bounds, and routed harm is no higher than the null median. No DINO score, router threshold, or transport mechanism is changed. If the gate fails, generic place recognition is retired as the consolidation objective and the next key must be trained directly on future adaptation utility using train-only observable context pairs.
+
+## D053 — Retire generic place compatibility as the plasticity address
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-8 execution; supersedes D046 for consolidation
+
+The matched random K=5 null averaged 0.02642 oracle and 0.01614 routed utility, exceeding DINO's 0.02412/0.01208 in all 2,000 aggregate repetitions (one-sided p=1.0). DINO-minus-random component intervals were strictly negative for both outcomes. Place recognition is therefore not the correct optimization target for reusable adaptation, even though DINO remains highly predictive of physical overlap. DINO may remain one observable feature or baseline, but it is no longer the central consolidation address. Reconstruction remains VGGT-based and local code transport remains the learned per-token visual key.
+
+## D054 — Test utility-supervised prefiltering before a scalable memory key
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-9 fitting
+
+Stage 9 uses the fixed Stage-8 causal panels and future utility labels to cross-fit a cheap pre-transport pair scorer. Its deployable inputs are frozen DINO pair statistics, pooled learned transport descriptors, and current/source TTT objective histories; query information and post-transport statistics are prohibited. A fixed StandardScaler→Ridge(alpha=1) model over all 274 observables is primary, with four registered feature ablations. It must beat the per-target matched-random expectation with positive component intervals for both oracle top-K and unchanged-router utility, show positive OOF association, and not exceed random-median harm. Success authorizes distillation to a scalable utility-conditioned address; failure means the available pre-transport context does not identify reusable updates.
