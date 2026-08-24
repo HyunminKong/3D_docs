@@ -322,7 +322,10 @@ def geometry_transport(
         weight = torch.softmax(logits, dim=-1)
         source_code = source.code[batch].flatten(0, 1)[nearest]
         outputs.append((weight[..., None] * source_code).sum(dim=1))
-        entropy.append((-(weight * weight.clamp_min(1e-8).log()).sum(-1) / math.log(neighbors)).mean())
+        if neighbors == 1:
+            entropy.append(weight.new_zeros(()))
+        else:
+            entropy.append((-(weight * weight.clamp_min(1e-8).log()).sum(-1) / math.log(neighbors)).mean())
         max_weight.append(weight.max(dim=-1).values.mean())
         normalized_distance = nearest_distance / (target_scale.square() + source_scale.square()).sqrt().clamp_min(1e-6)
         coverage.append((normalized_distance[:, 0] <= 2.5).float().mean())

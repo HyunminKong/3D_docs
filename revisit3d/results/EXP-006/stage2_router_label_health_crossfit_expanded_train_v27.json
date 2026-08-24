@@ -1,0 +1,118 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage2_router_label_health",
+  "split": "train",
+  "protocol_revision": "v2.7",
+  "source_features": "revisit3d/results/EXP-006/stage1_router_features_crossfit_expanded_train_v27.json",
+  "validation_accessed": false,
+  "query_or_future_router_input": false,
+  "utility_epsilon": 0.01,
+  "overall_label_counts": {
+    "beneficial": 242,
+    "neutral": 121,
+    "harmful": 17
+  },
+  "harmful_overlap_fold_count": 3,
+  "harmful_folds": [
+    0,
+    1,
+    3
+  ],
+  "harmful_episode_count": 7,
+  "harmful_episodes": [
+    "scene-0017__scene-0980",
+    "scene-0018__scene-0036",
+    "scene-0019__scene-0036",
+    "scene-0039__scene-0372",
+    "scene-0061__scene-0980",
+    "scene-0441__scene-0440",
+    "scene-0980__scene-0017"
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "train_candidates": 240,
+      "held_out_candidates": 140,
+      "train_label_counts": {
+        "beneficial": 168,
+        "neutral": 66,
+        "harmful": 6
+      },
+      "held_out_label_counts": {
+        "beneficial": 74,
+        "neutral": 55,
+        "harmful": 11
+      },
+      "risk_train_has_beneficial_and_harmful": true
+    },
+    {
+      "fold": 1,
+      "train_candidates": 280,
+      "held_out_candidates": 100,
+      "train_label_counts": {
+        "beneficial": 169,
+        "neutral": 97,
+        "harmful": 14
+      },
+      "held_out_label_counts": {
+        "beneficial": 73,
+        "neutral": 24,
+        "harmful": 3
+      },
+      "risk_train_has_beneficial_and_harmful": true
+    },
+    {
+      "fold": 2,
+      "train_candidates": 320,
+      "held_out_candidates": 60,
+      "train_label_counts": {
+        "beneficial": 197,
+        "neutral": 106,
+        "harmful": 17
+      },
+      "held_out_label_counts": {
+        "beneficial": 45,
+        "neutral": 15,
+        "harmful": 0
+      },
+      "risk_train_has_beneficial_and_harmful": true
+    },
+    {
+      "fold": 3,
+      "train_candidates": 330,
+      "held_out_candidates": 50,
+      "train_label_counts": {
+        "beneficial": 208,
+        "neutral": 108,
+        "harmful": 14
+      },
+      "held_out_label_counts": {
+        "beneficial": 34,
+        "neutral": 13,
+        "harmful": 3
+      },
+      "risk_train_has_beneficial_and_harmful": true
+    },
+    {
+      "fold": 4,
+      "train_candidates": 350,
+      "held_out_candidates": 30,
+      "train_label_counts": {
+        "beneficial": 226,
+        "neutral": 107,
+        "harmful": 17
+      },
+      "held_out_label_counts": {
+        "beneficial": 16,
+        "neutral": 14,
+        "harmful": 0
+      },
+      "risk_train_has_beneficial_and_harmful": true
+    }
+  ],
+  "risk_identifiability_gate": {
+    "definition": "every grouped OOF training partition contains both beneficial and harmful labels, and harmful labels occur in at least two held-out overlap folds",
+    "passed": true
+  },
+  "interpretation": "A utility regressor can be probed, but grouped out-of-fold risk classification is not identifiable if one held-out physical-overlap group contains all harmful examples."
+}

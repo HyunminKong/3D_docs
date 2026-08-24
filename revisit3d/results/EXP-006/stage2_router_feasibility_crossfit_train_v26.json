@@ -1,0 +1,1011 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage2_router_feasibility",
+  "split": "train",
+  "protocol_revision": "v2.6",
+  "source_features": "revisit3d/results/EXP-006/stage1_router_features_crossfit_train_v26.json",
+  "validation_accessed": false,
+  "query_or_future_router_input": false,
+  "model_selection": "none_fixed_pca16_ridge_alpha1",
+  "candidate_utility_spearman": {
+    "ridge_full": 0.24591796933601368,
+    "ridge_online_scalars": 0.4355066158600618,
+    "current_objective_improvement": 0.27076119895586426
+  },
+  "metrics": {
+    "ridge_full": {
+      "episodes": 20,
+      "mean_selected_utility": 0.02241635873215273,
+      "median_selected_utility": 0.019234642386436462,
+      "beneficial_rate": 0.85,
+      "harmful_rate": 0.0,
+      "accept_rate": 1.0,
+      "mean_oracle_utility": 0.032333177153486756,
+      "mean_future_utility_regret": 0.009916818421334028
+    },
+    "ridge_online_scalars": {
+      "episodes": 20,
+      "mean_selected_utility": 0.02645844151847996,
+      "median_selected_utility": 0.029754108749330044,
+      "beneficial_rate": 0.9,
+      "harmful_rate": 0.05,
+      "accept_rate": 1.0,
+      "mean_oracle_utility": 0.032333177153486756,
+      "mean_future_utility_regret": 0.0058747356350068005
+    },
+    "current_objective_rerank": {
+      "episodes": 20,
+      "mean_selected_utility": 0.016516190324909984,
+      "median_selected_utility": 0.01822815090417862,
+      "beneficial_rate": 0.65,
+      "harmful_rate": 0.05,
+      "accept_rate": 0.85,
+      "mean_oracle_utility": 0.032333177153486756,
+      "mean_future_utility_regret": 0.015816986828576775
+    },
+    "matched_a": {
+      "episodes": 20,
+      "mean_selected_utility": 0.009490550315240398,
+      "median_selected_utility": 0.009375611320137978,
+      "beneficial_rate": 0.5,
+      "harmful_rate": 0.05,
+      "accept_rate": 1.0
+    },
+    "random_candidate_expectation": {
+      "episodes": 20,
+      "mean_selected_utility": 0.01615594013404916
+    },
+    "visual_mean_pool": {
+      "episodes": 20,
+      "mean_selected_utility": 0.016476514314126688,
+      "median_selected_utility": 0.01669182814657688,
+      "beneficial_rate": 0.8,
+      "harmful_rate": 0.0,
+      "accept_rate": 1.0
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_candidates": 80,
+      "test_candidates": 20,
+      "target_mean": 0.017950182421918724,
+      "full_prediction_mae": 0.009591257219878187,
+      "online_prediction_mae": 0.008028968060484384
+    },
+    {
+      "fold": 1,
+      "train_candidates": 80,
+      "test_candidates": 20,
+      "target_mean": 0.019143133237957955,
+      "full_prediction_mae": 0.009969409886489342,
+      "online_prediction_mae": 0.009007191895239552
+    },
+    {
+      "fold": 2,
+      "train_candidates": 60,
+      "test_candidates": 40,
+      "target_mean": 0.01671155558724422,
+      "full_prediction_mae": 0.013192413091678415,
+      "online_prediction_mae": 0.011430806608390853
+    },
+    {
+      "fold": 3,
+      "train_candidates": 90,
+      "test_candidates": 10,
+      "target_mean": 0.005085966258775443,
+      "full_prediction_mae": 0.012413255477090676,
+      "online_prediction_mae": 0.011420066816316668
+    },
+    {
+      "fold": 4,
+      "train_candidates": 90,
+      "test_candidates": 10,
+      "target_mean": 0.015440581412985922,
+      "full_prediction_mae": 0.025309842048005293,
+      "online_prediction_mae": 0.026702206562912167
+    }
+  ],
+  "rows": [
+    {
+      "fold": 0,
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "future_utility": 0.01920035481452942,
+      "current_objective_improvement": -0.0022163994144648314,
+      "ridge_full": 0.011560829950125754,
+      "ridge_online_scalars": 0.013106577373305044
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "future_utility": 0.03872717171907425,
+      "current_objective_improvement": -0.00012830982450395823,
+      "ridge_full": 0.0028237722440553475,
+      "ridge_online_scalars": 0.026583758753840885
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "future_utility": 0.026693077757954597,
+      "current_objective_improvement": -0.002119148848578334,
+      "ridge_full": 0.021490409655017733,
+      "ridge_online_scalars": 0.01979460573392195
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "future_utility": 0.014152334071695805,
+      "current_objective_improvement": -0.0006466407794505358,
+      "ridge_full": 0.014948568528066536,
+      "ridge_online_scalars": 0.021904396494961387
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "future_utility": 0.014152334071695805,
+      "current_objective_improvement": -0.0006466407794505358,
+      "ridge_full": 0.014948568528066536,
+      "ridge_online_scalars": 0.021904396494961387
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "future_utility": 0.019498050212860107,
+      "current_objective_improvement": 0.03466722369194031,
+      "ridge_full": 0.025486383913403823,
+      "ridge_online_scalars": 0.025075543670327875
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "future_utility": 0.010463974438607693,
+      "current_objective_improvement": 0.01154988445341587,
+      "ridge_full": 0.01827651989228367,
+      "ridge_online_scalars": 0.018463902696942834
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "future_utility": -0.00012513734691310674,
+      "current_objective_improvement": 0.008263724856078625,
+      "ridge_full": 0.014620971114504527,
+      "ridge_online_scalars": 0.011003761534741257
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "future_utility": 0.009491634555161,
+      "current_objective_improvement": 0.006441253237426281,
+      "ridge_full": 0.014093586391725175,
+      "ridge_online_scalars": 0.017450457078526504
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "future_utility": 0.004372875206172466,
+      "current_objective_improvement": 0.002503426745533943,
+      "ridge_full": 0.012391587116996849,
+      "ridge_online_scalars": 0.009540707785178723
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "future_utility": 0.015264391899108887,
+      "current_objective_improvement": 0.034626565873622894,
+      "ridge_full": 0.013582522379059301,
+      "ridge_online_scalars": 0.007194480709556833
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "future_utility": 0.007720892317593098,
+      "current_objective_improvement": 0.028044089674949646,
+      "ridge_full": 0.010397154300240333,
+      "ridge_online_scalars": 0.005820427534023452
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "future_utility": 0.03921489417552948,
+      "current_objective_improvement": 0.14319393038749695,
+      "ridge_full": 0.023011502212252427,
+      "ridge_online_scalars": 0.017541384411933893
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "future_utility": 0.04804680123925209,
+      "current_objective_improvement": 0.20754365622997284,
+      "ridge_full": 0.024444969591010814,
+      "ridge_online_scalars": 0.03630586126369239
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "future_utility": 0.036077696830034256,
+      "current_objective_improvement": 0.07919541001319885,
+      "ridge_full": 0.024157436925584114,
+      "ridge_online_scalars": 0.027056213761443935
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "future_utility": 0.004335721023380756,
+      "current_objective_improvement": -0.014278310351073742,
+      "ridge_full": 0.021894343007871256,
+      "ridge_online_scalars": 0.0090516468905668
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "future_utility": 0.018565092235803604,
+      "current_objective_improvement": -0.009457919746637344,
+      "ridge_full": 0.023554438054180612,
+      "ridge_online_scalars": 0.007142041239934229
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "future_utility": 0.005916863214224577,
+      "current_objective_improvement": 0.006639583967626095,
+      "ridge_full": 0.01407793514335536,
+      "ridge_online_scalars": 0.009958112499307734
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "future_utility": 0.021038753911852837,
+      "current_objective_improvement": 0.005617819260805845,
+      "ridge_full": 0.02499341678347513,
+      "ridge_online_scalars": 0.011559117708675213
+    },
+    {
+      "fold": 0,
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "future_utility": 0.006195872090756893,
+      "current_objective_improvement": -0.0032896290067583323,
+      "ridge_full": 0.015767986147907944,
+      "ridge_online_scalars": 0.00623629919141051
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "future_utility": 0.010302932001650333,
+      "current_objective_improvement": -0.02445860207080841,
+      "ridge_full": 0.0024467362016872846,
+      "ridge_online_scalars": 0.0004478926587604855
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "future_utility": 0.013991483487188816,
+      "current_objective_improvement": -0.0020085666328668594,
+      "ridge_full": 0.013032990851111533,
+      "ridge_online_scalars": 0.009548480678024286
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "future_utility": 0.01281764917075634,
+      "current_objective_improvement": -0.0009686063276603818,
+      "ridge_full": 0.017507245592035977,
+      "ridge_online_scalars": 0.01574717278910668
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "future_utility": 0.011071470566093922,
+      "current_objective_improvement": -0.0012698429636657238,
+      "ridge_full": 0.011345005221809206,
+      "ridge_online_scalars": 0.0187417082167583
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "future_utility": 0.018971234560012817,
+      "current_objective_improvement": -0.003118266584351659,
+      "ridge_full": 0.01930589099045209,
+      "ridge_online_scalars": 0.022912694878206127
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "future_utility": 0.008448290638625622,
+      "current_objective_improvement": -0.013009469956159592,
+      "ridge_full": 0.0021820796819353623,
+      "ridge_online_scalars": -0.003846984916549844
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "future_utility": 0.013218448497354984,
+      "current_objective_improvement": -0.002285558031871915,
+      "ridge_full": 0.018251625512474876,
+      "ridge_online_scalars": 0.014183734548763552
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "future_utility": 0.024229632690548897,
+      "current_objective_improvement": -0.0004586544819176197,
+      "ridge_full": 0.015550767254101506,
+      "ridge_online_scalars": 0.018483350489302976
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "future_utility": 0.024409407749772072,
+      "current_objective_improvement": -0.0014065871946513653,
+      "ridge_full": 0.004323090852167968,
+      "ridge_online_scalars": 0.019853442910885234
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "future_utility": 0.012801231816411018,
+      "current_objective_improvement": 0.000288470764644444,
+      "ridge_full": 0.013606121315522496,
+      "ridge_online_scalars": 0.02534277082794357
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "future_utility": 0.028861038386821747,
+      "current_objective_improvement": 0.011022968217730522,
+      "ridge_full": 0.025425078415894878,
+      "ridge_online_scalars": 0.012871033736526849
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "future_utility": 0.014456563629209995,
+      "current_objective_improvement": 0.006536163855344057,
+      "ridge_full": 0.02654276377535645,
+      "ridge_online_scalars": 0.013357005442076625
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "future_utility": -0.002072471659630537,
+      "current_objective_improvement": -0.05808107554912567,
+      "ridge_full": 0.008881131749651073,
+      "ridge_online_scalars": 0.01686531149965468
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "future_utility": 0.04207435995340347,
+      "current_objective_improvement": -0.1838182508945465,
+      "ridge_full": 0.024261828505196877,
+      "ridge_online_scalars": 0.05549552598679748
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "future_utility": 0.030720703303813934,
+      "current_objective_improvement": -0.09519877284765244,
+      "ridge_full": 0.021697235701160677,
+      "ridge_online_scalars": 0.029573101604921662
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "future_utility": 0.012210789136588573,
+      "current_objective_improvement": -0.01585218496620655,
+      "ridge_full": 0.022868021917738904,
+      "ridge_online_scalars": 0.024954758015015018
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "future_utility": 0.012304985895752907,
+      "current_objective_improvement": -0.01643838733434677,
+      "ridge_full": 0.020097033058317896,
+      "ridge_online_scalars": 0.02965095133348503
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "future_utility": 0.006995422299951315,
+      "current_objective_improvement": -0.005481365602463484,
+      "ridge_full": 0.011592055548364021,
+      "ridge_online_scalars": 0.021859463955904948
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "future_utility": 0.013329626061022282,
+      "current_objective_improvement": -0.015323081985116005,
+      "ridge_full": 0.028582530062408976,
+      "ridge_online_scalars": 0.025045582628093567
+    },
+    {
+      "fold": 1,
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "future_utility": 0.07371986657381058,
+      "current_objective_improvement": -0.07498908042907715,
+      "ridge_full": 0.020924184363200853,
+      "ridge_online_scalars": 0.08165404681290664
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "future_utility": 0.027519285678863525,
+      "current_objective_improvement": 0.0052724736742675304,
+      "ridge_full": 0.0025351116966424933,
+      "ridge_online_scalars": 0.007544417435403586
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "future_utility": 0.038119059056043625,
+      "current_objective_improvement": 0.0155918188393116,
+      "ridge_full": 0.019795582309151454,
+      "ridge_online_scalars": 0.009226065029913307
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "future_utility": 0.043064143508672714,
+      "current_objective_improvement": 0.006711281836032867,
+      "ridge_full": 0.03513657271257917,
+      "ridge_online_scalars": 0.041690497175372626
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "future_utility": 0.034607503563165665,
+      "current_objective_improvement": 0.011661128140985966,
+      "ridge_full": 0.02825672682981469,
+      "ridge_online_scalars": 0.013076545658044298
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "future_utility": 0.005736153572797775,
+      "current_objective_improvement": -0.001496391836553812,
+      "ridge_full": 0.03397192336838937,
+      "ridge_online_scalars": 0.019972160107930265
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "future_utility": 0.01320738811045885,
+      "current_objective_improvement": -0.00753529230132699,
+      "ridge_full": -0.0010459550974454106,
+      "ridge_online_scalars": 0.0031912651678251275
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "future_utility": 0.022214876487851143,
+      "current_objective_improvement": -0.0012530424864962697,
+      "ridge_full": 0.010210108373938914,
+      "ridge_online_scalars": 0.008177079786803296
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "future_utility": 0.028370436280965805,
+      "current_objective_improvement": 0.007079922128468752,
+      "ridge_full": 0.02541955084817253,
+      "ridge_online_scalars": 0.019521783145492178
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "future_utility": 0.008514322340488434,
+      "current_objective_improvement": -0.007346329279243946,
+      "ridge_full": 0.035793198768030096,
+      "ridge_online_scalars": 0.016780314709451162
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "future_utility": 0.008514322340488434,
+      "current_objective_improvement": -0.007346329279243946,
+      "ridge_full": 0.035793198768030096,
+      "ridge_online_scalars": 0.016780314709451162
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "future_utility": -0.006654230412095785,
+      "current_objective_improvement": -0.00350091396830976,
+      "ridge_full": 0.007730633383710776,
+      "ridge_online_scalars": -0.0016553762616042453
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "future_utility": -0.007631495129317045,
+      "current_objective_improvement": -0.00018277863273397088,
+      "ridge_full": 0.008454559635579263,
+      "ridge_online_scalars": -0.003266387671974076
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "future_utility": 0.031137781217694283,
+      "current_objective_improvement": 0.07740575075149536,
+      "ridge_full": 0.006210072738461261,
+      "ridge_online_scalars": 0.03311049074432804
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "future_utility": 0.03578408434987068,
+      "current_objective_improvement": 0.05620342493057251,
+      "ridge_full": 0.008496604581433607,
+      "ridge_online_scalars": 0.03131929683107735
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "future_utility": 0.0037547985557466745,
+      "current_objective_improvement": -0.0031514251604676247,
+      "ridge_full": 0.00086864501962324,
+      "ridge_online_scalars": -0.0022746609976968674
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "future_utility": 0.0011653221445158124,
+      "current_objective_improvement": -0.024297116324305534,
+      "ridge_full": 0.006417226972056472,
+      "ridge_online_scalars": -0.0018988113375565246
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "future_utility": 0.03896801918745041,
+      "current_objective_improvement": 0.04474842920899391,
+      "ridge_full": 0.00950673313843111,
+      "ridge_online_scalars": 0.0320236354566734
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "future_utility": 0.02817591466009617,
+      "current_objective_improvement": 0.04348261281847954,
+      "ridge_full": 0.012677118112107318,
+      "ridge_online_scalars": 0.012017606839732733
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "future_utility": 0.028950799256563187,
+      "current_objective_improvement": 0.04156031459569931,
+      "ridge_full": 0.007422040042452595,
+      "ridge_online_scalars": 0.015264796895756126
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "future_utility": 0.013048011809587479,
+      "current_objective_improvement": 0.009745686315000057,
+      "ridge_full": -0.006838860451218745,
+      "ridge_online_scalars": 0.0006425131839368423
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "future_utility": -0.004672790411859751,
+      "current_objective_improvement": -0.031749382615089417,
+      "ridge_full": 0.007502781871838648,
+      "ridge_online_scalars": -0.006181629399780682
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "future_utility": -0.006447920575737953,
+      "current_objective_improvement": -0.025254853069782257,
+      "ridge_full": 0.007185720692194473,
+      "ridge_online_scalars": -0.006754452728033808
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "future_utility": 0.013599464669823647,
+      "current_objective_improvement": 0.0640539824962616,
+      "ridge_full": 0.01227620008780559,
+      "ridge_online_scalars": 0.039775906426310834
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "future_utility": -0.0009830363560467958,
+      "current_objective_improvement": -0.019779279828071594,
+      "ridge_full": -0.0012693859899474587,
+      "ridge_online_scalars": -0.0036702795554886015
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "future_utility": 0.010842465795576572,
+      "current_objective_improvement": 0.05607887730002403,
+      "ridge_full": 0.008712935632870612,
+      "ridge_online_scalars": 0.038458057896397696
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "future_utility": 0.003796929493546486,
+      "current_objective_improvement": 0.007812507450580597,
+      "ridge_full": 0.0025161028432840304,
+      "ridge_online_scalars": -0.003222290100083035
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "future_utility": 0.0055410596542060375,
+      "current_objective_improvement": -0.012018591165542603,
+      "ridge_full": 0.007301138047018785,
+      "ridge_online_scalars": -0.000630841341231897
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "future_utility": 0.04511693865060806,
+      "current_objective_improvement": 0.05639585852622986,
+      "ridge_full": 0.02032806070814352,
+      "ridge_online_scalars": 0.02846125339504922
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "future_utility": 0.02817591466009617,
+      "current_objective_improvement": 0.04348261281847954,
+      "ridge_full": 0.012677118112107318,
+      "ridge_online_scalars": 0.012017606839732733
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "future_utility": 0.028950799256563187,
+      "current_objective_improvement": 0.04156031459569931,
+      "ridge_full": 0.007422040042452595,
+      "ridge_online_scalars": 0.015264796895756126
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "future_utility": 0.001972437370568514,
+      "current_objective_improvement": -0.016833022236824036,
+      "ridge_full": 0.004824288059736835,
+      "ridge_online_scalars": -6.488584569347422e-05
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "future_utility": 0.01695825159549713,
+      "current_objective_improvement": 0.14972519874572754,
+      "ridge_full": 0.013606626853715564,
+      "ridge_online_scalars": 0.03959236124562227
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "future_utility": 0.011812984012067318,
+      "current_objective_improvement": 0.05123935639858246,
+      "ridge_full": 0.019116569300011165,
+      "ridge_online_scalars": 0.030000411117165268
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "future_utility": 0.0071352082304656506,
+      "current_objective_improvement": 0.025816449895501137,
+      "ridge_full": 0.018417783681642114,
+      "ridge_online_scalars": 0.02162399960858718
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "future_utility": 0.01591496355831623,
+      "current_objective_improvement": 0.0872347503900528,
+      "ridge_full": 0.015168697244390326,
+      "ridge_online_scalars": 0.02575916620388322
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "future_utility": 0.007364074699580669,
+      "current_objective_improvement": 0.015818096697330475,
+      "ridge_full": 0.0033475424618505997,
+      "ridge_online_scalars": 0.00021817196543645265
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "future_utility": 0.014158561825752258,
+      "current_objective_improvement": -0.00621024239808321,
+      "ridge_full": 0.010886309776939655,
+      "ridge_online_scalars": 0.0008156422019364607
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "future_utility": 0.036335546523332596,
+      "current_objective_improvement": 0.05544121935963631,
+      "ridge_full": 0.009359701036994034,
+      "ridge_online_scalars": 0.01875889432282818
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "future_utility": 0.013738020323216915,
+      "current_objective_improvement": 0.0031024045310914516,
+      "ridge_full": -0.0004535177518112908,
+      "ridge_online_scalars": 0.008025529417039651
+    },
+    {
+      "fold": 2,
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "future_utility": 0.022585853934288025,
+      "current_objective_improvement": 0.017790379002690315,
+      "ridge_full": 0.01007549418475611,
+      "ridge_online_scalars": 0.003841448067833344
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "future_utility": 0.014433598145842552,
+      "current_objective_improvement": 0.05454029142856598,
+      "ridge_full": 0.012206491107722298,
+      "ridge_online_scalars": 0.014391396796650725
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "future_utility": 0.014104214496910572,
+      "current_objective_improvement": 0.013665496371686459,
+      "ridge_full": 0.020504231365125625,
+      "ridge_online_scalars": 0.014537279822750566
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "future_utility": 0.024071617051959038,
+      "current_objective_improvement": 0.06160692125558853,
+      "ridge_full": 0.015907487513223576,
+      "ridge_online_scalars": 0.02742839699456253
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "future_utility": 0.0016572615131735802,
+      "current_objective_improvement": 0.020078780129551888,
+      "ridge_full": 0.0059785461575890195,
+      "ridge_online_scalars": 0.011328008558010746
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "future_utility": 0.008047167211771011,
+      "current_objective_improvement": 0.0487978458404541,
+      "ridge_full": 0.021633351760257095,
+      "ridge_online_scalars": 0.017639961752532192
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "future_utility": -0.003804305102676153,
+      "current_objective_improvement": 0.0014963258290663362,
+      "ridge_full": 0.017527769738348166,
+      "ridge_online_scalars": 0.008876097055524904
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "future_utility": 0.001787062967196107,
+      "current_objective_improvement": -0.004187184385955334,
+      "ridge_full": 0.0246860502020781,
+      "ridge_online_scalars": 0.019999348877768622
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "future_utility": 0.0005406729178503156,
+      "current_objective_improvement": -0.0056713963858783245,
+      "ridge_full": 0.015469072365317547,
+      "ridge_online_scalars": 0.022314977579411175
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "future_utility": -0.005255780648440123,
+      "current_objective_improvement": -0.0038727503269910812,
+      "ridge_full": 0.004756476255304199,
+      "ridge_online_scalars": 0.012415470552833631
+    },
+    {
+      "fold": 3,
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "future_utility": -0.004721845965832472,
+      "current_objective_improvement": -0.005973189603537321,
+      "ridge_full": 0.015540267739984123,
+      "ridge_online_scalars": 0.016044990062492374
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "future_utility": -0.025300106033682823,
+      "current_objective_improvement": 0.015575680881738663,
+      "ridge_full": 0.022589438061708687,
+      "ridge_online_scalars": 0.0195013603120318
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "future_utility": -0.059612683951854706,
+      "current_objective_improvement": 0.04722820967435837,
+      "ridge_full": 0.017799382427855514,
+      "ridge_online_scalars": 0.03144055104478733
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "future_utility": 0.02276025526225567,
+      "current_objective_improvement": -0.004379404708743095,
+      "ridge_full": 0.020183072968154348,
+      "ridge_online_scalars": 0.01014715045263729
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "future_utility": 0.025502212345600128,
+      "current_objective_improvement": -0.01169885415583849,
+      "ridge_full": 0.030555306423502012,
+      "ridge_online_scalars": 0.012503697833272653
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "future_utility": 0.03346049785614014,
+      "current_objective_improvement": -0.01603032648563385,
+      "ridge_full": 0.014120166368096494,
+      "ridge_online_scalars": 0.015404896147409353
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "future_utility": 0.04266183450818062,
+      "current_objective_improvement": -0.004458524286746979,
+      "ridge_full": 0.010625358857211865,
+      "ridge_online_scalars": 0.01401290960057214
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "future_utility": 0.005939696449786425,
+      "current_objective_improvement": 0.002724410966038704,
+      "ridge_full": 0.006926185332048956,
+      "ridge_online_scalars": 0.01149563253698965
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "future_utility": 0.0357411727309227,
+      "current_objective_improvement": -0.00866806972771883,
+      "ridge_full": 0.012852445488474029,
+      "ridge_online_scalars": 0.0189912940778287
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "future_utility": 0.0357411727309227,
+      "current_objective_improvement": -0.00866806972771883,
+      "ridge_full": 0.012852445488474029,
+      "ridge_online_scalars": 0.0189912940778287
+    },
+    {
+      "fold": 4,
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "future_utility": 0.037511762231588364,
+      "current_objective_improvement": -0.0038345179054886103,
+      "ridge_full": 0.015485979104812649,
+      "ridge_online_scalars": 0.017716237276499725
+    }
+  ]
+}

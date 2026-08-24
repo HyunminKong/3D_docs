@@ -1,0 +1,1133 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage1_lidar_transport_gap_diagnostic",
+  "split": "train",
+  "protocol_revision": "v2.6",
+  "oracle_context_geometry_diagnostic_only": true,
+  "oracle_geometry_scope": "matched_source_and_current_context_only",
+  "query_geometry_accessed": false,
+  "validation_accessed": false,
+  "depth_gauge_calibration": "segment_median_projected_lidar_depth_ratio",
+  "neighbors": 8,
+  "reuse_strength": 0.1,
+  "summary": {
+    "visual": {
+      "episodes": 20,
+      "valid_rate": 1.0,
+      "mean_utility": 0.002041818594443612,
+      "median_utility": 0.0038704583421349525,
+      "beneficial_rate": 0.25,
+      "harmful_rate": 0.1
+    },
+    "predicted_geometry": {
+      "episodes": 20,
+      "valid_rate": 0.8,
+      "mean_utility": -0.009215637277520727,
+      "median_utility": -0.008349640993401408,
+      "beneficial_rate": 0.125,
+      "harmful_rate": 0.5
+    },
+    "predicted_geometry_appearance": {
+      "episodes": 20,
+      "valid_rate": 0.8,
+      "mean_utility": -0.008845081560139079,
+      "median_utility": -0.008207436185330153,
+      "beneficial_rate": 0.125,
+      "harmful_rate": 0.4375
+    },
+    "lidar_scaled_geometry": {
+      "episodes": 20,
+      "valid_rate": 1.0,
+      "mean_utility": -0.010717795771779493,
+      "median_utility": -0.008462765254080296,
+      "beneficial_rate": 0.15,
+      "harmful_rate": 0.4
+    },
+    "lidar_scaled_geometry_appearance": {
+      "episodes": 20,
+      "valid_rate": 1.0,
+      "mean_utility": -0.014245157217374071,
+      "median_utility": -0.00679635489359498,
+      "beneficial_rate": 0.2,
+      "harmful_rate": 0.4
+    },
+    "lidar_sparse_nearest": {
+      "episodes": 20,
+      "valid_rate": 1.0,
+      "mean_utility": -0.011672065197490155,
+      "median_utility": -0.007186550414189696,
+      "beneficial_rate": 0.05,
+      "harmful_rate": 0.4
+    }
+  },
+  "neighbor_agreement": {
+    "predicted_alignment_valid_rate": 0.8,
+    "mean_top1_agreement": 0.038360595703125,
+    "mean_recall_at_8": 0.1282196044921875,
+    "mean_sparse_transport_coverage": 0.5519287109375
+  },
+  "diagnostics": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "source_lidar_cells": 1577,
+      "current_lidar_cells": 1575,
+      "source_metric_per_predicted_depth": 27.511518478393555,
+      "current_metric_per_predicted_depth": 28.28120994567871,
+      "lidar_sparse_transport_coverage": 0.75341796875,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.17578125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.37872314453125
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "source_lidar_cells": 1575,
+      "current_lidar_cells": 1577,
+      "source_metric_per_predicted_depth": 28.28120994567871,
+      "current_metric_per_predicted_depth": 27.511518478393555,
+      "lidar_sparse_transport_coverage": 0.76025390625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.1650390625,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.37158203125
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "source_lidar_cells": 1154,
+      "current_lidar_cells": 1197,
+      "source_metric_per_predicted_depth": 37.344478607177734,
+      "current_metric_per_predicted_depth": 48.10789489746094,
+      "lidar_sparse_transport_coverage": 0.54296875,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.00244140625,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.04693603515625
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "source_lidar_cells": 1197,
+      "current_lidar_cells": 1154,
+      "source_metric_per_predicted_depth": 48.10789489746094,
+      "current_metric_per_predicted_depth": 37.344478607177734,
+      "lidar_sparse_transport_coverage": 0.37255859375,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.001953125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.0113525390625
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "source_lidar_cells": 1436,
+      "current_lidar_cells": 1451,
+      "source_metric_per_predicted_depth": 25.582538604736328,
+      "current_metric_per_predicted_depth": 24.304203033447266,
+      "lidar_sparse_transport_coverage": 0.66455078125,
+      "predicted_alignment_valid": false,
+      "predicted_vs_lidar_scaled_top1_agreement": null,
+      "predicted_vs_lidar_scaled_recall_at_8": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "source_lidar_cells": 1451,
+      "current_lidar_cells": 1436,
+      "source_metric_per_predicted_depth": 24.304203033447266,
+      "current_metric_per_predicted_depth": 25.582538604736328,
+      "lidar_sparse_transport_coverage": 0.41015625,
+      "predicted_alignment_valid": false,
+      "predicted_vs_lidar_scaled_top1_agreement": null,
+      "predicted_vs_lidar_scaled_recall_at_8": null
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "source_lidar_cells": 1377,
+      "current_lidar_cells": 1408,
+      "source_metric_per_predicted_depth": 44.03729248046875,
+      "current_metric_per_predicted_depth": 24.250858306884766,
+      "lidar_sparse_transport_coverage": 0.60791015625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.025390625,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.0572509765625
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "source_lidar_cells": 1408,
+      "current_lidar_cells": 1377,
+      "source_metric_per_predicted_depth": 24.250858306884766,
+      "current_metric_per_predicted_depth": 44.03729248046875,
+      "lidar_sparse_transport_coverage": 0.51025390625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.00146484375,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.0186767578125
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "source_lidar_cells": 1408,
+      "current_lidar_cells": 1392,
+      "source_metric_per_predicted_depth": 32.097015380859375,
+      "current_metric_per_predicted_depth": 40.469017028808594,
+      "lidar_sparse_transport_coverage": 0.625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.0322265625,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.173095703125
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "source_lidar_cells": 1392,
+      "current_lidar_cells": 1408,
+      "source_metric_per_predicted_depth": 40.469017028808594,
+      "current_metric_per_predicted_depth": 32.097015380859375,
+      "lidar_sparse_transport_coverage": 0.62646484375,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.02392578125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.1292724609375
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "source_lidar_cells": 1417,
+      "current_lidar_cells": 1403,
+      "source_metric_per_predicted_depth": 19.260446548461914,
+      "current_metric_per_predicted_depth": 26.079212188720703,
+      "lidar_sparse_transport_coverage": 0.548828125,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.06787109375,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.20819091796875
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "source_lidar_cells": 1403,
+      "current_lidar_cells": 1417,
+      "source_metric_per_predicted_depth": 26.079212188720703,
+      "current_metric_per_predicted_depth": 19.260446548461914,
+      "lidar_sparse_transport_coverage": 0.62890625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.0205078125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.1148681640625
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "source_lidar_cells": 1222,
+      "current_lidar_cells": 1225,
+      "source_metric_per_predicted_depth": 19.119524002075195,
+      "current_metric_per_predicted_depth": 22.445276260375977,
+      "lidar_sparse_transport_coverage": 0.490234375,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.01953125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.10205078125
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "source_lidar_cells": 1225,
+      "current_lidar_cells": 1222,
+      "source_metric_per_predicted_depth": 22.445276260375977,
+      "current_metric_per_predicted_depth": 19.119524002075195,
+      "lidar_sparse_transport_coverage": 0.49755859375,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.02734375,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.07470703125
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "source_lidar_cells": 1222,
+      "current_lidar_cells": 1258,
+      "source_metric_per_predicted_depth": 19.119524002075195,
+      "current_metric_per_predicted_depth": 24.45384979248047,
+      "lidar_sparse_transport_coverage": 0.52392578125,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.0146484375,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.031005859375
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "source_lidar_cells": 1258,
+      "current_lidar_cells": 1222,
+      "source_metric_per_predicted_depth": 24.45384979248047,
+      "current_metric_per_predicted_depth": 19.119524002075195,
+      "lidar_sparse_transport_coverage": 0.5166015625,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.0009765625,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.0115966796875
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "source_lidar_cells": 1233,
+      "current_lidar_cells": 1258,
+      "source_metric_per_predicted_depth": 23.36208724975586,
+      "current_metric_per_predicted_depth": 24.45384979248047,
+      "lidar_sparse_transport_coverage": 0.5771484375,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.01611328125,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.1588134765625
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "source_lidar_cells": 1258,
+      "current_lidar_cells": 1233,
+      "source_metric_per_predicted_depth": 24.45384979248047,
+      "current_metric_per_predicted_depth": 23.36208724975586,
+      "lidar_sparse_transport_coverage": 0.53076171875,
+      "predicted_alignment_valid": true,
+      "predicted_vs_lidar_scaled_top1_agreement": 0.0185546875,
+      "predicted_vs_lidar_scaled_recall_at_8": 0.16339111328125
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "source_lidar_cells": 1114,
+      "current_lidar_cells": 1032,
+      "source_metric_per_predicted_depth": 37.42637634277344,
+      "current_metric_per_predicted_depth": 18.220937728881836,
+      "lidar_sparse_transport_coverage": 0.419921875,
+      "predicted_alignment_valid": false,
+      "predicted_vs_lidar_scaled_top1_agreement": null,
+      "predicted_vs_lidar_scaled_recall_at_8": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "source_lidar_cells": 1032,
+      "current_lidar_cells": 1114,
+      "source_metric_per_predicted_depth": 18.220937728881836,
+      "current_metric_per_predicted_depth": 37.42637634277344,
+      "lidar_sparse_transport_coverage": 0.43115234375,
+      "predicted_alignment_valid": false,
+      "predicted_vs_lidar_scaled_top1_agreement": null,
+      "predicted_vs_lidar_scaled_recall_at_8": null
+    }
+  ],
+  "rows": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06789132952690125,
+      "utility": -0.0036372158210724592
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.06808238476514816,
+      "utility": -0.006461584474891424
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.06758958846330643,
+      "utility": 0.0008234208216890693
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.06826189905405045,
+      "utility": -0.009115343913435936
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.06806115061044693,
+      "utility": -0.006147680338472128
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.06797429174184799,
+      "utility": -0.0048636458814144135
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05897241830825806,
+      "utility": -0.004005038179457188
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.059012047946453094,
+      "utility": -0.0046797324903309345
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.05901799723505974,
+      "utility": -0.0047810194082558155
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.05859997868537903,
+      "utility": 0.002335743745788932
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.05864620953798294,
+      "utility": 0.0015486638294532895
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.05803339555859566,
+      "utility": 0.01198181789368391
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.00984303466975689,
+      "utility": 0.0029122394043952227
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.009972847998142242,
+      "utility": -0.010237697511911392
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.009949781000614166,
+      "utility": -0.00790103804320097
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.009948884136974812,
+      "utility": -0.007810186594724655
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.00993049144744873,
+      "utility": -0.005947028752416372
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.01074536144733429,
+      "utility": -0.08849239349365234
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.030549120157957077,
+      "utility": -0.0018249890999868512
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.03127405419945717,
+      "utility": -0.02559840865433216
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03131337836384773,
+      "utility": -0.026888001710176468
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.03081819787621498,
+      "utility": -0.010649099014699459
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03072049468755722,
+      "utility": -0.0074450294487178326
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.03067649155855179,
+      "utility": -0.0060019949451088905
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.014418315142393112,
+      "utility": 0.009397877380251884
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "predicted_geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "predicted_geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.014397785998880863,
+      "utility": 0.010808320716023445
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.014391051605343819,
+      "utility": 0.011271003633737564
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.014446737244725227,
+      "utility": 0.007445153314620256
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.017935778945684433,
+      "utility": -0.041310034692287445
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "predicted_geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "predicted_geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.017115171998739243,
+      "utility": 0.006332514341920614
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.017269965261220932,
+      "utility": -0.0026544262655079365
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.017475200816988945,
+      "utility": -0.014569929800927639
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.017087433487176895,
+      "utility": -0.027680594474077225
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.017314866185188293,
+      "utility": -0.041358958929777145
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.017412155866622925,
+      "utility": -0.0472102016210556
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.017521701753139496,
+      "utility": -0.05379856377840042
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.018416468054056168,
+      "utility": -0.10761202871799469
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.016656987369060516,
+      "utility": -0.0017924975836649537
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03469475358724594,
+      "utility": -0.006204492412507534
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.03577520698308945,
+      "utility": -0.03753940388560295
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03587883338332176,
+      "utility": -0.04054474085569382
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.036942169070243835,
+      "utility": -0.07138320803642273
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0369831807911396,
+      "utility": -0.07257261872291565
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.03436268866062164,
+      "utility": 0.003425932489335537
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02298511192202568,
+      "utility": 0.01106331404298544
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.02322179637849331,
+      "utility": 0.000879942555911839
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02329978533089161,
+      "utility": -0.0024755396880209446
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.023189686238765717,
+      "utility": 0.002261484507471323
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02321937307715416,
+      "utility": 0.000984205398708582
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.02362196333706379,
+      "utility": -0.016337279230356216
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.029710963368415833,
+      "utility": 0.008516613394021988
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.029747653752565384,
+      "utility": 0.007292220368981361
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0297047458589077,
+      "utility": 0.008724098093807697
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.030571764335036278,
+      "utility": -0.020209141075611115
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03053884208202362,
+      "utility": -0.01911049336194992
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.030014535412192345,
+      "utility": -0.0016138770151883364
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.027327075600624084,
+      "utility": 0.0036998167634010315
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.027792273089289665,
+      "utility": -0.01326051726937294
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02778584510087967,
+      "utility": -0.013026163913309574
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.027612008154392242,
+      "utility": -0.006688355002552271
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02771693281829357,
+      "utility": -0.010513735935091972
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.027632294222712517,
+      "utility": -0.0074279517866671085
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.020499104633927345,
+      "utility": 0.027394209057092667
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.021182015538215637,
+      "utility": -0.005007358267903328
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.021255919709801674,
+      "utility": -0.008513834327459335
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.02186998538672924,
+      "utility": -0.03764895349740982
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.022308707237243652,
+      "utility": -0.0584646612405777
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.021229591220617294,
+      "utility": -0.007264646235853434
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02192758210003376,
+      "utility": 0.008723312988877296
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.02125951088964939,
+      "utility": 0.038924701511859894
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.021141866222023964,
+      "utility": 0.04424304515123367
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.021106012165546417,
+      "utility": 0.04586389288306236
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.021158160641789436,
+      "utility": 0.043506424874067307
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.02197670377790928,
+      "utility": 0.006502677220851183
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.009835081174969673,
+      "utility": 0.00559738464653492
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.009777551516890526,
+      "utility": 0.011414077132940292
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.009747829288244247,
+      "utility": 0.014419224113225937
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.010045340284705162,
+      "utility": -0.015661433339118958
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.010045217350125313,
+      "utility": -0.01564900390803814
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.010029352270066738,
+      "utility": -0.014044922776520252
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.015823490917682648,
+      "utility": 0.0009068688959814608
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.016407480463385582,
+      "utility": -0.03596615418791771
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.01630033552646637,
+      "utility": -0.02920103631913662
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.016278687864542007,
+      "utility": -0.027834206819534302
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.016204174607992172,
+      "utility": -0.023129448294639587
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.016300218179821968,
+      "utility": -0.02919362671673298
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.009880438446998596,
+      "utility": 0.0010114144533872604
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.010036791674792767,
+      "utility": -0.014797103591263294
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.009999912232160568,
+      "utility": -0.011068307794630527
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.009903116151690483,
+      "utility": -0.0012814764631912112
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.009921044111251831,
+      "utility": -0.0030941315926611423
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.010181264020502567,
+      "utility": -0.029404371976852417
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.015773851424455643,
+      "utility": 0.004041099920868874
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.015767205506563187,
+      "utility": 0.004460722208023071
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.01576760970056057,
+      "utility": 0.004435201641172171
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.01553027331829071,
+      "utility": 0.01942059025168419
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.015509568154811859,
+      "utility": 0.020727910101413727
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.016159653663635254,
+      "utility": -0.020318401977419853
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.022830797359347343,
+      "utility": 0.012972560711205006
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "predicted_geometry",
+      "valid": true,
+      "query_loss": 0.023489737883210182,
+      "utility": -0.015514940954744816
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "predicted_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.023652613162994385,
+      "utility": -0.02255641110241413
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.023352250456809998,
+      "utility": -0.009571045637130737
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02335810661315918,
+      "utility": -0.009824220091104507
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.023487010970711708,
+      "utility": -0.015397049486637115
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019665000960230827,
+      "utility": 0.014958539977669716
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "predicted_geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "predicted_geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.019855719059705734,
+      "utility": 0.005405261181294918
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.019737357273697853,
+      "utility": 0.0113341324031353
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.019942982122302055,
+      "utility": 0.0010341586312279105
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.011653145775198936,
+      "utility": 0.014303484931588173
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "predicted_geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "predicted_geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "lidar_scaled_geometry",
+      "valid": true,
+      "query_loss": 0.012237592600286007,
+      "utility": -0.03513270989060402
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "lidar_scaled_geometry_appearance",
+      "valid": true,
+      "query_loss": 0.012201868928968906,
+      "utility": -0.03211097791790962
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "condition": "lidar_sparse_nearest",
+      "valid": true,
+      "query_loss": 0.011906282976269722,
+      "utility": -0.007108454592525959
+    }
+  ]
+}

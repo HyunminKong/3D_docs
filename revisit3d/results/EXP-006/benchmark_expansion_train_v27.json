@@ -1,0 +1,245 @@
+{
+  "experiment": "EXP-006",
+  "stage": "benchmark_expansion",
+  "protocol_revision": "v2.7",
+  "model_output_accessed": false,
+  "heldout_image_accessed": false,
+  "protected_manifest": "revisit3d/manifests/nuscenes_revisit_dev.json",
+  "scene_roots": [
+    "tttLRM/data_example/nuscenes_processed",
+    "tttLRM/data_example/nuscenes_prereg"
+  ],
+  "union_root": "tttLRM/data_example/nuscenes_exp006_all",
+  "selection": "revisit3d/manifests/nuscenes_exp006_all_locations.json",
+  "manifest": "revisit3d/manifests/nuscenes_revisit_expanded_v27.json",
+  "overlap_m": 2.0,
+  "converted_scenes": 130,
+  "undirected_overlap_pairs": 52,
+  "nontrivial_overlap_components": 22,
+  "safe_train_components": 19,
+  "excluded_holdout_components": 3,
+  "train_directional_episodes": 76,
+  "validation_directional_episodes": 14,
+  "test_directional_episodes": 6,
+  "train_holdout_scene_intersection": [],
+  "safe_component_records": [
+    {
+      "component": 1,
+      "scenes": [
+        "scene-0329",
+        "scene-0653"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 2,
+      "scenes": [
+        "scene-0017",
+        "scene-0018",
+        "scene-0019",
+        "scene-0036",
+        "scene-0061",
+        "scene-0980"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 3,
+      "scenes": [
+        "scene-0012",
+        "scene-0034"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 4,
+      "scenes": [
+        "scene-0097",
+        "scene-0673"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 5,
+      "scenes": [
+        "scene-0007",
+        "scene-0008",
+        "scene-0016"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 6,
+      "scenes": [
+        "scene-0726",
+        "scene-0873"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 7,
+      "scenes": [
+        "scene-0002",
+        "scene-0039",
+        "scene-0372"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 8,
+      "scenes": [
+        "scene-0246",
+        "scene-0675",
+        "scene-0709"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 10,
+      "scenes": [
+        "scene-0464",
+        "scene-0555",
+        "scene-0705",
+        "scene-0782"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 11,
+      "scenes": [
+        "scene-0440",
+        "scene-0441"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 12,
+      "scenes": [
+        "scene-0006",
+        "scene-0022"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 13,
+      "scenes": [
+        "scene-0100",
+        "scene-0247",
+        "scene-0293",
+        "scene-0713"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 14,
+      "scenes": [
+        "scene-0042",
+        "scene-0123"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 15,
+      "scenes": [
+        "scene-0028",
+        "scene-0029",
+        "scene-0956"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 16,
+      "scenes": [
+        "scene-0014",
+        "scene-0190"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 17,
+      "scenes": [
+        "scene-0445",
+        "scene-0655"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 18,
+      "scenes": [
+        "scene-0104",
+        "scene-0260"
+      ],
+      "protected_splits": [
+        "train"
+      ]
+    },
+    {
+      "component": 19,
+      "scenes": [
+        "scene-0557",
+        "scene-0558"
+      ],
+      "protected_splits": []
+    },
+    {
+      "component": 21,
+      "scenes": [
+        "scene-0021",
+        "scene-0191",
+        "scene-0949"
+      ],
+      "protected_splits": []
+    }
+  ],
+  "excluded_component_records": [
+    {
+      "component": 0,
+      "scenes": [
+        "scene-0234",
+        "scene-0250",
+        "scene-0298",
+        "scene-0476",
+        "scene-0717",
+        "scene-0719"
+      ],
+      "protected_splits": [
+        "val"
+      ]
+    },
+    {
+      "component": 9,
+      "scenes": [
+        "scene-0001",
+        "scene-0011",
+        "scene-0038"
+      ],
+      "protected_splits": [
+        "test"
+      ]
+    },
+    {
+      "component": 20,
+      "scenes": [
+        "scene-0030",
+        "scene-0959"
+      ],
+      "protected_splits": [
+        "val"
+      ]
+    }
+  ]
+}

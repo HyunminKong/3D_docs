@@ -1,9 +1,124 @@
 # EXP-006 Implementation Brief
-**Trainable 3D Plasticity Atoms with Predicted-Geometry Transport and Risk-Aware Utility Routing**
+**Utility-Routed Local Plasticity Memory with Geometry Evidence**
 
-**Revision:** v2.3, 2026-08-25
+**Revision:** v2.8, 2026-08-25
 
-**Status:** implementation-authoritative; thresholds and split protocol below are pre-registered before EXP-006 training.
+**Status:** the v2.8 validation lock below is implementation-authoritative. The v2.7 correction and complete v2.6 protocol remain preserved as historical/reproduction documentation. When they conflict, v2.8 and D021–D023 take precedence.
+
+# v2.8 one-shot validation lock
+
+Expanded train-only OOF evaluation fixes the validation model before any validation image/output access:
+
+```text
+fast code carrier       visual token correspondence
+current adaptation      exactly one local-code TTT step
+memory application      z_current + 0.10 * z_memory, clamped to [-1,1]
+router descriptors      current, candidate, difference, product
+router scalars          20 visual/current/source adaptation-history values
+excluded router input   predicted-alignment validity/inlier/residual/coverage
+utility model           train-only StandardScaler → PCA(16) → Ridge(alpha=1)
+routing                 top predicted utility if > 0; otherwise current-only
+candidate count         5
+```
+
+The 20 scalar inputs are the original non-alignment indices 0–11 plus source/current history indices 16–23. The four predicted-alignment values at indices 12–15 are an ablation only. Query/future quantities remain labels/evaluation only.
+
+The neural utility/risk MLP is also an ablation. Although harmful labels expanded from 2 to 17 across three folds, its explicit risk output did not reduce selected harm. EXP-006 therefore does not claim a successful separate risk classifier.
+
+One-shot validation cannot tune any feature, normalization, PCA rank, regularization, threshold, reuse strength, candidate construction, or ordering. The exposed test split remains prohibited.
+
+The v2.8 descriptive decision rule is fixed in D024 before validation output access. The router must exceed the 0.01 mean-utility deadband and every registered control, have zero harmful validation components, no greater directional harm than visual mean, and at least 0.20 acceptance. Any failed item rejects the strict validation claim; the two-component result remains feasibility evidence only.
+
+---
+
+# v2.7 architecture correction
+
+## Why v2.6 was revised
+
+Exact fold-specific evaluation changed the conclusion obtained from full-fit train diagnostics:
+
+```text
+visual local transport                  +0.0162 utility, 100% coverage, 2% harm
+predicted geometry transport            +0.0161 utility, 48% coverage, 6.25% harm
+predicted geometry+appearance transport +0.0162 utility, 48% coverage, 8.33% harm
+```
+
+Predicted geometry therefore does not support H2-P as a deployable update carrier. It still contains routing evidence: a fixed full observable OOF router achieved +0.0224 utility with 0% harm, versus +0.0202 after removing geometry statistics.
+
+The current risk labels are not sufficient for neural risk training: only 2/100 candidates are harmful, both in one overlap fold. Validation remains unopened while the train benchmark is expanded.
+
+## Superseding method contract
+
+```text
+frozen VGGT/current evidence
+        ↓
+custom local plasticity head
+        ↓
+one current-context TTT step
+        │
+visual transport of K past local codes
+        │
+predicted geometry alignment ──> evidence only
+        ↓
+observable utility/risk router
+        ↓
+select one or reject all
+        ↓
+clamp(z_current + 0.10 * z_memory, -1, 1)
+```
+
+The following rules supersede v2.6:
+
+1. `visual_transport` is the primary fast-code transport.
+2. Sim(3) validity, inlier ratio, residual, and coverage are router scalar inputs only.
+3. Failed predicted alignment does not invalidate a candidate with valid visual transport.
+4. The router receives pooled current/candidate descriptors, their difference/product, current online statistics, visual-transport statistics, and geometry evidence. It receives no query/future quantity.
+5. The primary route is hard select-or-reject. Accepted code is a fixed-strength 0.10 residual after exactly one current TTT step.
+6. A second current TTT step is prohibited in the primary method; it is a negative control.
+7. Five-candidate visual mean remains a required safe control. It is not silently used as the learned method.
+8. Architecture decisions must use exact held-out-overlap fold heads. Full-fit same-train results are diagnostics only.
+9. Neural risk training and official validation are gated until harmful labels occur in at least two independent overlap folds and every grouped training partition contains both benefit and harm.
+10. Persistent bank/consolidation remains out of scope until the utility/risk gate passes.
+
+## v2.7 model interface
+
+`ObservableUtilityRiskRouter` consumes:
+
+```text
+current pooled descriptor                 64
+candidate pooled descriptor               64
+shared projection of each                 32
+current, candidate, difference, product  128 total
+normalized observable scalar evidence     16 minimum
+```
+
+The 16-scalar feasibility contract contains current/base and current-post ratios, candidate current-objective behavior, code magnitude/spatial statistics, visual entropy/max-weight/coverage, appearance similarity, and predicted-geometry validity/inlier/residual/correspondence coverage. Production training may extend the scalar list only through a new documented protocol revision using train-only normalization.
+
+The output remains `(utility_hat, risk_logit)`. Candidate availability refers to actual visual-code availability, not predicted-geometry validity.
+
+## Active go/no-go sequence
+
+```text
+expand train overlap components and adaptation regimes
+        ↓
+repeat exact OOF visual utility + label-health audit
+        ↓
+risk identifiable in every grouped fold?
+   NO → expand data; do not open validation
+   YES
+        ↓
+train neural utility/risk router with fixed train-only protocol
+        ↓
+beat visual mean/current-loss controls under grouped OOF?
+   NO → H4 unsupported; no continual bank
+   YES
+        ↓
+one-shot validation, then EXP-007 continual consolidation
+```
+
+---
+
+# Preserved v2.6 protocol (historical/reproduction only)
 
 ## Status convention
 
@@ -728,6 +843,10 @@ LQ,j
 
 를 계산한다.
 
+### Query readout boundary
+
+Current context에서 얻은 code를 query token에서 평가할 때는 `A' current key → A' query key`의 **visual-only transport**를 사용한다. 이 readout은 모든 current/candidate path에 동일하게 적용하며 query의 predicted `xyz`, `scale`, pose로 Sim(3)을 추정하지 않는다. Query feature는 read-only future prediction과 outer loss의 미분 경로에만 참여하고 source→current alignment, online update, candidate selection, utility/risk 입력에는 참여하지 않는다. 따라서 H2-P의 predicted geometry transport 비교는 오직 source context→A' current context 구간에 해당한다.
+
 candidate j의 normalized utility:
 
 ```text
@@ -957,7 +1076,7 @@ z_j = online_update(zero), j=0...4
 A' context
     ↓
 current = online_update(zero)
-candidate_j = online_update(transport(z_j → A'))
+candidate_j = clamp(current + 0.10 * transport(z_j → A'), -1, 1)
 
 A' query (outer supervision only)
     ↓
@@ -967,6 +1086,8 @@ u_j and beneficial / neutral / harmful masks
 ```
 
 **A가 matched episode라는 이유로 positive label을 주지 않는다.** D005에 따라 candidate identity와 무관하게 현재 decoder에서 측정된 future utility만 사용한다.
+
+v2.5 train-only application diagnostic에서 transported code 전체를 current TTT initialization으로 사용하면 local pattern이 current gradient를 압도했다. v2.6은 source atom을 current-only update 이후의 residual memory로 사용한다. Current context에서는 여전히 정확히 1-step TTT만 수행하며, fixed `reuse_strength=0.10`은 모든 A1–A5 transport ablation에 동일하게 적용한다. Strength는 v2.5 train-only sweep `{0.05,0.10,0.25,0.50,1.0}`에서 geometry+appearance의 positive mean utility와 10% harm을 동시에 보인 가장 작은 non-trivial setting으로 고정했으며 validation에서는 바꾸지 않는다.
 
 ```text
 B = {j | alignment valid and stopgrad(u_j) >  epsilon_u}
@@ -980,8 +1101,8 @@ else:
 
 H = {j | alignment valid and stopgrad(u_j) < -epsilon_u and j not in S}
 
-ell_j       = LQ,j / (stopgrad(abs(LQ,current)) + 1e-6)
-ell_current = LQ,current / (stopgrad(abs(LQ,current)) + 1e-6)
+ell_j       = LQ,j / (stopgrad(abs(LQ,base)) + 1e-6)
+ell_current = LQ,current / (stopgrad(abs(LQ,base)) + 1e-6)
 ```
 
 `S`가 비어 있지 않으면:
@@ -1002,14 +1123,17 @@ L_center  = mean_source square(mean_tokens(delta_log_depth_source))
 
 ```text
 L_atom =
-    L_benefit
-  + softplus(L_benefit - ell_current)
+    ell_current
+  + L_benefit
+  + softplus(L_benefit - stopgrad(ell_current))
   + 0.10 * L_neutral
   + 0.01 * L_center
   + 0.05 * L_key
 ```
 
 candidate utility mask와 weight는 stop-gradient다. online update와 transport의 미분 경계는 §6.1.1을 따른다.
+
+`LQ,base`는 query에서 zero code를 평가한 frozen base-geometry loss다. v2.4 train-only failure에서는 relative margin의 `ell_current`에 gradient가 남아 있어 current-only loss를 키우는 것으로 candidate 상대 utility를 부풀릴 수 있었다. v2.5는 relative margin 안의 current reference를 detach하고 `ell_current`를 직접 최소화한다. 500/1000-step train-CV checkpoint가 eligible하려면 overlap-component mean `LQ,current/LQ,base <= 1.05`를 먼저 만족해야 하며, 그 안에서 held-out-train mean best-valid utility가 큰 step을 선택한다. 두 checkpoint 모두 guard를 위반하면 Stage 1은 실패로 종료한다.
 
 필수 collapse monitoring:
 

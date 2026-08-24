@@ -4,58 +4,70 @@ Last updated: 2026-08-25
 
 ## Research goal
 
-Develop a streaming 3D/4D reconstruction framework that learns from current geometric evidence at test time and reuses useful local adaptation experience when a related physical context reappears, without catastrophic interference or uncontrolled memory growth.
+Develop a streaming 3D/4D reconstruction framework that learns compact local corrections from current geometric evidence and reuses useful adaptation experience without uncontrolled interference or memory growth.
 
-The target outputs are depth, point cloud/pointmap, camera pose, and ultimately dynamic point tracking / 4D geometry.
+The first milestone targets depth/point geometry under static revisits. Pose adaptation, dynamic point tracking, and 4D memory remain later milestones.
 
 ## Current central claim
 
-Reusable adaptation is not well represented by a model-wide gradient or a small global fast-weight vector. It should be represented as spatially addressable local plasticity atoms anchored in a persistent 3D coordinate system and transported by geometry plus appearance correspondence.
+> **A spatial local TTT update is reusable after visual transport, and a learned utility model conditioned on appearance and observable adaptation history can choose useful past updates better than place identity, appearance similarity, current loss, random retrieval, or uniform memory averaging.**
 
-## Current method direction
+Predicted 3D alignment is neither the fast-code carrier nor a primary router input. Correct memory is defined by causal future utility, not paired episode identity.
 
-- Frozen foundation backbone initially based on VGGT.
-- New trainable geometry/plasticity head; no tttLRM wrapper.
-- Local test-time updates on 3D-addressed residual atoms.
-- Visual/local relocalization retrieves a small candidate set.
-- 3D coordinate and appearance correspondence transport atoms into the current context.
-- A learned future-utility/risk head selects, mixes, or rejects candidates.
-- Continual consolidation merges useful overlapping atoms and preserves uncertainty/utility statistics.
+## Locked EXP-006 architecture
 
-See `3D_docs/method.md` for the full boundary.
+1. Frozen VGGT supplies dense tokens and controlled tracking evidence.
+2. A custom plasticity head performs exactly one current-context TTT step on an 8-D per-token code.
+3. Past codes are transported to current tokens by visual correspondence.
+4. Current/source descriptors and observable adaptation-history/visual-transport statistics enter a regularized utility router.
+5. The router selects one candidate only when predicted utility is positive; otherwise it returns current-only TTT.
+6. Accepted memory is added after current TTT as a fixed 0.10 bounded residual.
+7. Predicted Sim(3) evidence and neural risk classification are ablations, not primary-path components.
+8. A second TTT step is prohibited in the primary path because it was unstable.
 
-## Evidence snapshot
+The locked Stage-2 router is `StandardScaler → PCA(16) → Ridge(alpha=1)` over descriptor interactions plus 20 non-alignment adaptation-history scalars. This compact linear model generalized better than the tested neural risk head on current data.
 
-- Global/slot learned update states collapsed to nearly identical directions and failed context-selective reuse.
-- Raw gradient direction retained weak context information but did not identify causally useful memory.
-- Dense visual transport produced a larger reuse effect than vector transport.
-- Oracle 3D-coordinate plus appearance transport gave the strongest controlled effect on development validation.
-- Current self-supervised geometry score predicted future candidate utility on average, including the locked test probe, but still caused negative transfer in some episodes.
-- A hand-written threshold or scalar pose/loss fusion did not reliably remove negative transfer.
+## Authoritative expanded train evidence
 
-## Current benchmark
+All results are exact train-only OOF estimates over 76 directional episodes, 38 undirected overlaps, 19 physical-overlap components, and 380 candidates. Original validation/test episodes were protected by scene-disjoint component construction and remain unchanged.
 
-- Physical cross-episode nuScenes revisits in `A → B → A'` form.
-- Development manifest: `revisit3d/manifests/nuscenes_revisit_dev.json`.
-- Original six-episode test split was used once in EXP-005 and is now closed to tuning.
+- Current one-step TTT/base: **0.6622**.
+- Global reuse: **+0.27%**; untransported local: **+0.45%**, harm **22.37%**.
+- Visual local transport: **+1.80%**, benefit **63.68%**, harm **4.47%**, coverage **100%**.
+- Predicted geometry: **+1.52%**, harm **5.20%**, coverage **70.79%**.
+- Geometry+appearance: **+1.64%**, harm **8.55%**, coverage **70.79%**.
+- Visual mean: **+1.84%**, benefit **75.0%**, harm **3.95%**.
+- Oracle best visual candidate: **+3.31%**.
+- Locked no-alignment utility router: **+2.80%**, benefit **82.89%**, harm **2.63%**, regret **0.51%**.
+- Current-objective heuristic: **+1.38%**, harm **2.63%**.
+- Appearance similarity: **+1.59%**, harm **7.89%**.
+- Matched physical identity: **+1.47%**, harm **9.21%**.
+- Router minus visual mean: **+0.98 percentage points**, component-bootstrap 95% CI **[+0.63, +1.45]**.
+- Router minus random: **+1.02 points**, CI **[+0.66, +1.50]**.
+- Router minus matched identity: **+1.35 points**, CI **[+0.89, +1.99]**.
+
+Risk-label diversity now passes: 242 beneficial, 121 neutral, and 17 harmful candidates across three folds. However, neural risk heads did not improve selected harm. The explicit risk-classifier hypothesis is rejected in its current form.
 
 ## Experiment status
 
 - EXP-001 — tttLRM fast-weight premise probes: completed, negative.
 - EXP-002 — independent Revisit3D benchmark and objective health: completed.
-- EXP-003 — compact/global/slot adaptation reuse: completed, negative for context-selective reuse.
-- EXP-004 — retrieval keys and learned local update routing: completed, partial/negative.
-- EXP-005 — dense 3D plasticity transport and online utility: completed, central feasibility supported with safety caveat.
-- EXP-006 — trainable 3D plasticity atom head and future-utility/risk meta-objective: Stage-0 v2.2 base-geometry gate and Stage-1 v2.3 predicted-transport train-only gate passed. The preserved Stage-1 v2.2 failure identified cross-view bandwidth collapse. Atom meta-training is next.
+- EXP-003 — compact/global/slot reuse: completed, negative for selectivity.
+- EXP-004 — retrieval keys and vector routing: completed, partial/negative.
+- EXP-005 — dense oracle 3D transport: completed as controlled evidence; test split closed.
+- EXP-006 — expanded train OOF architecture/model selection complete; one-shot validation model locked in D023; validation not yet accessed.
 
-## Open questions
+## Current hypothesis status
 
-1. Can predicted pose/depth maintain a sufficiently stable shared coordinate system without oracle poses?
-2. Can a rich candidate/current utility head generalize and reduce the observed negative-transfer rate?
-3. What atom representation provides the best accuracy-memory-compute trade-off?
-4. How should atoms be merged, aged, and reactivated under dynamic changes?
-5. When should the method extend from static 3D revisits to dynamic point tracking and 4D reconstruction?
+- H1 local reusable adaptation: supported on expanded train OOF.
+- H2-P predicted geometry carrier: rejected.
+- H2-E predicted geometry primary router evidence: rejected.
+- H3 online utility observability: supported on expanded train OOF.
+- H4-U learned utility routing: supported on expanded train OOF; validation pending.
+- H4-R explicit risk classifier: rejected in current form.
+- H5 continual consolidation: gated on one-shot validation.
+- H6 dynamic 4D extension: open.
 
 ## Next step
 
-Freeze the passed v2.3 transport definition and implement Stage-1 train-only utility-conditioned atom meta-training with K=5 candidate paths and query frames restricted to read-only future outer supervision. Do not open validation. Both the Stage-0 v2.1 identity-gate failure and Stage-1 v2.2 cross-view-scale failure remain preserved diagnostics.
+Run exactly one validation evaluation using the D023-locked model and unchanged 14 validation episodes. Do not tune on that result. If utility routing reproduces with acceptable harm, close EXP-006 and begin EXP-007 continual memory/consolidation. If it fails, report the failure and revisit the scientific hypothesis using train-only/new data rather than adapting to validation.

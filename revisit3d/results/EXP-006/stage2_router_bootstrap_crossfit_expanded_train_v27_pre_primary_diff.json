@@ -1,0 +1,968 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage2_router_grouped_bootstrap",
+  "split": "train",
+  "protocol_revision": "v2.7",
+  "source_router": "revisit3d/results/EXP-006/stage2_router_feasibility_crossfit_expanded_train_v27.json",
+  "source_features": "revisit3d/results/EXP-006/stage1_router_features_crossfit_expanded_train_v27.json",
+  "validation_accessed": false,
+  "group_unit": "physical_overlap_component",
+  "groups": 19,
+  "episodes": 76,
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 600006,
+  "method_intervals": {
+    "ridge_full": {
+      "mean": 0.02856120464808904,
+      "ci95": [
+        0.02240802506863038,
+        0.03641519796667739
+      ]
+    },
+    "ridge_full_without_geometry": {
+      "mean": 0.028411267268257847,
+      "ci95": [
+        0.022275316490440948,
+        0.036414259227881086
+      ]
+    },
+    "ridge_descriptor_only": {
+      "mean": 0.02784050114318616,
+      "ci95": [
+        0.021846341035273383,
+        0.03570138474052175
+      ]
+    },
+    "ridge_online_scalars": {
+      "mean": 0.029823825818079734,
+      "ci95": [
+        0.022145468869233166,
+        0.039024023301625514
+      ]
+    },
+    "ridge_geometry_only": {
+      "mean": 0.018562367032469256,
+      "ci95": [
+        0.014414058741982445,
+        0.02311709279695566
+      ]
+    },
+    "mean_pool": {
+      "mean": 0.018561943317795506,
+      "ci95": [
+        0.014564090555068104,
+        0.023052514836521067
+      ]
+    },
+    "random_expectation": {
+      "mean": 0.018226441667147233,
+      "ci95": [
+        0.01424404885206103,
+        0.02264025301780921
+      ]
+    },
+    "matched_a": {
+      "mean": 0.014914656967102431,
+      "ci95": [
+        0.010819547306106188,
+        0.019786902610753734
+      ]
+    },
+    "oracle": {
+      "mean": 0.03352118779318694,
+      "ci95": [
+        0.027514506554381393,
+        0.041526592583727505
+      ]
+    }
+  },
+  "difference_intervals": {
+    "ridge_full_minus_mean_pool": {
+      "mean": 0.009999261330293536,
+      "ci95": [
+        0.006758188247376281,
+        0.014537457490057238
+      ]
+    },
+    "ridge_full_minus_random_expectation": {
+      "mean": 0.010334762980941806,
+      "ci95": [
+        0.007013659150284073,
+        0.014974204308164226
+      ]
+    },
+    "ridge_full_minus_matched_a": {
+      "mean": 0.01364654768098661,
+      "ci95": [
+        0.009181159009945082,
+        0.019904370072457822
+      ]
+    },
+    "ridge_online_minus_mean_pool": {
+      "mean": 0.01126188250028423,
+      "ci95": [
+        0.007166136488860676,
+        0.016764370614210607
+      ]
+    },
+    "ridge_descriptor_minus_mean_pool": {
+      "mean": 0.00927855782539066,
+      "ci95": [
+        0.0059115708515164464,
+        0.01383527711231646
+      ]
+    },
+    "ridge_descriptor_minus_random_expectation": {
+      "mean": 0.009614059476038932,
+      "ci95": [
+        0.0061797199676776006,
+        0.014266758613605286
+      ]
+    },
+    "ridge_descriptor_minus_matched_a": {
+      "mean": 0.012925844176083735,
+      "ci95": [
+        0.008462571316630965,
+        0.01914551234150086
+      ]
+    }
+  },
+  "episode_values": {
+    "scene-0002__scene-0039": {
+      "ridge_full": 0.0018177537713199854,
+      "ridge_full_without_geometry": 0.0018177537713199854,
+      "ridge_descriptor_only": 0.0018177537713199854,
+      "ridge_online_scalars": 0.012105113826692104,
+      "ridge_geometry_only": 0.004835321102291346,
+      "mean_pool": 0.005249548237770796,
+      "random_expectation": 0.0050477606419008225,
+      "matched_a": -0.0004480007628444582,
+      "oracle": 0.012105113826692104
+    },
+    "scene-0006__scene-0022": {
+      "ridge_full": 0.013099855743348598,
+      "ridge_full_without_geometry": 0.013099855743348598,
+      "ridge_descriptor_only": 0.013099855743348598,
+      "ridge_online_scalars": 0.031044645234942436,
+      "ridge_geometry_only": 0.008319417014718056,
+      "mean_pool": 0.013400386087596416,
+      "random_expectation": 0.013288375269621611,
+      "matched_a": 0.007344089914113283,
+      "oracle": 0.031044645234942436
+    },
+    "scene-0007__scene-0016": {
+      "ridge_full": 0.03410454839468002,
+      "ridge_full_without_geometry": 0.03410454839468002,
+      "ridge_descriptor_only": 0.03410454839468002,
+      "ridge_online_scalars": 0.03410454839468002,
+      "ridge_geometry_only": 0.03410454839468002,
+      "mean_pool": 0.03045826219022274,
+      "random_expectation": 0.03030720427632332,
+      "matched_a": 0.02840130217373371,
+      "oracle": 0.03683990612626076
+    },
+    "scene-0008__scene-0016": {
+      "ridge_full": 0.06169973686337471,
+      "ridge_full_without_geometry": 0.06169973686337471,
+      "ridge_descriptor_only": 0.06169973686337471,
+      "ridge_online_scalars": 0.06169973686337471,
+      "ridge_geometry_only": 0.02891421504318714,
+      "mean_pool": 0.026953229680657387,
+      "random_expectation": 0.02686373721808195,
+      "matched_a": 0.014413521625101566,
+      "oracle": 0.06169973686337471
+    },
+    "scene-0012__scene-0034": {
+      "ridge_full": 0.03361327573657036,
+      "ridge_full_without_geometry": 0.03361327573657036,
+      "ridge_descriptor_only": 0.03361327573657036,
+      "ridge_online_scalars": 0.03361327573657036,
+      "ridge_geometry_only": 0.03809003159403801,
+      "mean_pool": 0.030366236343979836,
+      "random_expectation": 0.029942811001092196,
+      "matched_a": 0.03809003159403801,
+      "oracle": 0.0418587289750576
+    },
+    "scene-0014__scene-0190": {
+      "ridge_full": 0.014529966749250889,
+      "ridge_full_without_geometry": 0.014529966749250889,
+      "ridge_descriptor_only": 0.014529966749250889,
+      "ridge_online_scalars": 0.014529966749250889,
+      "ridge_geometry_only": 0.01162749994546175,
+      "mean_pool": 0.009418178349733353,
+      "random_expectation": 0.009276868542656302,
+      "matched_a": 0.010199562646448612,
+      "oracle": 0.014529966749250889
+    },
+    "scene-0016__scene-0007": {
+      "ridge_full": 0.03103141114115715,
+      "ridge_full_without_geometry": 0.03103141114115715,
+      "ridge_descriptor_only": 0.03103141114115715,
+      "ridge_online_scalars": 0.005807244218885899,
+      "ridge_geometry_only": 0.015970077365636826,
+      "mean_pool": 0.018491389229893684,
+      "random_expectation": 0.01816307697445154,
+      "matched_a": 0.03103141114115715,
+      "oracle": 0.03103141114115715
+    },
+    "scene-0016__scene-0008": {
+      "ridge_full": 0.007871215231716633,
+      "ridge_full_without_geometry": 0.016380414366722107,
+      "ridge_descriptor_only": 0.007871215231716633,
+      "ridge_online_scalars": 0.016380414366722107,
+      "ridge_geometry_only": 0.01433289423584938,
+      "mean_pool": 0.011955824680626392,
+      "random_expectation": 0.012026347685605288,
+      "matched_a": 0.01721031218767166,
+      "oracle": 0.01721031218767166
+    },
+    "scene-0017__scene-0061": {
+      "ridge_full": 0.04093656316399574,
+      "ridge_full_without_geometry": 0.04093656316399574,
+      "ridge_descriptor_only": 0.022976309061050415,
+      "ridge_online_scalars": 0.04093656316399574,
+      "ridge_geometry_only": 0.04093656316399574,
+      "mean_pool": 0.032718632370233536,
+      "random_expectation": 0.032359230890870096,
+      "matched_a": 0.025477832183241844,
+      "oracle": 0.04285568371415138
+    },
+    "scene-0017__scene-0980": {
+      "ridge_full": -0.007805476430803537,
+      "ridge_full_without_geometry": -0.007805476430803537,
+      "ridge_descriptor_only": -0.007805476430803537,
+      "ridge_online_scalars": -0.01628859154880047,
+      "ridge_geometry_only": -0.014546996913850307,
+      "mean_pool": -0.009047335013747215,
+      "random_expectation": -0.009046364668756723,
+      "matched_a": -0.01628859154880047,
+      "oracle": 0.0
+    },
+    "scene-0018__scene-0036": {
+      "ridge_full": -0.00757572241127491,
+      "ridge_full_without_geometry": -0.00757572241127491,
+      "ridge_descriptor_only": -0.00757572241127491,
+      "ridge_online_scalars": -0.02126367762684822,
+      "ridge_geometry_only": -0.013297418132424355,
+      "mean_pool": -0.0064994096755981445,
+      "random_expectation": -0.006624964997172356,
+      "matched_a": -0.02126367762684822,
+      "oracle": 0.0045059965923428535
+    },
+    "scene-0018__scene-0061": {
+      "ridge_full": 0.03671567142009735,
+      "ridge_full_without_geometry": 0.03671567142009735,
+      "ridge_descriptor_only": 0.03671567142009735,
+      "ridge_online_scalars": 0.05882816016674042,
+      "ridge_geometry_only": 0.05882816016674042,
+      "mean_pool": 0.03642013296484947,
+      "random_expectation": 0.03608840890228748,
+      "matched_a": 0.03757940232753754,
+      "oracle": 0.05882816016674042
+    },
+    "scene-0019__scene-0036": {
+      "ridge_full": -0.00622250372543931,
+      "ridge_full_without_geometry": -0.00622250372543931,
+      "ridge_descriptor_only": -0.00622250372543931,
+      "ridge_online_scalars": -0.028695182874798775,
+      "ridge_geometry_only": -0.008198854513466358,
+      "mean_pool": -0.012922419235110283,
+      "random_expectation": -0.012987002450972795,
+      "matched_a": -0.010446152649819851,
+      "oracle": 0.0
+    },
+    "scene-0021__scene-0949": {
+      "ridge_full": 0.042905863374471664,
+      "ridge_full_without_geometry": 0.042905863374471664,
+      "ridge_descriptor_only": 0.042905863374471664,
+      "ridge_online_scalars": 0.04316281899809837,
+      "ridge_geometry_only": 0.019364843145012856,
+      "mean_pool": 0.026441087946295738,
+      "random_expectation": 0.02622459288686514,
+      "matched_a": 0.012744097970426083,
+      "oracle": 0.04316281899809837
+    },
+    "scene-0022__scene-0006": {
+      "ridge_full": 0.0123314643278718,
+      "ridge_full_without_geometry": 0.0123314643278718,
+      "ridge_descriptor_only": 0.020629122853279114,
+      "ridge_online_scalars": 0.03822556510567665,
+      "ridge_geometry_only": 0.0123314643278718,
+      "mean_pool": 0.017038920894265175,
+      "random_expectation": 0.016775443404912948,
+      "matched_a": 0.005374314729124308,
+      "oracle": 0.03822556510567665
+    },
+    "scene-0028__scene-0029": {
+      "ridge_full": 0.02085908129811287,
+      "ridge_full_without_geometry": 0.02085908129811287,
+      "ridge_descriptor_only": 0.02085908129811287,
+      "ridge_online_scalars": 0.01722879335284233,
+      "ridge_geometry_only": 0.01722879335284233,
+      "mean_pool": 0.01116408221423626,
+      "random_expectation": 0.010910861403681337,
+      "matched_a": -0.000959699391387403,
+      "oracle": 0.02085908129811287
+    },
+    "scene-0028__scene-0956": {
+      "ridge_full": 0.029720401391386986,
+      "ridge_full_without_geometry": 0.029720401391386986,
+      "ridge_descriptor_only": 0.029720401391386986,
+      "ridge_online_scalars": 0.031557902693748474,
+      "ridge_geometry_only": 0.031557902693748474,
+      "mean_pool": 0.02187342755496502,
+      "random_expectation": 0.02175156995654106,
+      "matched_a": 0.023983610793948174,
+      "oracle": 0.031557902693748474
+    },
+    "scene-0029__scene-0028": {
+      "ridge_full": 0.008049172349274158,
+      "ridge_full_without_geometry": 0.008049172349274158,
+      "ridge_descriptor_only": 0.008049172349274158,
+      "ridge_online_scalars": 0.008054269477725029,
+      "ridge_geometry_only": 0.007019368931651115,
+      "mean_pool": 0.005029591731727123,
+      "random_expectation": 0.004944091849029064,
+      "matched_a": 0.0014350919518619776,
+      "oracle": 0.008054269477725029
+    },
+    "scene-0034__scene-0012": {
+      "ridge_full": 0.07479109615087509,
+      "ridge_full_without_geometry": 0.07479109615087509,
+      "ridge_descriptor_only": 0.07479109615087509,
+      "ridge_online_scalars": 0.06415098905563354,
+      "ridge_geometry_only": 0.06415098905563354,
+      "mean_pool": 0.061938315629959106,
+      "random_expectation": 0.06134156808257103,
+      "matched_a": 0.05743734538555145,
+      "oracle": 0.07479109615087509
+    },
+    "scene-0036__scene-0018": {
+      "ridge_full": 0.02308284491300583,
+      "ridge_full_without_geometry": 0.02308284491300583,
+      "ridge_descriptor_only": 0.02308284491300583,
+      "ridge_online_scalars": 0.0166483037173748,
+      "ridge_geometry_only": 0.0166483037173748,
+      "mean_pool": 0.01599455252289772,
+      "random_expectation": 0.015892644878476858,
+      "matched_a": 0.019057275727391243,
+      "oracle": 0.02308284491300583
+    },
+    "scene-0036__scene-0019": {
+      "ridge_full": 0.034519508481025696,
+      "ridge_full_without_geometry": 0.034519508481025696,
+      "ridge_descriptor_only": 0.034519508481025696,
+      "ridge_online_scalars": 0.020432252436876297,
+      "ridge_geometry_only": 0.020432252436876297,
+      "mean_pool": 0.017654409632086754,
+      "random_expectation": 0.01725329700857401,
+      "matched_a": 0.034519508481025696,
+      "oracle": 0.034519508481025696
+    },
+    "scene-0036__scene-0061": {
+      "ridge_full": 0.0465836226940155,
+      "ridge_full_without_geometry": 0.0465836226940155,
+      "ridge_descriptor_only": 0.0465836226940155,
+      "ridge_online_scalars": 0.0465836226940155,
+      "ridge_geometry_only": 0.026513097807765007,
+      "mean_pool": 0.02983572520315647,
+      "random_expectation": 0.028790592029690743,
+      "matched_a": 0.030992701649665833,
+      "oracle": 0.0465836226940155
+    },
+    "scene-0039__scene-0002": {
+      "ridge_full": 0.07091903686523438,
+      "ridge_full_without_geometry": 0.07091903686523438,
+      "ridge_descriptor_only": 0.07091903686523438,
+      "ridge_online_scalars": 0.07091903686523438,
+      "ridge_geometry_only": 0.032044604420661926,
+      "mean_pool": 0.05540287494659424,
+      "random_expectation": 0.05486219450831413,
+      "matched_a": 0.07091903686523438,
+      "oracle": 0.07091903686523438
+    },
+    "scene-0039__scene-0372": {
+      "ridge_full": -0.012831387110054493,
+      "ridge_full_without_geometry": -0.012831387110054493,
+      "ridge_descriptor_only": -0.012831387110054493,
+      "ridge_online_scalars": -0.0269518680870533,
+      "ridge_geometry_only": -0.012831387110054493,
+      "mean_pool": -0.011356855742633343,
+      "random_expectation": -0.011982509435620159,
+      "matched_a": -0.012831387110054493,
+      "oracle": 0.0009656244073994458
+    },
+    "scene-0042__scene-0123": {
+      "ridge_full": 0.1349741816520691,
+      "ridge_full_without_geometry": 0.1349741816520691,
+      "ridge_descriptor_only": 0.1349741816520691,
+      "ridge_online_scalars": 0.1349741816520691,
+      "ridge_geometry_only": 0.03000110387802124,
+      "mean_pool": 0.05643659830093384,
+      "random_expectation": 0.05404309332370758,
+      "matched_a": 0.027233045548200607,
+      "oracle": 0.1349741816520691
+    },
+    "scene-0061__scene-0017": {
+      "ridge_full": 0.03183310478925705,
+      "ridge_full_without_geometry": 0.03183310478925705,
+      "ridge_descriptor_only": 0.03183310478925705,
+      "ridge_online_scalars": 0.029436908662319183,
+      "ridge_geometry_only": 0.029436908662319183,
+      "mean_pool": 0.020531823858618736,
+      "random_expectation": 0.02005574582144618,
+      "matched_a": 0.023174233734607697,
+      "oracle": 0.03183310478925705
+    },
+    "scene-0061__scene-0018": {
+      "ridge_full": 0.012563591822981834,
+      "ridge_full_without_geometry": 0.012563591822981834,
+      "ridge_descriptor_only": 0.012563591822981834,
+      "ridge_online_scalars": 0.014809918589890003,
+      "ridge_geometry_only": 0.01078782882541418,
+      "mean_pool": 0.010061982087790966,
+      "random_expectation": 0.010029005259275437,
+      "matched_a": 0.005757389590144157,
+      "oracle": 0.014809918589890003
+    },
+    "scene-0061__scene-0036": {
+      "ridge_full": 0.0021978553850203753,
+      "ridge_full_without_geometry": 0.0021978553850203753,
+      "ridge_descriptor_only": 0.0021978553850203753,
+      "ridge_online_scalars": -0.003914511762559414,
+      "ridge_geometry_only": -0.006445375736802816,
+      "mean_pool": -0.0039617582224309444,
+      "random_expectation": -0.004201040277257562,
+      "matched_a": -0.00861070305109024,
+      "oracle": 0.0021978553850203753
+    },
+    "scene-0061__scene-0980": {
+      "ridge_full": 0.0037748401518911123,
+      "ridge_full_without_geometry": 0.0037748401518911123,
+      "ridge_descriptor_only": 0.0037748401518911123,
+      "ridge_online_scalars": 0.0037748401518911123,
+      "ridge_geometry_only": -0.009695629589259624,
+      "mean_pool": -0.009440538473427296,
+      "random_expectation": -0.010247579659335315,
+      "matched_a": -0.033074524253606796,
+      "oracle": 0.0037748401518911123
+    },
+    "scene-0097__scene-0673": {
+      "ridge_full": 0.04272174835205078,
+      "ridge_full_without_geometry": 0.04272174835205078,
+      "ridge_descriptor_only": 0.04272174835205078,
+      "ridge_online_scalars": 0.04272174835205078,
+      "ridge_geometry_only": 0.03654748201370239,
+      "mean_pool": 0.027343373745679855,
+      "random_expectation": 0.02697737105190754,
+      "matched_a": 0.034315697848796844,
+      "oracle": 0.04272174835205078
+    },
+    "scene-0100__scene-0247": {
+      "ridge_full": 0.04038863256573677,
+      "ridge_full_without_geometry": 0.04038863256573677,
+      "ridge_descriptor_only": 0.04038863256573677,
+      "ridge_online_scalars": 0.04038863256573677,
+      "ridge_geometry_only": 0.022345399484038353,
+      "mean_pool": 0.027122212573885918,
+      "random_expectation": 0.02687528319656849,
+      "matched_a": 0.018964486196637154,
+      "oracle": 0.04038863256573677
+    },
+    "scene-0100__scene-0293": {
+      "ridge_full": 0.018407519906759262,
+      "ridge_full_without_geometry": 0.018407519906759262,
+      "ridge_descriptor_only": 0.013208318501710892,
+      "ridge_online_scalars": 0.013208318501710892,
+      "ridge_geometry_only": 0.012278587557375431,
+      "mean_pool": 0.013048706576228142,
+      "random_expectation": 0.01302055586129427,
+      "matched_a": 0.009238860569894314,
+      "oracle": 0.018407519906759262
+    },
+    "scene-0104__scene-0260": {
+      "ridge_full": 0.0541374497115612,
+      "ridge_full_without_geometry": 0.0541374497115612,
+      "ridge_descriptor_only": 0.0541374497115612,
+      "ridge_online_scalars": 0.08642995357513428,
+      "ridge_geometry_only": 0.02276928350329399,
+      "mean_pool": 0.05036409944295883,
+      "random_expectation": 0.04990827850997448,
+      "matched_a": 0.05782618373632431,
+      "oracle": 0.08642995357513428
+    },
+    "scene-0123__scene-0042": {
+      "ridge_full": 0.0769510492682457,
+      "ridge_full_without_geometry": 0.0769510492682457,
+      "ridge_descriptor_only": 0.0769510492682457,
+      "ridge_online_scalars": 0.0769510492682457,
+      "ridge_geometry_only": 0.04695188254117966,
+      "mean_pool": 0.03768802061676979,
+      "random_expectation": 0.03657317217439413,
+      "matched_a": 0.03251938149333,
+      "oracle": 0.0769510492682457
+    },
+    "scene-0190__scene-0014": {
+      "ridge_full": 0.024179138243198395,
+      "ridge_full_without_geometry": 0.024179138243198395,
+      "ridge_descriptor_only": 0.024179138243198395,
+      "ridge_online_scalars": 0.024179138243198395,
+      "ridge_geometry_only": 0.0222950279712677,
+      "mean_pool": 0.01712755672633648,
+      "random_expectation": 0.01586134124081582,
+      "matched_a": 0.010360702872276306,
+      "oracle": 0.024179138243198395
+    },
+    "scene-0191__scene-0949": {
+      "ridge_full": 0.036673255264759064,
+      "ridge_full_without_geometry": 0.036673255264759064,
+      "ridge_descriptor_only": 0.036673255264759064,
+      "ridge_online_scalars": 0.036673255264759064,
+      "ridge_geometry_only": 0.036673255264759064,
+      "mean_pool": 0.014527373015880585,
+      "random_expectation": 0.01463981783017516,
+      "matched_a": 0.019595418125391006,
+      "oracle": 0.036673255264759064
+    },
+    "scene-0246__scene-0675": {
+      "ridge_full": 0.023645199835300446,
+      "ridge_full_without_geometry": 0.023645199835300446,
+      "ridge_descriptor_only": 0.023645199835300446,
+      "ridge_online_scalars": 0.010738634504377842,
+      "ridge_geometry_only": 0.010738634504377842,
+      "mean_pool": 0.016218846663832664,
+      "random_expectation": 0.016117006726562976,
+      "matched_a": 0.017297253012657166,
+      "oracle": 0.023645199835300446
+    },
+    "scene-0246__scene-0709": {
+      "ridge_full": 0.014324575662612915,
+      "ridge_full_without_geometry": 0.014324575662612915,
+      "ridge_descriptor_only": 0.014324575662612915,
+      "ridge_online_scalars": 0.009396316483616829,
+      "ridge_geometry_only": 0.014390167780220509,
+      "mean_pool": 0.009122566320002079,
+      "random_expectation": 0.009017176181077956,
+      "matched_a": 0.0021711853332817554,
+      "oracle": 0.014390167780220509
+    },
+    "scene-0247__scene-0100": {
+      "ridge_full": 0.013835479505360126,
+      "ridge_full_without_geometry": 0.013835479505360126,
+      "ridge_descriptor_only": 0.013835479505360126,
+      "ridge_online_scalars": 0.018565256148576736,
+      "ridge_geometry_only": 0.011880519799888134,
+      "mean_pool": 0.016995972022414207,
+      "random_expectation": 0.016936494410037993,
+      "matched_a": 0.02021634392440319,
+      "oracle": 0.02021634392440319
+    },
+    "scene-0247__scene-0293": {
+      "ridge_full": 0.02001839503645897,
+      "ridge_full_without_geometry": 0.02001839503645897,
+      "ridge_descriptor_only": 0.02001839503645897,
+      "ridge_online_scalars": 0.025103747844696045,
+      "ridge_geometry_only": 0.025103747844696045,
+      "mean_pool": 0.02132992446422577,
+      "random_expectation": 0.02130152881145477,
+      "matched_a": 0.02001839503645897,
+      "oracle": 0.025103747844696045
+    },
+    "scene-0247__scene-0713": {
+      "ridge_full": 0.025613388046622276,
+      "ridge_full_without_geometry": 0.025613388046622276,
+      "ridge_descriptor_only": 0.025613388046622276,
+      "ridge_online_scalars": 0.025613388046622276,
+      "ridge_geometry_only": 0.025613388046622276,
+      "mean_pool": 0.014534400776028633,
+      "random_expectation": 0.014367471914738417,
+      "matched_a": 0.009015453979372978,
+      "oracle": 0.025613388046622276
+    },
+    "scene-0260__scene-0104": {
+      "ridge_full": 0.023276738822460175,
+      "ridge_full_without_geometry": 0.023276738822460175,
+      "ridge_descriptor_only": 0.023276738822460175,
+      "ridge_online_scalars": 0.028752045705914497,
+      "ridge_geometry_only": 0.023276738822460175,
+      "mean_pool": 0.018363837152719498,
+      "random_expectation": 0.018119915388524532,
+      "matched_a": 0.00732189416885376,
+      "oracle": 0.028752045705914497
+    },
+    "scene-0293__scene-0100": {
+      "ridge_full": 0.017133764922618866,
+      "ridge_full_without_geometry": 0.017133764922618866,
+      "ridge_descriptor_only": 0.017133764922618866,
+      "ridge_online_scalars": 0.017133764922618866,
+      "ridge_geometry_only": 0.004424548242241144,
+      "mean_pool": 0.008718258701264858,
+      "random_expectation": 0.008638825174421072,
+      "matched_a": 0.017133764922618866,
+      "oracle": 0.017133764922618866
+    },
+    "scene-0293__scene-0247": {
+      "ridge_full": 0.00774772372096777,
+      "ridge_full_without_geometry": 0.00774772372096777,
+      "ridge_descriptor_only": 0.00774772372096777,
+      "ridge_online_scalars": 0.03657015413045883,
+      "ridge_geometry_only": 0.03657015413045883,
+      "mean_pool": 0.02726849913597107,
+      "random_expectation": 0.027059467695653438,
+      "matched_a": 0.00774772372096777,
+      "oracle": 0.03657015413045883
+    },
+    "scene-0293__scene-0713": {
+      "ridge_full": 0.020226910710334778,
+      "ridge_full_without_geometry": 0.020226910710334778,
+      "ridge_descriptor_only": 0.020226910710334778,
+      "ridge_online_scalars": 0.020678924396634102,
+      "ridge_geometry_only": 0.020226910710334778,
+      "mean_pool": 0.018936119973659515,
+      "random_expectation": 0.018845390528440475,
+      "matched_a": 0.008274354040622711,
+      "oracle": 0.023389184847474098
+    },
+    "scene-0329__scene-0653": {
+      "ridge_full": 0.019534725695848465,
+      "ridge_full_without_geometry": 0.019534725695848465,
+      "ridge_descriptor_only": 0.019534725695848465,
+      "ridge_online_scalars": 0.019534725695848465,
+      "ridge_geometry_only": 0.003285564249381423,
+      "mean_pool": 0.008045677095651627,
+      "random_expectation": 0.007892040529986844,
+      "matched_a": -0.0003181794018018991,
+      "oracle": 0.019534725695848465
+    },
+    "scene-0372__scene-0039": {
+      "ridge_full": 0.061154805123806,
+      "ridge_full_without_geometry": 0.061154805123806,
+      "ridge_descriptor_only": 0.061154805123806,
+      "ridge_online_scalars": 0.061154805123806,
+      "ridge_geometry_only": 0.03023712709546089,
+      "mean_pool": 0.03138146549463272,
+      "random_expectation": 0.030270450469106435,
+      "matched_a": 0.03023712709546089,
+      "oracle": 0.061154805123806
+    },
+    "scene-0440__scene-0441": {
+      "ridge_full": 0.021593263372778893,
+      "ridge_full_without_geometry": 0.021593263372778893,
+      "ridge_descriptor_only": 0.021593263372778893,
+      "ridge_online_scalars": 0.014822641387581825,
+      "ridge_geometry_only": 0.013564283959567547,
+      "mean_pool": 0.015029467642307281,
+      "random_expectation": 0.014657875895500183,
+      "matched_a": 0.009568157605826855,
+      "oracle": 0.021593263372778893
+    },
+    "scene-0441__scene-0440": {
+      "ridge_full": -0.006334164645522833,
+      "ridge_full_without_geometry": -0.006334164645522833,
+      "ridge_descriptor_only": -0.006334164645522833,
+      "ridge_online_scalars": -0.023609783500432968,
+      "ridge_geometry_only": -0.03522937744855881,
+      "mean_pool": -0.0185261033475399,
+      "random_expectation": -0.01816360969096422,
+      "matched_a": -0.019124161452054977,
+      "oracle": 0.0
+    },
+    "scene-0445__scene-0655": {
+      "ridge_full": 0.02003669925034046,
+      "ridge_full_without_geometry": 0.01820285990834236,
+      "ridge_descriptor_only": 0.013728713616728783,
+      "ridge_online_scalars": 0.02003669925034046,
+      "ridge_geometry_only": 0.011688253842294216,
+      "mean_pool": 0.014398236759006977,
+      "random_expectation": 0.013627513032406568,
+      "matched_a": 0.013728713616728783,
+      "oracle": 0.02003669925034046
+    },
+    "scene-0464__scene-0555": {
+      "ridge_full": 0.05105217546224594,
+      "ridge_full_without_geometry": 0.05105217546224594,
+      "ridge_descriptor_only": 0.05105217546224594,
+      "ridge_online_scalars": 0.05105217546224594,
+      "ridge_geometry_only": 0.057402003556489944,
+      "mean_pool": 0.02990729548037052,
+      "random_expectation": 0.02935653152235318,
+      "matched_a": -0.0002096774842357263,
+      "oracle": 0.057402003556489944
+    },
+    "scene-0464__scene-0705": {
+      "ridge_full": 0.02440950833261013,
+      "ridge_full_without_geometry": 0.02440950833261013,
+      "ridge_descriptor_only": 0.02440950833261013,
+      "ridge_online_scalars": 0.02440950833261013,
+      "ridge_geometry_only": 0.02440950833261013,
+      "mean_pool": 0.011641822755336761,
+      "random_expectation": 0.011181975714862347,
+      "matched_a": 0.002433215267956257,
+      "oracle": 0.02440950833261013
+    },
+    "scene-0555__scene-0464": {
+      "ridge_full": 0.040182724595069885,
+      "ridge_full_without_geometry": 0.040182724595069885,
+      "ridge_descriptor_only": 0.040182724595069885,
+      "ridge_online_scalars": 0.040182724595069885,
+      "ridge_geometry_only": 0.012375767342746258,
+      "mean_pool": 0.01683186925947666,
+      "random_expectation": 0.016659071552567184,
+      "matched_a": 0.0004198945825919509,
+      "oracle": 0.040182724595069885
+    },
+    "scene-0555__scene-0705": {
+      "ridge_full": 0.02919967845082283,
+      "ridge_full_without_geometry": 0.02919967845082283,
+      "ridge_descriptor_only": 0.019185788929462433,
+      "ridge_online_scalars": 0.02919967845082283,
+      "ridge_geometry_only": 0.0013147229328751564,
+      "mean_pool": 0.01747225597500801,
+      "random_expectation": 0.017011256981641056,
+      "matched_a": 0.006369502749294043,
+      "oracle": 0.02919967845082283
+    },
+    "scene-0555__scene-0782": {
+      "ridge_full": 0.039316654205322266,
+      "ridge_full_without_geometry": 0.039316654205322266,
+      "ridge_descriptor_only": 0.039316654205322266,
+      "ridge_online_scalars": 0.039316654205322266,
+      "ridge_geometry_only": 0.039316654205322266,
+      "mean_pool": 0.02825111895799637,
+      "random_expectation": 0.027712018229067326,
+      "matched_a": 0.03251299262046814,
+      "oracle": 0.039316654205322266
+    },
+    "scene-0557__scene-0558": {
+      "ridge_full": 0.013315477408468723,
+      "ridge_full_without_geometry": 0.013315477408468723,
+      "ridge_descriptor_only": 0.013315477408468723,
+      "ridge_online_scalars": 0.013315477408468723,
+      "ridge_geometry_only": 0.0074174306355416775,
+      "mean_pool": 0.00730928685516119,
+      "random_expectation": 0.007281606644392013,
+      "matched_a": 0.005907123442739248,
+      "oracle": 0.013315477408468723
+    },
+    "scene-0558__scene-0557": {
+      "ridge_full": 0.011087062768638134,
+      "ridge_full_without_geometry": 0.011087062768638134,
+      "ridge_descriptor_only": 0.011087062768638134,
+      "ridge_online_scalars": 0.011087062768638134,
+      "ridge_geometry_only": 0.011087062768638134,
+      "mean_pool": 0.007920008152723312,
+      "random_expectation": 0.008263115584850312,
+      "matched_a": 0.002315015997737646,
+      "oracle": 0.02134115621447563
+    },
+    "scene-0653__scene-0329": {
+      "ridge_full": 0.043055374175310135,
+      "ridge_full_without_geometry": 0.043055374175310135,
+      "ridge_descriptor_only": 0.043055374175310135,
+      "ridge_online_scalars": 0.05897398665547371,
+      "ridge_geometry_only": 0.05897398665547371,
+      "mean_pool": 0.03791474923491478,
+      "random_expectation": 0.03670025691390037,
+      "matched_a": 0.05897398665547371,
+      "oracle": 0.05897398665547371
+    },
+    "scene-0655__scene-0445": {
+      "ridge_full": 0.028943199664354324,
+      "ridge_full_without_geometry": 0.028943199664354324,
+      "ridge_descriptor_only": 0.028943199664354324,
+      "ridge_online_scalars": 0.028943199664354324,
+      "ridge_geometry_only": 0.02362983301281929,
+      "mean_pool": 0.02074820175766945,
+      "random_expectation": 0.020603762567043306,
+      "matched_a": 0.023565104231238365,
+      "oracle": 0.028943199664354324
+    },
+    "scene-0673__scene-0097": {
+      "ridge_full": 0.043756868690252304,
+      "ridge_full_without_geometry": 0.043756868690252304,
+      "ridge_descriptor_only": 0.024959204718470573,
+      "ridge_online_scalars": 0.043756868690252304,
+      "ridge_geometry_only": 0.010998357087373734,
+      "mean_pool": 0.01733734831213951,
+      "random_expectation": 0.01694105938076973,
+      "matched_a": -0.0030158935114741325,
+      "oracle": 0.043756868690252304
+    },
+    "scene-0675__scene-0246": {
+      "ridge_full": 0.03815041109919548,
+      "ridge_full_without_geometry": 0.03815041109919548,
+      "ridge_descriptor_only": 0.03815041109919548,
+      "ridge_online_scalars": 0.03815041109919548,
+      "ridge_geometry_only": -0.0021998966112732887,
+      "mean_pool": 0.02265637367963791,
+      "random_expectation": 0.02214945126324892,
+      "matched_a": 0.03815041109919548,
+      "oracle": 0.03815041109919548
+    },
+    "scene-0675__scene-0709": {
+      "ridge_full": 0.030830753967165947,
+      "ridge_full_without_geometry": 0.030830753967165947,
+      "ridge_descriptor_only": 0.030830753967165947,
+      "ridge_online_scalars": 0.029652025550603867,
+      "ridge_geometry_only": 0.018532617017626762,
+      "mean_pool": 0.018659545108675957,
+      "random_expectation": 0.018671975284814835,
+      "matched_a": 0.011276865378022194,
+      "oracle": 0.030830753967165947
+    },
+    "scene-0705__scene-0464": {
+      "ridge_full": 0.032874129712581635,
+      "ridge_full_without_geometry": 0.032874129712581635,
+      "ridge_descriptor_only": 0.032874129712581635,
+      "ridge_online_scalars": 0.032874129712581635,
+      "ridge_geometry_only": 0.013677098788321018,
+      "mean_pool": 0.011655613780021667,
+      "random_expectation": 0.01154792234301567,
+      "matched_a": 0.0013128342106938362,
+      "oracle": 0.032874129712581635
+    },
+    "scene-0705__scene-0555": {
+      "ridge_full": 0.02579636313021183,
+      "ridge_full_without_geometry": 0.02579636313021183,
+      "ridge_descriptor_only": 0.02579636313021183,
+      "ridge_online_scalars": 0.024984845891594887,
+      "ridge_geometry_only": 0.020251968875527382,
+      "mean_pool": 0.016321396455168724,
+      "random_expectation": 0.016183940600603818,
+      "matched_a": 0.0030804486013948917,
+      "oracle": 0.02579636313021183
+    },
+    "scene-0709__scene-0246": {
+      "ridge_full": 0.05748547613620758,
+      "ridge_full_without_geometry": 0.05748547613620758,
+      "ridge_descriptor_only": 0.05748547613620758,
+      "ridge_online_scalars": 0.05748547613620758,
+      "ridge_geometry_only": 0.015126635320484638,
+      "mean_pool": 0.028315776959061623,
+      "random_expectation": 0.02742598541080952,
+      "matched_a": 0.027008594945073128,
+      "oracle": 0.05748547613620758
+    },
+    "scene-0709__scene-0675": {
+      "ridge_full": 0.011733931489288807,
+      "ridge_full_without_geometry": 0.011733931489288807,
+      "ridge_descriptor_only": 0.011733931489288807,
+      "ridge_online_scalars": 0.007008041255176067,
+      "ridge_geometry_only": 0.011733931489288807,
+      "mean_pool": 0.005915935151278973,
+      "random_expectation": 0.005672829796094447,
+      "matched_a": 0.005061963107436895,
+      "oracle": 0.011733931489288807
+    },
+    "scene-0713__scene-0247": {
+      "ridge_full": 0.013735814951360226,
+      "ridge_full_without_geometry": 0.013735814951360226,
+      "ridge_descriptor_only": 0.013735814951360226,
+      "ridge_online_scalars": 0.03283091261982918,
+      "ridge_geometry_only": 0.03283091261982918,
+      "mean_pool": 0.021645724773406982,
+      "random_expectation": 0.021472423151135445,
+      "matched_a": 0.03314657881855965,
+      "oracle": 0.03314657881855965
+    },
+    "scene-0713__scene-0293": {
+      "ridge_full": 0.06280462443828583,
+      "ridge_full_without_geometry": 0.04382806271314621,
+      "ridge_descriptor_only": 0.04382806271314621,
+      "ridge_online_scalars": 0.06280462443828583,
+      "ridge_geometry_only": 0.020257145166397095,
+      "mean_pool": 0.03944769501686096,
+      "random_expectation": 0.039251198247075084,
+      "matched_a": 0.026005694642663002,
+      "oracle": 0.06280462443828583
+    },
+    "scene-0726__scene-0873": {
+      "ridge_full": 0.04755668342113495,
+      "ridge_full_without_geometry": 0.04755668342113495,
+      "ridge_descriptor_only": 0.04755668342113495,
+      "ridge_online_scalars": 0.08537241071462631,
+      "ridge_geometry_only": 0.0009244034299626946,
+      "mean_pool": 0.03105315752327442,
+      "random_expectation": 0.030215740227140485,
+      "matched_a": 0.010601895861327648,
+      "oracle": 0.08537241071462631
+    },
+    "scene-0782__scene-0555": {
+      "ridge_full": 0.008454181253910065,
+      "ridge_full_without_geometry": 0.008454181253910065,
+      "ridge_descriptor_only": 0.008454181253910065,
+      "ridge_online_scalars": 0.013755381107330322,
+      "ridge_geometry_only": 0.013755381107330322,
+      "mean_pool": 0.009471067227423191,
+      "random_expectation": 0.009389446023851633,
+      "matched_a": 0.013755381107330322,
+      "oracle": 0.013755381107330322
+    },
+    "scene-0873__scene-0726": {
+      "ridge_full": 0.051671262830495834,
+      "ridge_full_without_geometry": 0.051671262830495834,
+      "ridge_descriptor_only": 0.051671262830495834,
+      "ridge_online_scalars": 0.051671262830495834,
+      "ridge_geometry_only": 0.023266306146979332,
+      "mean_pool": 0.019695265218615532,
+      "random_expectation": 0.019248741352930664,
+      "matched_a": -0.002274194499477744,
+      "oracle": 0.051671262830495834
+    },
+    "scene-0949__scene-0021": {
+      "ridge_full": 0.00601246627047658,
+      "ridge_full_without_geometry": 0.00601246627047658,
+      "ridge_descriptor_only": 0.00601246627047658,
+      "ridge_online_scalars": 0.015068018808960915,
+      "ridge_geometry_only": 0.015068018808960915,
+      "mean_pool": 0.0048626200295984745,
+      "random_expectation": 0.004686462180688977,
+      "matched_a": -0.002217768458649516,
+      "oracle": 0.015068018808960915
+    },
+    "scene-0949__scene-0191": {
+      "ridge_full": 0.036583062261343,
+      "ridge_full_without_geometry": 0.036583062261343,
+      "ridge_descriptor_only": 0.036583062261343,
+      "ridge_online_scalars": 0.052596718072891235,
+      "ridge_geometry_only": 0.036583062261343,
+      "mean_pool": 0.03883963078260422,
+      "random_expectation": 0.03856479041278362,
+      "matched_a": 0.052596718072891235,
+      "oracle": 0.052596718072891235
+    },
+    "scene-0956__scene-0028": {
+      "ridge_full": 0.02559366077184677,
+      "ridge_full_without_geometry": 0.02559366077184677,
+      "ridge_descriptor_only": 0.02559366077184677,
+      "ridge_online_scalars": 0.021020250394940376,
+      "ridge_geometry_only": 0.02559366077184677,
+      "mean_pool": 0.01616089791059494,
+      "random_expectation": 0.01611228408291936,
+      "matched_a": 0.01378332544118166,
+      "oracle": 0.02559366077184677
+    },
+    "scene-0980__scene-0017": {
+      "ridge_full": -0.016988292336463928,
+      "ridge_full_without_geometry": -0.016988292336463928,
+      "ridge_descriptor_only": -0.0030295473989099264,
+      "ridge_online_scalars": -0.013026315718889236,
+      "ridge_geometry_only": -0.016988292336463928,
+      "mean_pool": -0.006846779026091099,
+      "random_expectation": -0.007325494143879041,
+      "matched_a": -0.013026315718889236,
+      "oracle": 0.0
+    },
+    "scene-0980__scene-0061": {
+      "ridge_full": 0.019709687680006027,
+      "ridge_full_without_geometry": 0.019709687680006027,
+      "ridge_descriptor_only": 0.019709687680006027,
+      "ridge_online_scalars": 0.019709687680006027,
+      "ridge_geometry_only": 0.019709687680006027,
+      "mean_pool": 0.021037321537733078,
+      "random_expectation": 0.02098937928676605,
+      "matched_a": 0.02748696319758892,
+      "oracle": 0.02748696319758892
+    }
+  }
+}

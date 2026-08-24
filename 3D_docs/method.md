@@ -1,76 +1,83 @@
 # Current Method Specification
 
-## Architecture
+## Working architecture: utility-routed local plasticity memory
 
 ```text
-streaming RGB observations
+streaming RGB context
         ↓
-frozen foundation encoder (VGGT first; D4RT/VGGT ablation later)
+frozen foundation encoder (VGGT first)
         ↓
-dense tokens + initial depth/point/pose/track evidence
+dense tokens + predicted depth/pose + frozen track evidence
         ↓
-new geometry/plasticity head
-        ├── depth / point residuals
-        ├── pose correction
-        ├── tracking and geometry confidence
-        └── sparse 3D-addressed plasticity atoms
-                         ↑
-visual relocalization → candidate atoms
+custom local plasticity head
+        ↓
+exactly one current-context TTT step on per-token code z_t
+        │
+        ├──────── current-only prediction / reject path
+        │
+memory candidates ── visual token correspondence ──> transported local codes
+        │
+        └── current/source adaptation-history statistics
                          ↓
-3D + appearance transport
+regularized future-utility router
                          ↓
-online geometry probe → learned utility/risk routing
+select one candidate or reject all
                          ↓
-local TTT update and continual consolidation
+z_out = clamp(z_t + 0.10 z_memory, -1, 1)
 ```
 
-## Plasticity atom
+The foundation weights, base geometry head, plasticity decoder, and router are frozen online. Only the local fast code is updated by TTT.
 
-The provisional atom contains:
+## Plasticity memory object
 
-- 3D anchor position and spatial scale;
-- local frozen-feature key;
-- compact residual/update code, initially a low-rank depth/point residual;
-- observation count, age, uncertainty, and past utility statistics;
-- optional motion state for the later 4D extension.
+The provisional local record contains:
 
-The atom is the fast state. Foundation and main head weights are not mutated online in the first implementation.
+- a normalized local appearance key;
+- an 8-D per-token fast code;
+- predicted 3D anchor, scale, and confidence as context metadata;
+- online update/loss statistics;
+- future utility and risk history only after causal evaluation becomes available;
+- optional motion state in the later 4D extension.
 
-## Online objective
+Predicted `xyz` is not used to move the code or route memory in the locked primary path. Predicted alignment remains an ablation. Spatial locality is preserved by per-token visual addressing without assuming that a noisy cross-traversal predicted coordinate gauge is the correct update coordinate system.
 
-The deployable TTT objective may use only current observations and predictions:
+## Online TTT objective
 
-- multi-view track 3D consistency;
-- depth/point consistency;
-- reprojection where objective-health checks confirm valid support;
-- pose consistency;
-- temporal/cycle consistency;
-- confidence-weighted regularization.
+The deployable online objective may use only current observations and predictions:
 
-Held-out future frames supervise the outer utility/risk objective during training but never enter the online update.
+- frozen-track 3D consistency;
+- depth/point consistency where objective-health checks pass;
+- edge-aware smoothness and bounded code regularization;
+- later, pose/cycle consistency after independent health validation.
 
-## Retrieval and routing
+Held-out future frames generate meta-labels during training and evaluate utility, but never enter online adaptation, alignment, retrieval, or router features.
 
-1. A learned local visual key proposes a small candidate set.
-2. Candidate atoms are transported into current tokens using predicted 3D coordinates and local feature correspondence.
-3. A cheap current geometry probe is computed for each candidate.
-4. A utility/risk head predicts future benefit and negative-transfer probability.
-5. The router rejects all candidates or softly mixes accepted atoms.
+Exactly one current TTT step is used in the current design. EXP-006 found that a second step increased future loss and caused 60% harm, while bounded memory reuse improved it safely.
 
-Pose-map proximity is an optional prior, not a sufficient selector by itself.
+## Transport, evidence, and routing
+
+1. A local visual key proposes a small candidate set.
+2. Source codes are read at current tokens by appearance correspondence.
+3. Online loss changes, source/current track residual history, code statistics, descriptors, and visual-transport statistics enter a regularized utility router.
+4. Predicted alignment validity/inliers/residual/coverage are computed only in the geometry ablation.
+5. The router selects one candidate or returns current-only TTT.
+6. Accepted code is applied after current TTT with fixed residual strength 0.10.
+
+An invalid predicted-geometry alignment does not hard-mask a visually transportable candidate. Paired place identity and appearance similarity are controls, not correctness labels. Correctness is measured by future-utility regret and negative transfer.
 
 ## Continual-learning role
 
-Continual learning manages the long-term atom store:
+After routing generalizes, continual learning will manage the long-term local-code store:
 
-- write only useful, confident adaptation;
-- merge geometrically overlapping and compatible atoms;
-- preserve frequently useful atoms;
-- age or evict low-utility atoms;
-- reactivate or split atoms when new evidence contradicts consolidated geometry.
+- write only useful, confident adaptations;
+- cluster by adaptation utility/regime, not place identity alone;
+- merge visually/semantically compatible local codes;
+- preserve frequently useful memories;
+- age or evict low-utility records;
+- reactivate or split records when new evidence contradicts consolidated state.
 
-Generic parameter-protection methods may be ablations, but they are not the central mechanism.
+Generic parameter-protection methods remain ablations rather than the central mechanism.
 
-## Current oracle boundary
+## Current evidence boundary
 
-The positive 3D transport result used known poses as an upper bound. EXP-006 must replace this with predicted online pose/map alignment before the method can be called deployable.
+The architecture choice is based on exact train-only OOF estimates from 19 overlap components. The explicit neural risk head was identifiable after expansion but did not reduce selected harm, so it is not part of the locked model. The regularized utility router is locked for one-shot validation; the EXP-005 test split remains closed.

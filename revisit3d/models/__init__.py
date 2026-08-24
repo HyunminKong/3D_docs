@@ -23,6 +23,12 @@ from .geometry_transport import (
     visual_transport,
     weighted_sim3,
 )
+from .utility_router import (
+    ObservableUtilityRiskRouter,
+    RoutingDecision,
+    UtilityRiskPrediction,
+    apply_bounded_memory_residual,
+)
 
 def build_geometry_head(kind: str, feature_dim: int):
     if kind == "global":
@@ -44,4 +50,8 @@ __all__ += [
     "FeatureMatches", "Sim3Alignment", "TransportResult", "align_atoms", "apply_sim3",
     "backproject_tokens", "geometry_transport", "local_knn_scale", "mutual_feature_matches",
     "robust_sim3", "visual_transport", "weighted_sim3",
+]
+__all__ += [
+    "ObservableUtilityRiskRouter", "RoutingDecision", "UtilityRiskPrediction",
+    "apply_bounded_memory_residual",
 ]

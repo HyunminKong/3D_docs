@@ -1,5 +1,5 @@
 experiment: EXP-006
-protocol_revision: v2.3
+protocol_revision: v2.6
 seed: 600
 
 data:
@@ -50,7 +50,7 @@ stage0:
 
 stage1:
   cache: revisit3d/cache/EXP-006_stage1_train.pt
-  transport_diagnostic_result: revisit3d/results/EXP-006/stage1_predicted_transport_health_train_v23.json
+  transport_diagnostic_result: revisit3d/results/EXP-006/stage1_predicted_transport_health_train_v26.json
   pca_sample_size: 100000
   pca_iterations: 2
   steps_candidates: [500, 1000]
@@ -60,6 +60,15 @@ stage1:
   ttt_steps: 1
   ttt_step_size: 0.05
   candidate_count: 5
+  utility_deadband_minimum: 0.01
+  key_temperature: 0.07
+  appearance_weight: 5.0
+  reuse_application: additive_after_current
+  reuse_strength: 0.10
+  query_readout: visual_only
+  maximum_current_to_base_ratio: 1.05
+  output_checkpoint: revisit3d/checkpoints/exp006_atom_stage1_v26.pt
+  training_result: revisit3d/results/EXP-006/stage1_atom_training_train_v26.json
 
 stage2:
   steps_candidates: [500, 1000]

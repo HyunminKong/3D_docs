@@ -85,7 +85,6 @@ def main() -> None:
     with torch.no_grad():
         for index, cached in enumerate(cache["rows"]):
             current = _atom(head, cached["segments"]["a_prime_context"], device)
-            query = _atom(head, cached["segments"]["a_prime_query"], device)
             source = _atom(head, cached["segments"]["a_context"], device)
             distractor = _atom(head, cached["segments"]["b_context"], device)
             pairs = [
@@ -111,27 +110,23 @@ def main() -> None:
                     record.update({"transport_finite": False, "transport_entropy": None, "transport_coverage": 0.0})
                 record["episode"] = cached["episode_id"]
                 rows.append(record)
-            query_alignment = align_atoms(current, query)[0]
-            query_record = _record(query_alignment, "current_to_query", cached["episode_id"])
-            query_record["episode"] = cached["episode_id"]
-            query_record["transport_finite"] = query_alignment.valid
-            query_record["transport_entropy"] = None
-            query_record["transport_coverage"] = 0.0
-            rows.append(query_record)
             print(json.dumps({
                 "episode": cached["episode_id"],
-                "matched_valid": rows[-6]["valid"],
-                "query_valid": query_alignment.valid,
+                "matched_valid": rows[-5]["valid"],
             }), flush=True)
     summary = {label: _summarize(rows, label) for label in (
-        "matched", "distant_b", "foreign", "current_to_query",
+        "matched", "distant_b", "foreign",
     )}
     health = {
         "matched_valid_rate_ge_0.80": summary["matched"]["valid_rate"] >= 0.80,
-        "current_to_query_valid_rate_ge_0.80": summary["current_to_query"]["valid_rate"] >= 0.80,
         "all_valid_transports_finite": all(row["transport_finite"] for row in rows if row["valid"]),
+        "query_geometry_accessed": False,
     }
-    health["passed"] = all(health.values())
+    health["passed"] = (
+        health["matched_valid_rate_ge_0.80"]
+        and health["all_valid_transports_finite"]
+        and not health["query_geometry_accessed"]
+    )
     payload = {
         "experiment": "EXP-006",
         "stage": "predicted_transport_train_preflight",

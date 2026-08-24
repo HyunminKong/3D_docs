@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Cache frozen train-only outputs required by EXP-006 Stage 1/2."""
+"""Cache frozen outputs required by EXP-006 Stage 1/2.
+
+Training fits the frozen-feature PCA.  Validation is an explicit, guarded
+path and may only reuse a PCA fitted by a train cache; it never refits any
+representation on held-out observations.
+"""
 
 from __future__ import annotations
 
@@ -132,32 +137,58 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/EXP-006_atom_utility.yaml")
     parser.add_argument("--rebuild", action="store_true")
+    parser.add_argument(
+        "--allow-validation", action="store_true",
+        help="Explicitly permit the protected validation split. Test remains forbidden.",
+    )
     args = parser.parse_args()
     if not torch.cuda.is_available():
         raise SystemExit("EXP-006 frozen-output cache requires CUDA")
     config = yaml.safe_load(Path(args.config).read_text())
-    require_exp006_split(config["data"]["split"])
+    split = config["data"]["split"]
+    require_exp006_split(split, allow_validation=args.allow_validation)
+    if split == "val" and not args.allow_validation:
+        raise RuntimeError("validation caching requires --allow-validation")
     cache_path = Path(config["stage1"]["cache"])
     if cache_path.exists() and not args.rebuild:
         payload = torch.load(cache_path, map_location="cpu", weights_only=False)
-        if payload.get("protocol_revision") != config["protocol_revision"]:
+        if (
+            payload.get("protocol_revision") != config["protocol_revision"]
+            or payload.get("split") != split
+        ):
             raise RuntimeError("existing Stage-1 cache uses a different protocol revision; pass --rebuild")
         print(json.dumps({"cache": str(cache_path), "rows": len(payload["rows"]), "reused": True}))
         return
     device = torch.device("cuda")
     data = config["data"]
     dataset = RevisitEpisodeDataset(
-        data["manifest"], data["scene_root"], split="train",
+        data["manifest"], data["scene_root"], split=split,
         image_size=(int(data["image_height"]), int(data["image_width"])),
     )
     rows = _geometry_pass(dataset, config, device)
     _tracker_pass(dataset, rows, config, device)
-    pca_mean, pca_components = _fit_pca(rows, config, device)
+    if split == "train":
+        pca_mean, pca_components = _fit_pca(rows, config, device)
+        pca_source = str(cache_path)
+    else:
+        pca_source_path = Path(config["stage1"]["pca_source_cache"])
+        pca_payload = torch.load(pca_source_path, map_location="cpu", weights_only=False)
+        expected_source_revision = config.get("source_atom_protocol_revision")
+        if not (
+            pca_payload.get("split") == "train"
+            and pca_payload.get("protocol_revision") == expected_source_revision
+        ):
+            raise RuntimeError("validation PCA source must be the locked train cache")
+        pca_mean = pca_payload["pca_mean"]
+        pca_components = pca_payload["pca_components"]
+        pca_source = str(pca_source_path)
     payload = {
         "experiment": "EXP-006",
         "protocol_revision": config["protocol_revision"],
-        "split": "train",
+        "split": split,
         "stage0_checkpoint": config["stage0"]["output_checkpoint"],
+        "pca_fit_split": "train",
+        "pca_source_cache": pca_source,
         "pca_mean": pca_mean,
         "pca_components": pca_components,
         "rows": rows,
@@ -165,7 +196,8 @@ def main() -> None:
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(payload, cache_path)
     print(json.dumps({
-        "cache": str(cache_path), "rows": len(rows), "pca_samples": int(config["stage1"]["pca_sample_size"]),
+        "cache": str(cache_path), "rows": len(rows), "split": split,
+        "pca_fit_split": "train",
         "bytes": cache_path.stat().st_size,
     }))
 

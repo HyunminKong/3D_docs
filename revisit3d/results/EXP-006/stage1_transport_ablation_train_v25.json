@@ -1,0 +1,5186 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage1_train_ablation",
+  "split": "train",
+  "protocol_revision": "v2.5",
+  "utility_epsilon": 0.01,
+  "query_readout": "visual_only",
+  "validation_accessed": false,
+  "mean_current_to_base": 0.43600312173366546,
+  "summary": {
+    "global_vector": {
+      "candidates": 100,
+      "valid_rate": 1.0,
+      "mean_utility": 0.02485570001463202,
+      "median_utility": 0.013503000140190125,
+      "beneficial_rate": 0.54,
+      "harmful_rate": 0.05,
+      "episodes_with_beneficial": 14,
+      "mean_episode_best_utility": 0.04811716122785583
+    },
+    "untransported_local": {
+      "candidates": 100,
+      "valid_rate": 1.0,
+      "mean_utility": -1.3887562889792024,
+      "median_utility": -1.0462590456008911,
+      "beneficial_rate": 0.0,
+      "harmful_rate": 1.0,
+      "episodes_with_beneficial": 0,
+      "mean_episode_best_utility": 0.0
+    },
+    "visual": {
+      "candidates": 100,
+      "valid_rate": 1.0,
+      "mean_utility": -0.21123924529209034,
+      "median_utility": -0.0782233215868473,
+      "beneficial_rate": 0.26,
+      "harmful_rate": 0.67,
+      "episodes_with_beneficial": 11,
+      "mean_episode_best_utility": 0.037615597812691706
+    },
+    "geometry": {
+      "candidates": 100,
+      "valid_rate": 0.5,
+      "mean_utility": -0.3704946014564484,
+      "median_utility": -0.24190693348646164,
+      "beneficial_rate": 0.1,
+      "harmful_rate": 0.84,
+      "episodes_with_beneficial": 4,
+      "mean_episode_best_utility": 0.014832620974630117
+    },
+    "geometry_appearance": {
+      "candidates": 100,
+      "valid_rate": 0.5,
+      "mean_utility": -0.399484341526404,
+      "median_utility": -0.25006740540266037,
+      "beneficial_rate": 0.14,
+      "harmful_rate": 0.82,
+      "episodes_with_beneficial": 6,
+      "mean_episode_best_utility": 0.01764557189308107
+    }
+  },
+  "episode_current": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "base_query": 0.1351727843284607,
+      "current_query": 0.06669009476900101,
+      "current_to_base": 0.4933692514896393
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "base_query": 0.10534914582967758,
+      "current_query": 0.05723981931805611,
+      "current_to_base": 0.543334424495697
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "base_query": 0.020996220409870148,
+      "current_query": 0.01013867650181055,
+      "current_to_base": 0.4828810393810272
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "base_query": 0.09452713280916214,
+      "current_query": 0.03550560772418976,
+      "current_to_base": 0.37561288475990295
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "base_query": 0.038544896990060806,
+      "current_query": 0.01718214340507984,
+      "current_to_base": 0.44576960802078247
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "base_query": 0.05584166571497917,
+      "current_query": 0.020902739837765694,
+      "current_to_base": 0.3743215799331665
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "base_query": 0.06047588959336281,
+      "current_query": 0.019531359896063805,
+      "current_to_base": 0.32296109199523926
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "base_query": 0.09113170206546783,
+      "current_query": 0.03645071014761925,
+      "current_to_base": 0.399978369474411
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "base_query": 0.060268424451351166,
+      "current_query": 0.027575813233852386,
+      "current_to_base": 0.45754992961883545
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "base_query": 0.1005149856209755,
+      "current_query": 0.03251773491501808,
+      "current_to_base": 0.3235113024711609
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "base_query": 0.0775805339217186,
+      "current_query": 0.03473908454179764,
+      "current_to_base": 0.44778093695640564
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "base_query": 0.05829012393951416,
+      "current_query": 0.026803337037563324,
+      "current_to_base": 0.45982638001441956
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "base_query": 0.05012257397174835,
+      "current_query": 0.02585292048752308,
+      "current_to_base": 0.5157939791679382
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "base_query": 0.03787977620959282,
+      "current_query": 0.0114689189940691,
+      "current_to_base": 0.30277156829833984
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "base_query": 0.03221113607287407,
+      "current_query": 0.0172425489872694,
+      "current_to_base": 0.5352977514266968
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "base_query": 0.03787977620959282,
+      "current_query": 0.0114689189940691,
+      "current_to_base": 0.30277156829833984
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "base_query": 0.03221113607287407,
+      "current_query": 0.0172425489872694,
+      "current_to_base": 0.5352977514266968
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "base_query": 0.0609542541205883,
+      "current_query": 0.02633872628211975,
+      "current_to_base": 0.4321064352989197
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "base_query": 0.04597126692533493,
+      "current_query": 0.021626723930239677,
+      "current_to_base": 0.4704400300979614
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "base_query": 0.028562655672430992,
+      "current_query": 0.014243812300264835,
+      "current_to_base": 0.4986865520477295
+    }
+  ],
+  "rows": [
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.06741220504045486,
+      "utility": -0.010827848687767982,
+      "alignment_inlier_ratio": 0.9812667261373773,
+      "alignment_residual": 0.6361861228942871
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13613751530647278,
+      "utility": -1.0413453578948975,
+      "alignment_inlier_ratio": 0.9812667261373773,
+      "alignment_residual": 0.6361861228942871
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.09567482769489288,
+      "utility": -0.4346182644367218,
+      "alignment_inlier_ratio": 0.9812667261373773,
+      "alignment_residual": 0.6361861228942871
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.10970308631658554,
+      "utility": -0.6449682116508484,
+      "alignment_inlier_ratio": 0.9812667261373773,
+      "alignment_residual": 0.6361861228942871
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.09264256805181503,
+      "utility": -0.38915035128593445,
+      "alignment_inlier_ratio": 0.9812667261373773,
+      "alignment_residual": 0.6361861228942871
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.06721154600381851,
+      "utility": -0.007819021120667458,
+      "alignment_inlier_ratio": 0.8923076923076924,
+      "alignment_residual": 1.4344953298568726
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.09540276229381561,
+      "utility": -0.43053871393203735,
+      "alignment_inlier_ratio": 0.8923076923076924,
+      "alignment_residual": 1.4344953298568726
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.0826520323753357,
+      "utility": -0.23934495449066162,
+      "alignment_inlier_ratio": 0.8923076923076924,
+      "alignment_residual": 1.4344953298568726
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.07241654396057129,
+      "utility": -0.08586656302213669,
+      "alignment_inlier_ratio": 0.8923076923076924,
+      "alignment_residual": 1.4344953298568726
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0712212398648262,
+      "utility": -0.06794329732656479,
+      "alignment_inlier_ratio": 0.8923076923076924,
+      "alignment_residual": 1.4344953298568726
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.06669341772794724,
+      "utility": -4.982687460142188e-05,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08911991119384766,
+      "utility": -0.33632904291152954,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06685194373130798,
+      "utility": -0.0024268815759569407,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.06671309471130371,
+      "utility": -0.000344877946190536,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.09898325055837631,
+      "utility": -0.48422718048095703,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06665362417697906,
+      "utility": 0.0005468666786327958,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.06675010174512863,
+      "utility": -0.0008997884579002857,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.09002187848091125,
+      "utility": -0.3498538136482239,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06705246865749359,
+      "utility": -0.005433698650449514,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0006__scene-0022",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.057540055364370346,
+      "utility": -0.0052452306263148785,
+      "alignment_inlier_ratio": 0.9892952720785013,
+      "alignment_residual": 0.6550680994987488
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13090649247169495,
+      "utility": -1.2869830131530762,
+      "alignment_inlier_ratio": 0.9892952720785013,
+      "alignment_residual": 0.6550680994987488
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.07715220004320145,
+      "utility": -0.3478763699531555,
+      "alignment_inlier_ratio": 0.9892952720785013,
+      "alignment_residual": 0.6550680994987488
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.09437964856624603,
+      "utility": -0.6488460302352905,
+      "alignment_inlier_ratio": 0.9892952720785013,
+      "alignment_residual": 0.6550680994987488
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.07190964370965958,
+      "utility": -0.2562870383262634,
+      "alignment_inlier_ratio": 0.9892952720785013,
+      "alignment_residual": 0.6550680994987488
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.05746019259095192,
+      "utility": -0.003849999513477087,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.07361447811126709,
+      "utility": -0.28607112169265747,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05558246746659279,
+      "utility": 0.028954526409506798,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.057412344962358475,
+      "utility": -0.003014084417372942,
+      "alignment_inlier_ratio": 0.8767123287671232,
+      "alignment_residual": 1.2248636484146118
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13431519269943237,
+      "utility": -1.346534252166748,
+      "alignment_inlier_ratio": 0.8767123287671232,
+      "alignment_residual": 1.2248636484146118
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05648782104253769,
+      "utility": 0.013137677684426308,
+      "alignment_inlier_ratio": 0.8767123287671232,
+      "alignment_residual": 1.2248636484146118
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.05588558688759804,
+      "utility": 0.02365892194211483,
+      "alignment_inlier_ratio": 0.8767123287671232,
+      "alignment_residual": 1.2248636484146118
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.05689249560236931,
+      "utility": 0.006067868787795305,
+      "alignment_inlier_ratio": 0.8767123287671232,
+      "alignment_residual": 1.2248636484146118
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.05741012468934059,
+      "utility": -0.0029752952978014946,
+      "alignment_inlier_ratio": 0.8113207547169812,
+      "alignment_residual": 1.3951445817947388
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13182184100151062,
+      "utility": -1.3029744625091553,
+      "alignment_inlier_ratio": 0.8113207547169812,
+      "alignment_residual": 1.3951445817947388
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05792353302240372,
+      "utility": -0.011944721452891827,
+      "alignment_inlier_ratio": 0.8113207547169812,
+      "alignment_residual": 1.3951445817947388
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.057003941386938095,
+      "utility": 0.004120871424674988,
+      "alignment_inlier_ratio": 0.8113207547169812,
+      "alignment_residual": 1.3951445817947388
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.05667727440595627,
+      "utility": 0.009827859699726105,
+      "alignment_inlier_ratio": 0.8113207547169812,
+      "alignment_residual": 1.3951445817947388
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.05738114193081856,
+      "utility": -0.0024689564015716314,
+      "alignment_inlier_ratio": 0.7571428571428571,
+      "alignment_residual": 1.6453020572662354
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06440415978431702,
+      "utility": -0.12516357004642487,
+      "alignment_inlier_ratio": 0.7571428571428571,
+      "alignment_residual": 1.6453020572662354
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05702173337340355,
+      "utility": 0.003810039022937417,
+      "alignment_inlier_ratio": 0.7571428571428571,
+      "alignment_residual": 1.6453020572662354
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.055688630789518356,
+      "utility": 0.027099816128611565,
+      "alignment_inlier_ratio": 0.7571428571428571,
+      "alignment_residual": 1.6453020572662354
+    },
+    {
+      "episode": "scene-0022__scene-0006",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.05634157359600067,
+      "utility": 0.01569267176091671,
+      "alignment_inlier_ratio": 0.7571428571428571,
+      "alignment_residual": 1.6453020572662354
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.009601332247257233,
+      "utility": 0.05299944803118706,
+      "alignment_inlier_ratio": 0.7903225806451613,
+      "alignment_residual": 0.8765304684638977
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.020245185121893883,
+      "utility": -0.9968271851539612,
+      "alignment_inlier_ratio": 0.7903225806451613,
+      "alignment_residual": 0.8765304684638977
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.010518264025449753,
+      "utility": -0.037439554929733276,
+      "alignment_inlier_ratio": 0.7903225806451613,
+      "alignment_residual": 0.8765304684638977
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.01035063061863184,
+      "utility": -0.020905502140522003,
+      "alignment_inlier_ratio": 0.7903225806451613,
+      "alignment_residual": 0.8765304684638977
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.010411438532173634,
+      "utility": -0.026903120800852776,
+      "alignment_inlier_ratio": 0.7903225806451613,
+      "alignment_residual": 0.8765304684638977
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01007607951760292,
+      "utility": 0.006174078676849604,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03273990750312805,
+      "utility": -2.2292091846466064,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.009804574772715569,
+      "utility": 0.03295318782329559,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.010057970881462097,
+      "utility": 0.007960173301398754,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.036130886524915695,
+      "utility": -2.563668966293335,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.009869853034615517,
+      "utility": 0.026514651253819466,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.009870552457869053,
+      "utility": 0.0264456644654274,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.028112867847085,
+      "utility": -1.7728339433670044,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.009937833994626999,
+      "utility": 0.01980953849852085,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.009796963073313236,
+      "utility": 0.03370394930243492,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.011841684579849243,
+      "utility": -0.1679714322090149,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.010839395225048065,
+      "utility": -0.06911343336105347,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0097__scene-0673",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.035604339092969894,
+      "utility": -0.002780725946649909,
+      "alignment_inlier_ratio": 0.8951612903225806,
+      "alignment_residual": 0.952911913394928
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06973250210285187,
+      "utility": -0.9639856219291687,
+      "alignment_inlier_ratio": 0.8951612903225806,
+      "alignment_residual": 0.952911913394928
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03905545547604561,
+      "utility": -0.09997991472482681,
+      "alignment_inlier_ratio": 0.8951612903225806,
+      "alignment_residual": 0.952911913394928
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.06845775246620178,
+      "utility": -0.9280828237533569,
+      "alignment_inlier_ratio": 0.8951612903225806,
+      "alignment_residual": 0.952911913394928
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.07089754194021225,
+      "utility": -0.9967984557151794,
+      "alignment_inlier_ratio": 0.8951612903225806,
+      "alignment_residual": 0.952911913394928
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03532759100198746,
+      "utility": 0.005013763438910246,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06885168701410294,
+      "utility": -0.9391778111457825,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.034429024904966354,
+      "utility": 0.030321486294269562,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03495795279741287,
+      "utility": 0.015424462966620922,
+      "alignment_inlier_ratio": 0.7983193277310925,
+      "alignment_residual": 1.1367614269256592
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.10915835201740265,
+      "utility": -2.074397563934326,
+      "alignment_inlier_ratio": 0.7983193277310925,
+      "alignment_residual": 1.1367614269256592
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.05203133076429367,
+      "utility": -0.4654397964477539,
+      "alignment_inlier_ratio": 0.7983193277310925,
+      "alignment_residual": 1.1367614269256592
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03562476113438606,
+      "utility": -0.0033559040166437626,
+      "alignment_inlier_ratio": 0.7983193277310925,
+      "alignment_residual": 1.1367614269256592
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03649144992232323,
+      "utility": -0.02776581607758999,
+      "alignment_inlier_ratio": 0.7983193277310925,
+      "alignment_residual": 1.1367614269256592
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03496120870113373,
+      "utility": 0.015332762151956558,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.2177751064300537
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13393715023994446,
+      "utility": -2.7722816467285156,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.2177751064300537
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06049628555774689,
+      "utility": -0.703851580619812,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.2177751064300537
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.06994125992059708,
+      "utility": -0.9698651432991028,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.2177751064300537
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.06900826841592789,
+      "utility": -0.9435878396034241,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.2177751064300537
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03501437231898308,
+      "utility": 0.013835432007908821,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.1741751432418823
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.12347331643104553,
+      "utility": -2.477572202682495,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.1741751432418823
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.0536455400288105,
+      "utility": -0.5109032988548279,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.1741751432418823
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.046046122908592224,
+      "utility": -0.29686903953552246,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.1741751432418823
+    },
+    {
+      "episode": "scene-0673__scene-0097",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.049488529562950134,
+      "utility": -0.39382290840148926,
+      "alignment_inlier_ratio": 0.72,
+      "alignment_residual": 1.1741751432418823
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.016358494758605957,
+      "utility": 0.04793631657958031,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04998259246349335,
+      "utility": -1.9089847803115845,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019778316840529442,
+      "utility": -0.15109717845916748,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.016415035352110863,
+      "utility": 0.044645655900239944,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06989190727472305,
+      "utility": -3.0677061080932617,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.020911937579512596,
+      "utility": -0.21707385778427124,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01684916950762272,
+      "utility": 0.019379066303372383,
+      "alignment_inlier_ratio": 0.71875,
+      "alignment_residual": 1.1550934314727783
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.01759442314505577,
+      "utility": -0.02399466373026371,
+      "alignment_inlier_ratio": 0.71875,
+      "alignment_residual": 1.1550934314727783
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03032817505300045,
+      "utility": -0.7650984525680542,
+      "alignment_inlier_ratio": 0.71875,
+      "alignment_residual": 1.1550934314727783
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.016272788867354393,
+      "utility": 0.052924394607543945,
+      "alignment_inlier_ratio": 0.71875,
+      "alignment_residual": 1.1550934314727783
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.016362765803933144,
+      "utility": 0.04768773913383484,
+      "alignment_inlier_ratio": 0.71875,
+      "alignment_residual": 1.1550934314727783
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.016049958765506744,
+      "utility": 0.06589309871196747,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06835014373064041,
+      "utility": -2.977975606918335,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.017432402819395065,
+      "utility": -0.014565086923539639,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01607826165854931,
+      "utility": 0.06424587219953537,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06377208977937698,
+      "utility": -2.7115330696105957,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018884386867284775,
+      "utility": -0.09907049685716629,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0104__scene-0260",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02085445262491703,
+      "utility": 0.002310090232640505,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08122231066226959,
+      "utility": -2.885725736618042,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.023416176438331604,
+      "utility": -0.12024436146020889,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02085779421031475,
+      "utility": 0.002150226617231965,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.7448816895484924
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04227028787136078,
+      "utility": -1.022236704826355,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.7448816895484924
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.022449225187301636,
+      "utility": -0.07398481667041779,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.7448816895484924
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.02270383946597576,
+      "utility": -0.08616571873426437,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.7448816895484924
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02286881022155285,
+      "utility": -0.09405802190303802,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.7448816895484924
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.020850617438554764,
+      "utility": 0.0024935677647590637,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04609743133187294,
+      "utility": -1.2053296566009521,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02132277749478817,
+      "utility": -0.0200948603451252,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.020816229283809662,
+      "utility": 0.004138718359172344,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04274492338299751,
+      "utility": -1.0449435710906982,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.024861127138137817,
+      "utility": -0.18937169015407562,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.021167607977986336,
+      "utility": -0.01267145574092865,
+      "alignment_inlier_ratio": 0.821917808219178,
+      "alignment_residual": 1.3466155529022217
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.11644047498703003,
+      "utility": -4.570584297180176,
+      "alignment_inlier_ratio": 0.821917808219178,
+      "alignment_residual": 1.3466155529022217
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03738965466618538,
+      "utility": -0.7887442111968994,
+      "alignment_inlier_ratio": 0.821917808219178,
+      "alignment_residual": 1.3466155529022217
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.04482097178697586,
+      "utility": -1.1442630290985107,
+      "alignment_inlier_ratio": 0.821917808219178,
+      "alignment_residual": 1.3466155529022217
+    },
+    {
+      "episode": "scene-0260__scene-0104",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.04768824204802513,
+      "utility": -1.2814350128173828,
+      "alignment_inlier_ratio": 0.821917808219178,
+      "alignment_residual": 1.3466155529022217
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.018691247329115868,
+      "utility": 0.043013520538806915,
+      "alignment_inlier_ratio": 0.7105263157894737,
+      "alignment_residual": 1.0263069868087769
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0984983891248703,
+      "utility": -4.043088912963867,
+      "alignment_inlier_ratio": 0.7105263157894737,
+      "alignment_residual": 1.0263069868087769
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.06481191515922546,
+      "utility": -2.3183512687683105,
+      "alignment_inlier_ratio": 0.7105263157894737,
+      "alignment_residual": 1.0263069868087769
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03940332680940628,
+      "utility": -1.0174390077590942,
+      "alignment_inlier_ratio": 0.7105263157894737,
+      "alignment_residual": 1.0263069868087769
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.04360569268465042,
+      "utility": -1.232598900794983,
+      "alignment_inlier_ratio": 0.7105263157894737,
+      "alignment_residual": 1.0263069868087769
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.018660105764865875,
+      "utility": 0.04460795968770981,
+      "alignment_inlier_ratio": 0.810126582278481,
+      "alignment_residual": 1.3328535556793213
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03891235589981079,
+      "utility": -0.9923014044761658,
+      "alignment_inlier_ratio": 0.810126582278481,
+      "alignment_residual": 1.3328535556793213
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.051798295229673386,
+      "utility": -1.6520578861236572,
+      "alignment_inlier_ratio": 0.810126582278481,
+      "alignment_residual": 1.3328535556793213
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.02957695908844471,
+      "utility": -0.5143317580223083,
+      "alignment_inlier_ratio": 0.810126582278481,
+      "alignment_residual": 1.3328535556793213
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03383108600974083,
+      "utility": -0.7321418523788452,
+      "alignment_inlier_ratio": 0.810126582278481,
+      "alignment_residual": 1.3328535556793213
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.019008371978998184,
+      "utility": 0.026776831597089767,
+      "alignment_inlier_ratio": 0.8783783783783784,
+      "alignment_residual": 1.139251470565796
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08705191314220428,
+      "utility": -3.4570326805114746,
+      "alignment_inlier_ratio": 0.8783783783783784,
+      "alignment_residual": 1.139251470565796
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.027623988687992096,
+      "utility": -0.4143402576446533,
+      "alignment_inlier_ratio": 0.8783783783783784,
+      "alignment_residual": 1.139251470565796
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.039552561938762665,
+      "utility": -1.0250797271728516,
+      "alignment_inlier_ratio": 0.8783783783783784,
+      "alignment_residual": 1.139251470565796
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0489630401134491,
+      "utility": -1.506893515586853,
+      "alignment_inlier_ratio": 0.8783783783783784,
+      "alignment_residual": 1.139251470565796
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.018881233409047127,
+      "utility": 0.033286288380622864,
+      "alignment_inlier_ratio": 0.7333333333333333,
+      "alignment_residual": 1.7006053924560547
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04207704961299896,
+      "utility": -1.1543328762054443,
+      "alignment_inlier_ratio": 0.7333333333333333,
+      "alignment_residual": 1.7006053924560547
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02127513661980629,
+      "utility": -0.089280866086483,
+      "alignment_inlier_ratio": 0.7333333333333333,
+      "alignment_residual": 1.7006053924560547
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.029908575117588043,
+      "utility": -0.5313104391098022,
+      "alignment_inlier_ratio": 0.7333333333333333,
+      "alignment_residual": 1.7006053924560547
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03191716969013214,
+      "utility": -0.6341499090194702,
+      "alignment_inlier_ratio": 0.7333333333333333,
+      "alignment_residual": 1.7006053924560547
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.019396305084228516,
+      "utility": 0.006914767436683178,
+      "alignment_inlier_ratio": 0.8539325842696629,
+      "alignment_residual": 1.296311616897583
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.048213426023721695,
+      "utility": -1.4685134887695312,
+      "alignment_inlier_ratio": 0.8539325842696629,
+      "alignment_residual": 1.296311616897583
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01898653246462345,
+      "utility": 0.0278950072824955,
+      "alignment_inlier_ratio": 0.8539325842696629,
+      "alignment_residual": 1.296311616897583
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.025260068476200104,
+      "utility": -0.29330822825431824,
+      "alignment_inlier_ratio": 0.8539325842696629,
+      "alignment_residual": 1.296311616897583
+    },
+    {
+      "episode": "scene-0246__scene-0675",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02344980649650097,
+      "utility": -0.20062333345413208,
+      "alignment_inlier_ratio": 0.8539325842696629,
+      "alignment_residual": 1.296311616897583
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.036287687718868256,
+      "utility": 0.004472407512366772,
+      "alignment_inlier_ratio": 0.7631578947368421,
+      "alignment_residual": 1.0428296327590942
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.07304233312606812,
+      "utility": -1.0038658380508423,
+      "alignment_inlier_ratio": 0.7631578947368421,
+      "alignment_residual": 1.0428296327590942
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03862324357032776,
+      "utility": -0.05960195139050484,
+      "alignment_inlier_ratio": 0.7631578947368421,
+      "alignment_residual": 1.0428296327590942
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03853758051991463,
+      "utility": -0.05725184455513954,
+      "alignment_inlier_ratio": 0.7631578947368421,
+      "alignment_residual": 1.0428296327590942
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03899477422237396,
+      "utility": -0.06979463994503021,
+      "alignment_inlier_ratio": 0.7631578947368421,
+      "alignment_residual": 1.0428296327590942
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03642572462558746,
+      "utility": 0.0006854605162516236,
+      "alignment_inlier_ratio": 0.8913043478260869,
+      "alignment_residual": 1.0964356660842896
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.05225260928273201,
+      "utility": -0.43351417779922485,
+      "alignment_inlier_ratio": 0.8913043478260869,
+      "alignment_residual": 1.0964356660842896
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.036970991641283035,
+      "utility": -0.014273562468588352,
+      "alignment_inlier_ratio": 0.8913043478260869,
+      "alignment_residual": 1.0964356660842896
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.04490967467427254,
+      "utility": -0.2320658415555954,
+      "alignment_inlier_ratio": 0.8913043478260869,
+      "alignment_residual": 1.0964356660842896
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.045210305601358414,
+      "utility": -0.24031344056129456,
+      "alignment_inlier_ratio": 0.8913043478260869,
+      "alignment_residual": 1.0964356660842896
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03640527278184891,
+      "utility": 0.0012465426698327065,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06154445931315422,
+      "utility": -0.6884296536445618,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.036444999277591705,
+      "utility": 0.00015667376283090562,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03640527278184891,
+      "utility": 0.0012465426698327065,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06154445931315422,
+      "utility": -0.6884296536445618,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.036444999277591705,
+      "utility": 0.00015667376283090562,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03642931208014488,
+      "utility": 0.0005870411405339837,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06393066793680191,
+      "utility": -0.7538936138153076,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.036260973662137985,
+      "utility": 0.0052052889950573444,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0675__scene-0246",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02751494012773037,
+      "utility": 0.0022074817679822445,
+      "alignment_inlier_ratio": 0.9097744360902256,
+      "alignment_residual": 0.8090434670448303
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.053979601711034775,
+      "utility": -0.9574980735778809,
+      "alignment_inlier_ratio": 0.9097744360902256,
+      "alignment_residual": 0.8090434670448303
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03410743921995163,
+      "utility": -0.23686067759990692,
+      "alignment_inlier_ratio": 0.9097744360902256,
+      "alignment_residual": 0.8090434670448303
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.031508252024650574,
+      "utility": -0.14260463416576385,
+      "alignment_inlier_ratio": 0.9097744360902256,
+      "alignment_residual": 0.8090434670448303
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.02861366607248783,
+      "utility": -0.037636347115039825,
+      "alignment_inlier_ratio": 0.9097744360902256,
+      "alignment_residual": 0.8090434670448303
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.027918459847569466,
+      "utility": -0.012425621040165424,
+      "alignment_inlier_ratio": 0.7962962962962963,
+      "alignment_residual": 1.0323269367218018
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.037996016442775726,
+      "utility": -0.3778747320175171,
+      "alignment_inlier_ratio": 0.7962962962962963,
+      "alignment_residual": 1.0323269367218018
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.037688471376895905,
+      "utility": -0.3667220175266266,
+      "alignment_inlier_ratio": 0.7962962962962963,
+      "alignment_residual": 1.0323269367218018
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03227875381708145,
+      "utility": -0.17054584622383118,
+      "alignment_inlier_ratio": 0.7962962962962963,
+      "alignment_residual": 1.0323269367218018
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03489155322313309,
+      "utility": -0.26529553532600403,
+      "alignment_inlier_ratio": 0.7962962962962963,
+      "alignment_residual": 1.0323269367218018
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02752440981566906,
+      "utility": 0.0018640762427821755,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.09280655533075333,
+      "utility": -2.3655056953430176,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02610447071492672,
+      "utility": 0.053356267511844635,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02749568782746792,
+      "utility": 0.0029056407511234283,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04061959311366081,
+      "utility": -0.4730152487754822,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02904423512518406,
+      "utility": -0.05325035750865936,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.027534620836377144,
+      "utility": 0.001493787276558578,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04986755922436714,
+      "utility": -0.8083803653717041,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.026790475472807884,
+      "utility": 0.02847922407090664,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0247__scene-0293",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.032419029623270035,
+      "utility": 0.003035429399460554,
+      "alignment_inlier_ratio": 0.8872180451127819,
+      "alignment_residual": 0.9080995917320251
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.055658672004938126,
+      "utility": -0.711640477180481,
+      "alignment_inlier_ratio": 0.8872180451127819,
+      "alignment_residual": 0.9080995917320251
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03611668944358826,
+      "utility": -0.11067666858434677,
+      "alignment_inlier_ratio": 0.8872180451127819,
+      "alignment_residual": 0.9080995917320251
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.07671322673559189,
+      "utility": -1.3591196537017822,
+      "alignment_inlier_ratio": 0.8872180451127819,
+      "alignment_residual": 0.9080995917320251
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.07255742698907852,
+      "utility": -1.2313185930252075,
+      "alignment_inlier_ratio": 0.8872180451127819,
+      "alignment_residual": 0.9080995917320251
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03244827315211296,
+      "utility": 0.002136119408532977,
+      "alignment_inlier_ratio": 0.8717948717948718,
+      "alignment_residual": 1.1870930194854736
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08281009644269943,
+      "utility": -1.546613335609436,
+      "alignment_inlier_ratio": 0.8717948717948718,
+      "alignment_residual": 1.1870930194854736
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.0329965315759182,
+      "utility": -0.014724169857800007,
+      "alignment_inlier_ratio": 0.8717948717948718,
+      "alignment_residual": 1.1870930194854736
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03390004485845566,
+      "utility": -0.04250941798090935,
+      "alignment_inlier_ratio": 0.8717948717948718,
+      "alignment_residual": 1.1870930194854736
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.034934151917696,
+      "utility": -0.07431074231863022,
+      "alignment_inlier_ratio": 0.8717948717948718,
+      "alignment_residual": 1.1870930194854736
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.032397836446762085,
+      "utility": 0.003687171498313546,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.055138006806373596,
+      "utility": -0.6956287622451782,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.034604109823703766,
+      "utility": -0.06416113674640656,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03249280899763107,
+      "utility": 0.0007665330194868147,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0712813138961792,
+      "utility": -1.1920750141143799,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.034237705171108246,
+      "utility": -0.052893299609422684,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03249280899763107,
+      "utility": 0.0007665330194868147,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0712813138961792,
+      "utility": -1.1920750141143799,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.034237705171108246,
+      "utility": -0.052893299609422684,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0293__scene-0247",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.033345893025398254,
+      "utility": 0.04010444134473801,
+      "alignment_inlier_ratio": 0.782608695652174,
+      "alignment_residual": 1.3499023914337158
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04279547557234764,
+      "utility": -0.23191143572330475,
+      "alignment_inlier_ratio": 0.782608695652174,
+      "alignment_residual": 1.3499023914337158
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03357978165149689,
+      "utility": 0.03337171673774719,
+      "alignment_inlier_ratio": 0.782608695652174,
+      "alignment_residual": 1.3499023914337158
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.0368984155356884,
+      "utility": -0.06215854734182358,
+      "alignment_inlier_ratio": 0.782608695652174,
+      "alignment_residual": 1.3499023914337158
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.037046145647764206,
+      "utility": -0.0664111077785492,
+      "alignment_inlier_ratio": 0.782608695652174,
+      "alignment_residual": 1.3499023914337158
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.032711103558540344,
+      "utility": 0.058377500623464584,
+      "alignment_inlier_ratio": 0.8363636363636363,
+      "alignment_residual": 1.0212905406951904
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0681324228644371,
+      "utility": -0.9612613320350647,
+      "alignment_inlier_ratio": 0.8363636363636363,
+      "alignment_residual": 1.0212905406951904
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.032678037881851196,
+      "utility": 0.059329330921173096,
+      "alignment_inlier_ratio": 0.8363636363636363,
+      "alignment_residual": 1.0212905406951904
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03443507105112076,
+      "utility": 0.008751338347792625,
+      "alignment_inlier_ratio": 0.8363636363636363,
+      "alignment_residual": 1.0212905406951904
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0343581847846508,
+      "utility": 0.010964588262140751,
+      "alignment_inlier_ratio": 0.8363636363636363,
+      "alignment_residual": 1.0212905406951904
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.032539576292037964,
+      "utility": 0.06331508606672287,
+      "alignment_inlier_ratio": 0.8688524590163934,
+      "alignment_residual": 1.0571396350860596
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13088186085224152,
+      "utility": -2.7675678730010986,
+      "alignment_inlier_ratio": 0.8688524590163934,
+      "alignment_residual": 1.0571396350860596
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03224937245249748,
+      "utility": 0.07166890054941177,
+      "alignment_inlier_ratio": 0.8688524590163934,
+      "alignment_residual": 1.0571396350860596
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.041324432939291,
+      "utility": -0.189565971493721,
+      "alignment_inlier_ratio": 0.8688524590163934,
+      "alignment_residual": 1.0571396350860596
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.04128679260611534,
+      "utility": -0.18848246335983276,
+      "alignment_inlier_ratio": 0.8688524590163934,
+      "alignment_residual": 1.0571396350860596
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03467629477381706,
+      "utility": 0.001807467546314001,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13922160863876343,
+      "utility": -3.007636070251465,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.032935529947280884,
+      "utility": 0.05191715806722641,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.03467629477381706,
+      "utility": 0.001807467546314001,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.13922160863876343,
+      "utility": -3.007636070251465,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.032935529947280884,
+      "utility": 0.05191715806722641,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0329__scene-0653",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.024763990193605423,
+      "utility": 0.07608556002378464,
+      "alignment_inlier_ratio": 0.8434782608695652,
+      "alignment_residual": 1.2079873085021973
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03652012720704079,
+      "utility": -0.3625216484069824,
+      "alignment_inlier_ratio": 0.8434782608695652,
+      "alignment_residual": 1.2079873085021973
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.029768189415335655,
+      "utility": -0.11061504483222961,
+      "alignment_inlier_ratio": 0.8434782608695652,
+      "alignment_residual": 1.2079873085021973
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.035179849714040756,
+      "utility": -0.31251752376556396,
+      "alignment_inlier_ratio": 0.8434782608695652,
+      "alignment_residual": 1.2079873085021973
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.032075319439172745,
+      "utility": -0.19669127464294434,
+      "alignment_inlier_ratio": 0.8434782608695652,
+      "alignment_residual": 1.2079873085021973
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.025764280930161476,
+      "utility": 0.03876592218875885,
+      "alignment_inlier_ratio": 0.8761061946902655,
+      "alignment_residual": 1.061547040939331
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04137793183326721,
+      "utility": -0.5437604784965515,
+      "alignment_inlier_ratio": 0.8761061946902655,
+      "alignment_residual": 1.061547040939331
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02540988102555275,
+      "utility": 0.0519881546497345,
+      "alignment_inlier_ratio": 0.8761061946902655,
+      "alignment_residual": 1.061547040939331
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.02802843414247036,
+      "utility": -0.04570688679814339,
+      "alignment_inlier_ratio": 0.8761061946902655,
+      "alignment_residual": 1.061547040939331
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.025919772684574127,
+      "utility": 0.032964713871479034,
+      "alignment_inlier_ratio": 0.8761061946902655,
+      "alignment_residual": 1.061547040939331
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.026761483401060104,
+      "utility": 0.0015615083975717425,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.05387209728360176,
+      "utility": -1.0099025964736938,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.023371342569589615,
+      "utility": 0.1280435472726822,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02657998353242874,
+      "utility": 0.008333048783242702,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04658977687358856,
+      "utility": -0.7382080554962158,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.024619966745376587,
+      "utility": 0.08145889639854431,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.026360908523201942,
+      "utility": 0.01650647073984146,
+      "alignment_inlier_ratio": 0.803030303030303,
+      "alignment_residual": 1.0320894718170166
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04011295735836029,
+      "utility": -0.4965657889842987,
+      "alignment_inlier_ratio": 0.803030303030303,
+      "alignment_residual": 1.0320894718170166
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02303319238126278,
+      "utility": 0.14065952599048615,
+      "alignment_inlier_ratio": 0.803030303030303,
+      "alignment_residual": 1.0320894718170166
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.027082066982984543,
+      "utility": -0.010399076156318188,
+      "alignment_inlier_ratio": 0.803030303030303,
+      "alignment_residual": 1.0320894718170166
+    },
+    {
+      "episode": "scene-0653__scene-0329",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.025481808930635452,
+      "utility": 0.04930461198091507,
+      "alignment_inlier_ratio": 0.803030303030303,
+      "alignment_residual": 1.0320894718170166
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.025474144145846367,
+      "utility": 0.014651201665401459,
+      "alignment_inlier_ratio": 0.9746192893401016,
+      "alignment_residual": 0.7900809645652771
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.02984743006527424,
+      "utility": -0.1545090228319168,
+      "alignment_inlier_ratio": 0.9746192893401016,
+      "alignment_residual": 0.7900809645652771
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03234954550862312,
+      "utility": -0.2512917220592499,
+      "alignment_inlier_ratio": 0.9746192893401016,
+      "alignment_residual": 0.7900809645652771
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.021189918741583824,
+      "utility": 0.18036653101444244,
+      "alignment_inlier_ratio": 0.9746192893401016,
+      "alignment_residual": 0.7900809645652771
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.020804250612854958,
+      "utility": 0.19528432190418243,
+      "alignment_inlier_ratio": 0.9746192893401016,
+      "alignment_residual": 0.7900809645652771
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02542804926633835,
+      "utility": 0.016434166580438614,
+      "alignment_inlier_ratio": 0.9398907103825137,
+      "alignment_residual": 1.0055034160614014
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0361686646938324,
+      "utility": -0.3990165889263153,
+      "alignment_inlier_ratio": 0.9398907103825137,
+      "alignment_residual": 1.0055034160614014
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.026372265070676804,
+      "utility": -0.020088430494070053,
+      "alignment_inlier_ratio": 0.9398907103825137,
+      "alignment_residual": 1.0055034160614014
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.033905137330293655,
+      "utility": -0.31146255135536194,
+      "alignment_inlier_ratio": 0.9398907103825137,
+      "alignment_residual": 1.0055034160614014
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.032000839710235596,
+      "utility": -0.23780366778373718,
+      "alignment_inlier_ratio": 0.9398907103825137,
+      "alignment_residual": 1.0055034160614014
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.023186957463622093,
+      "utility": 0.10312037914991379,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.0916462242603302,
+      "utility": -2.544908046722412,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03022768720984459,
+      "utility": -0.16921751201152802,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.023539410904049873,
+      "utility": 0.08948735892772675,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08018692582845688,
+      "utility": -2.101658344268799,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.028801806271076202,
+      "utility": -0.11406393349170685,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.025358136743307114,
+      "utility": 0.019138408824801445,
+      "alignment_inlier_ratio": 0.7244094488188977,
+      "alignment_residual": 1.1416491270065308
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.031364135444164276,
+      "utility": -0.2131757140159607,
+      "alignment_inlier_ratio": 0.7244094488188977,
+      "alignment_residual": 1.1416491270065308
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02736220508813858,
+      "utility": -0.058379657566547394,
+      "alignment_inlier_ratio": 0.7244094488188977,
+      "alignment_residual": 1.1416491270065308
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.04724706709384918,
+      "utility": -0.8275330662727356,
+      "alignment_inlier_ratio": 0.7244094488188977,
+      "alignment_residual": 1.1416491270065308
+    },
+    {
+      "episode": "scene-0464__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.04867593199014664,
+      "utility": -0.8828020691871643,
+      "alignment_inlier_ratio": 0.7244094488188977,
+      "alignment_residual": 1.1416491270065308
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01141356211155653,
+      "utility": 0.0048266868107020855,
+      "alignment_inlier_ratio": 0.9796954314720813,
+      "alignment_residual": 0.7927424907684326
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.024513328447937965,
+      "utility": -1.1373704671859741,
+      "alignment_inlier_ratio": 0.9796954314720813,
+      "alignment_residual": 0.7927424907684326
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01848578453063965,
+      "utility": -0.6118157505989075,
+      "alignment_inlier_ratio": 0.9796954314720813,
+      "alignment_residual": 0.7927424907684326
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.0360613688826561,
+      "utility": -2.1442692279815674,
+      "alignment_inlier_ratio": 0.9796954314720813,
+      "alignment_residual": 0.7927424907684326
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.035333313047885895,
+      "utility": -2.0807883739471436,
+      "alignment_inlier_ratio": 0.9796954314720813,
+      "alignment_residual": 0.7927424907684326
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.010661937296390533,
+      "utility": 0.07036249339580536,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.043415434658527374,
+      "utility": -2.7854864597320557,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01785907708108425,
+      "utility": -0.5571717619895935,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.011604180559515953,
+      "utility": -0.011793750338256359,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.02197560854256153,
+      "utility": -0.9161010980606079,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019353631883859634,
+      "utility": -0.6874852776527405,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.010713182389736176,
+      "utility": 0.06589432060718536,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.052828598767519,
+      "utility": -3.6062402725219727,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02535736933350563,
+      "utility": -1.2109642028808594,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.013691090978682041,
+      "utility": -0.19375601410865784,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.014748274348676205,
+      "utility": -0.28593412041664124,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01130213774740696,
+      "utility": 0.014542019926011562,
+      "alignment_inlier_ratio": 0.9848484848484849,
+      "alignment_residual": 0.9379280209541321
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.028158782050013542,
+      "utility": -1.4552254676818848,
+      "alignment_inlier_ratio": 0.9848484848484849,
+      "alignment_residual": 0.9379280209541321
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.011141271330416203,
+      "utility": 0.028568312525749207,
+      "alignment_inlier_ratio": 0.9848484848484849,
+      "alignment_residual": 0.9379280209541321
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.014120148494839668,
+      "utility": -0.23116646707057953,
+      "alignment_inlier_ratio": 0.9848484848484849,
+      "alignment_residual": 0.9379280209541321
+    },
+    {
+      "episode": "scene-0555__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.014265589416027069,
+      "utility": -0.2438477724790573,
+      "alignment_inlier_ratio": 0.9848484848484849,
+      "alignment_residual": 0.9379280209541321
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.017067929729819298,
+      "utility": 0.010127229616045952,
+      "alignment_inlier_ratio": 0.9629629629629629,
+      "alignment_residual": 0.9186030030250549
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.022573139518499374,
+      "utility": -0.309153288602829,
+      "alignment_inlier_ratio": 0.9629629629629629,
+      "alignment_residual": 0.9186030030250549
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.023353876546025276,
+      "utility": -0.35443294048309326,
+      "alignment_inlier_ratio": 0.9629629629629629,
+      "alignment_residual": 0.9186030030250549
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.0243392214179039,
+      "utility": -0.41157907247543335,
+      "alignment_inlier_ratio": 0.9629629629629629,
+      "alignment_residual": 0.9186030030250549
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.023703178390860558,
+      "utility": -0.37469109892845154,
+      "alignment_inlier_ratio": 0.9629629629629629,
+      "alignment_residual": 0.9186030030250549
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.017047272995114326,
+      "utility": 0.011325239203870296,
+      "alignment_inlier_ratio": 0.7769230769230769,
+      "alignment_residual": 1.0702239274978638
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.02103882096707821,
+      "utility": -0.2201688438653946,
+      "alignment_inlier_ratio": 0.7769230769230769,
+      "alignment_residual": 1.0702239274978638
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02272515371441841,
+      "utility": -0.31796950101852417,
+      "alignment_inlier_ratio": 0.7769230769230769,
+      "alignment_residual": 1.0702239274978638
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.02339579351246357,
+      "utility": -0.35686397552490234,
+      "alignment_inlier_ratio": 0.7769230769230769,
+      "alignment_residual": 1.0702239274978638
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0236356183886528,
+      "utility": -0.3707728683948517,
+      "alignment_inlier_ratio": 0.7769230769230769,
+      "alignment_residual": 1.0702239274978638
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.016231872141361237,
+      "utility": 0.05861528217792511,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.053483977913856506,
+      "utility": -2.101860284805298,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019599566236138344,
+      "utility": -0.13669772446155548,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.017015572637319565,
+      "utility": 0.013163735158741474,
+      "alignment_inlier_ratio": 0.8301886792452831,
+      "alignment_residual": 1.0908443927764893
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.023908516392111778,
+      "utility": -0.3865998685359955,
+      "alignment_inlier_ratio": 0.8301886792452831,
+      "alignment_residual": 1.0908443927764893
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.017791155725717545,
+      "utility": -0.031817033886909485,
+      "alignment_inlier_ratio": 0.8301886792452831,
+      "alignment_residual": 1.0908443927764893
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.023057587444782257,
+      "utility": -0.3372493386268616,
+      "alignment_inlier_ratio": 0.8301886792452831,
+      "alignment_residual": 1.0908443927764893
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.024733582511544228,
+      "utility": -0.4344504773616791,
+      "alignment_inlier_ratio": 0.8301886792452831,
+      "alignment_residual": 1.0908443927764893
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01654067635536194,
+      "utility": 0.0407058522105217,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04566732794046402,
+      "utility": -1.648525357246399,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019875362515449524,
+      "utility": -0.15269282460212708,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0464__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01143751572817564,
+      "utility": 0.002738119103014469,
+      "alignment_inlier_ratio": 0.9777777777777777,
+      "alignment_residual": 0.8764980435371399
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.030229488387703896,
+      "utility": -1.635774850845337,
+      "alignment_inlier_ratio": 0.9777777777777777,
+      "alignment_residual": 0.8764980435371399
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01607462763786316,
+      "utility": -0.4015817642211914,
+      "alignment_inlier_ratio": 0.9777777777777777,
+      "alignment_residual": 0.8764980435371399
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.018022732809185982,
+      "utility": -0.5714412927627563,
+      "alignment_inlier_ratio": 0.9777777777777777,
+      "alignment_residual": 0.8764980435371399
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.017196862027049065,
+      "utility": -0.4994318187236786,
+      "alignment_inlier_ratio": 0.9777777777777777,
+      "alignment_residual": 0.8764980435371399
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.011173449456691742,
+      "utility": 0.025762632489204407,
+      "alignment_inlier_ratio": 0.995475113122172,
+      "alignment_residual": 0.5860439538955688
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.02433284930884838,
+      "utility": -1.1216341257095337,
+      "alignment_inlier_ratio": 0.995475113122172,
+      "alignment_residual": 0.5860439538955688
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.013778877444565296,
+      "utility": -0.20141030848026276,
+      "alignment_inlier_ratio": 0.995475113122172,
+      "alignment_residual": 0.5860439538955688
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.017261529341340065,
+      "utility": -0.5050703287124634,
+      "alignment_inlier_ratio": 0.995475113122172,
+      "alignment_residual": 0.5860439538955688
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.028701771050691605,
+      "utility": -1.5025699138641357,
+      "alignment_inlier_ratio": 0.995475113122172,
+      "alignment_residual": 0.5860439538955688
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.010547489859163761,
+      "utility": 0.0803414136171341,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03416764736175537,
+      "utility": -1.9791514873504639,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019079146906733513,
+      "utility": -0.6635523438453674,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.011604180559515953,
+      "utility": -0.011793750338256359,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.02197560854256153,
+      "utility": -0.9161010980606079,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019353631883859634,
+      "utility": -0.6874852776527405,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.010713182389736176,
+      "utility": 0.06589432060718536,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.052828598767519,
+      "utility": -3.6062402725219727,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02535736933350563,
+      "utility": -1.2109642028808594,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.013691090978682041,
+      "utility": -0.19375601410865784,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0705__scene-0464",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.014748274348676205,
+      "utility": -0.28593412041664124,
+      "alignment_inlier_ratio": 0.8876404494382022,
+      "alignment_residual": 1.1750855445861816
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.016719171777367592,
+      "utility": 0.030353818088769913,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.8345542550086975
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.029987771064043045,
+      "utility": -0.7391727566719055,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.8345542550086975
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.023857586085796356,
+      "utility": -0.3836461305618286,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.8345542550086975
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.020871508866548538,
+      "utility": -0.21046540141105652,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.8345542550086975
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.019603118300437927,
+      "utility": -0.13690373301506042,
+      "alignment_inlier_ratio": 1.0,
+      "alignment_residual": 0.8345542550086975
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.015863051638007164,
+      "utility": 0.08000542223453522,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03530540317296982,
+      "utility": -1.047574520111084,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018454721197485924,
+      "utility": -0.07030121982097626,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.015408450737595558,
+      "utility": 0.1063704788684845,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06141769886016846,
+      "utility": -2.5619847774505615,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018664401024580002,
+      "utility": -0.08246182650327682,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.015550175681710243,
+      "utility": 0.09815099090337753,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.059787996113300323,
+      "utility": -2.467468500137329,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.019067872315645218,
+      "utility": -0.10586157441139221,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.015860099345445633,
+      "utility": 0.08017663657665253,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03720754384994507,
+      "utility": -1.1578911542892456,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01957523077726364,
+      "utility": -0.1352863609790802,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0555__scene-0705",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.026292139664292336,
+      "utility": 0.0017687497893348336,
+      "alignment_inlier_ratio": 0.9863013698630136,
+      "alignment_residual": 0.834792971611023
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.055308748036623,
+      "utility": -1.0999021530151367,
+      "alignment_inlier_ratio": 0.9863013698630136,
+      "alignment_residual": 0.834792971611023
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03739532455801964,
+      "utility": -0.4197848439216614,
+      "alignment_inlier_ratio": 0.9863013698630136,
+      "alignment_residual": 0.834792971611023
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03211576119065285,
+      "utility": -0.2193361520767212,
+      "alignment_inlier_ratio": 0.9863013698630136,
+      "alignment_residual": 0.834792971611023
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03425540402531624,
+      "utility": -0.3005717694759369,
+      "alignment_inlier_ratio": 0.9863013698630136,
+      "alignment_residual": 0.834792971611023
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.025883840397000313,
+      "utility": 0.017270609736442566,
+      "alignment_inlier_ratio": 0.9955947136563876,
+      "alignment_residual": 0.5498534440994263
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.049643274396657944,
+      "utility": -0.8848016262054443,
+      "alignment_inlier_ratio": 0.9955947136563876,
+      "alignment_residual": 0.5498534440994263
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.0414622500538826,
+      "utility": -0.5741934180259705,
+      "alignment_inlier_ratio": 0.9955947136563876,
+      "alignment_residual": 0.5498534440994263
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03725023195147514,
+      "utility": -0.414276123046875,
+      "alignment_inlier_ratio": 0.9955947136563876,
+      "alignment_residual": 0.5498534440994263
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.03711148723959923,
+      "utility": -0.4090084135532379,
+      "alignment_inlier_ratio": 0.9955947136563876,
+      "alignment_residual": 0.5498534440994263
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02505337819457054,
+      "utility": 0.048800691962242126,
+      "alignment_inlier_ratio": 0.9519230769230769,
+      "alignment_residual": 1.0705854892730713
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08244448155164719,
+      "utility": -2.130162000656128,
+      "alignment_inlier_ratio": 0.9519230769230769,
+      "alignment_residual": 1.0705854892730713
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.03888416662812233,
+      "utility": -0.476311594247818,
+      "alignment_inlier_ratio": 0.9519230769230769,
+      "alignment_residual": 1.0705854892730713
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.0354854092001915,
+      "utility": -0.34727126359939575,
+      "alignment_inlier_ratio": 0.9519230769230769,
+      "alignment_residual": 1.0705854892730713
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.036807119846343994,
+      "utility": -0.39745253324508667,
+      "alignment_inlier_ratio": 0.9519230769230769,
+      "alignment_residual": 1.0705854892730713
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02608584798872471,
+      "utility": 0.009601007215678692,
+      "alignment_inlier_ratio": 0.8985507246376812,
+      "alignment_residual": 0.86538165807724
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.035068124532699585,
+      "utility": -0.33142825961112976,
+      "alignment_inlier_ratio": 0.8985507246376812,
+      "alignment_residual": 0.86538165807724
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.023972591385245323,
+      "utility": 0.08983482420444489,
+      "alignment_inlier_ratio": 0.8985507246376812,
+      "alignment_residual": 0.86538165807724
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.0391608290374279,
+      "utility": -0.48681560158729553,
+      "alignment_inlier_ratio": 0.8985507246376812,
+      "alignment_residual": 0.86538165807724
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.04122183099389076,
+      "utility": -0.5650654435157776,
+      "alignment_inlier_ratio": 0.8985507246376812,
+      "alignment_residual": 0.86538165807724
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02584894932806492,
+      "utility": 0.018595317378640175,
+      "alignment_inlier_ratio": 0.8955223880597015,
+      "alignment_residual": 0.9346171021461487
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04827258735895157,
+      "utility": -0.8327608704566956,
+      "alignment_inlier_ratio": 0.8955223880597015,
+      "alignment_residual": 0.9346171021461487
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.0403900220990181,
+      "utility": -0.5334842801094055,
+      "alignment_inlier_ratio": 0.8955223880597015,
+      "alignment_residual": 0.9346171021461487
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.03296944871544838,
+      "utility": -0.2517480254173279,
+      "alignment_inlier_ratio": 0.8955223880597015,
+      "alignment_residual": 0.9346171021461487
+    },
+    {
+      "episode": "scene-0705__scene-0555",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.0319632887840271,
+      "utility": -0.2135472446680069,
+      "alignment_inlier_ratio": 0.8955223880597015,
+      "alignment_residual": 0.9346171021461487
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.021227406337857246,
+      "utility": 0.01846408098936081,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03529149666428566,
+      "utility": -0.6318466067314148,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018145829439163208,
+      "utility": 0.16095338761806488,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.02129591628909111,
+      "utility": 0.01529624406248331,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.04251120612025261,
+      "utility": -0.965679407119751,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018588101491332054,
+      "utility": 0.1405031383037567,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.018802475184202194,
+      "utility": 0.13059069216251373,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.08529486507177353,
+      "utility": -2.9439566135406494,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.02113119512796402,
+      "utility": 0.022912800312042236,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.019253425300121307,
+      "utility": 0.10973916202783585,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.06606718897819519,
+      "utility": -2.05488657951355,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.026754483580589294,
+      "utility": -0.2371029257774353,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.01963012106716633,
+      "utility": 0.09232109785079956,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.05518793687224388,
+      "utility": -1.5518399477005005,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.026343366131186485,
+      "utility": -0.21809323132038116,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0726__scene-0873",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.014004428870975971,
+      "utility": 0.016806134954094887,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.017262473702430725,
+      "utility": -0.21192790567874908,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01886294223368168,
+      "utility": -0.32429027557373047,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "matched_a",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.014056213200092316,
+      "utility": 0.013170568272471428,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.017742585390806198,
+      "utility": -0.24563460052013397,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.018163396045565605,
+      "utility": -0.2751779854297638,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "distant_b",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.013891634531319141,
+      "utility": 0.024724965915083885,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.05070294439792633,
+      "utility": -2.5596470832824707,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.01308444608002901,
+      "utility": 0.08139437437057495,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_0",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.013807777315378189,
+      "utility": 0.030612239614129066,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.020676344633102417,
+      "utility": -0.45160186290740967,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.013531850650906563,
+      "utility": 0.0499839261174202,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "condition": "geometry",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_1",
+      "condition": "geometry_appearance",
+      "valid": false,
+      "query_loss": null,
+      "utility": null,
+      "alignment_inlier_ratio": 0.0,
+      "alignment_residual": null
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "condition": "global_vector",
+      "valid": true,
+      "query_loss": 0.014156447723507881,
+      "utility": 0.006133510731160641,
+      "alignment_inlier_ratio": 0.9696969696969697,
+      "alignment_residual": 0.9105079174041748
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "condition": "untransported_local",
+      "valid": true,
+      "query_loss": 0.03231807053089142,
+      "utility": -1.2689200639724731,
+      "alignment_inlier_ratio": 0.9696969696969697,
+      "alignment_residual": 0.9105079174041748
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "condition": "visual",
+      "valid": true,
+      "query_loss": 0.014047660864889622,
+      "utility": 0.013770992867648602,
+      "alignment_inlier_ratio": 0.9696969696969697,
+      "alignment_residual": 0.9105079174041748
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "condition": "geometry",
+      "valid": true,
+      "query_loss": 0.013851960189640522,
+      "utility": 0.02751033939421177,
+      "alignment_inlier_ratio": 0.9696969696969697,
+      "alignment_residual": 0.9105079174041748
+    },
+    {
+      "episode": "scene-0873__scene-0726",
+      "candidate": "foreign_2",
+      "condition": "geometry_appearance",
+      "valid": true,
+      "query_loss": 0.013759843073785305,
+      "utility": 0.03397750481963158,
+      "alignment_inlier_ratio": 0.9696969696969697,
+      "alignment_residual": 0.9105079174041748
+    }
+  ]
+}

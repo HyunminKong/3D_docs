@@ -1,0 +1,70 @@
+experiment: EXP-006
+protocol_revision: v2.7
+source_protocol_revision: v2.6
+seed: 600
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  scene_root: tttLRM/data_example/nuscenes_exp006_all
+  split: train
+  image_height: 224
+  image_width: 224
+
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+
+stage0:
+  source_checkpoint: revisit3d/checkpoints/depth_bootstrap_anchored_dev_epoch1.pt
+  source_head_type: anchored
+  output_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+  folds: 5
+  track_side: 8
+
+stage1:
+  cache: revisit3d/cache/EXP-006_stage1_train_expanded_v27.pt
+  pca_sample_size: 100000
+  pca_iterations: 2
+  steps_candidates: [500, 1000]
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  ttt_steps: 1
+  ttt_step_size: 0.05
+  candidate_count: 5
+  utility_deadband_minimum: 0.01
+  key_temperature: 0.07
+  appearance_weight: 5.0
+  transport_mode: visual
+  geometry_role: router_evidence_only
+  geometry_alignment_hard_mask: false
+  reuse_application: additive_after_current
+  reuse_strength: 0.10
+  query_readout: visual_only
+  maximum_current_to_base_ratio: 1.05
+  output_checkpoint: revisit3d/checkpoints/exp006_atom_stage1_expanded_v27.pt
+  training_result: revisit3d/results/EXP-006/stage1_atom_training_expanded_train_v27.json
+
+stage2:
+  source_features: revisit3d/results/EXP-006/stage1_router_features_crossfit_expanded_train_v27.json
+  descriptor_dim: 64
+  descriptor_projection_dim: 32
+  observable_scalar_dim: 24
+  hidden_dim: 64
+  steps: 1000
+  variants: [appearance_only, appearance_online_history, appearance_online_geometry]
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  utility_smooth_l1_beta: 0.01
+  risk_loss_weight: 0.10
+  utility_threshold: 0.0
+  risk_threshold: 0.5
+  risk_identifiability:
+    minimum_harmful_overlap_folds: 2
+    every_training_fold_requires_beneficial_and_harmful: true
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 600006

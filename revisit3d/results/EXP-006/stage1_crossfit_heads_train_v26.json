@@ -1,0 +1,184 @@
+{
+  "experiment": "EXP-006",
+  "stage": "stage1_crossfit_head_reproduction",
+  "split": "train",
+  "protocol_revision": "v2.6",
+  "source_training_result": "revisit3d/results/EXP-006/stage1_atom_training_train_v26.json",
+  "selected_steps": 1000,
+  "validation_accessed": false,
+  "folds": [
+    {
+      "fold": 0,
+      "held_out": [
+        10,
+        11,
+        18,
+        19
+      ],
+      "held_out_groups": [
+        "scene-0329__scene-0653",
+        "scene-0726__scene-0873"
+      ],
+      "train_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "steps": 1000,
+      "seed": 600,
+      "checkpoint": "revisit3d/checkpoints/EXP-006_crossfit_v26/fold_0.pt",
+      "last_train_outer": 1.7418488264083862
+    },
+    {
+      "fold": 1,
+      "held_out": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "held_out_groups": [
+        "scene-0006__scene-0022",
+        "scene-0104__scene-0260"
+      ],
+      "train_indices": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "steps": 1000,
+      "seed": 601,
+      "checkpoint": "revisit3d/checkpoints/EXP-006_crossfit_v26/fold_1.pt",
+      "last_train_outer": 1.3565051555633545
+    },
+    {
+      "fold": 2,
+      "held_out": [
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "held_out_groups": [
+        "scene-0247__scene-0293",
+        "scene-0464__scene-0555__scene-0705"
+      ],
+      "train_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        18,
+        19
+      ],
+      "steps": 1000,
+      "seed": 602,
+      "checkpoint": "revisit3d/checkpoints/EXP-006_crossfit_v26/fold_2.pt",
+      "last_train_outer": 1.6416996717453003
+    },
+    {
+      "fold": 3,
+      "held_out": [
+        2,
+        3
+      ],
+      "held_out_groups": [
+        "scene-0097__scene-0673"
+      ],
+      "train_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "steps": 1000,
+      "seed": 603,
+      "checkpoint": "revisit3d/checkpoints/EXP-006_crossfit_v26/fold_3.pt",
+      "last_train_outer": 1.7561599016189575
+    },
+    {
+      "fold": 4,
+      "held_out": [
+        6,
+        7
+      ],
+      "held_out_groups": [
+        "scene-0246__scene-0675"
+      ],
+      "train_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "steps": 1000,
+      "seed": 604,
+      "checkpoint": "revisit3d/checkpoints/EXP-006_crossfit_v26/fold_4.pt",
+      "last_train_outer": 1.2587710618972778
+    }
+  ]
+}

@@ -12,6 +12,7 @@ from revisit3d.experiments import (
     grouped_folds,
     pose_distillation_loss,
     pose_metrics,
+    primary_feature_columns,
     require_exp006_split,
 )
 from revisit3d.losses import relative_w2c_from_twist
@@ -20,6 +21,9 @@ from revisit3d.models import (
     PlasticityAtom,
     Sim3Alignment,
     SpatialPlasticityHead,
+    ObservableUtilityRiskRouter,
+    UtilityRiskPrediction,
+    apply_bounded_memory_residual,
     backproject_tokens,
     geometry_transport,
     local_knn_scale,
@@ -40,6 +44,9 @@ def main() -> None:
     require_exp006_split("train")
     require_exp006_split("val", allow_validation=True)
     _expect_error(lambda: require_exp006_split("test", allow_validation=True))
+    columns = primary_feature_columns(256, tuple(range(12)) + tuple(range(16, 24)))
+    assert len(columns) == 276 and columns[:2] == [0, 1] and columns[-1] == 279
+    _expect_error(lambda: primary_feature_columns(256, tuple(range(20))))
 
     records = [
         {"source_scene": "a", "target_scene": "b"},
@@ -146,6 +153,25 @@ def main() -> None:
     )
     rejected = geometry_transport(source_atom, target_atom, [invalid])
     assert not rejected.valid.any() and rejected.code.count_nonzero() == 0
+
+    router = ObservableUtilityRiskRouter(descriptor_dim=16, scalar_dim=4, projected_dim=8, hidden_dim=16)
+    current_descriptor = F.normalize(torch.randn(2, 16, generator=generator), dim=-1)
+    candidate_descriptor = F.normalize(torch.randn(2, 3, 16, generator=generator), dim=-1)
+    observable = torch.randn(2, 3, 4, generator=generator)
+    router_prediction = router(current_descriptor, candidate_descriptor, observable)
+    assert router_prediction.utility.shape == (2, 3)
+    forced = UtilityRiskPrediction(
+        utility=torch.tensor([[0.02, 0.01, -0.01], [-0.01, 0.00, -0.02]]),
+        risk_logit=torch.tensor([[-4.0, 4.0, -4.0], [-4.0, -4.0, -4.0]]),
+    )
+    decision = router.hard_route(forced, utility_threshold=0.0)
+    assert decision.selected_index.tolist() == [0, -1]
+    assert decision.accepted.tolist() == [True, False]
+    current_code = torch.zeros(2, 1, 4, 4)
+    candidate_codes = torch.ones(2, 3, 1, 4, 4)
+    mixed = apply_bounded_memory_residual(current_code, candidate_codes, decision.weights, strength=0.1)
+    assert torch.allclose(mixed[0], torch.full_like(mixed[0], 0.1))
+    assert mixed[1].count_nonzero() == 0
 
     print("EXP-006 smoke checks passed")
 

@@ -1,0 +1,525 @@
+{
+  "purpose": "EXP-006 v2.7 expanded train construction; location metadata only",
+  "units": [
+    {
+      "scene": "scene-0001",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0002",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0003",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0004",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0005",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0006",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0007",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0008",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0009",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0010",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0011",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0012",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0013",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0014",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0015",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0016",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0017",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0018",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0019",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0020",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0021",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0022",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0023",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0024",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0025",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0026",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0027",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0028",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0029",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0030",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0031",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0032",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0033",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0034",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0035",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0036",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0038",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0039",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0041",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0042",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0061",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0097",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0100",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0104",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0109",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0123",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0161",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0190",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0191",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0234",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0236",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0246",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0247",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0248",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0250",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0260",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0293",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0298",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0316",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0329",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0346",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0361",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0362",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0366",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0372",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0373",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0400",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-0407",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-0415",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-0417",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-0427",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0429",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0437",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0439",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0440",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0441",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0445",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0464",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0476",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0524",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0527",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0555",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0556",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0557",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0558",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0563",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0565",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0595",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0627",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0647",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0650",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0653",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0655",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0662",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0665",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0673",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0675",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0705",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0709",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0713",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0717",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0719",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0726",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0733",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0736",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0761",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0782",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0789",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0797",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0799",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0802",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0821",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0851",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0853",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0873",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0887",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0906",
+      "location": "boston-seaport"
+    },
+    {
+      "scene": "scene-0921",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0931",
+      "location": "singapore-queenstown"
+    },
+    {
+      "scene": "scene-0949",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0956",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0959",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0972",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0979",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-0980",
+      "location": "singapore-onenorth"
+    },
+    {
+      "scene": "scene-1061",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-1067",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-1070",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-1094",
+      "location": "singapore-hollandvillage"
+    },
+    {
+      "scene": "scene-1099",
+      "location": "singapore-hollandvillage"
+    }
+  ]
+}
