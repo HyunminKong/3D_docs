@@ -151,3 +151,11 @@ The locked full-model gate failed, but isolated the failure to capacity. Current
 ## Stage-14 validation capacity selection
 
 Validation is now exposed for model selection; locked test remains unopened. Keep the atom, utility-MIPS address, visual transport, residual strength, router, threshold, retention algorithm, and K fixed. Evaluate deterministic reservoir and FIFO at capacities {8,16,32,64}, plus random K=5 addressing inside each reservoir bank. Select the smallest capacity with routed utility above 0.01, at least 90% retention of the same unbounded bank, harm no higher than unbounded, utility above same-capacity FIFO and random address, and a positive component-bootstrap lower bound over random. If none passes, bounded consolidation is not locked for test.
+
+### Stage-14 result
+
+Capacities 8, 16, and 32 retained 65.3%, 82.5%, and 89.1% of unbounded routed utility and failed. Capacity **64** was the smallest passing value: routed utility **+0.02647**, retention **100.2%**, harm **5.83%**, FIFO-64 +0.02606, random address +0.01923, and the component interval over random was **[+0.00026, +0.01097]**. Capacity 64 is now fixed; no model parameter changed.
+
+## Stage-15/16 final test lock
+
+Freeze one metadata-selected direction for each of 117 locked test overlaps across 22 components and four locations. Copy the already frozen train artifact while changing only the validation-selected capacity to 64, record a new hash, and commit the pilot/hash before decoding any test pixel. The final test uses the same gates as capacity selection plus current-TTT health and at least 20 components. This is a one-shot terminal evaluation; no test outcome may alter the method.

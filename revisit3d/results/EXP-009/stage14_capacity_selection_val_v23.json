@@ -1,0 +1,403 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage14_validation_capacity_selection",
+  "protocol_revision": "v2.3",
+  "split": "val",
+  "validation_accessed": true,
+  "test_accessed": false,
+  "query_or_future_router_input": false,
+  "config": "configs/EXP-009_capacity_selection_v23.yaml",
+  "artifact_sha256": "f63422524853c6656e79c8670eecff3e47207f9bf5f60edd34fbe123e4247a2e",
+  "targets": 103,
+  "components": 17,
+  "unbounded_router": {
+    "episodes": 103,
+    "mean_selected_utility": 0.026422240170062457,
+    "median_selected_utility": 0.02183055877685547,
+    "beneficial_rate": 0.6504854368932039,
+    "harmful_rate": 0.05825242718446602,
+    "raw_sign_harm_rate": 0.07766990291262135,
+    "accept_rate": 0.8058252427184466,
+    "component_mean_utility": {
+      "component-11": 0.03487000986933708,
+      "component-12": 0.0027842046692967415,
+      "component-13": 0.012079383815742202,
+      "component-14": 0.021026277914643288,
+      "component-2": 0.036174509674310684,
+      "component-24": 0.003621588461101055,
+      "component-29": 0.016922907438129187,
+      "component-31": 0.024595852644944734,
+      "component-38": 0.05426395311951637,
+      "component-39": 0.001548304921016097,
+      "component-40": 0.008987589739263058,
+      "component-41": 0.028100697013239067,
+      "component-5": 0.039950230406557624,
+      "component-53": 0.0,
+      "component-54": -0.0028343208444615207,
+      "component-55": 0.029391514137387276,
+      "component-61": 0.0
+    },
+    "component_harm_rate": 0.0,
+    "harmful_components": []
+  },
+  "capacity_results": {
+    "8": {
+      "reservoir": {
+        "episodes": 103,
+        "mean_selected_utility": 0.017264607208735735,
+        "median_selected_utility": 0.015453110449016094,
+        "beneficial_rate": 0.5631067961165048,
+        "harmful_rate": 0.11650485436893204,
+        "raw_sign_harm_rate": 0.1553398058252427,
+        "accept_rate": 0.8058252427184466,
+        "component_mean_utility": {
+          "component-11": 0.04736524261534214,
+          "component-12": -0.002723678946495056,
+          "component-13": 0.012369411324875223,
+          "component-14": 0.034080870449543,
+          "component-2": 0.036174509674310684,
+          "component-24": -0.004548483528196812,
+          "component-29": 0.00973804434761405,
+          "component-31": 0.020378200940533796,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.019974905997514725,
+          "component-41": 0.04731226898729801,
+          "component-5": 0.019132946863116576,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.018599223345518112,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "fifo": {
+        "episodes": 103,
+        "mean_selected_utility": 0.013588847314997675,
+        "median_selected_utility": 0.009167762473225594,
+        "beneficial_rate": 0.4854368932038835,
+        "harmful_rate": 0.07766990291262135,
+        "raw_sign_harm_rate": 0.0970873786407767,
+        "accept_rate": 0.6796116504854369,
+        "component_mean_utility": {
+          "component-11": 0.034879015758633614,
+          "component-12": -0.002723678946495056,
+          "component-13": 0.002738943582193719,
+          "component-14": 0.0215927641838789,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.0035755829885601997,
+          "component-29": 0.015372183173894882,
+          "component-31": 0.01858875749167055,
+          "component-38": 0.036318060010671616,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.009167762473225594,
+          "component-41": 0.018772280775010586,
+          "component-5": 0.01745206907644194,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.026945818215608597,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "random_address": {
+        "mean_selected_utility": 0.01643124025775586,
+        "median_harmful_rate": 0.10679611650485436,
+        "mean_acceptance": 0.7926747572815533
+      },
+      "retention_of_unbounded": 0.6534119400026226,
+      "reservoir_minus_random_bootstrap": {
+        "unit": "physical_overlap_component",
+        "components": 17,
+        "samples": 10000,
+        "seed": 900031,
+        "mean_difference": 0.001213427632654557,
+        "ci95": [
+          -0.0012439940283217826,
+          0.006568652878250321
+        ]
+      },
+      "checks": {
+        "utility_positive": true,
+        "retains_unbounded": false,
+        "harm_not_above_unbounded": false,
+        "beats_fifo": true,
+        "beats_random_address": true,
+        "random_interval_positive": false
+      },
+      "passed": false
+    },
+    "16": {
+      "reservoir": {
+        "episodes": 103,
+        "mean_selected_utility": 0.021785139280271905,
+        "median_selected_utility": 0.01997888647019863,
+        "beneficial_rate": 0.6019417475728155,
+        "harmful_rate": 0.10679611650485436,
+        "raw_sign_harm_rate": 0.1262135922330097,
+        "accept_rate": 0.7864077669902912,
+        "component_mean_utility": {
+          "component-11": 0.041055033914744854,
+          "component-12": -0.0044481757407387095,
+          "component-13": 0.012369411324875223,
+          "component-14": 0.04258931055665016,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.015002141240984201,
+          "component-31": 0.030235637529668482,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.01461881771683693,
+          "component-41": 0.016375961403052013,
+          "component-5": 0.03007258459469898,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.029391514137387276,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "fifo": {
+        "episodes": 103,
+        "mean_selected_utility": 0.01978161285215428,
+        "median_selected_utility": 0.01772216707468033,
+        "beneficial_rate": 0.6310679611650486,
+        "harmful_rate": 0.04854368932038835,
+        "raw_sign_harm_rate": 0.05825242718446602,
+        "accept_rate": 0.7766990291262136,
+        "component_mean_utility": {
+          "component-11": 0.03487000986933708,
+          "component-12": -0.002723678946495056,
+          "component-13": 0.012369411324875223,
+          "component-14": 0.02910892851650715,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.016922907438129187,
+          "component-31": 0.024595852644944734,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.01160205528140068,
+          "component-41": 0.027135566497842472,
+          "component-5": 0.02604464528230118,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.026945818215608597,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "random_address": {
+        "mean_selected_utility": 0.018436231079233693,
+        "median_harmful_rate": 0.07766990291262135,
+        "mean_acceptance": 0.7241456310679611
+      },
+      "retention_of_unbounded": 0.8245000855361012,
+      "reservoir_minus_random_bootstrap": {
+        "unit": "physical_overlap_component",
+        "components": 17,
+        "samples": 10000,
+        "seed": 900039,
+        "mean_difference": 0.002934672952554626,
+        "ci95": [
+          -0.0005416262097545746,
+          0.004879044515364562
+        ]
+      },
+      "checks": {
+        "utility_positive": true,
+        "retains_unbounded": false,
+        "harm_not_above_unbounded": false,
+        "beats_fifo": true,
+        "beats_random_address": true,
+        "random_interval_positive": false
+      },
+      "passed": false
+    },
+    "32": {
+      "reservoir": {
+        "episodes": 103,
+        "mean_selected_utility": 0.02354550926304124,
+        "median_selected_utility": 0.01772216707468033,
+        "beneficial_rate": 0.5922330097087378,
+        "harmful_rate": 0.07766990291262135,
+        "raw_sign_harm_rate": 0.10679611650485436,
+        "accept_rate": 0.7766990291262136,
+        "component_mean_utility": {
+          "component-11": 0.03487000986933708,
+          "component-12": 0.0027842046692967415,
+          "component-13": 0.012079383815742202,
+          "component-14": 0.035045720636844635,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.016922907438129187,
+          "component-31": 0.024595852644944734,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.01160205528140068,
+          "component-41": 0.017976929278423388,
+          "component-5": 0.03458438816658677,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.029391514137387276,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "fifo": {
+        "episodes": 103,
+        "mean_selected_utility": 0.02237166412337457,
+        "median_selected_utility": 0.01997888647019863,
+        "beneficial_rate": 0.6310679611650486,
+        "harmful_rate": 0.05825242718446602,
+        "raw_sign_harm_rate": 0.07766990291262135,
+        "accept_rate": 0.7766990291262136,
+        "component_mean_utility": {
+          "component-11": 0.03901911899447441,
+          "component-12": 0.0027842046692967415,
+          "component-13": 0.012079383815742202,
+          "component-14": 0.035045720636844635,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.016922907438129187,
+          "component-31": 0.024595852644944734,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.019974905997514725,
+          "component-41": 0.029829302492241066,
+          "component-5": 0.030144146514779077,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.029391514137387276,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "random_address": {
+        "mean_selected_utility": 0.019301723045023412,
+        "median_harmful_rate": 0.07766990291262135,
+        "mean_acceptance": 0.747873786407767
+      },
+      "retention_of_unbounded": 0.8911246401324943,
+      "reservoir_minus_random_bootstrap": {
+        "unit": "physical_overlap_component",
+        "components": 17,
+        "samples": 10000,
+        "seed": 900055,
+        "mean_difference": 0.0035248788244378448,
+        "ci95": [
+          -0.0001569467679309568,
+          0.006562564008522969
+        ]
+      },
+      "checks": {
+        "utility_positive": true,
+        "retains_unbounded": false,
+        "harm_not_above_unbounded": false,
+        "beats_fifo": true,
+        "beats_random_address": true,
+        "random_interval_positive": false
+      },
+      "passed": false
+    },
+    "64": {
+      "reservoir": {
+        "episodes": 103,
+        "mean_selected_utility": 0.026469153682113562,
+        "median_selected_utility": 0.022634325549006462,
+        "beneficial_rate": 0.6699029126213593,
+        "harmful_rate": 0.05825242718446602,
+        "raw_sign_harm_rate": 0.07766990291262135,
+        "accept_rate": 0.8155339805825242,
+        "component_mean_utility": {
+          "component-11": 0.03487000986933708,
+          "component-12": 0.0027842046692967415,
+          "component-13": 0.012079383815742202,
+          "component-14": 0.035045720636844635,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.016922907438129187,
+          "component-31": 0.024595852644944734,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.01160205528140068,
+          "component-41": 0.030769411164025467,
+          "component-5": 0.039358441014476914,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.029391514137387276,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "fifo": {
+        "episodes": 103,
+        "mean_selected_utility": 0.026059475153214433,
+        "median_selected_utility": 0.021932587027549744,
+        "beneficial_rate": 0.6504854368932039,
+        "harmful_rate": 0.05825242718446602,
+        "raw_sign_harm_rate": 0.07766990291262135,
+        "accept_rate": 0.7961165048543689,
+        "component_mean_utility": {
+          "component-11": 0.03487000986933708,
+          "component-12": 0.0027842046692967415,
+          "component-13": 0.012079383815742202,
+          "component-14": 0.035045720636844635,
+          "component-2": 0.036174509674310684,
+          "component-24": 0.003621588461101055,
+          "component-29": 0.016922907438129187,
+          "component-31": 0.024595852644944734,
+          "component-38": 0.05426395311951637,
+          "component-39": 0.001548304921016097,
+          "component-40": 0.01160205528140068,
+          "component-41": 0.028100697013239067,
+          "component-5": 0.03880132178954305,
+          "component-53": 0.0,
+          "component-54": -0.0028343208444615207,
+          "component-55": 0.029391514137387276,
+          "component-61": 0.0
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "random_address": {
+        "mean_selected_utility": 0.019232605887447806,
+        "median_harmful_rate": 0.06796116504854369,
+        "mean_acceptance": 0.7309708737864078
+      },
+      "retention_of_unbounded": 1.001775531209661,
+      "reservoir_minus_random_bootstrap": {
+        "unit": "physical_overlap_component",
+        "components": 17,
+        "samples": 10000,
+        "seed": 900087,
+        "mean_difference": 0.0061165333510939885,
+        "ci95": [
+          0.0002636822503719285,
+          0.010973330750701407
+        ]
+      },
+      "checks": {
+        "utility_positive": true,
+        "retains_unbounded": true,
+        "harm_not_above_unbounded": true,
+        "beats_fifo": true,
+        "beats_random_address": true,
+        "random_interval_positive": true
+      },
+      "passed": true
+    }
+  },
+  "selection_rule": "smallest_passing_capacity",
+  "selected_capacity": 64,
+  "candidate_cache": "revisit3d/cache/EXP-009/capacity_selection_candidates_val_v23.json",
+  "registered_gate": {
+    "passed": true
+  }
+}

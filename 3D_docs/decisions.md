@@ -432,3 +432,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-14 validation reuse
 
 Stage 14 changes only the reservoir/FIFO capacity over the fixed set {8,16,32,64}. Atom weights, TTT step, utility-MIPS coefficients, router, threshold, K=5, residual 0.10, and stream partition remain frozen. For each capacity, random K=5 addressing is evaluated inside the identical reservoir bank. The smallest capacity is selected only if it retains at least 90% of unbounded routed utility, has no more harm than unbounded, beats FIFO and random addressing, and has a positive component interval over random. No passing capacity means the bounded-bank claim is withheld from test.
+
+## D063 — Select capacity 64 on validation
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-14 execution
+
+Capacities 8, 16, and 32 failed the fixed retention/safety gate. Capacity 64 was the smallest passing choice: 0.02647 routed utility, 100.2% retention of unbounded, 5.83% harm, and a positive component interval [0.00026, 0.01097] over random addressing. FIFO-64 reached 0.02606. The selected capacity is benchmark-dependent rather than a universal constant. All learned weights, thresholds, K, and residual strength remain those locked before validation.
+
+## D064 — Authorize one final 22-component test after hash freeze
+
+Date: 2026-08-25
+Status: Accepted before any EXP-009 test pixel access
+
+Stage 15 freezes one canonical direction for each of 117 test overlaps using metadata only, spanning 22 components and four locations. The final artifact is a byte-serialized copy of the frozen address/router with only capacity changed from 8 to the validation-selected 64; its hash must be committed before caching test pixels. Stage 16 is one-shot and terminal. It requires healthy current TTT, routed utility above 0.01, at least 90% unbounded retention, no more harm than unbounded, superiority to FIFO and same-bank random addressing, and a positive component interval over random. The test result cannot be used for further method selection.

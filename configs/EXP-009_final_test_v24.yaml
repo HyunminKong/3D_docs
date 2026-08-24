@@ -1,0 +1,71 @@
+experiment: EXP-009
+protocol_revision: v2.4
+seed: 900024
+
+source:
+  validation_config: configs/EXP-009_validation_lock_v22.yaml
+  capacity_selection_result: revisit3d/results/EXP-009/stage14_capacity_selection_val_v23.json
+  full_manifest: revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json
+  train_geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  train_artifact: revisit3d/checkpoints/exp009_utility_mips_router_v22.joblib
+  train_lock_result: revisit3d/results/EXP-009/stage12_deployable_lock_train_v22.json
+
+data:
+  manifest: revisit3d/manifests/exp009_test_pilot_v24.json
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  split: test
+  image_height: 224
+  image_width: 224
+
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+
+stage0:
+  output_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+  track_side: 8
+
+stage1:
+  cache: revisit3d/cache/EXP-009/test_geometry_v24.pt
+  pca_source_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  ttt_steps: 1
+  ttt_step_size: 0.05
+  reuse_strength: 0.10
+  utility_deadband_minimum: 0.01
+  source_checkpoint: revisit3d/checkpoints/exp006_atom_stage1_expanded_v27.pt
+
+address:
+  compiled_form: exact_64d_maximum_inner_product
+
+bank:
+  stream_partition: official_location
+  capacity: 64
+  retention: deterministic_reservoir
+  candidate_count: 5
+  random_address_repetitions: 2000
+  controls:
+    - unbounded_utility_address
+    - fifo_capacity64
+    - reservoir_random_address
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 900024
+
+success:
+  maximum_mean_current_to_base_ratio: 1.05
+  minimum_components: 20
+  minimum_primary_routed_utility: 0.01
+  minimum_retention_of_unbounded_utility: 0.90
+  primary_harm_not_above_unbounded: true
+  primary_must_beat_fifo: true
+  primary_must_beat_random_address: true
+  primary_minus_random_component_interval_positive: true
+
+output:
+  pilot_audit: revisit3d/results/EXP-009/stage15_test_pilot_v24.json
+  artifact: revisit3d/checkpoints/exp009_utility_mips_router_final_v24.joblib
+  lock_result: revisit3d/results/EXP-009/stage15_final_test_lock_v24.json
+  candidate_cache: revisit3d/cache/EXP-009/final_test_candidates_v24.json
+  result: revisit3d/results/EXP-009/stage16_final_locked_test_v24.json
