@@ -1,0 +1,48 @@
+experiment: EXP-008
+protocol_revision: v1.0
+seed: 800
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_expanded_v27.json
+  scene_root: tttLRM/data_example/nuscenes_exp006_all
+  split: train
+
+source:
+  oof_utility_table: revisit3d/results/EXP-007/stage0_all_memory_utility_oof_train_v12.json
+  crossfit_frozen_bucket: revisit3d/results/EXP-007/stage8_crossfit_frozen_token_bucket_oof_train_v20.json
+
+stream:
+  clock: camera_filename_microseconds
+  context_available_at: last_context_frame
+  target_evaluated_before_own_write: true
+  unique_context_write_once: true
+  fold_local_memory_coordinates: true
+
+bank:
+  capacity: 8
+  top_k: 5
+  utility_threshold: 0.0
+  bucket_probability_threshold: 0.5
+  prior_utility: 0.018
+  prior_count: 1.0
+  exploration_bonus: 0.01
+  policies:
+    - unbounded_unique_context
+    - fifo
+    - appearance_diversity
+    - scene_latest
+    - frozen_bucket_predicted_history
+
+success:
+  primary_policy: frozen_bucket_predicted_history
+  comparator_policy: appearance_diversity
+  oracle_bucket_policy: scene_latest
+  minimum_oracle_bucket_utility_retention: 0.90
+  require_harm_not_above_comparator: true
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 800008
+
+output:
+  result: revisit3d/results/EXP-008/stage0_true_timestamp_stream_train_v10.json

@@ -257,3 +257,10 @@ Date: 2026-08-25
 Status: Accepted after EXP-007 v2.1 execution
 
 The strict frozen-token predicted-history bank achieved 0.02618 utility, 8.03% harm, 97.9% oracle-scene retention, and capacity 8. Its utility exceeded 99.4% of 1,000 fold-matched probability permutations (p=0.00699), so the key contributes beyond arbitrary memory shrinkage. Harm was not lower than the permutation-null mean, same-scene AUC was 0.650, and all streams were pseudo-orders. EXP-007 therefore partially supports H5 and selects a dual-address architecture: learned local keys for code transport, separately frozen token-set keys for consolidation/prefiltering, past-only predicted utility history for retention, and the bounded residual—not bucket similarity—as the present damage-control mechanism. Capacity 8 and the frozen VGGT key are provisional benchmark choices. EXP-008 must test unique writes in true capture-time order before any new holdout or larger learned bank is authorized.
+
+## D038 — EXP-008 first corrects pseudo-order with true capture time
+
+Date: 2026-08-25
+Status: Accepted before EXP-008 Stage-0 execution
+
+Before adding a place-recognition backbone or retraining a bank-aware router, EXP-008 reuses the locked train-only OOF utility table and strict crossfit bucket scores in actual nuScenes capture-time order. Every unique context is written once when its final context frame has been observed; a target is evaluated immediately before its own write. Duplicate target episodes are collapsed only if all candidate utilities and predictions are exactly identical. The primary frozen-bucket predicted-history capacity-8 bank must exceed appearance-diversity utility without higher deadband harm and retain at least 90% of oracle scene-latest utility. This stage does not access validation/test and cannot establish paper-scale generalization; it decides whether the dual-address bank survives a real chronology correction.
