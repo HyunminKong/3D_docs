@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import math
 import random
+import hashlib
 from collections.abc import Iterable, Sequence
 
 import torch
@@ -65,6 +66,25 @@ def grouped_folds(records: Sequence[dict], folds: int, seed: int) -> tuple[list[
     if sorted(index for fold in fold_indices for index in fold) != list(range(len(records))):
         raise RuntimeError("grouped folds do not partition the records")
     return fold_indices, group_of
+
+
+def deterministic_foreign_indices(
+    records: Sequence[dict], current_index: int, count: int, seed: int,
+) -> list[int]:
+    current = records[current_index]
+    current_scenes = {current["source_scene"], current["target_scene"]}
+    eligible = [
+        index for index, record in enumerate(records)
+        if index != current_index
+        and not current_scenes.intersection({record["source_scene"], record["target_scene"]})
+    ]
+    if len(eligible) < count:
+        raise ValueError(f"only {len(eligible)} foreign episodes are eligible; need {count}")
+    eligible.sort(key=lambda index: records[index].get("episode_id", str(index)))
+    token = f"{seed}:{current.get('episode_id', current_index)}".encode()
+    offset = int(hashlib.sha256(token).hexdigest()[:8], 16) % len(eligible)
+    rotated = eligible[offset:] + eligible[:offset]
+    return rotated[:count]
 
 
 def _confidence_logit(raw_confidence: Tensor, epsilon: float) -> Tensor:

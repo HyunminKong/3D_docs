@@ -2,6 +2,7 @@
 
 from .exp006 import (
     confidence_target,
+    deterministic_foreign_indices,
     fit_confidence_quantiles,
     grouped_folds,
     pose_distillation_loss,
@@ -12,6 +13,7 @@ from .exp006 import (
 
 __all__ = [
     "confidence_target",
+    "deterministic_foreign_indices",
     "fit_confidence_quantiles",
     "grouped_folds",
     "pose_distillation_loss",

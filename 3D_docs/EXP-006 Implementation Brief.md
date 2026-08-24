@@ -1,7 +1,7 @@
 # EXP-006 Implementation Brief
 **Trainable 3D Plasticity Atoms with Predicted-Geometry Transport and Risk-Aware Utility Routing**
 
-**Revision:** v2.2, 2026-08-25
+**Revision:** v2.3, 2026-08-25
 
 **Status:** implementation-authoritative; thresholds and split protocol below are pre-registered before EXP-006 training.
 
@@ -154,7 +154,7 @@ class PlasticityAtom:
 | Tensor | 정의 |
 |---|---|
 | `xyz` | 해당 token의 predicted 3D anchor, segment-local reference coordinate |
-| `scale` | token별 predicted point cloud의 median 8-NN spacing; transport kernel bandwidth로 실제 사용 |
+| `scale` | 동일 view 안에서 계산한 token별 predicted point cloud median 8-NN spacing; transport kernel bandwidth로 실제 사용 |
 | `key` | frozen feature에서 projection한 normalized appearance key |
 | `code` | online TTT에서 실제로 update되는 fast state |
 | `confidence` | Stage-0에서 보정한 base confidence와 detached track support의 geometric mean, online update 대상 아님 |
@@ -413,7 +413,7 @@ X̄s = s R Xs + t
 
 각 target token에 대해 aligned source 중 3D nearest `k=8`개를 사용한다.
 
-local spatial scale은 target마다 하나의 global scalar가 아니라 token별로 계산한다.
+local spatial scale은 target마다 하나의 global scalar가 아니라 token별로 계산한다. 각 view는 같은 segment-local 좌표계로 backproject되지만, scale의 8-NN 후보는 **해당 token과 동일한 view의 point만** 사용한다. 여러 view를 합치면 동일 표면을 관측한 cross-view near-duplicate가 bandwidth를 인위적으로 0에 가깝게 만들어 metric-normalized residual을 왜곡하므로 금지한다.
 
 ```text
 sigma_t,i = median distance to target 8-NN

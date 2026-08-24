@@ -2,7 +2,7 @@
 
 ## Status
 
-In progress. Implementation protocol v2.2 was locked on 2026-08-25. Stage-0 train-only cross-fit passed; no official validation result exists yet.
+In progress. Implementation protocol v2.3 is active as of 2026-08-25. Stage-0 train-only cross-fit passed; no official validation result exists yet.
 
 ## Question
 
@@ -15,7 +15,7 @@ Can a trainable local plasticity atom remain reusable after transport with predi
 
 ## Authoritative protocol
 
-[`EXP-006 Implementation Brief.md`](../EXP-006%20Implementation%20Brief.md), revision v2.2.
+[`EXP-006 Implementation Brief.md`](../EXP-006%20Implementation%20Brief.md), revision v2.3.
 
 Key safeguards:
 
@@ -76,3 +76,25 @@ Result: `revisit3d/results/EXP-006/stage0_geometry_health_train_v22.json`
 - Positive depth fraction and healthy depth-residual gradient fraction: 1.0.
 
 Stage 0 supports using the custom predicted pose/depth/confidence as the frozen EXP-006 base. It does not yet support H2-P or H4; those require Stage 1/2 and the unopened validation protocol.
+
+### Stage-1 v2.2 cross-view-scale diagnostic — preserved failure
+
+Result: `revisit3d/results/EXP-006/stage1_predicted_transport_health_train_v22_crossview_scale_failed.json`
+
+- Predicted Sim(3) was evaluated only on the 20 directional train episodes; validation and the closed test split were not accessed.
+- Matched A→A' alignment validity was 0.70, below the 0.80 preflight gate.
+- Current-context→future-query alignment validity was 1.00 and every valid transport was finite.
+- The failure was traced to pooling all eight overlapping views before median 8-NN scale estimation. Cross-view duplicate observations made the metric-normalization bandwidth artificially small.
+- A train-only, single-variable counterfactual using within-view 8-NN yielded matched validity 1.00 without changing any Sim(3) threshold. D012 and protocol v2.3 register this definition before validation.
+
+### Stage-1 v2.3 predicted-transport health gate — passed
+
+Result: `revisit3d/results/EXP-006/stage1_predicted_transport_health_train_v23.json`
+
+- All 20/20 matched A→A' alignments and 20/20 current-context→future-query alignments were valid.
+- Median matched correspondence count was 188.5, median inlier ratio 0.925, and median normalized residual 0.889 local spacings.
+- All valid geometry+appearance transports were finite.
+- Distant-B validity was 0.90 and deterministic foreign-candidate validity was 0.467. Alignment validity is therefore a geometric feasibility mask, not a relevance or utility label; candidate selection must remain utility-conditioned as specified by D005/D006.
+- The diagnostic used train only. Validation and the closed test split remain unopened.
+
+This gate supports proceeding to atom meta-training with predicted geometry. It does not yet establish H2-P future utility or H4 routing safety.

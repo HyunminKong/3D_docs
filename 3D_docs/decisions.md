@@ -75,3 +75,10 @@ Date: 2026-08-25
 Status: Accepted after the preserved Stage-0 v2.1 train-only diagnostic and before validation
 
 The v2.1 cross-fit pose passed rotation, translation, scale, confidence, and gradient checks but its track loss was 1.098 times the identity-pose loss. A train-only counterfactual showed that the frozen VGGT teacher pose itself was worse than identity under the same objective (about 1.16 times on the directional mean). Identity removes parallax and is therefore a degenerate minimizer of this residual, not a valid pose baseline. EXP-006 freezes pose online and gates whether the custom pose preserves teacher-pose track behavior within 5%; identity remains a reported degeneracy diagnostic. The v2.1 result is preserved and not overwritten.
+
+## D012 — Local transport bandwidth is estimated within each view
+
+Date: 2026-08-25
+Status: Accepted after the preserved Stage-1 v2.2 train-only diagnostic and before validation
+
+The first predicted-transport preflight computed median 8-NN spacing after pooling every view in a segment-local point cloud. Because adjacent views repeatedly observe the same surface, cross-view near-duplicates collapsed the local bandwidth and caused valid physical revisits to fail the dimensionless residual gate: matched alignment validity was 0.70. A train-only counterfactual that changed only the scale estimator to within-view 8-NN raised matched validity to 1.00. EXP-006 v2.3 therefore defines local spacing over points from the same view while retaining a shared segment-local coordinate frame for Sim(3). The v2.2 failure is preserved; thresholds were not relaxed and validation remains unopened.

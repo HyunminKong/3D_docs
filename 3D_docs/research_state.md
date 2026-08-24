@@ -46,7 +46,7 @@ See `3D_docs/method.md` for the full boundary.
 - EXP-003 — compact/global/slot adaptation reuse: completed, negative for context-selective reuse.
 - EXP-004 — retrieval keys and learned local update routing: completed, partial/negative.
 - EXP-005 — dense 3D plasticity transport and online utility: completed, central feasibility supported with safety caveat.
-- EXP-006 — trainable 3D plasticity atom head and future-utility/risk meta-objective: Stage-0 v2.2 train cross-fit health gate passed; Stage-1 implementation next.
+- EXP-006 — trainable 3D plasticity atom head and future-utility/risk meta-objective: Stage-0 v2.2 base-geometry gate and Stage-1 v2.3 predicted-transport train-only gate passed. The preserved Stage-1 v2.2 failure identified cross-view bandwidth collapse. Atom meta-training is next.
 
 ## Open questions
 
@@ -58,4 +58,4 @@ See `3D_docs/method.md` for the full boundary.
 
 ## Next step
 
-Implement Stage 1 from `3D_docs/EXP-006 Implementation Brief.md` v2.2 using the passed `revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt`. Do not open validation yet. First implement and unit-test the spatial atom, predicted point construction, robust Sim(3), and visual/geometry transport on train-only smoke/cross-fit paths. The v2.1 identity-gate failure remains preserved as an objective-degeneracy diagnostic.
+Freeze the passed v2.3 transport definition and implement Stage-1 train-only utility-conditioned atom meta-training with K=5 candidate paths and query frames restricted to read-only future outer supervision. Do not open validation. Both the Stage-0 v2.1 identity-gate failure and Stage-1 v2.2 cross-view-scale failure remain preserved diagnostics.

@@ -1,5 +1,5 @@
 experiment: EXP-006
-protocol_revision: v2.2
+protocol_revision: v2.3
 seed: 600
 
 data:
@@ -49,6 +49,10 @@ stage0:
     minimum_healthy_depth_gradient_fraction: 0.95
 
 stage1:
+  cache: revisit3d/cache/EXP-006_stage1_train.pt
+  transport_diagnostic_result: revisit3d/results/EXP-006/stage1_predicted_transport_health_train_v23.json
+  pca_sample_size: 100000
+  pca_iterations: 2
   steps_candidates: [500, 1000]
   learning_rate: 0.0001
   weight_decay: 0.0001
