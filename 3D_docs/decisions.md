@@ -299,3 +299,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-2 execution
 
 The frozen manifest passed every D042 check and is immutable. EXP-009 may now generate converted camera metadata for all 636 manifest scenes because this operation reads official poses, intrinsics, timestamps, and image paths only; it does not decode pixels or run a model. The audit must match exactly 454 train, 86 validation, and 96 test scenes. After conversion, any image loading, feature extraction, PCA fitting, plasticity training, router fitting, or model selection remains train-only until an explicit validation lock decision is recorded.
+
+## D044 — Choose the consolidation backbone on a balanced train-only key pilot
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-3 selection
+
+Full geometry caching is deferred until the long-term consolidation representation is selected. Stage 3 samples at most 64 positive undirected train edges per location by a fixed hash, retaining at least 40 per location, and creates one strict same-location non-overlap negative per positive using metadata bounding-box separation of at least 20 m. Four fixed context views are used. VGGT reconstruction tokens and the locally available frozen DINOv2 ViT-L/14 representation will be compared under the same leave-one-location-out pair/retrieval protocol. Validation/test pixels remain unopened. DINOv2 is a consolidation-only candidate; selecting it would not replace the VGGT geometry backbone or the learned local transport key.

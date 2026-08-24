@@ -54,3 +54,7 @@ Convert `opencv_cameras.json` metadata for exactly the 636 frozen-manifest scene
 ## Stage-2 result
 
 Exactly 636 scene metadata files were generated: 454 train, 86 validation, and 96 test, with no missing or extra scene. The audit records `image_pixels_accessed=false` and `model_output_accessed=false`. Validation/test pixels and features remain unopened.
+
+## Stage-3 train-only key pilot
+
+Before full geometry caching, select up to 64 undirected positive train edges per location by a fixed hash. Require at least 40 positives from every location. Pair each positive with one same-location negative whose scene bounding boxes are at least 20 m apart and which has no direct 2 m overlap edge. Use four fixed context views. This pilot chooses the long-term consolidation representation only; it does not change the learned local transport key.

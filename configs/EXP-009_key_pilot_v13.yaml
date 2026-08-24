@@ -1,0 +1,21 @@
+experiment: EXP-009
+protocol_revision: v1.3
+seed: 900013
+
+source:
+  manifest: revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json
+  inventory: revisit3d/cache/EXP-009/unseen_overlap_inventory_v10.json
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+
+sampling:
+  split: train
+  maximum_positive_edges_per_location: 64
+  minimum_positive_edges_per_location: 40
+  negative_to_positive_ratio: 1
+  minimum_negative_bbox_distance_m: 20.0
+  context_views: 4
+  context_view_indices: [0, 2, 5, 7]
+
+output:
+  pair_manifest: revisit3d/manifests/exp009_key_pilot_train_v13.json
+  result: revisit3d/results/EXP-009/stage3_key_pilot_selection_v13.json
