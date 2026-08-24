@@ -10,17 +10,17 @@ This workspace contains the active research implementation plus several external
 
 Read, in order:
 
-1. `docs/research_state.md`
-2. `docs/hypothesis.md`
-3. `docs/decisions.md`
-4. `docs/experiments/index.md`
+1. `3D_docs/research_state.md`
+2. `3D_docs/hypothesis.md`
+3. `3D_docs/decisions.md`
+4. `3D_docs/experiments/index.md`
 
-For method or architecture work also read `docs/method.md`. For literature work start from `docs/literature/index.md`.
+For method or architecture work also read `3D_docs/method.md`. For literature work start from `3D_docs/literature/index.md`.
 
 ## Research rules
 
-- Do not silently change a hypothesis. Update `docs/hypothesis.md` and add a decision entry.
-- Every experiment has a stable ID (`EXP-###`) and a record under `docs/experiments/`.
+- Do not silently change a hypothesis. Update `3D_docs/hypothesis.md` and add a decision entry.
+- Every experiment has a stable ID (`EXP-###`) and a record under `3D_docs/experiments/`.
 - Record the question, protocol, split, configuration, metrics, result paths, interpretation, and conclusion.
 - Never overwrite an earlier experiment record. Add a correction or a new experiment ID.
 - Do not use held-out test data for model selection. The original six-episode test split was consumed by EXP-005 and is closed to further tuning.
@@ -31,7 +31,7 @@ For method or architecture work also read `docs/method.md`. For literature work 
 
 - Active implementation: `revisit3d/`
 - Historical probes: `skillmem/`, `ttt_continual/`, `dnpc/`
-- Research source documents: `docs/`
+- Research source documents: `3D_docs/`
 - Preserved long-form notes: `Research/`
 - External reference repositories: `CUT3R/`, `FastVGGT/`, `Open-d4rt/`, `TTT3R/`, `UniSplat/`, `dust3r/`, `gaussian-splatting/`, `tttLRM/`, `vggt/`
 
@@ -49,8 +49,8 @@ Use development train/validation splits during iteration. Check GPU availability
 
 ## After completing a task
 
-- Update `docs/research_state.md`.
-- Add or update the relevant `docs/experiments/EXP-###_*.md` record.
-- Add a `docs/decisions.md` entry when a methodological choice changes.
+- Update `3D_docs/research_state.md`.
+- Add or update the relevant `3D_docs/experiments/EXP-###_*.md` record.
+- Add a `3D_docs/decisions.md` entry when a methodological choice changes.
 - Link raw result files; do not replace the documented summary with an unstructured log dump.
 - Report verification commands and known limitations.

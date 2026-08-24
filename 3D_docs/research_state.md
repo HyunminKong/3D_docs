@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-24
+Last updated: 2026-08-25
 
 ## Research goal
 
@@ -22,7 +22,7 @@ Reusable adaptation is not well represented by a model-wide gradient or a small 
 - A learned future-utility/risk head selects, mixes, or rejects candidates.
 - Continual consolidation merges useful overlapping atoms and preserves uncertainty/utility statistics.
 
-See `docs/method.md` for the full boundary.
+See `3D_docs/method.md` for the full boundary.
 
 ## Evidence snapshot
 
@@ -46,7 +46,7 @@ See `docs/method.md` for the full boundary.
 - EXP-003 — compact/global/slot adaptation reuse: completed, negative for context-selective reuse.
 - EXP-004 — retrieval keys and learned local update routing: completed, partial/negative.
 - EXP-005 — dense 3D plasticity transport and online utility: completed, central feasibility supported with safety caveat.
-- EXP-006 — trainable 3D plasticity atom head and future-utility/risk meta-objective: next.
+- EXP-006 — trainable 3D plasticity atom head and future-utility/risk meta-objective: v2 protocol locked; implementation next.
 
 ## Open questions
 
@@ -58,4 +58,4 @@ See `docs/method.md` for the full boundary.
 
 ## Next step
 
-Implement EXP-006 before constructing a large continual memory bank. The required first ablation is global vector vs untransported local state vs visual transport vs geometry transport vs geometry+appearance transport under one fixed protocol.
+Implement the pre-registered `3D_docs/EXP-006 Implementation Brief.md` v2 before constructing a large continual memory bank. Stage 0 must first establish deployable predicted-geometry health; the required transport ablation remains global vector vs untransported local state vs visual transport vs geometry transport vs geometry+appearance transport under one fixed protocol.

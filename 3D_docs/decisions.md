@@ -8,7 +8,6 @@ Status: Accepted
 Build a new TTT method and geometry head. Use foundation models only as backbones/priors. tttLRM remains a baseline and literature reference.
 
 ## D002 — VGGT as the first frozen backbone
-00
 Date: 2026-08-20
 Status: Accepted for the first implementation
 
@@ -55,3 +54,10 @@ Date: 2026-08-24
 Status: Accepted
 
 Chat discussions become official only when hypotheses, decisions, experiments, and the current state are updated in this repository and committed.
+
+## D009 — EXP-006 uses a train-only, utility-conditioned pre-registered protocol
+
+Date: 2026-08-25
+Status: Accepted
+
+Before atom/router training, the custom base geometry must pass an explicit predicted-depth/pose/confidence health gate. Atom meta-training uses the same five-candidate pool as routing and labels candidates by future utility rather than matched-episode identity. Discrete correspondence, inlier, Sim(3), and neighbor selection are detached under a first-order meta-gradient contract. Utility risk uses a train-calibrated neutral deadband. Any permitted model selection, including training length, occurs by grouped cross-validation within train; official validation is evaluated once and cannot select checkpoints or thresholds. The complete pre-registered protocol is `3D_docs/EXP-006 Implementation Brief.md` v2.

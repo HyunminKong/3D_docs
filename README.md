@@ -6,19 +6,19 @@ The current result is not a wrapper around tttLRM. The selected direction is a n
 
 ## Start here
 
-- Current snapshot: [`docs/research_state.md`](docs/research_state.md)
-- Hypotheses: [`docs/hypothesis.md`](docs/hypothesis.md)
-- Current method: [`docs/method.md`](docs/method.md)
-- Decisions: [`docs/decisions.md`](docs/decisions.md)
-- Experiment index: [`docs/experiments/index.md`](docs/experiments/index.md)
-- Literature index: [`docs/literature/index.md`](docs/literature/index.md)
-- External dependency snapshot: [`docs/dependencies.md`](docs/dependencies.md)
+- Current snapshot: [`3D_docs/research_state.md`](3D_docs/research_state.md)
+- Hypotheses: [`3D_docs/hypothesis.md`](3D_docs/hypothesis.md)
+- Current method: [`3D_docs/method.md`](3D_docs/method.md)
+- Decisions: [`3D_docs/decisions.md`](3D_docs/decisions.md)
+- Experiment index: [`3D_docs/experiments/index.md`](3D_docs/experiments/index.md)
+- Literature index: [`3D_docs/literature/index.md`](3D_docs/literature/index.md)
+- External dependency snapshot: [`3D_docs/dependencies.md`](3D_docs/dependencies.md)
 
 ## Repository layout
 
 ```text
 AGENTS.md                    agent workflow and research rules
-docs/                        official research state and experiment records
+3D_docs/                     official research state and experiment records
 Research/                    preserved long-form analyses and earlier notes
 revisit3d/                   active implementation and lightweight raw results
 skillmem/, ttt_continual/    historical probes
