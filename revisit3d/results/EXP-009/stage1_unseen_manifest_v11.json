@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage1_unseen_manifest_freeze",
+  "protocol_revision": "v1.1",
+  "metadata_only": true,
+  "image_accessed": false,
+  "model_output_accessed": false,
+  "config": "configs/EXP-009_unseen_manifest_v11.yaml",
+  "inventory": "revisit3d/cache/EXP-009/unseen_overlap_inventory_v10.json",
+  "inventory_summary": "revisit3d/results/EXP-009/stage0_unseen_overlap_inventory_v10.json",
+  "manifest": "revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json",
+  "manifest_sha256": "682cca8796e5cb321ae8f02efc90f8eea495bdb93e24a1db8afee9bc64d6e13f",
+  "blacklisted_scene_intersection": 0,
+  "split_directional_episodes": {
+    "train": 2268,
+    "test": 234,
+    "val": 234
+  },
+  "split_scenes": {
+    "train": 454,
+    "test": 96,
+    "val": 86
+  },
+  "split_components": {
+    "train": 26,
+    "test": 22,
+    "val": 17
+  },
+  "split_locations": {
+    "train": [
+      "boston-seaport",
+      "singapore-hollandvillage",
+      "singapore-onenorth",
+      "singapore-queenstown"
+    ],
+    "test": [
+      "boston-seaport",
+      "singapore-hollandvillage",
+      "singapore-onenorth",
+      "singapore-queenstown"
+    ],
+    "val": [
+      "boston-seaport",
+      "singapore-hollandvillage",
+      "singapore-onenorth",
+      "singapore-queenstown"
+    ]
+  },
+  "scene_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "component_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "health_checks": {
+    "train_episode_minimum": true,
+    "val_episode_minimum": true,
+    "test_episode_minimum": true,
+    "val_scene_minimum": true,
+    "test_scene_minimum": true,
+    "val_location_minimum": true,
+    "test_location_minimum": true
+  },
+  "passed": true
+}
