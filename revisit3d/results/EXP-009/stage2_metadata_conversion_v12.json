@@ -1,0 +1,19 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage2_metadata_conversion",
+  "protocol_revision": "v1.2",
+  "image_pixels_accessed": false,
+  "model_output_accessed": false,
+  "manifest": "revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json",
+  "manifest_sha256": "682cca8796e5cb321ae8f02efc90f8eea495bdb93e24a1db8afee9bc64d6e13f",
+  "output_root": "tttLRM/data_example/nuscenes_exp009_unseen",
+  "converted_scenes": 636,
+  "split_scenes": {
+    "train": 454,
+    "val": 86,
+    "test": 96
+  },
+  "missing_scenes": [],
+  "extra_scenes": [],
+  "passed": true
+}

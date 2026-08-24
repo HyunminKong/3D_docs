@@ -1,6 +1,6 @@
 # EXP-009 — Fully Unseen Paper-Scale Revisit Benchmark
 
-Status: **Stage 1 manifest frozen; metadata conversion registered.**
+Status: **Stage 2 metadata conversion completed; train-only key benchmark next.**
 
 ## Question
 
@@ -50,3 +50,7 @@ The frozen manifest passed every registered check: 2,268/234/234 directional epi
 ## Stage-2 conversion boundary
 
 Convert `opencv_cameras.json` metadata for exactly the 636 frozen-manifest scenes. The converter reads calibration, ego pose, timestamps, and file paths but does not decode image pixels. Creating metadata for validation/test scenes does not open those holdouts; subsequent feature extraction must explicitly restrict itself to the train split until a new model is locked.
+
+## Stage-2 result
+
+Exactly 636 scene metadata files were generated: 454 train, 86 validation, and 96 test, with no missing or extra scene. The audit records `image_pixels_accessed=false` and `model_output_accessed=false`. Validation/test pixels and features remain unopened.
