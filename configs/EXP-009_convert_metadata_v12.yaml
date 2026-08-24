@@ -1,0 +1,13 @@
+experiment: EXP-009
+protocol_revision: v1.2
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json
+  nuscenes_root: /mnt/ssd/nuscenes
+  nuscenes_version: v1.0-trainval
+  output_root: tttLRM/data_example/nuscenes_exp009_unseen
+  minimum_frames: 200
+
+output:
+  scene_list: revisit3d/cache/EXP-009/scene_list_v12.txt
+  audit: revisit3d/results/EXP-009/stage2_metadata_conversion_v12.json

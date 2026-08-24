@@ -292,3 +292,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-1 execution
 
 The metadata inventory found 1,368 unseen undirected edges in 65 components. The fixed split has 2,268/234/234 directional train/validation/test episodes, zero scene overlap, zero component overlap, at least 86 scenes in each holdout, and all four locations in each holdout. The 304-scene giant component is confined to train. This is healthy enough to freeze without resampling. Stage 1 converts every edge in both directions using the established eight-context/four-query segment construction. All health and leakage assertions must pass before any scene conversion, feature extraction, or model training. The new validation and test remain unopened after manifest creation.
+
+## D043 — Metadata conversion does not authorize holdout feature access
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-2 execution
+
+The frozen manifest passed every D042 check and is immutable. EXP-009 may now generate converted camera metadata for all 636 manifest scenes because this operation reads official poses, intrinsics, timestamps, and image paths only; it does not decode pixels or run a model. The audit must match exactly 454 train, 86 validation, and 96 test scenes. After conversion, any image loading, feature extraction, PCA fitting, plasticity training, router fitting, or model selection remains train-only until an explicit validation lock decision is recorded.

@@ -1,6 +1,6 @@
 # EXP-009 — Fully Unseen Paper-Scale Revisit Benchmark
 
-Status: **Stage 0 passed; Stage 1 manifest freeze registered.**
+Status: **Stage 1 manifest frozen; metadata conversion registered.**
 
 ## Question
 
@@ -42,3 +42,11 @@ Generate both directions of every fixed edge with eight context and four disjoin
 - Summary: `revisit3d/results/EXP-009/stage0_unseen_overlap_inventory_v10.json`
 - Manifest config: `configs/EXP-009_unseen_manifest_v11.yaml`
 - Frozen manifest: `revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json`
+
+## Stage-1 result
+
+The frozen manifest passed every registered check: 2,268/234/234 directional episodes, 454/86/96 scenes, 26/17/22 components, four locations in every split, no blacklist intersection, and zero scene/component leakage. Its SHA-256 is `682cca8796e5cb321ae8f02efc90f8eea495bdb93e24a1db8afee9bc64d6e13f`.
+
+## Stage-2 conversion boundary
+
+Convert `opencv_cameras.json` metadata for exactly the 636 frozen-manifest scenes. The converter reads calibration, ego pose, timestamps, and file paths but does not decode image pixels. Creating metadata for validation/test scenes does not open those holdouts; subsequent feature extraction must explicitly restrict itself to the train split until a new model is locked.
