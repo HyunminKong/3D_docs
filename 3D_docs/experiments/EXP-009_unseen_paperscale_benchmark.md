@@ -133,3 +133,13 @@ The source-safe correction passed all checks. The transport-descriptor address r
 Before opening validation, replay a separate true-time stream per official location. For each held location, train the transport-descriptor address and source-history retention score only on pairs whose target and source are both outside that location. Compare an unbounded utility-addressed bank with capacity-8 history retention, FIFO, and deterministic reservoir sampling. Every policy uses K=5 and the same transported code/router.
 
 History retention passes only if it retains at least 90% of unbounded routed utility, beats FIFO and reservoir, has no more harm than FIFO, and has a positive component-bootstrap lower bound over FIFO. If it fails, choose the safest passing simple retention policy rather than tuning the history score.
+
+### Stage-11 result
+
+History retention failed: although it reached +0.01747 routed utility, harm was 12.84%, it lost to deterministic reservoir (+0.01768, 8.72% harm), and its FIFO interval crossed zero. Reservoir-8 was also above FIFO-8 by +0.00313 with component CI [+0.00078, +0.00590], and was descriptively above the unbounded bank while using eight records. Per the registered fallback, deterministic reservoir sampling is the locked retention policy; no learned eviction score is tuned further.
+
+## Stage-12 deployable lock and validation freeze
+
+Fit the transport-descriptor Ridge on every train-only Stage-8 pair and compile it exactly into a 64-D maximum-inner-product score. Fit the fixed PCA-16 Ridge router on all train-only Stage-5 candidates and select its single threshold from component-OOF train predictions under the visual-harm constraint. Freeze the atom checkpoint, 0.10 residual, reservoir capacity 8, K=5, artifact hash, and one canonical direction for each of the 117 unseen validation overlaps before any validation pixel is decoded.
+
+The one-shot validation compares reservoir-8 utility-MIPS with FIFO-8, an unbounded utility-address bank, and random K=5 addressing within the same reservoir bank. The primary must keep current/base at most 1.05, exceed +0.01 routed utility, retain at least 90% of unbounded utility, beat FIFO without more harm, beat the matched random address, and have a positive 17-component interval over random. Failure is reported without validation tuning.

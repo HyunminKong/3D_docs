@@ -404,3 +404,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-11 execution
 
 The strong history-only utility signal may be useful for retention even though the transport descriptor is the retrieval address. Stage 11 runs independent true-time streams per location and trains both scores with the held location entirely excluded. The primary bank keeps the eight records with highest source-only adaptation-history priority and retrieves five by utility-MIPS. Unbounded, FIFO-8, and deterministic reservoir-8 are controls. History retention is accepted only if it retains at least 90% of unbounded routed utility, beats FIFO and reservoir, has no greater harm than FIFO, and has a positive component interval over FIFO. A failed learned policy is not repaired; the safest simple policy becomes the validation bank.
+
+## D059 — Use reservoir retention; reject learned history eviction
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-11 execution
+
+History capacity 8 achieved 0.01747 routed utility but 12.84% harm, failed against reservoir, and had a FIFO-difference interval crossing zero. Deterministic reservoir capacity 8 achieved 0.01768 utility and 8.72% harm, exceeded FIFO by a component interval [0.00078, 0.00590], and descriptively exceeded the unbounded addressed bank. The final static-revisit bank therefore uses deterministic reservoir retention. Adaptation history remains useful evidence but is not a reliable eviction objective in the present model.
+
+## D060 — Lock the deployable artifact and one-shot validation gate
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 validation pixel access
+
+Stage 12 fits the transport-descriptor Ridge and final PCA-16 Ridge router on all permitted train pairs, compiles the address exactly to 64-D MIPS, and records the artifact hash. The validation pilot contains one metadata-selected direction for each of 117 unseen validation overlaps across 17 components and four locations. The locked method is one current TTT step, reservoir capacity 8, utility-MIPS K=5, visual local-code transport, fixed 0.10 residual, and the fixed router/threshold. One-shot validation requires healthy current TTT, routed utility above 0.01, at least 90% unbounded retention, superiority to FIFO without more harm, superiority to a matched random address, and a positive component interval over random. No validation result may change these choices.

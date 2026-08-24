@@ -1,0 +1,88 @@
+experiment: EXP-009
+protocol_revision: v2.2
+seed: 900022
+
+source:
+  stage7_config: configs/EXP-009_causal_dino_retrieval_v17.yaml
+  stage5_candidate_cache: revisit3d/cache/EXP-009/locked_transfer_candidates_train_v15.json
+  stage5_result: revisit3d/results/EXP-009/stage5_locked_local_reuse_transfer_train_v15.json
+  stage8_candidate_cache: revisit3d/cache/EXP-009/random_retrieval_null_candidates_train_v18.json
+  stage10_result: revisit3d/results/EXP-009/stage10_location_crossfit_prefilter_train_v20.json
+  stage11_result: revisit3d/results/EXP-009/stage11_capacity_bank_train_v21.json
+  full_manifest: revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json
+  train_geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+
+data:
+  manifest: revisit3d/manifests/exp009_validation_pilot_v22.json
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  split: val
+  image_height: 224
+  image_width: 224
+
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+
+stage0:
+  output_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+  track_side: 8
+
+stage1:
+  cache: revisit3d/cache/EXP-009/validation_geometry_v22.pt
+  pca_source_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  pca_sample_size: 100000
+  pca_iterations: 2
+  ttt_steps: 1
+  ttt_step_size: 0.05
+  reuse_strength: 0.10
+  utility_deadband_minimum: 0.01
+  source_checkpoint: revisit3d/checkpoints/exp006_atom_stage1_expanded_v27.pt
+
+source_atom_protocol_revision: v1.5
+
+address:
+  model: standard_scaler_ridge
+  ridge_alpha: 1.0
+  feature_columns: [8, 264]
+  compiled_form: exact_64d_maximum_inner_product
+
+router:
+  model: standard_scaler_pca16_ridge
+  pca_components: 16
+  ridge_alpha: 1.0
+  descriptor_dimensions: 256
+  primary_scalar_indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 22, 23]
+  minimum_acceptance: 0.20
+
+bank:
+  stream_partition: official_location
+  capacity: 8
+  retention: deterministic_reservoir
+  candidate_count: 5
+  controls:
+    - unbounded_utility_address
+    - fifo_capacity8
+    - reservoir_random_address
+  random_address_repetitions: 2000
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 900022
+
+success:
+  maximum_mean_current_to_base_ratio: 1.05
+  minimum_components: 10
+  minimum_primary_routed_utility: 0.01
+  minimum_retention_of_unbounded_utility: 0.90
+  primary_must_beat_fifo: true
+  primary_harm_not_above_fifo: true
+  primary_must_beat_random_address: true
+  primary_minus_random_component_interval_positive: true
+
+output:
+  pilot_audit: revisit3d/results/EXP-009/stage12_validation_pilot_v22.json
+  artifact: revisit3d/checkpoints/exp009_utility_mips_router_v22.joblib
+  train_lock_result: revisit3d/results/EXP-009/stage12_deployable_lock_train_v22.json
+  candidate_cache: revisit3d/cache/EXP-009/validation_candidates_v22.json
+  validation_result: revisit3d/results/EXP-009/stage13_locked_validation_v22.json
