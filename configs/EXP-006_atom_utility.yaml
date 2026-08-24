@@ -1,0 +1,68 @@
+experiment: EXP-006
+protocol_revision: v2.2
+seed: 600
+
+data:
+  manifest: revisit3d/manifests/nuscenes_revisit_dev.json
+  scene_root: tttLRM/data_example/nuscenes_2x2
+  split: train
+  image_height: 224
+  image_width: 224
+
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+
+stage0:
+  source_checkpoint: revisit3d/checkpoints/depth_bootstrap_anchored_dev_epoch1.pt
+  source_head_type: anchored
+  output_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+  cache: revisit3d/cache/EXP-006_stage0_train.pt
+  result: revisit3d/results/EXP-006/stage0_geometry_health_train_v22.json
+  folds: 5
+  fold_components:
+    - [scene-0726__scene-0873, scene-0329__scene-0653]
+    - [scene-0006__scene-0022, scene-0104__scene-0260]
+    - [scene-0464__scene-0555__scene-0705, scene-0247__scene-0293]
+    - [scene-0097__scene-0673]
+    - [scene-0246__scene-0675]
+  steps: 500
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  track_side: 8
+  teacher_confidence:
+    activation_inverse: log_expm1
+    lower_quantile: 0.05
+    upper_quantile: 0.95
+    epsilon: 0.000001
+  gates:
+    finite_required: true
+    minimum_positive_depth_fraction: 0.999
+    maximum_view0_identity_error: 0.0001
+    maximum_median_rotation_error_deg: 15.0
+    maximum_median_translation_direction_error_deg: 30.0
+    maximum_median_scale_aligned_translation_error: 0.50
+    minimum_confidence_spearman: 0.30
+    maximum_predicted_to_teacher_track_loss_ratio: 1.05
+    minimum_healthy_depth_gradient_fraction: 0.95
+
+stage1:
+  steps_candidates: [500, 1000]
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  ttt_steps: 1
+  ttt_step_size: 0.05
+  candidate_count: 5
+
+stage2:
+  steps_candidates: [500, 1000]
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 600006

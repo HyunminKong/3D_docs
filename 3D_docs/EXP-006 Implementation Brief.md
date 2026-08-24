@@ -1,7 +1,7 @@
 # EXP-006 Implementation Brief
 **Trainable 3D Plasticity Atoms with Predicted-Geometry Transport and Risk-Aware Utility Routing**
 
-**Revision:** v2, 2026-08-25
+**Revision:** v2.2, 2026-08-25
 
 **Status:** implementation-authoritative; thresholds and split protocol below are pre-registered before EXP-006 training.
 
@@ -169,7 +169,15 @@ c_track = token-wise aggregate(visibility × tracker_confidence)
 confidence = sqrt(clamp(c_base, 1e-4, 1) × clamp(stopgrad(c_track), 1e-4, 1))
 ```
 
-`c_base`는 Stage 0의 train-only teacher-confidence distillation으로 보정한다. `c_track`은 frozen tracker의 camera output이 아니라 track evidence만 사용한다. 둘 중 하나가 구현되지 않았으면 confidence를 router input이나 Sim(3) weight에 넣지 않으며, 해당 run은 full A7이 아니다.
+`c_base`는 Stage 0의 train-only teacher-confidence distillation으로 보정한다. FastVGGT DPT confidence는 `[0,1]` 확률이 아니라 `1+exp(logit)`이므로 직접 clamp하지 않는다. train context에서만 raw logit과 robust quantile을 fit한다.
+
+```text
+ell_conf = log(clamp(c_teacher_raw - 1, min=1e-6))
+q05, q95 = train-only quantile(ell_conf, [0.05, 0.95])
+c_teacher = clamp((ell_conf - q05) / (q95 - q05), 0, 1)
+```
+
+`c_track`은 frozen tracker의 camera output이 아니라 track evidence만 사용한다. 둘 중 하나가 구현되지 않았으면 confidence를 router input이나 Sim(3) weight에 넣지 않으며, 해당 run은 full A7이 아니다.
 
 `key_projection`은 random projection 상태로 Sim(3) correspondence에 바로 사용하지 않는다.
 
@@ -874,7 +882,7 @@ L_conf = SmoothL1(c_base, stopgrad(c_teacher))
 L_stage0 = L_pose + 0.1 * L_conf
 ```
 
-translation-direction term은 teacher translation norm이 train median의 1%보다 큰 view에만 적용한다. teacher confidence는 patch grid로 resize하고 `[0,1]`로 clamp한다. Teacher는 training 및 Stage-0 health evaluation에서만 사용하며 runtime EXP-006에서는 instantiate하지 않는다.
+translation-direction term은 teacher translation norm이 train median의 1%보다 큰 view에만 적용한다. teacher confidence는 patch grid로 resize한 뒤 위 train-only `log_expm1 + robust quantile` target으로 변환한다. Teacher는 training 및 Stage-0 health evaluation에서만 사용하며 runtime EXP-006에서는 instantiate하지 않는다.
 
 Stage-0 optimizer/protocol은 다음으로 고정한다.
 
@@ -891,7 +899,7 @@ validation으로 step이나 checkpoint를 선택하지 않는다.
 출력 checkpoint는 다음으로 고정한다.
 
 ```text
-revisit3d/checkpoints/exp006_geometry_bootstrap.pt
+revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
 ```
 
 ### Stage-0 geometry health gate
@@ -906,12 +914,14 @@ median relative rotation error <= 15 degrees
 median translation-direction error <= 30 degrees
 median scale-aligned translation error <= 0.50
 Spearman(c_base, c_teacher) >= 0.30
-predicted-pose track objective <= 0.95 * identity-pose track objective
+predicted-pose track objective <= 1.05 * teacher-pose track objective
 track objective has finite, non-zero gradient w.r.t. a zero log-depth residual field
     on >= 95% of train episodes
 ```
 
-마지막 두 조건은 pose가 숫자만 출력하고 실제 geometry objective에는 쓸모없는 collapse를 막는다. 하나라도 실패하면 Stage 1을 실행하지 않고 Stage-0 failure로 기록한다. threshold는 validation을 보고 완화하지 않는다.
+첫 Stage-0 train-only run에서 teacher pose조차 identity pose보다 track loss가 낮지 않다는 것이 확인됐다. 이 3D residual은 pose를 0으로 두면 parallax가 사라져 인위적으로 작아질 수 있으므로 `predicted < identity`는 pose-health criterion이 될 수 없다. Identity ratio는 degeneracy diagnostic으로 계속 보고하되, gate는 custom pose가 offline teacher pose의 geometry behavior를 5% 이내로 보존하는지 검사한다. Pose는 online에서 freeze하며 track objective로 pose를 최적화하지 않는다.
+
+마지막 두 조건은 custom pose가 teacher geometry behavior를 보존하고 depth fast state에 실제 gradient를 제공하는지 확인한다. 하나라도 실패하면 Stage 1을 실행하지 않고 Stage-0 failure로 기록한다. threshold는 validation을 보고 완화하지 않는다.
 
 scale-aligned translation error는 episode의 valid view 전체에서 scalar `alpha`를 least-squares로 구한 뒤 `||alpha*t_pred-t_teacher||/(||t_teacher||+1e-6)`로 계산한다. confidence Spearman은 valid patch 전체가 아니라 episode별 값을 먼저 계산한 후 group mean으로 집계한다.
 
@@ -1021,7 +1031,7 @@ candidate max_steps = {500, 1000}
 gradient_clip = 1.0
 ```
 
-validation으로 early stopping하거나 hyperparameter를 고르지 않는다. 20개 directional train episode를 10개 undirected scene-pair group으로 묶어 **5-fold grouped CV**를 수행한다. 위에 고정한 optimizer/loss coefficient는 바꾸지 않고 500/1000 step 중 하나만 train fold의 held-out group mean utility로 선택한 뒤, 선택된 고정 step으로 전체 train split에서 다시 학습한다. official validation은 최종 checkpoint에 대해 한 번만 평가한다.
+validation으로 early stopping하거나 hyperparameter를 고르지 않는다. 20개 directional train episode를 **8개 physical-overlap component**로 묶어 5-fold grouped CV를 수행한다. 위에 고정한 optimizer/loss coefficient는 바꾸지 않고 500/1000 step 중 하나만 train fold의 held-out group mean utility로 선택한 뒤, 선택된 고정 step으로 전체 train split에서 다시 학습한다. official validation은 최종 checkpoint에 대해 한 번만 평가한다.
 
 ---
 
@@ -1049,7 +1059,7 @@ candidate max_steps = {500, 1000}
 gradient_clip = 1.0
 ```
 
-Stage 2도 같은 10-group, 5-fold train-only CV를 사용한다. train-fold checkpoint selection은 다음 lexicographic rule로 고정한다.
+Stage 2도 같은 8-component, 5-fold train-only CV를 사용한다. train-fold checkpoint selection은 다음 lexicographic rule로 고정한다.
 
 ```text
 1. minimum held-out-train-fold cluster harm_rate
@@ -1347,9 +1357,9 @@ Development manifest는 physical-overlap component 전체를 train→validation�
 현재 directional/undirected group 수를 명시한다.
 
 ```text
-train: 20 directional episodes = 10 undirected scene-pair groups
-val:   14 directional episodes =  7 undirected scene-pair groups
-test:   6 directional episodes =  3 undirected scene-pair groups (closed)
+train: 20 directional episodes = 10 pairs = 8 overlap components
+val:   14 directional episodes =  7 pairs = 2 overlap components
+test:   6 directional episodes =  3 pairs = 1 overlap component (closed)
 ```
 
 양방향 episode는 독립 표본이 아니다. 모든 confidence interval과 hypothesis test의 resampling unit은
@@ -1509,7 +1519,7 @@ accept_rate >= 0.20
 
 를 요구한다.
 
-`cluster_harm_rate`는 각 undirected scene-pair group의 mean normalized `Delta_future`가 `epsilon_u`보다 큰 group의 비율이다. 7개 validation group에서는 최대 1개 harmful group만 허용한다. directional `harm_rate`도 반드시 함께 보고한다.
+`cluster_harm_rate`는 각 physical-overlap component의 mean normalized `Delta_future`가 `epsilon_u`보다 큰 component의 비율이다. validation에는 독립 component가 2개뿐이므로 `cluster_harm_rate <= 0.15`는 harmful component가 0개여야 한다. directional/pair-level `harm_rate`도 반드시 함께 보고한다.
 
 ---
 
@@ -1527,7 +1537,7 @@ AND
 cluster_harm_rate <= 0.10
 ```
 
-로 정의한다. bootstrap은 undirected/overlap cluster를 10,000회 resample하고 seed를 config에 저장한다. 7개 validation group에서 `cluster_harm_rate <= 0.10`은 harmful group이 0개여야 함을 뜻한다. 이 validation은 feasibility gate이지 paper-final 일반화 증거가 아니며, 새로운 closed benchmark에서의 최종 검증은 별도 EXP ID로 수행한다.
+로 정의한다. bootstrap은 overlap component를 10,000회 resample하고 seed를 config에 저장한다. 단, validation의 2개 component로 계산한 CI는 descriptive feasibility diagnostic일 뿐 유효한 paper-level inferential evidence로 해석하지 않는다. 새로운 closed benchmark에서의 최종 검증은 별도 EXP ID로 수행한다.
 
 ---
 

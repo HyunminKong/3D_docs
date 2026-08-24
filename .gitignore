@@ -15,6 +15,7 @@ venv/
 /data/
 /dnpc/outputs/
 /revisit3d/checkpoints/
+/revisit3d/cache/
 /skillmem/results/
 *.pt
 *.pth
