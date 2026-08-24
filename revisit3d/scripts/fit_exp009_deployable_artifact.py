@@ -96,7 +96,7 @@ def main() -> None:
     exact_error = float(np.max(np.abs(
         address.predict(prefilter_matrix) - _mips_score(compiled, prefilter_matrix)
     )))
-    if exact_error > 1e-10:
+    if exact_error > float(config["address"]["maximum_float64_equivalence_error"]):
         raise RuntimeError(f"compiled utility-MIPS is not exact: {exact_error}")
 
     rows = router_rows["rows"]

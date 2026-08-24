@@ -1,0 +1,40 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage12_validation_pilot_freeze",
+  "protocol_revision": "v2.2",
+  "split": "val",
+  "metadata_only": true,
+  "image_pixels_accessed": false,
+  "model_output_accessed": false,
+  "source_manifest": "revisit3d/manifests/nuscenes_revisit_unseen_exp009_v11.json",
+  "source_manifest_sha256": "682cca8796e5cb321ae8f02efc90f8eea495bdb93e24a1db8afee9bc64d6e13f",
+  "pilot_manifest": "revisit3d/manifests/exp009_validation_pilot_v22.json",
+  "pilot_manifest_sha256": "52da64b3edfac4abdafcce06e866526d12c37959f173f5ee07538ca3ff476e68",
+  "directional_episodes": 117,
+  "components": 17,
+  "component_ids": [
+    2,
+    5,
+    11,
+    12,
+    13,
+    14,
+    24,
+    29,
+    31,
+    38,
+    39,
+    40,
+    41,
+    53,
+    54,
+    55,
+    61
+  ],
+  "locations": [
+    "boston-seaport",
+    "singapore-hollandvillage",
+    "singapore-onenorth",
+    "singapore-queenstown"
+  ]
+}

@@ -46,6 +46,7 @@ address:
   ridge_alpha: 1.0
   feature_columns: [8, 264]
   compiled_form: exact_64d_maximum_inner_product
+  maximum_float64_equivalence_error: 0.00000001
 
 router:
   model: standard_scaler_pca16_ridge
