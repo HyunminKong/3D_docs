@@ -1,0 +1,39 @@
+experiment: EXP-009
+protocol_revision: v2.0
+seed: 900020
+
+source:
+  stage7_config: configs/EXP-009_causal_dino_retrieval_v17.yaml
+  stage7_result: revisit3d/results/EXP-009/stage7_causal_dino_retrieval_train_v17.json
+  stage8_config: configs/EXP-009_random_retrieval_null_v18.yaml
+  stage8_result: revisit3d/results/EXP-009/stage8_random_retrieval_null_train_v18.json
+  stage9_result: revisit3d/results/EXP-009/stage9_utility_prefilter_crossfit_train_v19.json
+  candidate_cache: revisit3d/cache/EXP-009/random_retrieval_null_candidates_train_v18.json
+  geometry_manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+
+prefilter:
+  model: standard_scaler_ridge
+  ridge_alpha: 1.0
+  crossfit: leave_one_location_out_excluding_target_and_source_location
+  candidate_count: 5
+  primary_features: transport_descriptor
+  feature_variants:
+    dinov2_pair: [0, 8]
+    transport_descriptor: [8, 264]
+    adaptation_history: [264, 274]
+    all_observable: [0, 274]
+
+statistics:
+  utility_deadband: 0.01
+  bootstrap_samples: 10000
+  bootstrap_seed: 900020
+
+success:
+  require_positive_pooled_oof_spearman: true
+  minimum_each_location_spearman: 0.0
+  oracle_topk_component_interval_over_random_must_be_positive: true
+  router_component_interval_over_random_must_be_positive: true
+  router_harm_not_above_random_median: true
+
+output:
+  result: revisit3d/results/EXP-009/stage10_location_crossfit_prefilter_train_v20.json

@@ -376,3 +376,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-9 fitting
 
 Stage 9 uses the fixed Stage-8 causal panels and future utility labels to cross-fit a cheap pre-transport pair scorer. Its deployable inputs are frozen DINO pair statistics, pooled learned transport descriptors, and current/source TTT objective histories; query information and post-transport statistics are prohibited. A fixed StandardScaler→Ridge(alpha=1) model over all 274 observables is primary, with four registered feature ablations. It must beat the per-target matched-random expectation with positive component intervals for both oracle top-K and unchanged-router utility, show positive OOF association, and not exceed random-median harm. Success authorizes distillation to a scalable utility-conditioned address; failure means the available pre-transport context does not identify reusable updates.
+
+## D055 — Utility-conditioned prefiltering is feasible; DINO-only is anti-predictive
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-9 execution
+
+The all-observable Ridge prefilter passed at 0.03253 oracle top-K and 0.02012 routed utility versus random 0.02642/0.01614, with strictly positive 25-component intervals. DINO-only had OOF Spearman -0.187, while transport descriptors reached +0.281 and adaptation histories +0.379. The transport-only scorer is especially attractive: it achieved 0.03241 oracle, 0.02039 routed utility, and 8.72% harm, and its linear descriptor interaction can be represented exactly as maximum inner product search. This supports the core claim that adaptation utility, not place identity, should supervise the long-term address.
+
+## D056 — Correct source-memory entity leakage before locking the address
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-10 fitting
+
+Target-component OOF does not exclude a memory source from appearing in another target's training pairs. The audit found 147 to 4,002 held-location source rows in the corresponding naive training folds. Stage 10 therefore leaves out an entire location and removes every training row whose target or source belongs to that location. The transport-descriptor Ridge is the registered primary because it is both strong and exactly factorable into a 64-D MIPS query/source score; DINO-only, history-only, and all-observable models are ablations. Positive pooled and each-location association plus random-null utility and harm gates are required before fitting a deployable artifact.

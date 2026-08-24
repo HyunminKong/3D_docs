@@ -113,3 +113,13 @@ The matched null decisively rejected DINOv2 as a plasticity-utility address. Acr
 Use the fixed Stage-8 panels to test whether future adaptation utility is predictable before expensive code transport. The input contains only frozen DINO pair statistics, current/source learned transport descriptors, and their past/current TTT objective histories; transported-code statistics and query/future quantities are excluded. Fit a fixed StandardScaler→Ridge(alpha=1) model by leave-one-physical-component-out cross-fitting. The all-observable 274-D input is primary; DINO-only, transport-descriptor-only, history-only, and DINO+history are fixed ablations.
 
 Rank each panel by the OOF prediction, prefilter K=5, and evaluate both oracle utility in that set and the unchanged nested utility router. The primary passes only with positive OOF score/utility association, positive component-bootstrap lower bounds over the matched random expectation for oracle and routed utility, and routed harm no higher than the Stage-8 random median. This is a feasibility test of a utility-conditioned pair scorer, not yet a scalable dual-encoder address.
+
+### Stage-9 result
+
+The primary passed all checks. Its candidate OOF Spearman was **0.299**; top-K oracle utility was **+0.03253** and routed utility **+0.02012** versus matched-random +0.02642/+0.01614. Component-bootstrap improvements were [+0.00410, +0.00719] oracle and [+0.00164, +0.00586] routed, with routed harm equal to the random median at 10.55%. DINO-only was negatively associated with utility (-0.187), while the transport descriptor (+0.281) and adaptation history (+0.379) carried the signal. The transport-descriptor ablation also had the best routed point estimate (+0.02039) and lower harm (8.72%).
+
+## Stage-10 source-entity leakage correction
+
+Stage 9 held out target components, but one source memory can occur in training pairs for other targets. Correct this by leave-one-location-out evaluation: for a held location, remove every training pair whose target **or source** belongs to that location, then test all target pairs from the held location. This prevents direct source-entity exposure and tests geographic transfer.
+
+The exactly factorable 256-D transport-descriptor pair features are primary; their linear score can later be compiled into a 64-D maximum-inner-product address. DINO, adaptation history, and all-observable features remain fixed ablations. The primary must have positive pooled and per-location utility association, positive component-bootstrap gains over matched random for oracle and routed utility, and no higher routed harm.
