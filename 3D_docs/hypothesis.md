@@ -6,51 +6,51 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Supported as feasibility evidence.** Expanded train OOF visual transport achieved +1.80% candidate utility, and the utility-routed local memory reproduced at +1.79% on one-shot validation. Validation has only two components, so broader generalization remains open.
+Status: **Supported for static revisits.** Global and slot states failed context selectivity, whereas visual local-code transport produced positive utility throughout the expanded train, unseen validation, and final unseen test. On the locked test, the selected bounded system reached +2.088% routed utility over current-only TTT and the top-K oracle reached +3.356%.
 
 ## H2-P — Predicted geometry as the update carrier
 
 Predicted 3D alignment transports a reusable update better and more safely than appearance-only correspondence.
 
-Status: **Rejected in EXP-006 train OOF.** Geometry and geometry+appearance did not improve mean utility over visual transport, covered only 48% of candidates, and increased harm. Oracle-coordinate EXP-005 remains an upper-bound observation, not deployable evidence.
+Status: **Rejected.** Predicted geometry and geometry+appearance transport did not improve over visual transport, reduced coverage, and increased harm. Oracle-coordinate EXP-005 remains an upper bound, not deployable evidence.
 
 ## H2-E — Predicted geometry as routing evidence
 
-Predicted alignment quality is useful as evidence for candidate utility/risk even when geometry is not the update carrier.
+Predicted alignment quality is necessary primary evidence for candidate utility/risk even when geometry is not the update carrier.
 
-Status: **Rejected as a primary input.** The small 8-component increment did not reproduce after expansion: no-geometry/full utility was +2.80%/+2.82% with equal harm, while geometry-only routing was +1.84% with 6.58% harm. Alignment statistics remain diagnostic ablations only.
+Status: **Rejected as a primary input.** No-alignment observable routing generalized, while geometry-only routing was weaker and less safe. Alignment statistics remain diagnostic ablations.
 
 ## H3 — Online utility observability
 
-Current-only loss changes, update statistics, descriptors, and transport/alignment evidence predict the future utility of a past local update without accessing future frames online.
+Current/source descriptors, current-only loss changes, update statistics, and transport evidence predict the future utility of a past local correction without accessing future frames online.
 
-Status: **Supported as feasibility evidence.** Appearance plus current/source adaptation history selected +2.80% utility with 2.63% harm on expanded train OOF. The locked validation model achieved +1.79% with zero deadband harm and beat all registered mean-utility controls. Its 100% accept rate means rejection behavior is not established.
+Status: **Supported.** The source-entity-safe leave-one-location-out transport-descriptor address had positive utility association in every held location and beat matched random retrieval. The frozen address/router then transferred to validation and a terminal 22-component test. Query/future quantities were used only for offline labels and evaluation.
 
-## H4-U — Learnable utility routing
+## H4-U — Learnable utility addressing and routing
 
-A trainable candidate/current utility head can outperform current-loss, appearance-similarity, paired-identity, random-candidate, and visual-mean controls under grouped OOF evaluation.
+A trainable candidate/current utility model can retrieve and apply more useful adaptation than identity, appearance/place similarity, current-loss heuristics, and matched random addressing.
 
-Status: **Supported for ranking as feasibility evidence.** The locked regularized utility router reached +2.80% selected utility and 0.51% regret on expanded train OOF. On one-shot validation it reached +1.79% and 0.50% regret versus +1.41% visual mean, +1.29% current objective, and +0.79% matched identity. The two-component result is not paper-level confirmation, and reject-all/negative-transfer detection remains open.
+Status: **Supported for ranking and bounded application.** The exact 64-D utility-MIPS address plus fixed utility router achieved +2.088% on the locked test versus +1.602% for same-bank random addressing. The paired 22-component difference was +0.475 percentage points with 95% CI [+0.086, +0.924]. The router rejected some candidates but still produced 3.85% deadband harm, so perfect safety is not supported.
 
 ## H4-R — Learnable negative-transfer risk
 
-A risk head can generalize rejection of harmful memories across independent physical contexts.
+A separate risk classifier can generalize rejection of harmful memories across independent physical contexts.
 
-Status: **Rejected for the current explicit classifier.** Expansion produced 17 harmful candidates across three folds, so identifiability passed. Neural risk AUROC reached 0.69 without alignment and 0.72 with alignment, but hard routing still caused 3.95–5.26% harm and did not beat the regularized utility router. Safety in the locked model comes from bounded residual application and conservative utility selection, not a separately claimed risk classifier.
+Status: **Rejected for the tested classifier.** Neural risk AUROC was nontrivial, but hard routing did not improve selected harm over the compact utility router. Safety in the final model comes from utility selection, current-only fallback, and a fixed 0.10 residual—not a separately claimed risk classifier.
 
 ## H5 — Continual local-code consolidation
 
-Merging compatible local memories and preserving uncertainty/utility statistics can bound memory while retaining revisit benefit.
+A causal, capacity-bounded memory can retain most of an unbounded utility-addressed bank's revisit benefit.
 
-Status: **Partially supported through EXP-009 Stage 4.** EXP-007/008 established capacity-bounded utility retention and true-time benefit on the original train. On the fully unseen EXP-009 train pilot, a separate DINOv2 consolidation representation reached 0.936 leave-one-location-out AUC versus VGGT 0.744, with every location at least 0.900. The learned transport key remains unsuitable for consolidation. DINOv2's causal adaptation-utility benefit, independent locked-validation performance, learned safety, and universal capacity remain open.
+Status: **Supported at the EXP-009 static-benchmark scale; partially supported as a general continual-learning claim.** Reservoir-64 retained 100.98% of unbounded routed utility on the locked test and beat matched random addressing with a positive component interval. However, reservoir exceeded FIFO by only +0.020 percentage points and its CI crossed zero. Capacity 64 was selected on validation and is not universal; learned history eviction and generic DINO place consolidation were rejected.
 
 ## H6 — Extension to dynamic 4D
 
 The same utility-routed local-memory principle can attach to tracked dynamic points or motion-conditioned regions to improve reappearance and occlusion recovery.
 
-Status: **Open; outside the static-revisit milestone.**
+Status: **Open; outside the completed static-revisit milestone.**
 
-## Rejected hypotheses
+## Rejected or narrowed hypotheses
 
 - A small global/slot fast-weight vector is sufficiently context-selective for retrieval.
 - More optimization alone fixes update-direction collapse.
@@ -58,5 +58,9 @@ Status: **Open; outside the static-revisit milestone.**
 - The paired physical revisit is always the uniquely correct or most useful memory.
 - A parameter-free current-loss threshold is a sufficient negative-transfer safeguard.
 - Predicted 3D correspondence should be the primary carrier of the fast update.
-- Geometry-alignment failure should hard-reject a candidate that still has a valid visual transport.
+- Geometry-alignment failure should hard-reject a candidate that still has valid visual transport.
 - A second current TTT step is an equivalent replacement for memory reuse.
+- Generic DINOv2 place compatibility is a causal adaptation-utility address.
+- Past utility history is a reliable learned eviction priority at capacity 8.
+- Capacity 8 is a general sufficient bound.
+- Reservoir sampling is demonstrably superior to FIFO at capacity 64; the final test does not support this stronger claim.

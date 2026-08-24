@@ -446,3 +446,12 @@ Date: 2026-08-25
 Status: Accepted before any EXP-009 test pixel access
 
 Stage 15 freezes one canonical direction for each of 117 test overlaps using metadata only, spanning 22 components and four locations. The final artifact is a byte-serialized copy of the frozen address/router with only capacity changed from 8 to the validation-selected 64; its hash must be committed before caching test pixels. Stage 16 is one-shot and terminal. It requires healthy current TTT, routed utility above 0.01, at least 90% unbounded retention, no more harm than unbounded, superiority to FIFO and same-bank random addressing, and a positive component interval over random. The test result cannot be used for further method selection.
+
+## D065 — Accept utility-addressed bounded reuse; do not claim reservoir superiority
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-16 terminal test
+
+The pre-locked reservoir-64 system passed all eight terminal gates on 104 unique targets across 22 unseen physical components. Routed utility was 0.02088 with 3.85% harm, versus 0.01602 for same-bank random addressing. The paired component difference was 0.00475 with 95% CI [0.00086, 0.00924], and reservoir retained 100.98% of unbounded utility. This supports the final static-revisit claim: observable utility addressing retrieves reusable local TTT experience in a causal bounded bank.
+
+Reservoir and FIFO were nearly identical (0.02088 versus 0.02068), and their difference interval [-0.00013, 0.00059] crossed zero. The paper must therefore not claim that reservoir is the learned or uniquely superior consolidation strategy. Generic DINOv2 place addressing, learned history eviction, and universal capacity assumptions remain rejected. EXP-009 test is terminal and closed to all further tuning; the next milestone must use new development data for absolute reconstruction, resource, pose, or dynamic-4D evaluation.

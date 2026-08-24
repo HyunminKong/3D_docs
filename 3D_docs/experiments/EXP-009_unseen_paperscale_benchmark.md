@@ -159,3 +159,34 @@ Capacities 8, 16, and 32 retained 65.3%, 82.5%, and 89.1% of unbounded routed ut
 ## Stage-15/16 final test lock
 
 Freeze one metadata-selected direction for each of 117 locked test overlaps across 22 components and four locations. Copy the already frozen train artifact while changing only the validation-selected capacity to 64, record a new hash, and commit the pilot/hash before decoding any test pixel. The final test uses the same gates as capacity selection plus current-TTT health and at least 20 components. This is a one-shot terminal evaluation; no test outcome may alter the method.
+
+The pilot manifest SHA-256 was `eed965238af588a581874a0d5628641f1f4036caf01c22df8c303ec93727e440`. The serialized final artifact SHA-256 was `b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98`. Both hashes, the metadata-only pilot audit, and the evaluator were committed before the test cache was created.
+
+### Stage-16 terminal test result
+
+The one-shot test evaluated 104 unique target contexts grouped into 22 physical overlap components across all four locations. Current TTT remained healthy with a mean current/base future-loss ratio of **0.7018**.
+
+| Policy | Oracle top-K utility | Routed utility | Harm | Accept |
+|---|---:|---:|---:|---:|
+| Reservoir-64 utility address | +3.356% | **+2.088%** | **3.85%** | 86.54% |
+| FIFO-64 utility address | +3.271% | +2.068% | 3.85% | 86.54% |
+| Unbounded utility address | +3.280% | +2.068% | 3.85% | 86.54% |
+| Same-reservoir random address | — | +1.602% | 5.77% median | 75.56% mean |
+
+Reservoir-64 retained **100.98%** of unbounded routed utility. Its paired component difference over the matched random address was **+0.475 percentage points**, with 95% CI **[+0.086, +0.924]**. Every one of the eight registered terminal checks passed.
+
+Reservoir exceeded FIFO by only **+0.020 percentage points**, with 95% CI **[-0.013, +0.059]**. Therefore Stage 16 supports utility-conditioned addressing in a bounded bank, but it does not support a claim that reservoir is intrinsically better than FIFO. One of 22 components was harmful after routing, so negative-transfer prevention is improved but not solved.
+
+### Conclusion
+
+EXP-009 is complete. The fully unseen terminal test supports the static-revisit thesis that observable, utility-supervised addressing can retrieve reusable local TTT experience beyond a matched random policy while keeping a causal capacity bound. It rejects generic place similarity as the memory objective and narrows the continual-learning contribution to bounded retention rather than learned eviction or a universally optimal retention rule.
+
+No further tuning or selection is permitted on EXP-009 test. The next experiment must use a new development protocol to measure absolute reconstruction metrics, resource cost, pose adaptation, or dynamic 4D extension.
+
+### Final artifacts
+
+- Final config: `configs/EXP-009_final_test_v24.yaml`
+- Metadata pilot: `revisit3d/manifests/exp009_test_pilot_v24.json`
+- Lock audit: `revisit3d/results/EXP-009/stage15_final_test_lock_v24.json`
+- Terminal compact result: `revisit3d/results/EXP-009/stage16_final_locked_test_v24.json`
+- Large test geometry and candidate caches remain outside Git under `revisit3d/cache/EXP-009/`.

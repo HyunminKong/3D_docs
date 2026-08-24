@@ -4,77 +4,60 @@ Last updated: 2026-08-25
 
 ## Research goal
 
-Develop a streaming 3D/4D reconstruction framework that learns compact local corrections from current geometric evidence and reuses useful adaptation experience without uncontrolled interference or memory growth.
+Develop a streaming 3D/4D reconstruction framework that learns compact local corrections from current geometric evidence and reuses useful adaptation experience without uncontrolled interference or unbounded memory growth.
 
-The first milestone targets depth/point geometry under static revisits. Pose adaptation, dynamic point tracking, and 4D memory remain later milestones.
+The completed first milestone targets depth/point geometry under static cross-traversal revisits. Pose adaptation, dynamic point tracking, and 4D memory remain later milestones.
 
-## Current central claim
+## Supported central claim
 
-> **A spatial local TTT update is reusable after visual transport; a learned observable-utility model can rank candidate updates; and a distinct frozen token-set address plus causal utility history can bound a continual atom bank while retaining most reuse benefit.**
+> **A spatial local TTT correction is reusable after token-level visual transport, and its future utility can be addressed from current/source observable geometry descriptors. A fixed utility router can then apply useful memories through a bounded residual, while a capacity-64 causal reservoir retains the benefit on fully unseen revisit components.**
 
-Predicted 3D alignment is neither the fast-code carrier nor a primary router input. Correct memory is defined by causal future utility, not paired episode identity.
+This is an adaptation-utility claim, not a place-recognition claim. Generic DINOv2 place compatibility, predicted Sim(3) transport, and raw update similarity are not the selected memory address.
 
-## Locked EXP-006 architecture
+## Final static-revisit architecture after EXP-009
 
-1. Frozen VGGT supplies dense tokens and controlled tracking evidence.
-2. A custom plasticity head performs exactly one current-context TTT step on an 8-D per-token code.
-3. Past codes are transported to current tokens by visual correspondence.
-4. Current/source descriptors and observable adaptation-history/visual-transport statistics enter a regularized utility router.
-5. The router selects one candidate only when predicted utility is positive; otherwise it returns current-only TTT.
-6. Accepted memory is added after current TTT as a fixed 0.10 bounded residual.
-7. Predicted Sim(3) evidence and neural risk classification are ablations, not primary-path components.
-8. A second TTT step is prohibited in the primary path because it was unstable.
+1. A frozen VGGT/FastVGGT foundation supplies dense tokens, predicted geometry, and controlled frozen-track evidence.
+2. A custom plasticity head performs exactly one current-context TTT step on an 8-D per-token fast code. Foundation and head weights remain frozen online.
+3. Each causal memory record stores the local code/key, a pooled 64-D transport descriptor, and observable adaptation statistics.
+4. A train-only Ridge pair scorer over `[current, source, current-source, current*source]` descriptors is compiled exactly into a 64-D maximum-inner-product address.
+5. Each official-location stream uses deterministic reservoir retention with capacity 64 and retrieves K=5 candidates.
+6. A source code is moved to current tokens by learned visual correspondence and added after current TTT as a fixed 0.10 residual.
+7. A frozen `StandardScaler → PCA(16) → Ridge(alpha=1)` utility router selects one candidate only above its train-locked threshold; otherwise the model returns current-only TTT.
+8. Query/future frames are offline utility labels only. They never enter online TTT, memory addressing, transport, or routing.
 
-The locked Stage-2 router is `StandardScaler → PCA(16) → Ridge(alpha=1)` over descriptor interactions plus 20 non-alignment adaptation-history scalars. This compact linear model generalized better than the tested neural risk head on current data.
+Predicted geometry transport, DINO-only retrieval, learned history eviction, and a second TTT step are excluded from the primary path.
 
-## Provisional EXP-007 continual bank
+## Authoritative EXP-009 evidence
 
-1. The learned per-token key is used only for local code transport.
-2. A separate frozen DINOv2 ViT-L/14 four-view token-set key predicts consolidation compatibility; EXP-009 train OOF selected it over VGGT reconstruction tokens.
-3. The bank is capacity-bounded; capacity 8 is the current benchmark setting, not a universal architectural constant.
-4. Past-only predicted utility history prioritizes records for retention.
-5. Consolidation produces a small candidate set; the EXP-006 utility router ranks transported codes.
-6. Bucket similarity does not accept/reject reuse. Safety still comes from the fixed 0.10 residual and current-only fallback.
+| Split/protocol | Routed utility | Harm | Comparator | Main inference |
+|---|---:|---:|---|---|
+| Train, source-safe leave-one-location-out | +1.933% | 9.17% | matched random +1.614% | Factorable observable utility address transfers to unseen locations. |
+| Validation, unbounded one-shot | +2.642% | 5.83% | current-only TTT | Address/router transfer; capacity 8 fails. |
+| Validation, selected reservoir-64 | +2.647% | 5.83% | random address +1.923% | Capacity 64 is the smallest registered passing value. |
+| Locked test, reservoir-64 | **+2.088%** | **3.85%** | random address +1.602% | All eight terminal gates pass on 104 targets/22 components. |
 
-The dual-address design was selected because the learned transport key failed as a consolidation key. EXP-009 then resolved the provisional backbone choice: on 225 positive/225 strict-negative fully unseen train pairs, DINOv2 achieved 0.936 leave-one-location-out AUC versus VGGT 0.744, with a minimum location AUC of 0.900. DINOv2 is now the selected consolidation representation, pending causal utility validation.
+Locked-test details:
 
-EXP-008 corrected the stream order: across 71 unique target contexts in true nuScenes capture time, the frozen-key bank reached +2.650% utility and 5.63% harm versus appearance diversity +2.387%/7.04%. The paired component interval was [+0.019%, +0.486%], and the observed utility exceeded 96.1% of 1,000 matched compression nulls (p=0.03996). Thus the dual-address bank is the selected static-revisit architecture, while its independent-scene generalization is still open.
+- Current one-step TTT/base future loss ratio: **0.7018**.
+- Reservoir-64 oracle top-K utility: **+3.356%**.
+- Reservoir-64 routed utility: **+2.088%**; beneficial rate **65.38%**; acceptance **86.54%**.
+- Same-bank random-address utility: **+1.602%**.
+- Reservoir minus random component-bootstrap difference: **+0.475 points**, 95% CI **[+0.086, +0.924]**.
+- Unbounded routed utility: **+2.068%**; reservoir retention: **100.98%**.
+- FIFO-64 routed utility: **+2.068%**. Reservoir minus FIFO CI is **[-0.013, +0.059]** points, so retention-policy superiority is not supported.
 
-## Authoritative expanded train evidence
+The final compact result is `revisit3d/results/EXP-009/stage16_final_locked_test_v24.json`. The final artifact hash is `b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98`.
 
-All results are exact train-only OOF estimates over 76 directional episodes, 38 undirected overlaps, 19 physical-overlap components, and 380 candidates. Original validation/test episodes were protected by scene-disjoint component construction and remain unchanged.
+## Hypothesis status
 
-- Current one-step TTT/base: **0.6622**.
-- Global reuse: **+0.27%**; untransported local: **+0.45%**, harm **22.37%**.
-- Visual local transport: **+1.80%**, benefit **63.68%**, harm **4.47%**, coverage **100%**.
-- Predicted geometry: **+1.52%**, harm **5.20%**, coverage **70.79%**.
-- Geometry+appearance: **+1.64%**, harm **8.55%**, coverage **70.79%**.
-- Visual mean: **+1.84%**, benefit **75.0%**, harm **3.95%**.
-- Oracle best visual candidate: **+3.31%**.
-- Locked no-alignment utility router: **+2.80%**, benefit **82.89%**, harm **2.63%**, regret **0.51%**.
-- Current-objective heuristic: **+1.38%**, harm **2.63%**.
-- Appearance similarity: **+1.59%**, harm **7.89%**.
-- Matched physical identity: **+1.47%**, harm **9.21%**.
-- Router minus visual mean: **+0.98 percentage points**, component-bootstrap 95% CI **[+0.63, +1.45]**.
-- Router minus random: **+1.02 points**, CI **[+0.66, +1.50]**.
-- Router minus matched identity: **+1.35 points**, CI **[+0.89, +1.99]**.
-
-Risk-label diversity now passes: 242 beneficial, 121 neutral, and 17 harmful candidates across three folds. However, neural risk heads did not improve selected harm. The explicit risk-classifier hypothesis is rejected in its current form.
-
-## One-shot validation evidence
-
-The D023/D024-locked model was evaluated exactly once on the unchanged 14-episode validation split (2 physical-overlap components):
-
-- Locked utility router: **+1.785%** mean utility, **0%** deadband harm, **0.503%** regret, **100%** accept.
-- Visual mean: **+1.407%**, 7.14% harm.
-- Current objective: **+1.290%**, 0% harm.
-- Appearance similarity: **+1.073%**, 14.29% harm.
-- Matched identity: **+0.788%**, 14.29% harm.
-- Random candidate expectation: **+1.402%**.
-- Oracle candidate: **+2.288%**.
-- Router minus visual mean: **+0.378 points**; two-component descriptive bootstrap CI **[+0.064, +0.430]**.
-
-All five D024 descriptive checks passed. The router accepted every episode, so validation supports candidate ranking and bounded reuse but does not establish learned rejection. Its absolute two-component bootstrap CI crosses zero because one small component has neutral mean utility (−0.67%). This is a feasibility gate, not paper-level generalization.
+- H1 local reusable adaptation: **supported for static unseen revisits**.
+- H2-P predicted geometry carrier: **rejected**.
+- H2-E predicted geometry primary router evidence: **rejected**.
+- H3 online utility observability: **supported**.
+- H4-U learned utility addressing/routing: **supported for ranking and bounded application**; perfect negative-transfer rejection is not supported.
+- H4-R separate learned risk classifier: **rejected in its current form**.
+- H5 continual local-code consolidation: **supported for a benchmark-selected capacity-64 bounded bank; partially supported as a general CL mechanism** because reservoir does not significantly beat FIFO and capacity is not universal.
+- H6 dynamic 4D extension: **open**.
 
 ## Experiment status
 
@@ -82,23 +65,21 @@ All five D024 descriptive checks passed. The router accepted every episode, so v
 - EXP-002 — independent Revisit3D benchmark and objective health: completed.
 - EXP-003 — compact/global/slot reuse: completed, negative for selectivity.
 - EXP-004 — retrieval keys and vector routing: completed, partial/negative.
-- EXP-005 — dense oracle 3D transport: completed as controlled evidence; test split closed.
-- EXP-006 — completed; expanded train OOF and one-shot validation support the locked utility-routed visual-memory feasibility claim.
-- EXP-007 — completed as train-only pseudo-stream feasibility; H5 partially supported and the dual-address bounded bank selected provisionally.
-- EXP-008 — completed on train; true capture-time replay supports the dual-address bounded bank beyond a matched compression null.
-- EXP-009 — active: unseen benchmark frozen; train-only DINOv2 consolidation screening passed; causal local-reuse and bank utility transfer are next.
+- EXP-005 — dense oracle 3D transport: completed as controlled evidence; old test split closed.
+- EXP-006 — local visual plasticity atom and observable utility routing: completed.
+- EXP-007 — bounded continual-bank feasibility: completed, partial.
+- EXP-008 — true timestamp replay: completed on the original train split.
+- EXP-009 — **completed** with a pre-locked 22-component terminal test; all registered gates passed.
 
-## Current hypothesis status
+## Evidence boundary and next research milestone
 
-- H1 local reusable adaptation: supported on expanded train OOF and descriptive validation.
-- H2-P predicted geometry carrier: rejected.
-- H2-E predicted geometry primary router evidence: rejected.
-- H3 online utility observability: supported on expanded train OOF and descriptive validation.
-- H4-U learned utility routing: supported for ranking on expanded train OOF and descriptive validation; reject behavior remains unproven.
-- H4-R explicit risk classifier: rejected in current form.
-- H5 continual consolidation: partially supported; real chronological and independent-benchmark generalization remain open.
-- H6 dynamic 4D extension: open.
+The demonstrated endpoint is a static nuScenes revisit benchmark using normalized future query-loss utility from frozen foundation geometry/tracking outputs. It is not yet an end-to-end claim for metric point-cloud accuracy, camera-pose correction, dynamic point tracking, arbitrary environments, or indefinite streams. One test component remains harmful, reservoir is not statistically superior to FIFO at capacity 64, and memory/query computation and wall-clock scaling still require a systems audit.
 
-## Next step
+The next milestone is **EXP-010**, which must preserve the EXP-009 architecture as the frozen static baseline and extend the evaluation surface rather than tune on EXP-009 test. The priority order is:
 
-On a fixed EXP-009 train-only geometry pilot, test whether the locked VGGT plasticity head and one-step TTT objective retain positive local visual-reuse utility on unseen scenes. Then replace only the bank consolidation address with the selected frozen DINOv2 key and test causal utility against VGGT, appearance-diversity, FIFO, oracle-scene, and matched-permutation controls. Do not access EXP-009 validation/test pixels until the new train router/bank is locked.
+1. report absolute depth/point/pose metrics and online latency/memory against no-TTT, current-only TTT, FIFO-64, random address, and unbounded controls on a new development split;
+2. validate a pose-aware objective independently before allowing pose fast state;
+3. add motion-conditioned local atoms for occlusion/reappearance and dynamic point tracking;
+4. evaluate on a second dataset with a newly frozen component-disjoint protocol.
+
+No EXP-009 test outcome may be used for further model selection.

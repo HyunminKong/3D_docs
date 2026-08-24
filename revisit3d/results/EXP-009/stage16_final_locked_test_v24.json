@@ -1,0 +1,287 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage16_final_locked_test",
+  "protocol_revision": "v2.4",
+  "split": "test",
+  "validation_accessed": true,
+  "test_accessed": true,
+  "query_or_future_router_input": false,
+  "config": "configs/EXP-009_final_test_v24.yaml",
+  "artifact_sha256": "b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98",
+  "manifest_episodes": 117,
+  "unique_contexts": 256,
+  "unique_targets": 104,
+  "components": 22,
+  "mean_current_to_base_ratio": 0.7018327423586295,
+  "capacity": 64,
+  "candidate_count": 5,
+  "metrics": {
+    "reservoir_capacity64": {
+      "oracle_topk": {
+        "episodes": 104,
+        "mean_selected_utility": 0.033563029900855884,
+        "median_selected_utility": 0.0317704863846302,
+        "beneficial_rate": 0.8269230769230769,
+        "harmful_rate": 0.0,
+        "raw_sign_harm_rate": 0.0,
+        "accept_rate": 0.8942307692307693,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.01523639275027173,
+          "component-20": 0.045034723511586584,
+          "component-21": 0.02353340449432532,
+          "component-22": 0.047744051863749824,
+          "component-25": 0.0,
+          "component-26": 0.0028608012944459915,
+          "component-28": 0.04388192743062973,
+          "component-3": 0.020217283182622243,
+          "component-42": 0.040799230337142944,
+          "component-43": 0.0,
+          "component-44": 0.0336199232066671,
+          "component-45": 0.03391769644804299,
+          "component-46": 0.005912108346819878,
+          "component-48": 0.03242785297334194,
+          "component-50": 0.024081097915768623,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.08180829882621765,
+          "component-6": 0.07048586010932922,
+          "component-60": 0.05428096279501915,
+          "component-62": 0.013213823549449444,
+          "component-7": 0.038896567498644195
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "router": {
+        "episodes": 104,
+        "mean_selected_utility": 0.020878897532943832,
+        "median_selected_utility": 0.021493070758879185,
+        "beneficial_rate": 0.6538461538461539,
+        "harmful_rate": 0.038461538461538464,
+        "raw_sign_harm_rate": 0.09615384615384616,
+        "accept_rate": 0.8653846153846154,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.008342401199375413,
+          "component-20": 0.03681861674057371,
+          "component-21": 0.015305077812323967,
+          "component-22": 0.027451805548653715,
+          "component-25": -0.05693456530570984,
+          "component-26": -0.0007608247299989065,
+          "component-28": 0.031805719062685964,
+          "component-3": 0.010574470196540156,
+          "component-42": 0.021505707874894142,
+          "component-43": 0.0,
+          "component-44": 0.01957324023048083,
+          "component-45": 0.02605669340118766,
+          "component-46": 0.0009095969144254923,
+          "component-48": 0.024686384946107864,
+          "component-50": 0.009820032127511999,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.056376222521066666,
+          "component-6": 0.0,
+          "component-60": 0.02593344822525978,
+          "component-62": -0.003489122027531266,
+          "component-7": 0.028279449596690636
+        },
+        "component_harm_rate": 0.045454545454545456,
+        "harmful_components": [
+          "component-25"
+        ]
+      }
+    },
+    "fifo_capacity64": {
+      "oracle_topk": {
+        "episodes": 104,
+        "mean_selected_utility": 0.032710250808612236,
+        "median_selected_utility": 0.0317704863846302,
+        "beneficial_rate": 0.8173076923076923,
+        "harmful_rate": 0.0,
+        "raw_sign_harm_rate": 0.0,
+        "accept_rate": 0.8846153846153846,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.01523639275027173,
+          "component-20": 0.04247299907163122,
+          "component-21": 0.02353340449432532,
+          "component-22": 0.047744051863749824,
+          "component-25": 0.0,
+          "component-26": 0.0028608012944459915,
+          "component-28": 0.04388192743062973,
+          "component-3": 0.020217283182622243,
+          "component-42": 0.040799230337142944,
+          "component-43": 0.0,
+          "component-44": 0.0336199232066671,
+          "component-45": 0.033240255899727345,
+          "component-46": 0.005912108346819878,
+          "component-48": 0.03242785297334194,
+          "component-50": 0.024081097915768623,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.056376222521066666,
+          "component-6": 0.07048586010932922,
+          "component-60": 0.05428096279501915,
+          "component-62": 0.01812686026096344,
+          "component-7": 0.03567170351743698
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "router": {
+        "episodes": 104,
+        "mean_selected_utility": 0.02067644335413486,
+        "median_selected_utility": 0.021290777251124382,
+        "beneficial_rate": 0.6538461538461539,
+        "harmful_rate": 0.038461538461538464,
+        "raw_sign_harm_rate": 0.09615384615384616,
+        "accept_rate": 0.8653846153846154,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.008342401199375413,
+          "component-20": 0.03681861674057371,
+          "component-21": 0.015305077812323967,
+          "component-22": 0.026242000228237538,
+          "component-25": -0.05693456530570984,
+          "component-26": -0.0007608247299989065,
+          "component-28": 0.031805719062685964,
+          "component-3": 0.010574470196540156,
+          "component-42": 0.021505707874894142,
+          "component-43": 0.0,
+          "component-44": 0.01957324023048083,
+          "component-45": 0.026979304617270827,
+          "component-46": 0.0009095969144254923,
+          "component-48": 0.024686384946107864,
+          "component-50": 0.009820032127511999,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.056376222521066666,
+          "component-6": 0.0,
+          "component-60": 0.02593344822525978,
+          "component-62": -0.003489122027531266,
+          "component-7": 0.028389488308069605
+        },
+        "component_harm_rate": 0.045454545454545456,
+        "harmful_components": [
+          "component-25"
+        ]
+      }
+    },
+    "unbounded_utility_address": {
+      "oracle_topk": {
+        "episodes": 104,
+        "mean_selected_utility": 0.032803421978874564,
+        "median_selected_utility": 0.032259752973914146,
+        "beneficial_rate": 0.8076923076923077,
+        "harmful_rate": 0.0,
+        "raw_sign_harm_rate": 0.0,
+        "accept_rate": 0.8942307692307693,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.01523639275027173,
+          "component-20": 0.04345700800574074,
+          "component-21": 0.02353340449432532,
+          "component-22": 0.047744051863749824,
+          "component-25": 0.0,
+          "component-26": 0.0028608012944459915,
+          "component-28": 0.04162239953875542,
+          "component-3": 0.020217283182622243,
+          "component-42": 0.040799230337142944,
+          "component-43": 0.0,
+          "component-44": 0.0336199232066671,
+          "component-45": 0.033104943577200174,
+          "component-46": 0.005912108346819878,
+          "component-48": 0.03242785297334194,
+          "component-50": 0.022865009028464556,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.056376222521066666,
+          "component-6": 0.07048586010932922,
+          "component-60": 0.05428096279501915,
+          "component-62": 0.016950683668255806,
+          "component-7": 0.037719910110657416
+        },
+        "component_harm_rate": 0.0,
+        "harmful_components": []
+      },
+      "router": {
+        "episodes": 104,
+        "mean_selected_utility": 0.02067644335413486,
+        "median_selected_utility": 0.021290777251124382,
+        "beneficial_rate": 0.6538461538461539,
+        "harmful_rate": 0.038461538461538464,
+        "raw_sign_harm_rate": 0.09615384615384616,
+        "accept_rate": 0.8653846153846154,
+        "component_mean_utility": {
+          "component-15": 0.0,
+          "component-17": 0.008342401199375413,
+          "component-20": 0.03681861674057371,
+          "component-21": 0.015305077812323967,
+          "component-22": 0.026242000228237538,
+          "component-25": -0.05693456530570984,
+          "component-26": -0.0007608247299989065,
+          "component-28": 0.031805719062685964,
+          "component-3": 0.010574470196540156,
+          "component-42": 0.021505707874894142,
+          "component-43": 0.0,
+          "component-44": 0.01957324023048083,
+          "component-45": 0.026979304617270827,
+          "component-46": 0.0009095969144254923,
+          "component-48": 0.024686384946107864,
+          "component-50": 0.009820032127511999,
+          "component-56": 0.0065489220432937145,
+          "component-57": 0.056376222521066666,
+          "component-6": 0.0,
+          "component-60": 0.02593344822525978,
+          "component-62": -0.003489122027531266,
+          "component-7": 0.028389488308069605
+        },
+        "component_harm_rate": 0.045454545454545456,
+        "harmful_components": [
+          "component-25"
+        ]
+      }
+    }
+  },
+  "random_address": {
+    "mean_selected_utility": 0.01602236764214957,
+    "median_harmful_rate": 0.057692307692307696,
+    "mean_acceptance": 0.7556346153846154
+  },
+  "retention_of_unbounded_router_utility": 1.0097915379033737,
+  "bootstrap": {
+    "primary_minus_random_address": {
+      "unit": "physical_overlap_component",
+      "components": 22,
+      "samples": 10000,
+      "seed": 900024,
+      "mean_difference": 0.0047534859853417205,
+      "ci95": [
+        0.0008642618582760599,
+        0.009242903815174817
+      ]
+    },
+    "primary_minus_fifo": {
+      "unit": "physical_overlap_component",
+      "components": 22,
+      "samples": 10000,
+      "seed": 900025,
+      "mean_difference": 0.0001776335497933573,
+      "ci95": [
+        -0.00012948929348535705,
+        0.0005939034438342504
+      ]
+    }
+  },
+  "candidate_cache": "revisit3d/cache/EXP-009/final_test_candidates_v24.json",
+  "registered_gate": {
+    "checks": {
+      "current_objective_healthy": true,
+      "component_health": true,
+      "primary_utility_positive": true,
+      "retains_unbounded": true,
+      "harm_not_above_unbounded": true,
+      "beats_fifo": true,
+      "beats_random_address": true,
+      "random_interval_positive": true
+    },
+    "passed": true
+  },
+  "terminal_no_further_test_tuning": true
+}
