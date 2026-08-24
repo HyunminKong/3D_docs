@@ -1,0 +1,11252 @@
+[
+  {
+    "pair_id": "negative-0000",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 273.1560752245969,
+    "left": {
+      "scene": "scene-0245",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0911",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0001",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 390.4182604642079,
+    "left": {
+      "scene": "scene-0506",
+      "frames": [
+        27,
+        33,
+        42,
+        49
+      ]
+    },
+    "right": {
+      "scene": "scene-0290",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0002",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 405.9120468089622,
+    "left": {
+      "scene": "scene-0389",
+      "frames": [
+        140,
+        146,
+        155,
+        162
+      ]
+    },
+    "right": {
+      "scene": "scene-0258",
+      "frames": [
+        139,
+        145,
+        154,
+        159
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0003",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 545.0116356148312,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        2,
+        8,
+        17,
+        23
+      ]
+    },
+    "right": {
+      "scene": "scene-0303",
+      "frames": [
+        6,
+        12,
+        21,
+        27
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0004",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1203.8838122966154,
+    "left": {
+      "scene": "scene-0075",
+      "frames": [
+        142,
+        148,
+        157,
+        162
+      ]
+    },
+    "right": {
+      "scene": "scene-0303",
+      "frames": [
+        6,
+        12,
+        21,
+        27
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0005",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1104.1599580917534,
+    "left": {
+      "scene": "scene-0202",
+      "frames": [
+        156,
+        162,
+        171,
+        176
+      ]
+    },
+    "right": {
+      "scene": "scene-0099",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0006",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1757.6109476139904,
+    "left": {
+      "scene": "scene-0454",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0294",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0007",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 559.5908423068249,
+    "left": {
+      "scene": "scene-0586",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-0107",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0008",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 977.2393034627108,
+    "left": {
+      "scene": "scene-0072",
+      "frames": [
+        185,
+        191,
+        200,
+        206
+      ]
+    },
+    "right": {
+      "scene": "scene-0291",
+      "frames": [
+        103,
+        109,
+        118,
+        124
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0009",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 199.69378414853108,
+    "left": {
+      "scene": "scene-0461",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0448",
+      "frames": [
+        126,
+        132,
+        141,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0010",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 257.61954572896985,
+    "left": {
+      "scene": "scene-0106",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0909",
+      "frames": [
+        111,
+        117,
+        126,
+        132
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0011",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 738.4517059821649,
+    "left": {
+      "scene": "scene-0208",
+      "frames": [
+        173,
+        179,
+        188,
+        195
+      ]
+    },
+    "right": {
+      "scene": "scene-0643",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0012",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 802.951081084726,
+    "left": {
+      "scene": "scene-0106",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0208",
+      "frames": [
+        173,
+        179,
+        188,
+        195
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0013",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1408.7433766995962,
+    "left": {
+      "scene": "scene-0164",
+      "frames": [
+        51,
+        57,
+        66,
+        72
+      ]
+    },
+    "right": {
+      "scene": "scene-0106",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0014",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 2109.270054178366,
+    "left": {
+      "scene": "scene-0295",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0456",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0015",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 689.524704684504,
+    "left": {
+      "scene": "scene-0099",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0506",
+      "frames": [
+        27,
+        33,
+        42,
+        49
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0016",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 700.2963142741881,
+    "left": {
+      "scene": "scene-0284",
+      "frames": [
+        174,
+        180,
+        189,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0321",
+      "frames": [
+        47,
+        53,
+        62,
+        68
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0017",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 145.43674171327382,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        121,
+        127,
+        136,
+        142
+      ]
+    },
+    "right": {
+      "scene": "scene-0300",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0018",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 794.4271366977714,
+    "left": {
+      "scene": "scene-0643",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0666",
+      "frames": [
+        182,
+        188,
+        197,
+        204
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0019",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 628.7557854219372,
+    "left": {
+      "scene": "scene-0070",
+      "frames": [
+        16,
+        22,
+        31,
+        38
+      ]
+    },
+    "right": {
+      "scene": "scene-0321",
+      "frames": [
+        47,
+        53,
+        62,
+        68
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0020",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 387.1063900465591,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-0728",
+      "frames": [
+        195,
+        201,
+        210,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0021",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 294.2174049548534,
+    "left": {
+      "scene": "scene-0331",
+      "frames": [
+        121,
+        127,
+        136,
+        142
+      ]
+    },
+    "right": {
+      "scene": "scene-0696",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0022",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 944.0957187755074,
+    "left": {
+      "scene": "scene-0301",
+      "frames": [
+        16,
+        22,
+        31,
+        37
+      ]
+    },
+    "right": {
+      "scene": "scene-0461",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0023",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1041.3409706535733,
+    "left": {
+      "scene": "scene-0586",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0688",
+      "frames": [
+        55,
+        61,
+        70,
+        77
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0024",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 481.1310850918049,
+    "left": {
+      "scene": "scene-0321",
+      "frames": [
+        47,
+        53,
+        62,
+        68
+      ]
+    },
+    "right": {
+      "scene": "scene-0242",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0025",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 235.66713667598037,
+    "left": {
+      "scene": "scene-0448",
+      "frames": [
+        126,
+        132,
+        141,
+        148
+      ]
+    },
+    "right": {
+      "scene": "scene-0225",
+      "frames": [
+        163,
+        169,
+        178,
+        184
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0026",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 110.22632403116017,
+    "left": {
+      "scene": "scene-0289",
+      "frames": [
+        179,
+        185,
+        194,
+        200
+      ]
+    },
+    "right": {
+      "scene": "scene-0107",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0027",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 433.33372747118295,
+    "left": {
+      "scene": "scene-0639",
+      "frames": [
+        34,
+        40,
+        49,
+        56
+      ]
+    },
+    "right": {
+      "scene": "scene-0070",
+      "frames": [
+        16,
+        22,
+        31,
+        38
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0028",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1257.4002512256784,
+    "left": {
+      "scene": "scene-0688",
+      "frames": [
+        55,
+        61,
+        70,
+        77
+      ]
+    },
+    "right": {
+      "scene": "scene-0284",
+      "frames": [
+        174,
+        180,
+        189,
+        194
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0029",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 130.9709963632303,
+    "left": {
+      "scene": "scene-0105",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0898",
+      "frames": [
+        68,
+        74,
+        83,
+        89
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0030",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 344.6780479003244,
+    "left": {
+      "scene": "scene-0253",
+      "frames": [
+        90,
+        96,
+        105,
+        112
+      ]
+    },
+    "right": {
+      "scene": "scene-0520",
+      "frames": [
+        188,
+        194,
+        203,
+        210
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0031",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 172.12087469184326,
+    "left": {
+      "scene": "scene-0463",
+      "frames": [
+        134,
+        140,
+        149,
+        156
+      ]
+    },
+    "right": {
+      "scene": "scene-0469",
+      "frames": [
+        171,
+        177,
+        186,
+        192
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0032",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 432.26191129467395,
+    "left": {
+      "scene": "scene-0291",
+      "frames": [
+        103,
+        109,
+        118,
+        124
+      ]
+    },
+    "right": {
+      "scene": "scene-0235",
+      "frames": [
+        68,
+        74,
+        83,
+        89
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0033",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 234.29865647907354,
+    "left": {
+      "scene": "scene-0258",
+      "frames": [
+        139,
+        145,
+        154,
+        159
+      ]
+    },
+    "right": {
+      "scene": "scene-0876",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0034",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1200.9064365002303,
+    "left": {
+      "scene": "scene-0068",
+      "frames": [
+        166,
+        172,
+        181,
+        187
+      ]
+    },
+    "right": {
+      "scene": "scene-0471",
+      "frames": [
+        99,
+        105,
+        114,
+        120
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0035",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1001.9591505985748,
+    "left": {
+      "scene": "scene-0245",
+      "frames": [
+        150,
+        156,
+        165,
+        171
+      ]
+    },
+    "right": {
+      "scene": "scene-0263",
+      "frames": [
+        137,
+        143,
+        152,
+        158
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0036",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 678.7060351738361,
+    "left": {
+      "scene": "scene-0225",
+      "frames": [
+        163,
+        169,
+        178,
+        184
+      ]
+    },
+    "right": {
+      "scene": "scene-0303",
+      "frames": [
+        6,
+        12,
+        21,
+        27
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0037",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1048.334654552685,
+    "left": {
+      "scene": "scene-0255",
+      "frames": [
+        145,
+        151,
+        160,
+        166
+      ]
+    },
+    "right": {
+      "scene": "scene-0258",
+      "frames": [
+        6,
+        12,
+        21,
+        26
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0038",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 876.035634033704,
+    "left": {
+      "scene": "scene-0213",
+      "frames": [
+        109,
+        115,
+        124,
+        129
+      ]
+    },
+    "right": {
+      "scene": "scene-0289",
+      "frames": [
+        179,
+        185,
+        194,
+        200
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0039",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 720.6360775685907,
+    "left": {
+      "scene": "scene-0469",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0296",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0040",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 387.64446852927915,
+    "left": {
+      "scene": "scene-0228",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    },
+    "right": {
+      "scene": "scene-0688",
+      "frames": [
+        55,
+        61,
+        70,
+        77
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0041",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 678.6965532505944,
+    "left": {
+      "scene": "scene-0227",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0099",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0042",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 193.3927094031317,
+    "left": {
+      "scene": "scene-0067",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0448",
+      "frames": [
+        126,
+        132,
+        141,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0043",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 551.1106076169797,
+    "left": {
+      "scene": "scene-0212",
+      "frames": [
+        25,
+        31,
+        40,
+        46
+      ]
+    },
+    "right": {
+      "scene": "scene-0389",
+      "frames": [
+        140,
+        146,
+        155,
+        162
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0044",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1220.650241973975,
+    "left": {
+      "scene": "scene-0701",
+      "frames": [
+        201,
+        207,
+        216,
+        223
+      ]
+    },
+    "right": {
+      "scene": "scene-0475",
+      "frames": [
+        194,
+        200,
+        209,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0045",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 303.75694056119994,
+    "left": {
+      "scene": "scene-0107",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    },
+    "right": {
+      "scene": "scene-0227",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0046",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 453.2159657781741,
+    "left": {
+      "scene": "scene-0591",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    },
+    "right": {
+      "scene": "scene-0207",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0047",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1630.2058522851432,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-0696",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0048",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1225.7238162050967,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0296",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0049",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 449.0686633215225,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0876",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0050",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 548.3830421976788,
+    "left": {
+      "scene": "scene-0065",
+      "frames": [
+        182,
+        188,
+        197,
+        203
+      ]
+    },
+    "right": {
+      "scene": "scene-0643",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0051",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 773.1519140663778,
+    "left": {
+      "scene": "scene-0462",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0871",
+      "frames": [
+        150,
+        156,
+        166,
+        172
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0052",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 487.01750134713524,
+    "left": {
+      "scene": "scene-0300",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0707",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0053",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 384.152497898403,
+    "left": {
+      "scene": "scene-0666",
+      "frames": [
+        182,
+        188,
+        197,
+        204
+      ]
+    },
+    "right": {
+      "scene": "scene-0669",
+      "frames": [
+        124,
+        130,
+        139,
+        146
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0054",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 277.15519593725503,
+    "left": {
+      "scene": "scene-0096",
+      "frames": [
+        28,
+        34,
+        43,
+        49
+      ]
+    },
+    "right": {
+      "scene": "scene-0106",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0055",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1775.901981810724,
+    "left": {
+      "scene": "scene-0474",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0075",
+      "frames": [
+        142,
+        148,
+        157,
+        162
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0056",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 318.8147026195323,
+    "left": {
+      "scene": "scene-0263",
+      "frames": [
+        137,
+        143,
+        152,
+        158
+      ]
+    },
+    "right": {
+      "scene": "scene-0586",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0057",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 250.4091514502644,
+    "left": {
+      "scene": "scene-0222",
+      "frames": [
+        21,
+        27,
+        36,
+        42
+      ]
+    },
+    "right": {
+      "scene": "scene-0455",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0058",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1240.2098434418651,
+    "left": {
+      "scene": "scene-0455",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0290",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0059",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 804.6840285777657,
+    "left": {
+      "scene": "scene-0511",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0462",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0060",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 288.20108008515876,
+    "left": {
+      "scene": "scene-0096",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0586",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0061",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 477.6647152976499,
+    "left": {
+      "scene": "scene-0871",
+      "frames": [
+        150,
+        156,
+        166,
+        172
+      ]
+    },
+    "right": {
+      "scene": "scene-0707",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0062",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1024.2036061182957,
+    "left": {
+      "scene": "scene-0677",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0331",
+      "frames": [
+        121,
+        127,
+        136,
+        142
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0063",
+    "label": 0,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_bbox_distance_m": 1754.5866705244564,
+    "left": {
+      "scene": "scene-0235",
+      "frames": [
+        68,
+        74,
+        83,
+        89
+      ]
+    },
+    "right": {
+      "scene": "scene-0213",
+      "frames": [
+        109,
+        115,
+        124,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0064",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_bbox_distance_m": 1167.3725992072966,
+    "left": {
+      "scene": "scene-0418",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    },
+    "right": {
+      "scene": "scene-1109",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0065",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1065.7347534686376,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-0408",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0066",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 556.8756078966575,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0067",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1074.6581579140886,
+    "left": {
+      "scene": "scene-1073",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        42,
+        48,
+        57,
+        63
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0068",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 77.94288023685385,
+    "left": {
+      "scene": "scene-1072",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-1077",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0069",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1097.0357979895618,
+    "left": {
+      "scene": "scene-1109",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0070",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 23,
+    "minimum_bbox_distance_m": 772.5934996785356,
+    "left": {
+      "scene": "scene-1089",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-1106",
+      "frames": [
+        107,
+        113,
+        122,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0071",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1181.577848331592,
+    "left": {
+      "scene": "scene-1072",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-1092",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0072",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_bbox_distance_m": 351.8765629950608,
+    "left": {
+      "scene": "scene-0408",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    },
+    "right": {
+      "scene": "scene-1055",
+      "frames": [
+        113,
+        119,
+        128,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0073",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1183.7439710514263,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0074",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 690.1620819656147,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        104,
+        110,
+        119,
+        125
+      ]
+    },
+    "right": {
+      "scene": "scene-1090",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0075",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1308.5543977286266,
+    "left": {
+      "scene": "scene-1082",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-1069",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0076",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1141.8444003093127,
+    "left": {
+      "scene": "scene-1078",
+      "frames": [
+        130,
+        136,
+        145,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0077",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 64,
+    "minimum_bbox_distance_m": 1298.18562046994,
+    "left": {
+      "scene": "scene-1092",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0078",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 332.70853503029525,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0079",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 148.54156618640945,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        123,
+        129,
+        138,
+        144
+      ]
+    },
+    "right": {
+      "scene": "scene-1085",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0080",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_bbox_distance_m": 902.7348487529232,
+    "left": {
+      "scene": "scene-1053",
+      "frames": [
+        144,
+        150,
+        159,
+        166
+      ]
+    },
+    "right": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0081",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_bbox_distance_m": 924.5971457144203,
+    "left": {
+      "scene": "scene-0408",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1107",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0082",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1207.9958715771954,
+    "left": {
+      "scene": "scene-1084",
+      "frames": [
+        21,
+        27,
+        36,
+        43
+      ]
+    },
+    "right": {
+      "scene": "scene-0416",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0083",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 483.9357230355163,
+    "left": {
+      "scene": "scene-0413",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        175,
+        181,
+        190,
+        197
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0084",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1033.320711119257,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        152,
+        158,
+        167,
+        173
+      ]
+    },
+    "right": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0085",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1206.5149372517033,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-0416",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0086",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 50.52177289643737,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        159,
+        165,
+        174,
+        181
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0087",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_bbox_distance_m": 1146.8799247682937,
+    "left": {
+      "scene": "scene-0418",
+      "frames": [
+        1,
+        7,
+        16,
+        23
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        114,
+        120,
+        129,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0088",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 168.2428487434877,
+    "left": {
+      "scene": "scene-1071",
+      "frames": [
+        74,
+        80,
+        89,
+        96
+      ]
+    },
+    "right": {
+      "scene": "scene-1072",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0089",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 49,
+    "minimum_bbox_distance_m": 722.9408345354163,
+    "left": {
+      "scene": "scene-0410",
+      "frames": [
+        115,
+        121,
+        130,
+        137
+      ]
+    },
+    "right": {
+      "scene": "scene-0418",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0090",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 1030.3332692047998,
+    "left": {
+      "scene": "scene-0411",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1080",
+      "frames": [
+        54,
+        60,
+        69,
+        76
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0091",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_bbox_distance_m": 741.0056586121711,
+    "left": {
+      "scene": "scene-1064",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-1057",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0092",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1449.313344620576,
+    "left": {
+      "scene": "scene-1071",
+      "frames": [
+        175,
+        181,
+        190,
+        197
+      ]
+    },
+    "right": {
+      "scene": "scene-1057",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0093",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 1221.59481181052,
+    "left": {
+      "scene": "scene-0413",
+      "frames": [
+        172,
+        178,
+        187,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-1106",
+      "frames": [
+        107,
+        113,
+        122,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0094",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 556.8756078966575,
+    "left": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-1079",
+      "frames": [
+        104,
+        110,
+        119,
+        125
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0095",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 30.861323525849578,
+    "left": {
+      "scene": "scene-1084",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1108",
+      "frames": [
+        108,
+        114,
+        123,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0096",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 1249.428030813019,
+    "left": {
+      "scene": "scene-1055",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1082",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0097",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_bbox_distance_m": 773.6663544044949,
+    "left": {
+      "scene": "scene-0416",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-1053",
+      "frames": [
+        144,
+        150,
+        159,
+        166
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0098",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 51,
+    "minimum_bbox_distance_m": 717.5664276721772,
+    "left": {
+      "scene": "scene-1068",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-1072",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0099",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 842.1815798379255,
+    "left": {
+      "scene": "scene-1077",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        42,
+        48,
+        57,
+        63
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0100",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 900.3432674737602,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0101",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 1210.0190321256869,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        94,
+        100,
+        110,
+        116
+      ]
+    },
+    "right": {
+      "scene": "scene-1072",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0102",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_bbox_distance_m": 728.8953895495812,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1069",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0103",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 1215.0099351780407,
+    "left": {
+      "scene": "scene-1080",
+      "frames": [
+        54,
+        60,
+        69,
+        76
+      ]
+    },
+    "right": {
+      "scene": "scene-0416",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0104",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_bbox_distance_m": 981.2717117885355,
+    "left": {
+      "scene": "scene-1076",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-1082",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0105",
+    "label": 0,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_bbox_distance_m": 389.19415736221526,
+    "left": {
+      "scene": "scene-1057",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0106",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 68.20692852914917,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        50,
+        56,
+        65,
+        72
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0107",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 69.59564070982013,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        29,
+        35,
+        44,
+        50
+      ]
+    },
+    "right": {
+      "scene": "scene-0134",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0108",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 63,
+    "minimum_bbox_distance_m": 1007.8972453069379,
+    "left": {
+      "scene": "scene-0957",
+      "frames": [
+        96,
+        102,
+        111,
+        118
+      ]
+    },
+    "right": {
+      "scene": "scene-0963",
+      "frames": [
+        127,
+        133,
+        142,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0109",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 258.1477060624895,
+    "left": {
+      "scene": "scene-0982",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0977",
+      "frames": [
+        188,
+        194,
+        203,
+        209
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0110",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 215.6275832995459,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    },
+    "right": {
+      "scene": "scene-0966",
+      "frames": [
+        110,
+        116,
+        125,
+        132
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0111",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 78.32983209383013,
+    "left": {
+      "scene": "scene-0120",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        187,
+        193,
+        202,
+        208
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0112",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_bbox_distance_m": 703.614481412941,
+    "left": {
+      "scene": "scene-0369",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0113",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 43.52117321526992,
+    "left": {
+      "scene": "scene-0376",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0371",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0114",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 180.78407794584638,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        54,
+        60,
+        69,
+        74
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        201,
+        207,
+        216,
+        223
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0115",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 657.4418045248075,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0367",
+      "frames": [
+        114,
+        120,
+        129,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0116",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_bbox_distance_m": 796.4727144987099,
+    "left": {
+      "scene": "scene-0368",
+      "frames": [
+        43,
+        49,
+        58,
+        65
+      ]
+    },
+    "right": {
+      "scene": "scene-0275",
+      "frames": [
+        112,
+        118,
+        127,
+        133
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0117",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 322.5701195512214,
+    "left": {
+      "scene": "scene-0359",
+      "frames": [
+        48,
+        54,
+        63,
+        69
+      ]
+    },
+    "right": {
+      "scene": "scene-0378",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0118",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 564.3774943093217,
+    "left": {
+      "scene": "scene-0968",
+      "frames": [
+        201,
+        207,
+        216,
+        223
+      ]
+    },
+    "right": {
+      "scene": "scene-0384",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0119",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 177.14800040457135,
+    "left": {
+      "scene": "scene-0370",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0120",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0120",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 30.640929915146366,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        187,
+        193,
+        202,
+        208
+      ]
+    },
+    "right": {
+      "scene": "scene-0358",
+      "frames": [
+        185,
+        191,
+        200,
+        206
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0121",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 78.40713786132963,
+    "left": {
+      "scene": "scene-0127",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0122",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_bbox_distance_m": 794.5331569076257,
+    "left": {
+      "scene": "scene-0122",
+      "frames": [
+        193,
+        199,
+        208,
+        213
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0123",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 106.68984838168001,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        130,
+        136,
+        145,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-0370",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0124",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_bbox_distance_m": 646.9669798120135,
+    "left": {
+      "scene": "scene-0269",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0122",
+      "frames": [
+        193,
+        199,
+        208,
+        213
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0125",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 189.01585293028754,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        2,
+        8,
+        17,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0120",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0126",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 125.60106772696847,
+    "left": {
+      "scene": "scene-0132",
+      "frames": [
+        166,
+        172,
+        181,
+        187
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        17,
+        23,
+        32,
+        39
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0127",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_bbox_distance_m": 556.7536868570244,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0044",
+      "frames": [
+        108,
+        114,
+        123,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0128",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 32,
+    "minimum_bbox_distance_m": 193.61104715654557,
+    "left": {
+      "scene": "scene-0139",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    },
+    "right": {
+      "scene": "scene-0348",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0129",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 16,
+    "minimum_bbox_distance_m": 121.16932567651591,
+    "left": {
+      "scene": "scene-0158",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0130",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 52,
+    "minimum_bbox_distance_m": 432.1862470389947,
+    "left": {
+      "scene": "scene-0052",
+      "frames": [
+        125,
+        131,
+        140,
+        146
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0131",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_bbox_distance_m": 178.86883522397977,
+    "left": {
+      "scene": "scene-0356",
+      "frames": [
+        192,
+        198,
+        207,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0269",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0132",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 718.0427274736693,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0957",
+      "frames": [
+        96,
+        102,
+        111,
+        118
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0133",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 144.78922946444627,
+    "left": {
+      "scene": "scene-0968",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    },
+    "right": {
+      "scene": "scene-0046",
+      "frames": [
+        12,
+        18,
+        27,
+        32
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0134",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 196.18783466962432,
+    "left": {
+      "scene": "scene-0365",
+      "frames": [
+        85,
+        91,
+        100,
+        106
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0135",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_bbox_distance_m": 237.6384951292771,
+    "left": {
+      "scene": "scene-0357",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0348",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0136",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 57.31634275824277,
+    "left": {
+      "scene": "scene-0150",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        91,
+        97,
+        106,
+        113
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0137",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 38.35715196460583,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        36,
+        42,
+        51,
+        57
+      ]
+    },
+    "right": {
+      "scene": "scene-0982",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0138",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 262.74522835303424,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0269",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0139",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 212.0255695266718,
+    "left": {
+      "scene": "scene-0275",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0370",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0140",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 147.18902783313294,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        12,
+        18,
+        27,
+        32
+      ]
+    },
+    "right": {
+      "scene": "scene-0370",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0141",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 78.40713786132963,
+    "left": {
+      "scene": "scene-0127",
+      "frames": [
+        106,
+        112,
+        121,
+        128
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0142",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 77.2761864075182,
+    "left": {
+      "scene": "scene-0125",
+      "frames": [
+        99,
+        105,
+        114,
+        120
+      ]
+    },
+    "right": {
+      "scene": "scene-0133",
+      "frames": [
+        94,
+        100,
+        109,
+        115
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0143",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 141.42643471065517,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        125,
+        131,
+        140,
+        146
+      ]
+    },
+    "right": {
+      "scene": "scene-0969",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0144",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 9,
+    "minimum_bbox_distance_m": 88.06570472944804,
+    "left": {
+      "scene": "scene-0044",
+      "frames": [
+        108,
+        114,
+        123,
+        129
+      ]
+    },
+    "right": {
+      "scene": "scene-0347",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0145",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 298.4401269346795,
+    "left": {
+      "scene": "scene-0149",
+      "frames": [
+        192,
+        198,
+        207,
+        213
+      ]
+    },
+    "right": {
+      "scene": "scene-0344",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0146",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_bbox_distance_m": 489.5132294142022,
+    "left": {
+      "scene": "scene-0160",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-0149",
+      "frames": [
+        192,
+        198,
+        207,
+        213
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0147",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 374.72941529377454,
+    "left": {
+      "scene": "scene-0133",
+      "frames": [
+        94,
+        100,
+        109,
+        115
+      ]
+    },
+    "right": {
+      "scene": "scene-0348",
+      "frames": [
+        181,
+        187,
+        196,
+        202
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0148",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 184.3218609640142,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        77,
+        83,
+        92,
+        97
+      ]
+    },
+    "right": {
+      "scene": "scene-0045",
+      "frames": [
+        190,
+        196,
+        205,
+        211
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0149",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 124.50160578004055,
+    "left": {
+      "scene": "scene-0134",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0345",
+      "frames": [
+        108,
+        114,
+        123,
+        128
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0150",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_bbox_distance_m": 259.7756430286913,
+    "left": {
+      "scene": "scene-0348",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    },
+    "right": {
+      "scene": "scene-0150",
+      "frames": [
+        116,
+        122,
+        131,
+        136
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0151",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 74.11401067833096,
+    "left": {
+      "scene": "scene-0126",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    },
+    "right": {
+      "scene": "scene-0046",
+      "frames": [
+        12,
+        18,
+        27,
+        32
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0152",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_bbox_distance_m": 719.6684246467012,
+    "left": {
+      "scene": "scene-0368",
+      "frames": [
+        91,
+        97,
+        106,
+        113
+      ]
+    },
+    "right": {
+      "scene": "scene-0151",
+      "frames": [
+        54,
+        60,
+        69,
+        74
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0153",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_bbox_distance_m": 183.47657331547904,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0384",
+      "frames": [
+        159,
+        165,
+        174,
+        180
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0154",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 36,
+    "minimum_bbox_distance_m": 91.8469070404252,
+    "left": {
+      "scene": "scene-0058",
+      "frames": [
+        5,
+        11,
+        20,
+        26
+      ]
+    },
+    "right": {
+      "scene": "scene-0976",
+      "frames": [
+        13,
+        19,
+        28,
+        35
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0155",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 20.581948264670245,
+    "left": {
+      "scene": "scene-0125",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0134",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0156",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_bbox_distance_m": 30.61023515664427,
+    "left": {
+      "scene": "scene-0356",
+      "frames": [
+        192,
+        198,
+        207,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0157",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 172.63165087872426,
+    "left": {
+      "scene": "scene-0359",
+      "frames": [
+        41,
+        47,
+        56,
+        62
+      ]
+    },
+    "right": {
+      "scene": "scene-0358",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0158",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 635.0530320962198,
+    "left": {
+      "scene": "scene-0371",
+      "frames": [
+        129,
+        135,
+        144,
+        150
+      ]
+    },
+    "right": {
+      "scene": "scene-0963",
+      "frames": [
+        127,
+        133,
+        142,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0159",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 246.66874804507225,
+    "left": {
+      "scene": "scene-0045",
+      "frames": [
+        190,
+        196,
+        205,
+        211
+      ]
+    },
+    "right": {
+      "scene": "scene-0982",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0160",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 115.7151253469256,
+    "left": {
+      "scene": "scene-0126",
+      "frames": [
+        100,
+        106,
+        115,
+        121
+      ]
+    },
+    "right": {
+      "scene": "scene-0385",
+      "frames": [
+        168,
+        174,
+        183,
+        189
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0161",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 58,
+    "minimum_bbox_distance_m": 713.2391597924867,
+    "left": {
+      "scene": "scene-0196",
+      "frames": [
+        158,
+        164,
+        173,
+        179
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0162",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 16,
+    "minimum_bbox_distance_m": 110.07526602952582,
+    "left": {
+      "scene": "scene-0377",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0982",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0163",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 274.05125671762903,
+    "left": {
+      "scene": "scene-0981",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0132",
+      "frames": [
+        166,
+        172,
+        181,
+        187
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0164",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 785.9114232646162,
+    "left": {
+      "scene": "scene-0120",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0368",
+      "frames": [
+        43,
+        49,
+        58,
+        65
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0165",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 308.8367479592036,
+    "left": {
+      "scene": "scene-0275",
+      "frames": [
+        112,
+        118,
+        127,
+        133
+      ]
+    },
+    "right": {
+      "scene": "scene-0384",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0166",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 207.59662384248,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0269",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0167",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 52,
+    "minimum_bbox_distance_m": 202.1426332403363,
+    "left": {
+      "scene": "scene-0157",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-0975",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0168",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_bbox_distance_m": 247.7173414043416,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0385",
+      "frames": [
+        168,
+        174,
+        183,
+        189
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0169",
+    "label": 0,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_bbox_distance_m": 42.14149356488942,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        59,
+        65,
+        74,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0357",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0170",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 123.96659896290683,
+    "left": {
+      "scene": "scene-0179",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0315",
+      "frames": [
+        59,
+        65,
+        74,
+        80
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0171",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 75.03058747122888,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        128,
+        134,
+        143,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1006",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0172",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 10,
+    "minimum_bbox_distance_m": 1619.9003779117559,
+    "left": {
+      "scene": "scene-0848",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0858",
+      "frames": [
+        122,
+        128,
+        137,
+        144
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0173",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 76.50673976444077,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1006",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0174",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 130.26296084460955,
+    "left": {
+      "scene": "scene-1005",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-0181",
+      "frames": [
+        66,
+        72,
+        81,
+        87
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0175",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 65.10541188079928,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        192,
+        198,
+        207,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        63,
+        69,
+        78,
+        84
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0176",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 25.91867803109926,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        43,
+        49,
+        58,
+        64
+      ]
+    },
+    "right": {
+      "scene": "scene-0422",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0177",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 104.26366815964502,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        62,
+        68,
+        77,
+        84
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        154,
+        160,
+        170,
+        176
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0178",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 110.23388300428086,
+    "left": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        73,
+        79,
+        88,
+        95
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0179",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 238.5563876184349,
+    "left": {
+      "scene": "scene-0862",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0180",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 62.891378388647354,
+    "left": {
+      "scene": "scene-0177",
+      "frames": [
+        17,
+        23,
+        32,
+        38
+      ]
+    },
+    "right": {
+      "scene": "scene-0864",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0181",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 138.98552238119345,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        114,
+        120,
+        129,
+        136
+      ]
+    },
+    "right": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0182",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 76.50673976444077,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-1006",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0183",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 124.73455122698427,
+    "left": {
+      "scene": "scene-0426",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        183,
+        189,
+        198,
+        205
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0184",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 217.6748876753454,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        103,
+        109,
+        118,
+        125
+      ]
+    },
+    "right": {
+      "scene": "scene-0861",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0185",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 37.834782379539774,
+    "left": {
+      "scene": "scene-0180",
+      "frames": [
+        129,
+        135,
+        144,
+        150
+      ]
+    },
+    "right": {
+      "scene": "scene-0421",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0186",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 44.69887850621103,
+    "left": {
+      "scene": "scene-0421",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-0928",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0187",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 27.211147317151926,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0182",
+      "frames": [
+        62,
+        68,
+        77,
+        84
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0188",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 208.5023553430701,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        22,
+        28,
+        37,
+        44
+      ]
+    },
+    "right": {
+      "scene": "scene-0428",
+      "frames": [
+        121,
+        127,
+        136,
+        143
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0189",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 173.43743690031292,
+    "left": {
+      "scene": "scene-0177",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0926",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0190",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 44.36236316038792,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        24,
+        30,
+        39,
+        46
+      ]
+    },
+    "right": {
+      "scene": "scene-0865",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0191",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 47.1943958668783,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-0864",
+      "frames": [
+        22,
+        28,
+        37,
+        44
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0192",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 81.16511567211694,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        193,
+        199,
+        208,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0193",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 181.062335233961,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0194",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 153.3290426577703,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        129,
+        135,
+        144,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-0428",
+      "frames": [
+        121,
+        127,
+        136,
+        143
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0195",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 181.062335233961,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        6,
+        12,
+        21,
+        28
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0196",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 59.583366105810484,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    },
+    "right": {
+      "scene": "scene-0177",
+      "frames": [
+        17,
+        23,
+        32,
+        38
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0197",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 47,
+    "minimum_bbox_distance_m": 206.32374921205601,
+    "left": {
+      "scene": "scene-0858",
+      "frames": [
+        122,
+        128,
+        137,
+        144
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0198",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 291.03808304465076,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        165,
+        171,
+        180,
+        186
+      ]
+    },
+    "right": {
+      "scene": "scene-1015",
+      "frames": [
+        135,
+        141,
+        150,
+        156
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0199",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 195.3741107468806,
+    "left": {
+      "scene": "scene-0917",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0425",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0200",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 81.16511567211694,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0201",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 1700.8584845772814,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0849",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0202",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 35.961252912579525,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0177",
+      "frames": [
+        17,
+        23,
+        32,
+        38
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0203",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 91.9419296603312,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        183,
+        189,
+        198,
+        205
+      ]
+    },
+    "right": {
+      "scene": "scene-0421",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0204",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 48.06912536016502,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        38,
+        44,
+        53,
+        60
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        22,
+        28,
+        37,
+        43
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0205",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 18,
+    "minimum_bbox_distance_m": 78.08365358531205,
+    "left": {
+      "scene": "scene-0428",
+      "frames": [
+        121,
+        127,
+        136,
+        143
+      ]
+    },
+    "right": {
+      "scene": "scene-1007",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0206",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 88.63387612594784,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        188,
+        194,
+        203,
+        209
+      ]
+    },
+    "right": {
+      "scene": "scene-0421",
+      "frames": [
+        196,
+        202,
+        211,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0207",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 102.37440274411149,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        75,
+        81,
+        90,
+        97
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        154,
+        160,
+        170,
+        176
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0208",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 120.07744401437647,
+    "left": {
+      "scene": "scene-0180",
+      "frames": [
+        52,
+        58,
+        67,
+        73
+      ]
+    },
+    "right": {
+      "scene": "scene-0917",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0209",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 130.26296084460955,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        66,
+        72,
+        81,
+        87
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0210",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 76.50673976444077,
+    "left": {
+      "scene": "scene-1006",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0182",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0211",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 41.38655412237574,
+    "left": {
+      "scene": "scene-0860",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0212",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 48.06912536016502,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        178,
+        184,
+        193,
+        200
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0213",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 94.07646868739242,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0214",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 1977.5246485133666,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    },
+    "right": {
+      "scene": "scene-0848",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0215",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 27.904943822346514,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0315",
+      "frames": [
+        128,
+        134,
+        143,
+        149
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0216",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 193.7940147133113,
+    "left": {
+      "scene": "scene-0926",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0217",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 155.87940889932977,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        32,
+        38,
+        47,
+        53
+      ]
+    },
+    "right": {
+      "scene": "scene-0926",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0218",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 146.2332012909852,
+    "left": {
+      "scene": "scene-0861",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        73,
+        79,
+        88,
+        95
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0219",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 27.904943822346514,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0315",
+      "frames": [
+        59,
+        65,
+        74,
+        80
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0220",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 29.226797055539162,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0864",
+      "frames": [
+        183,
+        189,
+        198,
+        205
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0221",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 147.34924356580248,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        138,
+        144,
+        154,
+        160
+      ]
+    },
+    "right": {
+      "scene": "scene-0858",
+      "frames": [
+        122,
+        128,
+        137,
+        144
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0222",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 25.91867803109926,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0315",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0223",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 252.9222622354334,
+    "left": {
+      "scene": "scene-0420",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-0862",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "negative-0224",
+    "label": 0,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_bbox_distance_m": 62.830827559630215,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-1007",
+      "frames": [
+        34,
+        40,
+        49,
+        55
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0000",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.02066380976069928,
+    "left": {
+      "scene": "scene-0245",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0290",
+      "frames": [
+        104,
+        110,
+        119,
+        125
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0001",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.026803549474735483,
+    "left": {
+      "scene": "scene-0506",
+      "frames": [
+        27,
+        33,
+        42,
+        49
+      ]
+    },
+    "right": {
+      "scene": "scene-0520",
+      "frames": [
+        188,
+        194,
+        203,
+        210
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0002",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.041083600912812025,
+    "left": {
+      "scene": "scene-0389",
+      "frames": [
+        140,
+        146,
+        155,
+        162
+      ]
+    },
+    "right": {
+      "scene": "scene-0643",
+      "frames": [
+        74,
+        80,
+        89,
+        95
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0003",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.005035289276457034,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        2,
+        8,
+        17,
+        23
+      ]
+    },
+    "right": {
+      "scene": "scene-0588",
+      "frames": [
+        20,
+        26,
+        35,
+        42
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0004",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.5457640458943527,
+    "left": {
+      "scene": "scene-0075",
+      "frames": [
+        142,
+        148,
+        157,
+        162
+      ]
+    },
+    "right": {
+      "scene": "scene-0163",
+      "frames": [
+        90,
+        96,
+        105,
+        112
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0005",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.017533573843578402,
+    "left": {
+      "scene": "scene-0202",
+      "frames": [
+        156,
+        162,
+        171,
+        176
+      ]
+    },
+    "right": {
+      "scene": "scene-0654",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0006",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.6845103097308587,
+    "left": {
+      "scene": "scene-0454",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0455",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0007",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.0307919829037724,
+    "left": {
+      "scene": "scene-0586",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-0587",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0008",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.039075317804674985,
+    "left": {
+      "scene": "scene-0072",
+      "frames": [
+        185,
+        191,
+        200,
+        206
+      ]
+    },
+    "right": {
+      "scene": "scene-0451",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0009",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.699334686293639,
+    "left": {
+      "scene": "scene-0461",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0586",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0010",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.091276003091568,
+    "left": {
+      "scene": "scene-0106",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0253",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0011",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.07121959459264816,
+    "left": {
+      "scene": "scene-0208",
+      "frames": [
+        173,
+        179,
+        188,
+        195
+      ]
+    },
+    "right": {
+      "scene": "scene-0659",
+      "frames": [
+        167,
+        173,
+        182,
+        188
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0012",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.04628446034200023,
+    "left": {
+      "scene": "scene-0106",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0303",
+      "frames": [
+        6,
+        12,
+        21,
+        27
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0013",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.05660453009518005,
+    "left": {
+      "scene": "scene-0164",
+      "frames": [
+        51,
+        57,
+        66,
+        72
+      ]
+    },
+    "right": {
+      "scene": "scene-0328",
+      "frames": [
+        170,
+        176,
+        185,
+        191
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0014",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 6.485337803685718e-06,
+    "left": {
+      "scene": "scene-0295",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0296",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0015",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.9830092834459438,
+    "left": {
+      "scene": "scene-0099",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0258",
+      "frames": [
+        193,
+        199,
+        208,
+        213
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0016",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.07712583715041428,
+    "left": {
+      "scene": "scene-0284",
+      "frames": [
+        174,
+        180,
+        189,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0698",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0017",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.2747074540162018,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        121,
+        127,
+        136,
+        142
+      ]
+    },
+    "right": {
+      "scene": "scene-0715",
+      "frames": [
+        14,
+        20,
+        29,
+        36
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0018",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.017483901754186817,
+    "left": {
+      "scene": "scene-0643",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0911",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0019",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.601075914363147,
+    "left": {
+      "scene": "scene-0070",
+      "frames": [
+        16,
+        22,
+        31,
+        38
+      ]
+    },
+    "right": {
+      "scene": "scene-0207",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0020",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.003988933627171943,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-0295",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0021",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.12561532415459006,
+    "left": {
+      "scene": "scene-0331",
+      "frames": [
+        121,
+        127,
+        136,
+        142
+      ]
+    },
+    "right": {
+      "scene": "scene-0523",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0022",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.015260006214004567,
+    "left": {
+      "scene": "scene-0301",
+      "frames": [
+        16,
+        22,
+        31,
+        37
+      ]
+    },
+    "right": {
+      "scene": "scene-0872",
+      "frames": [
+        20,
+        26,
+        35,
+        42
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0023",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.015339179718006274,
+    "left": {
+      "scene": "scene-0586",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0700",
+      "frames": [
+        52,
+        58,
+        67,
+        73
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0024",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0397411440443981,
+    "left": {
+      "scene": "scene-0321",
+      "frames": [
+        47,
+        53,
+        62,
+        68
+      ]
+    },
+    "right": {
+      "scene": "scene-0467",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0025",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.02226279766943643,
+    "left": {
+      "scene": "scene-0448",
+      "frames": [
+        126,
+        132,
+        141,
+        148
+      ]
+    },
+    "right": {
+      "scene": "scene-0660",
+      "frames": [
+        80,
+        86,
+        95,
+        102
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0026",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.014691211881077276,
+    "left": {
+      "scene": "scene-0289",
+      "frames": [
+        179,
+        185,
+        194,
+        200
+      ]
+    },
+    "right": {
+      "scene": "scene-0469",
+      "frames": [
+        171,
+        177,
+        186,
+        192
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0027",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.5400927797412871,
+    "left": {
+      "scene": "scene-0639",
+      "frames": [
+        34,
+        40,
+        49,
+        56
+      ]
+    },
+    "right": {
+      "scene": "scene-0909",
+      "frames": [
+        111,
+        117,
+        126,
+        132
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0028",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.013085521267175241,
+    "left": {
+      "scene": "scene-0688",
+      "frames": [
+        55,
+        61,
+        70,
+        77
+      ]
+    },
+    "right": {
+      "scene": "scene-0898",
+      "frames": [
+        6,
+        12,
+        21,
+        27
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0029",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.36078449058945355,
+    "left": {
+      "scene": "scene-0105",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0728",
+      "frames": [
+        195,
+        201,
+        210,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0030",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.013294952061339425,
+    "left": {
+      "scene": "scene-0253",
+      "frames": [
+        90,
+        96,
+        105,
+        112
+      ]
+    },
+    "right": {
+      "scene": "scene-0302",
+      "frames": [
+        154,
+        160,
+        169,
+        176
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0031",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.8289768060998722,
+    "left": {
+      "scene": "scene-0463",
+      "frames": [
+        134,
+        140,
+        149,
+        156
+      ]
+    },
+    "right": {
+      "scene": "scene-0672",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0032",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.02316032289707848,
+    "left": {
+      "scene": "scene-0291",
+      "frames": [
+        103,
+        109,
+        118,
+        124
+      ]
+    },
+    "right": {
+      "scene": "scene-0471",
+      "frames": [
+        99,
+        105,
+        114,
+        120
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0033",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0706794258899726,
+    "left": {
+      "scene": "scene-0258",
+      "frames": [
+        139,
+        145,
+        154,
+        159
+      ]
+    },
+    "right": {
+      "scene": "scene-0676",
+      "frames": [
+        145,
+        151,
+        160,
+        167
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0034",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.2079802972617788,
+    "left": {
+      "scene": "scene-0068",
+      "frames": [
+        166,
+        172,
+        181,
+        187
+      ]
+    },
+    "right": {
+      "scene": "scene-0454",
+      "frames": [
+        15,
+        21,
+        30,
+        36
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0035",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.014440632011583897,
+    "left": {
+      "scene": "scene-0245",
+      "frames": [
+        150,
+        156,
+        165,
+        171
+      ]
+    },
+    "right": {
+      "scene": "scene-0258",
+      "frames": [
+        6,
+        12,
+        21,
+        26
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0036",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.13287275957119277,
+    "left": {
+      "scene": "scene-0225",
+      "frames": [
+        163,
+        169,
+        178,
+        184
+      ]
+    },
+    "right": {
+      "scene": "scene-0242",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0037",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.059892804747481675,
+    "left": {
+      "scene": "scene-0255",
+      "frames": [
+        145,
+        151,
+        160,
+        166
+      ]
+    },
+    "right": {
+      "scene": "scene-0458",
+      "frames": [
+        63,
+        69,
+        79,
+        85
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0038",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.026762739656780273,
+    "left": {
+      "scene": "scene-0213",
+      "frames": [
+        109,
+        115,
+        124,
+        129
+      ]
+    },
+    "right": {
+      "scene": "scene-0452",
+      "frames": [
+        110,
+        116,
+        125,
+        131
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0039",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0608271094712824,
+    "left": {
+      "scene": "scene-0469",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0707",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0040",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.06466137028063043,
+    "left": {
+      "scene": "scene-0228",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    },
+    "right": {
+      "scene": "scene-0290",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0041",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.01991545160919508,
+    "left": {
+      "scene": "scene-0227",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0704",
+      "frames": [
+        49,
+        55,
+        64,
+        70
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0042",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.08277451510361379,
+    "left": {
+      "scene": "scene-0067",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0255",
+      "frames": [
+        104,
+        110,
+        119,
+        125
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0043",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.05499654615877979,
+    "left": {
+      "scene": "scene-0212",
+      "frames": [
+        25,
+        31,
+        40,
+        46
+      ]
+    },
+    "right": {
+      "scene": "scene-0450",
+      "frames": [
+        4,
+        10,
+        19,
+        26
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0044",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0009189461831300343,
+    "left": {
+      "scene": "scene-0701",
+      "frames": [
+        201,
+        207,
+        216,
+        223
+      ]
+    },
+    "right": {
+      "scene": "scene-0703",
+      "frames": [
+        116,
+        122,
+        131,
+        138
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0045",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.13253549455375838,
+    "left": {
+      "scene": "scene-0107",
+      "frames": [
+        162,
+        168,
+        177,
+        183
+      ]
+    },
+    "right": {
+      "scene": "scene-0876",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0046",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.04205257103747005,
+    "left": {
+      "scene": "scene-0591",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    },
+    "right": {
+      "scene": "scene-0783",
+      "frames": [
+        124,
+        130,
+        139,
+        146
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0047",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.003304444042885441,
+    "left": {
+      "scene": "scene-0294",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-0296",
+      "frames": [
+        30,
+        36,
+        45,
+        51
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0048",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.014570366007182107,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0462",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0049",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.045466159615135456,
+    "left": {
+      "scene": "scene-0093",
+      "frames": [
+        101,
+        107,
+        116,
+        122
+      ]
+    },
+    "right": {
+      "scene": "scene-0669",
+      "frames": [
+        124,
+        130,
+        139,
+        146
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0050",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.20814850982890262,
+    "left": {
+      "scene": "scene-0065",
+      "frames": [
+        182,
+        188,
+        197,
+        203
+      ]
+    },
+    "right": {
+      "scene": "scene-0444",
+      "frames": [
+        35,
+        41,
+        50,
+        57
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0051",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.1875112371562564,
+    "left": {
+      "scene": "scene-0462",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0463",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0052",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.19539770171772475,
+    "left": {
+      "scene": "scene-0300",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0478",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0053",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0064273144367975885,
+    "left": {
+      "scene": "scene-0666",
+      "frames": [
+        182,
+        188,
+        197,
+        204
+      ]
+    },
+    "right": {
+      "scene": "scene-0697",
+      "frames": [
+        78,
+        84,
+        93,
+        100
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0054",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.0447945091212105,
+    "left": {
+      "scene": "scene-0096",
+      "frames": [
+        28,
+        34,
+        43,
+        49
+      ]
+    },
+    "right": {
+      "scene": "scene-0227",
+      "frames": [
+        109,
+        115,
+        124,
+        130
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0055",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.02182837466294168,
+    "left": {
+      "scene": "scene-0474",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0683",
+      "frames": [
+        160,
+        166,
+        175,
+        181
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0056",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.052699773285315984,
+    "left": {
+      "scene": "scene-0263",
+      "frames": [
+        137,
+        143,
+        152,
+        158
+      ]
+    },
+    "right": {
+      "scene": "scene-0452",
+      "frames": [
+        35,
+        41,
+        50,
+        56
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0057",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.11984038206825785,
+    "left": {
+      "scene": "scene-0222",
+      "frames": [
+        21,
+        27,
+        36,
+        42
+      ]
+    },
+    "right": {
+      "scene": "scene-0696",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0058",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 1.2518267677570398,
+    "left": {
+      "scene": "scene-0455",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0456",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0059",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.8751265867243108,
+    "left": {
+      "scene": "scene-0511",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-0512",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0060",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.16200585556803346,
+    "left": {
+      "scene": "scene-0096",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0287",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0061",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.1076413992351357,
+    "left": {
+      "scene": "scene-0871",
+      "frames": [
+        150,
+        156,
+        166,
+        172
+      ]
+    },
+    "right": {
+      "scene": "scene-0898",
+      "frames": [
+        68,
+        74,
+        83,
+        89
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0062",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.22852194960099892,
+    "left": {
+      "scene": "scene-0677",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0678",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0063",
+    "label": 1,
+    "location": "boston-seaport",
+    "component_id": 0,
+    "minimum_distance_m": 0.060632329796023045,
+    "left": {
+      "scene": "scene-0235",
+      "frames": [
+        68,
+        74,
+        83,
+        89
+      ]
+    },
+    "right": {
+      "scene": "scene-0475",
+      "frames": [
+        194,
+        200,
+        209,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0064",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_distance_m": 0.01789772895912295,
+    "left": {
+      "scene": "scene-0418",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    },
+    "right": {
+      "scene": "scene-1058",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0065",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.0006596363674736333,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-1082",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0066",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.001712937396369631,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-1080",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0067",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.4212417693082979,
+    "left": {
+      "scene": "scene-1073",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-1077",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0068",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.24760662253945237,
+    "left": {
+      "scene": "scene-1072",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-1075",
+      "frames": [
+        158,
+        164,
+        173,
+        180
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0069",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.0008206547399480541,
+    "left": {
+      "scene": "scene-1109",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0070",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 23,
+    "minimum_distance_m": 0.9048851999785005,
+    "left": {
+      "scene": "scene-1089",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-1090",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0071",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.054847994435350274,
+    "left": {
+      "scene": "scene-1072",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-1076",
+      "frames": [
+        45,
+        51,
+        60,
+        67
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0072",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_distance_m": 0.20968939902114808,
+    "left": {
+      "scene": "scene-0408",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    },
+    "right": {
+      "scene": "scene-1053",
+      "frames": [
+        194,
+        200,
+        209,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0073",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.05565703392550141,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-1106",
+      "frames": [
+        194,
+        200,
+        209,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0074",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.03270205790096927,
+    "left": {
+      "scene": "scene-1079",
+      "frames": [
+        104,
+        110,
+        119,
+        125
+      ]
+    },
+    "right": {
+      "scene": "scene-1107",
+      "frames": [
+        43,
+        49,
+        58,
+        65
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0075",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.001383205078352948,
+    "left": {
+      "scene": "scene-1082",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-1083",
+      "frames": [
+        19,
+        25,
+        34,
+        40
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0076",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.04031064621113424,
+    "left": {
+      "scene": "scene-1078",
+      "frames": [
+        130,
+        136,
+        145,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-1106",
+      "frames": [
+        107,
+        113,
+        122,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0077",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 64,
+    "minimum_distance_m": 0.00417340954411304,
+    "left": {
+      "scene": "scene-1092",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-1093",
+      "frames": [
+        79,
+        85,
+        94,
+        101
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0078",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.30041656347542445,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1056",
+      "frames": [
+        13,
+        19,
+        28,
+        34
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0079",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.04269757659398481,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        123,
+        129,
+        138,
+        144
+      ]
+    },
+    "right": {
+      "scene": "scene-1108",
+      "frames": [
+        108,
+        114,
+        123,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0080",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_distance_m": 1.3182376371306277,
+    "left": {
+      "scene": "scene-1053",
+      "frames": [
+        144,
+        150,
+        159,
+        166
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        175,
+        181,
+        190,
+        197
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0081",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_distance_m": 0.34909928800368084,
+    "left": {
+      "scene": "scene-0408",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        107,
+        113,
+        122,
+        129
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0082",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.09200472423584206,
+    "left": {
+      "scene": "scene-1084",
+      "frames": [
+        21,
+        27,
+        36,
+        43
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        114,
+        120,
+        129,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0083",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.4249952307534801,
+    "left": {
+      "scene": "scene-0413",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0414",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0084",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.11327196815582899,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        152,
+        158,
+        167,
+        173
+      ]
+    },
+    "right": {
+      "scene": "scene-1109",
+      "frames": [
+        141,
+        147,
+        156,
+        162
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0085",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.040227686881878576,
+    "left": {
+      "scene": "scene-1083",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-1110",
+      "frames": [
+        42,
+        48,
+        57,
+        63
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0086",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.5172042760025302,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        159,
+        165,
+        174,
+        181
+      ]
+    },
+    "right": {
+      "scene": "scene-1083",
+      "frames": [
+        28,
+        34,
+        43,
+        49
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0087",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_distance_m": 0.03178371615381219,
+    "left": {
+      "scene": "scene-0418",
+      "frames": [
+        1,
+        7,
+        16,
+        23
+      ]
+    },
+    "right": {
+      "scene": "scene-1057",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0088",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.04811413120088993,
+    "left": {
+      "scene": "scene-1071",
+      "frames": [
+        74,
+        80,
+        89,
+        96
+      ]
+    },
+    "right": {
+      "scene": "scene-1074",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0089",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 49,
+    "minimum_distance_m": 0.02613637120595413,
+    "left": {
+      "scene": "scene-0410",
+      "frames": [
+        115,
+        121,
+        130,
+        137
+      ]
+    },
+    "right": {
+      "scene": "scene-1054",
+      "frames": [
+        125,
+        131,
+        140,
+        147
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0090",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.20199206595995303,
+    "left": {
+      "scene": "scene-0411",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1055",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0091",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 34,
+    "minimum_distance_m": 1.7056014306036258,
+    "left": {
+      "scene": "scene-1064",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-1065",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0092",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.0799145700439464,
+    "left": {
+      "scene": "scene-1071",
+      "frames": [
+        175,
+        181,
+        190,
+        197
+      ]
+    },
+    "right": {
+      "scene": "scene-1075",
+      "frames": [
+        4,
+        10,
+        19,
+        26
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0093",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.05411885312971791,
+    "left": {
+      "scene": "scene-0413",
+      "frames": [
+        172,
+        178,
+        187,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-1056",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0094",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.050621622674475036,
+    "left": {
+      "scene": "scene-1073",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-1076",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0095",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.4931988556873792,
+    "left": {
+      "scene": "scene-1084",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1085",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0096",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 1.2781270715736672,
+    "left": {
+      "scene": "scene-1055",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1056",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0097",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_distance_m": 0.09463409511124062,
+    "left": {
+      "scene": "scene-0416",
+      "frames": [
+        197,
+        203,
+        212,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-1057",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0098",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 51,
+    "minimum_distance_m": 1.6475920191126812,
+    "left": {
+      "scene": "scene-1068",
+      "frames": [
+        195,
+        201,
+        210,
+        216
+      ]
+    },
+    "right": {
+      "scene": "scene-1069",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0099",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.7540668555299007,
+    "left": {
+      "scene": "scene-1077",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1078",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0100",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.23284345879435117,
+    "left": {
+      "scene": "scene-1081",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-1107",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0101",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.02754504295156169,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        94,
+        100,
+        110,
+        116
+      ]
+    },
+    "right": {
+      "scene": "scene-1055",
+      "frames": [
+        113,
+        119,
+        128,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0102",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 37,
+    "minimum_distance_m": 0.6395738642617338,
+    "left": {
+      "scene": "scene-0412",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0413",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0103",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.04238325843451415,
+    "left": {
+      "scene": "scene-1080",
+      "frames": [
+        54,
+        60,
+        69,
+        76
+      ]
+    },
+    "right": {
+      "scene": "scene-1107",
+      "frames": [
+        76,
+        82,
+        91,
+        98
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0104",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 4,
+    "minimum_distance_m": 0.30318447778969587,
+    "left": {
+      "scene": "scene-1076",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-1077",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0105",
+    "label": 1,
+    "location": "singapore-hollandvillage",
+    "component_id": 59,
+    "minimum_distance_m": 1.206941445475001,
+    "left": {
+      "scene": "scene-1057",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1058",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0106",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.0669266716664279,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0363",
+      "frames": [
+        35,
+        41,
+        50,
+        57
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0107",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.14103556640169312,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        29,
+        35,
+        44,
+        50
+      ]
+    },
+    "right": {
+      "scene": "scene-0150",
+      "frames": [
+        146,
+        152,
+        161,
+        166
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0108",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 63,
+    "minimum_distance_m": 1.0471538391226497e-05,
+    "left": {
+      "scene": "scene-0957",
+      "frames": [
+        96,
+        102,
+        111,
+        118
+      ]
+    },
+    "right": {
+      "scene": "scene-0958",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0109",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.4517300607779832,
+    "left": {
+      "scene": "scene-0982",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0983",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0110",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.13750726982802922,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    },
+    "right": {
+      "scene": "scene-0359",
+      "frames": [
+        81,
+        87,
+        96,
+        102
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0111",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.020473249298650343,
+    "left": {
+      "scene": "scene-0120",
+      "frames": [
+        37,
+        43,
+        52,
+        59
+      ]
+    },
+    "right": {
+      "scene": "scene-0382",
+      "frames": [
+        183,
+        189,
+        198,
+        204
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0112",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_distance_m": 0.14305531344494923,
+    "left": {
+      "scene": "scene-0369",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0963",
+      "frames": [
+        127,
+        133,
+        142,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0113",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.3683835964599713,
+    "left": {
+      "scene": "scene-0376",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        91,
+        97,
+        106,
+        113
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0114",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.2088350996911201,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        54,
+        60,
+        69,
+        74
+      ]
+    },
+    "right": {
+      "scene": "scene-0983",
+      "frames": [
+        39,
+        45,
+        54,
+        61
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0115",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.04310401050351358,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        191,
+        197,
+        206,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0345",
+      "frames": [
+        42,
+        48,
+        57,
+        62
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0116",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_distance_m": 0.04498745979528478,
+    "left": {
+      "scene": "scene-0368",
+      "frames": [
+        43,
+        49,
+        58,
+        65
+      ]
+    },
+    "right": {
+      "scene": "scene-0963",
+      "frames": [
+        60,
+        66,
+        75,
+        81
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0117",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.1146373614636194,
+    "left": {
+      "scene": "scene-0359",
+      "frames": [
+        48,
+        54,
+        63,
+        69
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        50,
+        56,
+        65,
+        72
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0118",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.0008196820120011866,
+    "left": {
+      "scene": "scene-0968",
+      "frames": [
+        201,
+        207,
+        216,
+        223
+      ]
+    },
+    "right": {
+      "scene": "scene-0969",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0119",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.06464730304580067,
+    "left": {
+      "scene": "scene-0370",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0966",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0120",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.14840322977722237,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        187,
+        193,
+        202,
+        208
+      ]
+    },
+    "right": {
+      "scene": "scene-0344",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0121",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.3627702273727624,
+    "left": {
+      "scene": "scene-0127",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        194,
+        200,
+        209,
+        216
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0122",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_distance_m": 1.6031578419978336,
+    "left": {
+      "scene": "scene-0122",
+      "frames": [
+        193,
+        199,
+        208,
+        213
+      ]
+    },
+    "right": {
+      "scene": "scene-0962",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0123",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.8123050068836106,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        130,
+        136,
+        145,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-0968",
+      "frames": [
+        50,
+        56,
+        65,
+        72
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0124",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_distance_m": 0.027897949495218434,
+    "left": {
+      "scene": "scene-0269",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0348",
+      "frames": [
+        181,
+        187,
+        196,
+        202
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0125",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.4025634911118674,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        2,
+        8,
+        17,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0344",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0126",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.020981728411742184,
+    "left": {
+      "scene": "scene-0132",
+      "frames": [
+        166,
+        172,
+        181,
+        187
+      ]
+    },
+    "right": {
+      "scene": "scene-0382",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0127",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_distance_m": 1.1530733286121595e-05,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0976",
+      "frames": [
+        13,
+        19,
+        28,
+        35
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0128",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 32,
+    "minimum_distance_m": 0.0834823547575585,
+    "left": {
+      "scene": "scene-0139",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    },
+    "right": {
+      "scene": "scene-0347",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0129",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 16,
+    "minimum_distance_m": 1.6121558392250004,
+    "left": {
+      "scene": "scene-0158",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-0159",
+      "frames": [
+        33,
+        39,
+        48,
+        53
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0130",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 52,
+    "minimum_distance_m": 0.3359182352221846,
+    "left": {
+      "scene": "scene-0052",
+      "frames": [
+        125,
+        131,
+        140,
+        146
+      ]
+    },
+    "right": {
+      "scene": "scene-0384",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0131",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_distance_m": 0.000225175029259833,
+    "left": {
+      "scene": "scene-0356",
+      "frames": [
+        192,
+        198,
+        207,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0357",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0132",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.394925246576398,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0150",
+      "frames": [
+        116,
+        122,
+        131,
+        136
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0133",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.4586916638750642,
+    "left": {
+      "scene": "scene-0968",
+      "frames": [
+        53,
+        59,
+        68,
+        75
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0134",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 1.2140436221294761,
+    "left": {
+      "scene": "scene-0365",
+      "frames": [
+        85,
+        91,
+        100,
+        106
+      ]
+    },
+    "right": {
+      "scene": "scene-0966",
+      "frames": [
+        110,
+        116,
+        125,
+        132
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0135",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_distance_m": 6.632253094854558e-06,
+    "left": {
+      "scene": "scene-0357",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0358",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0136",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.4983100242510517,
+    "left": {
+      "scene": "scene-0150",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    },
+    "right": {
+      "scene": "scene-0363",
+      "frames": [
+        23,
+        29,
+        38,
+        45
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0137",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.032481389793544285,
+    "left": {
+      "scene": "scene-0135",
+      "frames": [
+        36,
+        42,
+        51,
+        57
+      ]
+    },
+    "right": {
+      "scene": "scene-0150",
+      "frames": [
+        50,
+        56,
+        65,
+        70
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0138",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.013708488915468213,
+    "left": {
+      "scene": "scene-0277",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        17,
+        23,
+        32,
+        39
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0139",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.008218996700049103,
+    "left": {
+      "scene": "scene-0275",
+      "frames": [
+        193,
+        199,
+        208,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-0276",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0140",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.16278075829769084,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        12,
+        18,
+        27,
+        32
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        127,
+        133,
+        142,
+        148
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0141",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.03371803663826992,
+    "left": {
+      "scene": "scene-0127",
+      "frames": [
+        106,
+        112,
+        121,
+        128
+      ]
+    },
+    "right": {
+      "scene": "scene-0969",
+      "frames": [
+        174,
+        180,
+        189,
+        195
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0142",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.014428993727328967,
+    "left": {
+      "scene": "scene-0125",
+      "frames": [
+        99,
+        105,
+        114,
+        120
+      ]
+    },
+    "right": {
+      "scene": "scene-0371",
+      "frames": [
+        58,
+        64,
+        73,
+        79
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0143",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.10420770815330951,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        125,
+        131,
+        140,
+        146
+      ]
+    },
+    "right": {
+      "scene": "scene-0046",
+      "frames": [
+        73,
+        79,
+        88,
+        93
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0144",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 9,
+    "minimum_distance_m": 0.012993277836396727,
+    "left": {
+      "scene": "scene-0044",
+      "frames": [
+        108,
+        114,
+        123,
+        129
+      ]
+    },
+    "right": {
+      "scene": "scene-0138",
+      "frames": [
+        187,
+        193,
+        202,
+        208
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0145",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.2356586515896973,
+    "left": {
+      "scene": "scene-0149",
+      "frames": [
+        192,
+        198,
+        207,
+        213
+      ]
+    },
+    "right": {
+      "scene": "scene-0376",
+      "frames": [
+        33,
+        39,
+        48,
+        55
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0146",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_distance_m": 1.1372220857178696,
+    "left": {
+      "scene": "scene-0160",
+      "frames": [
+        199,
+        205,
+        214,
+        220
+      ]
+    },
+    "right": {
+      "scene": "scene-0269",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0147",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.01367906079902327,
+    "left": {
+      "scene": "scene-0133",
+      "frames": [
+        94,
+        100,
+        109,
+        115
+      ]
+    },
+    "right": {
+      "scene": "scene-0382",
+      "frames": [
+        130,
+        136,
+        145,
+        151
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0148",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.014543812776948379,
+    "left": {
+      "scene": "scene-0151",
+      "frames": [
+        77,
+        83,
+        92,
+        97
+      ]
+    },
+    "right": {
+      "scene": "scene-0345",
+      "frames": [
+        108,
+        114,
+        123,
+        128
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0149",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.45099929527028115,
+    "left": {
+      "scene": "scene-0134",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0150",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0150",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 19,
+    "minimum_distance_m": 0.12315382373122327,
+    "left": {
+      "scene": "scene-0348",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    },
+    "right": {
+      "scene": "scene-0378",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0151",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.05454397622459572,
+    "left": {
+      "scene": "scene-0126",
+      "frames": [
+        96,
+        102,
+        111,
+        117
+      ]
+    },
+    "right": {
+      "scene": "scene-0277",
+      "frames": [
+        43,
+        49,
+        58,
+        64
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0152",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 33,
+    "minimum_distance_m": 0.02022218501492408,
+    "left": {
+      "scene": "scene-0368",
+      "frames": [
+        91,
+        97,
+        106,
+        113
+      ]
+    },
+    "right": {
+      "scene": "scene-0369",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0153",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_distance_m": 0.0008522956307544021,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0978",
+      "frames": [
+        184,
+        190,
+        200,
+        206
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0154",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 36,
+    "minimum_distance_m": 0.03440266549364623,
+    "left": {
+      "scene": "scene-0058",
+      "frames": [
+        5,
+        11,
+        20,
+        26
+      ]
+    },
+    "right": {
+      "scene": "scene-0381",
+      "frames": [
+        68,
+        74,
+        83,
+        90
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0155",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.9441098149504341,
+    "left": {
+      "scene": "scene-0125",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0370",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0156",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 30,
+    "minimum_distance_m": 0.0017870398483107205,
+    "left": {
+      "scene": "scene-0356",
+      "frames": [
+        192,
+        198,
+        207,
+        212
+      ]
+    },
+    "right": {
+      "scene": "scene-0358",
+      "frames": [
+        185,
+        191,
+        200,
+        206
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0157",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.06917051791220143,
+    "left": {
+      "scene": "scene-0359",
+      "frames": [
+        41,
+        47,
+        56,
+        62
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        195,
+        201,
+        210,
+        217
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0158",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.023193159299298285,
+    "left": {
+      "scene": "scene-0371",
+      "frames": [
+        129,
+        135,
+        144,
+        150
+      ]
+    },
+    "right": {
+      "scene": "scene-0967",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0159",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.32465698504966467,
+    "left": {
+      "scene": "scene-0045",
+      "frames": [
+        190,
+        196,
+        205,
+        211
+      ]
+    },
+    "right": {
+      "scene": "scene-0134",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0160",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.06976684956399644,
+    "left": {
+      "scene": "scene-0126",
+      "frames": [
+        100,
+        106,
+        115,
+        121
+      ]
+    },
+    "right": {
+      "scene": "scene-0984",
+      "frames": [
+        85,
+        91,
+        100,
+        107
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0161",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 58,
+    "minimum_distance_m": 0.02144468650417083,
+    "left": {
+      "scene": "scene-0196",
+      "frames": [
+        158,
+        164,
+        173,
+        179
+      ]
+    },
+    "right": {
+      "scene": "scene-0367",
+      "frames": [
+        114,
+        120,
+        129,
+        135
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0162",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 16,
+    "minimum_distance_m": 0.29199414391881595,
+    "left": {
+      "scene": "scene-0377",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0385",
+      "frames": [
+        168,
+        174,
+        183,
+        189
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0163",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.00022041515091145617,
+    "left": {
+      "scene": "scene-0981",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0982",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0164",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.017209891568335238,
+    "left": {
+      "scene": "scene-0120",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0133",
+      "frames": [
+        97,
+        103,
+        112,
+        118
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0165",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.023745218940841084,
+    "left": {
+      "scene": "scene-0275",
+      "frames": [
+        112,
+        118,
+        127,
+        133
+      ]
+    },
+    "right": {
+      "scene": "scene-0983",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0166",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.02054798779262984,
+    "left": {
+      "scene": "scene-0043",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0135",
+      "frames": [
+        86,
+        92,
+        101,
+        107
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0167",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 52,
+    "minimum_distance_m": 0.014677822694269402,
+    "left": {
+      "scene": "scene-0157",
+      "frames": [
+        186,
+        192,
+        201,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-0384",
+      "frames": [
+        159,
+        165,
+        174,
+        180
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0168",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 27,
+    "minimum_distance_m": 0.001248309374789342,
+    "left": {
+      "scene": "scene-0975",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-0977",
+      "frames": [
+        188,
+        194,
+        203,
+        209
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0169",
+    "label": 1,
+    "location": "singapore-onenorth",
+    "component_id": 8,
+    "minimum_distance_m": 0.797079502089088,
+    "left": {
+      "scene": "scene-0046",
+      "frames": [
+        59,
+        65,
+        74,
+        79
+      ]
+    },
+    "right": {
+      "scene": "scene-0151",
+      "frames": [
+        0,
+        6,
+        15,
+        20
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0170",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.2601467235734643,
+    "left": {
+      "scene": "scene-0179",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0171",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.025531006175102375,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        128,
+        134,
+        143,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        183,
+        189,
+        198,
+        205
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0172",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 10,
+    "minimum_distance_m": 1.1331421585461836,
+    "left": {
+      "scene": "scene-0848",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0849",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0173",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.04201802401753626,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        178,
+        184,
+        193,
+        200
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0174",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.5724387901671253,
+    "left": {
+      "scene": "scene-1005",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-1006",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0175",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.038199358047108306,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        192,
+        198,
+        207,
+        214
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        47,
+        53,
+        62,
+        68
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0176",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.07552009800764721,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        43,
+        49,
+        58,
+        64
+      ]
+    },
+    "right": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0177",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.046590171991245814,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        62,
+        68,
+        77,
+        84
+      ]
+    },
+    "right": {
+      "scene": "scene-0315",
+      "frames": [
+        59,
+        65,
+        74,
+        80
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0178",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.049573700431517445,
+    "left": {
+      "scene": "scene-0420",
+      "frames": [
+        30,
+        36,
+        45,
+        52
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        154,
+        160,
+        170,
+        176
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0179",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.9504353270612358,
+    "left": {
+      "scene": "scene-0862",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0863",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0180",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.030390019958284668,
+    "left": {
+      "scene": "scene-0177",
+      "frames": [
+        17,
+        23,
+        32,
+        38
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        63,
+        69,
+        78,
+        84
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0181",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.03784168476438891,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        114,
+        120,
+        129,
+        136
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        194,
+        200,
+        209,
+        215
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0182",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.028320330857123665,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        185,
+        191,
+        200,
+        207
+      ]
+    },
+    "right": {
+      "scene": "scene-0424",
+      "frames": [
+        144,
+        150,
+        159,
+        166
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0183",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.023960355167473375,
+    "left": {
+      "scene": "scene-0426",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    },
+    "right": {
+      "scene": "scene-1007",
+      "frames": [
+        37,
+        43,
+        52,
+        58
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0184",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.03301756135485687,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        103,
+        109,
+        118,
+        125
+      ]
+    },
+    "right": {
+      "scene": "scene-0917",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0185",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.037332476746330605,
+    "left": {
+      "scene": "scene-0180",
+      "frames": [
+        129,
+        135,
+        144,
+        150
+      ]
+    },
+    "right": {
+      "scene": "scene-0420",
+      "frames": [
+        6,
+        12,
+        21,
+        28
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0186",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.07604964540050348,
+    "left": {
+      "scene": "scene-0421",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-0422",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0187",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.18381653185679495,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0865",
+      "frames": [
+        176,
+        182,
+        191,
+        198
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0188",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.06376570825597826,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        22,
+        28,
+        37,
+        44
+      ]
+    },
+    "right": {
+      "scene": "scene-0927",
+      "frames": [
+        62,
+        68,
+        77,
+        84
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0189",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.7613282471482955,
+    "left": {
+      "scene": "scene-0177",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    },
+    "right": {
+      "scene": "scene-0865",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0190",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.04640164257174418,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        24,
+        30,
+        39,
+        46
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0191",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.7643040304850182,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        197,
+        203,
+        212,
+        218
+      ]
+    },
+    "right": {
+      "scene": "scene-0865",
+      "frames": [
+        191,
+        197,
+        206,
+        213
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0192",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.7941885050517903,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        193,
+        199,
+        208,
+        215
+      ]
+    },
+    "right": {
+      "scene": "scene-0917",
+      "frames": [
+        3,
+        9,
+        18,
+        25
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0193",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.04573559002912084,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0927",
+      "frames": [
+        15,
+        21,
+        30,
+        37
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0194",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.13391220521960998,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        129,
+        135,
+        144,
+        151
+      ]
+    },
+    "right": {
+      "scene": "scene-1006",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0195",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.83980148180286,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0864",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0196",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.009381370455768387,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        172,
+        178,
+        187,
+        193
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0197",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 47,
+    "minimum_distance_m": 0.015728700641324686,
+    "left": {
+      "scene": "scene-0858",
+      "frames": [
+        122,
+        128,
+        137,
+        144
+      ]
+    },
+    "right": {
+      "scene": "scene-1015",
+      "frames": [
+        135,
+        141,
+        150,
+        156
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0198",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.2400492777836407,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        165,
+        171,
+        180,
+        186
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0199",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.2961926852683264,
+    "left": {
+      "scene": "scene-0917",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0200",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.8059634353666363,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0929",
+      "frames": [
+        22,
+        28,
+        37,
+        43
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0201",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.5781954789527796,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0865",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0202",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.6741613792228464,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0424",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0203",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.055189724826720944,
+    "left": {
+      "scene": "scene-0864",
+      "frames": [
+        183,
+        189,
+        198,
+        205
+      ]
+    },
+    "right": {
+      "scene": "scene-0928",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0204",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.04414615482933141,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        38,
+        44,
+        53,
+        60
+      ]
+    },
+    "right": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0205",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 18,
+    "minimum_distance_m": 0.045068788352309444,
+    "left": {
+      "scene": "scene-0428",
+      "frames": [
+        121,
+        127,
+        136,
+        143
+      ]
+    },
+    "right": {
+      "scene": "scene-1008",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0206",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.06420747297237153,
+    "left": {
+      "scene": "scene-0315",
+      "frames": [
+        188,
+        194,
+        203,
+        209
+      ]
+    },
+    "right": {
+      "scene": "scene-0424",
+      "frames": [
+        152,
+        158,
+        167,
+        174
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0207",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.05893871357032427,
+    "left": {
+      "scene": "scene-0865",
+      "frames": [
+        75,
+        81,
+        90,
+        97
+      ]
+    },
+    "right": {
+      "scene": "scene-0928",
+      "frames": [
+        127,
+        133,
+        142,
+        149
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0208",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.03748627440485551,
+    "left": {
+      "scene": "scene-0180",
+      "frames": [
+        52,
+        58,
+        67,
+        73
+      ]
+    },
+    "right": {
+      "scene": "scene-0916",
+      "frames": [
+        69,
+        75,
+        85,
+        91
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0209",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.0045719338969521526,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        66,
+        72,
+        81,
+        87
+      ]
+    },
+    "right": {
+      "scene": "scene-0422",
+      "frames": [
+        8,
+        14,
+        23,
+        29
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0210",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.1528135733862945,
+    "left": {
+      "scene": "scene-1006",
+      "frames": [
+        202,
+        208,
+        217,
+        224
+      ]
+    },
+    "right": {
+      "scene": "scene-1007",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0211",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.0002992604234251595,
+    "left": {
+      "scene": "scene-0860",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0861",
+      "frames": [
+        0,
+        6,
+        16,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0212",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.039905106379307886,
+    "left": {
+      "scene": "scene-0182",
+      "frames": [
+        178,
+        184,
+        193,
+        200
+      ]
+    },
+    "right": {
+      "scene": "scene-1005",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0213",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.08925135798123221,
+    "left": {
+      "scene": "scene-0423",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1004",
+      "frames": [
+        73,
+        79,
+        88,
+        95
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0214",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.029161022545638626,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        196,
+        202,
+        211,
+        217
+      ]
+    },
+    "right": {
+      "scene": "scene-0917",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0215",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.3635429326141991,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0426",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0216",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.5644864351386325,
+    "left": {
+      "scene": "scene-0926",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0927",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0217",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.2419365466911849,
+    "left": {
+      "scene": "scene-0181",
+      "frames": [
+        32,
+        38,
+        47,
+        53
+      ]
+    },
+    "right": {
+      "scene": "scene-0421",
+      "frames": [
+        196,
+        202,
+        211,
+        218
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0218",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.8278101093451964,
+    "left": {
+      "scene": "scene-0861",
+      "frames": [
+        204,
+        210,
+        220,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-0862",
+      "frames": [
+        0,
+        6,
+        15,
+        21
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0219",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.06655374827138266,
+    "left": {
+      "scene": "scene-0425",
+      "frames": [
+        204,
+        210,
+        219,
+        226
+      ]
+    },
+    "right": {
+      "scene": "scene-1007",
+      "frames": [
+        34,
+        40,
+        49,
+        55
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0220",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.2022798116206247,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        198,
+        204,
+        213,
+        219
+      ]
+    },
+    "right": {
+      "scene": "scene-0917",
+      "frames": [
+        82,
+        88,
+        97,
+        104
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0221",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.03320140090271288,
+    "left": {
+      "scene": "scene-0863",
+      "frames": [
+        138,
+        144,
+        154,
+        160
+      ]
+    },
+    "right": {
+      "scene": "scene-0926",
+      "frames": [
+        122,
+        128,
+        138,
+        144
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0222",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.4103276081812801,
+    "left": {
+      "scene": "scene-0422",
+      "frames": [
+        173,
+        179,
+        188,
+        194
+      ]
+    },
+    "right": {
+      "scene": "scene-0928",
+      "frames": [
+        199,
+        205,
+        214,
+        221
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0223",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 0.09106450923790438,
+    "left": {
+      "scene": "scene-0420",
+      "frames": [
+        200,
+        206,
+        215,
+        222
+      ]
+    },
+    "right": {
+      "scene": "scene-0421",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  },
+  {
+    "pair_id": "positive-0224",
+    "label": 1,
+    "location": "singapore-queenstown",
+    "component_id": 1,
+    "minimum_distance_m": 1.068263696057766,
+    "left": {
+      "scene": "scene-0424",
+      "frames": [
+        203,
+        209,
+        218,
+        225
+      ]
+    },
+    "right": {
+      "scene": "scene-0425",
+      "frames": [
+        0,
+        6,
+        15,
+        22
+      ]
+    }
+  }
+]

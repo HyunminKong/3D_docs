@@ -1,0 +1,46 @@
+experiment: EXP-009
+protocol_revision: v1.4
+seed: 900014
+
+data:
+  pair_manifest: revisit3d/manifests/exp009_key_pilot_train_v13.json
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  split: train
+  image_height: 224
+  image_width: 224
+
+models:
+  vggt:
+    repository: FastVGGT
+    checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+    descriptor: mean_patch_token_per_view
+  dinov2:
+    timm_name: vit_large_patch14_reg4_dinov2.lvd142m
+    descriptor: normalized_cls_token_per_view
+    offline_weights_only: true
+
+classifier:
+  protocol: leave_one_location_out
+  model: standard_scaler_logistic_regression
+  class_weight: balanced
+  regularization_c: 1.0
+  probability_threshold: 0.5
+  pair_features:
+    - pooled_cosine
+    - left_nn_mean
+    - right_nn_mean
+    - nn_q10
+    - nn_q90
+    - similarity_coverage
+    - mutual_fraction
+    - mutual_similarity_mean
+
+selection:
+  primary_metric: oof_roc_auc
+  minimum_dinov2_margin_over_vggt: 0.03
+  minimum_dinov2_each_location_auc: 0.70
+  fallback: vggt
+
+output:
+  feature_cache: revisit3d/cache/EXP-009/key_backbone_features_train_v14.pt
+  result: revisit3d/results/EXP-009/stage4_key_backbone_train_v14.json

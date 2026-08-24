@@ -306,3 +306,10 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-3 selection
 
 Full geometry caching is deferred until the long-term consolidation representation is selected. Stage 3 samples at most 64 positive undirected train edges per location by a fixed hash, retaining at least 40 per location, and creates one strict same-location non-overlap negative per positive using metadata bounding-box separation of at least 20 m. Four fixed context views are used. VGGT reconstruction tokens and the locally available frozen DINOv2 ViT-L/14 representation will be compared under the same leave-one-location-out pair/retrieval protocol. Validation/test pixels remain unopened. DINOv2 is a consolidation-only candidate; selecting it would not replace the VGGT geometry backbone or the learned local transport key.
+
+## D045 — DINOv2 requires a meaningful cross-location margin
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-4 feature extraction
+
+The Stage-3 pilot contains 225 positive and 225 strict negative pairs across 247 train scenes. Stage 4 extracts frozen four-view sets: per-view mean patch tokens from VGGT and per-view normalized CLS tokens from locally cached DINOv2 ViT-L/14. A shared eight-statistic token-set classifier is evaluated leave-one-location-out. DINOv2 becomes the long-term consolidation representation only if OOF ROC-AUC is at least 0.03 above VGGT and every held-out location reaches at least 0.70 AUC. Otherwise the current VGGT representation remains. This decision affects only long-term bucketing/prefiltering; VGGT remains the geometry backbone and the learned plasticity key remains the transport address.

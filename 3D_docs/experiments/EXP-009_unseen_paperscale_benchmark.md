@@ -58,3 +58,5 @@ Exactly 636 scene metadata files were generated: 454 train, 86 validation, and 9
 ## Stage-3 train-only key pilot
 
 Before full geometry caching, select up to 64 undirected positive train edges per location by a fixed hash. Require at least 40 positives from every location. Pair each positive with one same-location negative whose scene bounding boxes are at least 20 m apart and which has no direct 2 m overlap edge. Use four fixed context views. This pilot chooses the long-term consolidation representation only; it does not change the learned local transport key.
+
+The frozen selection contains 225 positive and 225 negative pairs over 247 train scenes. Compare four-view token-set statistics from VGGT mean-patch descriptors and DINOv2 ViT-L/14 CLS descriptors with leave-one-location-out logistic evaluation. DINOv2 is selected only if its OOF AUC exceeds VGGT by at least 0.03 and every held-out location reaches AUC 0.70; otherwise VGGT remains the consolidation fallback. Validation/test pixels remain unopened.

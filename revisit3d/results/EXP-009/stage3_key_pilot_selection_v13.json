@@ -1,0 +1,24 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage3_train_key_pilot_selection",
+  "protocol_revision": "v1.3",
+  "split": "train",
+  "metadata_only": true,
+  "image_pixels_accessed": false,
+  "model_output_accessed": false,
+  "config": "configs/EXP-009_key_pilot_v13.yaml",
+  "pair_manifest": "revisit3d/manifests/exp009_key_pilot_train_v13.json",
+  "positive_pairs": 225,
+  "negative_pairs": 225,
+  "positive_by_location": {
+    "boston-seaport": 64,
+    "singapore-hollandvillage": 42,
+    "singapore-onenorth": 64,
+    "singapore-queenstown": 55
+  },
+  "unique_scenes": 247,
+  "minimum_negative_bbox_distance_m": 20.581948264670245,
+  "validation_accessed": false,
+  "test_accessed": false,
+  "passed": true
+}
