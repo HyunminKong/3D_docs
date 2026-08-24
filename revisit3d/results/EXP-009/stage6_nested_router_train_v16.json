@@ -1,0 +1,2749 @@
+{
+  "experiment": "EXP-009",
+  "stage": "stage6_nested_component_router",
+  "protocol_revision": "v1.6",
+  "split": "train",
+  "validation_accessed": false,
+  "test_accessed": false,
+  "query_or_future_router_input": false,
+  "config": "configs/EXP-009_nested_router_v16.yaml",
+  "episodes": 225,
+  "candidates": 1125,
+  "components": 25,
+  "feature_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279
+  ],
+  "threshold_by_component": {
+    "component-0": {
+      "threshold": 0.005804515201838024,
+      "mean_utility": 0.01317423635548536,
+      "harmful_rate": 0.13664596273291926,
+      "acceptance": 0.9130434782608695,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.13664596273291926
+    },
+    "component-1": {
+      "threshold": 0.011588939557582455,
+      "mean_utility": 0.01800088792826679,
+      "harmful_rate": 0.06358381502890173,
+      "acceptance": 0.838150289017341,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.06936416184971098
+    },
+    "component-10": {
+      "threshold": 0.0108913017872315,
+      "mean_utility": 0.014059488399522837,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.7767857142857143,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-16": {
+      "threshold": 0.011000942180586894,
+      "mean_utility": 0.014036620252806435,
+      "harmful_rate": 0.08520179372197309,
+      "acceptance": 0.7757847533632287,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11210762331838565
+    },
+    "component-18": {
+      "threshold": 0.011497786989851983,
+      "mean_utility": 0.014190335105143146,
+      "harmful_rate": 0.08035714285714286,
+      "acceptance": 0.7633928571428571,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-19": {
+      "threshold": 0.011466835101588807,
+      "mean_utility": 0.014010843656079314,
+      "harmful_rate": 0.08108108108108109,
+      "acceptance": 0.7567567567567568,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11261261261261261
+    },
+    "component-23": {
+      "threshold": 0.011765267391561259,
+      "mean_utility": 0.014017217723838777,
+      "harmful_rate": 0.08035714285714286,
+      "acceptance": 0.7544642857142857,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-27": {
+      "threshold": 0.011988038357912454,
+      "mean_utility": 0.014282077119705637,
+      "harmful_rate": 0.08108108108108109,
+      "acceptance": 0.7432432432432432,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11261261261261261
+    },
+    "component-30": {
+      "threshold": 0.011809541189868347,
+      "mean_utility": 0.01400549551626764,
+      "harmful_rate": 0.08108108108108109,
+      "acceptance": 0.7432432432432432,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11261261261261261
+    },
+    "component-32": {
+      "threshold": 0.011116163370344403,
+      "mean_utility": 0.014223702463823429,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.7723214285714286,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-33": {
+      "threshold": 0.006974318268189367,
+      "mean_utility": 0.013505978506491456,
+      "harmful_rate": 0.11312217194570136,
+      "acceptance": 0.8597285067873304,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11312217194570136
+    },
+    "component-34": {
+      "threshold": 0.005966701056858658,
+      "mean_utility": 0.015621111069793277,
+      "harmful_rate": 0.11312217194570136,
+      "acceptance": 0.9095022624434389,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11312217194570136
+    },
+    "component-36": {
+      "threshold": 0.01088384508914253,
+      "mean_utility": 0.014292207222102402,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.78125,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-37": {
+      "threshold": 0.011379614959883483,
+      "mean_utility": 0.014805846952127267,
+      "harmful_rate": 0.0779816513761468,
+      "acceptance": 0.7844036697247706,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11009174311926606
+    },
+    "component-4": {
+      "threshold": 0.009700000169268707,
+      "mean_utility": 0.015183368278062201,
+      "harmful_rate": 0.09405940594059406,
+      "acceptance": 0.806930693069307,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.1188118811881188
+    },
+    "component-47": {
+      "threshold": 0.011025734736703721,
+      "mean_utility": 0.01425762284933236,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.7767857142857143,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-49": {
+      "threshold": 0.01144338794900449,
+      "mean_utility": 0.014272693881269203,
+      "harmful_rate": 0.08035714285714286,
+      "acceptance": 0.7633928571428571,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-51": {
+      "threshold": 0.008302521565016343,
+      "mean_utility": 0.014493498537376581,
+      "harmful_rate": 0.11160714285714286,
+      "acceptance": 0.8526785714285714,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-52": {
+      "threshold": 0.009737544297884919,
+      "mean_utility": 0.014789632533054648,
+      "harmful_rate": 0.09865470852017937,
+      "acceptance": 0.8385650224215246,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.10762331838565023
+    },
+    "component-58": {
+      "threshold": 0.011142453573147722,
+      "mean_utility": 0.014191463577065275,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.7723214285714286,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-59": {
+      "threshold": 0.009860019388138404,
+      "mean_utility": 0.014926989193250082,
+      "harmful_rate": 0.09049773755656108,
+      "acceptance": 0.8099547511312217,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.1085972850678733
+    },
+    "component-63": {
+      "threshold": 0.011811089115604337,
+      "mean_utility": 0.013824282833411417,
+      "harmful_rate": 0.08035714285714286,
+      "acceptance": 0.75,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-64": {
+      "threshold": 0.010977394020388621,
+      "mean_utility": 0.014069654704274268,
+      "harmful_rate": 0.08482142857142858,
+      "acceptance": 0.7767857142857143,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    },
+    "component-8": {
+      "threshold": 0.005143484801102761,
+      "mean_utility": 0.014740860457314226,
+      "harmful_rate": 0.10382513661202186,
+      "acceptance": 0.8743169398907104,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.1092896174863388
+    },
+    "component-9": {
+      "threshold": 0.0112492222095841,
+      "mean_utility": 0.013903557857052615,
+      "harmful_rate": 0.08035714285714286,
+      "acceptance": 0.7633928571428571,
+      "fallback_reject_all": false,
+      "visual_harm_constraint": 0.11160714285714286
+    }
+  },
+  "metrics": {
+    "router": {
+      "episodes": 225,
+      "mean_selected_utility": 0.014753460658377864,
+      "median_selected_utility": 0.013807758688926697,
+      "beneficial_rate": 0.5466666666666666,
+      "harmful_rate": 0.10666666666666667,
+      "raw_sign_harm_rate": 0.19555555555555557,
+      "accept_rate": 0.8355555555555556,
+      "component_mean_utility": {
+        "component-0": 0.02012826458485506,
+        "component-1": 0.007356571532839622,
+        "component-10": 0.0,
+        "component-16": 0.04021609574556351,
+        "component-18": 0.0,
+        "component-19": 0.010821244058509668,
+        "component-23": -0.00282495585270226,
+        "component-27": 0.014797182365631064,
+        "component-30": 0.02401097274074952,
+        "component-32": 0.009532630443572998,
+        "component-33": 0.06094606872648001,
+        "component-34": 0.001406212104484439,
+        "component-36": 0.0,
+        "component-37": 0.005805777918015208,
+        "component-4": 0.01000215940217933,
+        "component-47": 0.016890989616513252,
+        "component-49": 0.0,
+        "component-51": 0.00495925871655345,
+        "component-52": -0.00016884262731764466,
+        "component-58": 0.016754141077399254,
+        "component-59": 0.0027343961410224438,
+        "component-63": 0.05916345864534378,
+        "component-64": 0.03289179876446724,
+        "component-8": 0.0162234054490303,
+        "component-9": 0.07000812143087387
+      },
+      "component_harm_rate": 0.0,
+      "harmful_components": []
+    },
+    "ungated_new_router": {
+      "episodes": 225,
+      "mean_selected_utility": 0.016384311720774147,
+      "median_selected_utility": 0.017567934468388557,
+      "beneficial_rate": 0.6266666666666667,
+      "harmful_rate": 0.13333333333333333,
+      "raw_sign_harm_rate": 0.23555555555555555,
+      "accept_rate": 1.0,
+      "component_mean_utility": {
+        "component-0": 0.020222042531486295,
+        "component-1": 0.007318265411483411,
+        "component-10": 0.03253771737217903,
+        "component-16": 0.04021609574556351,
+        "component-18": -0.00032654646201990545,
+        "component-19": 0.02119789117326339,
+        "component-23": -0.00282495585270226,
+        "component-27": 0.014797182365631064,
+        "component-30": 0.02401097274074952,
+        "component-32": 0.009532630443572998,
+        "component-33": 0.06094606872648001,
+        "component-34": 0.007052572211250663,
+        "component-36": 0.0014969668118283153,
+        "component-37": 0.00796045979950577,
+        "component-4": 0.014952234884929014,
+        "component-47": 0.016890989616513252,
+        "component-49": 0.001432602177374065,
+        "component-51": 0.00495925871655345,
+        "component-52": -0.02062110173574183,
+        "component-58": 0.016754141077399254,
+        "component-59": 0.007582999533042312,
+        "component-63": 0.05916345864534378,
+        "component-64": 0.03289179876446724,
+        "component-8": 0.02019128860307059,
+        "component-9": 0.07000812143087387
+      },
+      "component_harm_rate": 0.04,
+      "harmful_components": [
+        "component-52"
+      ]
+    },
+    "old_locked_router": {
+      "episodes": 225,
+      "mean_selected_utility": 0.016953404316930876,
+      "median_selected_utility": 0.017252588644623756,
+      "beneficial_rate": 0.6133333333333333,
+      "harmful_rate": 0.14222222222222222,
+      "raw_sign_harm_rate": 0.21777777777777776,
+      "accept_rate": 1.0,
+      "component_mean_utility": {
+        "component-0": 0.022970218135014875,
+        "component-1": 0.00653600134962919,
+        "component-10": 0.03253771737217903,
+        "component-16": 0.0366785554215312,
+        "component-18": -0.00032654646201990545,
+        "component-19": 0.02119789117326339,
+        "component-23": -0.00282495585270226,
+        "component-27": 0.014797182365631064,
+        "component-30": 0.02401097274074952,
+        "component-32": 0.003285709535703063,
+        "component-33": 0.06612893380224705,
+        "component-34": 0.017880511019029655,
+        "component-36": 0.0014969668118283153,
+        "component-37": 0.00840444491976606,
+        "component-4": 0.015092810524789535,
+        "component-47": 0.016890989616513252,
+        "component-49": -0.002994320821017027,
+        "component-51": 0.00495925871655345,
+        "component-52": -0.020493664753303165,
+        "component-58": 0.016754141077399254,
+        "component-59": 0.010657397797331214,
+        "component-63": 0.05916345864534378,
+        "component-64": 0.03289179876446724,
+        "component-8": 0.018468727487959854,
+        "component-9": 0.07000812143087387
+      },
+      "component_harm_rate": 0.04,
+      "harmful_components": [
+        "component-52"
+      ]
+    },
+    "visual_mean": {
+      "episodes": 225,
+      "mean_selected_utility": 0.012273957581007078,
+      "median_selected_utility": 0.013614877127110958,
+      "beneficial_rate": 0.5777777777777777,
+      "harmful_rate": 0.1111111111111111,
+      "raw_sign_harm_rate": 0.2222222222222222,
+      "accept_rate": 1.0,
+      "component_mean_utility": {
+        "component-0": 0.015246282684529433,
+        "component-1": 0.005395922592679898,
+        "component-10": 0.0209885872900486,
+        "component-16": 0.02509300224483013,
+        "component-18": 0.007085512392222881,
+        "component-19": 0.014481189971168837,
+        "component-23": 0.005318603944033384,
+        "component-27": 0.007551702061997882,
+        "component-30": 0.01946164310599367,
+        "component-32": 0.0109591418877244,
+        "component-33": 0.03738300921395421,
+        "component-34": 0.01218142983270809,
+        "component-36": 0.010798962786793709,
+        "component-37": 0.008547851483204536,
+        "component-4": 0.012620963310600137,
+        "component-47": 0.015178532339632511,
+        "component-49": 0.0004151869216002524,
+        "component-51": 0.0031765373423695564,
+        "component-52": -0.013930334942415357,
+        "component-58": 0.010543879121541977,
+        "component-59": 0.009172892197966576,
+        "component-63": 0.021447645500302315,
+        "component-64": 0.015451407991349697,
+        "component-8": 0.014521030905944783,
+        "component-9": 0.04216771200299263
+      },
+      "component_harm_rate": 0.04,
+      "harmful_components": [
+        "component-52"
+      ]
+    }
+  },
+  "bootstrap": {
+    "unit": "physical_overlap_component",
+    "components": 25,
+    "samples": 10000,
+    "seed": 900016,
+    "descriptive_only": false,
+    "methods": {
+      "router": {
+        "bootstrap_mean": 0.014678009144455084,
+        "ci95": [
+          0.009514221584826885,
+          0.01974618765149214
+        ]
+      },
+      "ungated_new_router": {
+        "bootstrap_mean": 0.016415795197104358,
+        "ci95": [
+          0.010761091931315922,
+          0.021360960394346692
+        ]
+      },
+      "old_locked_router": {
+        "bootstrap_mean": 0.01696880344314654,
+        "ci95": [
+          0.010533279688169599,
+          0.02284381671690225
+        ]
+      },
+      "visual_mean": {
+        "bootstrap_mean": 0.012302840355925888,
+        "ci95": [
+          0.008213713031939622,
+          0.015508464592555135
+        ]
+      }
+    },
+    "differences": {
+      "router_minus_ungated_new_router": {
+        "bootstrap_mean": -0.001737786052649276,
+        "ci95": [
+          -0.003846155067340977,
+          -0.00018863725536237333
+        ]
+      },
+      "router_minus_old_locked_router": {
+        "bootstrap_mean": -0.002290794298691457,
+        "ci95": [
+          -0.004237427200122877,
+          -0.00041157862554851756
+        ]
+      },
+      "router_minus_visual_mean": {
+        "bootstrap_mean": 0.002375168788529195,
+        "ci95": [
+          -0.000142012888258802,
+          0.004654891787850587
+        ]
+      }
+    }
+  },
+  "selections": [
+    {
+      "episode": "scene-0065__scene-0444",
+      "score": 0.006174931884171592,
+      "utility": 0.04629237577319145,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0067__scene-0255",
+      "score": 0.021526061507633358,
+      "utility": 0.02142982743680477,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0068__scene-0454",
+      "score": 0.012172655662179928,
+      "utility": 0.014086592942476273,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0070__scene-0207",
+      "score": 0.022866848645652527,
+      "utility": 0.033039480447769165,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0072__scene-0451",
+      "score": 0.0012920778966714914,
+      "utility": 0.00019849375530611724,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0075__scene-0163",
+      "score": 0.021349025844302268,
+      "utility": 0.02091384492814541,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0093__scene-0462",
+      "score": 0.017227748236326113,
+      "utility": 0.04932349547743797,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0093__scene-0588",
+      "score": 0.028241355009718735,
+      "utility": -0.0008519735420122743,
+      "candidate": "distant_b",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0093__scene-0669",
+      "score": 0.020560421512906935,
+      "utility": 0.03301752358675003,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0096__scene-0227",
+      "score": 0.027366461381442587,
+      "utility": 0.04041633382439613,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0096__scene-0287",
+      "score": 0.020199691870102197,
+      "utility": 0.015467596240341663,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0099__scene-0258",
+      "score": 0.014408805317346285,
+      "utility": 0.004960622172802687,
+      "candidate": "distant_b",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0105__scene-0728",
+      "score": 0.030260845410019152,
+      "utility": 0.05769919231534004,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0106__scene-0253",
+      "score": 0.018320001812659113,
+      "utility": 0.01001966092735529,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0106__scene-0303",
+      "score": 0.00559059745596962,
+      "utility": -0.00112974236253649,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0107__scene-0876",
+      "score": 0.019454098306101515,
+      "utility": 0.018950574100017548,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0164__scene-0328",
+      "score": 0.016715790308047734,
+      "utility": 0.013142162002623081,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0202__scene-0654",
+      "score": 0.026951636553643445,
+      "utility": 0.013267064467072487,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0208__scene-0659",
+      "score": 0.005981900886975742,
+      "utility": 0.005561360623687506,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0212__scene-0450",
+      "score": 0.01648705866062186,
+      "utility": -0.0053147259168326855,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0213__scene-0452",
+      "score": 0.019135968980781515,
+      "utility": 0.02181035466492176,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0222__scene-0696",
+      "score": 0.016618847736988043,
+      "utility": 0.045451708137989044,
+      "candidate": "distant_b",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0225__scene-0242",
+      "score": 0.028898005329416936,
+      "utility": 0.02877757139503956,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0227__scene-0704",
+      "score": 0.022116368973852767,
+      "utility": 0.04308214411139488,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0228__scene-0290",
+      "score": 0.018104993542781375,
+      "utility": 0.04314921423792839,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0235__scene-0475",
+      "score": 0.019303130859488274,
+      "utility": 0.012812458910048008,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0245__scene-0258",
+      "score": 0.012487692405681006,
+      "utility": 0.02018086053431034,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0245__scene-0290",
+      "score": 0.0032299659648018647,
+      "utility": 0.00693303719162941,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0253__scene-0302",
+      "score": 0.01977773514439851,
+      "utility": 0.013807758688926697,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0255__scene-0458",
+      "score": 0.013609218236050638,
+      "utility": -0.004587859380990267,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0258__scene-0676",
+      "score": 0.015648160893577078,
+      "utility": 0.01747913658618927,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0263__scene-0452",
+      "score": 0.012976971623555282,
+      "utility": -0.04749026894569397,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0284__scene-0698",
+      "score": 0.00980781066405174,
+      "utility": -0.015370553359389305,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0289__scene-0469",
+      "score": 0.028218357013121843,
+      "utility": 0.027143346145749092,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0291__scene-0471",
+      "score": 0.020643257045823017,
+      "utility": 0.03655104711651802,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0294__scene-0295",
+      "score": 0.029101131281777153,
+      "utility": 0.04726988822221756,
+      "candidate": "distant_b",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0294__scene-0296",
+      "score": 0.033262806369147,
+      "utility": 0.0343751460313797,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0294__scene-0715",
+      "score": 0.020517713795794625,
+      "utility": 0.039527393877506256,
+      "candidate": "distant_b",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0295__scene-0296",
+      "score": 0.03482009224482981,
+      "utility": 0.03064161352813244,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0300__scene-0478",
+      "score": 0.011526770758652391,
+      "utility": -0.04773681238293648,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0301__scene-0872",
+      "score": 0.028092638770080766,
+      "utility": 0.01850231923162937,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0321__scene-0467",
+      "score": 0.02429497272995941,
+      "utility": 0.028061196208000183,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0331__scene-0523",
+      "score": 0.0133517818720818,
+      "utility": 0.03642096742987633,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0389__scene-0643",
+      "score": 0.014610438494131189,
+      "utility": 0.017983701080083847,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0448__scene-0660",
+      "score": 0.021017096287440577,
+      "utility": 0.030093802139163017,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0454__scene-0455",
+      "score": 0.01543916898240728,
+      "utility": 0.03930014744400978,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0455__scene-0456",
+      "score": 0.02296373407794099,
+      "utility": -0.01131403911858797,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0461__scene-0586",
+      "score": 0.012155080491801666,
+      "utility": -0.008936970494687557,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0462__scene-0463",
+      "score": 0.030866555744640457,
+      "utility": 0.043750930577516556,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0463__scene-0672",
+      "score": 0.014041179069860786,
+      "utility": 0.02939623035490513,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0469__scene-0707",
+      "score": 0.014448092453698247,
+      "utility": 0.005191597156226635,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0474__scene-0683",
+      "score": 0.007930177161694023,
+      "utility": 0.06876955926418304,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0506__scene-0520",
+      "score": 0.011098417935265425,
+      "utility": -0.01883845590054989,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0511__scene-0512",
+      "score": 0.015298867077926456,
+      "utility": 0.017252588644623756,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0586__scene-0587",
+      "score": 0.03282501028479076,
+      "utility": 0.03759617730975151,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0586__scene-0700",
+      "score": 0.008926083764282267,
+      "utility": 0.015415359288454056,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0591__scene-0783",
+      "score": 0.013051534583259632,
+      "utility": 0.005398462060838938,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0639__scene-0909",
+      "score": 0.021243277996938606,
+      "utility": 0.012135550379753113,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0643__scene-0911",
+      "score": 0.008668083763528268,
+      "utility": 0.0277794748544693,
+      "candidate": "matched_a",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0666__scene-0697",
+      "score": 0.027143633225212203,
+      "utility": 0.0345253050327301,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0677__scene-0678",
+      "score": 0.02621694011439095,
+      "utility": 0.06565499305725098,
+      "candidate": "foreign_2",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0688__scene-0898",
+      "score": 0.02261073171450878,
+      "utility": 0.0133201340213418,
+      "candidate": "foreign_0",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0701__scene-0703",
+      "score": 0.02326417203164867,
+      "utility": 0.015191726386547089,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0871__scene-0898",
+      "score": 0.023080275235575723,
+      "utility": 0.02726302109658718,
+      "candidate": "foreign_1",
+      "component": "component-0",
+      "threshold": 0.005804515201838024,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0177__scene-0865",
+      "score": 0.0275735443300877,
+      "utility": -0.0067858267575502396,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0177__scene-0929",
+      "score": 0.017438952465972338,
+      "utility": 0.011989542283117771,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0179__scene-0916",
+      "score": 0.023619111243496686,
+      "utility": 0.0007978904177434742,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0180__scene-0420",
+      "score": 0.027462261885553597,
+      "utility": 0.0008788330596871674,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0180__scene-0916",
+      "score": 0.009872945632934583,
+      "utility": 0.01573256403207779,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0181__scene-0421",
+      "score": 0.026068696819737572,
+      "utility": 0.02459000051021576,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0181__scene-0422",
+      "score": 0.01715480901200946,
+      "utility": 0.0258677639067173,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0181__scene-0865",
+      "score": 0.02802648579361318,
+      "utility": 0.02827831171452999,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0181__scene-0917",
+      "score": 0.020206489615367973,
+      "utility": -0.012333424761891365,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0182__scene-0315",
+      "score": 0.020311472605839088,
+      "utility": -0.031567517668008804,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0182__scene-0423",
+      "score": 0.016483526011161428,
+      "utility": -0.03181450441479683,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0182__scene-0424",
+      "score": 0.01819458786367687,
+      "utility": 0.008278781548142433,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0182__scene-1004",
+      "score": 0.01732043320360862,
+      "utility": 0.061343759298324585,
+      "candidate": "matched_a",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0182__scene-1005",
+      "score": 0.010739120123288384,
+      "utility": -0.032329779118299484,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0315__scene-0423",
+      "score": 0.013296508111496188,
+      "utility": -0.00288468599319458,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0315__scene-0424",
+      "score": 0.016092909867038322,
+      "utility": -0.038223996758461,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0315__scene-1004",
+      "score": 0.012769989812955356,
+      "utility": 0.0562315508723259,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0315__scene-1005",
+      "score": 0.013889479786785366,
+      "utility": -0.015650538727641106,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0420__scene-0421",
+      "score": 0.030719172274301196,
+      "utility": 0.02902953512966633,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0420__scene-0916",
+      "score": 0.020417451071605912,
+      "utility": -0.04609967768192291,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0421__scene-0422",
+      "score": 0.01298039729932977,
+      "utility": 0.04087946191430092,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0422__scene-0865",
+      "score": 0.017361117654763517,
+      "utility": -0.004281559493392706,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0422__scene-0917",
+      "score": 0.0266419790729181,
+      "utility": 0.06413368135690689,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0422__scene-0928",
+      "score": 0.013029008245250306,
+      "utility": 0.024678271263837814,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0422__scene-0929",
+      "score": 0.016687570407812997,
+      "utility": -0.0275601577013731,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0423__scene-0424",
+      "score": 0.01777503273775978,
+      "utility": 0.003152650548145175,
+      "candidate": "matched_a",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0423__scene-0917",
+      "score": 0.030015211889912834,
+      "utility": 0.03446682542562485,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0423__scene-1004",
+      "score": 0.013252945081168158,
+      "utility": -0.012150513008236885,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0424__scene-0425",
+      "score": 0.01514434984881518,
+      "utility": 0.02904590219259262,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0424__scene-1004",
+      "score": 0.021118244313541396,
+      "utility": -0.006280296482145786,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0424__scene-1005",
+      "score": 0.014686770599485416,
+      "utility": -0.040509894490242004,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0425__scene-0426",
+      "score": 0.009586181574953997,
+      "utility": 0.001993180252611637,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0425__scene-1005",
+      "score": 0.020752900335156123,
+      "utility": 0.02069384604692459,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0425__scene-1006",
+      "score": 0.02061222939508299,
+      "utility": 0.02363380417227745,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0425__scene-1007",
+      "score": 0.0342885846560975,
+      "utility": 0.03532281517982483,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0426__scene-1007",
+      "score": 0.026337578330845327,
+      "utility": 0.017567934468388557,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0860__scene-0861",
+      "score": 0.03537252184961227,
+      "utility": 0.028261635452508926,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0861__scene-0862",
+      "score": 0.01408919841524028,
+      "utility": 0.039738964289426804,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0862__scene-0863",
+      "score": 0.020824085521100186,
+      "utility": 0.0489368811249733,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0863__scene-0864",
+      "score": 0.011997759381296207,
+      "utility": 0.030439110472798347,
+      "candidate": "matched_a",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0863__scene-0926",
+      "score": 0.017388103785391806,
+      "utility": -0.07351287454366684,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0863__scene-0927",
+      "score": 0.01576256210105185,
+      "utility": -0.016139792278409004,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0864__scene-0865",
+      "score": 0.011449968436786964,
+      "utility": 0.0014883775729686022,
+      "candidate": "matched_a",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0864__scene-0927",
+      "score": 0.01777181506473865,
+      "utility": -0.004465749487280846,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0864__scene-0928",
+      "score": 0.0102358885947265,
+      "utility": -0.013434899039566517,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0865__scene-0917",
+      "score": 0.023899354138158725,
+      "utility": -0.017121871933341026,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0865__scene-0928",
+      "score": 0.008890825378597287,
+      "utility": 0.002203532261773944,
+      "candidate": "matched_a",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0865__scene-0929",
+      "score": 0.02185906928135778,
+      "utility": 0.02574516087770462,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0917__scene-1004",
+      "score": 0.017523839830631428,
+      "utility": -0.004351939540356398,
+      "candidate": "foreign_2",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0926__scene-0927",
+      "score": 0.019016065114714088,
+      "utility": 0.029034754261374474,
+      "candidate": "foreign_0",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1005__scene-1006",
+      "score": 0.01977679773874586,
+      "utility": 0.031258873641490936,
+      "candidate": "distant_b",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1006__scene-1007",
+      "score": 0.008141074454957663,
+      "utility": 0.022355105727910995,
+      "candidate": "foreign_1",
+      "component": "component-1",
+      "threshold": 0.011588939557582455,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0848__scene-0849",
+      "score": 0.009244278974946743,
+      "utility": 0.03253771737217903,
+      "candidate": "foreign_1",
+      "component": "component-10",
+      "threshold": 0.0108913017872315,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0158__scene-0159",
+      "score": 0.03543691823423996,
+      "utility": 0.05996423214673996,
+      "candidate": "foreign_1",
+      "component": "component-16",
+      "threshold": 0.011000942180586894,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0377__scene-0385",
+      "score": 0.015380738307511042,
+      "utility": 0.020467959344387054,
+      "candidate": "foreign_1",
+      "component": "component-16",
+      "threshold": 0.011000942180586894,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0428__scene-1008",
+      "score": 0.006816881792336893,
+      "utility": -0.00032654646201990545,
+      "candidate": "foreign_2",
+      "component": "component-18",
+      "threshold": 0.011497786989851983,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0160__scene-0269",
+      "score": 0.01139459020989083,
+      "utility": 0.03112994134426117,
+      "candidate": "foreign_0",
+      "component": "component-19",
+      "threshold": 0.011466835101588807,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0269__scene-0348",
+      "score": 0.031989974968277796,
+      "utility": 0.025872062891721725,
+      "candidate": "foreign_1",
+      "component": "component-19",
+      "threshold": 0.011466835101588807,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0348__scene-0378",
+      "score": 0.01445565164198324,
+      "utility": 0.006591669283807278,
+      "candidate": "matched_a",
+      "component": "component-19",
+      "threshold": 0.011466835101588807,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1089__scene-1090",
+      "score": 0.012062972035021003,
+      "utility": -0.00282495585270226,
+      "candidate": "foreign_0",
+      "component": "component-23",
+      "threshold": 0.011765267391561259,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0975__scene-0976",
+      "score": 0.030970538261470323,
+      "utility": 0.00358342076651752,
+      "candidate": "foreign_2",
+      "component": "component-27",
+      "threshold": 0.011988038357912454,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0975__scene-0977",
+      "score": 0.028875117637348333,
+      "utility": 0.021792568266391754,
+      "candidate": "foreign_0",
+      "component": "component-27",
+      "threshold": 0.011988038357912454,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0975__scene-0978",
+      "score": 0.029084249383862715,
+      "utility": 0.019015558063983917,
+      "candidate": "foreign_2",
+      "component": "component-27",
+      "threshold": 0.011988038357912454,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0356__scene-0357",
+      "score": 0.035511982250134695,
+      "utility": 0.026427777484059334,
+      "candidate": "foreign_0",
+      "component": "component-30",
+      "threshold": 0.011809541189868347,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0356__scene-0358",
+      "score": 0.02912623686145533,
+      "utility": 0.0305644404143095,
+      "candidate": "foreign_1",
+      "component": "component-30",
+      "threshold": 0.011809541189868347,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0357__scene-0358",
+      "score": 0.03141062221556314,
+      "utility": 0.015040700323879719,
+      "candidate": "foreign_1",
+      "component": "component-30",
+      "threshold": 0.011809541189868347,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0139__scene-0347",
+      "score": 0.01261015376183233,
+      "utility": 0.009532630443572998,
+      "candidate": "matched_a",
+      "component": "component-32",
+      "threshold": 0.011116163370344403,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0122__scene-0962",
+      "score": 0.02500036503015548,
+      "utility": 0.026245974004268646,
+      "candidate": "matched_a",
+      "component": "component-33",
+      "threshold": 0.006974318268189367,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0368__scene-0369",
+      "score": 0.01872529476274188,
+      "utility": 0.03776627779006958,
+      "candidate": "foreign_2",
+      "component": "component-33",
+      "threshold": 0.006974318268189367,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0368__scene-0963",
+      "score": 0.014400889544981949,
+      "utility": 0.04169129207730293,
+      "candidate": "foreign_2",
+      "component": "component-33",
+      "threshold": 0.006974318268189367,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0369__scene-0963",
+      "score": 0.02954739715931891,
+      "utility": 0.13808073103427887,
+      "candidate": "foreign_0",
+      "component": "component-33",
+      "threshold": 0.006974318268189367,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0408__scene-1053",
+      "score": 0.005283116356243577,
+      "utility": 0.022585440427064896,
+      "candidate": "foreign_2",
+      "component": "component-34",
+      "threshold": 0.005966701056858658,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0408__scene-1065",
+      "score": 0.006275363081348417,
+      "utility": -0.005379726178944111,
+      "candidate": "foreign_1",
+      "component": "component-34",
+      "threshold": 0.005966701056858658,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1053__scene-1065",
+      "score": 0.012204171079067962,
+      "utility": 0.019061340019106865,
+      "candidate": "distant_b",
+      "component": "component-34",
+      "threshold": 0.005966701056858658,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1064__scene-1065",
+      "score": 0.006566453423676324,
+      "utility": -0.008056765422224998,
+      "candidate": "matched_a",
+      "component": "component-34",
+      "threshold": 0.005966701056858658,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0058__scene-0381",
+      "score": 0.0023096035499006948,
+      "utility": 0.0014969668118283153,
+      "candidate": "matched_a",
+      "component": "component-36",
+      "threshold": 0.01088384508914253,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0411__scene-1055",
+      "score": 0.006869380332503619,
+      "utility": -0.004649542737752199,
+      "candidate": "matched_a",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0412__scene-0413",
+      "score": 0.011172221980911425,
+      "utility": 0.015165423974394798,
+      "candidate": "matched_a",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0412__scene-1055",
+      "score": 0.0054964360032649555,
+      "utility": -0.012071335688233376,
+      "candidate": "matched_a",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0412__scene-1056",
+      "score": 0.02188009595564064,
+      "utility": 0.028790980577468872,
+      "candidate": "matched_a",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0413__scene-0414",
+      "score": 0.022044964968406654,
+      "utility": 0.011849464848637581,
+      "candidate": "foreign_0",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0413__scene-1056",
+      "score": 0.011035296184861538,
+      "utility": 0.014956525526940823,
+      "candidate": "foreign_0",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1055__scene-1056",
+      "score": 0.00714794423794902,
+      "utility": 0.0016817020950838923,
+      "candidate": "matched_a",
+      "component": "component-37",
+      "threshold": 0.011379614959883483,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1071__scene-1074",
+      "score": 0.007703317861441117,
+      "utility": 0.020409131422638893,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1071__scene-1075",
+      "score": 0.00014186504324198088,
+      "utility": 0.013786179013550282,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1072__scene-1075",
+      "score": -0.0009609969784195784,
+      "utility": 0.016957039013504982,
+      "candidate": "matched_a",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1072__scene-1076",
+      "score": -0.0016902075509345992,
+      "utility": 0.02437351830303669,
+      "candidate": "foreign_0",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1073__scene-1076",
+      "score": 0.0070481192220676675,
+      "utility": 0.05134803429245949,
+      "candidate": "foreign_2",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1073__scene-1077",
+      "score": 0.022404008276743596,
+      "utility": 0.004124426282942295,
+      "candidate": "foreign_1",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1076__scene-1077",
+      "score": 0.028356071057282207,
+      "utility": -0.003649989841505885,
+      "candidate": "foreign_0",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1077__scene-1078",
+      "score": 0.007214100549659637,
+      "utility": -0.01640419289469719,
+      "candidate": "matched_a",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1078__scene-1106",
+      "score": 0.0273116690132809,
+      "utility": 0.034165360033512115,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1079__scene-1080",
+      "score": 0.02018727102090345,
+      "utility": 0.031468767672777176,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1079__scene-1106",
+      "score": 0.0084276358450632,
+      "utility": 0.003299527335911989,
+      "candidate": "matched_a",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1079__scene-1107",
+      "score": 0.015850450254937046,
+      "utility": 0.000870987307280302,
+      "candidate": "matched_a",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1080__scene-1107",
+      "score": 0.018554630264729668,
+      "utility": -0.023916618898510933,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1081__scene-1082",
+      "score": 0.030684034122077673,
+      "utility": 0.020902864634990692,
+      "candidate": "foreign_2",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1081__scene-1083",
+      "score": 0.029983146727465673,
+      "utility": 0.03460303694009781,
+      "candidate": "distant_b",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1081__scene-1107",
+      "score": 0.02151106638886155,
+      "utility": -0.007367558311671019,
+      "candidate": "foreign_2",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1082__scene-1083",
+      "score": 0.018778869732315955,
+      "utility": 0.0065271854400634766,
+      "candidate": "foreign_2",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1083__scene-1108",
+      "score": 0.022037055530313505,
+      "utility": 0.020118672400712967,
+      "candidate": "foreign_1",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1083__scene-1109",
+      "score": 0.019580961138909746,
+      "utility": 0.04493902251124382,
+      "candidate": "foreign_2",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1083__scene-1110",
+      "score": 0.03096085008232854,
+      "utility": 0.017613636329770088,
+      "candidate": "foreign_0",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1084__scene-1085",
+      "score": 0.0003608012311923682,
+      "utility": 8.249961683759466e-05,
+      "candidate": "matched_a",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1084__scene-1110",
+      "score": 0.019415024811567125,
+      "utility": 0.01857674866914749,
+      "candidate": "foreign_1",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1109__scene-1110",
+      "score": 0.030514469543565854,
+      "utility": 0.031073125079274178,
+      "candidate": "foreign_0",
+      "component": "component-4",
+      "threshold": 0.009700000169268707,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0858__scene-1015",
+      "score": 0.025246585756196087,
+      "utility": 0.016890989616513252,
+      "candidate": "foreign_1",
+      "component": "component-47",
+      "threshold": 0.011025734736703721,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0410__scene-1054",
+      "score": 0.0025150116761481715,
+      "utility": 0.001432602177374065,
+      "candidate": "matched_a",
+      "component": "component-49",
+      "threshold": 0.01144338794900449,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1068__scene-1069",
+      "score": 0.02519204996913022,
+      "utility": 0.00495925871655345,
+      "candidate": "matched_a",
+      "component": "component-51",
+      "threshold": 0.008302521565016343,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0052__scene-0384",
+      "score": 0.02008351261163334,
+      "utility": -0.0003376852546352893,
+      "candidate": "matched_a",
+      "component": "component-52",
+      "threshold": 0.009737544297884919,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0157__scene-0384",
+      "score": 0.009340379507982879,
+      "utility": -0.04090451821684837,
+      "candidate": "foreign_0",
+      "component": "component-52",
+      "threshold": 0.009737544297884919,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0196__scene-0367",
+      "score": 0.013227482798474065,
+      "utility": 0.016754141077399254,
+      "candidate": "foreign_2",
+      "component": "component-58",
+      "threshold": 0.011142453573147722,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0416__scene-1057",
+      "score": 0.005477543329332786,
+      "utility": -0.022072259336709976,
+      "candidate": "matched_a",
+      "component": "component-59",
+      "threshold": 0.009860019388138404,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0418__scene-1057",
+      "score": 0.0026863984416567073,
+      "utility": 0.014958509244024754,
+      "candidate": "matched_a",
+      "component": "component-59",
+      "threshold": 0.009860019388138404,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0418__scene-1058",
+      "score": 0.006125899885918275,
+      "utility": 0.026508163660764694,
+      "candidate": "matched_a",
+      "component": "component-59",
+      "threshold": 0.009860019388138404,
+      "accepted": false
+    },
+    {
+      "episode": "scene-1057__scene-1058",
+      "score": 0.00997219796074094,
+      "utility": 0.010937584564089775,
+      "candidate": "matched_a",
+      "component": "component-59",
+      "threshold": 0.009860019388138404,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0957__scene-0958",
+      "score": 0.032818927981002034,
+      "utility": 0.05916345864534378,
+      "candidate": "foreign_0",
+      "component": "component-63",
+      "threshold": 0.011811089115604337,
+      "accepted": true
+    },
+    {
+      "episode": "scene-1092__scene-1093",
+      "score": 0.02249818467606337,
+      "utility": 0.03289179876446724,
+      "candidate": "foreign_0",
+      "component": "component-64",
+      "threshold": 0.010977394020388621,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0043__scene-0046",
+      "score": 0.023368196841694326,
+      "utility": 0.04183628782629967,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0043__scene-0135",
+      "score": 0.015138403306659358,
+      "utility": -0.009610598906874657,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0043__scene-0150",
+      "score": 0.0168666901086705,
+      "utility": 0.003704951610416174,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0045__scene-0134",
+      "score": 0.030920792737044844,
+      "utility": 0.008600620552897453,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0046__scene-0135",
+      "score": 0.015452121343680776,
+      "utility": 0.02644091099500656,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0046__scene-0150",
+      "score": 0.01643688472607272,
+      "utility": -0.010454174131155014,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0046__scene-0151",
+      "score": 0.012621725996671967,
+      "utility": -0.0013836263678967953,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0120__scene-0133",
+      "score": 0.01587286396184453,
+      "utility": -0.03356455639004707,
+      "candidate": "foreign_0",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0120__scene-0382",
+      "score": 0.03230295862239672,
+      "utility": 0.05721164122223854,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0125__scene-0370",
+      "score": 0.003013583782763417,
+      "utility": 0.03860319405794144,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0125__scene-0371",
+      "score": 0.0006817386756409853,
+      "utility": 0.09495395421981812,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0126__scene-0277",
+      "score": 0.00573475569415662,
+      "utility": 0.03589488938450813,
+      "candidate": "foreign_0",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0126__scene-0984",
+      "score": 0.012065804621758847,
+      "utility": 0.04321970045566559,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0127__scene-0968",
+      "score": 0.027101644570211275,
+      "utility": 0.018423691391944885,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0127__scene-0969",
+      "score": 0.031690406975909274,
+      "utility": 0.028323622420430183,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0132__scene-0382",
+      "score": 0.013322762727603639,
+      "utility": 0.0059475041925907135,
+      "candidate": "foreign_0",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0133__scene-0382",
+      "score": 0.017094212204319566,
+      "utility": 0.05754855275154114,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0134__scene-0150",
+      "score": 0.009557695662965823,
+      "utility": -0.03812819719314575,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0135__scene-0150",
+      "score": 0.005211556628039029,
+      "utility": -0.01211242564022541,
+      "candidate": "foreign_0",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0135__scene-0344",
+      "score": 0.035870550749034086,
+      "utility": 0.05096280202269554,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0135__scene-0345",
+      "score": 0.029717385972975977,
+      "utility": 0.019232284277677536,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0135__scene-0363",
+      "score": 0.010194170547715218,
+      "utility": 0.012758716009557247,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0149__scene-0376",
+      "score": -0.0007777939369578418,
+      "utility": 0.020176220685243607,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0150__scene-0363",
+      "score": 0.014407787274730459,
+      "utility": 0.007311378605663776,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0151__scene-0344",
+      "score": 0.04075978748098306,
+      "utility": 0.05763670429587364,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0151__scene-0345",
+      "score": 0.021808116303302195,
+      "utility": 0.01604052446782589,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0151__scene-0983",
+      "score": 0.005826922613091472,
+      "utility": 0.06555125117301941,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0275__scene-0276",
+      "score": 0.03826089293278877,
+      "utility": 0.00824770238250494,
+      "candidate": "foreign_0",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0275__scene-0983",
+      "score": 0.015660130080382383,
+      "utility": 0.033221129328012466,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0277__scene-0359",
+      "score": 0.0007991048433548444,
+      "utility": 0.012917723506689072,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": false
+    },
+    {
+      "episode": "scene-0277__scene-0968",
+      "score": 0.021149337695698732,
+      "utility": 0.022135617211461067,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0277__scene-0984",
+      "score": 0.009873298410450083,
+      "utility": -0.001958219101652503,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0359__scene-0968",
+      "score": 0.024464099884381692,
+      "utility": 0.03057756833732128,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0359__scene-0984",
+      "score": 0.014475610996838074,
+      "utility": -0.0015209950506687164,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0365__scene-0966",
+      "score": 0.015904645526545816,
+      "utility": 0.025119954720139503,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0370__scene-0966",
+      "score": 0.014587200443664055,
+      "utility": 0.009130661375820637,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0371__scene-0967",
+      "score": 0.026058757019696243,
+      "utility": 0.047296877950429916,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0376__scene-0968",
+      "score": 0.023674178028435917,
+      "utility": 0.04198076203465462,
+      "candidate": "matched_a",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0968__scene-0969",
+      "score": 0.022788526442632795,
+      "utility": 0.019443286582827568,
+      "candidate": "foreign_1",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0968__scene-0984",
+      "score": 0.008598886428792007,
+      "utility": -0.017445819452404976,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0981__scene-0982",
+      "score": 0.020631580752627655,
+      "utility": 0.02998328022658825,
+      "candidate": "distant_b",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0982__scene-0983",
+      "score": 0.014026784434102888,
+      "utility": -0.01622123271226883,
+      "candidate": "foreign_2",
+      "component": "component-8",
+      "threshold": 0.005143484801102761,
+      "accepted": true
+    },
+    {
+      "episode": "scene-0044__scene-0138",
+      "score": 0.017447273523279922,
+      "utility": 0.07000812143087387,
+      "candidate": "distant_b",
+      "component": "component-9",
+      "threshold": 0.0112492222095841,
+      "accepted": true
+    }
+  ],
+  "registered_gate": {
+    "checks": {
+      "beats_visual_mean": true,
+      "harm_not_above_visual": true,
+      "nontrivial_acceptance": true,
+      "positive_component_interval": false
+    },
+    "passed": false
+  }
+}

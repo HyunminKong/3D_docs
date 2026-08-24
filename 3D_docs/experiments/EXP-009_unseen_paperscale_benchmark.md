@@ -1,6 +1,6 @@
 # EXP-009 — Fully Unseen Paper-Scale Revisit Benchmark
 
-Status: **Stage 4 completed; DINOv2 selected for consolidation, utility transfer next.**
+Status: **Stage 6 completed; local reuse transfers, causal DINOv2 retrieval registered next.**
 
 ## Question
 
@@ -83,3 +83,13 @@ Current TTT remained healthy (mean current/base 0.682), visual mean retained +0.
 ## Stage-6 nested router correction
 
 Keep the head, TTT, candidate pool, features, and residual fixed. Retrain only the same compact PCA-16 Ridge utility router with outer leave-one-physical-component-out evaluation. For each outer fold, choose the acceptance threshold using inner leave-one-component-out predictions from outer-train components only. The threshold maximizes utility subject to no more harm than visual mean and at least 20% acceptance. The outer primary must beat visual mean without higher harm and have a positive component-bootstrap lower bound.
+
+### Stage-6 result
+
+Nested component calibration reduced harm relative to the ungated new router and the old locked router. The primary reached **+0.01475** mean utility, **10.67%** harm, and **83.56%** acceptance versus visual mean at **+0.01227** utility and **11.11%** harm. Its paired component-bootstrap difference over visual mean was +0.00238 with 95% CI **[-0.00014, +0.00465]**. The registered gate therefore failed only the strictly positive lower-bound check. No further threshold tuning on this candidate set is permitted.
+
+## Stage-7 causal DINOv2 retrieval
+
+Test the selected consolidation address by adaptation utility rather than place-pair AUC. Replay all unique A/B/A′ contexts from the 225 train episodes in true nuScenes capture-time order, evaluate each unique A′ target before writing it, and retrieve K=5 causal memories using frozen DINOv2, the learned VGGT-side transport key, FIFO, and a deterministic-random control. Query frames remain utility labels only and never enter retrieval, adaptation, or router features.
+
+The primary diagnostic is oracle utility contained in each top-K set; the secondary diagnostic applies the already registered nested component router. DINOv2 passes only if its oracle top-K utility exceeds the VGGT transport-key top-K utility, its routed mean utility also exceeds VGGT, and its routed harm is no higher. This stage isolates address quality and does not yet impose a capacity-bounded consolidation policy.

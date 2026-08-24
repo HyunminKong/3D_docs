@@ -334,3 +334,17 @@ Date: 2026-08-25
 Status: Accepted before EXP-009 Stage-6 execution
 
 Stage 5 separated transfer outcomes. Current TTT was healthy (current/base 0.682), visual reuse remained useful (+0.01227), and the oracle candidate reached +0.02600, so the local head/transport mechanism transfers. The old router raised utility to +0.01695 but increased harm to 14.22% versus visual mean's 11.11%, failing safety. Stage 6 therefore keeps every adaptation mechanism fixed and retrains only the same PCA-16 Ridge utility model. Evaluation is outer leave-one-component-out over 25 physical components; each outer threshold is calibrated solely from inner component-OOF predictions to maximize utility under the outer-train visual-harm bound and at least 20% acceptance. Success requires higher utility than visual mean, no higher harm, nontrivial acceptance, and a positive paired component-bootstrap lower bound.
+
+## D049 — Stop threshold tuning after the nested interval misses zero
+
+Date: 2026-08-25
+Status: Accepted after EXP-009 Stage-6 execution
+
+The nested component router reached +0.01475 utility with 10.67% harm and 83.56% acceptance, improving on visual mean's +0.01227/11.11%. Its paired component-bootstrap interval was [-0.00014, +0.00465], so the registered positive-lower-bound check failed narrowly. Further thresholds on the same 225-episode candidate table would be post-hoc tuning and are prohibited. The fixed PCA-16 Ridge model and nested calibration remain the router diagnostic for the next candidate-set experiment.
+
+## D050 — Evaluate DINOv2 by causal top-K adaptation utility
+
+Date: 2026-08-25
+Status: Accepted before EXP-009 Stage-7 feature extraction
+
+Place-pair AUC alone does not prove that a consolidation address retrieves reusable plasticity. Stage 7 replays every unique A/B/A′ train context once in true capture-time order and evaluates unique A′ targets before their own write. Frozen DINOv2, the learned VGGT-side transport key, FIFO, and deterministic random each retrieve K=5 from the same causal history. The primary outcome is oracle utility within each candidate set; the existing nested router is secondary. DINOv2 is causally supported only if its oracle top-K and routed utility both exceed the VGGT key and routed harm is no higher. Query frames remain offline labels only, and EXP-009 validation/test pixels remain unopened.
