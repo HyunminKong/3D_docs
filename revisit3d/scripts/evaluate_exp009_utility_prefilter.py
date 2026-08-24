@@ -128,11 +128,15 @@ def main() -> None:
     for index, row in enumerate(rows):
         rows_by_episode.setdefault(row["episode"], []).append(row)
         indices_by_episode.setdefault(row["episode"], []).append(index)
+    stage7_group_by_episode = {
+        row["episode"]: row["component"] for row in stage7["selection_rows"]
+    }
+    for episode in stage7_group_by_episode:
+        rows_by_episode.setdefault(episode, [])
+        indices_by_episode.setdefault(episode, [])
     if len(rows_by_episode) != 218:
         raise RuntimeError("Stage 9 requires all 218 unique causal targets")
-    group_by_episode = {
-        episode: subset[0]["component"] for episode, subset in rows_by_episode.items()
-    }
+    group_by_episode = stage7_group_by_episode
     stage6 = json.loads(Path(stage7_config["data"]["stage6_result"]).read_text())
     thresholds = {
         component: float(value["threshold"])
@@ -157,6 +161,14 @@ def main() -> None:
         router_values, router_accept = {}, {}
         top1_values, top1_accept = {}, {}
         for episode, indices in indices_by_episode.items():
+            if not indices:
+                oracle_values[episode] = 0.0
+                oracle_accept[episode] = False
+                top1_values[episode] = 0.0
+                top1_accept[episode] = False
+                router_values[episode] = 0.0
+                router_accept[episode] = False
+                continue
             ranked = sorted(indices, key=lambda index: (-prediction[index], rows[index]["candidate_context"]))
             topk = ranked[:candidate_count]
             oracle_value = max(0.0, max(utility[index] for index in topk))
