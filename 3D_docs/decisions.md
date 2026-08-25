@@ -1073,3 +1073,20 @@ inference. No TUM repair is authorized. The final architecture and all model
 values are now closed; remaining work is paper evaluation infrastructure,
 external baselines, fixed qualitative outputs, and writing—not another method
 variant.
+
+## D110 — Register matched causal CUT3R/TTT3R baselines
+
+Date: 2026-08-25
+Status: Accepted before external-model evaluation
+
+The locally available TTT3R repository and official CUT3R final checkpoint can
+evaluate both recurrent update rules. EXP-036 feeds the exact EXP-035 event
+order and marks query frames `update=false`, preserving the causal future
+boundary. The official 512 preprocessing, no crop, sequence-only reset, and all
+metrics are frozen before execution.
+
+This is an absolute external-method comparison, not a controlled adaptation
+ablation: architectures, training data, resolution, and state differ. It cannot
+select or repair Revisit3D. tttLRM is retained as a conceptual closest method
+because its released calibrated-camera Gaussian renderer does not satisfy the
+same query-read-only pointmap interface without a different protocol.

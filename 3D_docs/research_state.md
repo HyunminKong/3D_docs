@@ -193,7 +193,9 @@ this is transfer evidence rather than a general safety result.
 
 The final model is now frozen. No further architecture, loss, address,
 threshold, seed, capacity, or dataset-specific variant is permitted for this
-paper. Remaining CVPR work is external CUT3R/TTT3R/tttLRM-compatible baseline
-evaluation where protocols permit, fixed non-cherry-picked qualitative
-reconstruction outputs, tables/figures, and manuscript writing. Camera-pose and
-dynamic-4D improvement remain outside the claim.
+paper. EXP-036 is registered to run official CUT3R and TTT3R modes on the exact
+TUM causal event order, with query frames marked `update=false`. It is a
+reporting-only external baseline and cannot alter Revisit3D. After it, remaining
+CVPR work is fixed non-cherry-picked qualitative reconstruction outputs,
+tables/figures, and manuscript writing. Camera-pose and dynamic-4D improvement
+remain outside the claim.

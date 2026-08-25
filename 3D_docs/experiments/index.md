@@ -37,5 +37,6 @@
 | [EXP-033](EXP-033_frozen_efficiency_audit.md) | What does the exact frozen paper model cost in latency, GPU memory, bank bytes, and search scaling? | Completed, all gates passed | Full method adds ~2.0 ms (0.68%) over two frozen foundation passes; reservoir-64 tensor storage is 38.5 MiB. |
 | [EXP-034](EXP-034_tum_transfer_feasibility.md) | Can local TUM RGB-D support a causal zero-shot transfer benchmark? | Completed, corrected v1.1 passed | 223 contexts and 111 targets across three sequences; descriptive transfer only due imbalance. |
 | [EXP-035](EXP-035_tum_zero_shot_transfer.md) | Does the frozen nuScenes model retain memory benefit zero-shot on indoor TUM? | Completed, all descriptive gates passed | Full beats current/random/appearance on all sequence-balanced primary means; only three imbalanced sequences. |
+| [EXP-036](EXP-036_cut3r_ttt3r_baselines.md) | How do official CUT3R and TTT3R updates perform on the matched causal TUM protocol? | Registered | Reporting-only external baseline; final model cannot change. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

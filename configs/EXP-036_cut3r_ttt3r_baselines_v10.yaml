@@ -1,0 +1,25 @@
+experiment: EXP-036
+protocol_revision: v1.0
+seed: 3600010
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  ours_result: revisit3d/results/EXP-035/stage2_tum_zero_shot_transfer_v10.json
+baseline:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  modes: [cut3r, ttt3r]
+  image_size: 512
+  crop: false
+  query_update: false
+depth:
+  grid_side: 16
+  minimum_m: 0.2
+  maximum_m: 10.0
+  minimum_cells_per_view: 32
+success:
+  minimum_targets_per_mode: 111
+  minimum_sequences_per_mode: 3
+output:
+  result: revisit3d/results/EXP-036/cut3r_ttt3r_tum_baselines_v10.json
