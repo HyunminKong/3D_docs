@@ -45,6 +45,25 @@ def _flat_parameters(parameters):
     return torch.cat([parameter.detach().reshape(-1) for parameter in parameters])
 
 
+def _optimizer_step(
+    parameters, optimizer, common_gradient, log_unit, relative_unit, *, epsilon, tolerance
+):
+    """EXP-027 reference: accept the AdamW displacement without safeguarding."""
+    _assign_flat_gradient(parameters, common_gradient)
+    before = _flat_parameters(parameters)
+    optimizer.step()
+    displacement = _flat_parameters(parameters) - before
+    descent = -displacement
+    descent_norm = descent.norm().clamp_min(epsilon)
+    realized_log_margin = torch.dot(log_unit, descent / descent_norm)
+    realized_relative_margin = torch.dot(relative_unit, descent / descent_norm)
+    return {
+        "realized_log_margin": realized_log_margin,
+        "realized_relative_margin": realized_relative_margin,
+        "safeguard_applied": False,
+    }
+
+
 def _train(head, geometry, manifest, lidar, indices, group_of, config, device, *, seed, label):
     parameters = [parameter for parameter in head.parameters() if parameter.requires_grad]
     optimizer = torch.optim.AdamW(
@@ -84,17 +103,15 @@ def _train(head, geometry, manifest, lidar, indices, group_of, config, device, *
         synthesis_relative_margin = torch.dot(relative_unit, common_gradient)
         if synthesis_log_margin <= tolerance or synthesis_relative_margin <= tolerance:
             raise RuntimeError(f"EXP-027 synthesis lost common descent at {label}:{step}")
-        _assign_flat_gradient(parameters, common_gradient)
-        clipped_norm = torch.nn.utils.clip_grad_norm_(
-            parameters, float(config["training"]["gradient_clip"])
+        # The arithmetic mean of two unit gradients has norm at most one, so
+        # the registered clip bound is already satisfied exactly.
+        clipped_norm = common_gradient.norm()
+        step_result = _optimizer_step(
+            parameters, optimizer, common_gradient, log_unit, relative_unit,
+            epsilon=epsilon, tolerance=tolerance,
         )
-        before = _flat_parameters(parameters)
-        optimizer.step()
-        displacement = _flat_parameters(parameters) - before
-        descent = -displacement
-        descent_norm = descent.norm().clamp_min(epsilon)
-        realized_log_margin = torch.dot(log_unit, descent / descent_norm)
-        realized_relative_margin = torch.dot(relative_unit, descent / descent_norm)
+        realized_log_margin = step_result["realized_log_margin"]
+        realized_relative_margin = step_result["realized_relative_margin"]
         displacement_rows.append({
             "component": group_of[index],
             "synthesized_common_descent": True,
@@ -103,6 +120,7 @@ def _train(head, geometry, manifest, lidar, indices, group_of, config, device, *
             ),
             "realized_log_margin": float(realized_log_margin),
             "realized_relative_margin": float(realized_relative_margin),
+            "safeguard_applied": bool(step_result["safeguard_applied"]),
         })
         if (
             step == 1
@@ -148,6 +166,7 @@ def _displacement_summary(rows):
             row["realized_common_descent"] for row in rows
         ])),
         "component_balanced_realized_common_descent_rate": float(np.mean(component_rates)),
+        "safeguard_rate": float(np.mean([row["safeguard_applied"] for row in rows])),
         "median_realized_worst_margin": float(np.median([
             min(row["realized_log_margin"], row["realized_relative_margin"])
             for row in rows
@@ -168,14 +187,34 @@ def main():
     if config["data"]["split"] != "train" or not torch.cuda.is_available():
         raise RuntimeError("EXP-027 requires train split and CUDA")
     prior = json.loads(Path(config["prior_stage"]).read_text())
-    if not (
-        prior.get("experiment") == "EXP-026"
-        and prior.get("no_model_fit") is True
-        and prior.get("parameter_updates") == 0
-        and prior.get("registered_gate", {}).get("passed") is True
-        and prior.get("exp021_terminal_accessed") is False
-    ):
-        raise RuntimeError("EXP-026 authorization contract failed")
+    experiment = config["experiment"]
+    if experiment == "EXP-027":
+        authorized = (
+            prior.get("experiment") == "EXP-026"
+            and prior.get("no_model_fit") is True
+            and prior.get("parameter_updates") == 0
+            and prior.get("registered_gate", {}).get("passed") is True
+            and prior.get("exp021_terminal_accessed") is False
+        )
+    elif experiment == "EXP-028":
+        checks = prior.get("registered_gate", {}).get("checks", {})
+        authorized = (
+            prior.get("experiment") == "EXP-027"
+            and prior.get("registered_gate", {}).get("passed") is False
+            and checks.get("current_all_metric_means_improve") is False
+            and checks.get("realized_optimizer_common_descent") is False
+            and all(checks.get(key) is True for key in (
+                "coverage", "positive_current_intervals",
+                "oracle_all_metric_means_improve", "positive_oracle_intervals",
+                "oracle_risk_interval_over_random",
+            ))
+            and prior.get("exp021_terminal_accessed") is False
+            and "checkpoint" not in prior
+        )
+    else:
+        authorized = False
+    if not authorized:
+        raise RuntimeError(f"{experiment} authorization contract failed")
     manifest = json.loads(Path(config["data"]["manifest"]).read_text())
     geometry = torch.load(
         config["data"]["geometry_cache"], map_location="cpu", weights_only=False, mmap=True
@@ -259,8 +298,8 @@ def main():
         value for row in oof_rows for value in row["candidate_metric_utilities"]
     ], dtype=np.float64)
     base_result = {
-        "experiment": "EXP-027",
-        "stage": "pareto_plasticity_atom_crossfit",
+        "experiment": experiment,
+        "stage": config["output"].get("result_stage", "pareto_plasticity_atom_crossfit"),
         "protocol_revision": config["protocol_revision"],
         "split": "train",
         "config": str(config_path),
@@ -300,7 +339,8 @@ def main():
     )
     checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save({
-        "experiment": "EXP-027", "stage": "pareto_plasticity_atom",
+        "experiment": experiment,
+        "stage": config["output"].get("checkpoint_stage", "pareto_plasticity_atom"),
         "protocol_revision": config["protocol_revision"], "split": "train",
         "head": final_head.state_dict(), "visual_key": "frozen_train_pca",
         "online_loss": "track3d_only",

@@ -847,3 +847,32 @@ The first-order common-descent statement applies to the synthesized gradient,
 not automatically to AdamW's preconditioned parameter displacement. EXP-027
 must log the realized per-step displacement alignment and pass the same broad
 geometry OOF gates before any checkpoint or address fit is accepted.
+
+## D096 — Reject EXP-027 and localize the remaining optimizer failure
+
+Date: 2026-08-25
+Status: Accepted after EXP-027
+
+EXP-027 created no checkpoint. It improved SILog and 3D EPE, reduced the
+EXP-024 AbsRel damage by more than half, and retained significant three-metric
+oracle reuse headroom. It nevertheless worsened mean AbsRel by 0.00279 and
+realized AdamW common descent on only 72.54% of component-balanced steps.
+
+No objective, loss weight, head, seed, budget, or inference module may change.
+The remaining causal variable is the offline optimizer displacement: AdamW may
+rotate a valid synthesized common gradient outside the feasible descent cone.
+
+## D097 — Register one parameter-free feasible-displacement safeguard
+
+Date: 2026-08-25
+Status: Accepted before EXP-028 execution
+
+EXP-028 is a same-seed paired optimizer ablation. It preserves an AdamW proposal
+when that proposal is common descent. Otherwise it replaces the direction by
+the already registered unit-normalized bisector and preserves the proposal's
+L2 norm. This adds no tunable margin, coefficient, solver, line search, loss,
+module, or online computation.
+
+All broad-geometry and reuse gates remain unchanged, and realized common
+descent must be 100%. Failure rejects this optimizer candidate and creates no
+checkpoint. EXP-021 remains unopened.

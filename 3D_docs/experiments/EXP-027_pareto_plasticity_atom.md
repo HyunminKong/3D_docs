@@ -1,6 +1,6 @@
 # EXP-027 — Coefficient-Free Pareto Plasticity Atom
 
-Status: Registered; not yet executed
+Status: Completed; registered gate failed, no checkpoint
 
 ## Question
 
@@ -60,3 +60,33 @@ the locked EXP-021 test by itself.
 - Trainer: `revisit3d/scripts/train_exp027_pareto_plasticity_atom.py`
 - Result: `revisit3d/results/EXP-027/stage0_pareto_plasticity_atom_train_v10.json`
 - Conditional checkpoint: `revisit3d/checkpoints/exp027_pareto_plasticity_atom_v10.pt`
+
+## Result
+
+The run covered all 225 OOF targets and 25 components. No checkpoint was
+created.
+
+| Policy | SILog | aligned AbsRel | 3D EPE (m) |
+|---|---:|---:|---:|
+| foundation | 53.4149 | 0.81202 | 6.53079 |
+| current TTT | 53.1808 | 0.81482 | 6.44445 |
+| log-risk oracle reuse | 53.0746 | 0.81317 | 6.41702 |
+
+Current SILog improved by 0.2341 and EPE by 0.08634 m, with a positive EPE
+interval `[0.03388, 0.14375]`. AbsRel still worsened by 0.00279, although its
+interval `[-0.01357, 0.00584]` crossed zero. This is less than half EXP-024's
+0.00691 AbsRel damage but does not pass the all-means rule.
+
+Oracle reuse improved all three metrics over current with positive intervals,
+and beat uniform candidate log-risk with interval `[0.00048, 0.00088]`.
+However, although the synthesized gradient was common descent on all 5000
+steps, the realized AdamW displacement was common descent on only 72.54% after
+component balancing, below the registered 90% gate.
+
+## Conclusion
+
+Directional balancing reduces the scalarization trade-off and retains strong
+memory headroom, but AdamW rotates the synthesized direction often enough to
+invalidate both the optimization premise and the broad-geometry gate. The fit
+is rejected. This specifically motivates testing an optimizer-level feasible
+displacement, not another loss or architecture.

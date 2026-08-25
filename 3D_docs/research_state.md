@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-026)
+Last updated: 2026-08-25 (EXP-028 registered)
 
 ## First objective
 
@@ -117,8 +117,13 @@ The learned anchors exhibited 27–35% metric-gradient conflict and 23–33% raw
 equal-average endpoint sacrifice, while the parameter-free unit-normalized
 bisector was non-degenerate common descent in every case.
 
-EXP-027 is now authorized as one source-safe OOF fit with separately computed
-log and relative endpoint gradients and their unit-normalized mean. It changes
-no inference module or online loss and introduces no loss weight. Broad
-geometry, reuse headroom, and realized optimizer-displacement alignment must
-pass before a checkpoint is accepted. EXP-021 remains fully unopened.
+EXP-027 failed without a checkpoint. It improved SILog/EPE and retained
+significant three-metric reuse headroom, but mean AbsRel worsened slightly and
+AdamW preserved common descent on only 72.54% of component-balanced steps.
+This localizes the remaining variable to offline optimizer rotation rather than
+another loss or architecture.
+
+EXP-028 is registered as an exact same-seed paired optimizer ablation. A valid
+AdamW proposal is kept; an infeasible proposal is replaced by the proven common
+direction at the same L2 step norm. No hyperparameter or inference computation
+is added. All broad-geometry gates remain fixed and EXP-021 stays unopened.
