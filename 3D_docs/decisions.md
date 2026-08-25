@@ -455,3 +455,12 @@ Status: Accepted after EXP-009 Stage-16 terminal test
 The pre-locked reservoir-64 system passed all eight terminal gates on 104 unique targets across 22 unseen physical components. Routed utility was 0.02088 with 3.85% harm, versus 0.01602 for same-bank random addressing. The paired component difference was 0.00475 with 95% CI [0.00086, 0.00924], and reservoir retained 100.98% of unbounded utility. This supports the final static-revisit claim: observable utility addressing retrieves reusable local TTT experience in a causal bounded bank.
 
 Reservoir and FIFO were nearly identical (0.02088 versus 0.02068), and their difference interval [-0.00013, 0.00059] crossed zero. The paper must therefore not claim that reservoir is the learned or uniquely superior consolidation strategy. Generic DINOv2 place addressing, learned history eviction, and universal capacity assumptions remain rejected. EXP-009 test is terminal and closed to all further tuning; the next milestone must use new development data for absolute reconstruction, resource, pose, or dynamic-4D evaluation.
+
+## D066 — Freeze a compact CVPR-first paper scope
+
+Date: 2026-08-25
+Status: Accepted before EXP-010 execution
+
+The first publication target is one compact static-revisit paper, not a joint depth/pose/tracking/4D architecture. The primary method consists of a local plasticity atom and one coarse-to-fine utility-retrieval mechanism; fixed-capacity reservoir storage is an implementation constraint. DINO retrieval, predicted-geometry transport, neural risk heads, learned eviction, pose adaptation, extra TTT steps, and dynamic state are excluded. The generic phrases “TTT memory” and “retrievable gradients” are not novelty claims because tttLRM/ZipMap/Mem3R and ReGrad create direct prior-art collisions. The defensible contribution is spatially transported local adaptation addressed by causal future geometry utility.
+
+EXP-010 first tests whether the already locked method improves sparse-LiDAR geometry. This secondary endpoint may change the paper claim but may not change any EXP-009 weight, threshold, residual, address, K, or capacity. A later train/validation-only refit must simplify feasibility-stage meta-losses before the final paper model is accepted.

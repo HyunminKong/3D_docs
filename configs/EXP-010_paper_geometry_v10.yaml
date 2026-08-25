@@ -1,0 +1,36 @@
+experiment: EXP-010
+protocol_revision: v1.0
+seed: 1000010
+
+locked_model:
+  config: configs/EXP-009_final_test_v24.yaml
+  result: revisit3d/results/EXP-009/stage16_final_locked_test_v24.json
+  artifact: revisit3d/checkpoints/exp009_utility_mips_router_final_v24.joblib
+  artifact_sha256: b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98
+
+data:
+  manifest: revisit3d/manifests/exp009_test_pilot_v24.json
+  geometry_cache: revisit3d/cache/EXP-009/test_geometry_v24.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  nuscenes_version: v1.0-trainval
+  split: test
+
+lidar:
+  camera_channel: CAM_FRONT
+  lidar_channel: LIDAR_TOP
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 1000010
+
+success:
+  minimum_components: 20
+  minimum_targets: 90
+  maximum_relative_absrel_degradation: 0.01
+
+output:
+  result: revisit3d/results/EXP-010/stageA_absolute_geometry_test_v10.json
