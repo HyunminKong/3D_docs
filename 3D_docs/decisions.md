@@ -756,3 +756,15 @@ nothing. All other architecture, folds, candidates, optimizer, 1000-step budget,
 eta, and residual strength remain fixed. EXP-025 is terminal: failure stops atom
 objective development for this paper, and no third metric term, proxy term,
 regularizer, or threshold tuning is permitted.
+
+## D091 — Register EXP-025 as the terminal atom variant
+
+Date: 2026-08-25
+Status: Accepted before EXP-025 execution
+
+The two sparse residuals and both fixed 0.5 coefficients are now immutable.
+EXP-025 reuses the exact EXP-024 code path and gates, changing only the scalar
+offline geometry loss. It may create a final refit checkpoint only after all
+component-OOF gates pass. No EXP-020 or EXP-021 sensor/model output is accessed.
+If any gate fails, the utility-addressed atom paper path is stopped rather than
+trying another loss, seed, training budget, initialization, or module.

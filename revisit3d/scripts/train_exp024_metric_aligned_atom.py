@@ -280,13 +280,31 @@ def main():
     if config["data"]["split"] != "train" or not torch.cuda.is_available():
         raise RuntimeError("EXP-024 requires train split and CUDA")
     prior = json.loads(Path(config["prior_stage"]).read_text())
-    if not (
-        prior["experiment"] == "EXP-023"
-        and prior["registered_gate"]["passed"] is True
-        and prior["no_model_fit"] is True
-        and prior["exp021_terminal_accessed"] is False
-    ):
-        raise RuntimeError("EXP-023 authorization contract failed")
+    experiment = config["experiment"]
+    if experiment == "EXP-024":
+        authorized = (
+            prior["experiment"] == "EXP-023"
+            and prior["registered_gate"]["passed"] is True
+            and prior["no_model_fit"] is True
+            and prior["exp021_terminal_accessed"] is False
+        )
+    elif experiment == "EXP-025":
+        checks = prior.get("registered_gate", {}).get("checks", {})
+        authorized = (
+            prior.get("experiment") == "EXP-024"
+            and prior.get("registered_gate", {}).get("passed") is False
+            and checks.get("current_all_metric_means_improve") is False
+            and all(checks.get(key) is True for key in (
+                "coverage", "positive_current_intervals",
+                "oracle_all_metric_means_improve", "positive_oracle_intervals",
+                "oracle_risk_interval_over_random",
+            ))
+            and prior.get("exp021_terminal_accessed") is False
+        )
+    else:
+        authorized = False
+    if not authorized:
+        raise RuntimeError(f"{experiment} prior-stage authorization contract failed")
     manifest = json.loads(Path(config["data"]["manifest"]).read_text())
     geometry = torch.load(
         config["data"]["geometry_cache"], map_location="cpu", weights_only=False, mmap=True
@@ -364,8 +382,8 @@ def main():
         value for row in oof_rows for value in row["candidate_metric_utilities"]
     ], dtype=np.float64)
     base_result = {
-        "experiment": "EXP-024",
-        "stage": "metric_aligned_atom_crossfit",
+        "experiment": experiment,
+        "stage": config["output"].get("result_stage", "metric_aligned_atom_crossfit"),
         "protocol_revision": config["protocol_revision"],
         "split": "train",
         "config": str(config_path),
@@ -402,8 +420,8 @@ def main():
     )
     checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save({
-        "experiment": "EXP-024",
-        "stage": "metric_aligned_atom",
+        "experiment": experiment,
+        "stage": config["output"].get("checkpoint_stage", "metric_aligned_atom"),
         "protocol_revision": config["protocol_revision"],
         "split": "train",
         "head": final_head.state_dict(),

@@ -26,5 +26,6 @@
 | [EXP-022](EXP-022_metric_alignment_diagnosis.md) | Where did the terminal atom lose metric alignment? | Completed | Zero-code equals foundation; the online direction improves AbsRel but worsens mean SILog/EPE, and proxy gain is significantly anti-correlated with SILog/EPE gain. |
 | [EXP-023](EXP-023_metric_utility_oracle.md) | Can one sparse metric label identify broadly useful frozen corrections? | Completed, all gates passed | Metric oracle improves all primary metrics with positive intervals and beats the proxy oracle; 68% raw candidate harm confirms the need for utility selection. |
 | [EXP-024](EXP-024_metric_aligned_atom.md) | Can one offline metric loss train a broadly healthy reusable atom? | Completed, gate failed | SILog/EPE and oracle reuse improved significantly, but current aligned AbsRel worsened; no checkpoint accepted. |
+| [EXP-025](EXP-025_terminal_metric_atom.md) | Can a fixed two-residual geometry objective pass the terminal atom gate? | Registered | Equal log-plus-relative sparse geometry objective; terminal five-fold OOF atom test. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
