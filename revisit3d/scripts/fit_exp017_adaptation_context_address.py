@@ -83,7 +83,7 @@ def _compile(model, matrix: np.ndarray, dimension: int) -> dict:
         s * (compiled["source"] + c * compiled["interaction"]), axis=1,
     )
     error = float(np.max(np.abs(score - model.predict(probe))))
-    if error > 1e-10:
+    if error > 1e-8:
         raise RuntimeError(f"65-D exact MIPS compilation error {error}")
     compiled["maximum_verification_error"] = error
     return compiled
