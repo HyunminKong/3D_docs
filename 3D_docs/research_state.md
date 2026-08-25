@@ -344,3 +344,9 @@ zero-agreement reuse gains `7.35e-5` over current with CI
 gated shuffle, and harms 3.76%. H10 is supported for a supplied revisit
 candidate. The remaining deployability blocker is retrieval from a causal
 multi-candidate bank without pose/pair identity; terminal remains closed.
+
+EXP-046 is registered on the now-exposed validation split as development. It
+replaces manifest pair identity with a capacity-16 bank of earlier unique source
+records and compares maximum code agreement, pooled frozen appearance, and
+matched random selection under the same zero-agreement application rule. No
+parameter is fit and terminal remains unopened.

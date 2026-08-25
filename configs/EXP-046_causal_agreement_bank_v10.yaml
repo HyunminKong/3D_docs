@@ -1,0 +1,48 @@
+experiment: EXP-046
+protocol_revision: v1.0
+purpose: causal_parameter_free_bank_development
+seed: 4600010
+data:
+  manifest: revisit3d/manifests/dl3dv_recurrent_revisit_validation_exp039_v11.json
+  manifest_sha256: 79935771c8d882ee0ee73e8d3b5556de48f1afe516e255474b63e9bd53964ee4
+  exact_scenes: 14
+  exact_pairs: 213
+  role: exposed_validation_development
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  image_size: 512
+  crop: false
+plasticity:
+  checkpoint: revisit3d/checkpoints/exp043_exact_meta_cut3r_plasticity_coordinate_v10.pt
+  checkpoint_sha256: eaa1c57f34cdb485099ba1e90cbd212c7d0243f725dcf3165015e2eec054a3a2
+  code_dim: 8
+  normalized_step: 0.001
+  patch_size: 16
+transport:
+  method: visual
+  visual_temperature: 0.07
+bank:
+  capacity_per_scene: 16
+  write_key: unique_source_index
+  causal_rule: source_index_strictly_before_target_index
+  selection_policies: [max_code_agreement, max_pooled_appearance, matched_random]
+  application_threshold: 0.0
+  threshold_fitted: false
+  random_seed: 4600010
+analysis:
+  bootstrap_unit: scene
+  bootstrap_draws: 20000
+  bootstrap_seed: 4600010
+success:
+  require_exact_coverage: true
+  minimum_candidates_per_query: 2
+  require_positive_agreement_bank_gain_ci95: true
+  require_agreement_better_appearance_ci95: true
+  require_agreement_better_random_ci95: true
+  maximum_agreement_bank_harm_fraction: 0.1
+  maximum_bank_records_per_scene: 16
+output:
+  result: revisit3d/results/EXP-046/causal_agreement_bank_v10.json
