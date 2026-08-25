@@ -34,7 +34,7 @@ EXP-011 selected one deployed TTT signal:
 
 Only the local code `z` is differentiated. Smoothness and code regularization were numerically immaterial in the registered train audit and are removed.
 
-EXP-012 tests a single equal-weight meta-objective: the mean of future current-only loss and future matched-reuse loss. No auxiliary key, neutralization, centering, smoothness, or code-norm loss is admitted in the primary candidate.
+The EXP-015 core atom uses normalized future current loss, absolute best-reuse loss, and their unweighted softplus ranking. These are three readouts of the same 3D-track signal, with no auxiliary key, neutralization, centering, smoothness, or code-norm loss.
 
 ## Main hyperparameters
 

@@ -545,3 +545,12 @@ Status: Accepted after EXP-014 and before EXP-015
 EXP-014 raised oracle utility to +0.9205% and passed every gate except the fixed 1% magnitude threshold. Together with the failure of absolute-reuse-only Stage 0B, this supplies a factorial reason to combine absolute best-reuse quality and reuse-versus-current ranking rather than restore unrelated auxiliary losses.
 
 EXP-015 uses current loss, best-reuse loss, and their unweighted softplus ranking. All are evaluations of the same single 3D-track signal; key contrastive, neutralization, centering, smoothness, and code-norm losses remain excluded. Architecture, 1000-step budget, data, candidates, and gates do not change. This is the terminal atom variant: success freezes it, failure ends the utility-memory paper path.
+
+## D076 — Freeze the core atom and fit only one utility address
+
+Date: 2026-08-25
+Status: Accepted after EXP-015
+
+EXP-015 passed every terminal atom gate on 225 OOF episodes/25 components. Current/base was 0.80194, oracle five-candidate utility +1.04799%, mean utility +0.52105%, harm 26.37%, and oracle-minus-mean CI `[+0.00439, +0.00618]`. The final 1000-step train refit is frozen by checkpoint hash.
+
+No further atom, key, loss, optimizer, step size, reuse residual, or transport change is permitted. The next stage may fit only one source-entity-safe linear utility regressor whose score performs both retrieval and the semantic positive-utility decision. A separate fine router, risk head, calibrated threshold, or additional candidate network is prohibited.

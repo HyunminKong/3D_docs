@@ -1,6 +1,6 @@
 # EXP-015 — Final Core Utility Atom
 
-Status: Registered before execution
+Status: Completed; all gates passed and head frozen
 
 ## Question
 
@@ -20,6 +20,20 @@ Use the same single 3D-track signal to define
 \]
 
 There are no loss weights, key contrastive loss, neutralization loss, center loss, smoothness, or code norm. Architecture, frozen PCA key, candidates, 1000-step budget, folds, and all EXP-014 gates are unchanged. This is the final atom variant; failure ends the memory-paper path, while success freezes the head before fitting one unified utility address.
+
+## Result
+
+All five component-disjoint OOF gates passed on 225 episodes/25 components:
+
+| Metric | Result |
+|---|---:|
+| current future loss / base | 0.80194 |
+| oracle five-candidate utility | **+1.04799%** |
+| mean candidate utility | +0.52105% |
+| candidate harmful rate | 26.37% |
+| oracle minus candidate mean | +0.00527, 95% CI `[+0.00439, +0.00618]` |
+
+The full-train head was refit for the same 1000 updates and is now immutable. Its checkpoint hash is recorded in the result artifact. This supports fitting one unified, observable utility address; it does not yet establish deployable retrieval or absolute-geometry benefit.
 
 ## Files
 

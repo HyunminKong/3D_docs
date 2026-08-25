@@ -16,6 +16,6 @@
 | [EXP-012](EXP-012_paper_minimal_refit.md) | Does the core result survive a minimal frozen-key atom? | Completed, gate failed | Current TTT survived but all variants missed the 1% oracle-reuse gate. |
 | [EXP-013](EXP-013_utility_key_atom.md) | Can the existing transport key be trained directly by future utility without an auxiliary loss? | Completed, gate failed | Selection headroom grew, but mean utility and harm became substantially worse. |
 | [EXP-014](EXP-014_budget_sufficient_atom.md) | Was the minimal frozen-key failure caused by an insufficient optimization budget? | Completed, gate failed narrowly | Oracle utility reached 0.9205%; all other gates passed. |
-| [EXP-015](EXP-015_core_atom.md) | Are absolute reuse quality and relative ranking jointly sufficient without auxiliary losses? | Registered | Final atom variant; same architecture, budget, and gates. |
+| [EXP-015](EXP-015_core_atom.md) | Are absolute reuse quality and relative ranking jointly sufficient without auxiliary losses? | Completed, all gates passed | The terminal core atom exceeded 1% OOF oracle utility without auxiliary losses. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

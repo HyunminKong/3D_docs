@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-011 completion)
+Last updated: 2026-08-25 (after EXP-015)
 
 ## Research goal
 
@@ -79,10 +79,12 @@ EXP-010 has now shown that the locked method significantly improves aligned AbsR
 
 EXP-011 established a minimal healthy objective: one absolute 3D frozen-track consistency loss, one local-code step, and `eta=0.0125`. Across 218 train targets/25 components it improved all primary target means with a positive aligned-AbsRel interval. The frozen choice then improved SILog, aligned AbsRel, and 3D EPE by 0.474%, 0.959%, and 0.992% on 103 one-shot validation targets/17 components; the EPE interval was positive. The previous smoothness and code penalties are unnecessary for the online step.
 
+EXP-012–015 simplified the atom meta-training under immutable component folds. Matched identity, equal averaging, frozen-key ranking at a short budget, and direct utility-key training failed their registered gates. The terminal core objective combines normalized current quality, absolute best-reuse quality, and an unweighted relative ranking, all from the same 3D-track signal. At the pre-selected 1000-step budget it passed all OOF gates: current/base `0.80194`, oracle utility `+1.04799%`, mean utility `+0.52105%`, harm `26.37%`, and oracle-minus-mean 95% CI `[+0.00439, +0.00618]`. The refit head is frozen; no auxiliary online/meta losses remain.
+
 The remaining priority order is:
 
-1. refit the paper-minimal atom/utility retrieval on train with the EXP-011 objective frozen;
-2. run one registered validation gate for the refit before any new external test;
+1. fit one source-safe factorized utility score that performs both top-1 retrieval and the positive-utility decision;
+2. run one registered validation gate for the fully frozen paper model before any new external test;
 3. report absolute depth/point metrics and online latency/memory against no-TTT, current-only TTT, random address, and bounded/unbounded controls;
 4. evaluate on a second dataset with a newly frozen component-disjoint protocol.
 
