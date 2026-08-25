@@ -719,3 +719,18 @@ adaptation remains one track3D step at eta 0.0125 and reuse remains a 0.10 visua
 residual. Training budget 1000, five component folds, optimizer settings, and
 candidate construction remain fixed. No address, threshold, risk head, or
 terminal-test access is authorized.
+
+## D089 — Register the one-loss metric-aligned atom gate
+
+Date: 2026-08-25
+Status: Accepted before EXP-024 execution
+
+EXP-024 trains from scratch and changes no architecture or online computation.
+Its only outer objective is the equal mean of current and best-candidate
+evaluations of the single EXP-023 metric loss. The fixed equal mean introduces
+no tunable loss weight. Five component folds, 1000 steps, the existing optimizer,
+five candidates, eta 0.0125, and residual 0.10 are immutable. Passing requires
+current TTT and oracle reuse to improve all three primary metric means, at least
+one positive component interval for each stage, and positive oracle headroom
+over uniform candidates. Failure ends the from-scratch one-loss atom instead of
+adding proxy preservation, regularizers, or weighted metric terms.
