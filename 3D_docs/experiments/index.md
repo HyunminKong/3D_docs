@@ -30,6 +30,6 @@
 | [EXP-026](EXP-026_pareto_gradient_diagnosis.md) | Do the two metric endpoints conflict locally, and does a parameter-free common-descent direction exist? | Completed, all gates passed | Learned anchors show 27–35% conflict and 23–33% raw-average sacrifice; the normalized bisector is non-degenerate common descent on all 675 cases. |
 | [EXP-027](EXP-027_pareto_plasticity_atom.md) | Can coefficient-free common-gradient training produce a broadly metric-healthy reusable atom? | Completed, gate failed | SILog/EPE improved and reuse headroom survived, but AbsRel worsened slightly and AdamW preserved common descent on only 72.5% of steps. |
 | [EXP-028](EXP-028_safeguarded_pareto_atom.md) | Does enforcing a feasible realized optimizer displacement recover broad metric health? | Completed, all gates passed | Current TTT and oracle reuse improve all three geometry means; safeguard restores 100% common descent and adds no inference cost. |
-| [EXP-029](EXP-029_metric_utility_address.md) | Can one source-safe linear address retrieve metric-useful EXP-028 corrections? | Registered | Single log-utility target, semantic zero gate, and matched random/appearance controls. |
+| [EXP-029](EXP-029_metric_utility_address.md) | Can one source-safe linear address retrieve metric-useful EXP-028 corrections? | Completed, all gates passed | Positive association in every location; selected utility beats random and appearance while reducing harm to 11.4%. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

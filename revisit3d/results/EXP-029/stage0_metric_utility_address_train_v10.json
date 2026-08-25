@@ -1,0 +1,114 @@
+{
+  "experiment": "EXP-029",
+  "stage": "metric_utility_address",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-029_metric_utility_address_v10.yaml",
+  "targets": 218,
+  "pairs": 13631,
+  "components": 25,
+  "locations": 4,
+  "source_entity_excluded": true,
+  "query_or_future_online_input": false,
+  "candidate_cache": "revisit3d/cache/EXP-029/causal_metric_utility_pairs_train_v10.pt",
+  "candidate_cache_sha256": "5d9e06041b8485452753d835aed27de77469a9d232a84b4cdd3d8887ee6880c7",
+  "pair_oof_spearman": 0.2597119286336252,
+  "pair_oof_spearman_p": 5.6178105636121e-209,
+  "folds": [
+    {
+      "held_out_location": "boston-seaport",
+      "train_pairs": 6008,
+      "test_pairs": 4002,
+      "spearman": 0.1556532766702831,
+      "spearman_p": 3.992211852539629e-23
+    },
+    {
+      "held_out_location": "singapore-hollandvillage",
+      "train_pairs": 10903,
+      "test_pairs": 2560,
+      "spearman": 0.2749260404980314,
+      "spearman_p": 1.2617033120300521e-45
+    },
+    {
+      "held_out_location": "singapore-onenorth",
+      "train_pairs": 5893,
+      "test_pairs": 3762,
+      "spearman": 0.4037326957724247,
+      "spearman_p": 1.7037510887015234e-147
+    },
+    {
+      "held_out_location": "singapore-queenstown",
+      "train_pairs": 8811,
+      "test_pairs": 3307,
+      "spearman": 0.21484241482416105,
+      "spearman_p": 7.814528312187263e-36
+    }
+  ],
+  "policies": {
+    "unified": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.00320064451991443,
+      "harmful_rate": 0.11443970315398885,
+      "acceptance": 0.9309199134199134
+    },
+    "random_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0012249405021765066,
+      "harmful_rate": 0.1617145176252319,
+      "acceptance": 0.9309199134199134
+    },
+    "appearance_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.001251418603555354,
+      "harmful_rate": 0.2686919449598021,
+      "acceptance": 0.9309199134199134
+    },
+    "oracle_panel": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.005154429892759168,
+      "harmful_rate": 0.0,
+      "acceptance": 0.999375
+    }
+  },
+  "bootstrap": {
+    "unified_minus_random": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0019757040177379235,
+      "ci95": [
+        0.0009330729432715233,
+        0.0032616848659832477
+      ]
+    },
+    "unified_minus_appearance": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.001949225916359076,
+      "ci95": [
+        0.0008173879719115629,
+        0.0033494708365543213
+      ]
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "positive_pooled_spearman": true,
+      "positive_each_location_spearman": true,
+      "minimum_policy_utility": true,
+      "minimum_acceptance": true,
+      "maximum_harm": true,
+      "above_appearance": true,
+      "random_component_ci_positive": true
+    },
+    "passed": true
+  },
+  "validation_accessed": false,
+  "test_accessed": false,
+  "artifact": "revisit3d/checkpoints/exp029_metric_utility_address_v10.joblib",
+  "artifact_sha256": "d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984",
+  "mips_maximum_verification_error": 1.4513138715983864e-10
+}

@@ -130,6 +130,12 @@ steps, achieved 100% realized common descent, and changes no inference work.
 The accepted checkpoint hash is
 `3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae`.
 
-Raw candidate harm is still 39.91%, so memory cannot yet be deployed. The next
-stage may fit only one source-safe factorized Ridge address using aligned-log
-future metric utility and semantic zero acceptance. EXP-021 remains unopened.
+EXP-029 passed every address gate on 13,631 causal pairs. Its single factorized
+Ridge obtained positive held-location association everywhere, +0.00320 metric
+utility, 11.44% harm, and positive component intervals over matched random and
+appearance. The frozen artifact hash is
+`d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984`.
+
+Before opening EXP-021, EXP-030 must perform a no-fit full-system OOF audit of
+the selected candidates on SILog, aligned AbsRel, and 3D EPE directly. No
+parameter, threshold, or policy may change.

@@ -911,3 +911,19 @@ Passing requires positive association in every location, at most 30% selected
 harm, and component-level superiority over matched random plus higher utility
 than appearance. No fine router, risk classifier, threshold sweep, or EXP-021
 access is authorized.
+
+## D100 — Freeze the metric address pending an absolute-geometry audit
+
+Date: 2026-08-25
+Status: Accepted after EXP-029
+
+EXP-029 passed every gate on 13,631 causal pairs. The unified score achieved
+positive association in all four held locations, +0.00320 component-balanced
+metric utility, 11.44% harm, and significant superiority over both matched
+random and appearance. Artifact SHA-256 is
+`d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984`.
+
+The address, zero acceptance rule, atom checkpoint, and all inference settings
+are frozen. EXP-030 must recompute OOF selected candidates and verify SILog,
+aligned AbsRel, and 3D EPE directly. This is a no-fit audit, not another model
+selection stage. EXP-021 may be opened only if the frozen full system passes.
