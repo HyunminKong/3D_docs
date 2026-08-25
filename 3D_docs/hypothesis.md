@@ -124,3 +124,13 @@ candidate.** EXP-045 passed every gate: positive reuse in all 14 scenes,
 positive confidence bounds over current, ungated reuse, and independently
 gated shuffle, with 3.76% harm. Retrieval from a causal multi-candidate bank
 remains open.
+
+## H11 — Parameter-free agreement addressing
+
+Among multiple causal memory records, maximum current/memory code agreement
+selects more useful adaptation than frozen appearance or random addressing.
+
+Status: **Supported on curated-source development; full-stream setting open.**
+EXP-046 passes all development gates and improves all scenes despite selecting
+the manifest-paired record only 17.37%. A full-stream test must remove curated
+writes and pair resets before terminal evaluation.

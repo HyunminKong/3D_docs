@@ -1363,3 +1363,21 @@ frozen appearance similarity, maximum current/memory descent agreement, and a
 matched random record. The exact-meta basis and positive-sign application rule
 remain frozen. Validation may now serve only as development for this new bank
 protocol; terminal remains unopened until selection and capacity are fixed.
+
+## D125 — Accept agreement addressing but require every-frame bounded streaming
+
+Date: 2026-08-26
+Status: Accepted after EXP-046
+
+Maximum code agreement beats pooled appearance and matched random addressing
+with positive intervals in every development scene. Its selected record matches
+the manifest pair only 17.37%, showing that physical pair identity is not the
+utility target. The parameter-free agreement address is accepted for further
+development.
+
+EXP-046's bank writes are nevertheless curated by the pose-built manifest. No
+terminal claim is authorized from that protocol. The next experiment must
+process the ordinary RGB stream continuously, write every eligible frame after
+prediction, and use a deterministic capacity-16 reservoir. FIFO-16,
+same-reservoir appearance, and same-reservoir random are fixed controls. Only
+this experiment may select retention before terminal is opened.

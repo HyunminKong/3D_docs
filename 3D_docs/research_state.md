@@ -350,3 +350,15 @@ replaces manifest pair identity with a capacity-16 bank of earlier unique source
 records and compares maximum code agreement, pooled frozen appearance, and
 matched random selection under the same zero-agreement application rule. No
 parameter is fit and terminal remains unopened.
+
+EXP-046 passed every development gate. Agreement addressing gains `1.96e-4`
+over current and beats appearance/random by `1.41e-4`/`1.52e-4`, with positive
+intervals in all 14 scenes and 2.82% harm. It matches the manifest-paired source
+only 17.37%, confirming utility rather than episode identity. Its writes remain
+manifest-curated, so a full-stream bounded-bank test is required before
+terminal access.
+
+EXP-047 is registered to process 4,532 ordinary frames in continuous recurrent
+order, predict before write, and compare a capacity-16 reservoir agreement bank
+with same-bank appearance/random and FIFO agreement. This is the last
+development system test before any terminal access.
