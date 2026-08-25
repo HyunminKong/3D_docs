@@ -1129,3 +1129,25 @@ quality while preserving the existing token interface, or whether integration
 must move to a CUT3R/TTT3R-class recurrent state. Exposed TUM data may be used
 only for this declared engineering diagnosis and may not become final
 held-out evidence.
+
+## D113 — Reject the minimal official FastVGGT carrier and select a recurrent carrier
+
+Date: 2026-08-25
+Status: Accepted after EXP-037
+
+The official frozen FastVGGT head improved every primary error over the custom
+head by 35--51%, confirming that the archived framework's main absolute-quality
+bottleneck was its decoder. It nevertheless reached 1.431 times TTT3R aligned
+AbsRel and 1.322 times TTT3R 3D EPE, failing the pre-registered 1.25 maximum.
+
+The next implementation must therefore use a CUT3R/TTT3R-class recurrent
+geometry carrier. To keep one-paper scope compact, it may add only one local
+plasticity residual interface and reuse one utility address. It must not add a
+second router, risk network, auxiliary reconstruction head, or collection of
+online losses. TTT3R remains an external baseline: the proposed method must
+store and retrieve transported local adaptation experience rather than merely
+rename TTT3R's recurrent scene state.
+
+The exposed TUM diagnostic is now closed for selection. Carrier integration
+must establish its development and held-out evidence on new source-safe
+partitions before any paper claim.

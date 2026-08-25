@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (FastVGGT mechanism candidate archived; competitive-carrier branch opened)
+Last updated: 2026-08-25 (EXP-037 selected a CUT3R/TTT3R-class recurrent carrier)
 
 ## First objective
 
@@ -219,12 +219,17 @@ D112 records the explicit decision to preserve the complete EXP-036 candidate
 and reopen only the geometry-carrier scope. The archived candidate remains the
 mechanism-proof baseline and must not be repaired on exposed nuScenes/TUM data.
 
-The next registered experiment is EXP-037, a no-fit competitive-carrier
-diagnostic. It will first measure the official FastVGGT geometry head on the
-already exposed TUM causal query protocol and compare it with the frozen custom
-head and EXP-036 CUT3R/TTT3R references. This is engineering selection evidence,
-not a final paper test. If the official head restores competitive absolute
-geometry while keeping the existing token/state interface, it is the minimal
-paper branch. Otherwise the branch must move to a CUT3R/TTT3R-class recurrent
-carrier. All paper-level model development and terminal evaluation after this
-choice require new source-safe data partitions.
+EXP-037 completed the no-fit carrier diagnostic on the already exposed TUM
+causal query protocol. This is engineering selection evidence, not a final
+paper test. Official FastVGGT improved the archived custom head by
+36.2% SILog, 51.4% aligned AbsRel, and 35.3% 3D EPE, but remained 1.43 times
+TTT3R AbsRel and 1.32 times TTT3R EPE. It failed the registered carrier gate.
+D113 therefore selects a CUT3R/TTT3R-class recurrent carrier.
+
+The immediate next step is an interface audit and minimal integration proof:
+identify one spatial state on which a local transported plasticity residual can
+act without changing the competitive base prediction at zero residual. The
+paper method remains exactly three conceptual operations--write a local
+adaptation code, transport it to a revisit, and retrieve it by expected future
+geometry utility. New data partitions must be frozen before fitting the
+integrated residual or utility address.
