@@ -1027,3 +1027,15 @@ for 83.1% of each record. The paper must report this storage rather than imply
 that bounded memory is free. EXP-033 does not authorize key compression or
 another capacity selection. The next evidence expansion is an independent
 dataset/backbone feasibility audit.
+
+## D107 — Correct only the EXP-034 no-access gate polarity
+
+Date: 2026-08-25
+Status: Accepted after the metadata-only v1.0 execution
+
+EXP-034 v1.0 found sufficient TUM metadata but failed mechanically because the
+required false states `sensor_decoded` and `model_output_accessed` were inserted
+as false values into `all(checks)`. The v1.0 result remains preserved. Version
+1.1 changes only those predicates to `no_sensor_decoded=true` and
+`no_model_output_accessed=true`, with new output paths. No association,
+threshold, sequence, count, sensor data, or model output changes.

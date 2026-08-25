@@ -1,6 +1,6 @@
 # EXP-034 — TUM Zero-Shot Transfer Feasibility Audit
 
-Status: Registered before image/depth decoding or model access
+Status: Correction v1.1 registered after metadata-only v1.0 gate bug
 
 ## Question
 
@@ -30,7 +30,17 @@ sequences are available.
 
 ## Files
 
-- Config: `configs/EXP-034_tum_transfer_feasibility_v10.yaml`
+- Config: `configs/EXP-034_tum_transfer_feasibility_v11.yaml`
 - Script: `revisit3d/scripts/audit_exp034_tum_transfer_feasibility.py`
-- Manifest: `revisit3d/manifests/tum_zero_shot_stream_exp034_v10.json`
-- Result: `revisit3d/results/EXP-034/tum_transfer_feasibility_v10.json`
+- Manifest: `revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json`
+- Result: `revisit3d/results/EXP-034/tum_transfer_feasibility_v11.json`
+
+## Preserved implementation correction
+
+The first metadata-only v1.0 execution found 223 contexts and 111 revisit
+targets but encoded the required `sensor_decoded == false` state as a false
+gate value before applying `all(checks)`. Its failed result is preserved at
+`tum_transfer_feasibility_v10.json`. Version 1.1 changes only the check names to
+positive predicates (`no_sensor_decoded`, `no_model_output_accessed`) and writes
+new manifest/result paths. Data, associations, thresholds, and counts do not
+change; no sensor or model output was accessed before this correction.

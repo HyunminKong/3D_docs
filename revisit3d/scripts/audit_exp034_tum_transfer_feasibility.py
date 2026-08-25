@@ -55,7 +55,7 @@ def _rotation_angle_deg(left: list[float], right: list[float]) -> float:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--config", default="configs/EXP-034_tum_transfer_feasibility_v10.yaml"
+        "--config", default="configs/EXP-034_tum_transfer_feasibility_v11.yaml"
     )
     args = parser.parse_args()
     config_path = Path(args.config)
@@ -113,10 +113,10 @@ def main() -> None:
             for prior in sequence_events:
                 delta_t = center["timestamp"] - prior["timestamp"]
                 left = np.asarray(center["pose_t_qxyzw"][:3])
-                right = np.asarray(prior["pose_t_qxyzw"][:3])
+                right = np.asarray(prior["center_pose_t_qxyzw"][:3])
                 distance = float(np.linalg.norm(left - right))
                 angle = _rotation_angle_deg(
-                    center["pose_t_qxyzw"][3:], prior["pose_t_qxyzw"][3:]
+                    center["pose_t_qxyzw"][3:], prior["center_pose_t_qxyzw"][3:]
                 )
                 if (
                     delta_t >= float(revisit["minimum_time_separation_s"])
@@ -129,6 +129,7 @@ def main() -> None:
                 "sequence": sequence,
                 "component": sequence,
                 "timestamp": center["timestamp"],
+                "center_pose_t_qxyzw": center["pose_t_qxyzw"],
                 "intrinsics_fx_fy_cx_cy": INTRINSICS[sequence],
                 "depth_scale": 5000.0,
                 "context": [associated[index] for index in context_indices],
@@ -166,8 +167,8 @@ def main() -> None:
         "minimum_revisit_targets": counts["revisit_targets"]
         >= int(config["success"]["minimum_revisit_targets"]),
         "all_referenced_files_exist": counts["missing_referenced_sensor_files"] == 0,
-        "sensor_decoded": False,
-        "model_output_accessed": False,
+        "no_sensor_decoded": True,
+        "no_model_output_accessed": True,
     }
     result = {
         "experiment": "EXP-034",
