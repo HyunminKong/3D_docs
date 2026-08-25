@@ -1,0 +1,35 @@
+experiment: EXP-037
+protocol_revision: v1.0
+purpose: exposed_engineering_carrier_diagnostic
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  custom_result: revisit3d/results/EXP-035/stage2_tum_zero_shot_transfer_v10.json
+  custom_result_sha256: 24ed2a75733590524f9f61fbed640d92810a3f314d3d4e3d672d0be8e62a1113
+  external_result: revisit3d/results/EXP-036/cut3r_ttt3r_tum_baselines_v10.json
+  external_result_sha256: 1eb8140c1d8a60629a7aa3865eb6b9a5f2ccbc638d79a3b37829057ca74a53b3
+foundation:
+  repository: FastVGGT
+  source_revision: 6526e275a29572653a034762bb3c6c9ce280ff55
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  checkpoint_sha256: b08a43baa2db1aad9718e71e098831b8ad32f6f6826c802e9eb714aa34420969
+  image_height: 224
+  image_width: 224
+  input_policy: query_views_only
+  query_updates_state: false
+depth:
+  grid_side: 16
+  minimum_m: 0.2
+  maximum_m: 10.0
+  minimum_cells_per_view: 32
+decision:
+  reference_mode: ttt3r
+  maximum_error_ratio_to_reference: 1.25
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  if_pass: integrate_official_fastvggt_geometry_head
+  if_fail: integrate_cut3r_ttt3r_class_recurrent_carrier
+success:
+  exact_targets: 111
+  exact_sequences: 3
+output:
+  result: revisit3d/results/EXP-037/official_fastvggt_carrier_v10.json
