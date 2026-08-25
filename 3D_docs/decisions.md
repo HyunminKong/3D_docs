@@ -572,3 +572,12 @@ Status: Accepted after EXP-016 and before EXP-017
 EXP-016 achieved +0.771% utility, 18.52% harm, positive association in every location, and significant superiority over appearance. Its random difference was +0.00216 but the component CI `[-0.00011, +0.00449]` crossed zero, so no artifact was accepted.
 
 EXP-017 appends one already observable scalar: the normalized loss improvement produced by each context's own online TTT step. This directly represents adaptation dynamics while adding no loss, module, threshold, or hyperparameter. The pair score remains one exact factorized Ridge, now over 65-D states. All EXP-016 gates remain unchanged; failure ends address augmentation.
+
+## D079 — Test deterministic geometry agreement before a learned fine router
+
+Date: 2026-08-25
+Status: Accepted after EXP-017 and before EXP-018
+
+EXP-017 did not establish random superiority, so descriptor augmentation is stopped. Both EXP-016 and EXP-017 nevertheless show positive context-to-utility association, while the remaining gap is candidate-specific negative transfer after code transport.
+
+EXP-018 restores the stronger visual-only coarse address, retrieves five candidates, and selects the one that most reduces the current 3D-track loss. Both coarse predicted utility and current agreement must exceed semantic zero. No fine model or threshold is learned. A positive component interval over both random and coarse top-1 is required; failure means a learned post-transport utility model is necessary and cannot be added without an explicit paper-scope decision.
