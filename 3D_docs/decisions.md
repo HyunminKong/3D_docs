@@ -518,3 +518,12 @@ Status: Accepted after EXP-012 Stage 0B and before Stage 0C
 Stage 0B established positive candidate mean and significant oracle selection headroom, but its +0.465% oracle utility missed the 1% gate and its 30.0275% harm narrowly exceeded the 30% limit. Equal averaging improves absolute candidate loss without explicitly requiring reuse to beat current adaptation.
 
 Stage 0C replaces that average with current normalized future loss plus an unweighted softplus ranking of best reuse against stop-gradient current loss. This is the only independently motivated feasibility term restored. All architecture, data, candidates, optimization settings, and Stage-0B gates remain fixed. Failure stops the compact atom family rather than triggering further loss accumulation.
+
+## D073 — Stop the frozen-key family; align the existing key with utility
+
+Date: 2026-08-25
+Status: Accepted after EXP-012 Stage 0C and before EXP-013
+
+Stage 0C passed every gate except oracle magnitude: current/base was 0.8340, mean candidate utility +0.208%, harm 27.03%, and oracle-minus-mean CI strictly positive, but oracle utility was only +0.472%. The frozen-PCA-key compact family is stopped as registered.
+
+EXP-013 makes the existing 64-D key projection trainable under the same future-utility ranking objective. This adds no parameter tensor, module, loss, or weight; it replaces task-agnostic PCA transport with utility-supervised transport while retaining PCA initialization. All EXP-012 Stage-0C gates remain unchanged. Failure ends local-key redesign for this paper.

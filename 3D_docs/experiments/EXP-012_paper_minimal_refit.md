@@ -1,6 +1,6 @@
 # EXP-012 — Paper-Minimal Refit
 
-Status: Stages 0A/0B failed; Stage 0C registered before execution
+Status: Completed; all three frozen-key variants failed the registered gate
 
 ## Question
 
@@ -65,6 +65,10 @@ Keep Stage-0B data, candidates, architecture, and optimization unchanged, and pr
 \]
 
 where both losses are normalized by frozen base future loss. This has two semantically necessary terms—absolute current quality and reuse-below-current ranking—no tuned loss weight, and no auxiliary loss. If the unchanged gate fails, this compact atom family is stopped.
+
+## Stage 0C result — frozen-key family stopped
+
+The ranking objective reduced candidate harm to 27.03% and retained positive mean utility (`+0.208%`) with significant oracle-minus-mean headroom (`+0.00264`, 95% CI `[+0.00220, +0.00308]`). Oracle utility remained only `+0.472%`, below the unchanged 1% gate. No checkpoint was produced. EXP-012 therefore stops the frozen-PCA-key family; EXP-013 tests direct utility training of the existing key without another loss.
 
 ## Files
 
