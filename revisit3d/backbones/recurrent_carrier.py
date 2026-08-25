@@ -123,7 +123,7 @@ class FrozenCUT3RCarrier(nn.Module):
         state: RecurrentCarrierState | None,
         *,
         code: Tensor | None = None,
-    ) -> tuple[dict[str, Tensor], RecurrentCarrierState, dict[str, Tensor]]:
+    ) -> tuple[dict[str, Tensor], RecurrentCarrierState, dict[str, Any]]:
         device = next(self.model.parameters()).device
         with torch.no_grad():
             gpu_view, image_feat, image_pos, shape = self._encode_rgb(view, device)
@@ -189,12 +189,17 @@ class FrozenCUT3RCarrier(nn.Module):
                 next_state_feat = init_state_feat * reset_mask + next_state_feat * (1 - reset_mask)
                 next_mem = init_mem * reset_mask + next_mem * (1 - reset_mask)
 
-        injected = self.residual.inject(head_input, code)
-        if code is None or not torch.is_grad_enabled():
-            with torch.no_grad():
-                prediction = self.model._downstream_head(injected, shape, pos=image_pos)
-        else:
-            prediction = self.model._downstream_head(injected, shape, pos=image_pos)
+        auxiliary = {
+            "image_tokens": image_feat.detach(),
+            "image_pos": image_pos.detach(),
+            "decoder_patch_tokens": head_input[-1][:, 1:].detach(),
+            # Frozen rollout cache. This avoids recomputing CUT3R recurrence
+            # when several code hypotheses are read through the same official
+            # DPT head; it does not change the model or recurrent state.
+            "head_input": [tensor.detach() for tensor in head_input],
+            "shape": shape.detach(),
+        }
+        prediction = self.readout(auxiliary, code=code)
         next_state = RecurrentCarrierState(
             state_feat=next_state_feat.detach(),
             state_pos=state_pos.detach(),
@@ -203,12 +208,21 @@ class FrozenCUT3RCarrier(nn.Module):
             init_mem=init_mem.detach(),
             previous_reset=reset,
         )
-        auxiliary = {
-            "image_tokens": image_feat.detach(),
-            "image_pos": image_pos.detach(),
-            "decoder_patch_tokens": head_input[-1][:, 1:].detach(),
-        }
         return prediction, next_state, auxiliary
+
+    def readout(
+        self, auxiliary: dict[str, Any], *, code: Tensor | None = None
+    ) -> dict[str, Tensor]:
+        """Apply a code through the official head using one frozen rollout cache."""
+        injected = self.residual.inject(auxiliary["head_input"], code)
+        if code is None or not torch.is_grad_enabled():
+            with torch.no_grad():
+                return self.model._downstream_head(
+                    injected, auxiliary["shape"], pos=auxiliary["image_pos"]
+                )
+        return self.model._downstream_head(
+            injected, auxiliary["shape"], pos=auxiliary["image_pos"]
+        )
 
 
 def patch_center_points(points: Tensor, patch_size: int = 16) -> Tensor:
