@@ -685,3 +685,18 @@ address fit is authorized only if this single label selects candidates that
 improve SILog, aligned AbsRel, and 3D EPE together and provides component-level
 headroom over the existing proxy oracle. No weighted multi-metric objective,
 risk head, threshold sweep, or EXP-021 access is authorized.
+
+## D087 — Register one scale-aligned log-depth utility label
+
+Date: 2026-08-25
+Status: Accepted before EXP-023 execution
+
+The only EXP-023 label is the per-view median-aligned mean absolute log-depth
+residual on sparse query LiDAR, averaged across query views. It has no metric
+weights or learned parameters and is used only for offline oracle selection.
+The frozen candidate set, atom, online step, transport, and residual do not
+change. The label is viable only if its oracle improves the means of SILog,
+aligned AbsRel, and 3D EPE together, obtains at least one positive component
+interval over current, is no worse than the proxy oracle on all three means, and
+beats the proxy oracle on its own risk with a positive component interval.
+Failure ends this scalar label rather than adding weighted metric terms.

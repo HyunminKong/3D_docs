@@ -1,0 +1,49 @@
+experiment: EXP-023
+protocol_revision: v1.0
+seed: 2300010
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  split: train
+
+model:
+  checkpoint: revisit3d/checkpoints/exp015_core_atom_v10.pt
+  feature_dim: 2048
+
+method:
+  online_loss: track3d_only
+  step_size: 0.0125
+  steps: 1
+  reuse_strength: 0.10
+
+meta_candidates:
+  count: 5
+  foreign_count: 3
+
+metric_label:
+  name: per_view_median_aligned_absolute_log_depth
+  minimum_depth: 0.000001
+
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 2300010
+
+success:
+  minimum_targets: 200
+  minimum_components: 20
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  minimum_positive_metric_intervals_vs_current: 1
+  require_all_metric_means_improve_vs_current: true
+  require_all_metric_means_not_worse_than_proxy_oracle: true
+  require_metric_risk_interval_over_proxy_oracle: true
+
+output:
+  result: revisit3d/results/EXP-023/stage0_metric_utility_oracle_train_v10.json
