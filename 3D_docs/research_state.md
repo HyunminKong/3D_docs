@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-037 selected a CUT3R/TTT3R-class recurrent carrier)
+Last updated: 2026-08-25 (EXP-038 accepted the minimal CUT3R local-code interface)
 
 ## First objective
 
@@ -233,3 +233,17 @@ paper method remains exactly three conceptual operations--write a local
 adaptation code, transport it to a revisit, and retrieve it by expected future
 geometry utility. New data partitions must be frozen before fitting the
 integrated residual or utility address.
+
+EXP-038 v1.1 passed every interface gate. A per-patch 8-D code injected only at
+the last decoder-token level has exact zero-code parity with official CUT3R,
+receives a finite gradient from one symmetric canonical-3D consistency loss,
+and transports exactly under self-correspondence using predicted 3D nearest
+neighbors. The shared basis has 6,144 parameters and each 768-token float32 atom
+is 24 KiB.
+
+No learned integrated model exists yet. The accepted implementation is a
+differentiable scaffold, not evidence of future utility or reconstruction gain.
+The next mandatory step is a metadata-first inventory and freeze of genuinely
+new development and held-out revisit partitions. Only then may one basis be
+trained and the causal sequence `current TTT -> store -> revisit transport ->
+future geometry utility` be evaluated.

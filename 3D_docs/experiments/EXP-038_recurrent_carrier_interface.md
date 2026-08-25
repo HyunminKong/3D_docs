@@ -1,6 +1,6 @@
 # EXP-038 — Recurrent Carrier Plasticity Interface Audit
 
-Status: v1.0 preserved with implementation failure; corrected v1.1 registered
+Status: v1.0 preserved with implementation failure; corrected v1.1 passed all gates
 Purpose: Exposed engineering/interface evidence; no model fitting
 
 ## Question
@@ -69,3 +69,27 @@ Version 1.1 changes only those implementations: it follows native explicit
 attention and computes Euclidean distances from direct coordinate differences.
 The probe frames, 8-D basis, `0.001` step, thresholds, and all success checks
 remain unchanged. This is a correction, not a selected method variant.
+
+## Corrected v1.1 result
+
+All registered checks passed:
+
+- native CUT3R versus carrier step maximum absolute error: `0.0`;
+- zero-code maximum absolute error: `0.0`;
+- online code-gradient norm: `9.224e-4`;
+- adjacent-point consistency: `0.232733 -> 0.232658` after the fixed
+  diagnostic step;
+- nonzero-code maximum geometry change: `0.01977`;
+- identity 3D transport code RMSE and maximum distance: `0.0`; and
+- adjacent-frame mean 3D transport distance: `0.09502`, finite.
+
+One float32 atom stores 768 x 8 values, or 24 KiB. The single shared residual
+basis contains 6,144 parameters. No fitting or query/depth access occurred.
+
+## Conclusion
+
+The selected interface is technically valid: it is an exact zero-residual
+extension of official CUT3R, supplies a differentiable one-loss TTT coordinate,
+and supports explicit transport in predicted canonical 3D. This authorizes a
+new source-safe premise experiment for utility of current and revisited codes;
+it does not yet show that the code improves held-out reconstruction.

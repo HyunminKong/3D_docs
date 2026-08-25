@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-038",
+  "stage": "recurrent_carrier_interface_audit",
+  "protocol_revision": "v1.1_implementation_correction",
+  "config": "configs/EXP-038_recurrent_carrier_interface_v11.yaml",
+  "purpose": "exposed_engineering_interface_audit",
+  "probe": {
+    "sequence": "rgbd_dataset_freiburg2_xyz",
+    "frames": 3,
+    "query_or_depth_accessed": false
+  },
+  "carrier": {
+    "mode": "cut3r",
+    "checkpoint_sha256": "45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103",
+    "frozen": true
+  },
+  "plasticity": {
+    "code_dim": 8,
+    "patch_tokens": 768,
+    "code_bytes_float32": 24576,
+    "trainable_basis_parameters": 6144
+  },
+  "measurements": {
+    "native_per_frame_max_abs_error": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "native_max_abs_error": 0.0,
+    "zero_code_max_abs_error": 0.0,
+    "online_loss_before": 0.23273301124572754,
+    "online_loss_after": 0.23265758156776428,
+    "code_gradient_norm": 0.0009224340319633484,
+    "nonzero_output_max_change": 0.019766807556152344,
+    "identity_transport_rmse": 0.0,
+    "identity_transport_max_distance": 0.0,
+    "cross_transport_mean_distance": 0.09501995891332626
+  },
+  "registered_gate": {
+    "checks": {
+      "native_cut3r_parity": true,
+      "zero_code_parity": true,
+      "finite_nonzero_code_gradient": true,
+      "diagnostic_online_loss_decreased": true,
+      "nonzero_code_changes_geometry": true,
+      "identity_3d_transport": true,
+      "cross_view_3d_transport_finite": true
+    },
+    "passed": true
+  },
+  "model_fit_performed": false,
+  "final_test_evidence": false
+}

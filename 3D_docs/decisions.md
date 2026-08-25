@@ -1167,3 +1167,25 @@ Version 1.1 changes only `return_attn=true` and direct-difference Euclidean
 distance. It retains the same frames, checkpoint, code dimension, basis seed,
 diagnostic step, and gates. No result-dependent hyperparameter or architectural
 change is authorized.
+
+## D115 — Accept the CUT3R local-code interface and freeze its conceptual scope
+
+Date: 2026-08-25
+Status: Accepted after EXP-038 v1.1
+
+The corrected audit obtained exact native and zero-code parity, a finite
+one-loss descent direction, nonzero geometry response, exact identity
+transport, and finite adjacent-frame 3D transport. The v2 interface is accepted
+for premise testing.
+
+Its paper scope is frozen conceptually: official frozen CUT3R recurrence and
+geometry head; one 8-D code per decoder patch; one shared linear residual basis;
+one symmetric predicted-3D online loss; explicit nearest-neighbor transport in
+the predicted canonical frame; and one future-geometry utility address. The
+next evidence may train the one basis and later fit the one address, but may not
+add another decoder, recurrent state, loss family, learned transport network,
+risk head, or threshold collection.
+
+EXP-038 establishes interface feasibility only. Before any fitting, a new
+source-safe development/held-out benchmark must be registered. Exposed TUM and
+previous nuScenes partitions cannot select the integrated model.
