@@ -84,11 +84,17 @@ def _pairs(metadata_path: Path, root: Path, config: dict) -> tuple[dict, list[di
                 "rotation_degrees": float(angles[order[0]]),
             }
         )
+    path_keys = ("source_previous_rgb", "source_rgb", "target_previous_rgb", "target_rgb")
+    available = [
+        row for row in candidates if all(Path(row[key]).is_file() for key in path_keys)
+    ]
     return {
         "frames": len(frames),
         "median_step": median_step,
         "candidate_pairs": len(candidates),
-    }, candidates
+        "available_pairs": len(available),
+        "pairs_with_missing_rgb": len(candidates) - len(available),
+    }, available
 
 
 def _subsample(rows: list[dict], maximum: int) -> list[dict]:

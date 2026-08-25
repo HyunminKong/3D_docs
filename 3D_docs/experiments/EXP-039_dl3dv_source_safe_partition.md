@@ -1,6 +1,6 @@
 # EXP-039 — DL3DV Source-Safe Revisit Partition
 
-Status: Registered before execution
+Status: v1.0 preserved with one missing-path failure; corrected v1.1 registered
 Purpose: Metadata-only partition; no pixels, labels, or model outputs
 
 ## Question
@@ -49,7 +49,22 @@ consistency, but it cannot be the sole terminal evidence for absolute depth or
 
 ## Artifacts
 
-- Config: `configs/EXP-039_dl3dv_source_safe_partition_v10.yaml`
+- Config v1.0: `configs/EXP-039_dl3dv_source_safe_partition_v10.yaml`
+- Corrected config v1.1: `configs/EXP-039_dl3dv_source_safe_partition_v11.yaml`
 - Script: `revisit3d/scripts/build_exp039_dl3dv_partition.py`
-- Result: `revisit3d/results/EXP-039/dl3dv_partition_audit_v10.json`
-- Manifests: `revisit3d/manifests/dl3dv_recurrent_revisit_*_exp039_v10.json`
+- Result v1.0: `revisit3d/results/EXP-039/dl3dv_partition_audit_v10.json`
+- Corrected result v1.1: `revisit3d/results/EXP-039/dl3dv_partition_audit_v11.json`
+- Manifests: `revisit3d/manifests/dl3dv_recurrent_revisit_*_exp039_v1*.json`
+
+## v1.0 path audit
+
+Every metadata, eligibility, split, pair-count, disjointness, and no-access
+check passed. The sole failure was one missing local file,
+`frame_00286.png`, referenced as `source-1` in one terminal pair. Neighboring
+files and 354 other frames exist, so this is a single-file dataset inventory
+gap rather than a model or revisit failure.
+
+Version 1.1 excludes any pair with a missing required RGB path before the same
+deterministic maximum-16 subsampling. It changes no pose threshold, eligibility
+minimum, split seed/size, or success gate. The v1.0 result and manifests remain
+preserved.

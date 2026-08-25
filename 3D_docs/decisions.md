@@ -1189,3 +1189,16 @@ risk head, or threshold collection.
 EXP-038 establishes interface feasibility only. Before any fitting, a new
 source-safe development/held-out benchmark must be registered. Exposed TUM and
 previous nuScenes partitions cannot select the integrated model.
+
+## D116 — Correct EXP-039 by excluding unavailable RGB pairs before subsampling
+
+Date: 2026-08-25
+Status: Accepted after EXP-039 v1.0 metadata audit
+
+EXP-039 v1.0 is preserved. It passed all scene, pair, split, disjointness, and
+no-access checks but referenced one absent local RGB file in one terminal pair.
+Version 1.1 removes unavailable four-frame pairs before the already registered
+deterministic per-scene subsampling. This is a data-integrity correction only;
+all revisit thresholds, minimum/maximum pair counts, scene assignment, split
+sizes, and gates remain unchanged. No pixel was decoded and no model output was
+accessed.
