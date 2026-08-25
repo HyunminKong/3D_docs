@@ -29,8 +29,8 @@ from revisit3d.scripts.evaluate_exp009_causal_dino_retrieval import (
 from revisit3d.scripts.evaluate_exp009_locked_validation import _mips_score, _sha256
 
 
-def _table(root: Path, name: str) -> dict[str, dict]:
-    rows = json.loads((root / "v1.0-trainval" / f"{name}.json").read_text())
+def _table(root: Path, name: str, version: str = "v1.0-trainval") -> dict[str, dict]:
+    rows = json.loads((root / version / f"{name}.json").read_text())
     return {row["token"]: row for row in rows}
 
 
@@ -57,15 +57,16 @@ def _inverse(points: np.ndarray, record: dict) -> np.ndarray:
 
 
 class LidarProjector:
-    def __init__(self, root: str | Path, *, minimum_depth: float, maximum_depth: float) -> None:
+    def __init__(self, root: str | Path, *, minimum_depth: float, maximum_depth: float,
+                 version: str = "v1.0-trainval") -> None:
         self.root = Path(root)
         self.minimum_depth = float(minimum_depth)
         self.maximum_depth = float(maximum_depth)
-        self.sample_data = _table(self.root, "sample_data")
-        self.samples = _table(self.root, "sample")
-        self.calibrations = _table(self.root, "calibrated_sensor")
-        self.sensors = _table(self.root, "sensor")
-        self.poses = _table(self.root, "ego_pose")
+        self.sample_data = _table(self.root, "sample_data", version)
+        self.samples = _table(self.root, "sample", version)
+        self.calibrations = _table(self.root, "calibrated_sensor", version)
+        self.sensors = _table(self.root, "sensor", version)
+        self.poses = _table(self.root, "ego_pose", version)
         self.data_by_sample_channel = {
             (
                 row["sample_token"],

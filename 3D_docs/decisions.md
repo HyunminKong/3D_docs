@@ -957,3 +957,21 @@ one `track3D` step at 0.0125, 8-D code, visual transport, residual 0.10, top-1
 semantic-zero reuse, causal write-after-predict, and the registered bounded
 memory protocol. EXP-031 may open EXP-021 exactly once. No development result
 after this decision may change the model, threshold, comparator, or gate.
+
+## D103 — Register the one-shot EXP-031 terminal protocol
+
+Date: 2026-08-25
+Status: Accepted before any EXP-021 sensor/model access
+
+EXP-031 uses all 214 locked directional episodes and three official-location
+streams. It converts only the 96 selected scene metadata, creates one frozen
+RGB/geometry/tracker cache with train-fitted PCA, then evaluates the immutable
+EXP-028/029 candidate. The online bank is deterministic reservoir-64 per
+location, writes after prediction, retrieves top-1, and accepts only above
+semantic zero.
+
+The registered controls are current-only, same-bank random expectation, and
+appearance retrieval. Full memory must improve all three primary means over
+each control with at least one positive component interval per comparison.
+Terminal outputs cannot authorize a repair, new seed, threshold, capacity,
+loss, or module.

@@ -32,5 +32,6 @@
 | [EXP-028](EXP-028_safeguarded_pareto_atom.md) | Does enforcing a feasible realized optimizer displacement recover broad metric health? | Completed, all gates passed | Current TTT and oracle reuse improve all three geometry means; safeguard restores 100% common descent and adds no inference cost. |
 | [EXP-029](EXP-029_metric_utility_address.md) | Can one source-safe linear address retrieve metric-useful EXP-028 corrections? | Completed, all gates passed | Positive association in every location; selected utility beats random and appearance while reducing harm to 11.4%. |
 | [EXP-030](EXP-030_full_system_geometry_audit.md) | Does the frozen atom-plus-address improve all absolute geometry endpoints and beat matched controls? | Completed, all gates passed | Full memory beats current, matched random, and appearance on all three primary means with positive intervals. |
+| [EXP-031](EXP-031_terminal_evaluation.md) | Does the immutable full system generalize to the untouched official-test revisit benchmark? | Registered | One terminal access; no post-result repair or model selection. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-030)
+Last updated: 2026-08-25 (EXP-031 terminal protocol registered)
 
 ## First objective
 
@@ -145,3 +145,9 @@ memory beat current-only, matched random, and appearance on SILog, aligned
 AbsRel, and 3D EPE, with positive intervals for every comparison. Development
 model selection is closed. EXP-031 is authorized to open the untouched
 EXP-021 benchmark once using the immutable checkpoint/address/protocol.
+
+EXP-031 is now registered before access: 96 selected official-test scenes, 214
+directional episodes, 29 components, deterministic reservoir capacity 64 per
+location, write-after-predict, top-1 semantic-zero metric address, and frozen
+random/appearance/current controls. Terminal output cannot change any method or
+gate and will be reported whether it passes or fails.

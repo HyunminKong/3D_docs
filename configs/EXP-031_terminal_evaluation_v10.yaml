@@ -1,0 +1,53 @@
+experiment: EXP-031
+protocol_revision: v1.0
+seed: 3100010
+authorization: revisit3d/results/EXP-030/stage0_full_system_geometry_audit_v10.json
+terminal_lock: revisit3d/results/EXP-021/stage1_terminal_manifest_v11.json
+data:
+  manifest: revisit3d/manifests/nuscenes_official_test_revisit_exp021_v11.json
+  scene_root: revisit3d/cache/EXP-031/nuscenes_official_test_scenes
+  nuscenes_root: /mnt/ssd/nuscenes
+  nuscenes_version: v1.0-test
+  split: terminal_test
+  image_height: 224
+  image_width: 224
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+stage0:
+  output_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+  track_side: 8
+stage1:
+  cache: revisit3d/cache/EXP-031/terminal_geometry_v10.pt
+  pca_source_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_conversion_result: revisit3d/results/EXP-031/stage0_terminal_scene_conversion_v10.json
+  cache_result: revisit3d/results/EXP-031/stage1_terminal_cache_v10.json
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp028_safeguarded_pareto_atom_v10.pt
+  address_artifact: revisit3d/checkpoints/exp029_metric_utility_address_v10.joblib
+method:
+  step_size: 0.0125
+  reuse_strength: 0.10
+  acceptance_threshold: 0.0
+bank:
+  stream_partition: official_location
+  capacity: 64
+  retention: deterministic_reservoir
+  retrieval_topk: 1
+  write_policy: after_prediction
+  controls: [current_only, matched_random, appearance]
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 3100010
+success:
+  minimum_targets: 190
+  minimum_components: 25
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  minimum_positive_intervals_per_comparison: 1
+output:
+  result: revisit3d/results/EXP-031/stage2_terminal_evaluation_v10.json
