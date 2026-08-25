@@ -536,3 +536,12 @@ Status: Accepted after EXP-013 and before EXP-014
 EXP-013 failed decisively: mean candidate utility became negative and harm rose to 45.38%. End-to-end key redesign is stopped. A separate audit found that every new minimal fold had only 483–576 training updates, whereas the pre-existing EXP-006 v2.7 cross-fit selected 1000 over 500 steps and improved oracle utility from 1.323% to 3.855%.
 
 EXP-014 therefore restores the safer frozen PCA key and repeats the minimal relative-ranking model with exactly 1000 updates. This uses an optimization budget selected before EXP-012 and changes no method component, loss, inference hyperparameter, or gate. Failure triggers a paper-scope pivot rather than further atom variants.
+
+## D075 — Make the core three-term utility objective the final atom variant
+
+Date: 2026-08-25
+Status: Accepted after EXP-014 and before EXP-015
+
+EXP-014 raised oracle utility to +0.9205% and passed every gate except the fixed 1% magnitude threshold. Together with the failure of absolute-reuse-only Stage 0B, this supplies a factorial reason to combine absolute best-reuse quality and reuse-versus-current ranking rather than restore unrelated auxiliary losses.
+
+EXP-015 uses current loss, best-reuse loss, and their unweighted softplus ranking. All are evaluations of the same single 3D-track signal; key contrastive, neutralization, centering, smoothness, and code-norm losses remain excluded. Architecture, 1000-step budget, data, candidates, and gates do not change. This is the terminal atom variant: success freezes it, failure ends the utility-memory paper path.

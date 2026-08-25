@@ -229,8 +229,32 @@ def run_ranked_utility_episode(
     return episode
 
 
+def run_core_utility_episode(
+    head: SpatialPlasticityHead,
+    sources: list[CachedAtomSegment],
+    current: CachedAtomSegment,
+    query: CachedAtomSegment,
+    *,
+    step_size: float,
+    reuse_strength: float,
+) -> UtilitySelectedEpisode:
+    """Final core: current quality, reuse quality, and relative utility."""
+    episode = run_utility_selected_episode(
+        head, sources, current, query,
+        step_size=step_size, reuse_strength=reuse_strength,
+    )
+    denominator = episode.base_query_loss.detach().abs().clamp_min(1e-6)
+    current_loss = episode.current_query_loss / denominator
+    selected_loss = episode.candidate_query_losses[episode.selected_index] / denominator
+    episode.outer_loss = (
+        current_loss + selected_loss
+        + F.softplus(selected_loss - current_loss.detach())
+    )
+    return episode
+
+
 __all__ = [
     "MinimalCurrentState", "MinimalEpisode", "UtilitySelectedEpisode", "adapt_minimal", "future_readout",
     "prepare_current", "reuse_query_loss", "run_minimal_episode", "track_objective",
-    "run_utility_selected_episode", "run_ranked_utility_episode",
+    "run_utility_selected_episode", "run_ranked_utility_episode", "run_core_utility_episode",
 ]
