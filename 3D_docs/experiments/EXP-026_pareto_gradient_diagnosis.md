@@ -1,6 +1,6 @@
 # EXP-026 — Pareto Gradient Diagnosis
 
-Status: Registered; not yet executed
+Status: Completed; all registered gates passed
 
 ## Question
 
@@ -71,3 +71,29 @@ the proposed local gradient mechanism, so EXP-027 must not be fit.
 - Config: `configs/EXP-026_pareto_gradient_diagnosis_v10.yaml`
 - Runner: `revisit3d/scripts/diagnose_exp026_pareto_gradients.py`
 - Result: `revisit3d/results/EXP-026/stage0_pareto_gradient_diagnosis_v10.json`
+
+## Result
+
+All 675 anchor/episode evaluations were valid across the same 225 targets and
+25 components; no parameter update was performed.
+
+| Anchor | Conflict | Raw-average sacrifice | Bisector common descent | Median bisector ratio |
+|---|---:|---:|---:|---:|
+| fresh PCA head | 9.47% | 4.18% | 100% | 0.9843 |
+| EXP-006 head | 35.43% | 32.83% | 100% | 0.9060 |
+| EXP-015 head | 27.30% | 22.89% | 100% | 0.9266 |
+
+The median log/relative gradient-norm ratios were 0.433, 0.473, and 0.463,
+respectively. Thus equal raw aggregation systematically gives the
+relative-depth objective more scale, and after learning it sacrifices at least
+one endpoint in roughly one quarter to one third of physical-component-balanced
+cases. The normalized bisector was non-degenerate and strict common descent on
+every measured case.
+
+## Conclusion
+
+The terminal scalarization trade-off has a measurable local-gradient mechanism,
+and a coefficient-free common direction exists. Every registered gate passed,
+so one source-safe OOF EXP-027 fit is authorized. This does not establish that
+the fit will generalize or that Adam preconditioning preserves the per-step
+common-descent property; those are EXP-027 evaluation questions.

@@ -824,3 +824,26 @@ metric conflict and raw-average sacrifice are material, while the normalized
 bisector supplies non-degenerate common descent across all anchors. This
 prevents adopting a fashionable optimizer without evidence that it addresses
 the repository's actual failure. EXP-021 remains unopened.
+
+## D095 — Authorize one coefficient-free Pareto atom fit
+
+Date: 2026-08-25
+Status: Accepted after EXP-026
+
+EXP-026 passed all five registered gates. At the learned EXP-006 and EXP-015
+anchors, component-balanced gradient conflict was 35.43% and 27.30%, while raw
+equal averaging sacrificed at least one endpoint in 32.83% and 22.89%. The
+unit-normalized bisector was strict common descent for all 675 measured
+anchor/episode pairs and was far from antiparallel degeneracy.
+
+EXP-027 may therefore train one fresh head with two separately differentiated
+offline objectives and replace their scalar sum by the arithmetic mean of
+their unit gradients. It retains the exact EXP-024/025 architecture, folds,
+1000-step budget, AdamW implementation, online loss, code step, candidate set,
+and reuse residual. No loss coefficient, task-weight solver, CAGrad radius,
+risk head, threshold, or new module is introduced.
+
+The first-order common-descent statement applies to the synthesized gradient,
+not automatically to AdamW's preconditioned parameter displacement. EXP-027
+must log the realized per-step displacement alignment and pass the same broad
+geometry OOF gates before any checkpoint or address fit is accepted.

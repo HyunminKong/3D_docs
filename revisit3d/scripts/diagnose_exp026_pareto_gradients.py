@@ -21,7 +21,10 @@ from revisit3d.scripts.train_exp024_metric_aligned_atom import _lidar_cache, _qu
 def _metric_pair(prediction, target, valid, config):
     log_rows, relative_rows = [], []
     minimum_cells = int(config["lidar"]["minimum_cells_per_view"])
-    epsilon = float(config["diagnosis"]["minimum_depth"])
+    objective = config.get("diagnosis", config.get("meta_objective"))
+    if objective is None:
+        raise KeyError("diagnosis or meta_objective settings are required")
+    epsilon = float(objective["minimum_depth"])
     for view in range(prediction.shape[0]):
         mask = valid[view]
         if int(mask.sum()) < minimum_cells:

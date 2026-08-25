@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-026 registered)
+Last updated: 2026-08-25 (after EXP-026)
 
 ## First objective
 
@@ -112,9 +112,13 @@ generic idea of gradient consensus is not novel—CoCo-MT-TTA, GraTa, PCGrad,
 CAGrad, Aligned-MTL, and ConFIG directly constrain that claim—so it is treated
 as an offline geometry-health mechanism rather than the standalone novelty.
 
-EXP-026 is registered as a zero-fit premise test. It measures whether the two
-endpoint gradients materially conflict, whether equal averaging sacrifices an
-endpoint, and whether a parameter-free unit-normalized bisector supplies
-non-degenerate common descent at a fresh and two frozen historical heads. Only
-a full registered-gate pass authorizes EXP-027. The online graph remains one
-`track3D` loss and one local-code step, and EXP-021 remains fully unopened.
+EXP-026 passed every zero-fit premise gate on 675 anchor/episode evaluations.
+The learned anchors exhibited 27–35% metric-gradient conflict and 23–33% raw
+equal-average endpoint sacrifice, while the parameter-free unit-normalized
+bisector was non-degenerate common descent in every case.
+
+EXP-027 is now authorized as one source-safe OOF fit with separately computed
+log and relative endpoint gradients and their unit-normalized mean. It changes
+no inference module or online loss and introduces no loss weight. Broad
+geometry, reuse headroom, and realized optimizer-displacement alignment must
+pass before a checkpoint is accepted. EXP-021 remains fully unopened.
