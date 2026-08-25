@@ -581,3 +581,12 @@ Status: Accepted after EXP-017 and before EXP-018
 EXP-017 did not establish random superiority, so descriptor augmentation is stopped. Both EXP-016 and EXP-017 nevertheless show positive context-to-utility association, while the remaining gap is candidate-specific negative transfer after code transport.
 
 EXP-018 restores the stronger visual-only coarse address, retrieves five candidates, and selects the one that most reduces the current 3D-track loss. Both coarse predicted utility and current agreement must exceed semantic zero. No fine model or threshold is learned. A positive component interval over both random and coarse top-1 is required; failure means a learned post-transport utility model is necessary and cannot be added without an explicit paper-scope decision.
+
+## D080 — Test coarse fallback as the final parameter-free fine policy
+
+Date: 2026-08-25
+Status: Accepted after EXP-018 and before EXP-019
+
+EXP-018 showed that positive current agreement isolates safe/useful cases—3.07% harm and significant random superiority—but strict abstention reduced utility to +0.418%. EXP-019 preserves those reroutes and falls back to coarse top-1 only when no positive-agreement candidate exists.
+
+All zero thresholds, K=5, folds, comparators, and gates remain fixed. The fallback must significantly beat both random and coarse top-1. Failure ends heuristic routing and constitutes evidence that a compact learned post-transport utility model is necessary.

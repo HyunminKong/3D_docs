@@ -19,6 +19,7 @@
 | [EXP-015](EXP-015_core_atom.md) | Are absolute reuse quality and relative ranking jointly sufficient without auxiliary losses? | Completed, all gates passed | The terminal core atom exceeded 1% OOF oracle utility without auxiliary losses. |
 | [EXP-016](EXP-016_unified_utility_address.md) | Can one visual-only linear score perform both retrieval and reuse gating? | Completed, gate failed narrowly | Six of seven gates passed; random-difference CI crossed zero. |
 | [EXP-017](EXP-017_adaptation_context_address.md) | Does one online self-improvement scalar complete the utility address? | Completed, gate failed | Pair correlation/harm improved, but random superiority remained insignificant. |
-| [EXP-018](EXP-018_geometry_agreement.md) | Can current-geometry agreement safely select within utility top-5? | Registered | Parameter-free fine rule; failure triggers an explicit learned-router complexity decision. |
+| [EXP-018](EXP-018_geometry_agreement.md) | Can strict current-geometry agreement safely select within utility top-5? | Completed, gate failed | Harm/random superiority improved, but abstention reduced utility below the gate. |
+| [EXP-019](EXP-019_agreement_fallback.md) | Can agreement reranking plus coarse fallback improve top-1? | Registered | Final parameter-free fine policy; must significantly beat coarse and random. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

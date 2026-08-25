@@ -1,0 +1,100 @@
+{
+  "experiment": "EXP-018",
+  "stage": "geometry_agreement",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-018_geometry_agreement_v10.yaml",
+  "targets": 218,
+  "pairs": 13631,
+  "components": 25,
+  "coarse_topk": 5,
+  "learned_fine_router": false,
+  "future_or_query_online_input": false,
+  "folds": [
+    {
+      "held_out_location": "boston-seaport",
+      "train_pairs": 5980,
+      "test_pairs": 4002,
+      "spearman": 0.02338901018383702,
+      "spearman_p": 0.13904391274380293
+    },
+    {
+      "held_out_location": "singapore-hollandvillage",
+      "train_pairs": 10909,
+      "test_pairs": 2560,
+      "spearman": 0.16340330662205604,
+      "spearman_p": 8.828806674513299e-17
+    },
+    {
+      "held_out_location": "singapore-onenorth",
+      "train_pairs": 5930,
+      "test_pairs": 3762,
+      "spearman": 0.24845578369881038,
+      "spearman_p": 4.936415203544158e-54
+    },
+    {
+      "held_out_location": "singapore-queenstown",
+      "train_pairs": 8815,
+      "test_pairs": 3307,
+      "spearman": 0.23313156127479837,
+      "spearman_p": 4.6424648905661505e-42
+    }
+  ],
+  "agreement_cache": "revisit3d/cache/EXP-018/current_geometry_agreement_train_v10.pt",
+  "agreement_cache_sha256": "34d0942f225473bffa9952b957faf62d3a7f2bf9f30a6ee191dde988ef0432ba",
+  "policies": {
+    "geometry_agreement": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0041801831996652935,
+      "harmful_rate": 0.03073299319727891,
+      "acceptance": 0.32993050401978974
+    },
+    "coarse_top1": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0077136192391227465,
+      "harmful_rate": 0.18516612554112555,
+      "acceptance": 0.9471930272108844
+    },
+    "random_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0021643412232299304,
+      "harmful_rate": 0.02991666666666666,
+      "acceptance": 0.32993050401978974
+    }
+  },
+  "bootstrap": {
+    "full_minus_random": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0020158419764353635,
+      "ci95": [
+        0.0005970573365818013,
+        0.003772410964933082
+      ]
+    },
+    "full_minus_coarse": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": -0.0035334360394574525,
+      "ci95": [
+        -0.008120817563403762,
+        0.0008072657300484686
+      ]
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "minimum_policy_utility": false,
+      "minimum_acceptance": true,
+      "maximum_harm": true,
+      "random_component_ci_positive": true,
+      "coarse_component_ci_positive": false
+    },
+    "passed": false
+  },
+  "validation_accessed": false,
+  "test_accessed": false
+}

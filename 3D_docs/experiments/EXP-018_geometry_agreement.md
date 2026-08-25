@@ -1,6 +1,6 @@
 # EXP-018 — Retrieval with Current-Geometry Agreement
 
-Status: Registered before execution
+Status: Completed; gate failed
 
 ## Question
 
@@ -13,6 +13,10 @@ Use EXP-016's visual-only Ridge/MIPS to retrieve top-5. For those five candidate
 ## Registered gate
 
 Reuse the exact source-safe folds and causal pairs. The method must exceed 0.5% utility, accept at least 20%, keep harm at or below 20%, and have positive component-bootstrap lower bounds over both matched-acceptance random selection and EXP-016 coarse top-1. Failure means a learned fine utility model is necessary and requires an explicit paper-complexity decision.
+
+## Result
+
+Strict agreement achieved only 3.07% harm and beat matched-acceptance random with CI `[+0.00060,+0.00377]`, but accepted 32.99% and reached just `+0.418%` utility. It was below coarse top-1 by `-0.00353`, CI `[-0.00812,+0.00081]`. EXP-019 tests a coarse fallback before authorizing a learned fine model.
 
 ## Files
 

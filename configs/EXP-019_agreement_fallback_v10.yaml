@@ -1,0 +1,33 @@
+experiment: EXP-019
+protocol_revision: v1.0
+seed: 1900010
+prior_stage: revisit3d/results/EXP-018/stage0_geometry_agreement_train_v10.json
+
+data:
+  candidate_cache: revisit3d/cache/EXP-016/causal_utility_pairs_train_v10.pt
+  agreement_cache: revisit3d/cache/EXP-018/current_geometry_agreement_train_v10.pt
+  split: train
+
+method:
+  coarse_topk: 5
+  utility_threshold: 0.0
+  geometry_agreement_threshold: 0.0
+  no_agreement_policy: coarse_top1_fallback
+
+address:
+  ridge_alpha: 1.0
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 1900010
+
+success:
+  minimum_policy_utility: 0.005
+  minimum_acceptance: 0.20
+  maximum_harmful_rate: 0.20
+  require_random_component_ci_positive: true
+  require_coarse_component_ci_positive: true
+
+output:
+  artifact: revisit3d/checkpoints/exp019_agreement_fallback_v10.joblib
+  result: revisit3d/results/EXP-019/stage0_agreement_fallback_train_v10.json
