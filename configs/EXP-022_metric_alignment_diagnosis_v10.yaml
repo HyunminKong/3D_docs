@@ -1,0 +1,33 @@
+experiment: EXP-022
+protocol_revision: v1.0
+seed: 2200010
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  split: train
+
+model:
+  reference_result: revisit3d/results/EXP-011/stage0_objective_health_train_v10.json
+  final_atom_checkpoint: revisit3d/checkpoints/exp015_core_atom_v10.pt
+  feature_dim: 2048
+  step_size: 0.0125
+
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 2200010
+
+success:
+  minimum_targets: 180
+  minimum_components: 20
+  maximum_base_reproduction_difference: 0.000001
+
+output:
+  result: revisit3d/results/EXP-022/stage0_metric_alignment_diagnosis_train_v10.json

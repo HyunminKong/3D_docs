@@ -650,3 +650,17 @@ source-safe component OOF on the existing 25-component train benchmark only.
 No official-test RGB, LiDAR, feature, or model output may be opened until one
 method, all hyperparameters, all gates, and an artifact hash are frozen. Stage 1
 may generate only the directional metadata manifest.
+
+## D085 — Diagnose metric alignment before choosing the paper branch
+
+Date: 2026-08-25
+Status: Accepted before EXP-022 execution
+
+EXP-020 alone cannot distinguish an intrinsically misaligned compact objective
+from a final-refit generalization failure. EXP-022 therefore performs no model
+fit or selection. On the existing train targets it decomposes foundation depth,
+the metric-healthy EXP-011 current result, the EXP-015 zero-code readout, and the
+EXP-015 one-step result. It also measures whether self-supervised future-loss
+improvement predicts sparse-LiDAR improvement. The result determines which
+single paper branch is scientifically justified; it may not authorize tuning on
+EXP-020 or access to the locked EXP-021 terminal benchmark.
