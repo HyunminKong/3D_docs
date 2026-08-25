@@ -14,6 +14,7 @@
 | [EXP-010](EXP-010_paper_geometry_validity.md) | Does the locked utility improvement correspond to absolute depth/point accuracy? | Completed, gate failed | Aligned AbsRel improved, but SILog and 3D EPE worsened; broad geometry claim was rejected. |
 | [EXP-011](EXP-011_objective_health.md) | Can a single self-supervised TTT loss improve all primary geometry metrics? | Completed, all gates passed | One 3D-track loss at eta 0.0125 improved SILog, AbsRel, and 3D EPE on train and one-shot validation. |
 | [EXP-012](EXP-012_paper_minimal_refit.md) | Does the core result survive a minimal frozen-key atom? | Completed, gate failed | Current TTT survived but all variants missed the 1% oracle-reuse gate. |
-| [EXP-013](EXP-013_utility_key_atom.md) | Can the existing transport key be trained directly by future utility without an auxiliary loss? | Registered | Same minimal ranking objective and unchanged gates; only the PCA-initialized key becomes trainable. |
+| [EXP-013](EXP-013_utility_key_atom.md) | Can the existing transport key be trained directly by future utility without an auxiliary loss? | Completed, gate failed | Selection headroom grew, but mean utility and harm became substantially worse. |
+| [EXP-014](EXP-014_budget_sufficient_atom.md) | Was the minimal frozen-key failure caused by an insufficient optimization budget? | Registered | Reuse the 1000-step budget selected by pre-existing EXP-006 evidence; all method gates remain unchanged. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

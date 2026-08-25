@@ -1,0 +1,5819 @@
+{
+  "experiment": "EXP-013",
+  "stage": "utility_key_atom_crossfit",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-013_utility_key_atom_v10.yaml",
+  "meta_objective": "normalized_current_plus_softplus_best_minus_stopgrad_current",
+  "meta_objective_weights": [],
+  "auxiliary_losses": [],
+  "visual_key": "trainable_utility_supervised_pca_initialization",
+  "summary": {
+    "rows": 225,
+    "components": 25,
+    "current_to_base": 0.800993460140052,
+    "oracle_utility": 0.005210798687745797,
+    "mean_utility": -0.0021076181153824756,
+    "candidate_harmful_rate": 0.4537792841216754
+  },
+  "oracle_minus_mean": {
+    "direction": "oracle_minus_candidate_mean",
+    "components": 25,
+    "mean": 0.0073184168031282726,
+    "ci95": [
+      0.0051481386805821905,
+      0.009768106229765707
+    ]
+  },
+  "gate": {
+    "checks": {
+      "current_improves_future_loss": true,
+      "oracle_utility": false,
+      "candidate_mean_utility": false,
+      "candidate_harm": false,
+      "selection_headroom": true
+    },
+    "passed": false
+  },
+  "oof_rows": [
+    {
+      "index": 10,
+      "episode": "scene-0065__scene-0444",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9378566145896912,
+      "oracle_utility": 0.04074285551905632,
+      "mean_utility": 0.01733470894396305,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.04074285551905632,
+        0.014798983931541443,
+        0.005480274558067322,
+        0.002346638822928071,
+        0.023304788395762444
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 11,
+      "episode": "scene-0067__scene-0255",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8954394459724426,
+      "oracle_utility": 0.002640572376549244,
+      "mean_utility": 0.0011579031124711037,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0022307229228317738,
+        0.00030820202664472163,
+        0.002640572376549244,
+        0.0011847119312733412,
+        -0.0005746940150856972
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 12,
+      "episode": "scene-0068__scene-0454",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0182665586471558,
+      "oracle_utility": 0.005804751068353653,
+      "mean_utility": 0.0032941866666078568,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0022291222121566534,
+        0.005804751068353653,
+        0.0036923789884895086,
+        0.002703889971598983,
+        0.0020407908596098423
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 13,
+      "episode": "scene-0070__scene-0207",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.3660985231399536,
+      "oracle_utility": 0.006888822186738253,
+      "mean_utility": -0.027678510174155235,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.044172219932079315,
+        0.006888822186738253,
+        -0.026134785264730453,
+        -0.04206232726573944,
+        -0.03291204199194908
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 14,
+      "episode": "scene-0072__scene-0451",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9522998332977295,
+      "oracle_utility": 0.0008408599533140659,
+      "mean_utility": -0.002872982295230031,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0013259421102702618,
+        -0.0018116178689524531,
+        0.0008408599533140659,
+        -0.006549414712935686,
+        -0.00551879545673728
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 15,
+      "episode": "scene-0075__scene-0163",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7460610866546631,
+      "oracle_utility": 0.0019082680810242891,
+      "mean_utility": -0.00448099710047245,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.009381335228681564,
+        -0.00495472177863121,
+        0.0019082680810242891,
+        0.0004579359374474734,
+        -0.010435132309794426
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 16,
+      "episode": "scene-0093__scene-0462",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.955590546131134,
+      "oracle_utility": 0.006416599731892347,
+      "mean_utility": 0.0028624474070966244,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.0011146586621180177,
+        0.004881023894995451,
+        0.0026605369057506323,
+        0.0014687345828860998,
+        0.006416599731892347
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 17,
+      "episode": "scene-0093__scene-0588",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0120716094970703,
+      "oracle_utility": 0.0012578833848237991,
+      "mean_utility": -0.003200212027877569,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        0.0012578833848237991,
+        -0.005682272836565971,
+        -0.003593835514038801,
+        -0.0022777917329221964,
+        -0.0057050446048378944
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 18,
+      "episode": "scene-0093__scene-0669",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7301661968231201,
+      "oracle_utility": 0.027645744383335114,
+      "mean_utility": 0.016345394775271416,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.01767602190375328,
+        0.005075932014733553,
+        0.0253855362534523,
+        0.005943741649389267,
+        0.027645744383335114
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 19,
+      "episode": "scene-0096__scene-0227",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1829534769058228,
+      "oracle_utility": -0.002754026558250189,
+      "mean_utility": -0.008502649143338203,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.010140336118638515,
+        -0.01083461195230484,
+        -0.006897005718201399,
+        -0.002754026558250189,
+        -0.011887261644005775
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 20,
+      "episode": "scene-0096__scene-0287",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8521212339401245,
+      "oracle_utility": 0.011958385817706585,
+      "mean_utility": 0.007139263208955526,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0008358360501006246,
+        0.004953002091497183,
+        0.011958385817706585,
+        0.006408509332686663,
+        0.011540585197508335
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 21,
+      "episode": "scene-0099__scene-0258",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0118374824523926,
+      "oracle_utility": 0.0013047350803390145,
+      "mean_utility": -0.0020110735204070807,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.00650110375136137,
+        -0.006723746191710234,
+        0.000918883946724236,
+        0.0009458627901040018,
+        0.0013047350803390145
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 22,
+      "episode": "scene-0105__scene-0728",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9684208035469055,
+      "oracle_utility": 0.0078085861168801785,
+      "mean_utility": 0.005159568972885609,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0078085861168801785,
+        0.004019482526928186,
+        0.0077110156416893005,
+        0.0034528716932982206,
+        0.0028058881871402264
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 23,
+      "episode": "scene-0106__scene-0253",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8964577913284302,
+      "oracle_utility": 0.008036513812839985,
+      "mean_utility": 0.004479036666452885,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.004991395864635706,
+        0.006601040717214346,
+        0.004576489794999361,
+        0.008036513812839985,
+        -0.001810256508179009
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 24,
+      "episode": "scene-0106__scene-0303",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7934100031852722,
+      "oracle_utility": 0.0034503780771046877,
+      "mean_utility": -0.0006039965664967895,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.008210092782974243,
+        0.0034503780771046877,
+        0.0019483758369460702,
+        -0.00040216275374405086,
+        0.0001935190084623173
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 25,
+      "episode": "scene-0107__scene-0876",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9200115203857422,
+      "oracle_utility": 0.01621415466070175,
+      "mean_utility": 0.010162247344851494,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004230355378240347,
+        0.009723672643303871,
+        0.006868114694952965,
+        0.013774941675364971,
+        0.01621415466070175
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 51,
+      "episode": "scene-0164__scene-0328",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0484150648117065,
+      "oracle_utility": 0.004544316790997982,
+      "mean_utility": 0.002327125519514084,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0007610639440827072,
+        0.003159606596454978,
+        0.004444429650902748,
+        -0.0012737895594909787,
+        0.004544316790997982
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 67,
+      "episode": "scene-0202__scene-0654",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.184524655342102,
+      "oracle_utility": 0.008763977326452732,
+      "mean_utility": 0.004232557490468025,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.002706213155761361,
+        0.005706821568310261,
+        0.008763977326452732,
+        0.005695054307579994,
+        0.0037031471729278564
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 68,
+      "episode": "scene-0208__scene-0659",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.003188133239746,
+      "oracle_utility": 0.0018046408658847213,
+      "mean_utility": -0.00973441544920206,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.003549925284460187,
+        0.0018046408658847213,
+        -0.02467568963766098,
+        -0.016057796776294708,
+        -0.006193307228386402
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 69,
+      "episode": "scene-0212__scene-0450",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0299582481384277,
+      "oracle_utility": -0.02339857444167137,
+      "mean_utility": -0.03822539001703262,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.06142747402191162,
+        -0.02339857444167137,
+        -0.02551804855465889,
+        -0.030659381300210953,
+        -0.050123486667871475
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 70,
+      "episode": "scene-0213__scene-0452",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.829879641532898,
+      "oracle_utility": -0.012159942649304867,
+      "mean_utility": -0.02368677593767643,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.014449632726609707,
+        -0.012159942649304867,
+        -0.040683113038539886,
+        -0.017142025753855705,
+        -0.03399915620684624
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 71,
+      "episode": "scene-0222__scene-0696",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.2940303087234497,
+      "oracle_utility": 0.006475189235061407,
+      "mean_utility": -0.02182714268565178,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.02172144316136837,
+        -0.03253334015607834,
+        -0.025461876764893532,
+        -0.0358942449092865,
+        0.006475189235061407
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 72,
+      "episode": "scene-0225__scene-0242",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8990739583969116,
+      "oracle_utility": 0.0016977720661088824,
+      "mean_utility": -0.0004808441153727472,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        4.0473267290508375e-05,
+        0.0016977720661088824,
+        0.0011335910530760884,
+        -0.003786559449508786,
+        -0.001489497721195221
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 73,
+      "episode": "scene-0227__scene-0704",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0009829998016357,
+      "oracle_utility": 0.002675153547897935,
+      "mean_utility": 0.001358112320303917,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0015988133382052183,
+        -0.0004121352103538811,
+        0.002675153547897935,
+        0.0005608153296634555,
+        0.002367914654314518
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 74,
+      "episode": "scene-0228__scene-0290",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0218249559402466,
+      "oracle_utility": 0.004072073381394148,
+      "mean_utility": 0.0023779207840561867,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0024756724014878273,
+        0.004072073381394148,
+        0.0015721899690106511,
+        0.0030976918060332537,
+        0.0006719758384861052
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 75,
+      "episode": "scene-0235__scene-0475",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7689395546913147,
+      "oracle_utility": 0.002674991963431239,
+      "mean_utility": -0.005771657917648554,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.004635096061974764,
+        0.002674991963431239,
+        0.001308482838794589,
+        -0.01068578939884901,
+        -0.017520878463983536
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 76,
+      "episode": "scene-0245__scene-0258",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8245998024940491,
+      "oracle_utility": 0.011727938428521156,
+      "mean_utility": -0.011585029773414135,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.020384546369314194,
+        -0.029602905735373497,
+        0.0015596223529428244,
+        0.011727938428521156,
+        -0.021225260570645332
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 77,
+      "episode": "scene-0245__scene-0290",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6898494362831116,
+      "oracle_utility": 0.0033582551404833794,
+      "mean_utility": -0.005253451410681009,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.01542906928807497,
+        -0.0013397529255598783,
+        0.0033582551404833794,
+        -0.005024381447583437,
+        -0.007832307368516922
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 78,
+      "episode": "scene-0253__scene-0302",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7343032956123352,
+      "oracle_utility": 0.011753632687032223,
+      "mean_utility": 0.0012232953449711204,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.011753632687032223,
+        0.006630929186940193,
+        -0.00628167949616909,
+        -0.00628167949616909,
+        0.00029527468723244965
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 79,
+      "episode": "scene-0255__scene-0458",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8538798689842224,
+      "oracle_utility": -0.008377735503017902,
+      "mean_utility": -0.029333511367440224,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.040970709174871445,
+        -0.027852943167090416,
+        -0.03679599612951279,
+        -0.008377735503017902,
+        -0.03267017379403114
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 80,
+      "episode": "scene-0258__scene-0676",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9675265550613403,
+      "oracle_utility": 0.009303756058216095,
+      "mean_utility": 0.0025948581751435995,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0019095799652859569,
+        0.009303756058216095,
+        0.0006569610559381545,
+        -0.0008164565660990775,
+        0.0019204505952075124
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 81,
+      "episode": "scene-0263__scene-0452",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7740575671195984,
+      "oracle_utility": -0.012377542443573475,
+      "mean_utility": -0.029574984684586525,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.04906183108687401,
+        -0.034580688923597336,
+        -0.03587811812758446,
+        -0.012377542443573475,
+        -0.015976745635271072
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 88,
+      "episode": "scene-0284__scene-0698",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7690696120262146,
+      "oracle_utility": 0.004489324055612087,
+      "mean_utility": 0.000969606451690197,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.0003414713719394058,
+        0.004489324055612087,
+        0.0010605178540572524,
+        -0.0006533610285259783,
+        0.00029302251641638577
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 89,
+      "episode": "scene-0289__scene-0469",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0856267213821411,
+      "oracle_utility": 0.017672734335064888,
+      "mean_utility": 0.005102888680994511,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.017672734335064888,
+        0.004413595888763666,
+        0.0019663518760353327,
+        -0.004739608149975538,
+        0.006201369222253561
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 90,
+      "episode": "scene-0291__scene-0471",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.5906254649162292,
+      "oracle_utility": 0.005595730617642403,
+      "mean_utility": 0.00036629303940571845,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.0014814971946179867,
+        -0.005970976315438747,
+        0.005595730617642403,
+        0.004775050561875105,
+        -0.0010868425015360117
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 91,
+      "episode": "scene-0294__scene-0295",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7800241708755493,
+      "oracle_utility": 0.0035274229012429714,
+      "mean_utility": 0.0002165605255868286,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.0035274229012429714,
+        -0.0003279454540461302,
+        0.0016810217639431357,
+        -7.344611367443576e-05,
+        -0.003724250476807356
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 92,
+      "episode": "scene-0294__scene-0296",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.005820393562317,
+      "oracle_utility": 0.003889168845489621,
+      "mean_utility": 0.0009183803340420127,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.00010070246935356408,
+        0.003889168845489621,
+        -0.0009091619867831469,
+        0.0005587785854004323,
+        0.0009524138295091689
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 93,
+      "episode": "scene-0294__scene-0715",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8589699864387512,
+      "oracle_utility": 0.0020194833632558584,
+      "mean_utility": -0.00015825183072593063,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0020194833632558584,
+        -0.002098594792187214,
+        0.0005938802496530116,
+        -0.0019349234644323587,
+        0.0006288955337367952
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 94,
+      "episode": "scene-0295__scene-0296",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8703063130378723,
+      "oracle_utility": 0.003806529799476266,
+      "mean_utility": 0.0004892770084552467,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.002445485210046172,
+        0.002598037477582693,
+        -0.006762547418475151,
+        0.00035888017737306654,
+        0.003806529799476266
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 95,
+      "episode": "scene-0300__scene-0478",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6088007092475891,
+      "oracle_utility": -0.006301084998995066,
+      "mean_utility": -0.01165244821459055,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.012767310254275799,
+        -0.008896532468497753,
+        -0.01253448985517025,
+        -0.017762821167707443,
+        -0.006301084998995066
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 96,
+      "episode": "scene-0301__scene-0872",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9378949999809265,
+      "oracle_utility": 0.0002545246679801494,
+      "mean_utility": -0.0008387481793761253,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.001328044105321169,
+        0.0002545246679801494,
+        -0.00016233796486631036,
+        -0.001017253496684134,
+        -0.0019406299106776714
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 101,
+      "episode": "scene-0321__scene-0467",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.822647213935852,
+      "oracle_utility": 0.004301468376070261,
+      "mean_utility": 0.0020055894274264574,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.002109108492732048,
+        0.004301468376070261,
+        0.0006044175243005157,
+        -0.00014332983118947595,
+        0.003156281542032957
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 102,
+      "episode": "scene-0331__scene-0523",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8799648284912109,
+      "oracle_utility": 0.006246471311897039,
+      "mean_utility": 0.003693005070090294,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -7.830057438695803e-05,
+        0.004494094289839268,
+        0.004970777779817581,
+        0.006246471311897039,
+        0.002831983147189021
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 117,
+      "episode": "scene-0389__scene-0643",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7812471389770508,
+      "oracle_utility": -0.007789357099682093,
+      "mean_utility": -0.012387720867991447,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.02002577856183052,
+        -0.013816364109516144,
+        -0.012154487892985344,
+        -0.007789357099682093,
+        -0.008152619004249573
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 149,
+      "episode": "scene-0448__scene-0660",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8804841637611389,
+      "oracle_utility": 0.008293608203530312,
+      "mean_utility": 0.002355650532990694,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.0014144862070679665,
+        0.0009951204992830753,
+        0.003922425676137209,
+        0.008293608203530312,
+        -1.8414717487758026e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 150,
+      "episode": "scene-0454__scene-0455",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6952164173126221,
+      "oracle_utility": 0.01833193190395832,
+      "mean_utility": 0.009105582721531391,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.0022620593663305044,
+        0.004191150888800621,
+        0.01833193190395832,
+        0.014498399570584297,
+        0.010768488049507141
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 151,
+      "episode": "scene-0455__scene-0456",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.542231023311615,
+      "oracle_utility": 0.009194848127663136,
+      "mean_utility": 0.004160960670560598,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0011198805877938867,
+        0.006036777514964342,
+        0.009194848127663136,
+        0.004486721474677324,
+        -3.342379204696044e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 152,
+      "episode": "scene-0461__scene-0586",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7160792946815491,
+      "oracle_utility": 0.006351302843540907,
+      "mean_utility": -0.010593836195766926,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.013823920860886574,
+        -0.013761120848357677,
+        0.006351302843540907,
+        0.0013413219712674618,
+        -0.03307676315307617
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 153,
+      "episode": "scene-0462__scene-0463",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8766706585884094,
+      "oracle_utility": 0.03195798397064209,
+      "mean_utility": 0.01079103909432888,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.016615338623523712,
+        0.009907576255500317,
+        -0.002965346910059452,
+        -0.0015603561187162995,
+        0.03195798397064209
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 154,
+      "episode": "scene-0463__scene-0672",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.920590341091156,
+      "oracle_utility": 0.0034860314335674047,
+      "mean_utility": 0.0022282167337834835,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.001072613289579749,
+        0.0021243374794721603,
+        0.00212915800511837,
+        0.0034860314335674047,
+        0.0023289434611797333
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 155,
+      "episode": "scene-0469__scene-0707",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8345946073532104,
+      "oracle_utility": 0.0019105306128039956,
+      "mean_utility": 0.0010847353842109442,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0016755367396399379,
+        0.00020511976617854089,
+        0.0019105306128039956,
+        0.0012537710135802627,
+        0.00037871883250772953
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 156,
+      "episode": "scene-0474__scene-0683",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7656452059745789,
+      "oracle_utility": 0.004753917921334505,
+      "mean_utility": -0.0028518582694232464,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.008772210218012333,
+        0.0006655537872575223,
+        0.004753917921334505,
+        -0.0037437179125845432,
+        -0.007162835914641619
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 157,
+      "episode": "scene-0506__scene-0520",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.616085946559906,
+      "oracle_utility": 0.00758753577247262,
+      "mean_utility": 0.005493612959980965,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0070700799115002155,
+        0.006100227124989033,
+        0.0015538232401013374,
+        0.00758753577247262,
+        0.005156397353857756
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 158,
+      "episode": "scene-0511__scene-0512",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.5099511742591858,
+      "oracle_utility": 0.012453618459403515,
+      "mean_utility": 0.005637552589178085,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.009203583002090454,
+        0.004654770717024803,
+        0.0023278098087757826,
+        -0.000452020118245855,
+        0.012453618459403515
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 159,
+      "episode": "scene-0586__scene-0587",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.2501338720321655,
+      "oracle_utility": -0.0035437322221696377,
+      "mean_utility": -0.016880864277482033,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.022233491763472557,
+        -0.019802525639533997,
+        -0.02559993974864483,
+        -0.013224625028669834,
+        -0.0035437322221696377
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 160,
+      "episode": "scene-0586__scene-0700",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8210784196853638,
+      "oracle_utility": 0.013314441777765751,
+      "mean_utility": 0.007572566159069538,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011302933096885681,
+        0.013314441777765751,
+        0.002476890105754137,
+        0.003742555156350136,
+        0.007026010658591986
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 161,
+      "episode": "scene-0591__scene-0783",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8281880021095276,
+      "oracle_utility": 0.0125398188829422,
+      "mean_utility": 0.005360436160117388,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0125398188829422,
+        -0.0015174237778410316,
+        0.010875637643039227,
+        -0.0024995747953653336,
+        0.007403722498565912
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 162,
+      "episode": "scene-0639__scene-0909",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6857483386993408,
+      "oracle_utility": 0.018408898264169693,
+      "mean_utility": 0.011060738004744053,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.008215699344873428,
+        -0.0024761452805250883,
+        0.016967061907052994,
+        0.018408898264169693,
+        0.014188175089657307
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 163,
+      "episode": "scene-0643__scene-0911",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.4658414125442505,
+      "oracle_utility": 0.02382861264050007,
+      "mean_utility": 0.012568078935146332,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.019589725881814957,
+        0.02382861264050007,
+        0.012737644836306572,
+        0.01375731360167265,
+        -0.0070729018189013
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 164,
+      "episode": "scene-0666__scene-0697",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7704669833183289,
+      "oracle_utility": 0.005262773018330336,
+      "mean_utility": 0.0018753863405436277,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.003046345431357622,
+        0.005262773018330336,
+        -0.0001258079573744908,
+        0.0014245022321119905,
+        -0.00023088169109541923
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 165,
+      "episode": "scene-0677__scene-0678",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9552156925201416,
+      "oracle_utility": 0.001534592709504068,
+      "mean_utility": -3.782163912546821e-05,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.00031257455702871084,
+        0.0007138977525755763,
+        0.001534592709504068,
+        -0.0016520811477676034,
+        -0.001098091946914792
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 166,
+      "episode": "scene-0688__scene-0898",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7391376495361328,
+      "oracle_utility": 0.016520528122782707,
+      "mean_utility": 0.005033980123698711,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0029345171060413122,
+        -0.0034878719598054886,
+        -0.002136415336281061,
+        0.016520528122782707,
+        0.011339143849909306
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 167,
+      "episode": "scene-0701__scene-0703",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8500897884368896,
+      "oracle_utility": 0.0007364951306954026,
+      "mean_utility": -0.001304424600675702,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.00045264497748576105,
+        -0.003425847738981247,
+        -0.0016298919217661023,
+        -0.0017502331174910069,
+        0.0007364951306954026
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 182,
+      "episode": "scene-0871__scene-0898",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1510909795761108,
+      "oracle_utility": 0.007433776278048754,
+      "mean_utility": 0.003706717398017645,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.004534904379397631,
+        -0.0035368078388273716,
+        0.00520628597587347,
+        0.004895429126918316,
+        0.007433776278048754
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 52,
+      "episode": "scene-0177__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8493728041648865,
+      "oracle_utility": 0.009403822012245655,
+      "mean_utility": 0.006913530174642801,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.008086851797997952,
+        0.0037856947164982557,
+        0.005320307333022356,
+        0.007970975711941719,
+        0.009403822012245655
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 53,
+      "episode": "scene-0177__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8078474402427673,
+      "oracle_utility": 0.017983954399824142,
+      "mean_utility": 0.011805977672338486,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011627908796072006,
+        0.005688348785042763,
+        0.01301938109099865,
+        0.017983954399824142,
+        0.010710296221077442
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 54,
+      "episode": "scene-0179__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.968893826007843,
+      "oracle_utility": 0.013312079012393951,
+      "mean_utility": 0.009297022596001625,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.009411829523742199,
+        0.0005765443202108145,
+        0.013312079012393951,
+        0.013258444145321846,
+        0.00992621947079897
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 55,
+      "episode": "scene-0180__scene-0420",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8546978831291199,
+      "oracle_utility": 0.007952259853482246,
+      "mean_utility": 0.006702174432575703,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.005546743515878916,
+        0.00631605414673686,
+        0.007952259853482246,
+        0.00777036789804697,
+        0.005925445351749659
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 56,
+      "episode": "scene-0180__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9333755970001221,
+      "oracle_utility": 0.005738257430493832,
+      "mean_utility": 0.0043117268942296505,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004220220260322094,
+        0.0003856913244817406,
+        0.005682941060513258,
+        0.005738257430493832,
+        0.00553152384236455
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 57,
+      "episode": "scene-0181__scene-0421",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9305354952812195,
+      "oracle_utility": 0.006786063313484192,
+      "mean_utility": 0.005453311372548342,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004989730194211006,
+        0.005499009508639574,
+        0.005721667315810919,
+        0.006786063313484192,
+        0.004270085599273443
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 58,
+      "episode": "scene-0181__scene-0422",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8560734987258911,
+      "oracle_utility": 0.014054251834750175,
+      "mean_utility": 0.010395320132374763,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004634538199752569,
+        0.009075666777789593,
+        0.012777461670339108,
+        0.014054251834750175,
+        0.01143468264490366
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 59,
+      "episode": "scene-0181__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7646220326423645,
+      "oracle_utility": 0.013275937177240849,
+      "mean_utility": 0.010337562300264835,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.013230140320956707,
+        0.000642983999568969,
+        0.012303344905376434,
+        0.013275937177240849,
+        0.012235402129590511
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 60,
+      "episode": "scene-0181__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9034126400947571,
+      "oracle_utility": 0.00021492666564881802,
+      "mean_utility": -0.00397670129314065,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.004188083577901125,
+        0.00021492666564881802,
+        -0.00539294583722949,
+        -0.006103329826146364,
+        -0.0044140745885670185
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 61,
+      "episode": "scene-0182__scene-0315",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6445726156234741,
+      "oracle_utility": -0.00022535088646691293,
+      "mean_utility": -0.0013928109547123313,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.0010062851943075657,
+        -0.003436601022258401,
+        -0.0019422039622440934,
+        -0.00022535088646691293,
+        -0.0003536138392519206
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 62,
+      "episode": "scene-0182__scene-0423",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7182139158248901,
+      "oracle_utility": -0.004790581297129393,
+      "mean_utility": -0.008126499131321907,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.011413196101784706,
+        -0.009143692441284657,
+        -0.0076056430116295815,
+        -0.00767938420176506,
+        -0.004790581297129393
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 63,
+      "episode": "scene-0182__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5790785551071167,
+      "oracle_utility": 0.023711221292614937,
+      "mean_utility": 0.01996992900967598,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.022236453369259834,
+        0.016436109319329262,
+        0.023711221292614937,
+        0.01708568073809147,
+        0.020380176603794098
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 64,
+      "episode": "scene-0182__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6658654808998108,
+      "oracle_utility": 0.05216972529888153,
+      "mean_utility": 0.04239366203546524,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.03544585779309273,
+        0.03628576546907425,
+        0.047349024564027786,
+        0.04071794077754021,
+        0.05216972529888153
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 65,
+      "episode": "scene-0182__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5904343128204346,
+      "oracle_utility": 0.029742643237113953,
+      "mean_utility": 0.02345392107963562,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.029742643237113953,
+        0.022369910031557083,
+        0.018374135717749596,
+        0.01851758547127247,
+        0.02826533280313015
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 97,
+      "episode": "scene-0315__scene-0423",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7182139158248901,
+      "oracle_utility": -0.0018951196689158678,
+      "mean_utility": -0.004976841155439615,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.006696145515888929,
+        -0.0075462013483047485,
+        -0.0036520096473395824,
+        -0.0018951196689158678,
+        -0.00509472843259573
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 98,
+      "episode": "scene-0315__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7587478756904602,
+      "oracle_utility": 0.0021701676305383444,
+      "mean_utility": -0.024136433377861977,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.042774271219968796,
+        -0.034623995423316956,
+        -0.02842888794839382,
+        0.0021701676305383444,
+        -0.017025168985128403
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 99,
+      "episode": "scene-0315__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.702793538570404,
+      "oracle_utility": 0.02848757803440094,
+      "mean_utility": 0.022466829046607018,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.024880094453692436,
+        0.02848757803440094,
+        0.021990042179822922,
+        0.014057205989956856,
+        0.022919218987226486
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 100,
+      "episode": "scene-0315__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5904343128204346,
+      "oracle_utility": 0.025614172220230103,
+      "mean_utility": 0.02427416667342186,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.025614172220230103,
+        0.024006566032767296,
+        0.025497635826468468,
+        0.020754823461174965,
+        0.025497635826468468
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 130,
+      "episode": "scene-0420__scene-0421",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.0101066827774048,
+      "oracle_utility": 0.0022070088889449835,
+      "mean_utility": 0.000575143494643271,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.0012016937835142016,
+        0.0018109483644366264,
+        0.0002108519256580621,
+        0.0022070088889449835,
+        -0.0001513978058937937
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 131,
+      "episode": "scene-0420__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.557750940322876,
+      "oracle_utility": 0.0057386294938623905,
+      "mean_utility": 0.0037970473058521748,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0018882740987464786,
+        0.004482018295675516,
+        0.002997792325913906,
+        0.0057386294938623905,
+        0.003878521965816617
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 132,
+      "episode": "scene-0421__scene-0422",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8507345914840698,
+      "oracle_utility": 0.008615272119641304,
+      "mean_utility": 0.006265546195209026,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.005123584531247616,
+        0.005187729839235544,
+        0.0061533511616289616,
+        0.006247796583920717,
+        0.008615272119641304
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 133,
+      "episode": "scene-0422__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5727356672286987,
+      "oracle_utility": -0.0014315013540908694,
+      "mean_utility": -0.008885322138667107,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.0026699653826653957,
+        -0.0014315013540908694,
+        -0.01503558550029993,
+        -0.01816222257912159,
+        -0.007127339020371437
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 134,
+      "episode": "scene-0422__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.889060914516449,
+      "oracle_utility": 0.010180765762925148,
+      "mean_utility": 0.0068514845333993435,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.003572046523913741,
+        0.004147207364439964,
+        0.010180765762925148,
+        0.009322233498096466,
+        0.00703516835346818
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 135,
+      "episode": "scene-0422__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6468256711959839,
+      "oracle_utility": 0.02675166167318821,
+      "mean_utility": 0.018140411004424095,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.01830047369003296,
+        0.010594197548925877,
+        0.023688161745667458,
+        0.02675166167318821,
+        0.011367566883563995
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 136,
+      "episode": "scene-0422__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7712990045547485,
+      "oracle_utility": -0.0006169669795781374,
+      "mean_utility": -0.004092696588486433,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.0006169669795781374,
+        -0.00330906524322927,
+        -0.006335773970931768,
+        -0.0034242502879351377,
+        -0.00677742762491107
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 137,
+      "episode": "scene-0423__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6069881319999695,
+      "oracle_utility": 0.008465545251965523,
+      "mean_utility": 0.005155377089977264,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.008465545251965523,
+        0.006820875685662031,
+        0.0009131929255090654,
+        0.005365449003875256,
+        0.004211820662021637
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 138,
+      "episode": "scene-0423__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9656073451042175,
+      "oracle_utility": 0.008804732002317905,
+      "mean_utility": 0.005599780939519405,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004512423183768988,
+        0.006531298626214266,
+        0.008804732002317905,
+        0.006157356314361095,
+        0.001993092941120267
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 139,
+      "episode": "scene-0423__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.688730001449585,
+      "oracle_utility": -0.021470360457897186,
+      "mean_utility": -0.03684701770544052,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.04340055584907532,
+        -0.021470360457897186,
+        -0.05177327245473862,
+        -0.04422963038086891,
+        -0.023361284285783768
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 140,
+      "episode": "scene-0424__scene-0425",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.637567937374115,
+      "oracle_utility": 0.02855922468006611,
+      "mean_utility": 0.02227286621928215,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.028279444202780724,
+        0.014976844191551208,
+        0.02855922468006611,
+        0.020071065053343773,
+        0.019477752968668938
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 141,
+      "episode": "scene-0424__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7936000823974609,
+      "oracle_utility": 0.024049043655395508,
+      "mean_utility": 0.01350353378802538,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011071087792515755,
+        0.024049043655395508,
+        0.016059445217251778,
+        0.007812871597707272,
+        0.008525224402546883
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 142,
+      "episode": "scene-0424__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5217544436454773,
+      "oracle_utility": 0.03586011007428169,
+      "mean_utility": 0.02813548408448696,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.03586011007428169,
+        0.023039741441607475,
+        0.02602696791291237,
+        0.026915598660707474,
+        0.02883502095937729
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 143,
+      "episode": "scene-0425__scene-0426",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.964227557182312,
+      "oracle_utility": 0.022966599091887474,
+      "mean_utility": 0.01763266697525978,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011530023999512196,
+        0.014064157381653786,
+        0.022966599091887474,
+        0.021728642284870148,
+        0.017873914912343025
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 144,
+      "episode": "scene-0425__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7148042321205139,
+      "oracle_utility": 0.02152145467698574,
+      "mean_utility": 0.01262810081243515,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.013306641019880772,
+        0.02152145467698574,
+        0.015414179302752018,
+        -0.00015195689047686756,
+        0.013050190173089504
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 145,
+      "episode": "scene-0425__scene-1006",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7483535408973694,
+      "oracle_utility": 0.018083492293953896,
+      "mean_utility": 0.014620130881667137,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.009889631532132626,
+        0.014379492960870266,
+        0.01587420329451561,
+        0.018083492293953896,
+        0.01487384270876646
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 146,
+      "episode": "scene-0425__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.005812168121338,
+      "oracle_utility": 0.0010892157442867756,
+      "mean_utility": -0.0007004704675637186,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0003355966182425618,
+        -0.0026566428132355213,
+        0.0010892157442867756,
+        -0.001165905618108809,
+        -0.0004334233235567808
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 147,
+      "episode": "scene-0426__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9728673696517944,
+      "oracle_utility": 0.00024104332260321826,
+      "mean_utility": -0.0011602739105001092,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0014469767920672894,
+        -0.002460856456309557,
+        -0.001014437060803175,
+        -0.0011201425222679973,
+        0.00024104332260321826
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 170,
+      "episode": "scene-0860__scene-0861",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.116875171661377,
+      "oracle_utility": 0.007029530126601458,
+      "mean_utility": 0.0039019647520035505,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.00014983689470682293,
+        0.007029530126601458,
+        0.004435471724718809,
+        0.003459513420239091,
+        0.004435471724718809
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 171,
+      "episode": "scene-0861__scene-0862",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8866857290267944,
+      "oracle_utility": 0.02458813041448593,
+      "mean_utility": 0.012194892391562462,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.014845733530819416,
+        -0.00451535964384675,
+        0.021521693095564842,
+        0.02458813041448593,
+        0.004534268751740456
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 172,
+      "episode": "scene-0862__scene-0863",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.789909839630127,
+      "oracle_utility": 0.009211761876940727,
+      "mean_utility": 0.006536860950291157,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.009211761876940727,
+        0.003191996831446886,
+        0.007551371119916439,
+        0.006370485760271549,
+        0.006358689162880182
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 173,
+      "episode": "scene-0863__scene-0864",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5651029944419861,
+      "oracle_utility": 0.011118132621049881,
+      "mean_utility": 0.007346878293901682,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011118132621049881,
+        0.006179663818329573,
+        0.006180711090564728,
+        0.008079251274466515,
+        0.005176629405468702
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 174,
+      "episode": "scene-0863__scene-0926",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5687339901924133,
+      "oracle_utility": 0.02556752599775791,
+      "mean_utility": 0.020109977573156357,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.023373818024992943,
+        0.019389692693948746,
+        0.02556752599775791,
+        0.01246616616845131,
+        0.01975269243121147
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 175,
+      "episode": "scene-0863__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.4261038601398468,
+      "oracle_utility": 0.007399202790111303,
+      "mean_utility": 0.005611990578472614,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.007399202790111303,
+        0.005453770514577627,
+        0.003814124967902899,
+        0.006410309579223394,
+        0.004982543643563986
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 176,
+      "episode": "scene-0864__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6946666836738586,
+      "oracle_utility": 0.01791972480714321,
+      "mean_utility": 0.014937442727386951,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.013507150113582611,
+        0.016958927735686302,
+        0.013142787851393223,
+        0.01315862312912941,
+        0.01791972480714321
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 177,
+      "episode": "scene-0864__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5300204157829285,
+      "oracle_utility": 0.03812401741743088,
+      "mean_utility": 0.02827783301472664,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.03812401741743088,
+        0.03212903067469597,
+        0.02979734167456627,
+        0.022399475798010826,
+        0.018939290195703506
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 178,
+      "episode": "scene-0864__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5051989555358887,
+      "oracle_utility": 0.0048876600340008736,
+      "mean_utility": 0.0027910314965993166,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.00043507071677595377,
+        0.0029808152467012405,
+        0.00420202873647213,
+        0.0048876600340008736,
+        0.0014495830982923508
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 179,
+      "episode": "scene-0865__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7046257257461548,
+      "oracle_utility": 0.001714968355372548,
+      "mean_utility": 0.0006447357009164989,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.001029962208122015,
+        0.001714968355372548,
+        0.0013445621589198709,
+        -0.001699636923149228,
+        0.0008338227635249496
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 180,
+      "episode": "scene-0865__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9052977561950684,
+      "oracle_utility": 0.0007116611232049763,
+      "mean_utility": -3.599298725021072e-05,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0005916844238527119,
+        -0.00028620855300687253,
+        0.00010562865645624697,
+        0.0007116611232049763,
+        -0.0013027306413277984
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 181,
+      "episode": "scene-0865__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7592812776565552,
+      "oracle_utility": 0.028494292870163918,
+      "mean_utility": 0.017616653814911842,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.012798300944268703,
+        0.018406670540571213,
+        0.028494292870163918,
+        0.014821766875684261,
+        0.013562235981225967
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 183,
+      "episode": "scene-0917__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5672329664230347,
+      "oracle_utility": 0.004643822554498911,
+      "mean_utility": 0.00025609316071495414,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.004643822554498911,
+        -0.00045837354264222085,
+        0.0003629947023000568,
+        -0.001991976285353303,
+        -0.0012760014506056905
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 184,
+      "episode": "scene-0926__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.44791606068611145,
+      "oracle_utility": -0.0032542299013584852,
+      "mean_utility": -0.014454871416091919,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.009052565321326256,
+        -0.0032542299013584852,
+        -0.029360296204686165,
+        -0.011557910591363907,
+        -0.019049357622861862
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 193,
+      "episode": "scene-1005__scene-1006",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7483535408973694,
+      "oracle_utility": 0.016730092465877533,
+      "mean_utility": 0.010524381883442402,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.00853919517248869,
+        0.011509444564580917,
+        0.010746113955974579,
+        0.005097060464322567,
+        0.016730092465877533
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 194,
+      "episode": "scene-1006__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6714644432067871,
+      "oracle_utility": 0.031008226796984673,
+      "mean_utility": 0.019314175471663475,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.011200318112969398,
+        0.02270106039941311,
+        0.012653488665819168,
+        0.019007783383131027,
+        0.031008226796984673
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 0,
+      "episode": "scene-0043__scene-0046",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9803928136825562,
+      "oracle_utility": 0.004011767916381359,
+      "mean_utility": 0.0015069165965542197,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.00046255174675025046,
+        0.0002739750489126891,
+        0.0034023954067379236,
+        0.004011767916381359,
+        -0.0006161070778034627
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 1,
+      "episode": "scene-0043__scene-0135",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6537954807281494,
+      "oracle_utility": 0.009298651479184628,
+      "mean_utility": 0.003303839359432459,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.009298651479184628,
+        0.001121942070312798,
+        0.006696740165352821,
+        0.00015652854926884174,
+        -0.0007546664564870298
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 2,
+      "episode": "scene-0043__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7650486826896667,
+      "oracle_utility": 0.025811050087213516,
+      "mean_utility": 0.011660734191536903,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.013300863094627857,
+        -0.0023940831888467073,
+        0.025811050087213516,
+        0.007221750449389219,
+        0.014364085160195827
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 4,
+      "episode": "scene-0045__scene-0134",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7307634949684143,
+      "oracle_utility": 0.0021741697564721107,
+      "mean_utility": -0.0010069110430777073,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0004736943810712546,
+        0.0021741697564721107,
+        -0.00491292541846633,
+        -0.0005866726278327405,
+        -0.001235432457178831
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 5,
+      "episode": "scene-0046__scene-0135",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7503258585929871,
+      "oracle_utility": 0.02018623612821102,
+      "mean_utility": 0.012934294529259205,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.013363883830606937,
+        -0.0018669997807592154,
+        0.018608102574944496,
+        0.014380249194800854,
+        0.02018623612821102
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 6,
+      "episode": "scene-0046__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6084303259849548,
+      "oracle_utility": 0.00864181574434042,
+      "mean_utility": 0.003100849222391844,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.00864181574434042,
+        -0.001254127360880375,
+        0.004002176690846682,
+        0.006320310290902853,
+        -0.0022059292532503605
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 7,
+      "episode": "scene-0046__scene-0151",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9174284338951111,
+      "oracle_utility": 0.00958419032394886,
+      "mean_utility": 0.005086185876280069,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        2.8817716156481765e-05,
+        -0.0005597395356744528,
+        0.00958419032394886,
+        0.009167131036520004,
+        0.007210530340671539
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 26,
+      "episode": "scene-0120__scene-0133",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7568907737731934,
+      "oracle_utility": 0.002860067179426551,
+      "mean_utility": 0.0011386160040274262,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.002860067179426551,
+        0.0028368919156491756,
+        -0.003617773996666074,
+        0.0009726846474222839,
+        0.002641210565343499
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 27,
+      "episode": "scene-0120__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8281691670417786,
+      "oracle_utility": 0.012241453863680363,
+      "mean_utility": 0.008792098611593246,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0072627621702849865,
+        0.006674750708043575,
+        0.007067631930112839,
+        0.012241453863680363,
+        0.010713892988860607
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 29,
+      "episode": "scene-0125__scene-0370",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.4857572317123413,
+      "oracle_utility": 0.05889590084552765,
+      "mean_utility": 0.04233512654900551,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.05889590084552765,
+        0.025685790926218033,
+        0.05793463811278343,
+        0.05854451283812523,
+        0.010614784434437752
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 30,
+      "episode": "scene-0125__scene-0371",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6009071469306946,
+      "oracle_utility": 0.057572174817323685,
+      "mean_utility": 0.04052646458148956,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.03505442291498184,
+        0.057572174817323685,
+        0.04259759187698364,
+        0.03839666396379471,
+        0.029011473059654236
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 31,
+      "episode": "scene-0126__scene-0277",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5892733335494995,
+      "oracle_utility": 0.045642487704753876,
+      "mean_utility": 0.02736646868288517,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.012972154654562473,
+        0.033480193465948105,
+        0.03776709735393524,
+        0.045642487704753876,
+        0.006970423273742199
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 32,
+      "episode": "scene-0126__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6223108172416687,
+      "oracle_utility": 0.02606739103794098,
+      "mean_utility": 0.014154991135001183,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.02016248181462288,
+        0.008191768079996109,
+        0.02606739103794098,
+        0.01951439678668976,
+        -0.0031610785517841578
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 33,
+      "episode": "scene-0127__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0085864067077637,
+      "oracle_utility": 0.00155916518997401,
+      "mean_utility": -0.005322284530848265,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        0.00155916518997401,
+        -0.011754286475479603,
+        -0.000900932471267879,
+        -0.006465102080255747,
+        -0.009050266817212105
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 34,
+      "episode": "scene-0127__scene-0969",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9570375680923462,
+      "oracle_utility": 0.002113836584612727,
+      "mean_utility": 0.001709065050818026,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.002034851349890232,
+        0.0010186160216107965,
+        0.0018512525130063295,
+        0.002113836584612727,
+        0.0015267686685547233
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 35,
+      "episode": "scene-0132__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9633009433746338,
+      "oracle_utility": 0.003982816822826862,
+      "mean_utility": 0.0021917386911809444,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0019514112500473857,
+        0.0010829393286257982,
+        0.0006281444220803678,
+        0.003982816822826862,
+        0.0033133821561932564
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 36,
+      "episode": "scene-0133__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0596474409103394,
+      "oracle_utility": -0.006954064127057791,
+      "mean_utility": -0.010947270318865776,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.010316737927496433,
+        -0.006954064127057791,
+        -0.013711626641452312,
+        -0.009292824193835258,
+        -0.014461101964116096
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 37,
+      "episode": "scene-0134__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6290508508682251,
+      "oracle_utility": -0.017635848373174667,
+      "mean_utility": -0.028897082433104515,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.03118625096976757,
+        -0.017635848373174667,
+        -0.030907977372407913,
+        -0.031014740467071533,
+        -0.03374060243368149
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 38,
+      "episode": "scene-0135__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6890040040016174,
+      "oracle_utility": 0.0005967265460640192,
+      "mean_utility": -0.013624941930174828,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.030399680137634277,
+        -0.007150458637624979,
+        0.0005967265460640192,
+        -0.010025477968156338,
+        -0.021145818755030632
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 39,
+      "episode": "scene-0135__scene-0344",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9486340880393982,
+      "oracle_utility": 0.014689751900732517,
+      "mean_utility": 0.0042958189733326435,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0009059350122697651,
+        0.014689751900732517,
+        -0.0014102525310590863,
+        0.001103222370147705,
+        0.0061904373578727245
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 40,
+      "episode": "scene-0135__scene-0345",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8768176436424255,
+      "oracle_utility": 0.012459286488592625,
+      "mean_utility": 0.007207435555756092,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.002402027603238821,
+        0.012459286488592625,
+        0.006940013263374567,
+        0.007382017094641924,
+        0.006853832397609949
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 41,
+      "episode": "scene-0135__scene-0363",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8508122563362122,
+      "oracle_utility": 0.009546319954097271,
+      "mean_utility": 0.003972209524363279,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.009546319954097271,
+        0.0031972862780094147,
+        -0.0006652700249105692,
+        0.002614301396533847,
+        0.005168410483747721
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 43,
+      "episode": "scene-0149__scene-0376",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.610632061958313,
+      "oracle_utility": 0.005811063572764397,
+      "mean_utility": 0.004388413392007351,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.005400185473263264,
+        0.0023710608948022127,
+        0.004632572643458843,
+        0.0037271834444254637,
+        0.005811063572764397
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 44,
+      "episode": "scene-0150__scene-0363",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7086858749389648,
+      "oracle_utility": 0.0262970719486475,
+      "mean_utility": 0.010951926000416279,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.0262970719486475,
+        0.013351062312722206,
+        0.008063280023634434,
+        0.013899384066462517,
+        -0.006851165555417538
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 45,
+      "episode": "scene-0151__scene-0344",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8414417505264282,
+      "oracle_utility": 0.002256520325317979,
+      "mean_utility": -0.0044188969768583775,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        0.002256520325317979,
+        -0.007770339027047157,
+        -0.0059438529424369335,
+        -0.005404518451541662,
+        -0.005232293624430895
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 46,
+      "episode": "scene-0151__scene-0345",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9235069155693054,
+      "oracle_utility": -0.0005916178342886269,
+      "mean_utility": -0.0018147563096135855,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.0008107316098175943,
+        -0.004722397308796644,
+        -0.0005916178342886269,
+        -0.0019492284627631307,
+        -0.0009998064488172531
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 47,
+      "episode": "scene-0151__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6812937259674072,
+      "oracle_utility": 0.02867177687585354,
+      "mean_utility": 0.01329996157437563,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.00046640430809929967,
+        0.02867177687585354,
+        0.019494041800498962,
+        0.015261135995388031,
+        0.003539254190400243
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 83,
+      "episode": "scene-0275__scene-0276",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9944690465927124,
+      "oracle_utility": 0.0016131422016769648,
+      "mean_utility": 0.0010883448412641883,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0007083855452947319,
+        0.0014023641124367714,
+        0.001406729919835925,
+        0.0016131422016769648,
+        0.00031110289273783565
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 84,
+      "episode": "scene-0275__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5977343916893005,
+      "oracle_utility": 0.048839740455150604,
+      "mean_utility": 0.03147449716925621,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.001190745853818953,
+        0.025333931669592857,
+        0.048839740455150604,
+        0.04206186160445213,
+        0.039946217089891434
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 85,
+      "episode": "scene-0277__scene-0359",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.4710582494735718,
+      "oracle_utility": 0.019703594967722893,
+      "mean_utility": 0.012617126107215881,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.015976304188370705,
+        0.010458403266966343,
+        0.019703594967722893,
+        0.012359869666397572,
+        0.0045874579809606075
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 86,
+      "episode": "scene-0277__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9803712964057922,
+      "oracle_utility": 0.0009560118778608739,
+      "mean_utility": 7.80529371695593e-05,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.00025954816373996437,
+        0.0009560118778608739,
+        -0.0009400846320204437,
+        0.000529557466506958,
+        -0.00041476814658381045
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 87,
+      "episode": "scene-0277__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7310342192649841,
+      "oracle_utility": -0.0015312295872718096,
+      "mean_utility": -0.0032407946418970823,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.002638151403516531,
+        -0.0015312295872718096,
+        -0.0051788813434541225,
+        -0.004934198223054409,
+        -0.0019215131178498268
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 107,
+      "episode": "scene-0359__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9803712964057922,
+      "oracle_utility": 0.00010461091733304784,
+      "mean_utility": -0.0011196571867913008,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        6.52168964734301e-05,
+        0.00010461091733304784,
+        -0.002664279891178012,
+        -0.0011294209398329258,
+        -0.0019744134042412043
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 108,
+      "episode": "scene-0359__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6763871312141418,
+      "oracle_utility": 0.025863641873002052,
+      "mean_utility": 0.01779453083872795,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.025863641873002052,
+        0.020301083102822304,
+        0.01712770387530327,
+        0.0023000261280685663,
+        0.023380201309919357
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 109,
+      "episode": "scene-0365__scene-0966",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8192688226699829,
+      "oracle_utility": 0.03321050852537155,
+      "mean_utility": 0.02378026954829693,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.021564455702900887,
+        0.02694034017622471,
+        0.008837041445076466,
+        0.03321050852537155,
+        0.028349006548523903
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 113,
+      "episode": "scene-0370__scene-0966",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8421807885169983,
+      "oracle_utility": -0.0032318378798663616,
+      "mean_utility": -0.006251919083297253,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.010061354376375675,
+        -0.006326216738671064,
+        -0.0032318378798663616,
+        -0.006632070057094097,
+        -0.005008114501833916
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 114,
+      "episode": "scene-0371__scene-0967",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6683458685874939,
+      "oracle_utility": 0.03992585837841034,
+      "mean_utility": 0.023236596956849098,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.02542739175260067,
+        0.03992585837841034,
+        0.0031697608064860106,
+        0.02769782952964306,
+        0.019962143152952194
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 115,
+      "episode": "scene-0376__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0480660200119019,
+      "oracle_utility": 0.024370012804865837,
+      "mean_utility": 0.01850731298327446,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.024370012804865837,
+        0.021371398121118546,
+        0.022844379767775536,
+        0.016974451020359993,
+        0.006976332515478134
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 186,
+      "episode": "scene-0968__scene-0969",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.971800684928894,
+      "oracle_utility": 0.0011230503441765904,
+      "mean_utility": 0.00035777632729150355,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0011230503441765904,
+        0.000637678662315011,
+        -0.0007141673704609275,
+        0.0007622799603268504,
+        -1.9960043573519215e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 187,
+      "episode": "scene-0968__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9056979417800903,
+      "oracle_utility": 0.0017781166825443506,
+      "mean_utility": -0.001590427360497415,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        0.0017781166825443506,
+        -0.00039103752351365983,
+        -0.00621549179777503,
+        -0.0017390419961884618,
+        -0.0013846823712810874
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 191,
+      "episode": "scene-0981__scene-0982",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9398051500320435,
+      "oracle_utility": 0.0006064509507268667,
+      "mean_utility": -0.0008525417069904506,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0013568946160376072,
+        -0.001076792017556727,
+        -0.00221086572855711,
+        0.0006064509507268667,
+        -0.00022460757463704795
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 192,
+      "episode": "scene-0982__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5977343916893005,
+      "oracle_utility": 0.040789857506752014,
+      "mean_utility": 0.02072863280773163,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.009918434545397758,
+        -0.0032556108199059963,
+        0.021887261420488358,
+        0.040789857506752014,
+        0.0343032144010067
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 9,
+      "episode": "scene-0058__scene-0381",
+      "group": "component-36",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.3797183632850647,
+      "oracle_utility": 0.0062649729661643505,
+      "mean_utility": -0.004501577466726303,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.020648309960961342,
+        -0.005812454037368298,
+        0.0062649729661643505,
+        -0.0012878818670287728,
+        -0.0010242166463285685
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 42,
+      "episode": "scene-0139__scene-0347",
+      "group": "component-32",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8530616760253906,
+      "oracle_utility": -0.00859682634472847,
+      "mean_utility": -0.017053211107850075,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.0102999834343791,
+        -0.009438537992537022,
+        -0.00859682634472847,
+        -0.015865016728639603,
+        -0.04106568917632103
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 49,
+      "episode": "scene-0158__scene-0159",
+      "group": "component-16",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9602612853050232,
+      "oracle_utility": 0.0038983032573014498,
+      "mean_utility": 0.0021495819091796875,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.00213701743632555,
+        0.002258967375382781,
+        6.21800500084646e-05,
+        0.0023914414923638105,
+        0.0038983032573014498
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 66,
+      "episode": "scene-0196__scene-0367",
+      "group": "component-58",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.85533607006073,
+      "oracle_utility": 0.005349706392735243,
+      "mean_utility": -0.015445001423358917,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0160178542137146,
+        -0.00968267023563385,
+        0.005349706392735243,
+        -0.022499801591038704,
+        -0.034374386072158813
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 104,
+      "episode": "scene-0356__scene-0357",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9262047410011292,
+      "oracle_utility": 0.0023268701042979956,
+      "mean_utility": -0.0031627777498215437,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.00015102328325156122,
+        -0.003927639219909906,
+        -0.0097084641456604,
+        -0.004655678756535053,
+        0.0023268701042979956
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 105,
+      "episode": "scene-0356__scene-0358",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8453253507614136,
+      "oracle_utility": 0.002243196591734886,
+      "mean_utility": -0.00957738421857357,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        0.002243196591734886,
+        -0.0026273629628121853,
+        -0.03990062698721886,
+        -0.006642965134233236,
+        -0.0009591659181751311
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 106,
+      "episode": "scene-0357__scene-0358",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8776314854621887,
+      "oracle_utility": 0.0028917219024151564,
+      "mean_utility": -0.007176616694778204,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.001996006350964308,
+        0.0028917219024151564,
+        -0.010081494227051735,
+        -0.016830207780003548,
+        -0.013859108090400696
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 116,
+      "episode": "scene-0377__scene-0385",
+      "group": "component-16",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8827149868011475,
+      "oracle_utility": 0.0007199252140708268,
+      "mean_utility": 0.00010187693260377273,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0001961872330866754,
+        0.0007199252140708268,
+        0.0005529125337488949,
+        -0.0005002579418942332,
+        -0.00045938233961351216
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 120,
+      "episode": "scene-0410__scene-1054",
+      "group": "component-49",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6515428423881531,
+      "oracle_utility": -0.0028250953182578087,
+      "mean_utility": -0.014117295853793621,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.025585534051060677,
+        -0.008092295378446579,
+        -0.017630817368626595,
+        -0.016452737152576447,
+        -0.0028250953182578087
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 148,
+      "episode": "scene-0428__scene-1008",
+      "group": "component-18",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6160867810249329,
+      "oracle_utility": 0.012588181532919407,
+      "mean_utility": 0.009297754615545273,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.010802267119288445,
+        0.005167660303413868,
+        0.012249372899532318,
+        0.012588181532919407,
+        0.005681290291249752
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 199,
+      "episode": "scene-1068__scene-1069",
+      "group": "component-51",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7752256989479065,
+      "oracle_utility": 0.00606715539470315,
+      "mean_utility": 0.0037079572211951017,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0014331992715597153,
+        0.0015673525631427765,
+        0.0036698835901916027,
+        0.005802195984870195,
+        0.00606715539470315
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 200,
+      "episode": "scene-1071__scene-1074",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6077876091003418,
+      "oracle_utility": 0.019086971879005432,
+      "mean_utility": 0.011375204659998417,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0026982545386999846,
+        0.019086971879005432,
+        0.014441195875406265,
+        0.005805953871458769,
+        0.014843647368252277
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 201,
+      "episode": "scene-1071__scene-1075",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5872407555580139,
+      "oracle_utility": -0.00043771666241809726,
+      "mean_utility": -0.005512019153684378,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.009280988946557045,
+        -0.007561630103737116,
+        -0.009204214438796043,
+        -0.00043771666241809726,
+        -0.0010755466064438224
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 202,
+      "episode": "scene-1072__scene-1075",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.45667001605033875,
+      "oracle_utility": 0.029601886868476868,
+      "mean_utility": 0.019113974645733833,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.027417149394750595,
+        0.029598232358694077,
+        0.029601886868476868,
+        0.013147363439202309,
+        -0.004194760695099831
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 203,
+      "episode": "scene-1072__scene-1076",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5112520456314087,
+      "oracle_utility": 0.026782816275954247,
+      "mean_utility": 0.012908090837299824,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.015442201867699623,
+        0.015741663053631783,
+        0.006771642714738846,
+        -0.0001978697400772944,
+        0.026782816275954247
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 204,
+      "episode": "scene-1073__scene-1076",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7033061981201172,
+      "oracle_utility": 0.013601312413811684,
+      "mean_utility": 0.007751394994556904,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.010553035885095596,
+        -0.0013938327319920063,
+        0.013601312413811684,
+        0.012850549072027206,
+        0.003145908936858177
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 205,
+      "episode": "scene-1073__scene-1077",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8085110187530518,
+      "oracle_utility": 0.01876731775701046,
+      "mean_utility": 0.007454286329448223,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.005308476742357016,
+        -0.0029877249617129564,
+        0.017775004729628563,
+        -0.0015916432021185756,
+        0.01876731775701046
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 206,
+      "episode": "scene-1076__scene-1077",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8085110187530518,
+      "oracle_utility": 0.024631915614008904,
+      "mean_utility": 0.01452993880957365,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.019754357635974884,
+        0.024631915614008904,
+        -0.0015916432021185756,
+        0.01876731775701046,
+        0.011087744496762753
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 207,
+      "episode": "scene-1077__scene-1078",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6526650786399841,
+      "oracle_utility": 0.0010869018733501434,
+      "mean_utility": -0.0020256780553609133,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0052069746889173985,
+        -0.0008001731475815177,
+        -0.00046805449528619647,
+        0.0010869018733501434,
+        -0.004740090109407902
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 208,
+      "episode": "scene-1078__scene-1106",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7912904620170593,
+      "oracle_utility": 0.02388567104935646,
+      "mean_utility": 0.020960228517651558,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.023598508909344673,
+        0.02388567104935646,
+        0.015102201141417027,
+        0.01943746954202652,
+        0.022777287289500237
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 209,
+      "episode": "scene-1079__scene-1080",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9774433374404907,
+      "oracle_utility": 0.00031888874946162105,
+      "mean_utility": -0.0006944310152903199,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.00031888874946162105,
+        5.0158454541815445e-05,
+        -0.0002353196614421904,
+        -0.00251268339343369,
+        -0.0010931992437690496
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 210,
+      "episode": "scene-1079__scene-1106",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0417343378067017,
+      "oracle_utility": 0.0027700886130332947,
+      "mean_utility": -0.005061209201812744,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.005011032801121473,
+        0.0027700886130332947,
+        -0.003410983132198453,
+        -0.005621964577585459,
+        -0.0140321534126997
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 211,
+      "episode": "scene-1079__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6346350312232971,
+      "oracle_utility": 0.0016323631862178445,
+      "mean_utility": 0.0003205017710570246,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0016323631862178445,
+        0.0009468148928135633,
+        -0.0010022589704021811,
+        7.345160702243447e-05,
+        -4.7862013161648065e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 212,
+      "episode": "scene-1080__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7901607751846313,
+      "oracle_utility": -0.008880248293280602,
+      "mean_utility": -0.01679321750998497,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.01032765582203865,
+        -0.025442639365792274,
+        -0.02108704298734665,
+        -0.018228501081466675,
+        -0.008880248293280602
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 213,
+      "episode": "scene-1081__scene-1082",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0271984338760376,
+      "oracle_utility": 0.008155307732522488,
+      "mean_utility": 0.004232831299304962,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0024313866160809994,
+        0.0017603340093046427,
+        0.0035377303138375282,
+        0.005279396194964647,
+        0.008155307732522488
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 214,
+      "episode": "scene-1081__scene-1083",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.994970977306366,
+      "oracle_utility": 0.0007048774277791381,
+      "mean_utility": -0.000866097747348249,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.0006163430516608059,
+        -0.006212294101715088,
+        0.0007048774277791381,
+        0.0007048774277791381,
+        -0.00014429302245844156
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 215,
+      "episode": "scene-1081__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5412290096282959,
+      "oracle_utility": 0.0020628180354833603,
+      "mean_utility": 0.0011346914106979966,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.0005076213856227696,
+        0.0015140738105401397,
+        0.0015986436046659946,
+        0.001005543046630919,
+        0.0020628180354833603
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 216,
+      "episode": "scene-1082__scene-1083",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9957330822944641,
+      "oracle_utility": 0.0013398246373981237,
+      "mean_utility": -0.0014113405486568809,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.0017895883647724986,
+        0.00029142791754566133,
+        0.0013398246373981237,
+        -0.0008207539212889969,
+        -0.006077613215893507
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 217,
+      "episode": "scene-1083__scene-1108",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9438003897666931,
+      "oracle_utility": 0.00035054690670222044,
+      "mean_utility": -0.01069225836545229,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0069291843101382256,
+        0.00035054690670222044,
+        -0.01601860485970974,
+        -0.02267436683177948,
+        -0.00818968191742897
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 218,
+      "episode": "scene-1083__scene-1109",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8258854746818542,
+      "oracle_utility": 0.01900673657655716,
+      "mean_utility": 0.006075953133404255,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.013210922479629517,
+        -0.00168425717856735,
+        0.01900673657655716,
+        -7.68200188758783e-05,
+        -7.68200188758783e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 219,
+      "episode": "scene-1083__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9060901403427124,
+      "oracle_utility": 0.00667798426002264,
+      "mean_utility": 0.004505586344748735,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.005549644120037556,
+        -0.0007030328852124512,
+        0.00667798426002264,
+        0.005573412869125605,
+        0.005429923068732023
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 220,
+      "episode": "scene-1084__scene-1085",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6672348380088806,
+      "oracle_utility": 0.0007267128676176071,
+      "mean_utility": -0.01226009801030159,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.008954126387834549,
+        -0.01312563568353653,
+        -0.011841973289847374,
+        0.0007267128676176071,
+        -0.028105471283197403
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 221,
+      "episode": "scene-1084__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8148910403251648,
+      "oracle_utility": 0.018536772578954697,
+      "mean_utility": 0.012408146634697914,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.009071053005754948,
+        0.018536772578954697,
+        0.014783602207899094,
+        0.017022304236888885,
+        0.0026270009111613035
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 224,
+      "episode": "scene-1109__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.042884111404419,
+      "oracle_utility": 0.008608105592429638,
+      "mean_utility": 0.0031216286588460207,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.0007020750199444592,
+        4.953813913743943e-05,
+        -5.0249895139131695e-05,
+        0.008608105592429638,
+        0.007702824659645557
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 3,
+      "episode": "scene-0044__scene-0138",
+      "group": "component-9",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8798375129699707,
+      "oracle_utility": 0.023201921954751015,
+      "mean_utility": 0.01999109610915184,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.013998594135046005,
+        0.023201921954751015,
+        0.022454561665654182,
+        0.020845361053943634,
+        0.019455043599009514
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 8,
+      "episode": "scene-0052__scene-0384",
+      "group": "component-52",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7616441249847412,
+      "oracle_utility": 0.010362855158746243,
+      "mean_utility": 0.006850870791822672,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.010362855158746243,
+        0.006085336674004793,
+        0.0052507007494568825,
+        0.005727792624384165,
+        0.006827670149505138
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 28,
+      "episode": "scene-0122__scene-0962",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9196438193321228,
+      "oracle_utility": 0.004871145356446505,
+      "mean_utility": 0.0021692211739718914,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0029164841398596764,
+        0.004871145356446505,
+        0.000788595643825829,
+        0.0010150556918233633,
+        0.0012548239901661873
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 48,
+      "episode": "scene-0157__scene-0384",
+      "group": "component-52",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5733274221420288,
+      "oracle_utility": 0.010326698422431946,
+      "mean_utility": 0.006348989903926849,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.010326698422431946,
+        0.005910131148993969,
+        0.004805694334208965,
+        0.005545452237129211,
+        0.005156969651579857
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 50,
+      "episode": "scene-0160__scene-0269",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7050158977508545,
+      "oracle_utility": -0.005492634139955044,
+      "mean_utility": -0.008666322566568851,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.008591952733695507,
+        -0.005492634139955044,
+        -0.016112087294459343,
+        -0.006987635511904955,
+        -0.006147304084151983
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 82,
+      "episode": "scene-0269__scene-0348",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0415061712265015,
+      "oracle_utility": 0.0018817847594618797,
+      "mean_utility": -0.0029062279500067234,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.007583238650113344,
+        -0.011092654429376125,
+        0.0008731856942176819,
+        0.0013897829921916127,
+        0.0018817847594618797
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 103,
+      "episode": "scene-0348__scene-0378",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6710881590843201,
+      "oracle_utility": 0.001625371165573597,
+      "mean_utility": -0.003812407376244664,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.005683882161974907,
+        0.001625371165573597,
+        -0.003188228001818061,
+        -0.006350366398692131,
+        -0.005464931484311819
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 110,
+      "episode": "scene-0368__scene-0369",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9111679792404175,
+      "oracle_utility": 0.00956509355455637,
+      "mean_utility": 0.0011158448178321123,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0010825709905475378,
+        -0.0009949106024578214,
+        0.00956509355455637,
+        -0.0006983638158999383,
+        -0.001210023881867528
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 111,
+      "episode": "scene-0368__scene-0963",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9533658027648926,
+      "oracle_utility": 0.00954760517925024,
+      "mean_utility": 0.005175731144845486,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.0033181842882186174,
+        0.00017984508303925395,
+        0.004725123755633831,
+        0.008107896894216537,
+        0.00954760517925024
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 112,
+      "episode": "scene-0369__scene-0963",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9436761736869812,
+      "oracle_utility": 0.010582270100712776,
+      "mean_utility": 0.004133538343012333,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.000386128609534353,
+        0.010582270100712776,
+        0.0023573043290525675,
+        0.004227788187563419,
+        0.0031142018269747496
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 118,
+      "episode": "scene-0408__scene-1053",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6334124803543091,
+      "oracle_utility": 0.003722383175045252,
+      "mean_utility": 0.0013924511149525642,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        0.002086067106574774,
+        0.003722383175045252,
+        0.0016726292669773102,
+        -0.0005984463496133685,
+        7.962257222970948e-05
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 119,
+      "episode": "scene-0408__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5507710576057434,
+      "oracle_utility": -0.00864382740110159,
+      "mean_utility": -0.0222230963408947,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.00864382740110159,
+        -0.031140126287937164,
+        -0.024564353749155998,
+        -0.028135236352682114,
+        -0.01863192766904831
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 121,
+      "episode": "scene-0411__scene-1055",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9726898670196533,
+      "oracle_utility": -0.01844649948179722,
+      "mean_utility": -0.025042876601219177,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.02737264335155487,
+        -0.022887829691171646,
+        -0.02611350640654564,
+        -0.030393900349736214,
+        -0.01844649948179722
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 122,
+      "episode": "scene-0412__scene-0413",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.950013279914856,
+      "oracle_utility": 0.004349095281213522,
+      "mean_utility": -0.008381702937185764,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.014048411510884762,
+        -0.011867774650454521,
+        -0.009881795383989811,
+        -0.010459627956151962,
+        0.004349095281213522
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 123,
+      "episode": "scene-0412__scene-1055",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8497292399406433,
+      "oracle_utility": -0.026752905920147896,
+      "mean_utility": -0.03678854927420616,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.03147542476654053,
+        -0.026752905920147896,
+        -0.044261667877435684,
+        -0.04595866799354553,
+        -0.035494085401296616
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 124,
+      "episode": "scene-0412__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6513819098472595,
+      "oracle_utility": 0.032397035509347916,
+      "mean_utility": 0.013274143449962139,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        0.032397035509347916,
+        0.016341371461749077,
+        -0.0029000057838857174,
+        -0.0029000057838857174,
+        0.023432323709130287
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 125,
+      "episode": "scene-0413__scene-0414",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9719870090484619,
+      "oracle_utility": 0.001576223992742598,
+      "mean_utility": 0.0004345483612269163,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.0009891854133456945,
+        0.001576223992742598,
+        -8.751480345381424e-05,
+        -0.00010168569133384153,
+        -0.00020346713426988572
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 126,
+      "episode": "scene-0413__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.294198751449585,
+      "oracle_utility": -0.017238540574908257,
+      "mean_utility": -0.022791236639022827,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.017238540574908257,
+        -0.017340295016765594,
+        -0.04186300188302994,
+        -0.019526733085513115,
+        -0.017987605184316635
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 127,
+      "episode": "scene-0416__scene-1057",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7891885638237,
+      "oracle_utility": -0.016155222430825233,
+      "mean_utility": -0.024213610216975212,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.03024950437247753,
+        -0.024534201249480247,
+        -0.016155222430825233,
+        -0.028802525252103806,
+        -0.021326595917344093
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 128,
+      "episode": "scene-0418__scene-1057",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5971463322639465,
+      "oracle_utility": -0.0065099759958684444,
+      "mean_utility": -0.02351134456694126,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.04625093936920166,
+        -0.02183191478252411,
+        -0.011513744480907917,
+        -0.0065099759958684444,
+        -0.031450144946575165
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 129,
+      "episode": "scene-0418__scene-1058",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.865652859210968,
+      "oracle_utility": -0.0181109718978405,
+      "mean_utility": -0.03299423307180405,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.04823492467403412,
+        -0.0181109718978405,
+        -0.04653262719511986,
+        -0.03045698069036007,
+        -0.021635660901665688
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 168,
+      "episode": "scene-0848__scene-0849",
+      "group": "component-10",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6346423625946045,
+      "oracle_utility": 0.004933224990963936,
+      "mean_utility": 0.004064579959958792,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.004627760034054518,
+        0.004933224990963936,
+        0.0018059711437672377,
+        0.004247945733368397,
+        0.004707996733486652
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 169,
+      "episode": "scene-0858__scene-1015",
+      "group": "component-47",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.003618836402893,
+      "oracle_utility": 0.0005635328707285225,
+      "mean_utility": -0.0009237955091521144,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        -0.001942315953783691,
+        0.0003638644702732563,
+        0.0005635328707285225,
+        -0.0020067119039595127,
+        -0.0015973473200574517
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 185,
+      "episode": "scene-0957__scene-0958",
+      "group": "component-63",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9383142590522766,
+      "oracle_utility": 0.004493660759180784,
+      "mean_utility": 0.0018115194980055094,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.0007971790037117898,
+        0.0005930912448093295,
+        0.003481924533843994,
+        0.004493660759180784,
+        0.0012860997812822461
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 188,
+      "episode": "scene-0975__scene-0976",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8004626035690308,
+      "oracle_utility": 0.0024560485035181046,
+      "mean_utility": -0.0006279764929786325,
+      "candidate_harmful_rate": 0.6,
+      "utilities": [
+        0.0005732348654419184,
+        -0.0017099556280300021,
+        -0.0010360046289861202,
+        0.0024560485035181046,
+        -0.0034232058096677065
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 189,
+      "episode": "scene-0975__scene-0977",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0434274673461914,
+      "oracle_utility": 0.003725336631760001,
+      "mean_utility": 0.0015356754884123802,
+      "candidate_harmful_rate": 0.4,
+      "utilities": [
+        -0.0013286034809425473,
+        -0.0011909911409020424,
+        0.002990501467138529,
+        0.003725336631760001,
+        0.0034821343142539263
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 190,
+      "episode": "scene-0975__scene-0978",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0322115421295166,
+      "oracle_utility": 0.008812311105430126,
+      "mean_utility": 0.00386291672475636,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -0.0001842952478909865,
+        0.00034390020300634205,
+        0.004458357580006123,
+        0.005884308833628893,
+        0.008812311105430126
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 195,
+      "episode": "scene-1053__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.4747740626335144,
+      "oracle_utility": 0.07171400636434555,
+      "mean_utility": 0.050470270216464996,
+      "candidate_harmful_rate": 0.0,
+      "utilities": [
+        0.042386364191770554,
+        0.07171400636434555,
+        0.05012952536344528,
+        0.04484707862138748,
+        0.043274376541376114
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 196,
+      "episode": "scene-1055__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.904080867767334,
+      "oracle_utility": -0.013828316703438759,
+      "mean_utility": -0.023197855800390244,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.033084575086832047,
+        -0.020008571445941925,
+        -0.013828316703438759,
+        -0.026822349056601524,
+        -0.022245457395911217
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 197,
+      "episode": "scene-1057__scene-1058",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.865652859210968,
+      "oracle_utility": 0.002832787809893489,
+      "mean_utility": -0.024959394708275795,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.041032951325178146,
+        -0.03450416028499603,
+        -0.03045698069036007,
+        -0.021635660901665688,
+        0.002832787809893489
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 198,
+      "episode": "scene-1064__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7252171635627747,
+      "oracle_utility": -0.010314441286027431,
+      "mean_utility": -0.01673436351120472,
+      "candidate_harmful_rate": 1.0,
+      "utilities": [
+        -0.014796941541135311,
+        -0.010314441286027431,
+        -0.013464362360537052,
+        -0.024940045550465584,
+        -0.020156027749180794
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 222,
+      "episode": "scene-1089__scene-1090",
+      "group": "component-23",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8130723834037781,
+      "oracle_utility": 0.0022732403595000505,
+      "mean_utility": -0.02234489843249321,
+      "candidate_harmful_rate": 0.8,
+      "utilities": [
+        -0.0294034443795681,
+        -0.026728196069598198,
+        0.0022732403595000505,
+        -0.021904822438955307,
+        -0.03596126288175583
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    },
+    {
+      "index": 223,
+      "episode": "scene-1092__scene-1093",
+      "group": "component-64",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9394769668579102,
+      "oracle_utility": 0.005842927377671003,
+      "mean_utility": 0.003920250106602907,
+      "candidate_harmful_rate": 0.2,
+      "utilities": [
+        -6.336149090202525e-05,
+        0.004282538313418627,
+        0.005842927377671003,
+        0.005750429350882769,
+        0.0037887177895754576
+      ],
+      "labels": [
+        "matched",
+        "distant",
+        "foreign-0",
+        "foreign-1",
+        "foreign-2"
+      ]
+    }
+  ],
+  "fold_logs": [
+    {
+      "fold": 0,
+      "train": 161,
+      "held_out": 64,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 1.6901463270187378,
+          "current_to_base": 0.9971290230751038,
+          "oracle_utility": 0.0002604973269626498,
+          "mean_utility": 0.0001065628748619929,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.10620053112506866
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 1.6712455749511719,
+          "current_to_base": 0.984740674495697,
+          "oracle_utility": 0.01353561133146286,
+          "mean_utility": 0.0066566201858222485,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.3240559697151184
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 1.5850019454956055,
+          "current_to_base": 0.8957050442695618,
+          "oracle_utility": 0.00861363485455513,
+          "mean_utility": 0.004644307773560286,
+          "selected_label": "foreign-2",
+          "gradient_norm": 0.38996046781539917
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 1.393584966659546,
+          "current_to_base": 0.7110061049461365,
+          "oracle_utility": 0.029886413365602493,
+          "mean_utility": 0.01953713595867157,
+          "selected_label": "foreign-2",
+          "gradient_norm": 0.9068664312362671
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 1.191565990447998,
+          "current_to_base": 0.49839964509010315,
+          "oracle_utility": -7.686278695473447e-05,
+          "mean_utility": -0.002110302448272705,
+          "selected_label": "matched",
+          "gradient_norm": 0.5036140084266663
+        },
+        {
+          "step": 483,
+          "epoch": 3,
+          "outer": 1.5779902935028076,
+          "current_to_base": 0.8944852352142334,
+          "oracle_utility": 0.02166418917477131,
+          "mean_utility": 0.01874639093875885,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.5927956104278564
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "train": 173,
+      "held_out": 52,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 1.6931664943695068,
+          "current_to_base": 1.0000404119491577,
+          "oracle_utility": 4.2191568354610354e-05,
+          "mean_utility": -2.0442546428967034e-06,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.00324479048140347
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 1.8022139072418213,
+          "current_to_base": 1.109779715538025,
+          "oracle_utility": 0.0012855768436565995,
+          "mean_utility": -0.015817711129784584,
+          "selected_label": "foreign-0",
+          "gradient_norm": 1.9990276098251343
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 1.6792893409729004,
+          "current_to_base": 0.9866266846656799,
+          "oracle_utility": 0.0009824183071032166,
+          "mean_utility": 0.0004327423812355846,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.09620560705661774
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 1.9483284950256348,
+          "current_to_base": 1.2639491558074951,
+          "oracle_utility": 0.013935105875134468,
+          "mean_utility": -0.0021697317715734243,
+          "selected_label": "foreign-1",
+          "gradient_norm": 1.8155450820922852
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 1.5112501382827759,
+          "current_to_base": 0.8275769948959351,
+          "oracle_utility": 0.023005345836281776,
+          "mean_utility": 0.009750745259225368,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.7277326583862305
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 1.7230314016342163,
+          "current_to_base": 1.0315711498260498,
+          "oracle_utility": 0.003273403737694025,
+          "mean_utility": 0.0015250766882672906,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.32007989287376404
+        },
+        {
+          "step": 519,
+          "epoch": 3,
+          "outer": 1.5785399675369263,
+          "current_to_base": 0.8904759883880615,
+          "oracle_utility": 0.011446099728345871,
+          "mean_utility": 0.004559395369142294,
+          "selected_label": "distant",
+          "gradient_norm": 0.344555526971817
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train": 183,
+      "held_out": 42,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 1.6909489631652832,
+          "current_to_base": 0.9978272318840027,
+          "oracle_utility": 5.080525443190709e-05,
+          "mean_utility": 1.4810939141796098e-08,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.053310930728912354
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 1.2767062187194824,
+          "current_to_base": 0.5913935303688049,
+          "oracle_utility": 0.026599572971463203,
+          "mean_utility": 0.013949346728622913,
+          "selected_label": "matched",
+          "gradient_norm": 1.0995984077453613
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 1.8543050289154053,
+          "current_to_base": 1.1597899198532104,
+          "oracle_utility": -0.002357158111408353,
+          "mean_utility": -0.010709372349083424,
+          "selected_label": "foreign-0",
+          "gradient_norm": 1.0891367197036743
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 1.3340835571289062,
+          "current_to_base": 0.6427891254425049,
+          "oracle_utility": 0.005770302377641201,
+          "mean_utility": 0.0044231112115085125,
+          "selected_label": "foreign-1",
+          "gradient_norm": 0.36909055709838867
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 1.4690382480621338,
+          "current_to_base": 0.7735666632652283,
+          "oracle_utility": -0.006002455018460751,
+          "mean_utility": -0.008332589641213417,
+          "selected_label": "foreign-0",
+          "gradient_norm": 2.3299617767333984
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 1.60081148147583,
+          "current_to_base": 0.9216939806938171,
+          "oracle_utility": 0.03065972775220871,
+          "mean_utility": 0.007133666425943375,
+          "selected_label": "matched",
+          "gradient_norm": 0.41965529322624207
+        },
+        {
+          "step": 549,
+          "epoch": 3,
+          "outer": 1.5587776899337769,
+          "current_to_base": 0.8603506684303284,
+          "oracle_utility": -0.012241299264132977,
+          "mean_utility": -0.023945031687617302,
+          "selected_label": "foreign-1",
+          "gradient_norm": 1.4951510429382324
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train": 191,
+      "held_out": 34,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 1.6921566724777222,
+          "current_to_base": 0.9989837408065796,
+          "oracle_utility": -5.164771209820174e-05,
+          "mean_utility": -0.00012459415302146226,
+          "selected_label": "distant",
+          "gradient_norm": 0.008444038219749928
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 1.481252670288086,
+          "current_to_base": 0.7946116924285889,
+          "oracle_utility": 0.01642957516014576,
+          "mean_utility": 0.006632095668464899,
+          "selected_label": "matched",
+          "gradient_norm": 0.8662936091423035
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 1.6940569877624512,
+          "current_to_base": 1.0013794898986816,
+          "oracle_utility": 0.0009384145960211754,
+          "mean_utility": -0.0017680552555248141,
+          "selected_label": "distant",
+          "gradient_norm": 0.22853390872478485
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 1.3589725494384766,
+          "current_to_base": 0.6659048199653625,
+          "oracle_utility": 0.000238772394368425,
+          "mean_utility": -0.001991697121411562,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.3925739526748657
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 1.6889681816101074,
+          "current_to_base": 0.9965043067932129,
+          "oracle_utility": 0.0013718620175495744,
+          "mean_utility": -0.0005046697333455086,
+          "selected_label": "distant",
+          "gradient_norm": 0.17675499618053436
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 1.5656843185424805,
+          "current_to_base": 0.8781765103340149,
+          "oracle_utility": 0.012879609130322933,
+          "mean_utility": 0.006825547199696302,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.46443551778793335
+        },
+        {
+          "step": 573,
+          "epoch": 3,
+          "outer": 1.361152172088623,
+          "current_to_base": 0.668595016002655,
+          "oracle_utility": 0.0017655885312706232,
+          "mean_utility": -0.017139172181487083,
+          "selected_label": "foreign-2",
+          "gradient_norm": 1.7760837078094482
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "train": 192,
+      "held_out": 33,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 1.6913230419158936,
+          "current_to_base": 0.9981799125671387,
+          "oracle_utility": 8.198749128496274e-06,
+          "mean_utility": 3.5758400827035075e-06,
+          "selected_label": "foreign-0",
+          "gradient_norm": 0.0460977703332901
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 1.4324496984481812,
+          "current_to_base": 0.7400628924369812,
+          "oracle_utility": 0.002055706223472953,
+          "mean_utility": -0.007904843427240849,
+          "selected_label": "foreign-1",
+          "gradient_norm": 1.2034122943878174
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 1.3901392221450806,
+          "current_to_base": 0.7075409889221191,
+          "oracle_utility": 0.029977738857269287,
+          "mean_utility": 0.01822632923722267,
+          "selected_label": "matched",
+          "gradient_norm": 1.1328084468841553
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 1.319507122039795,
+          "current_to_base": 0.628526508808136,
+          "oracle_utility": 0.006901344284415245,
+          "mean_utility": 0.0047408705577254295,
+          "selected_label": "foreign-2",
+          "gradient_norm": 0.2857585549354553
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 1.6153088808059692,
+          "current_to_base": 0.9234812259674072,
+          "oracle_utility": 0.002859497908502817,
+          "mean_utility": -0.002132824156433344,
+          "selected_label": "matched",
+          "gradient_norm": 0.342507928609848
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 1.2948569059371948,
+          "current_to_base": 0.601744532585144,
+          "oracle_utility": 0.00011557374818949029,
+          "mean_utility": -0.0030094522517174482,
+          "selected_label": "distant",
+          "gradient_norm": 0.4119105339050293
+        },
+        {
+          "step": 576,
+          "epoch": 3,
+          "outer": 1.6596190929412842,
+          "current_to_base": 0.9673136472702026,
+          "oracle_utility": 0.0017410089494660497,
+          "mean_utility": -0.013055388815701008,
+          "selected_label": "distant",
+          "gradient_norm": 0.9342054128646851
+        }
+      ]
+    }
+  ],
+  "validation_accessed": false,
+  "test_accessed": false
+}

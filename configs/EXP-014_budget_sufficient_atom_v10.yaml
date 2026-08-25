@@ -1,0 +1,54 @@
+experiment: EXP-014
+protocol_revision: v1.0
+seed: 1400010
+prior_stage: revisit3d/results/EXP-013/stage0_utility_key_atom_train_v10.json
+preexisting_budget_evidence: revisit3d/results/EXP-006/stage1_atom_training_expanded_train_v27.json
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  split: train
+
+model:
+  feature_dim: 2048
+  key_dim: 64
+  code_dim: 8
+  hidden_dim: 128
+  visual_key: frozen_train_pca
+
+method:
+  online_loss: track3d_only
+  step_size: 0.0125
+  steps: 1
+  transport: visual
+  reuse_strength: 0.10
+
+meta_candidates:
+  count: 5
+  foreign_count: 3
+  selection: minimum_future_track3d_loss
+
+training:
+  steps: 1000
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  log_every: 200
+
+crossfit:
+  folds: 5
+  grouping: physical_overlap_component
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 1400010
+
+success:
+  maximum_current_to_base: 1.0
+  minimum_oracle_utility: 0.01
+  minimum_mean_utility: 0.0
+  maximum_candidate_harm: 0.30
+
+output:
+  checkpoint: revisit3d/checkpoints/exp014_budget_sufficient_atom_v10.pt
+  result: revisit3d/results/EXP-014/stage0_budget_sufficient_atom_train_v10.json

@@ -527,3 +527,12 @@ Status: Accepted after EXP-012 Stage 0C and before EXP-013
 Stage 0C passed every gate except oracle magnitude: current/base was 0.8340, mean candidate utility +0.208%, harm 27.03%, and oracle-minus-mean CI strictly positive, but oracle utility was only +0.472%. The frozen-PCA-key compact family is stopped as registered.
 
 EXP-013 makes the existing 64-D key projection trainable under the same future-utility ranking objective. This adds no parameter tensor, module, loss, or weight; it replaces task-agnostic PCA transport with utility-supervised transport while retaining PCA initialization. All EXP-012 Stage-0C gates remain unchanged. Failure ends local-key redesign for this paper.
+
+## D074 — Stop utility-key training; audit the pre-selected 1000-step budget
+
+Date: 2026-08-25
+Status: Accepted after EXP-013 and before EXP-014
+
+EXP-013 failed decisively: mean candidate utility became negative and harm rose to 45.38%. End-to-end key redesign is stopped. A separate audit found that every new minimal fold had only 483–576 training updates, whereas the pre-existing EXP-006 v2.7 cross-fit selected 1000 over 500 steps and improved oracle utility from 1.323% to 3.855%.
+
+EXP-014 therefore restores the safer frozen PCA key and repeats the minimal relative-ranking model with exactly 1000 updates. This uses an optimization budget selected before EXP-012 and changes no method component, loss, inference hyperparameter, or gate. Failure triggers a paper-scope pivot rather than further atom variants.
