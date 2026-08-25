@@ -123,6 +123,12 @@ of the existing aligned log residual and an aligned relative-depth residual.
 This adds no tunable loss weight and changes no inference computation. No third
 residual or proxy preservation term is allowed.
 
+EXP-025 failed the terminal gate with the inverse metric trade-off, so the
+authorized atom branch is closed and no checkpoint is accepted. The current
+repository has no paper-ready final model. Any constrained/Pareto optimizer or
+multi-objective update is a new method branch requiring an explicit scope
+decision, not an allowed continuation of this specification.
+
 ## Claim boundary
 
 Supported: local transported corrections contain reusable proxy information;

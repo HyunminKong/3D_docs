@@ -101,3 +101,14 @@ AbsRel, so its one-loss checkpoint was rejected. One terminal EXP-025 objective
 is authorized: a fixed equal mean of aligned log-depth and aligned relative-depth
 residuals. The online method remains one loss/one step; failure ends atom
 objective development for this paper.
+
+EXP-025 failed terminally: it improved AbsRel but significantly worsened
+SILog/EPE, the inverse of EXP-024. No atom checkpoint was accepted. Scalar
+atom-objective development is stopped. The empirical reusable-memory oracle
+remains positive, but learning a Pareto-healthy current direction is unresolved.
+
+The next action requires a paper-scope decision. A top-tier broad-geometry path
+would need constrained/Pareto multi-objective plasticity as a new central
+contribution; a narrow aligned-relative-depth claim would preserve the compact
+method but is unlikely to support the originally intended broad reconstruction
+paper. EXP-021 remains fully unopened while this decision is pending.

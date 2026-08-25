@@ -768,3 +768,23 @@ offline geometry loss. It may create a final refit checkpoint only after all
 component-OOF gates pass. No EXP-020 or EXP-021 sensor/model output is accessed.
 If any gate fails, the utility-addressed atom paper path is stopped rather than
 trying another loss, seed, training budget, initialization, or module.
+
+## D092 — Stop scalar atom-objective development
+
+Date: 2026-08-25
+Status: Accepted after EXP-025
+
+EXP-025 failed the terminal gate and produced no checkpoint. Its current update
+significantly improved aligned AbsRel but significantly worsened SILog and 3D
+EPE, the inverse of EXP-024's trade-off. Both heads retained significant oracle
+memory headroom across all three metrics. The unresolved issue is therefore not
+whether useful past corrections exist, but whether one scalarized meta-objective
+can learn a current plasticity direction that is Pareto-healthy.
+
+No further loss, coefficient, seed, budget, initialization, or head variant is
+authorized within the current compact-paper scope. EXP-020 remains exposed and
+EXP-021 remains unopened. Further work requires an explicit scope decision:
+either narrow the endpoint to aligned relative depth, abandon this paper path,
+or make constrained/Pareto multi-objective plasticity a new central method. The
+last option changes the paper's methodological contribution and cannot be
+treated as another ablation.

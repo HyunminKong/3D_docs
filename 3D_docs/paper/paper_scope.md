@@ -126,3 +126,10 @@ That EXP-024 fit failed aligned AbsRel while significantly improving SILog/EPE.
 One terminal equal-weight log-plus-relative geometry objective is authorized as
 EXP-025. It keeps one online loss and adds no module or inference hyperparameter;
 failure stops method development for this paper.
+
+EXP-025 failed with significant AbsRel improvement but significant SILog/EPE
+degradation. The compact scalar-objective path is therefore stopped. The paper
+cannot proceed to address fitting, efficiency, or the locked terminal test
+without a new central-method decision. A Pareto/constrained training branch
+would materially change the contribution; a narrow AbsRel-only paper would
+materially narrow the claim.
