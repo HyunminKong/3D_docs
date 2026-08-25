@@ -14,7 +14,7 @@ from revisit3d.models import SpatialPlasticityHead, visual_transport
 from revisit3d.scripts.evaluate_exp009_causal_dino_retrieval import _device_atom
 from revisit3d.scripts.fit_exp016_unified_utility_address import _context_tables, _sha256, _strict_oof
 from revisit3d.scripts.train_exp024_metric_aligned_atom import (
-    METRICS, _lidar_cache, _numpy_metrics, _query_depth, _risk,
+    METRICS, _lidar_cache, _metric_loss, _numpy_metrics, _query_depth,
 )
 
 PRIMARY = ("silog", "abs_rel", "point_epe_m")
@@ -74,12 +74,15 @@ def main():
             key = meta[ids[0]]["target_context"]; target = targets[key]; idx = target["cache_index"]
             cur_atom = _device_atom(atoms[key], dev); qp = geo["rows"][idx]["segments"]["a_prime_query"]
             query = CachedAtomSegment.from_cache(qp, "query", dev); qzero = query.atom(head); gt, valid = lidar[idx]
-            cur_pred = _query_depth(head, query, qzero, cur_atom); cur_risk = _risk(cur_pred, gt, valid, c)
+            cur_pred = _query_depth(head, query, qzero, cur_atom)
+            cur_risk = float(_metric_loss(cur_pred, gt, valid, c).detach())
             cur_metrics = _numpy_metrics(cur_pred, gt, valid, query, c); cms, risks = {}, {}
             for i in ids:
                 src = _device_atom(atoms[meta[i]["source_context"]], dev); transported = visual_transport(src, cur_atom).code
                 cand = replace(cur_atom, code=(cur_atom.code + float(c["method"]["reuse_strength"]) * transported).clamp(-1, 1))
-                p = _query_depth(head, query, qzero, cand); risks[i] = _risk(p, gt, valid, c); cms[i] = _numpy_metrics(p, gt, valid, query, c)
+                p = _query_depth(head, query, qzero, cand)
+                risks[i] = float(_metric_loss(p, gt, valid, c).detach())
+                cms[i] = _numpy_metrics(p, gt, valid, query, c)
                 max_err = max(max_err, abs((cur_risk-risks[i])/max(abs(cur_risk),1e-8)-utility[i]))
             winner = max(ids, key=lambda i: (pred[i], meta[i]["source_context"])); take = bool(pred[winner] > threshold)
             current_descriptor = matrix[ids[0], :64]
