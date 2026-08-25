@@ -1345,3 +1345,21 @@ now immutable. EXP-045 may open every EXP-039 validation pair once and must
 compare unconditional reuse plus an independently scored spatial-shuffle
 control. No validation result may tune the threshold, basis, step size,
 transport, or gate. Terminal remains closed.
+
+## D124 — Accept zero-agreement routing and require causal retrieval next
+
+Date: 2026-08-26
+Status: Accepted after EXP-045
+
+The immutable zero-agreement candidate passed all validation gates on every
+scene. It significantly beats current-only, unconditional reuse, and a spatial
+shuffle routed at the same acceptance fraction. This establishes a compact
+utility decision for a supplied memory candidate without learned routing.
+
+The method is not yet deployable because EXP-045 uses the manifest's physical
+revisit candidate. The next experiment must replace pair identity with a causal
+bank of earlier source records and compare parameter-free candidate selection:
+frozen appearance similarity, maximum current/memory descent agreement, and a
+matched random record. The exact-meta basis and positive-sign application rule
+remain frozen. Validation may now serve only as development for this new bank
+protocol; terminal remains unopened until selection and capacity are fixed.

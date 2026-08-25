@@ -337,3 +337,10 @@ oracle fallback. D123 freezes that exact rule and EXP-043 checkpoint. EXP-045
 is registered for a one-shot 14-scene/213-pair validation with ungated and
 independently routed spatial-shuffle controls. Validation pixels remain unopened
 at registration; terminal remains closed.
+
+EXP-045 passed every registered validation gate on 213 pairs/14 scenes. Frozen
+zero-agreement reuse gains `7.35e-5` over current with CI
+`[4.59e-5, 1.05e-4]`, improves all scenes, beats ungated and equal-acceptance
+gated shuffle, and harms 3.76%. H10 is supported for a supplied revisit
+candidate. The remaining deployability blocker is retrieval from a causal
+multi-candidate bank without pose/pair identity; terminal remains closed.

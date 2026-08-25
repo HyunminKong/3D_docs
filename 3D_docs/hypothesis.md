@@ -119,6 +119,8 @@ The algebraic sign of the cosine between current and transported memory codes
 is sufficient online evidence to reject most harmful reuse without a learned
 router or tuned threshold.
 
-Status: **Open.** EXP-044 provides strong but explicitly post-hoc development
-support. The exact positive-sign rule is frozen for EXP-045; only unseen
-scene-disjoint validation can support the hypothesis.
+Status: **Supported on scene-disjoint validation for a supplied revisit
+candidate.** EXP-045 passed every gate: positive reuse in all 14 scenes,
+positive confidence bounds over current, ungated reuse, and independently
+gated shuffle, with 3.76% harm. Retrieval from a causal multi-candidate bank
+remains open.

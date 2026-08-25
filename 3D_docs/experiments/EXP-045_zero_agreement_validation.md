@@ -1,6 +1,6 @@
 # EXP-045 — Frozen Zero-Agreement Validation
 
-Status: Registered; validation pixels unopened
+Status: Completed; all registered gates passed
 Purpose: First confirmatory test of parameter-free memory routing
 
 ## Question
@@ -46,3 +46,26 @@ absolute GT geometry improvement.
 - Config: `configs/EXP-045_zero_agreement_validation_v10.yaml`
 - Script: `revisit3d/scripts/evaluate_exp045_zero_agreement_validation.py`
 - Result: `revisit3d/results/EXP-045/zero_agreement_validation_v10.json`
+
+## Result
+
+All 213 pairs and 14 scenes were evaluated with exact cached-readout parity.
+
+| Comparison | Scene-balanced gain | 95% CI | Positive scenes |
+| --- | ---: | ---: | ---: |
+| current TTT over zero code | `6.34e-4` | `[4.12e-4, 8.80e-4]` | 14/14 |
+| gated correct reuse over current | `7.35e-5` | `[4.59e-5, 1.05e-4]` | 14/14 |
+| gated correct over ungated | `6.68e-5` | `[3.21e-5, 1.13e-4]` | 14/14 |
+| gated correct over gated shuffle | `5.29e-5` | `[3.22e-5, 7.54e-5]` | 14/14 |
+
+Correct and shuffled candidates were each accepted on exactly 53.52% of pairs,
+so the correct-over-shuffle result is not an acceptance-rate artifact. Gated
+correct reuse harmed 3.76%, below the registered 10% maximum. Every gate passed.
+
+## Conclusion
+
+H10 is supported on untouched scene-disjoint validation. A parameter-free
+descent-agreement sign test converts a harmful/uncertain raw memory correction
+into a consistent future-utility gain without a router or tuned threshold. The
+result validates routing for a supplied physical-revisit candidate; it does not
+yet establish how that candidate is retrieved from a causal bank.

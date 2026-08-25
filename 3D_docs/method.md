@@ -184,3 +184,10 @@ memory code. The only candidate routing revision is the semantic zero rule
 agree. It has no learned parameter or calibrated threshold. Because it was
 identified on an exposed audit, its development result is post-hoc and the rule
 must be immutable before validation.
+
+EXP-045 validates this rule on unseen scenes. The active candidate therefore
+adds exactly one online decision to the exact-meta local code: transport a
+candidate, compute its mean cosine with the current code, and apply it only when
+positive. The decision has no trained weights or scalar hyperparameter. A
+supplied-candidate result is not yet a deployable memory system; causal bank
+construction and candidate selection remain to be established.
