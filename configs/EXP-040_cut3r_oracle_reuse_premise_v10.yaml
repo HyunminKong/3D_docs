@@ -1,0 +1,38 @@
+experiment: EXP-040
+protocol_revision: v1.0
+purpose: train_only_oracle_reuse_premise
+seed: 4000010
+data:
+  manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v11.json
+  manifest_sha256: 539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05
+  selected_scenes: 8
+  pairs_per_scene: 4
+  selection: first_manifest_scenes_and_pairs
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  source_revision: edd6d8c000aaf2ef0f588403e1b3bd3300a54cc4
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: cut3r
+  image_size: 512
+  crop: false
+plasticity:
+  code_dim: 8
+  basis_seed: 3800010
+  normalized_step: 0.001
+  patch_size: 16
+  combination: current_plus_unit_transport
+control:
+  spatial_shuffle_seed: 4000010
+success:
+  exact_scenes: 8
+  exact_pairs: 32
+  require_positive_source_ttt_gain: true
+  require_positive_target_current_ttt_gain: true
+  require_positive_oracle_reuse_gain_over_current: true
+  require_full_better_spatial_shuffle: true
+  maximum_reuse_harm_fraction: 0.5
+output:
+  result: revisit3d/results/EXP-040/cut3r_oracle_reuse_premise_v10.json
