@@ -45,5 +45,6 @@
 | [EXP-041](EXP-041_cut3r_transport_coordinate_diagnosis.md) | Is CUT3R reuse failure caused by 3D transport or raw update-coordinate incompatibility? | Completed; no raw carrier eligible | All carriers worsen current and have negative source/target code agreement; a learned plasticity coordinate is necessary. |
 | [EXP-042](EXP-042_learned_cut3r_plasticity_coordinate.md) | Can one learned 6,144-parameter basis make one-loss CUT3R codes current-useful and revisit-compatible? | Completed; gate failed | Current TTT strengthened, but reuse was uncertain and mean code agreement stayed negative; compact v2 stops before validation/address fitting. |
 | [EXP-043](EXP-043_exact_meta_cut3r_plasticity_coordinate.md) | Can an exact one-step meta-gradient learn future-useful CUT3R codes without another module or loss? | Completed; ungated gate failed | Current TTT became much stronger, but ungated reuse CI crossed zero and correct transport tied shuffle; observable agreement suggests a parameter-free gate. |
+| [EXP-044](EXP-044_posthoc_zero_agreement_routing.md) | Does a parameter-free positive code-agreement decision explain EXP-043's heterogeneous reuse utility? | Registered post-hoc | Development diagnostic only; no validation or confirmatory claim. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
