@@ -1,6 +1,6 @@
 # EXP-010 — Paper-Critical Absolute Geometry Validity
 
-Status: Registered before execution
+Status: Stage A completed; registered gate failed
 
 ## Question
 
@@ -40,6 +40,24 @@ Stage A passes only if:
 4. the fraction where full memory degrades current-only AbsRel by more than 1% is no greater than the fraction where current-only TTT degrades the frozen base by more than 1%.
 
 Failure stops architecture expansion and narrows the paper claim. Success authorizes Stage B controls: random address, address-only, full router, FIFO/unbounded, efficiency, and minimal-loss refitting on train/validation only.
+
+## Stage-A result
+
+All 104 targets, 22 components, four query views per target, and an average of 690 projected LiDAR cells per target were valid. Exact replay recovered the locked +0.0208789 proxy utility before LiDAR scoring.
+
+| Prediction | SILog ↓ | aligned AbsRel ↓ | aligned RMSE (m) ↓ | delta-1 ↑ | same-ray 3D EPE (m) ↓ |
+|---|---:|---:|---:|---:|---:|
+| Frozen base | 46.8182 | 0.67962 | 8.5182 | 0.51844 | 5.40823 |
+| Current-only TTT | 46.8835 | 0.65720 | 8.6607 | 0.52622 | 5.40669 |
+| Full memory | 46.9412 | **0.65342** | 8.6943 | 0.52574 | 5.41846 |
+
+Full memory improved aligned AbsRel over current-only by 0.00378 per target. The component-mean improvement was 0.00226 with 95% CI **[0.00031, 0.00460]**, so the relative-depth improvement is real. However, SILog worsened by 0.0577, aligned RMSE by 0.0336 m, and same-ray 3D EPE by 0.0118 m. Their component intervals crossed or lay below zero. The registered gate failed `silog_not_worse` and `point_epe_not_worse`.
+
+The learned proxy/router score was negatively associated with improvements in all primary LiDAR metrics (Spearman approximately -0.10 for AbsRel and EPE, -0.11 for SILog). Thus the failure is not a coverage artifact: the self-supervised utility target favors one relative-depth statistic but is not aligned with overall metric geometry.
+
+## Conclusion
+
+The current architecture is **not paper-ready** as a general reconstruction-improvement method. It supports a narrower aligned-AbsRel effect, but the paper must not claim consistent point-cloud improvement. Stage B memory controls are paused. The next authorized experiment is a train-only objective-health study that keeps the method small and asks whether a single frozen-track reprojection objective can align one-step TTT with SILog/AbsRel/3D EPE before any memory/router refit.
 
 ## Files
 

@@ -6,7 +6,7 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Supported for static revisits.** Global and slot states failed context selectivity, whereas visual local-code transport produced positive utility throughout the expanded train, unseen validation, and final unseen test. On the locked test, the selected bounded system reached +2.088% routed utility over current-only TTT and the top-K oracle reached +3.356%.
+Status: **Partially supported.** Global and slot states failed context selectivity, whereas visual local-code transport produced positive self-supervised utility throughout train, validation, and final test. EXP-010 then showed a significant aligned-AbsRel gain but worse SILog and 3D endpoint error. Local adaptation is reusable for the proxy and one relative-depth metric, not yet for consistent reconstruction quality.
 
 ## H2-P — Predicted geometry as the update carrier
 
@@ -24,13 +24,13 @@ Status: **Rejected as a primary input.** No-alignment observable routing general
 
 Current/source descriptors, current-only loss changes, update statistics, and transport evidence predict the future utility of a past local correction without accessing future frames online.
 
-Status: **Supported.** The source-entity-safe leave-one-location-out transport-descriptor address had positive utility association in every held location and beat matched random retrieval. The frozen address/router then transferred to validation and a terminal 22-component test. Query/future quantities were used only for offline labels and evaluation.
+Status: **Partially supported.** The source-entity-safe address predicted the self-supervised future-loss label and transferred to validation/test without query leakage. In EXP-010 its score was negatively associated with LiDAR metric improvements, so observability of actual reconstruction utility is not established.
 
 ## H4-U — Learnable utility addressing and routing
 
 A trainable candidate/current utility model can retrieve and apply more useful adaptation than identity, appearance/place similarity, current-loss heuristics, and matched random addressing.
 
-Status: **Supported for ranking and bounded application.** The exact 64-D utility-MIPS address plus fixed utility router achieved +2.088% on the locked test versus +1.602% for same-bank random addressing. The paired 22-component difference was +0.475 percentage points with 95% CI [+0.086, +0.924]. The router rejected some candidates but still produced 3.85% deadband harm, so perfect safety is not supported.
+Status: **Partially supported for proxy ranking.** The exact utility-MIPS address plus fixed router beat same-bank random addressing on the registered self-supervised utility. EXP-010 found significant aligned-AbsRel improvement but worse SILog and 3D endpoint error, and router scores were negatively correlated with those metric gains. Broad geometry-utility routing is therefore open.
 
 ## H4-R — Learnable negative-transfer risk
 
@@ -42,7 +42,7 @@ Status: **Rejected for the tested classifier.** Neural risk AUROC was nontrivial
 
 A causal, capacity-bounded memory can retain most of an unbounded utility-addressed bank's revisit benefit.
 
-Status: **Supported at the EXP-009 static-benchmark scale; partially supported as a general continual-learning claim.** Reservoir-64 retained 100.98% of unbounded routed utility on the locked test and beat matched random addressing with a positive component interval. However, reservoir exceeded FIFO by only +0.020 percentage points and its CI crossed zero. Capacity 64 was selected on validation and is not universal; learned history eviction and generic DINO place consolidation were rejected.
+Status: **Partially supported for proxy retention.** Reservoir-64 retained 100.98% of unbounded self-supervised utility and beat matched random addressing, but did not beat FIFO significantly. EXP-010 did not establish consistent metric-geometry improvement. Capacity 64 is benchmark-selected; learned history eviction and DINO place consolidation remain rejected.
 
 ## H6 — Extension to dynamic 4D
 

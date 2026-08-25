@@ -50,13 +50,13 @@ The final compact result is `revisit3d/results/EXP-009/stage16_final_locked_test
 
 ## Hypothesis status
 
-- H1 local reusable adaptation: **supported for static unseen revisits**.
+- H1 local reusable adaptation: **supported for proxy utility and aligned AbsRel, but not yet for consistent metric geometry**.
 - H2-P predicted geometry carrier: **rejected**.
 - H2-E predicted geometry primary router evidence: **rejected**.
-- H3 online utility observability: **supported**.
-- H4-U learned utility addressing/routing: **supported for ranking and bounded application**; perfect negative-transfer rejection is not supported.
+- H3 online utility observability: **supported for the self-supervised future-loss target; metric-geometry observability is not supported**.
+- H4-U learned utility addressing/routing: **supported for proxy ranking and aligned AbsRel only**; broad geometry utility and perfect negative-transfer rejection are not supported.
 - H4-R separate learned risk classifier: **rejected in its current form**.
-- H5 continual local-code consolidation: **supported for a benchmark-selected capacity-64 bounded bank; partially supported as a general CL mechanism** because reservoir does not significantly beat FIFO and capacity is not universal.
+- H5 continual local-code consolidation: **supported only for bounded retention of proxy utility; open for consistent metric geometry**.
 - H6 dynamic 4D extension: **open**.
 
 ## Experiment status
@@ -75,11 +75,13 @@ The final compact result is `revisit3d/results/EXP-009/stage16_final_locked_test
 
 The demonstrated endpoint is a static nuScenes revisit benchmark using normalized future query-loss utility from frozen foundation geometry/tracking outputs. It is not yet an end-to-end claim for metric point-cloud accuracy, camera-pose correction, dynamic point tracking, arbitrary environments, or indefinite streams. One test component remains harmful, reservoir is not statistically superior to FIFO at capacity 64, and memory/query computation and wall-clock scaling still require a systems audit.
 
-The next milestone is **EXP-010**, which must preserve the EXP-009 architecture as the frozen static baseline and extend the evaluation surface rather than tune on EXP-009 test. The priority order is:
+EXP-010 has now shown that the locked method significantly improves aligned AbsRel but worsens SILog and same-ray 3D endpoint error. The proxy-to-geometry bridge therefore failed its registered full gate. The immediate milestone is a train-only objective-health experiment; memory/router expansion is paused until one-step TTT improves all primary geometry metrics together.
 
-1. report absolute depth/point/pose metrics and online latency/memory against no-TTT, current-only TTT, FIFO-64, random address, and unbounded controls on a new development split;
-2. validate a pose-aware objective independently before allowing pose fast state;
-3. add motion-conditioned local atoms for occlusion/reappearance and dynamic point tracking;
+The remaining priority order is:
+
+1. replace the current absolute 3D track residual with a single symmetric frozen-track reprojection candidate and select the simplest healthy one-step objective on train only;
+2. if healthy, refit the minimal atom/utility retrieval on train and run one locked validation before any new external test;
+3. report absolute depth/point metrics and online latency/memory against no-TTT, current-only TTT, random address, and bounded/unbounded controls;
 4. evaluate on a second dataset with a newly frozen component-disjoint protocol.
 
 No EXP-009 test outcome may be used for further model selection.

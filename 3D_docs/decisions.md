@@ -464,3 +464,12 @@ Status: Accepted before EXP-010 execution
 The first publication target is one compact static-revisit paper, not a joint depth/pose/tracking/4D architecture. The primary method consists of a local plasticity atom and one coarse-to-fine utility-retrieval mechanism; fixed-capacity reservoir storage is an implementation constraint. DINO retrieval, predicted-geometry transport, neural risk heads, learned eviction, pose adaptation, extra TTT steps, and dynamic state are excluded. The generic phrases “TTT memory” and “retrievable gradients” are not novelty claims because tttLRM/ZipMap/Mem3R and ReGrad create direct prior-art collisions. The defensible contribution is spatially transported local adaptation addressed by causal future geometry utility.
 
 EXP-010 first tests whether the already locked method improves sparse-LiDAR geometry. This secondary endpoint may change the paper claim but may not change any EXP-009 weight, threshold, residual, address, K, or capacity. A later train/validation-only refit must simplify feasibility-stage meta-losses before the final paper model is accepted.
+
+## D067 — Stop memory expansion after the absolute-geometry bridge fails
+
+Date: 2026-08-25
+Status: Accepted after EXP-010 Stage A
+
+The frozen full model significantly improved per-view aligned AbsRel over current-only TTT, but worsened SILog, aligned RMSE, and same-ray 3D endpoint error. The registered absolute-geometry gate therefore failed. This prevents a broad reconstruction or point-cloud claim and pauses random/FIFO/router expansion: more memory experiments cannot repair a misaligned online/meta objective.
+
+The next experiment must remain train-only and simplify rather than enlarge the method. It will compare the existing metric-space 3D track consistency objective with a single symmetric track-reprojection objective and a small one-step-size sweep. No additional online loss is authorized. Only an objective that improves SILog, aligned AbsRel, and 3D endpoint error together may trigger atom/router retraining. EXP-009 test remains closed to tuning.
