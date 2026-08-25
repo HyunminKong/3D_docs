@@ -30,6 +30,16 @@ class MinimalEpisode:
     utility: Tensor
 
 
+@dataclass
+class UtilitySelectedEpisode:
+    outer_loss: Tensor
+    base_query_loss: Tensor
+    current_query_loss: Tensor
+    candidate_query_losses: Tensor
+    utilities: Tensor
+    selected_index: int
+
+
 def track_objective(
     head: SpatialPlasticityHead,
     segment: CachedAtomSegment,
@@ -160,7 +170,45 @@ def run_minimal_episode(
     )
 
 
+def run_utility_selected_episode(
+    head: SpatialPlasticityHead,
+    sources: list[CachedAtomSegment],
+    current: CachedAtomSegment,
+    query: CachedAtomSegment,
+    *,
+    step_size: float,
+    reuse_strength: float,
+) -> UtilitySelectedEpisode:
+    """Use future utility to choose a meta-training target, never an online input."""
+    if not sources:
+        raise ValueError("at least one candidate source is required")
+    state = prepare_current(head, current, query, step_size=step_size)
+    candidate_losses = torch.stack([
+        reuse_query_loss(
+            head, source, current, query, state,
+            step_size=step_size, reuse_strength=reuse_strength,
+        ) for source in sources
+    ])
+    selected_index = int(candidate_losses.detach().argmin())
+    denominator = state.base_query_loss.detach().abs().clamp_min(1e-6)
+    outer = 0.5 * (
+        state.current_query_loss + candidate_losses[selected_index]
+    ) / denominator
+    utilities = (
+        state.current_query_loss.detach() - candidate_losses.detach()
+    ) / state.current_query_loss.detach().abs().clamp_min(1e-6)
+    return UtilitySelectedEpisode(
+        outer_loss=outer,
+        base_query_loss=state.base_query_loss,
+        current_query_loss=state.current_query_loss,
+        candidate_query_losses=candidate_losses,
+        utilities=utilities,
+        selected_index=selected_index,
+    )
+
+
 __all__ = [
-    "MinimalCurrentState", "MinimalEpisode", "adapt_minimal", "future_readout",
+    "MinimalCurrentState", "MinimalEpisode", "UtilitySelectedEpisode", "adapt_minimal", "future_readout",
     "prepare_current", "reuse_query_loss", "run_minimal_episode", "track_objective",
+    "run_utility_selected_episode",
 ]

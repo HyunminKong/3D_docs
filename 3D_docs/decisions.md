@@ -500,3 +500,12 @@ Status: Accepted before EXP-012 Stage 0 execution
 The paper candidate freezes the train-PCA visual transport key and trains only the 157,121-parameter local-code decoder. Its entire meta-objective is the equal average of current-only and matched-reuse future 3D-track loss. Five feasibility terms—key contrastive, harmful-code neutralization, code centering, depth smoothness, and code norm—are removed. Three training epochs are fixed without checkpoint selection.
 
 Evaluation is five-fold over the immutable 25 physical overlap-component IDs. The minimal atom must preserve current TTT, exceed 0.5% matched reuse utility with at most 20% harm, and beat the distant within-episode source with a positive component-bootstrap lower bound. No memory scorer is fitted unless this gate passes.
+
+## D071 — Reject matched identity, retain one utility-selected meta-objective
+
+Date: 2026-08-25
+Status: Accepted after EXP-012 Stage 0A and before Stage 0B
+
+Stage 0A improved current future loss but failed both reuse gates: matched utility was +0.270%, distant utility was +0.312%, and their component interval crossed zero. This is not decoder collapse; it falsifies the assumption that metadata-matched episode identity supplies the correct positive adaptation.
+
+Stage 0B changes only the offline discrete target selection. It evaluates five train-only source codes and minimizes the future loss of the best one, averaged equally with current-only future loss. Architecture, single 3D-track loss, `eta=0.0125`, `alpha=0.10`, fixed PCA key, optimizer, and three epochs remain unchanged. No auxiliary loss or new head is introduced. The Stage-0A result is immutable and retained.

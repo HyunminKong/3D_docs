@@ -1,0 +1,2595 @@
+{
+  "experiment": "EXP-012",
+  "stage": "minimal_atom_crossfit",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "summary": {
+    "rows": 225,
+    "components": 25,
+    "current_to_base": 0.8304276128097072,
+    "matched_utility": 0.0027004451934866057,
+    "distant_utility": 0.003122106621682463,
+    "matched_harmful_rate": 0.17777777777777778
+  },
+  "matched_minus_distant": {
+    "direction": "matched_minus_distant",
+    "components": 25,
+    "mean": -0.0004216614281958568,
+    "ci95": [
+      -0.001279626481062027,
+      0.0003984994034875197
+    ]
+  },
+  "gate": {
+    "checks": {
+      "current_improves_future_loss": true,
+      "matched_utility": false,
+      "matched_harm": true,
+      "matched_beats_distant": false
+    },
+    "passed": false
+  },
+  "oof_rows": [
+    {
+      "index": 10,
+      "episode": "scene-0065__scene-0444",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0000983476638794,
+      "matched_utility": 0.008931487798690796,
+      "distant_utility": 0.0024175657890737057,
+      "matched_harmful": false
+    },
+    {
+      "index": 11,
+      "episode": "scene-0067__scene-0255",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9205566644668579,
+      "matched_utility": 0.002125597558915615,
+      "distant_utility": 0.0011095504742115736,
+      "matched_harmful": false
+    },
+    {
+      "index": 12,
+      "episode": "scene-0068__scene-0454",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.003727674484253,
+      "matched_utility": 0.001296545029617846,
+      "distant_utility": 0.0022676028311252594,
+      "matched_harmful": false
+    },
+    {
+      "index": 13,
+      "episode": "scene-0070__scene-0207",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.3961446285247803,
+      "matched_utility": -0.012326587922871113,
+      "distant_utility": 0.0009148437529802322,
+      "matched_harmful": true
+    },
+    {
+      "index": 14,
+      "episode": "scene-0072__scene-0451",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9223920702934265,
+      "matched_utility": 0.0013194751227274537,
+      "distant_utility": 0.0014658402651548386,
+      "matched_harmful": false
+    },
+    {
+      "index": 15,
+      "episode": "scene-0075__scene-0163",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7891151905059814,
+      "matched_utility": 0.004973883740603924,
+      "distant_utility": 0.004202255047857761,
+      "matched_harmful": false
+    },
+    {
+      "index": 16,
+      "episode": "scene-0093__scene-0462",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9720116853713989,
+      "matched_utility": 0.0033375206403434277,
+      "distant_utility": 0.003137309104204178,
+      "matched_harmful": false
+    },
+    {
+      "index": 17,
+      "episode": "scene-0093__scene-0588",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9869431257247925,
+      "matched_utility": 0.0010793255642056465,
+      "distant_utility": -0.00045009588939137757,
+      "matched_harmful": false
+    },
+    {
+      "index": 18,
+      "episode": "scene-0093__scene-0669",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7765335440635681,
+      "matched_utility": 0.007874719798564911,
+      "distant_utility": 0.0025921405758708715,
+      "matched_harmful": false
+    },
+    {
+      "index": 19,
+      "episode": "scene-0096__scene-0227",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1739040613174438,
+      "matched_utility": 0.0030265972018241882,
+      "distant_utility": -0.0003816610260400921,
+      "matched_harmful": false
+    },
+    {
+      "index": 20,
+      "episode": "scene-0096__scene-0287",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9031152129173279,
+      "matched_utility": 0.0013139186194166541,
+      "distant_utility": 0.0021994123235344887,
+      "matched_harmful": false
+    },
+    {
+      "index": 21,
+      "episode": "scene-0099__scene-0258",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.970088005065918,
+      "matched_utility": -0.0015292386524379253,
+      "distant_utility": -0.0021648253314197063,
+      "matched_harmful": true
+    },
+    {
+      "index": 22,
+      "episode": "scene-0105__scene-0728",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9557152390480042,
+      "matched_utility": 0.005098723340779543,
+      "distant_utility": 0.0026696387212723494,
+      "matched_harmful": false
+    },
+    {
+      "index": 23,
+      "episode": "scene-0106__scene-0253",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9346530437469482,
+      "matched_utility": 0.0027077989652752876,
+      "distant_utility": 0.0029644982423633337,
+      "matched_harmful": false
+    },
+    {
+      "index": 24,
+      "episode": "scene-0106__scene-0303",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8370697498321533,
+      "matched_utility": 0.001330000115558505,
+      "distant_utility": -0.00031509483233094215,
+      "matched_harmful": false
+    },
+    {
+      "index": 25,
+      "episode": "scene-0107__scene-0876",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9520435929298401,
+      "matched_utility": 0.006852518767118454,
+      "distant_utility": 0.003498505800962448,
+      "matched_harmful": false
+    },
+    {
+      "index": 51,
+      "episode": "scene-0164__scene-0328",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0019426345825195,
+      "matched_utility": 0.0021765532437711954,
+      "distant_utility": 0.00140389206353575,
+      "matched_harmful": false
+    },
+    {
+      "index": 67,
+      "episode": "scene-0202__scene-0654",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1544935703277588,
+      "matched_utility": 0.0008296958403661847,
+      "distant_utility": 0.0037956738378852606,
+      "matched_harmful": false
+    },
+    {
+      "index": 68,
+      "episode": "scene-0208__scene-0659",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8503175973892212,
+      "matched_utility": 0.0007504404056817293,
+      "distant_utility": 0.00020899031369481236,
+      "matched_harmful": false
+    },
+    {
+      "index": 69,
+      "episode": "scene-0212__scene-0450",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9131994247436523,
+      "matched_utility": -0.010456179268658161,
+      "distant_utility": -0.0005612667882815003,
+      "matched_harmful": true
+    },
+    {
+      "index": 70,
+      "episode": "scene-0213__scene-0452",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8328620195388794,
+      "matched_utility": -0.0027550228405743837,
+      "distant_utility": -0.0020112984348088503,
+      "matched_harmful": true
+    },
+    {
+      "index": 71,
+      "episode": "scene-0222__scene-0696",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1727045774459839,
+      "matched_utility": -0.0032196827232837677,
+      "distant_utility": -0.006706420332193375,
+      "matched_harmful": true
+    },
+    {
+      "index": 72,
+      "episode": "scene-0225__scene-0242",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9008961319923401,
+      "matched_utility": 0.0017378469929099083,
+      "distant_utility": 0.0027643037028610706,
+      "matched_harmful": false
+    },
+    {
+      "index": 73,
+      "episode": "scene-0227__scene-0704",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9920563101768494,
+      "matched_utility": 0.0018040164140984416,
+      "distant_utility": 0.0010796054266393185,
+      "matched_harmful": false
+    },
+    {
+      "index": 74,
+      "episode": "scene-0228__scene-0290",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0342987775802612,
+      "matched_utility": 0.0007548039429821074,
+      "distant_utility": 0.0011354676680639386,
+      "matched_harmful": false
+    },
+    {
+      "index": 75,
+      "episode": "scene-0235__scene-0475",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7808781862258911,
+      "matched_utility": 0.0019091174472123384,
+      "distant_utility": -0.0013289988273754716,
+      "matched_harmful": false
+    },
+    {
+      "index": 76,
+      "episode": "scene-0245__scene-0258",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7777095437049866,
+      "matched_utility": -0.00012553698616102338,
+      "distant_utility": 0.004196683410555124,
+      "matched_harmful": true
+    },
+    {
+      "index": 77,
+      "episode": "scene-0245__scene-0290",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.735108494758606,
+      "matched_utility": 0.001981638604775071,
+      "distant_utility": 0.0035728493239730597,
+      "matched_harmful": false
+    },
+    {
+      "index": 78,
+      "episode": "scene-0253__scene-0302",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8167200088500977,
+      "matched_utility": 0.003219438483938575,
+      "distant_utility": 0.001940208487212658,
+      "matched_harmful": false
+    },
+    {
+      "index": 79,
+      "episode": "scene-0255__scene-0458",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6651301383972168,
+      "matched_utility": 0.005777251906692982,
+      "distant_utility": 0.0046628061681985855,
+      "matched_harmful": false
+    },
+    {
+      "index": 80,
+      "episode": "scene-0258__scene-0676",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.97493577003479,
+      "matched_utility": 0.0008991203503683209,
+      "distant_utility": 0.00600327318534255,
+      "matched_harmful": false
+    },
+    {
+      "index": 81,
+      "episode": "scene-0263__scene-0452",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8400089740753174,
+      "matched_utility": -0.019788986071944237,
+      "distant_utility": -0.015630017966032028,
+      "matched_harmful": true
+    },
+    {
+      "index": 88,
+      "episode": "scene-0284__scene-0698",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8520236611366272,
+      "matched_utility": -0.0005501170526258647,
+      "distant_utility": 0.0014905617572367191,
+      "matched_harmful": true
+    },
+    {
+      "index": 89,
+      "episode": "scene-0289__scene-0469",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.0975738763809204,
+      "matched_utility": 0.0067622000351548195,
+      "distant_utility": 0.003973597660660744,
+      "matched_harmful": false
+    },
+    {
+      "index": 90,
+      "episode": "scene-0291__scene-0471",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6507542729377747,
+      "matched_utility": 0.00724913040176034,
+      "distant_utility": 0.006419068202376366,
+      "matched_harmful": false
+    },
+    {
+      "index": 91,
+      "episode": "scene-0294__scene-0295",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7434633374214172,
+      "matched_utility": 0.0029760594479739666,
+      "distant_utility": 0.0032211479265242815,
+      "matched_harmful": false
+    },
+    {
+      "index": 92,
+      "episode": "scene-0294__scene-0296",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9982976317405701,
+      "matched_utility": 0.00015846453607082367,
+      "distant_utility": 0.005388234276324511,
+      "matched_harmful": false
+    },
+    {
+      "index": 93,
+      "episode": "scene-0294__scene-0715",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8271602988243103,
+      "matched_utility": 0.002164286794140935,
+      "distant_utility": 0.005113145336508751,
+      "matched_harmful": false
+    },
+    {
+      "index": 94,
+      "episode": "scene-0295__scene-0296",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8472427725791931,
+      "matched_utility": 0.000859874184243381,
+      "distant_utility": -0.0001516971824457869,
+      "matched_harmful": false
+    },
+    {
+      "index": 95,
+      "episode": "scene-0300__scene-0478",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6002715229988098,
+      "matched_utility": 0.004340846557170153,
+      "distant_utility": 0.0016557254130020738,
+      "matched_harmful": false
+    },
+    {
+      "index": 96,
+      "episode": "scene-0301__scene-0872",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9188634753227234,
+      "matched_utility": 0.0009104582131840289,
+      "distant_utility": 0.002541580470278859,
+      "matched_harmful": false
+    },
+    {
+      "index": 101,
+      "episode": "scene-0321__scene-0467",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8395227193832397,
+      "matched_utility": 0.00042543691233731806,
+      "distant_utility": 0.005049276631325483,
+      "matched_harmful": false
+    },
+    {
+      "index": 102,
+      "episode": "scene-0331__scene-0523",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8840103149414062,
+      "matched_utility": 0.0021890830248594284,
+      "distant_utility": 0.004264937713742256,
+      "matched_harmful": false
+    },
+    {
+      "index": 117,
+      "episode": "scene-0389__scene-0643",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8297397494316101,
+      "matched_utility": -0.0028639885131269693,
+      "distant_utility": -0.0009727818542160094,
+      "matched_harmful": true
+    },
+    {
+      "index": 149,
+      "episode": "scene-0448__scene-0660",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9388325810432434,
+      "matched_utility": 0.0007932401495054364,
+      "distant_utility": 0.0019826749339699745,
+      "matched_harmful": false
+    },
+    {
+      "index": 150,
+      "episode": "scene-0454__scene-0455",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7494124174118042,
+      "matched_utility": -0.0004438037285581231,
+      "distant_utility": 0.0022165225818753242,
+      "matched_harmful": true
+    },
+    {
+      "index": 151,
+      "episode": "scene-0455__scene-0456",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6882479786872864,
+      "matched_utility": 0.0010125639382749796,
+      "distant_utility": 0.0034487133380025625,
+      "matched_harmful": false
+    },
+    {
+      "index": 152,
+      "episode": "scene-0461__scene-0586",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.7449533939361572,
+      "matched_utility": 0.0027625698130577803,
+      "distant_utility": 0.002593105426058173,
+      "matched_harmful": false
+    },
+    {
+      "index": 153,
+      "episode": "scene-0462__scene-0463",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9335145354270935,
+      "matched_utility": 0.006428543943911791,
+      "distant_utility": 0.004921295680105686,
+      "matched_harmful": false
+    },
+    {
+      "index": 154,
+      "episode": "scene-0463__scene-0672",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9013749957084656,
+      "matched_utility": 0.00399734964594245,
+      "distant_utility": 0.002420556964352727,
+      "matched_harmful": false
+    },
+    {
+      "index": 155,
+      "episode": "scene-0469__scene-0707",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8393268585205078,
+      "matched_utility": 0.0014825931284576654,
+      "distant_utility": 0.0012838926631957293,
+      "matched_harmful": false
+    },
+    {
+      "index": 156,
+      "episode": "scene-0474__scene-0683",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.827739417552948,
+      "matched_utility": 0.0007626608130522072,
+      "distant_utility": -1.0897478205151856e-05,
+      "matched_harmful": false
+    },
+    {
+      "index": 157,
+      "episode": "scene-0506__scene-0520",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6610389947891235,
+      "matched_utility": 0.00472357077524066,
+      "distant_utility": 0.0024784833658486605,
+      "matched_harmful": false
+    },
+    {
+      "index": 158,
+      "episode": "scene-0511__scene-0512",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.6812666654586792,
+      "matched_utility": 0.004521589260548353,
+      "distant_utility": 0.0034260842949151993,
+      "matched_harmful": false
+    },
+    {
+      "index": 159,
+      "episode": "scene-0586__scene-0587",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.1313453912734985,
+      "matched_utility": -0.002258294029161334,
+      "distant_utility": 0.00019602564861997962,
+      "matched_harmful": true
+    },
+    {
+      "index": 160,
+      "episode": "scene-0586__scene-0700",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8416860103607178,
+      "matched_utility": 0.004006329923868179,
+      "distant_utility": 0.006017503794282675,
+      "matched_harmful": false
+    },
+    {
+      "index": 161,
+      "episode": "scene-0591__scene-0783",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9216251969337463,
+      "matched_utility": 0.00503692589700222,
+      "distant_utility": 0.0003812418144661933,
+      "matched_harmful": false
+    },
+    {
+      "index": 162,
+      "episode": "scene-0639__scene-0909",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8476511836051941,
+      "matched_utility": 0.0025417753495275974,
+      "distant_utility": 0.000418883835664019,
+      "matched_harmful": false
+    },
+    {
+      "index": 163,
+      "episode": "scene-0643__scene-0911",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.5597302317619324,
+      "matched_utility": 0.013074081391096115,
+      "distant_utility": 0.017016051337122917,
+      "matched_harmful": false
+    },
+    {
+      "index": 164,
+      "episode": "scene-0666__scene-0697",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8335512280464172,
+      "matched_utility": 0.003984973765909672,
+      "distant_utility": 0.005259673576802015,
+      "matched_harmful": false
+    },
+    {
+      "index": 165,
+      "episode": "scene-0677__scene-0678",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.9391383528709412,
+      "matched_utility": 0.0022013920824974775,
+      "distant_utility": 0.00011447191354818642,
+      "matched_harmful": false
+    },
+    {
+      "index": 166,
+      "episode": "scene-0688__scene-0898",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8045859336853027,
+      "matched_utility": -0.0006493600085377693,
+      "distant_utility": -0.0010382793843746185,
+      "matched_harmful": true
+    },
+    {
+      "index": 167,
+      "episode": "scene-0701__scene-0703",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 0.8062885999679565,
+      "matched_utility": 0.0007665663142688572,
+      "distant_utility": -0.0006171169807203114,
+      "matched_harmful": false
+    },
+    {
+      "index": 182,
+      "episode": "scene-0871__scene-0898",
+      "group": "component-0",
+      "location": "boston-seaport",
+      "current_to_base": 1.096073865890503,
+      "matched_utility": -6.29759524599649e-05,
+      "distant_utility": 0.0027697933837771416,
+      "matched_harmful": true
+    },
+    {
+      "index": 52,
+      "episode": "scene-0177__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8915446400642395,
+      "matched_utility": 0.008314438164234161,
+      "distant_utility": 0.0012249398278072476,
+      "matched_harmful": false
+    },
+    {
+      "index": 53,
+      "episode": "scene-0177__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8437360525131226,
+      "matched_utility": 0.004985010251402855,
+      "distant_utility": 0.0023102795239537954,
+      "matched_harmful": false
+    },
+    {
+      "index": 54,
+      "episode": "scene-0179__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9801846742630005,
+      "matched_utility": 0.0024681403301656246,
+      "distant_utility": 0.0005443125264719129,
+      "matched_harmful": false
+    },
+    {
+      "index": 55,
+      "episode": "scene-0180__scene-0420",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8957803845405579,
+      "matched_utility": 0.001100455061532557,
+      "distant_utility": 8.710140537004918e-05,
+      "matched_harmful": false
+    },
+    {
+      "index": 56,
+      "episode": "scene-0180__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9539723992347717,
+      "matched_utility": 0.002414166694507003,
+      "distant_utility": 0.0004342380852904171,
+      "matched_harmful": false
+    },
+    {
+      "index": 57,
+      "episode": "scene-0181__scene-0421",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.931280791759491,
+      "matched_utility": 0.0022548444103449583,
+      "distant_utility": 0.0021796899382025003,
+      "matched_harmful": false
+    },
+    {
+      "index": 58,
+      "episode": "scene-0181__scene-0422",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8996453881263733,
+      "matched_utility": 0.0015214674640446901,
+      "distant_utility": 0.004832778126001358,
+      "matched_harmful": false
+    },
+    {
+      "index": 59,
+      "episode": "scene-0181__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8086383938789368,
+      "matched_utility": 0.008096026256680489,
+      "distant_utility": 0.0013760722940787673,
+      "matched_harmful": false
+    },
+    {
+      "index": 60,
+      "episode": "scene-0181__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.0711545944213867,
+      "matched_utility": -0.004308263771235943,
+      "distant_utility": 0.000991737237200141,
+      "matched_harmful": true
+    },
+    {
+      "index": 61,
+      "episode": "scene-0182__scene-0315",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7259076237678528,
+      "matched_utility": 0.0007858718745410442,
+      "distant_utility": 0.0016602273099124432,
+      "matched_harmful": false
+    },
+    {
+      "index": 62,
+      "episode": "scene-0182__scene-0423",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8001764416694641,
+      "matched_utility": 0.0002484559372533113,
+      "distant_utility": 0.003244649386033416,
+      "matched_harmful": false
+    },
+    {
+      "index": 63,
+      "episode": "scene-0182__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7008096575737,
+      "matched_utility": 0.006792410742491484,
+      "distant_utility": 0.0009924903279170394,
+      "matched_harmful": false
+    },
+    {
+      "index": 64,
+      "episode": "scene-0182__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7816754579544067,
+      "matched_utility": 0.014722091145813465,
+      "distant_utility": 0.0059121148660779,
+      "matched_harmful": false
+    },
+    {
+      "index": 65,
+      "episode": "scene-0182__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7346429824829102,
+      "matched_utility": 0.015736524015665054,
+      "distant_utility": 0.004095420707017183,
+      "matched_harmful": false
+    },
+    {
+      "index": 97,
+      "episode": "scene-0315__scene-0423",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8001764416694641,
+      "matched_utility": 0.001754983444698155,
+      "distant_utility": 0.003659204114228487,
+      "matched_harmful": false
+    },
+    {
+      "index": 98,
+      "episode": "scene-0315__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8739888072013855,
+      "matched_utility": -0.012551059015095234,
+      "distant_utility": -0.005351871717721224,
+      "matched_harmful": true
+    },
+    {
+      "index": 99,
+      "episode": "scene-0315__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8746109008789062,
+      "matched_utility": 0.006819270551204681,
+      "distant_utility": 0.005295263137668371,
+      "matched_harmful": false
+    },
+    {
+      "index": 100,
+      "episode": "scene-0315__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7346429824829102,
+      "matched_utility": 0.012108495458960533,
+      "distant_utility": 0.00927720032632351,
+      "matched_harmful": false
+    },
+    {
+      "index": 130,
+      "episode": "scene-0420__scene-0421",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.0026050806045532,
+      "matched_utility": 0.002882531611248851,
+      "distant_utility": 0.0033347385469824076,
+      "matched_harmful": false
+    },
+    {
+      "index": 131,
+      "episode": "scene-0420__scene-0916",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7414904236793518,
+      "matched_utility": 0.00019882454944308847,
+      "distant_utility": 0.0003152551071252674,
+      "matched_harmful": false
+    },
+    {
+      "index": 132,
+      "episode": "scene-0421__scene-0422",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9164041876792908,
+      "matched_utility": 0.0027403449639678,
+      "distant_utility": 0.0006834653904661536,
+      "matched_harmful": false
+    },
+    {
+      "index": 133,
+      "episode": "scene-0422__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6465613842010498,
+      "matched_utility": -0.0016413879347965121,
+      "distant_utility": 0.0010149255394935608,
+      "matched_harmful": true
+    },
+    {
+      "index": 134,
+      "episode": "scene-0422__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9267357587814331,
+      "matched_utility": 0.0017965236911550164,
+      "distant_utility": 0.0016947006806731224,
+      "matched_harmful": false
+    },
+    {
+      "index": 135,
+      "episode": "scene-0422__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.689856767654419,
+      "matched_utility": 0.00731470063328743,
+      "distant_utility": 0.0018508435459807515,
+      "matched_harmful": false
+    },
+    {
+      "index": 136,
+      "episode": "scene-0422__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8346104025840759,
+      "matched_utility": 0.000339694059221074,
+      "distant_utility": -0.0007019604090601206,
+      "matched_harmful": false
+    },
+    {
+      "index": 137,
+      "episode": "scene-0423__scene-0424",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.69827800989151,
+      "matched_utility": 0.0077908276580274105,
+      "distant_utility": 0.004394106566905975,
+      "matched_harmful": false
+    },
+    {
+      "index": 138,
+      "episode": "scene-0423__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9252108335494995,
+      "matched_utility": 0.00311415852047503,
+      "distant_utility": 0.002249558689072728,
+      "matched_harmful": false
+    },
+    {
+      "index": 139,
+      "episode": "scene-0423__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6305602192878723,
+      "matched_utility": 0.004723533056676388,
+      "distant_utility": 0.0020348301623016596,
+      "matched_harmful": false
+    },
+    {
+      "index": 140,
+      "episode": "scene-0424__scene-0425",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7676844596862793,
+      "matched_utility": 0.011132223531603813,
+      "distant_utility": 0.005974325351417065,
+      "matched_harmful": false
+    },
+    {
+      "index": 141,
+      "episode": "scene-0424__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8429827094078064,
+      "matched_utility": 0.005180712789297104,
+      "distant_utility": 0.01086274441331625,
+      "matched_harmful": false
+    },
+    {
+      "index": 142,
+      "episode": "scene-0424__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5991097688674927,
+      "matched_utility": 0.009895059280097485,
+      "distant_utility": 0.006206781603395939,
+      "matched_harmful": false
+    },
+    {
+      "index": 143,
+      "episode": "scene-0425__scene-0426",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8532288670539856,
+      "matched_utility": 0.00403120880946517,
+      "distant_utility": 0.004558183252811432,
+      "matched_harmful": false
+    },
+    {
+      "index": 144,
+      "episode": "scene-0425__scene-1005",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8090582489967346,
+      "matched_utility": 0.005412100348621607,
+      "distant_utility": 0.005148619879037142,
+      "matched_harmful": false
+    },
+    {
+      "index": 145,
+      "episode": "scene-0425__scene-1006",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8439211249351501,
+      "matched_utility": 0.005270820576697588,
+      "distant_utility": 0.003926622681319714,
+      "matched_harmful": false
+    },
+    {
+      "index": 146,
+      "episode": "scene-0425__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9713561534881592,
+      "matched_utility": 0.0008234739070758224,
+      "distant_utility": 0.0013663271674886346,
+      "matched_harmful": false
+    },
+    {
+      "index": 147,
+      "episode": "scene-0426__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9739558100700378,
+      "matched_utility": 0.0012788231251761317,
+      "distant_utility": 0.0012583740754052997,
+      "matched_harmful": false
+    },
+    {
+      "index": 170,
+      "episode": "scene-0860__scene-0861",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 1.0721607208251953,
+      "matched_utility": 0.0010421342449262738,
+      "distant_utility": 0.0033587291836738586,
+      "matched_harmful": false
+    },
+    {
+      "index": 171,
+      "episode": "scene-0861__scene-0862",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8927095532417297,
+      "matched_utility": 0.0032926341518759727,
+      "distant_utility": -0.0005542109720408916,
+      "matched_harmful": false
+    },
+    {
+      "index": 172,
+      "episode": "scene-0862__scene-0863",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8549509644508362,
+      "matched_utility": 0.0030828334856778383,
+      "distant_utility": -0.00027208446408621967,
+      "matched_harmful": false
+    },
+    {
+      "index": 173,
+      "episode": "scene-0863__scene-0864",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.632224977016449,
+      "matched_utility": 0.001747460337355733,
+      "distant_utility": 0.0015870580682531,
+      "matched_harmful": false
+    },
+    {
+      "index": 174,
+      "episode": "scene-0863__scene-0926",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.691425621509552,
+      "matched_utility": 0.010946842841804028,
+      "distant_utility": 0.0048897285014390945,
+      "matched_harmful": false
+    },
+    {
+      "index": 175,
+      "episode": "scene-0863__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5444338917732239,
+      "matched_utility": 0.0070262388326227665,
+      "distant_utility": 0.0027153852861374617,
+      "matched_harmful": false
+    },
+    {
+      "index": 176,
+      "episode": "scene-0864__scene-0865",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7760353088378906,
+      "matched_utility": 0.003599877469241619,
+      "distant_utility": 0.004170196130871773,
+      "matched_harmful": false
+    },
+    {
+      "index": 177,
+      "episode": "scene-0864__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7129847407341003,
+      "matched_utility": 0.014458581805229187,
+      "distant_utility": 0.012512972578406334,
+      "matched_harmful": false
+    },
+    {
+      "index": 178,
+      "episode": "scene-0864__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6431652903556824,
+      "matched_utility": 0.00012139928003307432,
+      "distant_utility": 0.002536158077418804,
+      "matched_harmful": false
+    },
+    {
+      "index": 179,
+      "episode": "scene-0865__scene-0917",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8035697340965271,
+      "matched_utility": -0.0015922621823847294,
+      "distant_utility": -0.000970808498095721,
+      "matched_harmful": true
+    },
+    {
+      "index": 180,
+      "episode": "scene-0865__scene-0928",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8948679566383362,
+      "matched_utility": 0.0024578438606113195,
+      "distant_utility": 0.0011561039136722684,
+      "matched_harmful": false
+    },
+    {
+      "index": 181,
+      "episode": "scene-0865__scene-0929",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7710646390914917,
+      "matched_utility": 0.005205186549574137,
+      "distant_utility": 0.00788175594061613,
+      "matched_harmful": false
+    },
+    {
+      "index": 183,
+      "episode": "scene-0917__scene-1004",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6872638463973999,
+      "matched_utility": 0.0020754237193614244,
+      "distant_utility": -0.0013942712685093284,
+      "matched_harmful": false
+    },
+    {
+      "index": 184,
+      "episode": "scene-0926__scene-0927",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.5380192399024963,
+      "matched_utility": 0.003359142690896988,
+      "distant_utility": 0.001582360127940774,
+      "matched_harmful": false
+    },
+    {
+      "index": 193,
+      "episode": "scene-1005__scene-1006",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.8439211249351501,
+      "matched_utility": 0.00233835494145751,
+      "distant_utility": 0.00528308842331171,
+      "matched_harmful": false
+    },
+    {
+      "index": 194,
+      "episode": "scene-1006__scene-1007",
+      "group": "component-1",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7896488308906555,
+      "matched_utility": 0.004622627515345812,
+      "distant_utility": 0.005316687282174826,
+      "matched_harmful": false
+    },
+    {
+      "index": 0,
+      "episode": "scene-0043__scene-0046",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9587904214859009,
+      "matched_utility": -0.0013488145777955651,
+      "distant_utility": -0.0011390479048714042,
+      "matched_harmful": true
+    },
+    {
+      "index": 1,
+      "episode": "scene-0043__scene-0135",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7700112462043762,
+      "matched_utility": 0.0010521411895751953,
+      "distant_utility": 0.0022841054014861584,
+      "matched_harmful": false
+    },
+    {
+      "index": 2,
+      "episode": "scene-0043__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8124725818634033,
+      "matched_utility": 0.0048830872401595116,
+      "distant_utility": -0.00026059168158099055,
+      "matched_harmful": false
+    },
+    {
+      "index": 4,
+      "episode": "scene-0045__scene-0134",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8266345858573914,
+      "matched_utility": -0.0009872359223663807,
+      "distant_utility": 0.00185111234895885,
+      "matched_harmful": true
+    },
+    {
+      "index": 5,
+      "episode": "scene-0046__scene-0135",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8099142909049988,
+      "matched_utility": 0.006383202038705349,
+      "distant_utility": -0.0010243867291137576,
+      "matched_harmful": false
+    },
+    {
+      "index": 6,
+      "episode": "scene-0046__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7078185081481934,
+      "matched_utility": 0.002468596678227186,
+      "distant_utility": -0.002053932985290885,
+      "matched_harmful": false
+    },
+    {
+      "index": 7,
+      "episode": "scene-0046__scene-0151",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9477141499519348,
+      "matched_utility": 0.00015574957069475204,
+      "distant_utility": -0.0002078175311908126,
+      "matched_harmful": false
+    },
+    {
+      "index": 26,
+      "episode": "scene-0120__scene-0133",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8217520713806152,
+      "matched_utility": 0.002828221768140793,
+      "distant_utility": 0.002568942727521062,
+      "matched_harmful": false
+    },
+    {
+      "index": 27,
+      "episode": "scene-0120__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8893988132476807,
+      "matched_utility": 0.0054511334747076035,
+      "distant_utility": 0.003913640510290861,
+      "matched_harmful": false
+    },
+    {
+      "index": 29,
+      "episode": "scene-0125__scene-0370",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5895360112190247,
+      "matched_utility": 0.021107960492372513,
+      "distant_utility": 0.005195174366235733,
+      "matched_harmful": false
+    },
+    {
+      "index": 30,
+      "episode": "scene-0125__scene-0371",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7501397132873535,
+      "matched_utility": 0.01801142282783985,
+      "distant_utility": 0.029380090534687042,
+      "matched_harmful": false
+    },
+    {
+      "index": 31,
+      "episode": "scene-0126__scene-0277",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.716944694519043,
+      "matched_utility": 0.0049187554977834225,
+      "distant_utility": 0.015471147373318672,
+      "matched_harmful": false
+    },
+    {
+      "index": 32,
+      "episode": "scene-0126__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7484315037727356,
+      "matched_utility": 0.005605556070804596,
+      "distant_utility": 0.002087024739012122,
+      "matched_harmful": false
+    },
+    {
+      "index": 33,
+      "episode": "scene-0127__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0432977676391602,
+      "matched_utility": -0.0002883829001802951,
+      "distant_utility": -0.0020487101282924414,
+      "matched_harmful": true
+    },
+    {
+      "index": 34,
+      "episode": "scene-0127__scene-0969",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9342969059944153,
+      "matched_utility": 0.0001945229305420071,
+      "distant_utility": 0.00026574759976938367,
+      "matched_harmful": false
+    },
+    {
+      "index": 35,
+      "episode": "scene-0132__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.974859893321991,
+      "matched_utility": 0.0016793814720585942,
+      "distant_utility": 0.0005090273334644735,
+      "matched_harmful": false
+    },
+    {
+      "index": 36,
+      "episode": "scene-0133__scene-0382",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0716814994812012,
+      "matched_utility": 7.268288027262315e-05,
+      "distant_utility": 0.0020173878874629736,
+      "matched_harmful": false
+    },
+    {
+      "index": 37,
+      "episode": "scene-0134__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7125183939933777,
+      "matched_utility": -0.012188166379928589,
+      "distant_utility": -0.0027464141603559256,
+      "matched_harmful": true
+    },
+    {
+      "index": 38,
+      "episode": "scene-0135__scene-0150",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6999952793121338,
+      "matched_utility": 0.002502418588846922,
+      "distant_utility": 0.001526431180536747,
+      "matched_harmful": false
+    },
+    {
+      "index": 39,
+      "episode": "scene-0135__scene-0344",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9588789343833923,
+      "matched_utility": 0.0013602592516690493,
+      "distant_utility": 0.0033994573168456554,
+      "matched_harmful": false
+    },
+    {
+      "index": 40,
+      "episode": "scene-0135__scene-0345",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9218385219573975,
+      "matched_utility": 0.00023202120792120695,
+      "distant_utility": 0.004401789512485266,
+      "matched_harmful": false
+    },
+    {
+      "index": 41,
+      "episode": "scene-0135__scene-0363",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8701077699661255,
+      "matched_utility": 0.005625395569950342,
+      "distant_utility": 0.0017168930498883128,
+      "matched_harmful": false
+    },
+    {
+      "index": 43,
+      "episode": "scene-0149__scene-0376",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6818326115608215,
+      "matched_utility": 0.01064754743129015,
+      "distant_utility": 0.0026751698460429907,
+      "matched_harmful": false
+    },
+    {
+      "index": 44,
+      "episode": "scene-0150__scene-0363",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7502614259719849,
+      "matched_utility": 0.017798136919736862,
+      "distant_utility": 0.007196531631052494,
+      "matched_harmful": false
+    },
+    {
+      "index": 45,
+      "episode": "scene-0151__scene-0344",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8352615237236023,
+      "matched_utility": -0.0004472319269552827,
+      "distant_utility": 0.0012938084546476603,
+      "matched_harmful": true
+    },
+    {
+      "index": 46,
+      "episode": "scene-0151__scene-0345",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9341583251953125,
+      "matched_utility": 0.0019644920248538256,
+      "distant_utility": 0.0023630771320313215,
+      "matched_harmful": false
+    },
+    {
+      "index": 47,
+      "episode": "scene-0151__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8223796486854553,
+      "matched_utility": 0.001620627474039793,
+      "distant_utility": 0.008180434815585613,
+      "matched_harmful": false
+    },
+    {
+      "index": 83,
+      "episode": "scene-0275__scene-0276",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9884225130081177,
+      "matched_utility": 0.00042641907930374146,
+      "distant_utility": 0.0015798765234649181,
+      "matched_harmful": false
+    },
+    {
+      "index": 84,
+      "episode": "scene-0275__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6389565467834473,
+      "matched_utility": 0.0010376060381531715,
+      "distant_utility": 0.008148588240146637,
+      "matched_harmful": false
+    },
+    {
+      "index": 85,
+      "episode": "scene-0277__scene-0359",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6487936973571777,
+      "matched_utility": 0.01645703986287117,
+      "distant_utility": 0.010374613106250763,
+      "matched_harmful": false
+    },
+    {
+      "index": 86,
+      "episode": "scene-0277__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9881899952888489,
+      "matched_utility": 0.001481482177041471,
+      "distant_utility": 0.0023380210623145103,
+      "matched_harmful": false
+    },
+    {
+      "index": 87,
+      "episode": "scene-0277__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8395155668258667,
+      "matched_utility": 4.340006489655934e-05,
+      "distant_utility": 0.0012680920772254467,
+      "matched_harmful": false
+    },
+    {
+      "index": 107,
+      "episode": "scene-0359__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9881899952888489,
+      "matched_utility": 0.0021570080425590277,
+      "distant_utility": 0.0013262748252600431,
+      "matched_harmful": false
+    },
+    {
+      "index": 108,
+      "episode": "scene-0359__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7329180836677551,
+      "matched_utility": 0.012119689956307411,
+      "distant_utility": 0.008369461633265018,
+      "matched_harmful": false
+    },
+    {
+      "index": 109,
+      "episode": "scene-0365__scene-0966",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8750555515289307,
+      "matched_utility": 0.004632269032299519,
+      "distant_utility": 0.005478102248162031,
+      "matched_harmful": false
+    },
+    {
+      "index": 113,
+      "episode": "scene-0370__scene-0966",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8588892817497253,
+      "matched_utility": 0.0004586914146784693,
+      "distant_utility": 0.0015777903608977795,
+      "matched_harmful": false
+    },
+    {
+      "index": 114,
+      "episode": "scene-0371__scene-0967",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7643658518791199,
+      "matched_utility": 0.006446882616728544,
+      "distant_utility": 0.012490552850067616,
+      "matched_harmful": false
+    },
+    {
+      "index": 115,
+      "episode": "scene-0376__scene-0968",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9722266793251038,
+      "matched_utility": 0.006072325631976128,
+      "distant_utility": 0.005881893448531628,
+      "matched_harmful": false
+    },
+    {
+      "index": 186,
+      "episode": "scene-0968__scene-0969",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.95256507396698,
+      "matched_utility": 0.0006621048669330776,
+      "distant_utility": 0.0006304205162450671,
+      "matched_harmful": false
+    },
+    {
+      "index": 187,
+      "episode": "scene-0968__scene-0984",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9443643689155579,
+      "matched_utility": 0.0010844012722373009,
+      "distant_utility": 0.0007357740541920066,
+      "matched_harmful": false
+    },
+    {
+      "index": 191,
+      "episode": "scene-0981__scene-0982",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9406875967979431,
+      "matched_utility": 0.001159786363132298,
+      "distant_utility": -0.000941164733376354,
+      "matched_harmful": false
+    },
+    {
+      "index": 192,
+      "episode": "scene-0982__scene-0983",
+      "group": "component-8",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6389565467834473,
+      "matched_utility": 0.004655385389924049,
+      "distant_utility": 0.0007756706909276545,
+      "matched_harmful": false
+    },
+    {
+      "index": 8,
+      "episode": "scene-0052__scene-0384",
+      "group": "component-52",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.866320013999939,
+      "matched_utility": 0.01286587119102478,
+      "distant_utility": 0.007352708838880062,
+      "matched_harmful": false
+    },
+    {
+      "index": 42,
+      "episode": "scene-0139__scene-0347",
+      "group": "component-32",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8256682753562927,
+      "matched_utility": -0.004563644994050264,
+      "distant_utility": -0.003208568086847663,
+      "matched_harmful": true
+    },
+    {
+      "index": 48,
+      "episode": "scene-0157__scene-0384",
+      "group": "component-52",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.6670885682106018,
+      "matched_utility": 0.012189914472401142,
+      "distant_utility": 0.008194957859814167,
+      "matched_harmful": false
+    },
+    {
+      "index": 50,
+      "episode": "scene-0160__scene-0269",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7095574140548706,
+      "matched_utility": 0.00205084471963346,
+      "distant_utility": 0.0024707976263016462,
+      "matched_harmful": false
+    },
+    {
+      "index": 82,
+      "episode": "scene-0269__scene-0348",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0065422058105469,
+      "matched_utility": -0.0005836308118887246,
+      "distant_utility": -0.0024417557287961245,
+      "matched_harmful": true
+    },
+    {
+      "index": 103,
+      "episode": "scene-0348__scene-0378",
+      "group": "component-19",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7500400543212891,
+      "matched_utility": 0.0021305119153112173,
+      "distant_utility": 0.0006938304286450148,
+      "matched_harmful": false
+    },
+    {
+      "index": 120,
+      "episode": "scene-0410__scene-1054",
+      "group": "component-49",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6800521016120911,
+      "matched_utility": -0.002400899538770318,
+      "distant_utility": 0.0004651564813684672,
+      "matched_harmful": true
+    },
+    {
+      "index": 148,
+      "episode": "scene-0428__scene-1008",
+      "group": "component-18",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.6285530924797058,
+      "matched_utility": 0.00020790044800378382,
+      "distant_utility": 0.0016957027837634087,
+      "matched_harmful": false
+    },
+    {
+      "index": 168,
+      "episode": "scene-0848__scene-0849",
+      "group": "component-10",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.7079372406005859,
+      "matched_utility": 0.005661786533892155,
+      "distant_utility": 0.005281128454953432,
+      "matched_harmful": false
+    },
+    {
+      "index": 169,
+      "episode": "scene-0858__scene-1015",
+      "group": "component-47",
+      "location": "singapore-queenstown",
+      "current_to_base": 0.9690393805503845,
+      "matched_utility": 0.0019563776440918446,
+      "distant_utility": 0.002103259554132819,
+      "matched_harmful": false
+    },
+    {
+      "index": 200,
+      "episode": "scene-1071__scene-1074",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7519345879554749,
+      "matched_utility": 0.001243283157236874,
+      "distant_utility": 0.017625639215111732,
+      "matched_harmful": false
+    },
+    {
+      "index": 201,
+      "episode": "scene-1071__scene-1075",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7179075479507446,
+      "matched_utility": -0.003877761075273156,
+      "distant_utility": -0.0033804094418883324,
+      "matched_harmful": true
+    },
+    {
+      "index": 202,
+      "episode": "scene-1072__scene-1075",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.606192946434021,
+      "matched_utility": 0.007673321291804314,
+      "distant_utility": 0.007848814129829407,
+      "matched_harmful": false
+    },
+    {
+      "index": 203,
+      "episode": "scene-1072__scene-1076",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6076160669326782,
+      "matched_utility": 0.009130455553531647,
+      "distant_utility": 0.00894399918615818,
+      "matched_harmful": false
+    },
+    {
+      "index": 204,
+      "episode": "scene-1073__scene-1076",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8040357232093811,
+      "matched_utility": 0.006261453032493591,
+      "distant_utility": 5.1453400374157354e-05,
+      "matched_harmful": false
+    },
+    {
+      "index": 205,
+      "episode": "scene-1073__scene-1077",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6243278980255127,
+      "matched_utility": 0.0052706217393279076,
+      "distant_utility": 0.0006389119662344456,
+      "matched_harmful": false
+    },
+    {
+      "index": 206,
+      "episode": "scene-1076__scene-1077",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6243278980255127,
+      "matched_utility": 0.0131160793825984,
+      "distant_utility": 0.01084362156689167,
+      "matched_harmful": false
+    },
+    {
+      "index": 207,
+      "episode": "scene-1077__scene-1078",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9749019742012024,
+      "matched_utility": -0.028016656637191772,
+      "distant_utility": -0.010595928877592087,
+      "matched_harmful": true
+    },
+    {
+      "index": 208,
+      "episode": "scene-1078__scene-1106",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.836641252040863,
+      "matched_utility": 0.008709304966032505,
+      "distant_utility": 0.022499607875943184,
+      "matched_harmful": false
+    },
+    {
+      "index": 209,
+      "episode": "scene-1079__scene-1080",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.97346431016922,
+      "matched_utility": -0.0003286430146545172,
+      "distant_utility": 0.002467383397743106,
+      "matched_harmful": true
+    },
+    {
+      "index": 210,
+      "episode": "scene-1079__scene-1106",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8460184931755066,
+      "matched_utility": 0.0008897767984308302,
+      "distant_utility": 0.0018196247983723879,
+      "matched_harmful": false
+    },
+    {
+      "index": 211,
+      "episode": "scene-1079__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7555782794952393,
+      "matched_utility": 0.0020714730489999056,
+      "distant_utility": 0.003918126225471497,
+      "matched_harmful": false
+    },
+    {
+      "index": 212,
+      "episode": "scene-1080__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.036439061164856,
+      "matched_utility": -0.003047301433980465,
+      "distant_utility": -0.024953292682766914,
+      "matched_harmful": true
+    },
+    {
+      "index": 213,
+      "episode": "scene-1081__scene-1082",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0441163778305054,
+      "matched_utility": 0.003510721493512392,
+      "distant_utility": 0.004679414909332991,
+      "matched_harmful": false
+    },
+    {
+      "index": 214,
+      "episode": "scene-1081__scene-1083",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0043320655822754,
+      "matched_utility": 0.0034124404191970825,
+      "distant_utility": 0.0018602062482386827,
+      "matched_harmful": false
+    },
+    {
+      "index": 215,
+      "episode": "scene-1081__scene-1107",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.5698168873786926,
+      "matched_utility": 0.003671528771519661,
+      "distant_utility": 0.004058768041431904,
+      "matched_harmful": false
+    },
+    {
+      "index": 216,
+      "episode": "scene-1082__scene-1083",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0021015405654907,
+      "matched_utility": 0.0007495827157981694,
+      "distant_utility": 0.0014990534400567412,
+      "matched_harmful": false
+    },
+    {
+      "index": 217,
+      "episode": "scene-1083__scene-1108",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9220704436302185,
+      "matched_utility": 0.0006660054204985499,
+      "distant_utility": 0.0006173160509206355,
+      "matched_harmful": false
+    },
+    {
+      "index": 218,
+      "episode": "scene-1083__scene-1109",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7515578866004944,
+      "matched_utility": 0.004282089415937662,
+      "distant_utility": -0.0013955875765532255,
+      "matched_harmful": false
+    },
+    {
+      "index": 219,
+      "episode": "scene-1083__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9108100533485413,
+      "matched_utility": 0.0030167661607265472,
+      "distant_utility": -0.0002768679987639189,
+      "matched_harmful": false
+    },
+    {
+      "index": 220,
+      "episode": "scene-1084__scene-1085",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7531163692474365,
+      "matched_utility": 0.0027596228756010532,
+      "distant_utility": 0.003935812506824732,
+      "matched_harmful": false
+    },
+    {
+      "index": 221,
+      "episode": "scene-1084__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.799736499786377,
+      "matched_utility": 0.0059041124768555164,
+      "distant_utility": 0.007334271911531687,
+      "matched_harmful": false
+    },
+    {
+      "index": 223,
+      "episode": "scene-1092__scene-1093",
+      "group": "component-64",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9566969275474548,
+      "matched_utility": 0.0005175613332539797,
+      "distant_utility": 0.003265966661274433,
+      "matched_harmful": false
+    },
+    {
+      "index": 224,
+      "episode": "scene-1109__scene-1110",
+      "group": "component-4",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 1.0528141260147095,
+      "matched_utility": -0.00013910472625866532,
+      "distant_utility": -0.0004718843847513199,
+      "matched_harmful": true
+    },
+    {
+      "index": 3,
+      "episode": "scene-0044__scene-0138",
+      "group": "component-9",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9102190732955933,
+      "matched_utility": 0.005146126262843609,
+      "distant_utility": 0.011737405322492123,
+      "matched_harmful": false
+    },
+    {
+      "index": 9,
+      "episode": "scene-0058__scene-0381",
+      "group": "component-36",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.5743529200553894,
+      "matched_utility": 0.018789077177643776,
+      "distant_utility": 0.02103312686085701,
+      "matched_harmful": false
+    },
+    {
+      "index": 28,
+      "episode": "scene-0122__scene-0962",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9191687107086182,
+      "matched_utility": 0.00492494273930788,
+      "distant_utility": 0.004590414464473724,
+      "matched_harmful": false
+    },
+    {
+      "index": 49,
+      "episode": "scene-0158__scene-0159",
+      "group": "component-16",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9648175239562988,
+      "matched_utility": 0.0026009082794189453,
+      "distant_utility": 0.001582820899784565,
+      "matched_harmful": false
+    },
+    {
+      "index": 66,
+      "episode": "scene-0196__scene-0367",
+      "group": "component-58",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9073700308799744,
+      "matched_utility": -0.00219888798892498,
+      "distant_utility": 6.759707957826322e-06,
+      "matched_harmful": true
+    },
+    {
+      "index": 104,
+      "episode": "scene-0356__scene-0357",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9002995491027832,
+      "matched_utility": 0.0039296941831707954,
+      "distant_utility": 0.004004486836493015,
+      "matched_harmful": false
+    },
+    {
+      "index": 105,
+      "episode": "scene-0356__scene-0358",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.8001866340637207,
+      "matched_utility": 0.004169642459601164,
+      "distant_utility": 0.00016126041009556502,
+      "matched_harmful": false
+    },
+    {
+      "index": 106,
+      "episode": "scene-0357__scene-0358",
+      "group": "component-30",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.841008186340332,
+      "matched_utility": -0.0007372297113761306,
+      "distant_utility": -0.001271145069040358,
+      "matched_harmful": true
+    },
+    {
+      "index": 110,
+      "episode": "scene-0368__scene-0369",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9501690864562988,
+      "matched_utility": 0.0002296082238899544,
+      "distant_utility": 1.3528318959288299e-05,
+      "matched_harmful": false
+    },
+    {
+      "index": 111,
+      "episode": "scene-0368__scene-0963",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9281858801841736,
+      "matched_utility": 0.006352499593049288,
+      "distant_utility": 0.001704246154986322,
+      "matched_harmful": false
+    },
+    {
+      "index": 112,
+      "episode": "scene-0369__scene-0963",
+      "group": "component-33",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9416182041168213,
+      "matched_utility": 0.002585660433396697,
+      "distant_utility": 0.00528249517083168,
+      "matched_harmful": false
+    },
+    {
+      "index": 116,
+      "episode": "scene-0377__scene-0385",
+      "group": "component-16",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9137869477272034,
+      "matched_utility": 0.0032736940775066614,
+      "distant_utility": 0.0011835152981802821,
+      "matched_harmful": false
+    },
+    {
+      "index": 118,
+      "episode": "scene-0408__scene-1053",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7050520181655884,
+      "matched_utility": 0.0029670405201613903,
+      "distant_utility": 0.004447069019079208,
+      "matched_harmful": false
+    },
+    {
+      "index": 119,
+      "episode": "scene-0408__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6264142394065857,
+      "matched_utility": -4.299208740121685e-05,
+      "distant_utility": 0.0017060613026842475,
+      "matched_harmful": true
+    },
+    {
+      "index": 121,
+      "episode": "scene-0411__scene-1055",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9268604516983032,
+      "matched_utility": -0.005756041966378689,
+      "distant_utility": -0.002971171634271741,
+      "matched_harmful": true
+    },
+    {
+      "index": 122,
+      "episode": "scene-0412__scene-0413",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8238885402679443,
+      "matched_utility": 0.0012391150230541825,
+      "distant_utility": 0.003067104611545801,
+      "matched_harmful": false
+    },
+    {
+      "index": 123,
+      "episode": "scene-0412__scene-1055",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8814524412155151,
+      "matched_utility": -0.005647152662277222,
+      "distant_utility": -0.006013409700244665,
+      "matched_harmful": true
+    },
+    {
+      "index": 124,
+      "episode": "scene-0412__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7925564050674438,
+      "matched_utility": 0.007787173148244619,
+      "distant_utility": 0.009497744031250477,
+      "matched_harmful": false
+    },
+    {
+      "index": 125,
+      "episode": "scene-0413__scene-0414",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.972990095615387,
+      "matched_utility": 0.0013941065408289433,
+      "distant_utility": 0.0019413231639191508,
+      "matched_harmful": false
+    },
+    {
+      "index": 126,
+      "episode": "scene-0413__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8703011870384216,
+      "matched_utility": 0.001215130090713501,
+      "distant_utility": 0.0049312543123960495,
+      "matched_harmful": false
+    },
+    {
+      "index": 127,
+      "episode": "scene-0416__scene-1057",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8246248364448547,
+      "matched_utility": -0.004060707520693541,
+      "distant_utility": -0.00291407760232687,
+      "matched_harmful": true
+    },
+    {
+      "index": 128,
+      "episode": "scene-0418__scene-1057",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.6082297563552856,
+      "matched_utility": 0.005041434429585934,
+      "distant_utility": 0.0008132251678034663,
+      "matched_harmful": false
+    },
+    {
+      "index": 129,
+      "episode": "scene-0418__scene-1058",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8239344358444214,
+      "matched_utility": -0.003022340591996908,
+      "distant_utility": 0.001225068117491901,
+      "matched_harmful": true
+    },
+    {
+      "index": 185,
+      "episode": "scene-0957__scene-0958",
+      "group": "component-63",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.9595003128051758,
+      "matched_utility": 0.00020994766964577138,
+      "distant_utility": 0.0007103410898707807,
+      "matched_harmful": false
+    },
+    {
+      "index": 188,
+      "episode": "scene-0975__scene-0976",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 0.7999789118766785,
+      "matched_utility": 0.001345151336863637,
+      "distant_utility": -0.001991119934245944,
+      "matched_harmful": false
+    },
+    {
+      "index": 189,
+      "episode": "scene-0975__scene-0977",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.0164843797683716,
+      "matched_utility": -0.0033581340685486794,
+      "distant_utility": -0.0012238055933266878,
+      "matched_harmful": true
+    },
+    {
+      "index": 190,
+      "episode": "scene-0975__scene-0978",
+      "group": "component-27",
+      "location": "singapore-onenorth",
+      "current_to_base": 1.025834083557129,
+      "matched_utility": 0.0007814252167008817,
+      "distant_utility": -0.00012297664943616837,
+      "matched_harmful": false
+    },
+    {
+      "index": 195,
+      "episode": "scene-1053__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7819725871086121,
+      "matched_utility": 0.009819145314395428,
+      "distant_utility": 0.01531174685806036,
+      "matched_harmful": false
+    },
+    {
+      "index": 196,
+      "episode": "scene-1055__scene-1056",
+      "group": "component-37",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.9337524175643921,
+      "matched_utility": -0.0024139827582985163,
+      "distant_utility": -0.0019398018484935164,
+      "matched_harmful": true
+    },
+    {
+      "index": 197,
+      "episode": "scene-1057__scene-1058",
+      "group": "component-59",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8239344358444214,
+      "matched_utility": -0.002181503688916564,
+      "distant_utility": 0.0020040126983076334,
+      "matched_harmful": true
+    },
+    {
+      "index": 198,
+      "episode": "scene-1064__scene-1065",
+      "group": "component-34",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7146809101104736,
+      "matched_utility": 0.004522391129285097,
+      "distant_utility": 0.002376996213570237,
+      "matched_harmful": false
+    },
+    {
+      "index": 199,
+      "episode": "scene-1068__scene-1069",
+      "group": "component-51",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.8737413287162781,
+      "matched_utility": 0.0024300592485815287,
+      "distant_utility": 0.0022088526748120785,
+      "matched_harmful": false
+    },
+    {
+      "index": 222,
+      "episode": "scene-1089__scene-1090",
+      "group": "component-23",
+      "location": "singapore-hollandvillage",
+      "current_to_base": 0.7837247252464294,
+      "matched_utility": 0.005098351277410984,
+      "distant_utility": 0.002216378692537546,
+      "matched_harmful": false
+    }
+  ],
+  "fold_logs": [
+    {
+      "fold": 0,
+      "train": 161,
+      "held_out": 64,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 0.9984937906265259,
+          "current_to_base": 0.9985268115997314,
+          "matched_utility": 6.612300785491243e-05,
+          "gradient_norm": 0.022364893928170204
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 0.8441036939620972,
+          "current_to_base": 0.8463662266731262,
+          "matched_utility": 0.0053464812226593494,
+          "gradient_norm": 0.3606123924255371
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 0.9092785120010376,
+          "current_to_base": 0.911804735660553,
+          "matched_utility": 0.005541115999221802,
+          "gradient_norm": 0.024555718526244164
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 0.8291583061218262,
+          "current_to_base": 0.8265029191970825,
+          "matched_utility": -0.006425618194043636,
+          "gradient_norm": 0.47651776671409607
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 0.9269070625305176,
+          "current_to_base": 0.9275710582733154,
+          "matched_utility": 0.0014316433807834983,
+          "gradient_norm": 0.06370358169078827
+        },
+        {
+          "step": 483,
+          "epoch": 3,
+          "outer": 0.6096096634864807,
+          "current_to_base": 0.6122530102729797,
+          "matched_utility": 0.008634831756353378,
+          "gradient_norm": 0.5581401586532593
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "train": 173,
+      "held_out": 52,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 0.9987351298332214,
+          "current_to_base": 0.9987403750419617,
+          "matched_utility": 1.0467253559909295e-05,
+          "gradient_norm": 0.03574013710021973
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 0.9535149335861206,
+          "current_to_base": 0.954071044921875,
+          "matched_utility": 0.0011656576534733176,
+          "gradient_norm": 0.09276395291090012
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 0.983299970626831,
+          "current_to_base": 0.9833239316940308,
+          "matched_utility": 4.883338988292962e-05,
+          "gradient_norm": 0.031052758917212486
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 0.98780357837677,
+          "current_to_base": 0.988060712814331,
+          "matched_utility": 0.0005205736961215734,
+          "gradient_norm": 0.017402591183781624
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 0.633658230304718,
+          "current_to_base": 0.634168267250061,
+          "matched_utility": 0.0016087041003629565,
+          "gradient_norm": 0.15720678865909576
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 0.961767852306366,
+          "current_to_base": 0.9614591598510742,
+          "matched_utility": -0.000642043596599251,
+          "gradient_norm": 0.059738948941230774
+        },
+        {
+          "step": 519,
+          "epoch": 3,
+          "outer": 0.9331737160682678,
+          "current_to_base": 0.935326099395752,
+          "matched_utility": 0.004602522123605013,
+          "gradient_norm": 0.09347076714038849
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train": 183,
+      "held_out": 42,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 0.9995738863945007,
+          "current_to_base": 0.9995738863945007,
+          "matched_utility": 0.0,
+          "gradient_norm": 0.007004525978118181
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 0.9831734299659729,
+          "current_to_base": 0.9839969277381897,
+          "matched_utility": 0.0016737135592848063,
+          "gradient_norm": 0.042237117886543274
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 0.8307544589042664,
+          "current_to_base": 0.8312149047851562,
+          "matched_utility": 0.0011077445233240724,
+          "gradient_norm": 0.19583356380462646
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 0.8235055804252625,
+          "current_to_base": 0.8224219679832458,
+          "matched_utility": -0.002635147189721465,
+          "gradient_norm": 0.4160996079444885
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 0.7474402785301208,
+          "current_to_base": 0.7482037544250488,
+          "matched_utility": 0.0020409119315445423,
+          "gradient_norm": 0.0831395760178566
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 0.8417214751243591,
+          "current_to_base": 0.8454498648643494,
+          "matched_utility": 0.008819921873509884,
+          "gradient_norm": 0.25743570923805237
+        },
+        {
+          "step": 549,
+          "epoch": 3,
+          "outer": 0.6056534051895142,
+          "current_to_base": 0.6081892848014832,
+          "matched_utility": 0.008338892832398415,
+          "gradient_norm": 0.37474822998046875
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train": 191,
+      "held_out": 34,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 0.9989538788795471,
+          "current_to_base": 0.9989532232284546,
+          "matched_utility": -1.3786639101454057e-06,
+          "gradient_norm": 0.016261033713817596
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 0.7979075312614441,
+          "current_to_base": 0.7989050149917603,
+          "matched_utility": 0.002497210167348385,
+          "gradient_norm": 0.4729427695274353
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 0.8171000480651855,
+          "current_to_base": 0.8161402344703674,
+          "matched_utility": -0.0023520959075540304,
+          "gradient_norm": 0.25893446803092957
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 0.8523876070976257,
+          "current_to_base": 0.853866696357727,
+          "matched_utility": 0.0034642373211681843,
+          "gradient_norm": 0.20790769159793854
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 0.8407020568847656,
+          "current_to_base": 0.84242182970047,
+          "matched_utility": 0.004082850646227598,
+          "gradient_norm": 0.08340245485305786
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 0.7975959777832031,
+          "current_to_base": 0.7978341579437256,
+          "matched_utility": 0.0005972184590063989,
+          "gradient_norm": 0.13988474011421204
+        },
+        {
+          "step": 573,
+          "epoch": 3,
+          "outer": 0.9744160175323486,
+          "current_to_base": 0.9644937515258789,
+          "matched_utility": -0.020575175061821938,
+          "gradient_norm": 1.825085997581482
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "train": 192,
+      "held_out": 33,
+      "logs": [
+        {
+          "step": 1,
+          "epoch": 1,
+          "outer": 0.9990264177322388,
+          "current_to_base": 0.9990475177764893,
+          "matched_utility": 4.2324198147980496e-05,
+          "gradient_norm": 0.013398261740803719
+        },
+        {
+          "step": 100,
+          "epoch": 1,
+          "outer": 0.9393038153648376,
+          "current_to_base": 0.9394226670265198,
+          "matched_utility": 0.00025305713643319905,
+          "gradient_norm": 0.14466360211372375
+        },
+        {
+          "step": 200,
+          "epoch": 2,
+          "outer": 0.8596271872520447,
+          "current_to_base": 0.8613697290420532,
+          "matched_utility": 0.0040460145100951195,
+          "gradient_norm": 0.1604011207818985
+        },
+        {
+          "step": 300,
+          "epoch": 2,
+          "outer": 0.9327911734580994,
+          "current_to_base": 0.9246138334274292,
+          "matched_utility": -0.017687983810901642,
+          "gradient_norm": 1.272639513015747
+        },
+        {
+          "step": 400,
+          "epoch": 3,
+          "outer": 0.6900691390037537,
+          "current_to_base": 0.6891802549362183,
+          "matched_utility": -0.002579715568572283,
+          "gradient_norm": 0.2665044963359833
+        },
+        {
+          "step": 500,
+          "epoch": 3,
+          "outer": 0.827835202217102,
+          "current_to_base": 0.8285267353057861,
+          "matched_utility": 0.0016693796496838331,
+          "gradient_norm": 0.15723168849945068
+        },
+        {
+          "step": 576,
+          "epoch": 3,
+          "outer": 0.7495881915092468,
+          "current_to_base": 0.7549555897712708,
+          "matched_utility": 0.014219079166650772,
+          "gradient_norm": 0.6290166974067688
+        }
+      ]
+    }
+  ],
+  "validation_accessed": false,
+  "test_accessed": false
+}
