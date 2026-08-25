@@ -473,3 +473,12 @@ Status: Accepted after EXP-010 Stage A
 The frozen full model significantly improved per-view aligned AbsRel over current-only TTT, but worsened SILog, aligned RMSE, and same-ray 3D endpoint error. The registered absolute-geometry gate therefore failed. This prevents a broad reconstruction or point-cloud claim and pauses random/FIFO/router expansion: more memory experiments cannot repair a misaligned online/meta objective.
 
 The next experiment must remain train-only and simplify rather than enlarge the method. It will compare the existing metric-space 3D track consistency objective with a single symmetric track-reprojection objective and a small one-step-size sweep. No additional online loss is authorized. Only an objective that improves SILog, aligned AbsRel, and 3D endpoint error together may trigger atom/router retraining. EXP-009 test remains closed to tuning.
+
+## D068 — Freeze one 3D-track loss and a smaller TTT step
+
+Date: 2026-08-25
+Status: Accepted after EXP-011 Stage 0 and before validation LiDAR access
+
+The train-only audit covered 218 unique targets and 25 components. A single absolute 3D frozen-track consistency loss at `eta=0.0125` improved the means of SILog, median-aligned AbsRel, and same-ray 3D EPE; the component-bootstrap AbsRel interval was strictly positive. Adding smoothness and code regularization was numerically immaterial, so the paper online objective is simplified to one loss. The symmetric reprojection alternative improved SILog/EPE at the smallest step but worsened AbsRel, and larger steps exposed the same overshoot seen in EXP-010.
+
+The loss, one-step count, and `eta=0.0125` are now frozen for one validation audit. Validation may confirm or reject this objective but may not tune it. EXP-009 test remains terminal and unavailable.
