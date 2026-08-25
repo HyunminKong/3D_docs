@@ -1,0 +1,55 @@
+experiment: EXP-020
+protocol_revision: v1.0
+seed: 2000010
+
+data:
+  manifest: revisit3d/manifests/exp009_validation_pilot_v22.json
+  geometry_cache: revisit3d/cache/EXP-009/validation_geometry_v22.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  split: val
+
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp015_core_atom_v10.pt
+  atom_result: revisit3d/results/EXP-015/stage0_core_atom_train_v10.json
+  address_artifact: revisit3d/checkpoints/exp019_agreement_fallback_v10.joblib
+  address_result: revisit3d/results/EXP-019/stage0_agreement_fallback_train_v10.json
+  feature_dim: 2048
+
+method:
+  online_loss: track3d_only
+  step_size: 0.0125
+  steps: 1
+  reuse_strength: 0.10
+  coarse_topk: 5
+  utility_threshold: 0.0
+  geometry_agreement_threshold: 0.0
+  no_agreement_policy: coarse_top1_fallback
+  bank_policy: deterministic_reservoir
+  bank_capacity: 64
+  stream_partition: official_location
+
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 2000010
+
+success:
+  minimum_targets: 85
+  minimum_components: 15
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  maximum_proxy_harmful_rate: 0.20
+  minimum_acceptance: 0.20
+  require_current_all_mean_improve: true
+  require_full_not_worse_current_all_means: true
+  require_full_not_worse_random_all_means: true
+  minimum_positive_full_current_intervals: 1
+  minimum_positive_full_random_intervals: 1
+  require_proxy_random_interval_positive: true
+
+output:
+  result: revisit3d/results/EXP-020/stage0_locked_paper_model_validation_v10.json

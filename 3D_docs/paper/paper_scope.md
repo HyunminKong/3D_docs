@@ -19,7 +19,7 @@ The first target is a CVPR-style paper: one compact method, standard geometry me
 The paper contains three ideas, but only two learned components:
 
 1. **Local plasticity atom.** A frozen geometry backbone exposes dense features. One self-supervised gradient step updates an 8-D per-token code; backbone weights never change online.
-2. **Utility retrieval.** One factorized linear pair score retrieves the highest predicted-utility record and applies it only when predicted utility is positive. Retrieval and routing are one model, not separate coarse/fine heads.
+2. **Utility retrieval.** One factorized linear pair score retrieves five predicted-utility records. A parameter-free current-geometry agreement reranks them, with coarse top-1 fallback; there is no learned fine head.
 3. **Bounded causal store.** A fixed-capacity reservoir is an implementation constraint, not a novel learned consolidation module.
 
 The primary path excludes DINO place retrieval, predicted Sim(3) transport, neural risk classification, learned eviction, pose adaptation, a second TTT step, and dynamic 4D state.
@@ -38,13 +38,14 @@ The EXP-015 core atom uses normalized future current loss, absolute best-reuse l
 
 ## Main hyperparameters
 
-Only three quantities are treated as visible method hyperparameters in the EXP-012 candidate:
+Only four quantities are treated as visible method hyperparameters in the frozen paper candidate:
 
 - one-step TTT step size `eta`;
 - reuse residual strength `alpha`;
+- coarse candidate count `K`;
 - bank capacity `C`.
 
-Retrieval is top-1 and reuse uses the semantic zero predicted-utility threshold, so neither is tuned. PCA dimension and Ridge regularization are fixed implementation choices. The paper reports sensitivity only for `eta`, `alpha`, and `C`.
+Both utility and current-agreement decisions use semantic zero thresholds. PCA dimension and Ridge regularization are fixed implementation choices. The paper reports sensitivity for `eta`, `alpha`, and `C`, with a compact K ablation.
 
 
 ## Formal learning problem

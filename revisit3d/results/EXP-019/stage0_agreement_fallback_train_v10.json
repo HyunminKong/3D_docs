@@ -1,0 +1,73 @@
+{
+  "experiment": "EXP-019",
+  "stage": "agreement_fallback",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-019_agreement_fallback_v10.yaml",
+  "targets": 218,
+  "pairs": 13631,
+  "components": 25,
+  "coarse_topk": 5,
+  "safe_reroutes": 42,
+  "coarse_fallbacks": 161,
+  "learned_fine_router": false,
+  "future_or_query_online_input": false,
+  "policies": {
+    "agreement_fallback": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.008350882433861768,
+      "harmful_rate": 0.18454112554112556,
+      "acceptance": 0.9471930272108844
+    },
+    "coarse_top1": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0077136192391227465,
+      "harmful_rate": 0.18516612554112555,
+      "acceptance": 0.9471930272108844
+    },
+    "random_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.005552941191574875,
+      "harmful_rate": 0.17329808286951143,
+      "acceptance": 0.9471930272108844
+    }
+  },
+  "bootstrap": {
+    "full_minus_random": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0027979412422868936,
+      "ci95": [
+        0.000408692798231426,
+        0.005119020905414265
+      ]
+    },
+    "full_minus_coarse": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0006372631947390227,
+      "ci95": [
+        0.00010321924846015909,
+        0.0014680965732467516
+      ]
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "minimum_policy_utility": true,
+      "minimum_acceptance": true,
+      "maximum_harm": true,
+      "random_component_ci_positive": true,
+      "coarse_component_ci_positive": true
+    },
+    "passed": true
+  },
+  "validation_accessed": false,
+  "test_accessed": false,
+  "artifact": "revisit3d/checkpoints/exp019_agreement_fallback_v10.joblib",
+  "artifact_sha256": "9bcba72f823431287f5dbfbed9f908e434b85fdcfed948ee00e17981ced31173",
+  "mips_maximum_verification_error": 1.3310170535185684e-09
+}

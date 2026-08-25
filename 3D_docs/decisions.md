@@ -590,3 +590,12 @@ Status: Accepted after EXP-018 and before EXP-019
 EXP-018 showed that positive current agreement isolates safe/useful cases—3.07% harm and significant random superiority—but strict abstention reduced utility to +0.418%. EXP-019 preserves those reroutes and falls back to coarse top-1 only when no positive-agreement candidate exists.
 
 All zero thresholds, K=5, folds, comparators, and gates remain fixed. The fallback must significantly beat both random and coarse top-1. Failure ends heuristic routing and constitutes evidence that a compact learned post-transport utility model is necessary.
+
+## D081 — Freeze the parameter-free fine policy for one-shot geometry validation
+
+Date: 2026-08-25
+Status: Accepted after EXP-019 and before EXP-020
+
+EXP-019 passed every gate: +0.835% utility, 18.45% harm, 94.72% acceptance, random-difference CI `[+0.00041,+0.00512]`, and coarse-difference CI `[+0.00010,+0.00147]`. The final retrieval module is one 64-D utility-MIPS Ridge followed by current-geometry reranking of five candidates and coarse fallback. No learned fine router is required.
+
+The atom/head, Ridge, eta, alpha, K=5, zero thresholds, reranking rule, reservoir policy, and capacity 64 are now frozen. EXP-020 is a one-shot validation of proxy and sparse-LiDAR geometry. Its outcome may accept or reject the paper model but cannot tune it; the closed EXP-009 test remains unavailable.
