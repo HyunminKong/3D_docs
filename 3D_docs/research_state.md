@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-028 registered)
+Last updated: 2026-08-25 (after EXP-028)
 
 ## First objective
 
@@ -123,7 +123,13 @@ AdamW preserved common descent on only 72.54% of component-balanced steps.
 This localizes the remaining variable to offline optimizer rotation rather than
 another loss or architecture.
 
-EXP-028 is registered as an exact same-seed paired optimizer ablation. A valid
-AdamW proposal is kept; an infeasible proposal is replaced by the proven common
-direction at the same L2 step norm. No hyperparameter or inference computation
-is added. All broad-geometry gates remain fixed and EXP-021 stays unopened.
+EXP-028 passed every OOF gate. Current one-step TTT improved SILog, aligned
+AbsRel, and 3D EPE together; oracle reuse further improved all three with
+positive intervals. The parameter-free safeguard intervened on 29.28% of
+steps, achieved 100% realized common descent, and changes no inference work.
+The accepted checkpoint hash is
+`3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae`.
+
+Raw candidate harm is still 39.91%, so memory cannot yet be deployed. The next
+stage may fit only one source-safe factorized Ridge address using aligned-log
+future metric utility and semantic zero acceptance. EXP-021 remains unopened.

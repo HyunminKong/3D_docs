@@ -876,3 +876,38 @@ module, or online computation.
 All broad-geometry and reuse gates remain unchanged, and realized common
 descent must be 100%. Failure rejects this optimizer candidate and creates no
 checkpoint. EXP-021 remains unopened.
+
+## D098 — Freeze the EXP-028 atom and require metric-utility addressing
+
+Date: 2026-08-25
+Status: Accepted after EXP-028
+
+EXP-028 passed every registered OOF gate and produced checkpoint SHA-256
+`3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae`.
+Current TTT improved all three primary means, with positive SILog and EPE
+component intervals. Log-risk oracle reuse further improved all three with
+positive intervals. The safeguard was needed on 29.28% of OOF steps and
+preserved realized common descent on 100%.
+
+The atom architecture, checkpoint, online step, transport, and residual are
+now frozen. Because 39.91% of raw candidates remain harmful, unconditional or
+appearance-only reuse is not authorized. The next learned object may only be
+one factorized linear address trained on the existing single aligned-log future
+utility label, with semantic zero acceptance and source-location exclusion.
+
+## D099 — Register one metric-utility linear address
+
+Date: 2026-08-25
+Status: Accepted before EXP-029 execution
+
+EXP-029 freezes the EXP-028 checkpoint and changes the address target from the
+rejected self-supervised proxy to the single EXP-023 aligned-log metric utility.
+The model remains one exact-factorizable Ridge score with semantic zero
+acceptance. Ridge alpha 1, panel 64, source-excluded location folds, top-1, and
+all causal/query boundaries are fixed implementation choices inherited from
+EXP-016.
+
+Passing requires positive association in every location, at most 30% selected
+harm, and component-level superiority over matched random plus higher utility
+than appearance. No fine router, risk classifier, threshold sweep, or EXP-021
+access is authorized.

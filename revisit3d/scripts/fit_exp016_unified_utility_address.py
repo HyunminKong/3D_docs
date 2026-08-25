@@ -233,6 +233,7 @@ def main() -> None:
     args = parser.parse_args()
     config_path = Path(args.config)
     config = yaml.safe_load(config_path.read_text())
+    experiment = config["experiment"]
     result_path = Path(config["output"]["result"])
     cache_path = Path(config["output"]["candidate_cache"])
     artifact_path = Path(config["output"]["artifact"])
@@ -242,15 +243,18 @@ def main() -> None:
         raise RuntimeError("EXP-016 requires train split and CUDA")
     atom_result = json.loads(Path(config["model"]["atom_result"]).read_text())
     checkpoint_path = Path(config["model"]["atom_checkpoint"])
+    gate = atom_result.get("gate", atom_result.get("registered_gate", {}))
     if not (
-        atom_result["gate"]["passed"] is True
+        gate.get("passed") is True
         and atom_result["checkpoint_sha256"] == _sha256(checkpoint_path)
         and atom_result["validation_accessed"] is False and atom_result["test_accessed"] is False
+        and atom_result.get("exp021_terminal_accessed", False) is False
     ):
-        raise RuntimeError("frozen EXP-015 atom contract failed")
+        raise RuntimeError(f"frozen {experiment} atom contract failed")
     checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+    required_atom = "EXP-015" if experiment == "EXP-016" else "EXP-028"
     if not (
-        checkpoint["experiment"] == "EXP-015" and checkpoint["protocol_revision"] == "v1.0"
+        checkpoint["experiment"] == required_atom and checkpoint["protocol_revision"] == "v1.0"
         and checkpoint["online_loss"] == "track3d_only" and checkpoint["auxiliary_losses"] == []
         and checkpoint["step_size"] == config["method"]["step_size"]
         and checkpoint["reuse_strength"] == config["method"]["reuse_strength"]
@@ -268,7 +272,7 @@ def main() -> None:
     tensor, target, metadata, target_table = _build_pairs(config, head, geometry, manifest, device)
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save({
-        "experiment": "EXP-016", "protocol_revision": config["protocol_revision"], "split": "train",
+        "experiment": experiment, "protocol_revision": config["protocol_revision"], "split": "train",
         "features": tensor, "utility": target, "metadata": metadata, "target_table": target_table,
         "feature_contract": "[current,source,current-source,current*source]",
         "query_or_future_online_input": False, "validation_accessed": False, "test_accessed": False,
@@ -335,7 +339,8 @@ def main() -> None:
         "random_component_ci_positive": bootstrap["unified_minus_random"]["ci95"][0] > 0,
     }
     result = {
-        "experiment": "EXP-016", "stage": "unified_utility_address", "split": "train",
+        "experiment": experiment,
+        "stage": config["output"].get("result_stage", "unified_utility_address"), "split": "train",
         "protocol_revision": config["protocol_revision"], "config": str(config_path),
         "targets": len(target_table), "pairs": len(metadata), "components": 25, "locations": 4,
         "source_entity_excluded": True, "query_or_future_online_input": False,
@@ -351,7 +356,7 @@ def main() -> None:
         compiled = _compile(model, matrix)
         artifact_path.parent.mkdir(parents=True, exist_ok=True)
         joblib.dump({
-            "experiment": "EXP-016", "protocol_revision": config["protocol_revision"],
+            "experiment": experiment, "protocol_revision": config["protocol_revision"],
             "split": "train", "model": model, "compiled_mips": compiled,
             "feature_contract": "[current,source,current-source,current*source]",
             "descriptor_dim": 64, "topk": 1, "acceptance_threshold": threshold,
@@ -369,7 +374,7 @@ def main() -> None:
         "gate": result["registered_gate"], "artifact": result.get("artifact"),
     }), flush=True)
     if not all(checks.values()):
-        raise RuntimeError(f"EXP-016 unified address gate failed: {checks}")
+        raise RuntimeError(f"{experiment} unified address gate failed: {checks}")
 
 
 if __name__ == "__main__":

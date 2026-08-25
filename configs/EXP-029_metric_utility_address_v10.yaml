@@ -1,0 +1,57 @@
+experiment: EXP-029
+protocol_revision: v1.0
+seed: 2900010
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  split: train
+
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp028_safeguarded_pareto_atom_v10.pt
+  atom_result: revisit3d/results/EXP-028/stage0_safeguarded_pareto_atom_train_v10.json
+  feature_dim: 2048
+
+method:
+  step_size: 0.0125
+  steps: 1
+  reuse_strength: 0.10
+  panel_size: 64
+  retrieval_topk: 1
+  acceptance_threshold: 0.0
+
+meta_objective:
+  loss: median_aligned_absolute_log_depth
+  minimum_depth: 1.0e-6
+
+address:
+  descriptor_dim: 64
+  pair_features: [current, source, difference, product]
+  standardize: true
+  ridge_alpha: 1.0
+  crossfit: leave_one_location_out_with_source_exclusion
+
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 2900010
+
+success:
+  minimum_each_location_spearman: 0.0
+  minimum_policy_utility: 0.0
+  minimum_acceptance: 0.20
+  maximum_harmful_rate: 0.30
+  require_random_component_ci_positive: true
+  require_above_appearance: true
+
+output:
+  result_stage: metric_utility_address
+  candidate_cache: revisit3d/cache/EXP-029/causal_metric_utility_pairs_train_v10.pt
+  artifact: revisit3d/checkpoints/exp029_metric_utility_address_v10.joblib
+  result: revisit3d/results/EXP-029/stage0_metric_utility_address_train_v10.json
