@@ -975,3 +975,38 @@ appearance retrieval. Full memory must improve all three primary means over
 each control with at least one positive component interval per comparison.
 Terminal outputs cannot authorize a repair, new seed, threshold, capacity,
 loss, or module.
+
+## D104 — Preserve the EXP-031 failure and separate coverage accounting
+
+Date: 2026-08-25
+Status: Accepted after the one terminal evaluation
+
+EXP-031 improved every registered primary mean over current-only, same-bank
+random, and appearance. All comparison-family rules passed, but the complete
+registered gate failed because 187 evaluated targets were below the frozen 190
+minimum. The terminal result remains immutable and may not be relabeled a pass.
+
+EXP-032 audited only manifest metadata and the written result. The 214
+directional episodes collapse to 188 unique targets; one target is the first
+event in its location and therefore has an empty causal bank. The evaluator
+included all 187 causally eligible targets, zero eligible targets failed metric
+validity, and all 29 components were retained. Thus the coverage criterion was
+an infeasible unit-accounting error rather than model or data attrition. Paper
+claims may describe the geometry evidence as qualified positive terminal
+evidence only if the registered coverage failure is disclosed alongside it.
+
+## D105 — Close model selection and audit paper efficiency next
+
+Date: 2026-08-25
+Status: Accepted after EXP-032
+
+The EXP-028 atom, EXP-029 address, and complete EXP-031 inference policy remain
+the selected frozen paper model. Neither the terminal comparisons nor the
+coverage audit authorizes another nuScenes variant, seed, threshold, loss,
+module, or terminal run.
+
+The next experiment is a no-fit efficiency/complexity audit of this exact
+candidate. It may measure latency, peak memory, persistent bank size, and
+search scaling, but cannot alter the implementation to improve those numbers.
+After that audit, the remaining model-evidence expansion must be an independent
+dataset/backbone transfer, not additional selection on exposed nuScenes data.

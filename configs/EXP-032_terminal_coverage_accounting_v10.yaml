@@ -1,0 +1,9 @@
+experiment: EXP-032
+protocol_revision: v1.0
+data:
+  manifest: revisit3d/manifests/nuscenes_official_test_revisit_exp021_v11.json
+  scene_root: revisit3d/cache/EXP-031/nuscenes_official_test_scenes
+terminal_result: revisit3d/results/EXP-031/stage2_terminal_evaluation_v10.json
+registered_minimum_targets: 190
+output:
+  result: revisit3d/results/EXP-032/terminal_coverage_accounting_v10.json

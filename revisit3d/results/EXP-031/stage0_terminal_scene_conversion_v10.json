@@ -1,0 +1,399 @@
+{
+  "experiment": "EXP-031",
+  "stage": "terminal_scene_metadata_conversion",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-031_terminal_evaluation_v10.yaml",
+  "manifest_sha256": "22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61",
+  "scenes": 96,
+  "minimum_frames": 224,
+  "rows": [
+    {
+      "scene": "scene-0078",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0079",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0080",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0081",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0083",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0084",
+      "frames": 225
+    },
+    {
+      "scene": "scene-0086",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0087",
+      "frames": 224
+    },
+    {
+      "scene": "scene-0088",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0111",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0112",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0113",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0114",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0115",
+      "frames": 227
+    },
+    {
+      "scene": "scene-0116",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0117",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0119",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0140",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0142",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0143",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0144",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0145",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0146",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0148",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0265",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0266",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0279",
+      "frames": 230
+    },
+    {
+      "scene": "scene-0281",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0308",
+      "frames": 226
+    },
+    {
+      "scene": "scene-0309",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0311",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0333",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0334",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0335",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0337",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0338",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0339",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0340",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0341",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0342",
+      "frames": 228
+    },
+    {
+      "scene": "scene-0343",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0481",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0482",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0483",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0484",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0485",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0486",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0487",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0489",
+      "frames": 239
+    },
+    {
+      "scene": "scene-0491",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0492",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0493",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0494",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0495",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0496",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0497",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0498",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0548",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0550",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0551",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0602",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0603",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0604",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0606",
+      "frames": 229
+    },
+    {
+      "scene": "scene-0607",
+      "frames": 232
+    },
+    {
+      "scene": "scene-0614",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0615",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0616",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0617",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0618",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0619",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0620",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0621",
+      "frames": 239
+    },
+    {
+      "scene": "scene-0622",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0827",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0828",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0829",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0830",
+      "frames": 240
+    },
+    {
+      "scene": "scene-0831",
+      "frames": 233
+    },
+    {
+      "scene": "scene-0833",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0834",
+      "frames": 237
+    },
+    {
+      "scene": "scene-0835",
+      "frames": 231
+    },
+    {
+      "scene": "scene-0837",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0838",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0839",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0844",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0845",
+      "frames": 235
+    },
+    {
+      "scene": "scene-0935",
+      "frames": 236
+    },
+    {
+      "scene": "scene-0936",
+      "frames": 238
+    },
+    {
+      "scene": "scene-0938",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0939",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0940",
+      "frames": 234
+    },
+    {
+      "scene": "scene-0941",
+      "frames": 236
+    },
+    {
+      "scene": "scene-1035",
+      "frames": 236
+    },
+    {
+      "scene": "scene-1041",
+      "frames": 231
+    },
+    {
+      "scene": "scene-1042",
+      "frames": 230
+    }
+  ],
+  "image_decoded": false,
+  "lidar_decoded": false,
+  "model_output_accessed": false,
+  "terminal_access_started": true
+}

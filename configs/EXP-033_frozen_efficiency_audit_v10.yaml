@@ -1,0 +1,36 @@
+experiment: EXP-033
+protocol_revision: v1.0
+seed: 3300010
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  split: train
+  image_height: 224
+  image_width: 224
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+  track_side: 8
+geometry_head_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp028_safeguarded_pareto_atom_v10.pt
+  atom_sha256: 3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae
+  address_artifact: revisit3d/checkpoints/exp029_metric_utility_address_v10.joblib
+  address_sha256: d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984
+method:
+  step_size: 0.0125
+  reuse_strength: 0.10
+bank:
+  capacity: 64
+  scaling_sizes: [8, 64, 256, 1024, 4096]
+profiling:
+  method_warmup: 20
+  method_repetitions: 100
+  address_warmup: 100
+  address_repetitions: 1000
+  foundation_warmup: 2
+  foundation_repetitions: 10
+output:
+  result: revisit3d/results/EXP-033/frozen_efficiency_audit_v10.json

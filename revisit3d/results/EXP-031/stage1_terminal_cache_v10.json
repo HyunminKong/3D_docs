@@ -1,0 +1,13 @@
+{
+  "experiment": "EXP-031",
+  "stage": "terminal_frozen_cache",
+  "protocol_revision": "v1.0",
+  "cache": "revisit3d/cache/EXP-031/terminal_geometry_v10.pt",
+  "cache_sha256": "39e57ccd226e0586d97c8bdff5fd88d349133b86453cd958f9431247569fb0c0",
+  "rows": 214,
+  "split": "terminal_test",
+  "image_decoded": true,
+  "model_output_accessed": true,
+  "lidar_decoded": false,
+  "pca_fit_split": "train"
+}

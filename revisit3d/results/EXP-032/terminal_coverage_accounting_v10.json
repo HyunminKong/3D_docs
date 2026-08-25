@@ -1,0 +1,76 @@
+{
+  "experiment": "EXP-032",
+  "stage": "post_terminal_coverage_accounting",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-032_terminal_coverage_accounting_v10.yaml",
+  "source_terminal_result": "revisit3d/results/EXP-031/stage2_terminal_evaluation_v10.json",
+  "terminal_result_unchanged": true,
+  "terminal_rerun": false,
+  "counts": {
+    "directional_manifest_episodes": 214,
+    "unique_stream_contexts": 276,
+    "unique_target_contexts": 188,
+    "duplicate_directional_target_occurrences": 26,
+    "empty_bank_targets": 1,
+    "maximum_causally_evaluable_unique_targets": 187,
+    "terminal_evaluated_unique_targets": 187,
+    "terminal_evaluated_components": 29,
+    "eligible_targets_missing_from_terminal_result": 0
+  },
+  "target_occurrence_multiplicity": {
+    "1": 163,
+    "2": 24,
+    "3": 1
+  },
+  "locations": {
+    "boston-seaport": {
+      "unique_contexts": 202,
+      "unique_targets": 145,
+      "causally_evaluable_targets": 145
+    },
+    "singapore-onenorth": {
+      "unique_contexts": 24,
+      "unique_targets": 12,
+      "causally_evaluable_targets": 11
+    },
+    "singapore-queenstown": {
+      "unique_contexts": 50,
+      "unique_targets": 31,
+      "causally_evaluable_targets": 31
+    }
+  },
+  "empty_bank_target_details": [
+    {
+      "target": "b282e400726ce2fe",
+      "location": "singapore-onenorth",
+      "scene": "scene-0279",
+      "frames": [
+        82,
+        85,
+        88,
+        91,
+        94,
+        97,
+        100,
+        103
+      ],
+      "event_index": 0,
+      "reason": "first_location_event_has_empty_causal_bank"
+    }
+  ],
+  "missing_eligible_targets": [],
+  "unexpected_evaluated_targets": [],
+  "registered_coverage_gate": {
+    "minimum_targets": 190,
+    "maximum_possible_under_registered_evaluator": 187,
+    "feasible": false,
+    "passed_as_registered": false
+  },
+  "audit_checks": {
+    "all_causally_eligible_targets_evaluated": true,
+    "no_metric_validity_exclusion_after_causal_eligibility": true,
+    "registered_minimum_was_impossible": true,
+    "terminal_gate_remains_unmodified_and_failed": true
+  },
+  "interpretation": "EXP-031 evaluated every causally eligible unique target. The registered target minimum confused 214 directional manifest episodes with unique target contexts and exceeded the evaluator's maximum possible coverage. This audit does not repair or reclassify the registered terminal gate."
+}

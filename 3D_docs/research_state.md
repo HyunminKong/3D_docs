@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-031 terminal protocol registered)
+Last updated: 2026-08-25 (EXP-031 terminal evaluated; EXP-032 audit completed)
 
 ## First objective
 
@@ -28,18 +28,18 @@ Mem3R, and ReGrad. The defensible conjunction is:
    identity or RGB similarity;
 4. physical-revisit evaluation with same-bank random-address controls.
 
-## Compact frozen candidate evaluated in EXP-020
+## Selected compact paper candidate
 
 - frozen VGGT/FastVGGT geometry backbone;
 - one 3D-track online loss, one local-code step, `eta=0.0125`;
 - 8-D per-token code and visual transport with residual `alpha=0.10`;
-- one factorized 64-D Ridge utility address, top `K=5`;
-- parameter-free current-geometry agreement reranking with coarse fallback;
+- one factorized 64-D Ridge metric-utility address, top-1 with semantic-zero
+  fallback;
 - deterministic reservoir capacity `C=64` per official-location stream;
 - no fine router, risk head, learned threshold, learned eviction, second TTT
   step, pose adaptation, or dynamic 4D state.
 
-## Evidence that survives
+## Current decisive evidence
 
 - EXP-009: the earlier source-safe bounded system beat matched random addressing
   on a terminal 22-component self-supervised future-utility test. Reservoir did
@@ -54,6 +54,15 @@ Mem3R, and ReGrad. The defensible conjunction is:
 - EXP-020: the frozen full method improved aligned AbsRel over current-only TTT
   by 0.00165 with component 95% CI `[0.00078, 0.00276]`; proxy utility beat
   matched random by 0.00286 with CI `[0.00120, 0.00459]`.
+- EXP-028: the safeguarded Pareto-trained atom improved current TTT and oracle
+  reuse on SILog, aligned AbsRel, and 3D EPE in component OOF.
+- EXP-029/030: one metric-utility Ridge address selected broadly useful local
+  corrections and the frozen full system beat current, same-bank random, and
+  appearance on all three geometry means across 25 development components.
+- EXP-031: on untouched official-test scenes, full memory again improved all
+  three means over all three controls. Eight of nine metric intervals were
+  positive; the ninth, aligned AbsRel versus appearance, had positive mean and
+  crossed zero. All registered comparison-family gates passed.
 
 ## Decisive failure
 
@@ -84,7 +93,18 @@ The proxy cannot remain the sole offline utility target.
 - Query/future observations and LiDAR remain offline labels only and may never
   enter online TTT, memory write, retrieval, or routing.
 
-## Immediate next step
+## Terminal qualification
+
+EXP-031 did not pass its complete registered gate. Its 190-target coverage
+minimum was infeasible: the 214 directional episodes contain 188 unique target
+contexts, and one location begins with a target before any causal memory exists.
+EXP-032 verified that the evaluator included the maximum 187 eligible targets,
+zero were lost to LiDAR validity, and all 29 components were represented. The
+model result is therefore qualified positive evidence, not a literal
+preregistered pass. No terminal rerun, threshold repair, or model tuning is
+permitted.
+
+## Completed selection path
 
 EXP-021 has frozen an untouched terminal benchmark with 214 directional
 episodes, 96 scenes, 29 components, and three locations. Its manifest hash is
@@ -146,8 +166,17 @@ AbsRel, and 3D EPE, with positive intervals for every comparison. Development
 model selection is closed. EXP-031 is authorized to open the untouched
 EXP-021 benchmark once using the immutable checkpoint/address/protocol.
 
-EXP-031 is now registered before access: 96 selected official-test scenes, 214
-directional episodes, 29 components, deterministic reservoir capacity 64 per
-location, write-after-predict, top-1 semantic-zero metric address, and frozen
-random/appearance/current controls. Terminal output cannot change any method or
-gate and will be reported whether it passes or fails.
+EXP-031 then evaluated the immutable system once. On 187 causally eligible
+targets and 29 components, full memory improved SILog, aligned AbsRel, and 3D
+EPE over current-only, same-bank random, and appearance means. Development and
+terminal model selection are closed.
+
+## Immediate next step
+
+The selected model is frozen. The next paper-critical experiment is a no-fit
+efficiency and complexity audit: backbone time, current local TTT overhead,
+address/search overhead as bank size grows, transport/readout overhead, peak
+GPU memory, and persistent bank bytes. This may characterize the method but may
+not change its architecture or parameters. After efficiency, the remaining
+major paper gap is independent dataset/backbone transfer rather than another
+nuScenes model variant.

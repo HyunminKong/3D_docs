@@ -6,7 +6,7 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Partially supported.** Global and slot states failed context selectivity, whereas visual local-code transport repeatedly produced positive self-supervised utility. EXP-011 showed that a single smaller 3D-track step can improve SILog, aligned AbsRel, and 3D EPE. The auxiliary-free EXP-015 refit produced OOF reuse headroom, but EXP-020 showed that this refit no longer preserved broad metric geometry. Spatial reuse remains plausible; the frozen paper-model instantiation is rejected.
+Status: **Partially supported.** Global and slot states failed context selectivity, whereas transported visual local codes produced reusable geometry benefit after the EXP-028 refit. EXP-030 and the untouched EXP-031 terminal evaluation show that the selected local-memory policy improves all three primary means over current-only TTT. A controlled global-state implementation still failed earlier, but universal superiority of local codes across backbones/datasets is not established.
 
 ## H2-P — Predicted geometry as the update carrier
 
@@ -24,13 +24,13 @@ Status: **Rejected as a primary input.** No-alignment observable routing general
 
 Current/source descriptors, current-only loss changes, update statistics, and transport evidence predict the future utility of a past local correction without accessing future frames online.
 
-Status: **Partially supported for proxy utility only.** Source-entity-safe addressing predicts the self-supervised future-loss label without query leakage, including significant superiority to matched random in EXP-020. Its ability to predict broad metric reconstruction improvement is not established.
+Status: **Supported in the tested static-revisit setting.** EXP-029 learned a source-safe metric-utility address without online query access. The frozen address generalized in EXP-030 and EXP-031: selected memory improved SILog, aligned AbsRel, and 3D EPE over current-only and same-bank random means. Cross-dataset observability remains open.
 
 ## H4-U — Learnable utility addressing and routing
 
 A trainable candidate/current utility model can retrieve and apply more useful adaptation than identity, appearance/place similarity, current-loss heuristics, and matched random addressing.
 
-Status: **Partially supported for proxy ranking and aligned AbsRel.** The exact utility-MIPS address and compact geometry reranking beat same-bank random on self-supervised utility. EXP-020 also significantly improved aligned AbsRel over current TTT, but did not significantly beat random on any primary LiDAR metric and retained 33% proxy harm. Broad geometry-utility routing remains unsupported.
+Status: **Supported in the tested static-revisit setting.** The single factorized metric-utility Ridge address beat matched random and appearance in development. Frozen terminal memory improved every primary mean over both controls, with positive comparison-family intervals. This does not establish reliable per-sample harm rejection or transfer beyond nuScenes/FastVGGT.
 
 ## H4-R — Learnable negative-transfer risk
 
@@ -42,7 +42,7 @@ Status: **Rejected for the tested classifier.** Neural risk AUROC was nontrivial
 
 A causal, capacity-bounded memory can retain most of an unbounded utility-addressed bank's revisit benefit.
 
-Status: **Partially supported for proxy retention.** Reservoir-64 retained the proxy benefit under the closed EXP-009 protocol, but did not beat FIFO significantly. EXP-020 did not establish consistent metric-geometry improvement. Capacity 64 is benchmark-selected; learned history eviction and DINO place consolidation remain rejected.
+Status: **Partially supported for bounded deployment.** Reservoir-64 retained a positive metric-memory effect on the frozen EXP-031 location streams. It was not compared with an unbounded metric-addressed bank on that terminal test and has never significantly beaten FIFO. No reservoir-superiority or universal-capacity claim is made.
 
 ## H6 — Extension to dynamic 4D
 
@@ -57,9 +57,12 @@ different but jointly necessary geometry signals. A parameter-free common
 descent update applied only during offline head meta-training can preserve
 improvement in both, while deployment remains one-loss/one-step TTT.
 
-Status: **Open.** EXP-024/025 establish an endpoint trade-off under scalar
-training, not yet a local gradient explanation or a successful common-descent
-fit. EXP-026 is the no-fit premise test. Failure blocks EXP-027.
+Status: **Supported for the selected offline head.** EXP-026 exposed local
+gradient conflict, EXP-027 localized AdamW rotation, and EXP-028's
+parameter-free feasible-displacement safeguard achieved 100% realized common
+descent while improving all three OOF geometry means. The frozen head retained
+the full-system benefit in EXP-030/031. This is a training-health mechanism,
+not the paper's standalone novelty claim or a general Pareto theorem.
 
 ## Rejected or narrowed hypotheses
 
