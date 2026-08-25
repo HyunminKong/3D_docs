@@ -71,11 +71,16 @@ online geometry-consistency loss become both current-useful and compatible
 across physical revisits, while the foundation carrier and online loss remain
 frozen.
 
-Status: **Open and now necessary for the competitive carrier.** EXP-038 proved
+Status: **Rejected for the tested compact first-order basis.** EXP-038 proved
 the coordinate is differentiable, but EXP-040/041 rejected reuse under a generic
 orthonormal basis: every simple carrier had negative future gain and negative
-source/target code agreement. A learned basis must establish oracle reuse on
-scene-disjoint train data before any address or continual-memory claim resumes.
+source/target code agreement. EXP-042's one trained 6,144-parameter basis
+substantially increased current-step improvement,
+but failed the registered revisit-compatibility gate: mean transported-code
+agreement remained negative, the reuse gain was only `5.96e-6`, and its
+scene-bootstrap interval crossed zero. This rejects the authorized compact v2
+realization; it does not prove that every larger or differently supervised
+plasticity representation is impossible.
 
 ## Rejected or narrowed hypotheses
 
@@ -87,6 +92,7 @@ scene-disjoint train data before any address or continual-memory claim resumes.
 - Predicted 3D correspondence should be the primary carrier of the fast update.
 - A physical revisit plus nearest predicted canonical-3D transport is sufficient to make a CUT3R local update reusable.
 - Raw source TTT directions are naturally compatible with target TTT directions on a competitive recurrent carrier.
+- One fixed-pass first-order shared basis trained only through current/revisit consistency is sufficient to make CUT3R codes robustly revisit-compatible.
 - Geometry-alignment failure should hard-reject a candidate that still has valid visual transport.
 - A second current TTT step is an equivalent replacement for memory reuse.
 - Generic DINOv2 place compatibility is a causal adaptation-utility address.

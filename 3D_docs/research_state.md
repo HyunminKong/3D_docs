@@ -290,3 +290,17 @@ EXP-042 is now registered for that decision. It freezes a 32-scene/128-pair fit
 subset and a disjoint 16-scene/64-pair internal audit, one AdamW pass, and an
 all-or-nothing oracle-reuse gate. Only the existing shared basis may change;
 validation and terminal remain closed.
+
+EXP-042 completed and failed its registered gate. Basis learning increased the
+scene-balanced current TTT gain from `9.72e-5` to `3.59e-4`, positive in all 16
+audit scenes. Its oracle reuse point estimate was positive (`5.96e-6`) and harm
+fell to 46.88%, but mean source/target code agreement was negative (`-0.00479`)
+and the scene-bootstrap interval for reuse crossed zero. The apparent reuse
+effect is therefore insufficient to open validation.
+
+The compact competitive-carrier v2 branch is stopped under D119. No validation,
+address, or memory-bank experiment is authorized. Continuing now requires an
+explicit project-level decision because every available path changes the paper
+claim or method scope: abandon adaptation-memory reuse on CUT3R, reopen the
+plasticity representation/objective beyond the one-module constraint, or return
+to the archived noncompetitive mechanism-proof system.

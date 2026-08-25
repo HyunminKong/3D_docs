@@ -1,6 +1,6 @@
 # EXP-042 — Learned CUT3R Plasticity Coordinate
 
-Status: Registered; not yet executed
+Status: Completed; registered gate failed
 Purpose: Scene-disjoint train-only oracle premise
 
 ## Question
@@ -68,3 +68,41 @@ address is considered.
 - Checkpoint (Git-ignored):
   `revisit3d/checkpoints/exp042_learned_cut3r_plasticity_coordinate_v10.pt`
 - Result: `revisit3d/results/EXP-042/learned_cut3r_plasticity_coordinate_v10.json`
+
+## Result
+
+The fixed pass completed all 128 optimizer steps, changed the basis by L2
+`0.625916`, and retained exact cached-readout parity (`0.0`). The checkpoint
+SHA-256 is
+`e9049ad104faca5303a4f29d089c9c100e4c329dd7e2a3943b9299b90582011d`.
+
+| Internal-audit metric | Initial basis | Learned basis |
+| --- | ---: | ---: |
+| current TTT gain over zero code | `9.72e-5` | `3.59e-4` |
+| oracle visual reuse gain over current | `4.24e-6` | `5.96e-6` |
+| full gain over visual spatial shuffle | `3.52e-6` | `1.56e-6` |
+| transported source/target code agreement | `0.00162` | `-0.00479` |
+| reuse harm fraction | 51.56% | 46.88% |
+
+The learned basis passed coverage, finiteness, basis-change, current-gain,
+point-estimate reuse, shuffle, harm, and improvement-over-initial checks. It
+failed the pre-registered positive mean code-agreement check, so the complete
+gate failed.
+
+A post-result uncertainty audit using 20,000 scene-level bootstrap resamples
+with seed `4200010` further limits the point estimates. Learned current TTT gain
+was positive in all 16 scenes with 95% interval
+`[2.70e-4, 4.80e-4]`. Learned oracle reuse was positive in 10/16 scenes and
+34/64 pairs, with interval `[-2.23e-5, 3.16e-5]`; its advantage over shuffle
+also crossed zero, `[-1.95e-5, 2.37e-5]`. These intervals were not part of the
+registered gate and are reported only to characterize the failed premise.
+
+## Conclusion
+
+Offline basis fitting clearly strengthens the one-step *current* adaptation
+coordinate, but does not establish a stable revisit-compatible coordinate.
+The mean reuse advantage is tiny and uncertain, code agreement is negative,
+and nearly half of pairs are harmed. Under D119, this result does not authorize
+validation access, a utility address, or a continual memory bank. The compact
+competitive-carrier v2 direction stops here pending an explicit project-level
+change of scope.

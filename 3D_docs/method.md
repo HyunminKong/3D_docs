@@ -158,10 +158,11 @@ state, pose memory, encoder, decoder, and geometry head remain frozen. The only
 candidate learned component currently authorized is the 6,144-parameter shared
 plasticity basis. Online deployment still has one loss and one step.
 
-This is not yet an accepted method. EXP-040/041 showed that a generic
+This is not an accepted method. EXP-040/041 showed that a generic
 orthonormal basis produces useful current TTT but incompatible source/target
 codes under untransported, visual, and 3D carriers. Therefore no v2 address or
-memory bank exists. D119 authorizes one train-internal scene-disjoint test of a
-learned plasticity coordinate. Only if it creates positive oracle visual-reuse
-utility may the branch proceed to frozen validation and a single utility
-address.
+memory bank exists. EXP-042 then trained the one authorized shared basis on a
+train-internal scene split. It strengthened current adaptation but failed the
+pre-registered revisit-compatibility gate and did not show robust reuse beyond
+shuffle. Consequently the compact v2 method is stopped: no validation run,
+utility address, or bank is authorized from this checkpoint.

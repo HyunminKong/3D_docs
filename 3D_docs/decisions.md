@@ -1259,3 +1259,27 @@ The first learned-basis experiment must split EXP-039 train scenes internally,
 fit on one subset, and evaluate oracle visual reuse on disjoint train scenes.
 Validation remains closed. Failure ends this compact v2 memory direction;
 success alone authorizes one frozen validation run and only then address fitting.
+
+## D120 — Stop compact competitive-carrier v2 after the learned-coordinate gate
+
+Date: 2026-08-25
+Status: Accepted after EXP-042
+
+The single registered fit completed exactly 128 steps on 32 train scenes and
+was audited once on 16 disjoint train scenes. It improved current TTT in every
+audit scene and produced a small positive oracle-reuse point estimate, but
+failed the required positive source/target code-agreement check. Reuse and
+shuffle advantages also had scene-bootstrap intervals spanning zero, and
+46.88% of pairs were harmed.
+
+This is evidence that the small basis can learn a stronger current adaptation
+coordinate, not evidence that it stores reusable adaptation experience. The
+checkpoint is retained as a rejected artifact and must not be promoted to
+validation or used to fit an address. No post-result learning-rate, epoch,
+threshold, transport, or loss change is allowed under EXP-042.
+
+D119's compact v2 allowance is exhausted. A next experiment requires an
+explicit project-level scope decision because it must either remove continual
+reuse from the primary claim or introduce a materially different plasticity
+objective/representation. The archived FastVGGT mechanism candidate remains
+unchanged but cannot satisfy the absolute competitive-carrier requirement.
