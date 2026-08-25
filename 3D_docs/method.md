@@ -104,11 +104,13 @@ paper endpoint.
 
 ## Allowed next-method change
 
-No change is authorized yet. After a new independent benchmark is identified,
-the next paper-scope decision may authorize at most one metric-aligned offline
-meta signal. The online objective must remain one loss and the inference graph
-must not gain another learned module unless a new decision explicitly replaces,
-rather than stacks onto, an existing component.
+The self-supervised track3D objective remains the single online loss. EXP-022
+rejects it as the sole offline meta/utility label because its gains are
+anti-correlated with SILog and 3D EPE gains. EXP-023 may evaluate exactly one
+scale-aligned sparse log-depth loss on disjoint query LiDAR as an offline oracle
+label. No training change is authorized until that label demonstrates oracle
+headroom across all primary geometry metrics. The inference graph must not gain
+another learned module.
 
 ## Claim boundary
 

@@ -69,6 +69,11 @@ calibration after meta-training**, not to lack of proxy retrieval signal. The
 EXP-015 checkpoint and EXP-019 address are frozen historical candidates, not an
 accepted final architecture.
 
+EXP-022 further localized the failure. The final zero-code head exactly equals
+foundation depth; damage is created by the learned one-step direction. Its
+future track3D gain is significantly anti-correlated with SILog and 3D EPE gain.
+The proxy cannot remain the sole offline utility target.
+
 ## Data-use boundary
 
 - The original EXP-005 six-episode test is closed.
@@ -84,13 +89,8 @@ accepted final architecture.
 EXP-021 has frozen an untouched terminal benchmark with 214 directional
 episodes, 96 scenes, 29 components, and three locations. Its manifest hash is
 `22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61`;
-no sensor or model output has been opened. The remaining pre-training work is to
-diagnose the metric-alignment loss and make one explicit paper-scope choice:
-
-1. keep the method fully self-supervised and narrow the endpoint to revisit
-   utility/aligned relative depth; or
-2. add exactly one metric-aligned **offline meta-training signal**, while
-   retaining the single online TTT loss and compact inference architecture.
-
-No official-test sensor/model output is accessed and no new model is trained
-until this diagnostic and scope decision are recorded.
+no sensor or model output has been opened. EXP-023 is the remaining no-fit
+feasibility test: use one scale-aligned sparse log-depth label to select among
+the frozen candidate corrections. Only if it improves all primary metrics may
+the same single label replace the proxy in atom/address meta-training. The
+online loss and compact inference architecture remain unchanged.

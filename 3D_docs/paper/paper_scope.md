@@ -111,9 +111,9 @@ The linear pair score over `[c_t,c_i,c_t-c_i,c_t*c_i]` factorizes exactly into m
 - If the simplified meta-objective collapses, retain only independently justified regularizers and report them transparently.
 - No result from the closed EXP-009 test may be used to tune the method.
 
-EXP-020 triggered the first two stop conditions. Consequently, the paper may
-not claim general reconstruction improvement from the current model. The next
-scope decision is whether to preserve a fully self-supervised but narrower
-relative-depth/revisit claim, or introduce one explicitly metric-aligned offline
-meta signal while retaining the single online TTT loss. That decision must be
-made before any new model training.
+EXP-020 triggered the first two stop conditions, and EXP-022 showed significant
+anti-alignment between proxy gain and SILog/EPE gain. Consequently, a fully
+self-supervised proxy-only endpoint is rejected for the primary CVPR path. The
+only active alternative is one explicitly metric-aligned offline meta label
+while retaining the single self-supervised online TTT loss. Its oracle utility
+must pass EXP-023 before any new model training.

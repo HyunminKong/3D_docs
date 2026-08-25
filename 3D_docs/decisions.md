@@ -664,3 +664,24 @@ EXP-015 one-step result. It also measures whether self-supervised future-loss
 improvement predicts sparse-LiDAR improvement. The result determines which
 single paper branch is scientifically justified; it may not authorize tuning on
 EXP-020 or access to the locked EXP-021 terminal benchmark.
+
+## D086 — Replace the offline proxy target, not the online loss or architecture
+
+Date: 2026-08-25
+Status: Accepted after EXP-022
+
+EXP-022 localized the failure to the learned online update direction: zero code
+exactly reproduces foundation depth, while the final one-step code improves
+aligned AbsRel but worsens target-average SILog and 3D EPE. Track3D future gain
+is significantly negatively associated with SILog and EPE gain. A narrow
+proxy-only paper would not answer the central reviewer objection and is rejected
+as the primary CVPR path.
+
+The online method remains unchanged: one track3D loss, one local-code step, and
+no extra module. The only admissible next signal is one offline sparse-LiDAR
+scale-aligned log-depth loss evaluated on disjoint query frames. EXP-023 first
+uses it only as an oracle selection label over frozen candidates. A new atom or
+address fit is authorized only if this single label selects candidates that
+improve SILog, aligned AbsRel, and 3D EPE together and provides component-level
+headroom over the existing proxy oracle. No weighted multi-metric objective,
+risk head, threshold sweep, or EXP-021 access is authorized.
