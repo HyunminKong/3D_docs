@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-035 passed; final model frozen)
+Last updated: 2026-08-25 (EXP-036 exposed an absolute-competitiveness blocker)
 
 ## First objective
 
@@ -171,7 +171,7 @@ targets and 29 components, full memory improved SILog, aligned AbsRel, and 3D
 EPE over current-only, same-bank random, and appearance means. Development and
 terminal model selection are closed.
 
-## Immediate next step
+## Completed paper-evidence path
 
 EXP-033 passed its reporting gate. On an A100 and eight 224×224 views, the
 method adds about 1.996 ms over 292.328 ms of separate frozen foundation passes
@@ -191,11 +191,24 @@ appearance. Current-only improvement was positive within every sequence. Only
 three imbalanced sequences are available, and the address accepted 100%, so
 this is transfer evidence rather than a general safety result.
 
-The final model is now frozen. No further architecture, loss, address,
-threshold, seed, capacity, or dataset-specific variant is permitted for this
-paper. EXP-036 is registered to run official CUT3R and TTT3R modes on the exact
-TUM causal event order, with query frames marked `update=false`. It is a
-reporting-only external baseline and cannot alter Revisit3D. After it, remaining
-CVPR work is fixed non-cherry-picked qualitative reconstruction outputs,
-tables/figures, and manuscript writing. Camera-pose and dynamic-4D improvement
-remain outside the claim.
+The final candidate is frozen. No further architecture, loss, address,
+threshold, seed, capacity, or dataset-specific variant is permitted under the
+closed-paper protocol. EXP-036 then evaluated official CUT3R and TTT3R modes on
+the exact TUM causal event order with query updates disabled.
+
+## Top-tier submission blocker
+
+EXP-036 completed on all 111 TUM targets. TTT3R achieved 15.727 SILog, 0.0781
+aligned AbsRel, and 0.2246 m 3D EPE; CUT3R achieved 16.607, 0.0812, and 0.2394
+m. The frozen Revisit3D full result is 28.462, 0.2301, and 0.4589 m. Different
+resolution/training prevents a controlled capacity claim, but the roughly
+1.8–3.0× error gap makes the custom head noncompetitive as a broad CVPR 3D
+reconstruction framework.
+
+The memory hypothesis remains supported relative to identical-backbone
+current/random/appearance controls. The current candidate is a completed
+mechanism proof, not a paper-ready SOTA framework. The scientifically preferred
+next branch is to attach the same compact local-code/utility-address principle
+to a competitive CUT3R/TTT3R-class state and rebuild development/held-out
+evidence from fresh data. That is a material scope reopening and requires an
+explicit project decision; it cannot be inferred from the closed-model mandate.

@@ -9,10 +9,11 @@ Development selection, untouched nuScenes terminal evaluation, efficiency, and
 zero-shot TUM transfer are complete. No further architecture, loss, threshold,
 seed, or dataset-specific model variant is allowed for this paper.
 
-The method evidence is strong enough to begin a CVPR manuscript, but the
-submission package is not complete until matched external streaming baselines
-and fixed qualitative reconstructions are added. ICLR-level generality is not
-claimed because a second backbone/task has not been validated.
+The controlled method evidence is strong enough for a mechanism paper draft,
+but EXP-036 shows that the custom reconstruction head is far behind CUT3R and
+TTT3R in absolute TUM geometry. The current candidate is therefore not ready
+for a broad CVPR reconstruction-framework submission. ICLR-level generality is
+also unsupported because a second backbone/task has not been validated.
 
 ## Working title
 
@@ -92,7 +93,7 @@ retention.
 | efficiency/storage | EXP-033 | 1.996 ms method overhead; 38.52 MiB bank-64 |
 | independent dataset | EXP-035 TUM zero-shot | descriptive pass on 111 targets/3 sequences |
 | second backbone/task | none | open; not required for the CVPR-first claim |
-| matched external SOTA baselines | checkpoints available, evaluation absent | required before submission |
+| matched external SOTA baselines | EXP-036 CUT3R/TTT3R | completed; exposes major absolute-quality gap |
 | fixed qualitative results | absent | required before submission |
 
 ## Claim boundary
@@ -117,10 +118,9 @@ Do not claim:
 
 ## Remaining submission work
 
-1. Run matched CUT3R and TTT3R baselines where their output/protocol can be
-   evaluated without changing ours; tttLRM is included only if camera/data
-   assumptions admit a fair comparison.
-2. Export deterministic earliest-target qualitative depth/point results for
+1. Decide whether to reopen method scope around a competitive CUT3R/TTT3R-class
+   backbone or narrow the current work to a non-SOTA mechanism study.
+2. If the current paper continues, export deterministic earliest-target qualitative depth/point results for
    every test component/sequence before viewing improvements; show fixed
    examples and failure cases.
 3. Assemble main tables, ablation table, efficiency table, method figure, and

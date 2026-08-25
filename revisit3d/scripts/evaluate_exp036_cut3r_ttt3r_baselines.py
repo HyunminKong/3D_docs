@@ -138,7 +138,9 @@ def main() -> None:
                 views = _views(images, updates)
                 torch.cuda.synchronize()
                 sequence_start = time.perf_counter()
-                predictions = model.forward_recurrent_lighter(views, device="cuda", ret_state=False)
+                predictions, _ = model.forward_recurrent_lighter(
+                    views, device="cuda", ret_state=False
+                )
                 torch.cuda.synchronize()
                 sequence_seconds = time.perf_counter() - sequence_start
                 mode_frames += len(views)

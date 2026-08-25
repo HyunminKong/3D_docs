@@ -133,3 +133,8 @@ reservoir superiority, universal capacity, worst-case safety, or transfer to a
 second backbone. EXP-031 must be described as qualified terminal evidence
 because its impossible coverage gate technically failed; EXP-035 has only
 three imbalanced sequences and cannot carry a broad generalization claim.
+
+EXP-036 further shows that the selected custom reconstruction head is not
+competitive in absolute TUM quality: official CUT3R/TTT3R reduce the three
+primary errors substantially. The frozen candidate is therefore a mechanism
+proof, not a state-of-the-art reconstruction system.

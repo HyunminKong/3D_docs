@@ -1090,3 +1090,22 @@ ablation: architectures, training data, resolution, and state differ. It cannot
 select or repair Revisit3D. tttLRM is retained as a conceptual closest method
 because its released calibrated-camera Gaussian renderer does not satisfy the
 same query-read-only pointmap interface without a different protocol.
+
+## D111 — Treat absolute SOTA competitiveness as a paper blocker
+
+Date: 2026-08-25
+Status: Accepted after EXP-036
+
+EXP-036 evaluated both official modes on all 111 matched causal TUM targets.
+TTT3R achieved SILog 15.727, aligned AbsRel 0.0781, and 3D EPE 0.2246 m;
+Revisit3D full achieved 28.462, 0.2301, and 0.4589 m. CUT3R was also far better
+than the custom head. Official baselines use 512 inputs and different training,
+so this is not a controlled mechanism ablation, but the absolute gap blocks a
+broad top-tier reconstruction-framework claim.
+
+The frozen Revisit3D result remains valid evidence that utility-addressed local
+adaptation improves its own backbone. It is not evidence of competitive
+reconstruction quality. No post-result change on exposed nuScenes/TUM is
+authorized under the closed model. A new CUT3R/TTT3R-class backbone integration
+would be a deliberate new research branch with new development and held-out
+data, not a repair or ablation of the final candidate.
