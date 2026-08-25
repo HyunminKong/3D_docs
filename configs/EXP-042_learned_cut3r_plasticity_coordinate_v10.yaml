@@ -1,0 +1,63 @@
+experiment: EXP-042
+protocol_revision: v1.0
+purpose: learned_cut3r_plasticity_coordinate_oracle_premise
+seed: 4200010
+data:
+  manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v11.json
+  manifest_sha256: 539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05
+  pairs_per_scene: 4
+  fit_scene_offset: 0
+  fit_scenes: 32
+  fit_pairs: 128
+  fit_pair_ids_sha256: 1682e3cec00a5b50f83553ccee2544ca23a4e9695a31dd92ff43da2e61a2b510
+  audit_scene_offset: 32
+  audit_scenes: 16
+  audit_pairs: 64
+  audit_pair_ids_sha256: 1b477d106c24cb1b22db76a9b8acd85e68af847b0a0a0ade7d88f26ed15c8992
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  image_size: 512
+  crop: false
+plasticity:
+  code_dim: 8
+  basis_seed: 3800010
+  normalized_step: 0.001
+  patch_size: 16
+transport:
+  method: visual
+  visual_temperature: 0.07
+  spatial_shuffle_seed: 4200010
+training:
+  fitted_parameters: residual_projection_only
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.0
+  epochs: 1
+  optimizer_steps: 128
+  first_order_code_gradient: true
+  current_loss_weight: 0.5
+  oracle_reuse_loss_weight: 0.5
+  auxiliary_losses: 0
+audit:
+  compare_initial_basis: true
+  compare_visual_spatial_shuffle: true
+success:
+  exact_fit_scenes: 32
+  exact_fit_pairs: 128
+  exact_audit_scenes: 16
+  exact_audit_pairs: 64
+  require_finite: true
+  require_basis_changed: true
+  require_positive_current_ttt_gain: true
+  require_positive_oracle_reuse_gain_over_current: true
+  require_full_better_than_visual_spatial_shuffle: true
+  require_positive_source_target_code_agreement: true
+  maximum_reuse_harm_fraction: 0.5
+  require_reuse_gain_better_than_initial_basis: true
+output:
+  checkpoint: revisit3d/checkpoints/exp042_learned_cut3r_plasticity_coordinate_v10.pt
+  result: revisit3d/results/EXP-042/learned_cut3r_plasticity_coordinate_v10.json

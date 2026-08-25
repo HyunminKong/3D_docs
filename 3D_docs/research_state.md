@@ -285,3 +285,8 @@ after current-code and oracle visual-reuse application; it is not a second loss.
 The next experiment must fit on a fixed subset of EXP-039 train scenes and test
 on disjoint train scenes. No validation, terminal, address, or bank access is
 allowed until this learned-coordinate oracle premise passes.
+
+EXP-042 is now registered for that decision. It freezes a 32-scene/128-pair fit
+subset and a disjoint 16-scene/64-pair internal audit, one AdamW pass, and an
+all-or-nothing oracle-reuse gate. Only the existing shared basis may change;
+validation and terminal remain closed.
