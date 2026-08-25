@@ -1,0 +1,44 @@
+experiment: EXP-035
+protocol_revision: v1.0
+seed: 3500010
+authorization: revisit3d/results/EXP-034/tum_transfer_feasibility_v11.json
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  image_height: 224
+  image_width: 224
+foundation:
+  repository: FastVGGT
+  checkpoint: FastVGGT/ckpt/model_tracker_fixed_e20.pt
+  feature_dim: 2048
+  track_side: 8
+geometry_head_checkpoint: revisit3d/checkpoints/exp006_geometry_bootstrap_v22.pt
+stage1:
+  cache: revisit3d/cache/EXP-035/tum_frozen_geometry_v10.pt
+  result: revisit3d/results/EXP-035/stage1_tum_frozen_geometry_v10.json
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp028_safeguarded_pareto_atom_v10.pt
+  atom_sha256: 3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae
+  address_artifact: revisit3d/checkpoints/exp029_metric_utility_address_v10.joblib
+  address_sha256: d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984
+method:
+  step_size: 0.0125
+  reuse_strength: 0.10
+bank:
+  capacity: 64
+  retention: deterministic_reservoir
+  partition: sequence
+  write_policy: after_prediction
+depth:
+  minimum_m: 0.2
+  maximum_m: 10.0
+  minimum_cells_per_view: 32
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 3500010
+success:
+  minimum_targets: 100
+  minimum_sequences: 3
+  primary_metrics: [silog, abs_rel, point_epe_m]
+output:
+  result: revisit3d/results/EXP-035/stage2_tum_zero_shot_transfer_v10.json

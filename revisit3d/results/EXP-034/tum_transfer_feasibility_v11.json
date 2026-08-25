@@ -1,0 +1,49 @@
+{
+  "experiment": "EXP-034",
+  "stage": "tum_zero_shot_metadata_feasibility",
+  "protocol_revision": "v1.1",
+  "config": "configs/EXP-034_tum_transfer_feasibility_v11.yaml",
+  "manifest": "revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json",
+  "manifest_sha256": "81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7",
+  "counts": {
+    "sequences": 3,
+    "stream_contexts": 223,
+    "revisit_targets": 111,
+    "referenced_sensor_files": 13494,
+    "missing_referenced_sensor_files": 0
+  },
+  "sequences": {
+    "rgbd_dataset_freiburg1_desk": {
+      "rgb_rows": 613,
+      "associated_rows": 596,
+      "stream_contexts": 19,
+      "revisit_targets": 4
+    },
+    "rgbd_dataset_freiburg2_xyz": {
+      "rgb_rows": 3669,
+      "associated_rows": 3665,
+      "stream_contexts": 122,
+      "revisit_targets": 98
+    },
+    "rgbd_dataset_freiburg3_long_office_household": {
+      "rgb_rows": 2585,
+      "associated_rows": 2486,
+      "stream_contexts": 82,
+      "revisit_targets": 9
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "minimum_sequences": true,
+      "minimum_stream_contexts": true,
+      "minimum_revisit_targets": true,
+      "all_referenced_files_exist": true,
+      "no_sensor_decoded": true,
+      "no_model_output_accessed": true
+    },
+    "passed": true
+  },
+  "image_decoded": false,
+  "depth_decoded": false,
+  "model_output_accessed": false
+}

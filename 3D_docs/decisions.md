@@ -1039,3 +1039,19 @@ as false values into `all(checks)`. The v1.0 result remains preserved. Version
 1.1 changes only those predicates to `no_sensor_decoded=true` and
 `no_model_output_accessed=true`, with new output paths. No association,
 threshold, sequence, count, sensor data, or model output changes.
+
+## D108 — Register one frozen TUM transfer stress test
+
+Date: 2026-08-25
+Status: Accepted after EXP-034 v1.1
+
+EXP-034 passed with 223 contexts and 111 causal revisit targets, but only three
+sequences and a 4/98/9 target split. EXP-035 is therefore descriptive
+cross-domain evidence rather than a replacement independent benchmark.
+
+The complete nuScenes-selected model and policy are immutable. TUM may supply
+RGB online and dense query depth offline; no TUM observation may fit the head,
+address, PCA, threshold, loss, capacity, or checkpoint. Full memory must improve
+all three sequence-balanced primary means over current-only, same-bank random,
+and appearance. Failure is terminal for zero-shot TUM and cannot authorize a
+repair.

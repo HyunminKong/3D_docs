@@ -1,6 +1,6 @@
 # EXP-034 — TUM Zero-Shot Transfer Feasibility Audit
 
-Status: Correction v1.1 registered after metadata-only v1.0 gate bug
+Status: Completed; corrected v1.1 gate passed
 
 ## Question
 
@@ -44,3 +44,16 @@ gate value before applying `all(checks)`. Its failed result is preserved at
 positive predicates (`no_sensor_decoded`, `no_model_output_accessed`) and writes
 new manifest/result paths. Data, associations, thresholds, and counts do not
 change; no sensor or model output was accessed before this correction.
+
+## Result
+
+Version 1.1 produced 223 causal stream contexts and 111 revisit targets across
+all three sequences, with zero missing files. Counts by sequence were 19/4
+contexts/targets for Freiburg1-desk, 122/98 for Freiburg2-xyz, and 82/9 for
+Freiburg3-long-office. No image, depth, or model output was accessed. Every
+corrected gate passed.
+
+The heavy target imbalance and only three independent sequences preclude
+paper-level inference. The benchmark is nevertheless adequate for a frozen
+zero-shot domain-transfer stress test if sequence-balanced and per-sequence
+results are both reported.

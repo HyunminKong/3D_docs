@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-033 efficiency audit completed)
+Last updated: 2026-08-25 (EXP-035 zero-shot transfer registered)
 
 ## First objective
 
@@ -179,8 +179,14 @@ method adds about 1.996 ms over 292.328 ms of separate frozen foundation passes
 contain 288,386 parameters. Reservoir-64 tensor payload is 38.52 MiB, dominated
 by the per-token visual key, and is the main efficiency cost.
 
-The selected model remains frozen. The remaining major paper-evidence gap is
-independent dataset/backbone transfer, not another nuScenes model variant.
-Before registering that expensive experiment, audit local datasets, calibration
-and revisit availability, sparse/dense geometry ground truth, and backbone
-compatibility without opening a new held-out evaluation split.
+The selected model remains frozen. EXP-034 found one local independent dataset:
+TUM RGB-D supplies 223 causal contexts and 111 physical-revisit targets across
+three indoor sequences. Because 98 targets lie in one sequence, this cannot
+replace paper-level multi-component inference.
+
+EXP-035 is registered as a single no-fit nuScenes→TUM stress test. It freezes
+the complete atom, address, FastVGGT/custom geometry stack, TTT step, residual,
+semantic-zero rule, and reservoir policy. Sequence-balanced geometry must beat
+current-only, same-bank random, and appearance on all primary means. TUM RGB is
+online input and query depth is offline evaluation only; no TUM-side fitting or
+post-result repair is allowed.
