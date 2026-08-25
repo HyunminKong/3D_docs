@@ -176,3 +176,11 @@ optimized for how it induces an update as well as how it decodes that update.
 No module, loss family, or deployment operation is added. This candidate is not
 accepted unless it passes the scene-bootstrap functional reuse gate on the last
 15 unopened train scenes.
+
+EXP-043 rejected unconditional reuse but revealed an online-observable decision
+variable: cosine agreement between the current descent code and transported
+memory code. The only candidate routing revision is the semantic zero rule
+`use memory iff cosine > 0`; zero means the two descent directions cease to
+agree. It has no learned parameter or calibrated threshold. Because it was
+identified on an exposed audit, its development result is post-hoc and the rule
+must be immutable before validation.

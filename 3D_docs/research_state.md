@@ -316,3 +316,17 @@ The EXP-043 fit-only smoke passed after forcing the mathematically equivalent
 math SDPA backend because the default efficient kernel lacks double backward.
 The exact gradient is finite and peak allocated memory is 36.61 GiB. No audit
 frame was opened. The registered 192-step fit is now authorized.
+
+EXP-043 completed after one artifact-free restart caused by an unrelated GPU
+process. Exact-meta training raised current TTT gain to `6.42e-4` with a
+positive 95% interval in all 15 scenes, but ungated reuse gain was `9.30e-6`
+with interval `[-3.24e-5, 5.16e-5]`; correct transport and shuffle were tied.
+The registered ungated gate failed and validation remains closed.
+
+Post-hoc analysis exposes a minimal routing lead rather than another
+architecture: current/transported-code cosine agreement correlates `0.752`
+with utility. Applying memory only for positive agreement gives a development
+gain of `6.05e-5` with positive scene-bootstrap interval and 1.67% harm. These
+inspected numbers are not confirmatory evidence. EXP-044 will preserve the
+post-hoc diagnostic, after which the algebraic zero rule may be frozen for one
+validation experiment without fitting a router or threshold.

@@ -1,6 +1,6 @@
 # EXP-043 — Exact-Meta CUT3R Plasticity Coordinate
 
-Status: Registered; fit-only implementation smoke passed
+Status: Completed; ungated registered gate failed
 Purpose: Approved minimal scope reopening after EXP-042
 
 ## Question
@@ -84,3 +84,44 @@ one validation run. Failure ends this exact-meta realization before validation.
   `revisit3d/checkpoints/exp043_exact_meta_cut3r_plasticity_coordinate_v10.pt`
 - Result:
   `revisit3d/results/EXP-043/exact_meta_cut3r_plasticity_coordinate_v10.json`
+
+## Result
+
+After one external-process OOM before any artifact or audit access, the official
+run was restarted from initialization and completed all 192 steps. Peak
+allocated memory was 36.61 GiB, basis L2 change was `0.971665`, cached-readout
+parity remained exact, and checkpoint SHA-256 is
+`eaa1c57f34cdb485099ba1e90cbd212c7d0243f725dcf3165015e2eec054a3a2`.
+
+| Audit metric | Initial basis | Exact-meta basis |
+| --- | ---: | ---: |
+| current TTT gain | `1.27e-4` | `6.42e-4` |
+| current-gain 95% CI | `[7.67e-5, 1.92e-4]` | `[3.70e-4, 9.89e-4]` |
+| ungated oracle reuse gain | `1.21e-6` | `9.30e-6` |
+| reuse-gain 95% CI | `[-5.73e-6, 9.41e-6]` | `[-3.24e-5, 5.16e-5]` |
+| full over visual shuffle | `1.53e-7` | `8.33e-8` |
+| reuse harm | 58.33% | 50.00% |
+
+The exact objective again learned a much stronger current update, positive in
+all 15 scenes. Ungated reuse improved its point estimate over initialization,
+but its interval crossed zero and correct visual transport was statistically
+indistinguishable from spatial shuffle. The registered gate therefore failed
+two checks and no direct validation run is authorized.
+
+## Post-result diagnostic lead
+
+The 60 learned-basis rows contain substantial heterogeneous utility: an oracle
+current fallback would gain `6.12e-5`, versus `2.49e-5` for shuffled reuse. The
+online-observable cosine agreement between transported source code and current
+code correlates `0.752` with future gain. A zero-sign policy is analyzed
+separately as post-hoc EXP-044; these inspected values are not EXP-043 evidence
+and cannot be used to tune a threshold.
+
+## Conclusion
+
+H9 is rejected for *ungated* reuse. Exact differentiation solves current
+plasticity but does not make every past code safe. The next scientifically
+minimal question is whether the algebraic sign of current/memory descent
+agreement supplies the missing parameter-free utility decision. This adds no
+head, learned address, loss, or tuned scalar and must be frozen before any
+validation access.

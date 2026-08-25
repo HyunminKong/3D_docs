@@ -106,8 +106,9 @@ The same compact basis can become revisit-compatible when offline training
 differentiates future consistency through the online source and target code
 creation steps, rather than treating those generated codes as fixed.
 
-Status: **Open after explicit scope reopening.** EXP-042 established that the
-first-order detached objective mostly strengthens current adaptation. EXP-043
-tests the exact meta-gradient with no new module, online loss, or inference
-hyperparameter. It must show statistically positive functional reuse on the
-last unopened train scenes before validation.
+Status: **Rejected for ungated reuse; routing sub-hypothesis open.** EXP-043's
+exact meta-gradient strongly improved current adaptation, but ungated reuse and
+correct-over-shuffle confidence intervals crossed zero. Post-hoc analysis found
+large oracle-abstention headroom and strong association between online
+current/memory code agreement and utility. EXP-044 records that lead; only a
+pre-frozen validation policy can support the routing sub-hypothesis.

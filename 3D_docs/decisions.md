@@ -1306,3 +1306,26 @@ Functional future-utility confidence intervals replace code cosine as the
 primary gate because basis coordinates are only meaningful through their
 decoded effect. Failure stops the exact-meta realization. Success permits one
 frozen validation run; it does not automatically authorize an address or bank.
+
+## D122 — Reject unconditional exact-meta reuse and isolate zero-agreement routing
+
+Date: 2026-08-25
+Status: Accepted after EXP-043
+
+EXP-043 passes current adaptation but fails both registered memory-specific
+confidence bounds. Exact meta-training alone is not sufficient evidence for
+unconditional reuse, and the checkpoint may not proceed directly to
+validation as the registered EXP-043 method.
+
+The failure is heterogeneous rather than uniformly null. On the exposed audit,
+oracle fallback has substantial headroom and current/memory code cosine has
+`0.752` correlation with future utility. A post-hoc positive-sign policy reduces
+harm from 50.00% to 1.67% and has a positive development interval. Because this
+was inspected after EXP-043, it is only a design lead.
+
+One parameter-free routing revision is authorized: apply the transported code
+iff its mean cosine with the current code is strictly positive. The value zero
+is algebraic descent agreement, not a calibrated threshold. EXP-044 must record
+the post-hoc development calculation transparently. Only after its code and
+policy are frozen may a new EXP ID open validation once. No learned address,
+risk head, threshold sweep, new loss, or memory bank is authorized yet.
