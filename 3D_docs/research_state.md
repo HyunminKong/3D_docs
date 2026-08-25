@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-036 exposed an absolute-competitiveness blocker)
+Last updated: 2026-08-25 (FastVGGT mechanism candidate archived; competitive-carrier branch opened)
 
 ## First objective
 
@@ -212,3 +212,19 @@ next branch is to attach the same compact local-code/utility-address principle
 to a competitive CUT3R/TTT3R-class state and rebuild development/held-out
 evidence from fresh data. That is a material scope reopening and requires an
 explicit project decision; it cannot be inferred from the closed-model mandate.
+
+## Active next branch
+
+D112 records the explicit decision to preserve the complete EXP-036 candidate
+and reopen only the geometry-carrier scope. The archived candidate remains the
+mechanism-proof baseline and must not be repaired on exposed nuScenes/TUM data.
+
+The next registered experiment is EXP-037, a no-fit competitive-carrier
+diagnostic. It will first measure the official FastVGGT geometry head on the
+already exposed TUM causal query protocol and compare it with the frozen custom
+head and EXP-036 CUT3R/TTT3R references. This is engineering selection evidence,
+not a final paper test. If the official head restores competitive absolute
+geometry while keeping the existing token/state interface, it is the minimal
+paper branch. Otherwise the branch must move to a CUT3R/TTT3R-class recurrent
+carrier. All paper-level model development and terminal evaluation after this
+choice require new source-safe data partitions.

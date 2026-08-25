@@ -1109,3 +1109,23 @@ reconstruction quality. No post-result change on exposed nuScenes/TUM is
 authorized under the closed model. A new CUT3R/TTT3R-class backbone integration
 would be a deliberate new research branch with new development and held-out
 data, not a repair or ablation of the final candidate.
+
+## D112 — Archive the FastVGGT mechanism candidate and open a competitive-carrier branch
+
+Date: 2026-08-25
+Status: Accepted by explicit project decision
+
+The complete EXP-036 state is preserved as an immutable mechanism-proof
+baseline with an archival Git ref, a standalone Git bundle, artifact copies,
+and SHA-256 verification. Its code, checkpoints, exposed nuScenes/TUM results,
+and interpretations may not be silently changed by the new branch.
+
+The paper-first project now reopens one material scope variable: the absolute
+geometry carrier. The local plasticity code, explicit transport, and
+future-utility address remain the method hypothesis. The first new experiment
+must be a no-fit carrier diagnostic, not another memory module: determine
+whether the official FastVGGT geometry head supplies sufficient absolute
+quality while preserving the existing token interface, or whether integration
+must move to a CUT3R/TTT3R-class recurrent state. Exposed TUM data may be used
+only for this declared engineering diagnosis and may not become final
+held-out evidence.
