@@ -1,0 +1,651 @@
+{
+  "experiment": "EXP-041",
+  "stage": "cut3r_train_only_transport_coordinate_diagnosis",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-041_cut3r_transport_coordinate_diagnosis_v10.yaml",
+  "pairs": 32,
+  "scenes": 8,
+  "means": {
+    "current": 0.18711159680970013,
+    "loss_untransported": 0.18711619829991832,
+    "alignment_untransported": -0.05272096750559285,
+    "loss_visual": 0.187120363174472,
+    "alignment_visual": -0.08627983255428262,
+    "loss_geometry": 0.18712922639679164,
+    "alignment_geometry": -0.07415204052813351,
+    "loss_visual_shuffle": 0.187117054767441,
+    "alignment_visual_shuffle": -0.008158998170983978
+  },
+  "gains_over_current": {
+    "untransported": -4.601490218192339e-06,
+    "visual": -8.766364771872759e-06,
+    "geometry": -1.7629587091505527e-05,
+    "visual_shuffle": -5.457957740873098e-06
+  },
+  "harm_fractions": {
+    "untransported": 0.5,
+    "visual": 0.53125,
+    "geometry": 0.53125,
+    "visual_shuffle": 0.625
+  },
+  "eligible_carriers": {
+    "untransported": false,
+    "visual": false,
+    "geometry": false
+  },
+  "registered_decision": "no_raw_carrier",
+  "basis_fit_performed": false,
+  "address_fit_performed": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "rows": [
+    {
+      "pair_id": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8:000",
+      "scene": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8",
+      "current_loss": 0.24747826159000397,
+      "losses": {
+        "untransported": 0.24750837683677673,
+        "visual": 0.24749240279197693,
+        "geometry": 0.24750152230262756,
+        "visual_shuffle": 0.2474866807460785
+      },
+      "alignments": {
+        "untransported": -0.10716647654771805,
+        "visual": -0.1842712014913559,
+        "geometry": -0.01451123133301735,
+        "visual_shuffle": 0.02345002442598343
+      },
+      "geometry_mean_distance": 0.9276060461997986,
+      "visual_mean_peak_weight": 0.07480660080909729
+    },
+    {
+      "pair_id": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8:001",
+      "scene": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8",
+      "current_loss": 0.293210506439209,
+      "losses": {
+        "untransported": 0.29326438903808594,
+        "visual": 0.29324012994766235,
+        "geometry": 0.2932298481464386,
+        "visual_shuffle": 0.2932307720184326
+      },
+      "alignments": {
+        "untransported": -0.3927527070045471,
+        "visual": -0.35088539123535156,
+        "geometry": -0.3266388773918152,
+        "visual_shuffle": -0.043469782918691635
+      },
+      "geometry_mean_distance": 0.2735099196434021,
+      "visual_mean_peak_weight": 0.2574341893196106
+    },
+    {
+      "pair_id": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8:002",
+      "scene": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8",
+      "current_loss": 0.20918017625808716,
+      "losses": {
+        "untransported": 0.20927801728248596,
+        "visual": 0.20932969450950623,
+        "geometry": 0.2093154788017273,
+        "visual_shuffle": 0.20919165015220642
+      },
+      "alignments": {
+        "untransported": -0.5493100881576538,
+        "visual": -0.6922814249992371,
+        "geometry": -0.6629401445388794,
+        "visual_shuffle": -0.17276835441589355
+      },
+      "geometry_mean_distance": 0.38913241028785706,
+      "visual_mean_peak_weight": 0.2121848613023758
+    },
+    {
+      "pair_id": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8:003",
+      "scene": "8324b3ca22085040c2a0ecb7284e0cdf776b1f846b73a7c0df893587cb4a45f8",
+      "current_loss": 0.14949345588684082,
+      "losses": {
+        "untransported": 0.14948683977127075,
+        "visual": 0.14949879050254822,
+        "geometry": 0.1494903862476349,
+        "visual_shuffle": 0.14947909116744995
+      },
+      "alignments": {
+        "untransported": -0.021601978689432144,
+        "visual": -0.11119158565998077,
+        "geometry": -0.09842702001333237,
+        "visual_shuffle": 0.02326032891869545
+      },
+      "geometry_mean_distance": 0.22127248346805573,
+      "visual_mean_peak_weight": 0.22242403030395508
+    },
+    {
+      "pair_id": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd:000",
+      "scene": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd",
+      "current_loss": 0.2633635401725769,
+      "losses": {
+        "untransported": 0.2633984088897705,
+        "visual": 0.26339614391326904,
+        "geometry": 0.2633868455886841,
+        "visual_shuffle": 0.2633702754974365
+      },
+      "alignments": {
+        "untransported": -0.20193693041801453,
+        "visual": -0.4397055506706238,
+        "geometry": -0.33756691217422485,
+        "visual_shuffle": -0.1517416089773178
+      },
+      "geometry_mean_distance": 0.6713268756866455,
+      "visual_mean_peak_weight": 0.17950862646102905
+    },
+    {
+      "pair_id": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd:001",
+      "scene": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd",
+      "current_loss": 0.23600167036056519,
+      "losses": {
+        "untransported": 0.235978364944458,
+        "visual": 0.2359771579504013,
+        "geometry": 0.23593677580356598,
+        "visual_shuffle": 0.23597578704357147
+      },
+      "alignments": {
+        "untransported": -0.02623589336872101,
+        "visual": 0.18171080946922302,
+        "geometry": 0.21810898184776306,
+        "visual_shuffle": 0.12312617897987366
+      },
+      "geometry_mean_distance": 0.5169361233711243,
+      "visual_mean_peak_weight": 0.19975532591342926
+    },
+    {
+      "pair_id": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd:002",
+      "scene": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd",
+      "current_loss": 0.29053449630737305,
+      "losses": {
+        "untransported": 0.29052111506462097,
+        "visual": 0.2905314266681671,
+        "geometry": 0.2905881702899933,
+        "visual_shuffle": 0.2905424237251282
+      },
+      "alignments": {
+        "untransported": -0.311014860868454,
+        "visual": -0.33402249217033386,
+        "geometry": -0.24757196009159088,
+        "visual_shuffle": -0.14756792783737183
+      },
+      "geometry_mean_distance": 0.7259562611579895,
+      "visual_mean_peak_weight": 0.20907126367092133
+    },
+    {
+      "pair_id": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd:003",
+      "scene": "2f3e1c0f688c84cec67f9a1ea219c54c14ffabf31a046e620dacc690cac2f1bd",
+      "current_loss": 0.2602561116218567,
+      "losses": {
+        "untransported": 0.2601490020751953,
+        "visual": 0.26014798879623413,
+        "geometry": 0.26016131043434143,
+        "visual_shuffle": 0.2602313756942749
+      },
+      "alignments": {
+        "untransported": 0.35799384117126465,
+        "visual": 0.42686206102371216,
+        "geometry": 0.3927655816078186,
+        "visual_shuffle": 0.13967940211296082
+      },
+      "geometry_mean_distance": 0.37580567598342896,
+      "visual_mean_peak_weight": 0.187091663479805
+    },
+    {
+      "pair_id": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066:000",
+      "scene": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066",
+      "current_loss": 0.09528050571680069,
+      "losses": {
+        "untransported": 0.09529147297143936,
+        "visual": 0.0952916145324707,
+        "geometry": 0.09527789801359177,
+        "visual_shuffle": 0.0952814370393753
+      },
+      "alignments": {
+        "untransported": -0.20318663120269775,
+        "visual": -0.26587221026420593,
+        "geometry": -0.18393537402153015,
+        "visual_shuffle": -0.07243826985359192
+      },
+      "geometry_mean_distance": 0.11280763149261475,
+      "visual_mean_peak_weight": 0.20767004787921906
+    },
+    {
+      "pair_id": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066:001",
+      "scene": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066",
+      "current_loss": 0.0943579152226448,
+      "losses": {
+        "untransported": 0.0943613350391388,
+        "visual": 0.09436717629432678,
+        "geometry": 0.09435946494340897,
+        "visual_shuffle": 0.09436365962028503
+      },
+      "alignments": {
+        "untransported": 0.008112253621220589,
+        "visual": -0.05787098780274391,
+        "geometry": -0.029615726321935654,
+        "visual_shuffle": -0.0948670357465744
+      },
+      "geometry_mean_distance": 0.1185741201043129,
+      "visual_mean_peak_weight": 0.21957334876060486
+    },
+    {
+      "pair_id": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066:002",
+      "scene": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066",
+      "current_loss": 0.09129847586154938,
+      "losses": {
+        "untransported": 0.09128935635089874,
+        "visual": 0.09130039811134338,
+        "geometry": 0.0912933200597763,
+        "visual_shuffle": 0.09129385650157928
+      },
+      "alignments": {
+        "untransported": -0.012921947985887527,
+        "visual": -0.13835379481315613,
+        "geometry": -0.10984619706869125,
+        "visual_shuffle": -0.12379427999258041
+      },
+      "geometry_mean_distance": 0.11961817741394043,
+      "visual_mean_peak_weight": 0.19719232618808746
+    },
+    {
+      "pair_id": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066:003",
+      "scene": "2b65ba886efac7af6253fce68ae9284bf4d4db019e17c47f3e853361acbdb066",
+      "current_loss": 0.06362766772508621,
+      "losses": {
+        "untransported": 0.06363026797771454,
+        "visual": 0.06362678855657578,
+        "geometry": 0.06362707912921906,
+        "visual_shuffle": 0.06362536549568176
+      },
+      "alignments": {
+        "untransported": -0.08068107068538666,
+        "visual": 0.00491560623049736,
+        "geometry": -0.049648694694042206,
+        "visual_shuffle": 0.0053311968222260475
+      },
+      "geometry_mean_distance": 0.4013364613056183,
+      "visual_mean_peak_weight": 0.10814923793077469
+    },
+    {
+      "pair_id": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038:000",
+      "scene": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038",
+      "current_loss": 0.24050846695899963,
+      "losses": {
+        "untransported": 0.24046984314918518,
+        "visual": 0.2404811680316925,
+        "geometry": 0.24048730731010437,
+        "visual_shuffle": 0.24047857522964478
+      },
+      "alignments": {
+        "untransported": -0.01212712749838829,
+        "visual": 0.04003072530031204,
+        "geometry": 0.035195525735616684,
+        "visual_shuffle": 0.053510598838329315
+      },
+      "geometry_mean_distance": 0.47177252173423767,
+      "visual_mean_peak_weight": 0.16739395260810852
+    },
+    {
+      "pair_id": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038:001",
+      "scene": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038",
+      "current_loss": 0.1795484721660614,
+      "losses": {
+        "untransported": 0.17956498265266418,
+        "visual": 0.17956876754760742,
+        "geometry": 0.17958956956863403,
+        "visual_shuffle": 0.1795724630355835
+      },
+      "alignments": {
+        "untransported": -0.11608730256557465,
+        "visual": -0.3045436143875122,
+        "geometry": -0.1856170892715454,
+        "visual_shuffle": -0.10524136573076248
+      },
+      "geometry_mean_distance": 0.4458438456058502,
+      "visual_mean_peak_weight": 0.20613469183444977
+    },
+    {
+      "pair_id": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038:002",
+      "scene": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038",
+      "current_loss": 0.38237661123275757,
+      "losses": {
+        "untransported": 0.3824213147163391,
+        "visual": 0.3823525309562683,
+        "geometry": 0.3824644386768341,
+        "visual_shuffle": 0.3824176788330078
+      },
+      "alignments": {
+        "untransported": -0.08767274022102356,
+        "visual": -0.011141691356897354,
+        "geometry": -0.07537802308797836,
+        "visual_shuffle": -0.047842007130384445
+      },
+      "geometry_mean_distance": 3.175462007522583,
+      "visual_mean_peak_weight": 0.16917043924331665
+    },
+    {
+      "pair_id": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038:003",
+      "scene": "5a69d1027b477be4d2933b765723d57b272e0ace96be7885306464d54aa2c038",
+      "current_loss": 0.3953416645526886,
+      "losses": {
+        "untransported": 0.39543628692626953,
+        "visual": 0.39543259143829346,
+        "geometry": 0.395613431930542,
+        "visual_shuffle": 0.39536210894584656
+      },
+      "alignments": {
+        "untransported": -0.14253738522529602,
+        "visual": -0.1588805615901947,
+        "geometry": -0.4416051506996155,
+        "visual_shuffle": -0.0273972786962986
+      },
+      "geometry_mean_distance": 0.5741856694221497,
+      "visual_mean_peak_weight": 0.1910499781370163
+    },
+    {
+      "pair_id": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090:000",
+      "scene": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090",
+      "current_loss": 0.1185736209154129,
+      "losses": {
+        "untransported": 0.11857818812131882,
+        "visual": 0.11857612431049347,
+        "geometry": 0.11857293546199799,
+        "visual_shuffle": 0.1185782253742218
+      },
+      "alignments": {
+        "untransported": -0.10448496043682098,
+        "visual": -0.149301216006279,
+        "geometry": -0.04571458697319031,
+        "visual_shuffle": 0.006002878770232201
+      },
+      "geometry_mean_distance": 0.21760405600070953,
+      "visual_mean_peak_weight": 0.20175756514072418
+    },
+    {
+      "pair_id": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090:001",
+      "scene": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090",
+      "current_loss": 0.08387076109647751,
+      "losses": {
+        "untransported": 0.08386904001235962,
+        "visual": 0.08389025926589966,
+        "geometry": 0.08387624472379684,
+        "visual_shuffle": 0.08387725055217743
+      },
+      "alignments": {
+        "untransported": -0.06421967595815659,
+        "visual": -0.15016214549541473,
+        "geometry": -0.15921185910701752,
+        "visual_shuffle": -0.005199360195547342
+      },
+      "geometry_mean_distance": 0.18085087835788727,
+      "visual_mean_peak_weight": 0.19655324518680573
+    },
+    {
+      "pair_id": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090:002",
+      "scene": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090",
+      "current_loss": 0.13620144128799438,
+      "losses": {
+        "untransported": 0.13627204298973083,
+        "visual": 0.13627204298973083,
+        "geometry": 0.1362977772951126,
+        "visual_shuffle": 0.1362609565258026
+      },
+      "alignments": {
+        "untransported": -0.430111825466156,
+        "visual": -0.5202999114990234,
+        "geometry": -0.5415552854537964,
+        "visual_shuffle": -0.2448376566171646
+      },
+      "geometry_mean_distance": 0.20274220407009125,
+      "visual_mean_peak_weight": 0.1992698758840561
+    },
+    {
+      "pair_id": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090:003",
+      "scene": "3b7529dcccf7097cba31a989536035595e214b0f3775867fd3a62eb186870090",
+      "current_loss": 0.11872068047523499,
+      "losses": {
+        "untransported": 0.11870001256465912,
+        "visual": 0.11871509253978729,
+        "geometry": 0.11871850490570068,
+        "visual_shuffle": 0.11871062219142914
+      },
+      "alignments": {
+        "untransported": -0.02152695506811142,
+        "visual": -0.007217469625174999,
+        "geometry": -0.04304797202348709,
+        "visual_shuffle": 0.08322836458683014
+      },
+      "geometry_mean_distance": 0.2614138424396515,
+      "visual_mean_peak_weight": 0.22531230747699738
+    },
+    {
+      "pair_id": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4:000",
+      "scene": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4",
+      "current_loss": 0.1572282314300537,
+      "losses": {
+        "untransported": 0.15724603831768036,
+        "visual": 0.15723846852779388,
+        "geometry": 0.1572476327419281,
+        "visual_shuffle": 0.1572486162185669
+      },
+      "alignments": {
+        "untransported": 0.17579172551631927,
+        "visual": 0.06807614862918854,
+        "geometry": 0.10964688658714294,
+        "visual_shuffle": -0.04391229897737503
+      },
+      "geometry_mean_distance": 0.23654630780220032,
+      "visual_mean_peak_weight": 0.20896248519420624
+    },
+    {
+      "pair_id": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4:001",
+      "scene": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4",
+      "current_loss": 0.17073452472686768,
+      "losses": {
+        "untransported": 0.1707119643688202,
+        "visual": 0.17072805762290955,
+        "geometry": 0.17072263360023499,
+        "visual_shuffle": 0.17073959112167358
+      },
+      "alignments": {
+        "untransported": -0.06231948360800743,
+        "visual": -0.06733700633049011,
+        "geometry": -0.10816051065921783,
+        "visual_shuffle": -0.019053619354963303
+      },
+      "geometry_mean_distance": 0.23307844996452332,
+      "visual_mean_peak_weight": 0.19146299362182617
+    },
+    {
+      "pair_id": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4:002",
+      "scene": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4",
+      "current_loss": 0.23862919211387634,
+      "losses": {
+        "untransported": 0.23861947655677795,
+        "visual": 0.23862460255622864,
+        "geometry": 0.23864534497261047,
+        "visual_shuffle": 0.238653764128685
+      },
+      "alignments": {
+        "untransported": -0.08213455975055695,
+        "visual": -0.2013576179742813,
+        "geometry": -0.1888679713010788,
+        "visual_shuffle": 0.06873734295368195
+      },
+      "geometry_mean_distance": 0.36517664790153503,
+      "visual_mean_peak_weight": 0.1781911849975586
+    },
+    {
+      "pair_id": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4:003",
+      "scene": "35317e621976e87f0c143e66fc61fb8cddb4ff134304da7a00e32ac1983105b4",
+      "current_loss": 0.2015610635280609,
+      "losses": {
+        "untransported": 0.2015303373336792,
+        "visual": 0.2015257477760315,
+        "geometry": 0.20154708623886108,
+        "visual_shuffle": 0.20156970620155334
+      },
+      "alignments": {
+        "untransported": 0.18953675031661987,
+        "visual": 0.17562878131866455,
+        "geometry": 0.1313704252243042,
+        "visual_shuffle": -0.031727008521556854
+      },
+      "geometry_mean_distance": 0.6404531002044678,
+      "visual_mean_peak_weight": 0.1899172067642212
+    },
+    {
+      "pair_id": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b:000",
+      "scene": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b",
+      "current_loss": 0.4208866357803345,
+      "losses": {
+        "untransported": 0.4209122061729431,
+        "visual": 0.42094874382019043,
+        "geometry": 0.4209020435810089,
+        "visual_shuffle": 0.4209436774253845
+      },
+      "alignments": {
+        "untransported": -0.1487477868795395,
+        "visual": -0.09725391864776611,
+        "geometry": 0.17989715933799744,
+        "visual_shuffle": -0.13815522193908691
+      },
+      "geometry_mean_distance": 1.2224787473678589,
+      "visual_mean_peak_weight": 0.14159534871578217
+    },
+    {
+      "pair_id": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b:001",
+      "scene": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b",
+      "current_loss": 0.34964343905448914,
+      "losses": {
+        "untransported": 0.3496120870113373,
+        "visual": 0.34964293241500854,
+        "geometry": 0.3496280312538147,
+        "visual_shuffle": 0.3496215343475342
+      },
+      "alignments": {
+        "untransported": 0.03412757068872452,
+        "visual": 0.06849503517150879,
+        "geometry": -0.0215655118227005,
+        "visual_shuffle": 0.06368941813707352
+      },
+      "geometry_mean_distance": 0.5957515835762024,
+      "visual_mean_peak_weight": 0.18910786509513855
+    },
+    {
+      "pair_id": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b:002",
+      "scene": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b",
+      "current_loss": 0.17940276861190796,
+      "losses": {
+        "untransported": 0.17937299609184265,
+        "visual": 0.1794232726097107,
+        "geometry": 0.1794082522392273,
+        "visual_shuffle": 0.17940449714660645
+      },
+      "alignments": {
+        "untransported": -0.02001938410103321,
+        "visual": -0.13527849316596985,
+        "geometry": -0.07940585911273956,
+        "visual_shuffle": -0.07169085741043091
+      },
+      "geometry_mean_distance": 0.5307914018630981,
+      "visual_mean_peak_weight": 0.1751762181520462
+    },
+    {
+      "pair_id": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b:003",
+      "scene": "d3812aad538261e7f73c75762ff55f23b468bcc76f376d52ac86ca6cf3c44b4b",
+      "current_loss": 0.19929800927639008,
+      "losses": {
+        "untransported": 0.19930237531661987,
+        "visual": 0.1992892324924469,
+        "geometry": 0.19929713010787964,
+        "visual_shuffle": 0.19928894937038422
+      },
+      "alignments": {
+        "untransported": -0.021914079785346985,
+        "visual": -0.012140395119786263,
+        "geometry": -0.03990029916167259,
+        "visual_shuffle": 0.014958699233829975
+      },
+      "geometry_mean_distance": 0.48326313495635986,
+      "visual_mean_peak_weight": 0.17994284629821777
+    },
+    {
+      "pair_id": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78:000",
+      "scene": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78",
+      "current_loss": 0.02377762272953987,
+      "losses": {
+        "untransported": 0.02378813363611698,
+        "visual": 0.023790424689650536,
+        "geometry": 0.023792047053575516,
+        "visual_shuffle": 0.023785430938005447
+      },
+      "alignments": {
+        "untransported": -0.09599130600690842,
+        "visual": -0.2678207457065582,
+        "geometry": -0.1757299154996872,
+        "visual_shuffle": -0.15515831112861633
+      },
+      "geometry_mean_distance": 0.15898486971855164,
+      "visual_mean_peak_weight": 0.08165114372968674
+    },
+    {
+      "pair_id": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78:001",
+      "scene": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78",
+      "current_loss": 0.028393402695655823,
+      "losses": {
+        "untransported": 0.028369396924972534,
+        "visual": 0.028372153639793396,
+        "geometry": 0.028366968035697937,
+        "visual_shuffle": 0.028378324583172798
+      },
+      "alignments": {
+        "untransported": 0.5620498657226562,
+        "visual": 0.5724920034408569,
+        "geometry": 0.6028145551681519,
+        "visual_shuffle": 0.4816240072250366
+      },
+      "geometry_mean_distance": 0.13356603682041168,
+      "visual_mean_peak_weight": 0.09449835121631622
+    },
+    {
+      "pair_id": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78:002",
+      "scene": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78",
+      "current_loss": 0.034209392964839935,
+      "losses": {
+        "untransported": 0.03420928120613098,
+        "visual": 0.03420679643750191,
+        "geometry": 0.03420989215373993,
+        "visual_shuffle": 0.034203946590423584
+      },
+      "alignments": {
+        "untransported": -0.023112865164875984,
+        "visual": -0.02684590220451355,
+        "geometry": -0.12444142997264862,
+        "visual_shuffle": 0.033906273543834686
+      },
+      "geometry_mean_distance": 0.10111118108034134,
+      "visual_mean_peak_weight": 0.11183517426252365
+    },
+    {
+      "pair_id": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78:003",
+      "scene": "2beaca318994c25409dcbb6d0bdd96c3620f2f18aec44ea3f20edd302f18ca78",
+      "current_loss": 0.034582313150167465,
+      "losses": {
+        "untransported": 0.03457539528608322,
+        "visual": 0.03457289934158325,
+        "geometry": 0.03457987308502197,
+        "visual_shuffle": 0.03457745909690857
+      },
+      "alignments": {
+        "untransported": 0.3251330554485321,
+        "visual": 0.3848695158958435,
+        "geometry": 0.2482391893863678,
+        "visual_shuffle": 0.3152695894241333
+      },
+      "geometry_mean_distance": 0.08396194130182266,
+      "visual_mean_peak_weight": 0.12745271623134613
+    }
+  ]
+}

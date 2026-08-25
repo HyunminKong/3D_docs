@@ -1236,3 +1236,26 @@ with the target current direction. This adds no module and does not open
 validation or terminal data. If no carrier produces positive oracle utility,
 the v2 memory hypothesis must be narrowed or abandoned rather than hidden by a
 learned router.
+
+## D119 — Replace raw-gradient reuse with one learned plasticity coordinate
+
+Date: 2026-08-25
+Status: Accepted after EXP-041
+
+Untransported, frozen-feature visual, and predicted-3D carriers all produced
+negative mean agreement with the target current code and negative future gain.
+The failure is therefore update-coordinate incompatibility, not only 3D
+correspondence. The original broad claim that past raw TTT directions are
+naturally reusable is rejected on the competitive carrier.
+
+One compact revision remains within the paper scope: offline meta-training of
+the already implemented 6,144-parameter shared `8 -> 768` basis, using the same
+symmetric future consistency loss evaluated after current and revisit code
+application. Online inference remains one loss, one normalized step, one local
+code, and one transport. No alignment loss, second decoder, hypernetwork,
+risk head, or address is added.
+
+The first learned-basis experiment must split EXP-039 train scenes internally,
+fit on one subset, and evaluate oracle visual reuse on disjoint train scenes.
+Validation remains closed. Failure ends this compact v2 memory direction;
+success alone authorizes one frozen validation run and only then address fitting.

@@ -64,6 +64,19 @@ descent while improving all three OOF geometry means. The frozen head retained
 the full-system benefit in EXP-030/031. This is a training-health mechanism,
 not the paper's standalone novelty claim or a general Pareto theorem.
 
+## H8 — Learned revisit-compatible plasticity coordinate
+
+A single low-dimensional basis can be trained offline so that gradients of one
+online geometry-consistency loss become both current-useful and compatible
+across physical revisits, while the foundation carrier and online loss remain
+frozen.
+
+Status: **Open and now necessary for the competitive carrier.** EXP-038 proved
+the coordinate is differentiable, but EXP-040/041 rejected reuse under a generic
+orthonormal basis: every simple carrier had negative future gain and negative
+source/target code agreement. A learned basis must establish oracle reuse on
+scene-disjoint train data before any address or continual-memory claim resumes.
+
 ## Rejected or narrowed hypotheses
 
 - A small global/slot fast-weight vector is sufficiently context-selective for retrieval.
@@ -73,6 +86,7 @@ not the paper's standalone novelty claim or a general Pareto theorem.
 - A parameter-free current-loss threshold is a sufficient negative-transfer safeguard.
 - Predicted 3D correspondence should be the primary carrier of the fast update.
 - A physical revisit plus nearest predicted canonical-3D transport is sufficient to make a CUT3R local update reusable.
+- Raw source TTT directions are naturally compatible with target TTT directions on a competitive recurrent carrier.
 - Geometry-alignment failure should hard-reject a candidate that still has valid visual transport.
 - A second current TTT step is an equivalent replacement for memory reuse.
 - Generic DINOv2 place compatibility is a causal adaptation-utility address.

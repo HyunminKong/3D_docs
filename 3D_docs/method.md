@@ -1,6 +1,6 @@
 # Current Method Specification
 
-## Status
+## Archived v1 status
 
 EXP-028 + EXP-029 is the selected frozen paper candidate. EXP-030 passed the
 complete development geometry audit. EXP-031 produced positive terminal method
@@ -138,3 +138,30 @@ EXP-036 further shows that the selected custom reconstruction head is not
 competitive in absolute TUM quality: official CUT3R/TTT3R reduce the three
 primary errors substantially. The frozen candidate is therefore a mechanism
 proof, not a state-of-the-art reconstruction system.
+
+## Active v2 experimental specification
+
+The v1 method above is immutable. The active paper branch replaces only its
+noncompetitive geometry carrier:
+
+```text
+RGB stream -> frozen official CUT3R recurrent state and DPT geometry head
+           -> 8-D code per 16x16 decoder patch
+           -> shared 8->768 residual basis before the final DPT token level
+           -> one normalized code step on symmetric canonical-point consistency
+           -> visual token transport at a physical revisit
+           -> current code + transported memory code
+```
+
+Zero code is exactly the official CUT3R prediction. The pose token, recurrent
+state, pose memory, encoder, decoder, and geometry head remain frozen. The only
+candidate learned component currently authorized is the 6,144-parameter shared
+plasticity basis. Online deployment still has one loss and one step.
+
+This is not yet an accepted method. EXP-040/041 showed that a generic
+orthonormal basis produces useful current TTT but incompatible source/target
+codes under untransported, visual, and 3D carriers. Therefore no v2 address or
+memory bank exists. D119 authorizes one train-internal scene-disjoint test of a
+learned plasticity coordinate. Only if it creates positive oracle visual-reuse
+utility may the branch proceed to frozen validation and a single utility
+address.

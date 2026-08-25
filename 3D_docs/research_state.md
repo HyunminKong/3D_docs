@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-040 rejected raw 3D update reuse on frozen CUT3R)
+Last updated: 2026-08-25 (EXP-041 localized failure to the raw update coordinate)
 
 ## First objective
 
@@ -272,3 +272,16 @@ pairs: compare no transport, cosine visual-token transport, predicted-3D
 transport, and spatial shuffle, while measuring agreement with the target
 current code. This determines whether the failure is the 3D correspondence or
 the update coordinate itself. Validation and terminal remain closed.
+
+EXP-041 found no eligible raw carrier. Untransported, visual, and canonical-3D
+source codes had negative target-code agreement and all worsened current TTT.
+The broad raw-update reuse hypothesis is rejected for CUT3R. The failure is the
+plasticity coordinate itself, not merely correspondence.
+
+D119 authorizes one compact revision: train only the existing 6,144-parameter
+shared basis offline so the same online loss induces revisit-compatible 8-D
+codes. The offline objective is the equal mean of the same consistency loss
+after current-code and oracle visual-reuse application; it is not a second loss.
+The next experiment must fit on a fixed subset of EXP-039 train scenes and test
+on disjoint train scenes. No validation, terminal, address, or bank access is
+allowed until this learned-coordinate oracle premise passes.

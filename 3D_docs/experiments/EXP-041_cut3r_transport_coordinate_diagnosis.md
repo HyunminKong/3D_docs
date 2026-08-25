@@ -1,6 +1,6 @@
 # EXP-041 — CUT3R Transport/Coordinate Diagnosis
 
-Status: Registered before execution
+Status: Completed; no raw carrier was eligible
 Purpose: Train-only failure decomposition; no fitting
 
 ## Question
@@ -37,3 +37,30 @@ address or memory bank.
 - Config: `configs/EXP-041_cut3r_transport_coordinate_diagnosis_v10.yaml`
 - Script: `revisit3d/scripts/diagnose_exp041_cut3r_transport_coordinate.py`
 - Result: `revisit3d/results/EXP-041/cut3r_transport_coordinate_diagnosis_v10.json`
+
+## Result
+
+| Carrier | Gain over current | Code agreement | Harm fraction |
+| --- | ---: | ---: | ---: |
+| untransported | `-4.60e-6` | `-0.0527` | 50.00% |
+| visual | `-8.77e-6` | `-0.0863` | 53.13% |
+| canonical 3D | `-1.76e-5` | `-0.0742` | 53.13% |
+| visual spatial shuffle | `-5.46e-6` | `-0.0082` | 62.50% |
+
+Every raw carrier worsened the scene-balanced current-TTT loss and every
+source/target code agreement was negative. No carrier met the registered
+decision rule; the result is `no_raw_carrier`.
+
+## Conclusion
+
+EXP-040 was not merely a nearest-3D correspondence failure. In a generic
+orthonormal 8-D coordinate, source and target descent codes are systematically
+incompatible even for pose-defined revisits. The paper may not claim that raw
+TTT directions are naturally reusable and may not proceed directly to an
+address or bank.
+
+The minimal surviving hypothesis is narrower: offline training may learn the
+single shared `8 -> 768` plasticity basis so that the same one online loss
+produces current-useful and revisit-compatible codes. This changes no online
+module or loss. It must first pass a train-internal scene-disjoint oracle test
+before validation is opened.
