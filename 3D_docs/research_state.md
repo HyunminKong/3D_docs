@@ -74,20 +74,23 @@ accepted final architecture.
 - The original EXP-005 six-episode test is closed.
 - The EXP-009 22-component terminal test is closed.
 - EXP-020 validation is now exposed and cannot select a replacement.
-- Any changed model requires new development data and a newly locked
-  component-disjoint final benchmark.
+- Any changed model must be selected by source-safe OOF on existing train data
+  and evaluated once on the newly locked EXP-021 terminal benchmark.
 - Query/future observations and LiDAR remain offline labels only and may never
   enter online TTT, memory write, retrieval, or routing.
 
 ## Immediate next step
 
-Run a metadata-only audit of untouched nuScenes test scenes and any other local
-datasets to determine whether a credible independent revisit benchmark can be
-frozen. Then make one explicit paper-scope choice before training:
+EXP-021 has frozen an untouched terminal benchmark with 214 directional
+episodes, 96 scenes, 29 components, and three locations. Its manifest hash is
+`22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61`;
+no sensor or model output has been opened. The remaining pre-training work is to
+diagnose the metric-alignment loss and make one explicit paper-scope choice:
 
 1. keep the method fully self-supervised and narrow the endpoint to revisit
    utility/aligned relative depth; or
 2. add exactly one metric-aligned **offline meta-training signal**, while
    retaining the single online TTT loss and compact inference architecture.
 
-No new model is trained until this scope/data decision is recorded.
+No official-test sensor/model output is accessed and no new model is trained
+until this diagnostic and scope decision are recorded.

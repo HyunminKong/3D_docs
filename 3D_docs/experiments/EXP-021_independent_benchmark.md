@@ -1,6 +1,6 @@
 # EXP-021 — Independent Benchmark Feasibility
 
-Status: Stage 0 passed; Stage 1 terminal-manifest freeze registered
+Status: Completed; terminal manifest frozen without sensor/model access
 
 ## Question
 
@@ -57,3 +57,13 @@ Additional Stage 1 files:
 - Builder: `revisit3d/scripts/build_exp021_terminal_manifest.py`
 - Manifest: `revisit3d/manifests/nuscenes_official_test_revisit_exp021_v11.json`
 - Result: `revisit3d/results/EXP-021/stage1_terminal_manifest_v11.json`
+
+## Stage 1 result
+
+All registered health checks passed. The immutable terminal manifest contains
+214 directional episodes, 96 scenes, 29 connected components, and three
+locations. Its SHA-256 is
+`22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61`.
+No RGB, LiDAR, feature, or model output was accessed. The manifest is closed
+until a replacement method, artifact hash, metrics, and terminal gates are
+pre-registered.

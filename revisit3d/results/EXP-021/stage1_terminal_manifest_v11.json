@@ -1,0 +1,37 @@
+{
+  "experiment": "EXP-021",
+  "stage": "terminal_manifest_freeze",
+  "protocol_revision": "v1.1",
+  "metadata_only": true,
+  "image_decoded": false,
+  "model_output_accessed": false,
+  "lidar_decoded": false,
+  "config": "configs/EXP-021_terminal_manifest_v11.yaml",
+  "inventory": "revisit3d/cache/EXP-021/independent_test_inventory_v10.json",
+  "manifest": "revisit3d/manifests/nuscenes_official_test_revisit_exp021_v11.json",
+  "manifest_sha256": "22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61",
+  "directional_episodes": 214,
+  "scenes": 96,
+  "components": 29,
+  "locations": [
+    "boston-seaport",
+    "singapore-onenorth",
+    "singapore-queenstown"
+  ],
+  "episodes_by_location": {
+    "boston-seaport": 168,
+    "singapore-onenorth": 12,
+    "singapore-queenstown": 34
+  },
+  "registered_gate": {
+    "checks": {
+      "directional_episodes": true,
+      "scenes": true,
+      "components": true,
+      "locations": true,
+      "single_terminal_split": true
+    },
+    "passed": true
+  },
+  "terminal_test_locked": true
+}
