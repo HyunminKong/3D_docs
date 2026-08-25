@@ -34,6 +34,7 @@
 | [EXP-030](EXP-030_full_system_geometry_audit.md) | Does the frozen atom-plus-address improve all absolute geometry endpoints and beat matched controls? | Completed, all gates passed | Full memory beats current, matched random, and appearance on all three primary means with positive intervals. |
 | [EXP-031](EXP-031_terminal_evaluation.md) | Does the immutable full system generalize to the untouched official-test revisit benchmark? | Completed, registered gate failed | All metric comparison gates passed, but the 190-target coverage gate failed at 187; EXP-032 audits the accounting without repair. |
 | [EXP-032](EXP-032_terminal_coverage_accounting.md) | Why did 214 directional episodes yield 187 terminal evaluation rows? | Completed | 188 unique targets minus one empty-bank warm-up equals the 187 maximum; every eligible target was evaluated and EXP-031 remains immutable. |
-| [EXP-033](EXP-033_frozen_efficiency_audit.md) | What does the exact frozen paper model cost in latency, GPU memory, bank bytes, and search scaling? | Registered | No-fit reporting audit on development data. |
+| [EXP-033](EXP-033_frozen_efficiency_audit.md) | What does the exact frozen paper model cost in latency, GPU memory, bank bytes, and search scaling? | Completed, all gates passed | Full method adds ~2.0 ms (0.68%) over two frozen foundation passes; reservoir-64 tensor storage is 38.5 MiB. |
+| [EXP-034](EXP-034_tum_transfer_feasibility.md) | Can local TUM RGB-D support a causal zero-shot transfer benchmark? | Registered | Metadata-only audit; no sensor decoding or model access. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

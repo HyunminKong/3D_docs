@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-031 terminal evaluated; EXP-032 audit completed)
+Last updated: 2026-08-25 (EXP-033 efficiency audit completed)
 
 ## First objective
 
@@ -173,10 +173,14 @@ terminal model selection are closed.
 
 ## Immediate next step
 
-The selected model is frozen. The next paper-critical experiment is a no-fit
-efficiency and complexity audit: backbone time, current local TTT overhead,
-address/search overhead as bank size grows, transport/readout overhead, peak
-GPU memory, and persistent bank bytes. This may characterize the method but may
-not change its architecture or parameters. After efficiency, the remaining
-major paper gap is independent dataset/backbone transfer rather than another
-nuScenes model variant.
+EXP-033 passed its reporting gate. On an A100 and eight 224×224 views, the
+method adds about 1.996 ms over 292.328 ms of separate frozen foundation passes
+(0.68%); exact bank-64 address search is 0.002 ms CPU. The learned additions
+contain 288,386 parameters. Reservoir-64 tensor payload is 38.52 MiB, dominated
+by the per-token visual key, and is the main efficiency cost.
+
+The selected model remains frozen. The remaining major paper-evidence gap is
+independent dataset/backbone transfer, not another nuScenes model variant.
+Before registering that expensive experiment, audit local datasets, calibration
+and revisit availability, sparse/dense geometry ground truth, and backbone
+compatibility without opening a new held-out evaluation split.

@@ -1,0 +1,28 @@
+experiment: EXP-034
+protocol_revision: v1.0
+seed: 3400010
+data:
+  root: data/tum
+  sequences:
+    - rgbd_dataset_freiburg1_desk
+    - rgbd_dataset_freiburg2_xyz
+    - rgbd_dataset_freiburg3_long_office_household
+association:
+  maximum_time_difference_s: 0.02
+stream:
+  anchor_stride_associated_frames: 30
+  context_views: 8
+  context_frame_stride: 3
+  query_views: 4
+  query_frame_stride: 3
+revisit:
+  minimum_time_separation_s: 15.0
+  maximum_translation_m: 0.5
+  maximum_rotation_deg: 45.0
+success:
+  minimum_sequences: 3
+  minimum_stream_contexts: 200
+  minimum_revisit_targets: 100
+output:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v10.json
+  result: revisit3d/results/EXP-034/tum_transfer_feasibility_v10.json

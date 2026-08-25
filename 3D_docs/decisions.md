@@ -1010,3 +1010,20 @@ candidate. It may measure latency, peak memory, persistent bank size, and
 search scaling, but cannot alter the implementation to improve those numbers.
 After that audit, the remaining model-evidence expansion must be an independent
 dataset/backbone transfer, not additional selection on exposed nuScenes data.
+
+## D106 — Accept the efficiency audit and expose storage as the main cost
+
+Date: 2026-08-25
+Status: Accepted after EXP-033
+
+The frozen method adds approximately 1.996 ms after 292.328 ms of separate
+FastVGGT feature/geometry and tracker passes on an A100 (eight 224×224 views).
+The exact bank-64 address takes 0.002 ms CPU, and learned additions contain
+288,386 parameters. Runtime overhead is therefore small in this implementation.
+
+The actual float32 plasticity record is 0.602 MiB and reservoir-64 tensor
+payload is 38.52 MiB, excluding Python containers. Per-token visual keys account
+for 83.1% of each record. The paper must report this storage rather than imply
+that bounded memory is free. EXP-033 does not authorize key compression or
+another capacity selection. The next evidence expansion is an independent
+dataset/backbone feasibility audit.

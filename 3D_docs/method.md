@@ -2,17 +2,18 @@
 
 ## Status
 
-The compact EXP-015 + EXP-019 architecture below is the most recent frozen
-candidate, but EXP-020 rejected it as the final paper model. It is retained as
-the reference implementation and ablation anchor; it must not be presented as
-a validated broad reconstruction method.
+EXP-028 + EXP-029 is the selected frozen paper candidate. EXP-030 passed the
+complete development geometry audit. EXP-031 produced positive terminal method
+comparisons on every primary mean, although its overall registered gate failed
+because an infeasible 190-target coverage threshold exceeded the evaluator's
+187-target maximum. EXP-032 preserves that qualification without repair.
 
-## Frozen reference candidate
+## Frozen selected candidate
 
 ```text
 streaming RGB context
         ↓
-frozen VGGT/FastVGGT dense features and geometry evidence
+frozen FastVGGT features, predicted geometry, and tracks
         ↓
 8-D per-token plasticity code initialized at zero
         ↓
@@ -20,28 +21,28 @@ one local-code step on L_track3D, eta=0.0125
         │
         ├── current-only fallback
         │
-64-D pooled descriptor → one factorized Ridge utility-MIPS top-5
+64-D pooled descriptor → factorized metric-utility Ridge MIPS top-1
         ↓
-visual token correspondence transports five stored codes
+positive score? otherwise current-only fallback
         ↓
-positive current-geometry agreement reranking; coarse top-1 fallback
+visual token correspondence transports the selected stored code
         ↓
 z_out = clamp(z_current + 0.10 z_memory, -1, 1)
         ↓
 depth / point readout
 
-write after prediction → deterministic reservoir, capacity 64/location
+predict before write → deterministic reservoir, capacity 64/location
 ```
 
-The only learned inference-time additions to the frozen foundation are the
-plasticity head and one linear utility address. Agreement reranking, fallback,
-and reservoir retention are parameter-free. There is no fine router, risk head,
-learned decision threshold, learned eviction, pose update, second TTT step, or
-dynamic state.
+The only learned inference-time additions are the 288,193-parameter plasticity
+head and 193-parameter factorized linear address. Semantic-zero fallback and
+reservoir retention are parameter-free. There is no fine router, risk head,
+learned threshold, learned eviction, pose update, second TTT step, or dynamic
+state.
 
 ## Online objective
 
-The deployed TTT objective is exactly one absolute frozen-track 3D consistency
+The deployed objective is exactly one absolute frozen-track 3D consistency
 loss:
 
 \[
@@ -49,43 +50,45 @@ loss:
 \]
 
 Only the local code is differentiated, for one step. Query/future observations
-are never online inputs. EXP-011 established that this objective and step size
-can be metric-healthy; EXP-020 showed that metric health was not preserved by
-the later atom meta-refit.
+are never online inputs. EXP-028's final offline training preserves broad
+metric health for this deployed step.
 
-## Offline atom objective used by the rejected candidate
+## Offline atom training
 
-EXP-015 used three unweighted readouts of the same track3D signal:
+Offline head meta-training differentiates two sparse future-geometry
+objectives separately: median-aligned absolute log-depth and aligned absolute
+relative-depth. Their unit-normalized gradient bisector is common descent before
+the optimizer. EXP-028 preserves AdamW's proposal when its realized displacement
+is common descent; otherwise it uses the same bisector direction with the
+proposal norm. This safeguard has no coefficient, solver, line search, extra
+head, or inference operation. Sparse LiDAR is offline supervision and is never
+an online TTT or routing input.
 
-1. normalized current-only future quality;
-2. absolute best-reuse future quality among five train-only candidates;
-3. a softplus ranking of best reuse against stop-gradient current quality.
-
-No key contrastive, harmful-code neutralization, centering, smoothness, or code
-norm loss was used. Despite strong OOF proxy headroom, EXP-020 indicates that
-this proxy-oriented objective did not preserve broad LiDAR metric alignment.
+Generic Pareto/gradient consensus is established prior art and is a training
+health mechanism, not the standalone novelty claim. The contribution is the
+transported and utility-addressed local adaptation experience.
 
 ## Plasticity record and causal contract
 
-Each record contains a local visual key, an 8-D per-token code, a pooled 64-D
-descriptor, current-observable adaptation statistics, timestamp, and stream
-partition. A target is predicted before its record is written. Future/query
-frames may produce offline meta labels and evaluation metrics only. Source-safe
-folds remove held physical entities from both target and memory-source training
-rows.
+Each record contains a local 64-D visual key, an 8-D per-token code, geometry
+support tensors, a pooled 64-D descriptor, timestamp, and stream partition. A
+target is predicted before its record is written. Future/query frames may
+produce offline meta labels and evaluation metrics only. Source-safe folds
+remove held physical entities from both target and memory-source training rows.
 
 ## Utility address
 
-For current/source descriptors `c_t,c_i`, a Ridge score over
+For current/source descriptors `c_t,c_i`, one Ridge score uses
 
 ```text
-[c_t, c_i, c_t-c_i, c_t*c_i]
+[c_t, c_i, c_t-c_i, c_t*c_i].
 ```
 
-factorizes exactly into maximum inner-product search. Five candidates are
-retrieved. A candidate with positive coarse score and positive current-geometry
-agreement can reroute the coarse winner; otherwise the coarse top-1 is used.
-Both decisions use semantic zero rather than calibrated thresholds.
+The score factorizes exactly into a current query and source memory vectors.
+The highest-scoring bank record is used only when its score is positive;
+otherwise the prediction remains current-only. There is no appearance reranker
+or calibrated decision threshold in the selected model. The offline target is
+the single median-aligned absolute log-depth future-utility label.
 
 ## Theoretical rationale
 
@@ -96,52 +99,32 @@ F(z)-F(z+\delta)\ge
 -\langle\nabla F(z),\delta\rangle-\frac{L}{2}\lVert\delta\rVert^2.
 \]
 
-Transport and utility addressing aim to make the first-order term favorable;
-the fixed residual and clamp bound second-order damage. This motivates the
-method but is not a worst-case safety theorem. EXP-020's 33% proxy harm confirms
-that the bound alone is insufficient without a utility target calibrated to the
-paper endpoint.
+Transport and metric-utility addressing seek a favorable first-order term; the
+fixed 0.10 residual and clamp bound second-order damage. This motivates the
+method but is not a worst-case safety theorem. EXP-023's high raw-candidate harm
+and the remaining terminal per-sample failures rule out a formal safety claim.
 
-## Approved next-method branch
+The offline feasible-displacement safeguard separately enforces local common
+descent for both sparse geometry objectives at each training step. It explains
+why scalarized EXP-024/025 and unconstrained-AdamW EXP-027 failed, but it does
+not imply global Pareto optimality.
 
-The self-supervised track3D objective remains the single online loss. EXP-022
-rejects it as the sole offline meta/utility label because its gains are
-anti-correlated with SILog and 3D EPE gains. EXP-023 may evaluate exactly one
-scale-aligned sparse log-depth loss on disjoint query LiDAR as an offline oracle
-label. No training change is authorized until that label demonstrates oracle
-headroom across all primary geometry metrics. The inference graph must not gain
-another learned module.
+## Efficiency
 
-EXP-023 passed that oracle gate. The only authorized training change is now to
-replace the EXP-015 three-readout proxy objective with the equal mean of current
-and best-candidate evaluations of the same sparse scale-aligned log-depth loss.
-This is one offline loss; the online graph and online loss are unchanged.
-
-EXP-024 failed only the current aligned-AbsRel gate. Its one-loss checkpoint is
-rejected. EXP-025 may perform one terminal replacement with a fixed equal mean
-of the existing aligned log residual and an aligned relative-depth residual.
-This adds no tunable loss weight and changes no inference computation. No third
-residual or proxy preservation term is allowed.
-
-EXP-025 failed the terminal gate with the inverse metric trade-off, so no scalar
-atom checkpoint is accepted. The user explicitly approved one new central
-branch: during offline meta-training only, compute the aligned-log and
-aligned-relative gradients separately and seek a common descent direction.
-EXP-026 must first show that this mechanism matches the empirical failure.
-
-If EXP-026 passes, EXP-027 may use only the parameter-free unit-normalized
-bisector. It adds no objective weight or inference operation. Online adaptation
-remains the unchanged single `track3D` gradient step; sparse LiDAR and future
-geometry gradients remain offline labels. Generic gradient consensus is prior
-art and is not part of the novelty claim.
+EXP-033 measures approximately 1.996 ms for the complete method after frozen
+foundation outputs, versus 292.328 ms for the current separate foundation
+passes on an A100. Reservoir-64 stores 38.52 MiB of tensor payload; 83.1% is the
+64-D per-token key. The learned method is compute-light but not storage-free.
 
 ## Claim boundary
 
-Supported: local transported corrections contain reusable proxy information;
-utility addressing can beat appearance and matched random controls; bounded
-causal storage can retain this proxy effect; aligned AbsRel improvement over
-current TTT exists in EXP-020.
+Supported in the tested static nuScenes/FastVGGT setting: the transported local
+correction improves SILog, aligned AbsRel, and 3D EPE over current-only TTT;
+metric-utility addressing beats same-bank random and appearance means; bounded
+causal reservoir deployment retains the effect; method compute overhead is
+small relative to the foundation.
 
-Unsupported: broad metric reconstruction improvement, reliable negative
-transfer rejection, pose/4D claims, reservoir superiority, universal capacity,
-or generalization to a second dataset/backbone.
+Unsupported: reliable per-sample negative-transfer rejection, pose/4D claims,
+reservoir superiority, universal capacity, worst-case safety, or generalization
+to a second dataset/backbone. EXP-031 must be described as qualified terminal
+evidence because its impossible coverage gate technically failed.

@@ -1,0 +1,189 @@
+{
+  "experiment": "EXP-033",
+  "stage": "frozen_efficiency_and_complexity_audit",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-033_frozen_efficiency_audit_v10.yaml",
+  "split": "train",
+  "input": {
+    "views": 8,
+    "height": 224,
+    "width": 224
+  },
+  "artifact_hashes": {
+    "atom": "3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae",
+    "address": "d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984"
+  },
+  "artifact_hash_checks": {
+    "atom": true,
+    "address": true
+  },
+  "method_timings": {
+    "atom_construction": {
+      "median_ms": 0.2734079957008362,
+      "p90_ms": 0.2879487872123718,
+      "mean_ms": 0.2771865600347519,
+      "std_ms": 0.00903060717554293,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 34750464
+    },
+    "one_local_ttt_step": {
+      "median_ms": 1.354752004146576,
+      "p90_ms": 1.434726357460022,
+      "mean_ms": 1.3737369585037231,
+      "std_ms": 0.05639078377564532,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 20537344
+    },
+    "visual_transport_one_record": {
+      "median_ms": 0.32767999172210693,
+      "p90_ms": 0.33689600229263306,
+      "mean_ms": 0.3295744013786316,
+      "std_ms": 0.008611803190534669,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 67239936
+    },
+    "depth_readout": {
+      "median_ms": 0.2176000028848648,
+      "p90_ms": 0.27033600211143494,
+      "mean_ms": 0.23146496042609216,
+      "std_ms": 0.027869329224122157,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 18358272
+    },
+    "current_only_total_after_foundation": {
+      "median_ms": 1.7500159740447998,
+      "p90_ms": 2.0210686922073364,
+      "mean_ms": 1.8152652812004089,
+      "std_ms": 0.13187657522714702,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 34160640
+    },
+    "full_memory_total_after_foundation_excluding_address": {
+      "median_ms": 1.9937280416488647,
+      "p90_ms": 2.088345527648926,
+      "mean_ms": 2.023751690387726,
+      "std_ms": 0.08362387033655594,
+      "warmup": 20,
+      "repetitions": 100,
+      "baseline_allocated_bytes": 40517120,
+      "incremental_peak_allocated_bytes": 67846144
+    }
+  },
+  "foundation_timings": {
+    "feature_geometry_pass": {
+      "median_ms": 102.9826545715332,
+      "p90_ms": 105.17074127197266,
+      "mean_ms": 103.78680267333985,
+      "std_ms": 3.845671879035763,
+      "warmup": 2,
+      "repetitions": 10,
+      "baseline_allocated_bytes": 1870670848,
+      "incremental_peak_allocated_bytes": 93931008
+    },
+    "geometry_tracker_pass": {
+      "median_ms": 189.34528350830078,
+      "p90_ms": 194.52579193115233,
+      "mean_ms": 191.08802490234376,
+      "std_ms": 4.165148941028456,
+      "warmup": 2,
+      "repetitions": 10,
+      "baseline_allocated_bytes": 4812915712,
+      "incremental_peak_allocated_bytes": 226618880
+    }
+  },
+  "address_timings": {
+    "8": {
+      "median_ms": 0.001763,
+      "p90_ms": 0.001812,
+      "mean_ms": 0.001785088,
+      "std_ms": 0.00039868179825018347,
+      "warmup": 100,
+      "repetitions": 1000
+    },
+    "64": {
+      "median_ms": 0.002013,
+      "p90_ms": 0.002053,
+      "mean_ms": 0.00203043,
+      "std_ms": 0.0003633937273811974,
+      "warmup": 100,
+      "repetitions": 1000
+    },
+    "256": {
+      "median_ms": 0.002894,
+      "p90_ms": 0.002935,
+      "mean_ms": 0.0029175189999999995,
+      "std_ms": 0.00042478200719780964,
+      "warmup": 100,
+      "repetitions": 1000
+    },
+    "1024": {
+      "median_ms": 0.006019,
+      "p90_ms": 0.00608,
+      "mean_ms": 0.006093069999999999,
+      "std_ms": 0.0007535678251491369,
+      "warmup": 100,
+      "repetitions": 1000
+    },
+    "4096": {
+      "median_ms": 0.023065,
+      "p90_ms": 0.0255009,
+      "mean_ms": 0.023626787,
+      "std_ms": 0.002107387639621861,
+      "warmup": 100,
+      "repetitions": 1000
+    }
+  },
+  "address_factorization_maximum_absolute_error": 5.204170427930421e-18,
+  "storage": {
+    "record_tensor_payload_bytes": 631040,
+    "record_tensor_payload_mib": 0.601806640625,
+    "field_bytes": {
+      "xyz": 24576,
+      "scale": 8192,
+      "key": 524288,
+      "code": 65536,
+      "confidence": 8192,
+      "descriptor": 256
+    },
+    "capacity": 64,
+    "capacity_tensor_payload_bytes": 40386560,
+    "capacity_tensor_payload_mib": 38.515625,
+    "python_container_overhead_included": false
+  },
+  "parameters": {
+    "plasticity_head_parameters": 288193,
+    "factorized_address_parameters": 193,
+    "total_learned_addition_parameters": 288386,
+    "plasticity_head_fp32_mib": 1.0993690490722656
+  },
+  "timing_scope": {
+    "cuda_excludes": [
+      "disk_io",
+      "host_to_device_copy",
+      "model_loading"
+    ],
+    "foundation_implementation": "separate FastVGGT feature/geometry and tracker passes",
+    "address_device": "CPU float64 NumPy vectorized exact MIPS"
+  },
+  "registered_gate": {
+    "checks": {
+      "frozen_artifact_hashes_match": true,
+      "all_timings_finite": true,
+      "address_factorization_error_at_most_1e-10": true,
+      "capacity_64_storage_reported": true
+    },
+    "passed": true
+  },
+  "model_changed": false,
+  "terminal_data_accessed": false
+}
