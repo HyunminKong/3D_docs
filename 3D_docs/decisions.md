@@ -509,3 +509,12 @@ Status: Accepted after EXP-012 Stage 0A and before Stage 0B
 Stage 0A improved current future loss but failed both reuse gates: matched utility was +0.270%, distant utility was +0.312%, and their component interval crossed zero. This is not decoder collapse; it falsifies the assumption that metadata-matched episode identity supplies the correct positive adaptation.
 
 Stage 0B changes only the offline discrete target selection. It evaluates five train-only source codes and minimizes the future loss of the best one, averaged equally with current-only future loss. Architecture, single 3D-track loss, `eta=0.0125`, `alpha=0.10`, fixed PCA key, optimizer, and three epochs remain unchanged. No auxiliary loss or new head is introduced. The Stage-0A result is immutable and retained.
+
+## D072 — Test one relative-utility term under unchanged gates
+
+Date: 2026-08-25
+Status: Accepted after EXP-012 Stage 0B and before Stage 0C
+
+Stage 0B established positive candidate mean and significant oracle selection headroom, but its +0.465% oracle utility missed the 1% gate and its 30.0275% harm narrowly exceeded the 30% limit. Equal averaging improves absolute candidate loss without explicitly requiring reuse to beat current adaptation.
+
+Stage 0C replaces that average with current normalized future loss plus an unweighted softplus ranking of best reuse against stop-gradient current loss. This is the only independently motivated feasibility term restored. All architecture, data, candidates, optimization settings, and Stage-0B gates remain fixed. Failure stops the compact atom family rather than triggering further loss accumulation.

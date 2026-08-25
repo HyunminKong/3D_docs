@@ -1,6 +1,6 @@
 # EXP-012 — Paper-Minimal Refit
 
-Status: Stage 0A failed; Stage 0B registered before execution
+Status: Stages 0A/0B failed; Stage 0C registered before execution
 
 ## Question
 
@@ -52,12 +52,29 @@ This is one loss with detached discrete candidate selection, not an added module
 
 The OOF gate requires current/base below 1, oracle utility above 1%, candidate-mean utility above zero, candidate harm no greater than 30%, and a positive component-bootstrap lower bound for oracle-minus-candidate-mean headroom. Passing authorizes the unified utility scorer; failing stops this minimal atom family.
 
+## Stage 0B result — selection exists, equal averaging is too weak
+
+Current/base was `0.8352`, mean candidate utility was `+0.176%`, and oracle-minus-mean was `+0.00289`, 95% CI `[+0.00236, +0.00344]`. However, oracle utility was only `+0.465%` and candidate harm was `30.0275%`; both corresponding gates failed. No checkpoint was produced.
+
+## Registered Stage 0C — unweighted relative-utility ranking
+
+Keep Stage-0B data, candidates, architecture, and optimization unchanged, and preserve every Stage-0B threshold. Replace the equal average by the minimal relative-utility objective
+
+\[
+\mathcal L_{meta}=\ell_{current}+\operatorname{softplus}(\ell_{best}-\operatorname{sg}[\ell_{current}]),
+\]
+
+where both losses are normalized by frozen base future loss. This has two semantically necessary terms—absolute current quality and reuse-below-current ranking—no tuned loss weight, and no auxiliary loss. If the unchanged gate fails, this compact atom family is stopped.
+
 ## Files
 
 - Config: `configs/EXP-012_minimal_atom_v10.yaml`
 - Stage-0B config: `configs/EXP-012_utility_selected_atom_v11.yaml`
+- Stage-0C config: `configs/EXP-012_ranked_atom_v12.yaml`
 - Experiment module: `revisit3d/experiments/exp012_minimal.py`
 - Trainer: `revisit3d/scripts/train_exp012_minimal_atom.py`
 - Stage-0B trainer: `revisit3d/scripts/train_exp012_utility_selected_atom.py`
+- Stage-0C trainer: `revisit3d/scripts/train_exp012_ranked_atom.py`
 - Result: `revisit3d/results/EXP-012/stage0_minimal_atom_crossfit_train_v10.json`
 - Stage-0B result: `revisit3d/results/EXP-012/stage0b_utility_selected_atom_train_v11.json`
+- Stage-0C result: `revisit3d/results/EXP-012/stage0c_ranked_atom_train_v12.json`
