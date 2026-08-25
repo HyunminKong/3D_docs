@@ -1,6 +1,6 @@
 # EXP-039 — DL3DV Source-Safe Revisit Partition
 
-Status: v1.0 preserved with one missing-path failure; corrected v1.1 registered
+Status: v1.0 preserved with one missing-path failure; corrected v1.1 passed all gates
 Purpose: Metadata-only partition; no pixels, labels, or model outputs
 
 ## Question
@@ -68,3 +68,23 @@ Version 1.1 excludes any pair with a missing required RGB path before the same
 deterministic maximum-16 subsampling. It changes no pose threshold, eligibility
 minimum, split seed/size, or success gate. The v1.0 result and manifests remain
 preserved.
+
+## Corrected v1.1 result
+
+All gates passed. Ninety-one eligible scenes were split without overlap into:
+
+| Role | Scenes | Pairs | Manifest SHA-256 |
+| --- | ---: | ---: | --- |
+| train | 63 | 982 | `539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05` |
+| validation | 14 | 213 | `79935771c8d882ee0ee73e8d3b5556de48f1afe516e255474b63e9bd53964ee4` |
+| terminal | 14 | 224 | `49e6c389048fb41194970538a021f5345ae3006ac306d7bbc70fe62b591b89d6` |
+
+No image was decoded, no geometry/depth label was accessed, and no model output
+was produced. The terminal manifest is locked and cannot enter basis, step-size,
+address, or policy selection.
+
+## Conclusion
+
+The integrated branch now has a genuinely new source-safe development path.
+EXP-040 may open only a registered train subset to test current-code and oracle
+transport utility. Validation remains one-shot and terminal remains closed.

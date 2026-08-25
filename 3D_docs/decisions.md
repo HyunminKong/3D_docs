@@ -1202,3 +1202,18 @@ deterministic per-scene subsampling. This is a data-integrity correction only;
 all revisit thresholds, minimum/maximum pair counts, scene assignment, split
 sizes, and gates remain unchanged. No pixel was decoded and no model output was
 accessed.
+
+## D117 — Accept the DL3DV split and require a train-only oracle premise next
+
+Date: 2026-08-25
+Status: Accepted after EXP-039 v1.1
+
+The corrected audit locked 63/14/14 scene-disjoint train, validation, and
+terminal roles with 982/213/224 pairs. The terminal manifest hash is fixed
+before pixel/model access and may not be opened during model selection.
+
+The next experiment may open only 32 deterministically selected train pairs to
+test whether the fixed 8-D coordinate supplies (a) beneficial current TTT and
+(b) oracle past-code utility after predicted-3D transport. This premise must be
+tested before training the shared basis or fitting an address. Validation and
+terminal images remain closed.

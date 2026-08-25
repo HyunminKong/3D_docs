@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-038 accepted the minimal CUT3R local-code interface)
+Last updated: 2026-08-25 (EXP-039 locked new DL3DV development and terminal splits)
 
 ## First objective
 
@@ -247,3 +247,16 @@ The next mandatory step is a metadata-first inventory and freeze of genuinely
 new development and held-out revisit partitions. Only then may one basis be
 trained and the causal sequence `current TTT -> store -> revisit transport ->
 future geometry utility` be evaluated.
+
+EXP-039 v1.1 completed that requirement without decoding pixels or accessing a
+model. It locked 63 train scenes/982 pairs, 14 validation scenes/213 pairs, and
+14 terminal scenes/224 pairs. The roles are scene-disjoint. The terminal
+manifest hash is
+`49e6c389048fb41194970538a021f5345ae3006ac306d7bbc70fe62b591b89d6`
+and remains unopened.
+
+The next experiment is a train-only 32-pair oracle premise. With the fixed
+orthonormal 8-D scaffold and one normalized code step, it must test whether
+current TTT lowers adjacent canonical-point consistency and whether the
+correctly transported source code improves target future consistency beyond
+current TTT and a spatially shuffled control. No basis or address is fit yet.
