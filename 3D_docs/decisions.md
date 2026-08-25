@@ -1151,3 +1151,19 @@ rename TTT3R's recurrent scene state.
 The exposed TUM diagnostic is now closed for selection. Carrier integration
 must establish its development and held-out evidence on new source-safe
 partitions before any paper claim.
+
+## D114 — Correct only the EXP-038 attention and distance implementations
+
+Date: 2026-08-25
+Status: Accepted after EXP-038 v1.0 implementation audit
+
+EXP-038 v1.0 is preserved. Its native parity comparison used SDPA in the custom
+step while official lighter inference explicitly materialized attention, and
+its `torch.cdist` computation produced false nonzero diagonal distances for
+large canonical coordinates. These are implementation mismatches, not evidence
+against zero-residual parity or 3D transport.
+
+Version 1.1 changes only `return_attn=true` and direct-difference Euclidean
+distance. It retains the same frames, checkpoint, code dimension, basis seed,
+diagnostic step, and gates. No result-dependent hyperparameter or architectural
+change is authorized.

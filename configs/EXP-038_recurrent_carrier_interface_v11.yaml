@@ -1,0 +1,34 @@
+experiment: EXP-038
+protocol_revision: v1.1_implementation_correction
+purpose: exposed_engineering_interface_audit
+seed: 3800010
+correction_from: configs/EXP-038_recurrent_carrier_interface_v10.yaml
+correction_scope:
+  - match_native_explicit_attention_path
+  - numerically_stable_direct_pairwise_distance
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  probe_sequence: rgbd_dataset_freiburg2_xyz
+  probe_frames: 3
+carrier:
+  repository: TTT3R
+  source_revision: edd6d8c000aaf2ef0f588403e1b3bd3300a54cc4
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: cut3r
+  image_size: 512
+  crop: false
+plasticity:
+  code_dim: 8
+  basis_seed: 3800010
+  diagnostic_normalized_step: 0.001
+  patch_size: 16
+success:
+  maximum_native_parity_error: 0.00001
+  maximum_zero_code_error: 0.000001
+  minimum_gradient_norm: 0.00000001
+  require_online_loss_decrease: true
+  maximum_identity_transport_rmse: 0.000001
+output:
+  result: revisit3d/results/EXP-038/recurrent_carrier_interface_v11.json

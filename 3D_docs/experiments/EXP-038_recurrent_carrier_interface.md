@@ -1,6 +1,6 @@
 # EXP-038 — Recurrent Carrier Plasticity Interface Audit
 
-Status: Registered before execution
+Status: v1.0 preserved with implementation failure; corrected v1.1 registered
 Purpose: Exposed engineering/interface evidence; no model fitting
 
 ## Question
@@ -45,7 +45,27 @@ fitting. TUM depth and query labels are not opened.
 
 ## Artifacts
 
-- Config: `configs/EXP-038_recurrent_carrier_interface_v10.yaml`
+- Config v1.0: `configs/EXP-038_recurrent_carrier_interface_v10.yaml`
+- Corrected config v1.1: `configs/EXP-038_recurrent_carrier_interface_v11.yaml`
 - Carrier: `revisit3d/backbones/recurrent_carrier.py`
 - Script: `revisit3d/scripts/audit_exp038_recurrent_carrier_interface.py`
-- Result: `revisit3d/results/EXP-038/recurrent_carrier_interface_v10.json`
+- Result v1.0: `revisit3d/results/EXP-038/recurrent_carrier_interface_v10.json`
+- Corrected result v1.1: `revisit3d/results/EXP-038/recurrent_carrier_interface_v11.json`
+
+## v1.0 implementation audit
+
+The first execution is preserved as a failed result. Zero-code parity, finite
+code gradients, nonzero geometry response, and finite cross-view transport
+passed. Three checks failed for two localized implementation reasons:
+
+- the custom rollout requested `return_attn=false`, causing the external model
+  to switch to SDPA while native lighter inference uses explicit attention;
+  the two valid kernels differed by up to 0.0176 numerically; and
+- `torch.cdist` suffered cancellation on large canonical coordinates, giving
+  nonzero self-distances up to 0.1265. This invalidated identity transport and
+  the diagnostic descent calculation.
+
+Version 1.1 changes only those implementations: it follows native explicit
+attention and computes Euclidean distances from direct coordinate differences.
+The probe frames, 8-D basis, `0.001` step, thresholds, and all success checks
+remain unchanged. This is a correction, not a selected method variant.

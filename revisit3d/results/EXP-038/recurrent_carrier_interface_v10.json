@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-038",
+  "stage": "recurrent_carrier_interface_audit",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-038_recurrent_carrier_interface_v10.yaml",
+  "purpose": "exposed_engineering_interface_audit",
+  "probe": {
+    "sequence": "rgbd_dataset_freiburg2_xyz",
+    "frames": 3,
+    "query_or_depth_accessed": false
+  },
+  "carrier": {
+    "mode": "cut3r",
+    "checkpoint_sha256": "45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103",
+    "frozen": true
+  },
+  "plasticity": {
+    "code_dim": 8,
+    "patch_tokens": 768,
+    "code_bytes_float32": 24576,
+    "trainable_basis_parameters": 6144
+  },
+  "measurements": {
+    "native_per_frame_max_abs_error": [
+      0.013489723205566406,
+      0.017566680908203125,
+      0.0164794921875
+    ],
+    "native_max_abs_error": 0.017566680908203125,
+    "zero_code_max_abs_error": 0.0,
+    "online_loss_before": 0.2322089672088623,
+    "online_loss_after": 0.23243144154548645,
+    "code_gradient_norm": 0.0007856276934035122,
+    "nonzero_output_max_change": 0.0178375244140625,
+    "identity_transport_rmse": 0.0003115121216978878,
+    "identity_transport_max_distance": 0.12647898495197296,
+    "cross_transport_mean_distance": 0.09420923888683319
+  },
+  "registered_gate": {
+    "checks": {
+      "native_cut3r_parity": false,
+      "zero_code_parity": true,
+      "finite_nonzero_code_gradient": true,
+      "diagnostic_online_loss_decreased": false,
+      "nonzero_code_changes_geometry": true,
+      "identity_3d_transport": false,
+      "cross_view_3d_transport_finite": true
+    },
+    "passed": false
+  },
+  "model_fit_performed": false,
+  "final_test_evidence": false
+}

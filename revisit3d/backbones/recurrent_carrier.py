@@ -160,7 +160,11 @@ class FrozenCUT3RCarrier(nn.Module):
                 img_mask=gpu_view["img_mask"],
                 reset_mask=gpu_view["reset"],
                 update=gpu_view.get("update"),
-                return_attn=False,
+                # Native lighter inference requests attention even in CUT3R
+                # mode. Keeping that path is required for numerical parity:
+                # the external implementation otherwise switches from its
+                # explicit attention kernel to SDPA.
+                return_attn=True,
             )
             output_pose_feat = decoder[-1][:, :1]
             new_mem = self.model.pose_retriever.update_mem(
@@ -219,7 +223,12 @@ def symmetric_point_consistency(current: Tensor, previous: Tensor) -> Tensor:
     """Single parameter-free online loss in a shared predicted 3D frame."""
     if current.ndim != 3 or previous.ndim != 3 or current.shape[-1] != 3:
         raise ValueError("point sets must have shape [B,N,3]")
-    distances = torch.cdist(current, previous)
+    # torch.cdist's quadratic expansion can give a non-zero self-distance for
+    # large canonical coordinates. Direct differences preserve the geometry
+    # needed by both the loss and identity-transport contract.
+    distances = torch.linalg.vector_norm(
+        current[:, :, None, :] - previous[:, None, :, :], dim=-1
+    )
     return 0.5 * (distances.min(dim=-1).values.mean() + distances.min(dim=-2).values.mean())
 
 
@@ -229,7 +238,9 @@ def transport_code_3d(
     """Nearest-neighbor transport of a local code in predicted canonical 3D."""
     if source_points.shape[:2] != source_code.shape[:2]:
         raise ValueError("source point/code layouts differ")
-    distances = torch.cdist(target_points, source_points)
+    distances = torch.linalg.vector_norm(
+        target_points[:, :, None, :] - source_points[:, None, :, :], dim=-1
+    )
     nearest_distance, nearest = distances.min(dim=-1)
     transported = torch.gather(
         source_code,
