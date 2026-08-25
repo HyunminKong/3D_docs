@@ -92,6 +92,34 @@ def _selected_loss(
     return loss, True
 
 
+def _second_current_loss(
+    carrier: FrozenCUT3RCarrier,
+    auxiliary: dict,
+    current_code: torch.Tensor,
+    previous_points: torch.Tensor,
+    *,
+    normalized_step: float,
+    patch_size: int,
+) -> float:
+    """Apply an equal-size second TTT step using only the current observation."""
+    code = current_code.detach().clone().requires_grad_(True)
+    prediction = carrier.readout(auxiliary, code=code)
+    points = _points(prediction, patch_size)
+    loss = torch.linalg.vector_norm(
+        points[:, :, None, :] - previous_points[:, None, :, :], dim=-1
+    )
+    loss = 0.5 * (loss.min(dim=-1).values.mean() + loss.min(dim=-2).values.mean())
+    gradient = torch.autograd.grad(loss, code, create_graph=False)[0]
+    normalized = gradient / gradient.square().mean().sqrt().clamp_min(1e-12)
+    updated = code.detach() - float(normalized_step) * normalized.detach()
+    with torch.no_grad():
+        return float(
+            _loss_for_code(
+                carrier, auxiliary, updated, previous_points, patch_size
+            )
+        )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/EXP-047_full_stream_bounded_bank_v10.yaml")
@@ -151,6 +179,7 @@ def main() -> None:
     patch_size = int(config["plasticity"]["patch_size"])
     temperature = float(config["transport"]["visual_temperature"])
     threshold = float(config["bank"]["application_threshold"])
+    compute_second_current = bool(config["controls"].get("second_current_step", False))
     results = []
     processed_frames = 0
     maximum_bank_sizes = {"reservoir": 0, "fifo": 0}
@@ -212,6 +241,18 @@ def main() -> None:
                                 previous_points,
                                 patch_size,
                             )
+                        )
+                    second_current_loss = None
+                    if compute_second_current:
+                        second_current_loss = _second_current_loss(
+                            carrier,
+                            auxiliary,
+                            current["code"],
+                            previous_points,
+                            normalized_step=float(
+                                config["controls"]["second_current_normalized_step"]
+                            ),
+                            patch_size=patch_size,
                         )
                     reservoir_address = _address(
                         reservoir,
@@ -275,6 +316,11 @@ def main() -> None:
                             "frame_index": frame_index,
                             "target_base_loss": current["base_loss"],
                             "target_current_loss": current_loss,
+                            **(
+                                {"target_second_current_loss": second_current_loss}
+                                if compute_second_current
+                                else {}
+                            ),
                             **{
                                 f"target_{name}_loss": loss
                                 for name, loss in selected_losses.items()
@@ -352,28 +398,58 @@ def main() -> None:
         for key in (
             "target_base_loss",
             "target_current_loss",
+            *(
+                ("target_second_current_loss",)
+                if compute_second_current
+                else ()
+            ),
             *(f"target_{name}_loss" for name in policy_names),
         )
     }
-    comparisons = {
-        "current_ttt_gain": ("target_base_loss", "target_current_loss"),
-        "reservoir_agreement_gain_over_current": (
-            "target_current_loss",
-            "target_reservoir_agreement_loss",
-        ),
-        "reservoir_agreement_over_appearance": (
-            "target_reservoir_appearance_loss",
-            "target_reservoir_agreement_loss",
-        ),
-        "reservoir_agreement_over_random": (
-            "target_reservoir_random_loss",
-            "target_reservoir_agreement_loss",
-        ),
-        "reservoir_agreement_over_fifo": (
-            "target_fifo_agreement_loss",
-            "target_reservoir_agreement_loss",
-        ),
-    }
+    if compute_second_current:
+        comparisons = {
+            "current_ttt_gain": ("target_base_loss", "target_current_loss"),
+            "second_current_gain_over_current": (
+                "target_current_loss",
+                "target_second_current_loss",
+            ),
+            "fifo_agreement_gain_over_current": (
+                "target_current_loss",
+                "target_fifo_agreement_loss",
+            ),
+            "fifo_agreement_over_second_current": (
+                "target_second_current_loss",
+                "target_fifo_agreement_loss",
+            ),
+            "fifo_agreement_over_reservoir_appearance": (
+                "target_reservoir_appearance_loss",
+                "target_fifo_agreement_loss",
+            ),
+            "fifo_agreement_over_reservoir_random": (
+                "target_reservoir_random_loss",
+                "target_fifo_agreement_loss",
+            ),
+        }
+    else:
+        comparisons = {
+            "current_ttt_gain": ("target_base_loss", "target_current_loss"),
+            "reservoir_agreement_gain_over_current": (
+                "target_current_loss",
+                "target_reservoir_agreement_loss",
+            ),
+            "reservoir_agreement_over_appearance": (
+                "target_reservoir_appearance_loss",
+                "target_reservoir_agreement_loss",
+            ),
+            "reservoir_agreement_over_random": (
+                "target_reservoir_random_loss",
+                "target_reservoir_agreement_loss",
+            ),
+            "reservoir_agreement_over_fifo": (
+                "target_fifo_agreement_loss",
+                "target_reservoir_agreement_loss",
+            ),
+        }
     uncertainty = _bootstrap(
         results,
         comparisons,
@@ -395,7 +471,7 @@ def main() -> None:
     selected_age = {
         name: _scene_balanced(results, f"{name}_selected_age") for name in policy_names
     }
-    checks = {
+    common_checks = {
         "exact_coverage": processed_frames
         == int(config["data"]["exact_stream_frames_through_last_query"])
         and len(results) == int(config["data"]["exact_queries"])
@@ -405,31 +481,56 @@ def main() -> None:
             row["cached_readout_parity_max_abs"] for row in results
         )
         == 0,
-        "positive_reservoir_agreement_gain_ci95": uncertainty[
-            "reservoir_agreement_gain_over_current"
-        ]["ci95"][0]
-        > 0,
-        "reservoir_agreement_better_appearance_ci95": uncertainty[
-            "reservoir_agreement_over_appearance"
-        ]["ci95"][0]
-        > 0,
-        "reservoir_agreement_better_random_ci95": uncertainty[
-            "reservoir_agreement_over_random"
-        ]["ci95"][0]
-        > 0,
-        "reservoir_agreement_better_fifo_ci95": uncertainty[
-            "reservoir_agreement_over_fifo"
-        ]["ci95"][0]
-        > 0,
-        "reservoir_agreement_harm_below_limit": harm["reservoir_agreement"]
-        <= float(config["success"]["maximum_reservoir_agreement_harm_fraction"]),
         "exact_capacity": maximum_bank_sizes["reservoir"]
         == int(config["success"]["exact_capacity"])
         and maximum_bank_sizes["fifo"] == int(config["success"]["exact_capacity"]),
     }
+    if compute_second_current:
+        method_checks = {
+            "positive_fifo_agreement_gain_ci95": uncertainty[
+                "fifo_agreement_gain_over_current"
+            ]["ci95"][0]
+            > 0,
+            "fifo_better_second_current_ci95": uncertainty[
+                "fifo_agreement_over_second_current"
+            ]["ci95"][0]
+            > 0,
+            "fifo_better_reservoir_appearance_ci95": uncertainty[
+                "fifo_agreement_over_reservoir_appearance"
+            ]["ci95"][0]
+            > 0,
+            "fifo_better_reservoir_random_ci95": uncertainty[
+                "fifo_agreement_over_reservoir_random"
+            ]["ci95"][0]
+            > 0,
+            "fifo_agreement_harm_below_limit": harm["fifo_agreement"]
+            <= float(config["success"]["maximum_fifo_agreement_harm_fraction"]),
+        }
+    else:
+        method_checks = {
+            "positive_reservoir_agreement_gain_ci95": uncertainty[
+                "reservoir_agreement_gain_over_current"
+            ]["ci95"][0]
+            > 0,
+            "reservoir_agreement_better_appearance_ci95": uncertainty[
+                "reservoir_agreement_over_appearance"
+            ]["ci95"][0]
+            > 0,
+            "reservoir_agreement_better_random_ci95": uncertainty[
+                "reservoir_agreement_over_random"
+            ]["ci95"][0]
+            > 0,
+            "reservoir_agreement_better_fifo_ci95": uncertainty[
+                "reservoir_agreement_over_fifo"
+            ]["ci95"][0]
+            > 0,
+            "reservoir_agreement_harm_below_limit": harm["reservoir_agreement"]
+            <= float(config["success"]["maximum_reservoir_agreement_harm_fraction"]),
+        }
+    checks = {**common_checks, **method_checks}
     result = {
-        "experiment": "EXP-047",
-        "stage": "full_stream_bounded_agreement_bank_development",
+        "experiment": config["experiment"],
+        "stage": config["purpose"],
         "protocol_revision": config["protocol_revision"],
         "config": str(config_path),
         "processed_frames": processed_frames,
