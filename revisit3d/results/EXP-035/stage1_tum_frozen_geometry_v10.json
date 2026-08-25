@@ -1,0 +1,12 @@
+{
+  "experiment": "EXP-035",
+  "stage": "tum_frozen_geometry_cache",
+  "protocol_revision": "v1.0",
+  "cache": "revisit3d/cache/EXP-035/tum_frozen_geometry_v10.pt",
+  "cache_sha256": "0616362689ede29b924f5c941a7a9318a6193ed9cb084f12f0cfe00d9a7426bd",
+  "rows": 223,
+  "image_decoded": true,
+  "model_output_accessed": true,
+  "depth_decoded": false,
+  "tum_fit_performed": false
+}

@@ -1055,3 +1055,21 @@ address, PCA, threshold, loss, capacity, or checkpoint. Full memory must improve
 all three sequence-balanced primary means over current-only, same-bank random,
 and appearance. Failure is terminal for zero-shot TUM and cannot authorize a
 repair.
+
+## D109 — Accept descriptive dataset transfer and freeze the final model
+
+Date: 2026-08-25
+Status: Accepted after EXP-035
+
+Without any TUM fitting, the immutable full policy improved sequence-balanced
+SILog, aligned AbsRel, and 3D EPE over current-only, same-bank random, and
+appearance. It improved all three metrics over current-only within each of the
+three sequences. This supplies descriptive cross-dataset support.
+
+The address accepted 100% of targets, and the four-target Freiburg1-desk
+sequence favored random/appearance controls. With only three imbalanced groups,
+EXP-035 does not establish cross-domain risk calibration or paper-level
+inference. No TUM repair is authorized. The final architecture and all model
+values are now closed; remaining work is paper evaluation infrastructure,
+external baselines, fixed qualitative outputs, and writing—not another method
+variant.

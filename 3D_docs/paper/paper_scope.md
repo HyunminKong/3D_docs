@@ -1,14 +1,18 @@
 # Paper Scope — Revisit3D
 
-Last updated: 2026-08-25
+Last updated: 2026-08-25 after EXP-035
 
-## Current decision status
+## Decision status
 
-The frozen EXP-015 + EXP-019 candidate is **not paper-ready**. EXP-020 retained
-significant proxy utility and aligned-AbsRel evidence, but failed the registered
-broad-geometry and harm gates. The title and thesis below remain the research
-target, not an accepted final model. Any replacement must be selected on new
-development data and tested on a newly locked component-disjoint benchmark.
+The EXP-028 atom plus EXP-029 address is the **final frozen paper model**.
+Development selection, untouched nuScenes terminal evaluation, efficiency, and
+zero-shot TUM transfer are complete. No further architecture, loss, threshold,
+seed, or dataset-specific model variant is allowed for this paper.
+
+The method evidence is strong enough to begin a CVPR manuscript, but the
+submission package is not complete until matched external streaming baselines
+and fixed qualitative reconstructions are added. ICLR-level generality is not
+claimed because a second backbone/task has not been validated.
 
 ## Working title
 
@@ -16,123 +20,116 @@ development data and tested on a newly locked component-disjoint benchmark.
 
 ## One-sentence thesis
 
-Streaming 3D systems should retrieve **how to adapt** under a recurring geometric context, rather than only retaining what the scene looked like; a transported local fast code addressed by causal future utility improves later geometry under a fixed memory budget.
+Streaming 3D systems can remember **how local geometry adapted**, transport
+that correction into a later observation, and retrieve it by causal future
+geometry utility rather than by appearance alone.
 
-## Primary venue orientation
+## Frozen method
 
-The first target is a CVPR-style paper: one compact method, standard geometry metrics, causal streaming evaluation, strong closest-method comparisons, and transparent efficiency. An ICLR submission becomes credible only if the same learning principle transfers across another backbone/task or receives substantially stronger theory. The current project must not grow into a joint static/dynamic/pose/4D system for this paper.
+The inference graph has two learned additions to a frozen FastVGGT/custom
+geometry stack:
 
-## Minimal method
+1. an 8-D per-token plasticity code updated once by `L_track3D` at
+   `eta=0.0125`;
+2. one 64-D factorized Ridge address trained on offline future metric utility.
 
-The paper contains three ideas, but only two learned components:
+The top-1 record is reused only above semantic zero. Visual correspondence
+transports its code and applies a fixed 0.10 residual after current TTT. A
+deterministic reservoir stores at most 64 records per stream. There is no risk
+head, fine router, learned threshold, learned eviction, pose update, second TTT
+step, or dynamic state.
 
-1. **Local plasticity atom.** A frozen geometry backbone exposes dense features. One self-supervised gradient step updates an 8-D per-token code; backbone weights never change online.
-2. **Utility retrieval.** One factorized linear pair score retrieves five predicted-utility records. A parameter-free current-geometry agreement reranks them, with coarse top-1 fallback; there is no learned fine head.
-3. **Bounded causal store.** A fixed-capacity reservoir is an implementation constraint, not a novel learned consolidation module.
+Offline atom training uses aligned-log and aligned-relative depth endpoint
+gradients with the parameter-free EXP-028 feasible-displacement safeguard.
+This makes the deployed one-loss/one-step direction metric healthy; generic
+gradient consensus is prior art and not the novelty claim.
 
-The primary path excludes DINO place retrieval, predicted Sim(3) transport, neural risk classification, learned eviction, pose adaptation, a second TTT step, and dynamic 4D state.
+## Visible method constants
 
-## Minimal online objective
+- `eta=0.0125`: one online local-code step;
+- `alpha=0.10`: bounded memory residual;
+- `C=64`: per-stream reservoir capacity;
+- code dimension 8 and address dimension 64.
 
-EXP-011 selected one deployed TTT signal:
-
-\[
-\mathcal L_{\mathrm{TTT}}=\mathcal L_{\mathrm{track3D}}.
-\]
-
-Only the local code `z` is differentiated. Smoothness and code regularization were numerically immaterial in the registered train audit and are removed.
-
-The EXP-015 core atom uses normalized future current loss, absolute best-reuse loss, and their unweighted softplus ranking. These are three readouts of the same 3D-track signal, with no auxiliary key, neutralization, centering, smoothness, or code-norm loss.
-
-## Main hyperparameters
-
-Only four quantities are treated as visible method hyperparameters in the frozen paper candidate:
-
-- one-step TTT step size `eta`;
-- reuse residual strength `alpha`;
-- coarse candidate count `K`;
-- bank capacity `C`.
-
-Both utility and current-agreement decisions use semantic zero thresholds. PCA dimension and Ridge regularization are fixed implementation choices. The paper reports sensitivity for `eta`, `alpha`, and `C`, with a compact K ablation.
-
+Top-1 and semantic zero are fixed decisions, not sweepable hyperparameters.
+Ridge alpha 1 is an implementation constant. The paper must not present a large
+hyperparameter search.
 
 ## Formal learning problem
 
 For current context `x_t`, local adaptation is
 
 \[
-z_t=-\eta\nabla_z\mathcal L_{\mathrm{TTT}}(x_t,z)\rvert_{z=0}.
+z_t=-\eta\nabla_z\mathcal L_{\mathrm{track3D}}(x_t,z)\rvert_{z=0}.
 \]
 
-A past record `i` stores a local code `z_i` and observable descriptor `c_i`. Visual transport maps it into current token coordinates:
+For stored record `i`, visual transport gives
 
 \[
-\delta_{t,i}=\alpha\,T(z_i;x_i\rightarrow x_t).
+\delta_{t,i}=\alpha T(z_i;x_i\rightarrow x_t).
 \]
 
-Future utility is an offline meta-label only:
+Offline future utility on disjoint query observations is
 
 \[
-U_{t,i}=\frac{F_t(z_t)-F_t(z_t+\delta_{t,i})}{|F_t(z_t)|+\epsilon},
+U_{t,i}=F_t(z_t)-F_t(z_t+\delta_{t,i}).
 \]
 
-where `F_t` is evaluated on disjoint future/query observations. At runtime, neither `F_t` nor query frames are available. The unified address estimates utility from current/source observables.
+The address estimates this utility from current/source descriptors. Query RGB,
+depth, and LiDAR never enter online adaptation, addressing, bank writes, or
+retention.
 
-## Theoretical rationale and claim boundary
+## Evidence summary
 
-If future loss `F` is L-smooth, then for a transported residual `delta`:
+| Requirement | Evidence | Status |
+|---|---|---|
+| metric-healthy current TTT | EXP-028 OOF | passed |
+| reusable local correction | EXP-028 oracle reuse | passed |
+| utility address over random/appearance | EXP-029 | passed |
+| full absolute geometry | EXP-030, 217 targets/25 components | passed |
+| untouched terminal geometry | EXP-031, 187 targets/29 components | qualified positive; impossible coverage gate failed |
+| coverage accounting | EXP-032 | all 187 causally eligible targets included |
+| efficiency/storage | EXP-033 | 1.996 ms method overhead; 38.52 MiB bank-64 |
+| independent dataset | EXP-035 TUM zero-shot | descriptive pass on 111 targets/3 sequences |
+| second backbone/task | none | open; not required for the CVPR-first claim |
+| matched external SOTA baselines | checkpoints available, evaluation absent | required before submission |
+| fixed qualitative results | absent | required before submission |
 
-\[
-F(z)-F(z+\delta)
-\ge
--\langle\nabla F(z),\delta\rangle-\frac{L}{2}\lVert\delta\rVert^2.
-\]
+## Claim boundary
 
-Thus useful reuse requires directional agreement with future improvement, while the fixed residual and code clamp bound the second-order damage term. This motivates learning future utility rather than using appearance similarity or raw gradient cosine. It is a rationale, not a worst-case safety guarantee.
+Claim:
 
-The linear score is trained as a conditional-utility regressor and uses the semantic decision `r(o)>0`. This is Bayes-consistent under squared loss when the regressor estimates `E[U|o]`, but finite-sample Ridge has no uniform calibration guarantee. Component-disjoint utility, harmful-rate, and absolute-geometry tests are therefore mandatory; the zero rule is not presented as worst-case safety.
+- local transported adaptation improves SILog, aligned AbsRel, and 3D EPE over
+  current-only TTT;
+- one metric-utility address beats same-bank random and appearance means;
+- the effect survives a bounded causal stream and descriptive indoor zero-shot
+  transfer;
+- learned compute overhead is small relative to the frozen foundation.
 
-The linear pair score over `[c_t,c_i,c_t-c_i,c_t*c_i]` factorizes exactly into maximum inner product search. Reservoir sampling supplies fixed memory and unbiased historical inclusion, but no superiority over FIFO is claimed.
+Do not claim:
 
-## Required paper evidence
+- camera-pose, point-tracking, dynamic-4D, or second-backbone improvement;
+- reliable per-sample negative-transfer rejection or worst-case safety;
+- reservoir superiority over FIFO or universal capacity 64;
+- a fully self-supervised training pipeline, since sparse future geometry is
+  offline supervision;
+- that EXP-031 literally passed every preregistered gate.
 
-1. Absolute depth/point metrics, not only the future-loss utility proxy.
-2. Component-disjoint and source-entity-safe generalization with paired confidence intervals.
-3. `base → current TTT → random memory → appearance address → utility address` ablation.
-4. Comparison with frozen VGGT/FastVGGT, current-only TTT, CUT3R/TTT3R-style streaming baselines where protocols permit, and bounded/unbounded memory controls.
-5. Runtime, peak GPU memory, per-record bank bytes, and sequence-length scaling.
-6. At least one independent dataset or backbone before a strong general claim.
-7. A minimal-loss refit showing that feasibility-stage regularizers are not the source of the result.
+## Remaining submission work
 
-## Stop conditions
+1. Run matched CUT3R and TTT3R baselines where their output/protocol can be
+   evaluated without changing ours; tttLRM is included only if camera/data
+   assumptions admit a fair comparison.
+2. Export deterministic earliest-target qualitative depth/point results for
+   every test component/sequence before viewing improvements; show fixed
+   examples and failure cases.
+3. Assemble main tables, ablation table, efficiency table, method figure, and
+   causal protocol diagram from committed machine-readable results.
+4. Write the CVPR paper with EXP-031's coverage qualification and EXP-035's
+   three-sequence limitation stated explicitly.
 
-- If utility improvement does not reduce scale-invariant or scale-aligned geometry error, the current method is not paper-ready and the proxy claim must be narrowed.
-- If utility address does not beat a matched random address on absolute metrics, similarity-independent utility retrieval is not established.
-- If the simplified meta-objective collapses, retain only independently justified regularizers and report them transparently.
-- No result from the closed EXP-009 test may be used to tune the method.
+## Stop rule
 
-EXP-020 triggered the first two stop conditions, and EXP-022 showed significant
-anti-alignment between proxy gain and SILog/EPE gain. Consequently, a fully
-self-supervised proxy-only endpoint is rejected for the primary CVPR path. The
-only active alternative is one explicitly metric-aligned offline meta label
-while retaining the single self-supervised online TTT loss. Its oracle utility
-must pass EXP-023 before any new model training.
-
-EXP-023 passed the oracle gate across all three primary metrics. One
-component-OOF atom fit with that single offline loss is now authorized; address
-and terminal evaluation remain locked until its absolute-geometry gates pass.
-
-That EXP-024 fit failed aligned AbsRel while significantly improving SILog/EPE.
-One terminal equal-weight log-plus-relative geometry objective is authorized as
-EXP-025. It keeps one online loss and adds no module or inference hyperparameter;
-failure stops method development for this paper.
-
-EXP-025 failed with significant AbsRel improvement but significant SILog/EPE
-degradation. The compact scalar-objective path is stopped. A constrained
-multi-objective offline plasticity branch is now explicitly approved, while
-the inference graph remains unchanged. Generic gradient consensus is not
-claimed as novel because of direct MTL/TTA prior art. EXP-026 must first pass a
-no-fit local-gradient premise gate; only then may one parameter-free
-common-descent atom be trained. Address fitting, efficiency evaluation, and the
-locked terminal test remain forbidden until that atom passes source-safe OOF
-broad-geometry gates.
+The final model is closed. A baseline or qualitative failure can narrow the
+paper claim or motivate future work, but cannot trigger another model variant
+on the exposed nuScenes/TUM evaluations.

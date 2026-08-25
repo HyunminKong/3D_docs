@@ -124,7 +124,12 @@ metric-utility addressing beats same-bank random and appearance means; bounded
 causal reservoir deployment retains the effect; method compute overhead is
 small relative to the foundation.
 
+EXP-035 additionally supports descriptive zero-shot transfer to TUM RGB-D with
+the same FastVGGT stack: full memory beats current/random/appearance on all
+sequence-balanced primary means and beats current within every sequence.
+
 Unsupported: reliable per-sample negative-transfer rejection, pose/4D claims,
-reservoir superiority, universal capacity, worst-case safety, or generalization
-to a second dataset/backbone. EXP-031 must be described as qualified terminal
-evidence because its impossible coverage gate technically failed.
+reservoir superiority, universal capacity, worst-case safety, or transfer to a
+second backbone. EXP-031 must be described as qualified terminal evidence
+because its impossible coverage gate technically failed; EXP-035 has only
+three imbalanced sequences and cannot carry a broad generalization claim.

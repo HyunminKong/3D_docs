@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-035 zero-shot transfer registered)
+Last updated: 2026-08-25 (EXP-035 passed; final model frozen)
 
 ## First objective
 
@@ -184,9 +184,16 @@ TUM RGB-D supplies 223 causal contexts and 111 physical-revisit targets across
 three indoor sequences. Because 98 targets lie in one sequence, this cannot
 replace paper-level multi-component inference.
 
-EXP-035 is registered as a single no-fit nuScenes→TUM stress test. It freezes
-the complete atom, address, FastVGGT/custom geometry stack, TTT step, residual,
-semantic-zero rule, and reservoir policy. Sequence-balanced geometry must beat
-current-only, same-bank random, and appearance on all primary means. TUM RGB is
-online input and query depth is offline evaluation only; no TUM-side fitting or
-post-result repair is allowed.
+EXP-035 passed every descriptive gate without TUM fitting. Full memory improved
+sequence-balanced SILog by 0.08042, aligned AbsRel by 0.000998, and 3D EPE by
+0.002172 m over current-only, and all three means also beat random and
+appearance. Current-only improvement was positive within every sequence. Only
+three imbalanced sequences are available, and the address accepted 100%, so
+this is transfer evidence rather than a general safety result.
+
+The final model is now frozen. No further architecture, loss, address,
+threshold, seed, capacity, or dataset-specific variant is permitted for this
+paper. Remaining CVPR work is external CUT3R/TTT3R/tttLRM-compatible baseline
+evaluation where protocols permit, fixed non-cherry-picked qualitative
+reconstruction outputs, tables/figures, and manuscript writing. Camera-pose and
+dynamic-4D improvement remain outside the claim.

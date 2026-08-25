@@ -1,6 +1,6 @@
 # EXP-035 — Frozen nuScenes→TUM Zero-Shot Transfer
 
-Status: Registered before TUM sensor decoding or model access
+Status: Completed; all registered descriptive gates passed
 
 ## Question
 
@@ -40,3 +40,30 @@ reported without TUM-side repair or rerun.
 - Cache script: `revisit3d/scripts/cache_exp035_tum_geometry.py`
 - Evaluation script: `revisit3d/scripts/evaluate_exp035_tum_zero_shot.py`
 - Result: `revisit3d/results/EXP-035/stage2_tum_zero_shot_transfer_v10.json`
+
+## Result
+
+All 111 registered targets and three sequences were evaluable. The frozen
+address accepted every target. Sequence-balanced results were:
+
+| Method | SILog ↓ | aligned AbsRel ↓ | 3D EPE ↓ |
+|---|---:|---:|---:|
+| current-only | 28.5429 | 0.231135 | 0.461097 m |
+| same-bank random | 28.4866 | 0.230467 | 0.459881 m |
+| appearance | 28.4900 | 0.230505 | 0.459811 m |
+| full memory | **28.4625** | **0.230136** | **0.458924 m** |
+
+Full versus current improvement was positive on every metric in every
+sequence: +0.08042 SILog, +0.000998 AbsRel, and +0.002172 m EPE after sequence
+balancing. Full also improved all registered means over random and appearance.
+However, the four-target Freiburg1-desk sequence favored random and appearance
+over full, so cross-domain selection safety is not universal. Intervals against
+those controls cross zero with only three groups.
+
+## Conclusion
+
+The exact nuScenes-selected model retains a small but consistent current-only
+benefit under a severe indoor domain shift, and all registered descriptive
+gates pass without TUM fitting. This supports dataset transfer of the adaptation
+effect, not a second-backbone claim, statistical generality, or reliable
+negative-transfer rejection.

@@ -1,0 +1,5760 @@
+{
+  "experiment": "EXP-035",
+  "stage": "tum_frozen_zero_shot_evaluation",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-035_tum_zero_shot_transfer_v10.yaml",
+  "split": "tum_zero_shot",
+  "tum_fit_performed": false,
+  "terminal_no_tum_repair": true,
+  "artifact_hashes": {
+    "atom": "3ebf194f3a28876014e46d1d3bbdbcd1422cfb8ebdba48f3d16635520ca787ae",
+    "address": "d8b81fff36d5cb5635c194a63b422edf700c0683b7f7eb2d477be67091430984"
+  },
+  "cache_sha256": "0616362689ede29b924f5c941a7a9318a6193ed9cb084f12f0cfe00d9a7426bd",
+  "acceptance": 1.0,
+  "summaries": {
+    "current": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 28.54291151570972,
+      "abs_rel": 0.23113460527245464,
+      "rmse_m": 0.5956268451073483,
+      "delta1": 0.5804573240173853,
+      "point_epe_m": 0.46109670503517336
+    },
+    "full": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 28.46248674670748,
+      "abs_rel": 0.2301361329639567,
+      "rmse_m": 0.5932076711114679,
+      "delta1": 0.5822664410067678,
+      "point_epe_m": 0.4589243143208049
+    },
+    "random": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 28.486597142544127,
+      "abs_rel": 0.23046739867372226,
+      "rmse_m": 0.5942329567411181,
+      "delta1": 0.5816262253038434,
+      "point_epe_m": 0.4598810330270613
+    },
+    "appearance": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 28.490046254936075,
+      "abs_rel": 0.23050536687524895,
+      "rmse_m": 0.594104256511542,
+      "delta1": 0.5817705525120801,
+      "point_epe_m": 0.4598106617789215
+    },
+    "oracle": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 28.356061885228485,
+      "abs_rel": 0.22893623742539035,
+      "rmse_m": 0.5912031733164591,
+      "delta1": 0.5832116176920566,
+      "point_epe_m": 0.4571428343323369
+    }
+  },
+  "per_sequence": {
+    "current": {
+      "rgbd_dataset_freiburg1_desk": {
+        "targets": 4,
+        "silog": 24.331072696797385,
+        "abs_rel": 0.19375224705945063,
+        "rmse_m": 0.23538795851767264,
+        "delta1": 0.6613942818995155,
+        "point_epe_m": 0.19390464762638146
+      },
+      "rgbd_dataset_freiburg2_xyz": {
+        "targets": 98,
+        "silog": 29.487416460993508,
+        "abs_rel": 0.22767721863508175,
+        "rmse_m": 0.6849768410743601,
+        "delta1": 0.6057395743751661,
+        "point_epe_m": 0.46957614554967037
+      },
+      "rgbd_dataset_freiburg3_long_office_household": {
+        "targets": 9,
+        "silog": 31.810245389338263,
+        "abs_rel": 0.27197435012283144,
+        "rmse_m": 0.8665157357300121,
+        "delta1": 0.4742381157774742,
+        "point_epe_m": 0.7198093219294683
+      }
+    },
+    "full": {
+      "rgbd_dataset_freiburg1_desk": {
+        "targets": 4,
+        "silog": 24.305471255149225,
+        "abs_rel": 0.1934290131373698,
+        "rmse_m": 0.23484426011432272,
+        "delta1": 0.6633425459452373,
+        "point_epe_m": 0.19339327346201932
+      },
+      "rgbd_dataset_freiburg2_xyz": {
+        "targets": 98,
+        "silog": 29.465595152700747,
+        "abs_rel": 0.22730900564375725,
+        "rmse_m": 0.685038011526126,
+        "delta1": 0.6061642267502293,
+        "point_epe_m": 0.46930514601428325
+      },
+      "rgbd_dataset_freiburg3_long_office_household": {
+        "targets": 9,
+        "silog": 31.61639383227246,
+        "abs_rel": 0.2696703801107431,
+        "rmse_m": 0.8597407416939552,
+        "delta1": 0.4772925503248369,
+        "point_epe_m": 0.714074523486112
+      }
+    },
+    "random": {
+      "rgbd_dataset_freiburg1_desk": {
+        "targets": 4,
+        "silog": 24.261277743719532,
+        "abs_rel": 0.19293779436040503,
+        "rmse_m": 0.23434295735868638,
+        "delta1": 0.6634171842096648,
+        "point_epe_m": 0.1930054153877574
+      },
+      "rgbd_dataset_freiburg2_xyz": {
+        "targets": 98,
+        "silog": 29.481194676384014,
+        "abs_rel": 0.2275629014692183,
+        "rmse_m": 0.68500451433412,
+        "delta1": 0.6057296304839624,
+        "point_epe_m": 0.4695147330171523
+      },
+      "rgbd_dataset_freiburg3_long_office_household": {
+        "targets": 9,
+        "silog": 31.717319007528836,
+        "abs_rel": 0.27090150019154347,
+        "rmse_m": 0.8633513985305478,
+        "delta1": 0.4757318612179032,
+        "point_epe_m": 0.7171229506762742
+      }
+    },
+    "appearance": {
+      "rgbd_dataset_freiburg1_desk": {
+        "targets": 4,
+        "silog": 24.279612723969116,
+        "abs_rel": 0.1931134923009865,
+        "rmse_m": 0.23460936121607595,
+        "delta1": 0.6633425459452373,
+        "point_epe_m": 0.1931485326745552
+      },
+      "rgbd_dataset_freiburg2_xyz": {
+        "targets": 98,
+        "silog": 29.47264926854354,
+        "abs_rel": 0.22743518160580603,
+        "rmse_m": 0.6849650551017384,
+        "delta1": 0.6059889107454839,
+        "point_epe_m": 0.46937123770002454
+      },
+      "rgbd_dataset_freiburg3_long_office_household": {
+        "targets": 9,
+        "silog": 31.717876772295572,
+        "abs_rel": 0.27096742671895435,
+        "rmse_m": 0.8627383532168115,
+        "delta1": 0.4759802008455191,
+        "point_epe_m": 0.7169122149621846
+      }
+    },
+    "oracle": {
+      "rgbd_dataset_freiburg1_desk": {
+        "targets": 4,
+        "silog": 24.17022933516577,
+        "abs_rel": 0.19189960046696536,
+        "rmse_m": 0.23324956585903778,
+        "delta1": 0.6630598077023648,
+        "point_epe_m": 0.19206000431434092
+      },
+      "rgbd_dataset_freiburg2_xyz": {
+        "targets": 98,
+        "silog": 29.407165201415104,
+        "abs_rel": 0.2265894349194023,
+        "rmse_m": 0.684055448691844,
+        "delta1": 0.6071016813287795,
+        "point_epe_m": 0.4682299435364238
+      },
+      "rgbd_dataset_freiburg3_long_office_household": {
+        "targets": 9,
+        "silog": 31.490791119104586,
+        "abs_rel": 0.26831967688980335,
+        "rmse_m": 0.8563045053984957,
+        "delta1": 0.4794733640450256,
+        "point_epe_m": 0.711138555146246
+      }
+    }
+  },
+  "comparisons": {
+    "full_vs_current": {
+      "silog": {
+        "mean_improvement": 0.0804247690022419,
+        "ci95": [
+          0.021821308292763363,
+          0.19385155706580073
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": 0.025601441648161583,
+          "rgbd_dataset_freiburg2_xyz": 0.021821308292763363,
+          "rgbd_dataset_freiburg3_long_office_household": 0.19385155706580073
+        }
+      },
+      "abs_rel": {
+        "mean_improvement": 0.0009984723084978835,
+        "ci95": [
+          0.0003232339220808553,
+          0.002303970012088316
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": 0.0003232339220808553,
+          "rgbd_dataset_freiburg2_xyz": 0.00036821299132447924,
+          "rgbd_dataset_freiburg3_long_office_household": 0.002303970012088316
+        }
+      },
+      "point_epe_m": {
+        "mean_improvement": 0.0021723907143685155,
+        "ci95": [
+          0.000270999535387177,
+          0.00573479844335625
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": 0.0005113741643621196,
+          "rgbd_dataset_freiburg2_xyz": 0.000270999535387177,
+          "rgbd_dataset_freiburg3_long_office_household": 0.00573479844335625
+        }
+      }
+    },
+    "full_vs_random": {
+      "silog": {
+        "mean_improvement": 0.024110395836649087,
+        "ci95": [
+          -0.04419351142969319,
+          0.10092517525637253
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.04419351142969319,
+          "rgbd_dataset_freiburg2_xyz": 0.015599523683267915,
+          "rgbd_dataset_freiburg3_long_office_household": 0.10092517525637253
+        }
+      },
+      "abs_rel": {
+        "mean_improvement": 0.00033126570976555223,
+        "ci95": [
+          -0.0004912187769647372,
+          0.001231120080800381
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.0004912187769647372,
+          "rgbd_dataset_freiburg2_xyz": 0.00025389582546101304,
+          "rgbd_dataset_freiburg3_long_office_household": 0.001231120080800381
+        }
+      },
+      "point_epe_m": {
+        "mean_improvement": 0.0009567187062564315,
+        "ci95": [
+          -0.00038785807426191046,
+          0.003048427190162147
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.00038785807426191046,
+          "rgbd_dataset_freiburg2_xyz": 0.0002095870028690582,
+          "rgbd_dataset_freiburg3_long_office_household": 0.003048427190162147
+        }
+      }
+    },
+    "full_vs_appearance": {
+      "silog": {
+        "mean_improvement": 0.02755950822860187,
+        "ci95": [
+          -0.025858531180104727,
+          0.10148294002311271
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.025858531180104727,
+          "rgbd_dataset_freiburg2_xyz": 0.007054115842797602,
+          "rgbd_dataset_freiburg3_long_office_household": 0.10148294002311273
+        }
+      },
+      "abs_rel": {
+        "mean_improvement": 0.0003692339112922379,
+        "ci95": [
+          -0.0003155208363832679,
+          0.0012970466082111967
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.0003155208363832679,
+          "rgbd_dataset_freiburg2_xyz": 0.00012617596204878495,
+          "rgbd_dataset_freiburg3_long_office_household": 0.0012970466082111967
+        }
+      },
+      "point_epe_m": {
+        "mean_improvement": 0.0008863474581165843,
+        "ci95": [
+          -0.00024474078746413233,
+          0.0028376914760725514
+        ],
+        "sequence_improvements": {
+          "rgbd_dataset_freiburg1_desk": -0.00024474078746413233,
+          "rgbd_dataset_freiburg2_xyz": 6.60916857413333e-05,
+          "rgbd_dataset_freiburg3_long_office_household": 0.002837691476072552
+        }
+      }
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "coverage": true,
+      "full_better_current_all_primary_means": true,
+      "full_better_random_all_primary_means": true,
+      "full_better_appearance_all_primary_means": true
+    },
+    "passed": true
+  },
+  "rows": [
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0015",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "accepted": true,
+      "bank_size": 15,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.86498559702436,
+        "abs_rel": 0.2249666865701636,
+        "rmse_m": 0.364454177866334,
+        "delta1": 0.5279653727490284,
+        "point_epe_m": 0.31871439680770497
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.771414416904804,
+        "abs_rel": 0.22369953606416176,
+        "rmse_m": 0.36227499049183365,
+        "delta1": 0.5324199134252583,
+        "point_epe_m": 0.316631638616735
+      },
+      "random": {
+        "silog": 25.74799223426597,
+        "abs_rel": 0.22353964838174317,
+        "rmse_m": 0.3616165507122433,
+        "delta1": 0.5298182925211729,
+        "point_epe_m": 0.31645191281325946
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.771414416904804,
+        "abs_rel": 0.22369953606416176,
+        "rmse_m": 0.36227499049183365,
+        "delta1": 0.5324199134252583,
+        "point_epe_m": 0.316631638616735
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.645267554507,
+        "abs_rel": 0.2223765376183812,
+        "rmse_m": 0.35967865103086727,
+        "delta1": 0.5301827657635031,
+        "point_epe_m": 0.31490876431301623
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0016",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "accepted": true,
+      "bank_size": 16,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.655568079997103,
+        "abs_rel": 0.20174895178523708,
+        "rmse_m": 0.22640769034053987,
+        "delta1": 0.6606023493468183,
+        "point_epe_m": 0.182769532067631
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.68890985797485,
+        "abs_rel": 0.20210619548876796,
+        "rmse_m": 0.22674334407852165,
+        "delta1": 0.6628147387273493,
+        "point_epe_m": 0.1830218734387073
+      },
+      "random": {
+        "silog": 25.612401727773292,
+        "abs_rel": 0.20128340774664033,
+        "rmse_m": 0.226028346831959,
+        "delta1": 0.6615702697008006,
+        "point_epe_m": 0.18242196708855524
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.646770657339122,
+        "abs_rel": 0.20167319613310464,
+        "rmse_m": 0.22631636030065277,
+        "delta1": 0.6606023493468183,
+        "point_epe_m": 0.18269392467096712
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 25.518053232708663,
+        "abs_rel": 0.20030080565156871,
+        "rmse_m": 0.2251075923859429,
+        "delta1": 0.6594961546565528,
+        "point_epe_m": 0.18171467860473337
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0017",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "accepted": true,
+      "bank_size": 17,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 16.53176591011149,
+        "abs_rel": 0.1294532686729551,
+        "rmse_m": 0.11744337824156764,
+        "delta1": 0.8740448037323038,
+        "point_epe_m": 0.093069562948312
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 16.49664974348725,
+        "abs_rel": 0.12918179865269108,
+        "rmse_m": 0.11714739836964044,
+        "delta1": 0.8751709298584299,
+        "point_epe_m": 0.09292184007180083
+      },
+      "random": {
+        "silog": 16.475942603124803,
+        "abs_rel": 0.12887209799161878,
+        "rmse_m": 0.11704981119714153,
+        "delta1": 0.8764271755999697,
+        "point_epe_m": 0.092675372394384
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 16.47568651738182,
+        "abs_rel": 0.12883206708370448,
+        "rmse_m": 0.117017731450045,
+        "delta1": 0.8751709298584299,
+        "point_epe_m": 0.09264097343402858
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 16.40725238098294,
+        "abs_rel": 0.1280053877438802,
+        "rmse_m": 0.11647587294156386,
+        "delta1": 0.8751709298584299,
+        "point_epe_m": 0.09202604633540629
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0018",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "accepted": true,
+      "bank_size": 18,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 29.27197120005659,
+        "abs_rel": 0.21884008120944679,
+        "rmse_m": 0.23324658762224912,
+        "delta1": 0.5829646017699115,
+        "point_epe_m": 0.18106509868187778
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 29.264911002229994,
+        "abs_rel": 0.21872852234385834,
+        "rmse_m": 0.23321130751729513,
+        "delta1": 0.5829646017699115,
+        "point_epe_m": 0.18099774172083416
+      },
+      "random": {
+        "silog": 29.20877440971406,
+        "abs_rel": 0.21805602332161791,
+        "rmse_m": 0.23267712069340168,
+        "delta1": 0.5858529990167158,
+        "point_epe_m": 0.18047240925483093
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 29.22457930425073,
+        "abs_rel": 0.2182491699229752,
+        "rmse_m": 0.23282836262177228,
+        "delta1": 0.5851769911504425,
+        "point_epe_m": 0.18062759397649006
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 29.110344172464472,
+        "abs_rel": 0.21691567085403146,
+        "rmse_m": 0.23173614707777707,
+        "delta1": 0.5873893805309733,
+        "point_epe_m": 0.17959052800420774
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0015",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 15,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 26.814004044523053,
+        "abs_rel": 0.21386855232347557,
+        "rmse_m": 0.546651310787874,
+        "delta1": 0.6779180909495542,
+        "point_epe_m": 0.3540080960787189
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 26.836829514730496,
+        "abs_rel": 0.21421651477721826,
+        "rmse_m": 0.5470483067588671,
+        "delta1": 0.6779180909495542,
+        "point_epe_m": 0.3544912568042513
+      },
+      "random": {
+        "silog": 26.78506896224067,
+        "abs_rel": 0.21347871200401236,
+        "rmse_m": 0.546242231566657,
+        "delta1": 0.6782638724156677,
+        "point_epe_m": 0.35354227098638125
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 26.75315366098388,
+        "abs_rel": 0.2129255605599776,
+        "rmse_m": 0.5458630719275528,
+        "delta1": 0.6779180909495542,
+        "point_epe_m": 0.35278804307028544
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 26.73690461445117,
+        "abs_rel": 0.212815899564287,
+        "rmse_m": 0.5454533511308105,
+        "delta1": 0.6779180909495542,
+        "point_epe_m": 0.3525853809015455
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0016",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 16,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 28.45447342994971,
+        "abs_rel": 0.2211050743454574,
+        "rmse_m": 0.5469271581723407,
+        "delta1": 0.6200070048514852,
+        "point_epe_m": 0.3857822267252884
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 28.489155612655786,
+        "abs_rel": 0.22159825989121248,
+        "rmse_m": 0.5472315227842399,
+        "delta1": 0.6190109889152302,
+        "point_epe_m": 0.38646056664904266
+      },
+      "random": {
+        "silog": 28.436530833514233,
+        "abs_rel": 0.22080629895997456,
+        "rmse_m": 0.5469882356666365,
+        "delta1": 0.6205657933196598,
+        "point_epe_m": 0.3854650348879658
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 28.418005147673707,
+        "abs_rel": 0.2206062283759144,
+        "rmse_m": 0.5466789268840757,
+        "delta1": 0.6200070048514852,
+        "point_epe_m": 0.3851949585926774
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 28.35917987602382,
+        "abs_rel": 0.21971211366883253,
+        "rmse_m": 0.5462212463330636,
+        "delta1": 0.6229832886924991,
+        "point_epe_m": 0.3838917156436452
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0017",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 17,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 30.200244792179916,
+        "abs_rel": 0.2592691333974015,
+        "rmse_m": 0.5604580205969378,
+        "delta1": 0.5840751199520191,
+        "point_epe_m": 0.4238514372849653
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 30.24396170573569,
+        "abs_rel": 0.25986547991382203,
+        "rmse_m": 0.5612946543930736,
+        "delta1": 0.5840751199520191,
+        "point_epe_m": 0.42478436084443594
+      },
+      "random": {
+        "silog": 30.173162221704402,
+        "abs_rel": 0.2589581582603577,
+        "rmse_m": 0.5596847797297828,
+        "delta1": 0.5843814925010387,
+        "point_epe_m": 0.4235356235960952
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 30.15588034349925,
+        "abs_rel": 0.2587207654529935,
+        "rmse_m": 0.5593881544362254,
+        "delta1": 0.5840751199520191,
+        "point_epe_m": 0.4231694063306261
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 30.106919618764433,
+        "abs_rel": 0.2580799234843528,
+        "rmse_m": 0.5581077770484111,
+        "delta1": 0.5851167866186858,
+        "point_epe_m": 0.42226146921953533
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0018",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 18,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 29.49534802778116,
+        "abs_rel": 0.21595140348773575,
+        "rmse_m": 0.7043107545206649,
+        "delta1": 0.700003780789807,
+        "point_epe_m": 0.4459466792573704
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 29.54118780280753,
+        "abs_rel": 0.2165104189552481,
+        "rmse_m": 0.7050451780104716,
+        "delta1": 0.6989215297075559,
+        "point_epe_m": 0.44673972744496726
+      },
+      "random": {
+        "silog": 29.49266388982909,
+        "abs_rel": 0.21588875491471513,
+        "rmse_m": 0.7043405664034447,
+        "delta1": 0.6995227803088064,
+        "point_epe_m": 0.4459103228176804
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 29.467431103221312,
+        "abs_rel": 0.21561748518081197,
+        "rmse_m": 0.7038604556899751,
+        "delta1": 0.700003780789807,
+        "point_epe_m": 0.4454574942643107
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 29.40587155862532,
+        "abs_rel": 0.21493045615975004,
+        "rmse_m": 0.7027688558374665,
+        "delta1": 0.700003780789807,
+        "point_epe_m": 0.4444582911563389
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0019",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 19,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 26.274937971955325,
+        "abs_rel": 0.18195341943968277,
+        "rmse_m": 0.6809291425386115,
+        "delta1": 0.7039892714356981,
+        "point_epe_m": 0.4270537499733255
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 26.2970872408194,
+        "abs_rel": 0.18222302323163905,
+        "rmse_m": 0.6811737807261136,
+        "delta1": 0.7028879498497951,
+        "point_epe_m": 0.42746216955524274
+      },
+      "random": {
+        "silog": 26.26599183220574,
+        "abs_rel": 0.1818118771892914,
+        "rmse_m": 0.6809158349546302,
+        "delta1": 0.7038733428477084,
+        "point_epe_m": 0.4268801267638615
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 26.23283385448406,
+        "abs_rel": 0.18137628903206435,
+        "rmse_m": 0.6806656078017956,
+        "delta1": 0.7050905930216013,
+        "point_epe_m": 0.4262854830394342
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 26.210845049884952,
+        "abs_rel": 0.18118986748853774,
+        "rmse_m": 0.6801821557350507,
+        "delta1": 0.7050905930216013,
+        "point_epe_m": 0.42587466203641244
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0020",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 20,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 27.766022683149213,
+        "abs_rel": 0.19388034931730738,
+        "rmse_m": 0.7241728231038803,
+        "delta1": 0.6628428882013057,
+        "point_epe_m": 0.46502129974280026
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 27.779138245701812,
+        "abs_rel": 0.19403892122997712,
+        "rmse_m": 0.7243090952910842,
+        "delta1": 0.6628428882013057,
+        "point_epe_m": 0.46525566436190374
+      },
+      "random": {
+        "silog": 27.759686906576697,
+        "abs_rel": 0.19379727384139828,
+        "rmse_m": 0.7241513408489094,
+        "delta1": 0.6627903671929023,
+        "point_epe_m": 0.4649266470953749
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 27.779138245701812,
+        "abs_rel": 0.19403892122997712,
+        "rmse_m": 0.7243090952910842,
+        "delta1": 0.6628428882013057,
+        "point_epe_m": 0.46525566436190374
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 27.71987615549878,
+        "abs_rel": 0.19329410014283227,
+        "rmse_m": 0.7238186789074984,
+        "delta1": 0.6628428882013057,
+        "point_epe_m": 0.4642244645429319
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0021",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 21,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 26.660602395928453,
+        "abs_rel": 0.1931271856164075,
+        "rmse_m": 0.6500425476825281,
+        "delta1": 0.664939363282568,
+        "point_epe_m": 0.43078931671072507
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 26.661119824306812,
+        "abs_rel": 0.1931716979656373,
+        "rmse_m": 0.6499964664934633,
+        "delta1": 0.664939363282568,
+        "point_epe_m": 0.4308539597050073
+      },
+      "random": {
+        "silog": 26.64989506145356,
+        "abs_rel": 0.19303283012799993,
+        "rmse_m": 0.6498436365999252,
+        "delta1": 0.6649393632825678,
+        "point_epe_m": 0.4306299129281497
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 26.66918104542006,
+        "abs_rel": 0.19321267259524333,
+        "rmse_m": 0.6501647997373271,
+        "delta1": 0.664939363282568,
+        "point_epe_m": 0.43092816588991345
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 26.61217473282334,
+        "abs_rel": 0.1926399370627323,
+        "rmse_m": 0.6493287002827244,
+        "delta1": 0.664939363282568,
+        "point_epe_m": 0.4300474858903349
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0022",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 22,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 30.503146507974634,
+        "abs_rel": 0.22411763531489723,
+        "rmse_m": 0.7458724974484852,
+        "delta1": 0.608705434952013,
+        "point_epe_m": 0.5202445994014493
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 30.50401146055531,
+        "abs_rel": 0.22413903560912496,
+        "rmse_m": 0.7458865669626891,
+        "delta1": 0.608705434952013,
+        "point_epe_m": 0.5202848521049379
+      },
+      "random": {
+        "silog": 30.494427037069503,
+        "abs_rel": 0.22401804748193707,
+        "rmse_m": 0.7457559616141822,
+        "delta1": 0.6087054349520129,
+        "point_epe_m": 0.5200824554267158
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 30.526319879568792,
+        "abs_rel": 0.2243897386837712,
+        "rmse_m": 0.7461678054034735,
+        "delta1": 0.608705434952013,
+        "point_epe_m": 0.5206659993699976
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 30.447367216327844,
+        "abs_rel": 0.22345900025568594,
+        "rmse_m": 0.7452045531979976,
+        "delta1": 0.608705434952013,
+        "point_epe_m": 0.5192303510310503
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0023",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 23,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 30.30125468040524,
+        "abs_rel": 0.22547151066043739,
+        "rmse_m": 0.6903391249954338,
+        "delta1": 0.5873662067625339,
+        "point_epe_m": 0.5017283523703153
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 30.300065530451988,
+        "abs_rel": 0.2254865624731513,
+        "rmse_m": 0.6902923262160068,
+        "delta1": 0.5873662067625339,
+        "point_epe_m": 0.5017599945860487
+      },
+      "random": {
+        "silog": 30.290104347993772,
+        "abs_rel": 0.22536604879687142,
+        "rmse_m": 0.6901757609501736,
+        "delta1": 0.5873662067625338,
+        "point_epe_m": 0.5015783845947278
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 30.296194209474372,
+        "abs_rel": 0.22540672959525032,
+        "rmse_m": 0.6903294740878645,
+        "delta1": 0.5873662067625339,
+        "point_epe_m": 0.5016296712419913
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 30.251974478351187,
+        "abs_rel": 0.22496631004232476,
+        "rmse_m": 0.689732596397882,
+        "delta1": 0.5873662067625339,
+        "point_epe_m": 0.5010187617796231
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0024",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 24,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 31.373620182322682,
+        "abs_rel": 0.23466509777186867,
+        "rmse_m": 0.7296412401549311,
+        "delta1": 0.5639364862573486,
+        "point_epe_m": 0.5388809438133875
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 31.37346115323272,
+        "abs_rel": 0.23468345374780286,
+        "rmse_m": 0.729617556458705,
+        "delta1": 0.5639364862573486,
+        "point_epe_m": 0.538901362850482
+      },
+      "random": {
+        "silog": 31.366792816743963,
+        "abs_rel": 0.23459912631386748,
+        "rmse_m": 0.7295472812458449,
+        "delta1": 0.5638939692505459,
+        "point_epe_m": 0.5387728528031405
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 31.36622328507216,
+        "abs_rel": 0.23458897541597734,
+        "rmse_m": 0.7295486448468675,
+        "delta1": 0.5639364862573486,
+        "point_epe_m": 0.5387537248069378
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 31.32515678662679,
+        "abs_rel": 0.23415869584695448,
+        "rmse_m": 0.7290122820407603,
+        "delta1": 0.5639364862573486,
+        "point_epe_m": 0.5380810164576473
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0025",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 25,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 29.499372760459124,
+        "abs_rel": 0.21240341241232244,
+        "rmse_m": 0.7032217002753022,
+        "delta1": 0.6136806057695421,
+        "point_epe_m": 0.48737398437395174
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 29.497398136595198,
+        "abs_rel": 0.21241595601777527,
+        "rmse_m": 0.7031651849196855,
+        "delta1": 0.6136806057695421,
+        "point_epe_m": 0.48738718275208426
+      },
+      "random": {
+        "silog": 29.49293869398269,
+        "abs_rel": 0.21235536495681478,
+        "rmse_m": 0.7031108543534462,
+        "delta1": 0.6136806057695421,
+        "point_epe_m": 0.4872883902603284
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 29.512147207395007,
+        "abs_rel": 0.2125648947002199,
+        "rmse_m": 0.7033448507430622,
+        "delta1": 0.6136806057695421,
+        "point_epe_m": 0.48761130786799817
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 29.452284117142298,
+        "abs_rel": 0.21192568479836074,
+        "rmse_m": 0.7026273478859506,
+        "delta1": 0.6136806057695421,
+        "point_epe_m": 0.4866393360702288
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0026",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 26,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 28.960192273619,
+        "abs_rel": 0.21595847447425492,
+        "rmse_m": 0.6758274093553118,
+        "delta1": 0.6186272238979306,
+        "point_epe_m": 0.47344881464731814
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 28.95982922587484,
+        "abs_rel": 0.21598730931039703,
+        "rmse_m": 0.6758016170095584,
+        "delta1": 0.6186272238979306,
+        "point_epe_m": 0.47349181361650244
+      },
+      "random": {
+        "silog": 28.951962862991476,
+        "abs_rel": 0.21589418981679437,
+        "rmse_m": 0.6756882271619229,
+        "delta1": 0.6186272238979307,
+        "point_epe_m": 0.4733383503265983
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 28.974895497764642,
+        "abs_rel": 0.21613239704467804,
+        "rmse_m": 0.6760130290583297,
+        "delta1": 0.6186272238979306,
+        "point_epe_m": 0.47371553144158746
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 28.906224884544336,
+        "abs_rel": 0.2154362057559333,
+        "rmse_m": 0.6750439268373907,
+        "delta1": 0.6186272238979306,
+        "point_epe_m": 0.47262417387435496
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0027",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 27,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 30.60036146444731,
+        "abs_rel": 0.21845152398773723,
+        "rmse_m": 0.7188715008666726,
+        "delta1": 0.6231033325663842,
+        "point_epe_m": 0.48685429103970457
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 30.599415810714575,
+        "abs_rel": 0.21847137875472872,
+        "rmse_m": 0.7188377801328321,
+        "delta1": 0.6220911868173963,
+        "point_epe_m": 0.48690230218866215
+      },
+      "random": {
+        "silog": 30.592560714745908,
+        "abs_rel": 0.2183758222922773,
+        "rmse_m": 0.7187941368951838,
+        "delta1": 0.6228409244092392,
+        "point_epe_m": 0.48678596050261286
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 30.597037988862752,
+        "abs_rel": 0.21840364188978467,
+        "rmse_m": 0.7188794315633176,
+        "delta1": 0.6231033325663842,
+        "point_epe_m": 0.48677655769336003
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 30.545699354238256,
+        "abs_rel": 0.21784499967857562,
+        "rmse_m": 0.7182918539201796,
+        "delta1": 0.6231033325663842,
+        "point_epe_m": 0.4860921389117391
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0028",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 28,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 28.433630589303284,
+        "abs_rel": 0.1912517670627986,
+        "rmse_m": 0.6984011373019495,
+        "delta1": 0.6494388574683222,
+        "point_epe_m": 0.45078244238928994
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 28.437095608996593,
+        "abs_rel": 0.19133313510811495,
+        "rmse_m": 0.6983934010434948,
+        "delta1": 0.6494388574683222,
+        "point_epe_m": 0.4508917158360974
+      },
+      "random": {
+        "silog": 28.430215506795008,
+        "abs_rel": 0.19123152725415205,
+        "rmse_m": 0.6983378450809374,
+        "delta1": 0.6500291762404593,
+        "point_epe_m": 0.4507410914554674
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 28.454863898766952,
+        "abs_rel": 0.19148981359636116,
+        "rmse_m": 0.6985615874527257,
+        "delta1": 0.6494388574683222,
+        "point_epe_m": 0.45108787637908276
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 28.388716997971382,
+        "abs_rel": 0.19080709004122143,
+        "rmse_m": 0.6979006763530641,
+        "delta1": 0.6504719153195619,
+        "point_epe_m": 0.4501247287201363
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0029",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 29,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 30.636015147883434,
+        "abs_rel": 0.22945082331443162,
+        "rmse_m": 0.6875202556448439,
+        "delta1": 0.6301987444355335,
+        "point_epe_m": 0.47130888019141964
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 30.64104135778799,
+        "abs_rel": 0.22951847701087452,
+        "rmse_m": 0.6876187755166085,
+        "delta1": 0.6301987444355335,
+        "point_epe_m": 0.4714283784824196
+      },
+      "random": {
+        "silog": 30.62857021404728,
+        "abs_rel": 0.2293642383307588,
+        "rmse_m": 0.6874486299207108,
+        "delta1": 0.6297713020320448,
+        "point_epe_m": 0.47121205673684813
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 30.59934322629834,
+        "abs_rel": 0.22899805475173482,
+        "rmse_m": 0.6871555159764475,
+        "delta1": 0.6291614000371932,
+        "point_epe_m": 0.4707912813191352
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 30.575180310666255,
+        "abs_rel": 0.22880156291440798,
+        "rmse_m": 0.6865430072068226,
+        "delta1": 0.6302118202052605,
+        "point_epe_m": 0.4703243472775701
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0030",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 30,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 27.619965723259362,
+        "abs_rel": 0.21728068499681186,
+        "rmse_m": 0.6122330705173898,
+        "delta1": 0.6979556949412616,
+        "point_epe_m": 0.4086892455419967
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 27.614266189981343,
+        "abs_rel": 0.21732817693349094,
+        "rmse_m": 0.6119486906838214,
+        "delta1": 0.6979556949412616,
+        "point_epe_m": 0.4088486413070133
+      },
+      "random": {
+        "silog": 27.603396205441324,
+        "abs_rel": 0.21717199223560404,
+        "rmse_m": 0.6117397301737172,
+        "delta1": 0.6984387850617111,
+        "point_epe_m": 0.40864693051384976
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 27.641105453816664,
+        "abs_rel": 0.21742281711208394,
+        "rmse_m": 0.6129514968160815,
+        "delta1": 0.7000347778971039,
+        "point_epe_m": 0.4086536018076759
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 27.531760516300707,
+        "abs_rel": 0.21651374709509405,
+        "rmse_m": 0.6098827454436961,
+        "delta1": 0.6979383326244342,
+        "point_epe_m": 0.4081292886423964
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0031",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 31,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 28.474774694816347,
+        "abs_rel": 0.22244435920722927,
+        "rmse_m": 0.621329977576575,
+        "delta1": 0.6573530736588964,
+        "point_epe_m": 0.42124975989925684
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 28.480770720650767,
+        "abs_rel": 0.22250821470213764,
+        "rmse_m": 0.6215620484008196,
+        "delta1": 0.6563200158076568,
+        "point_epe_m": 0.42145490784429784
+      },
+      "random": {
+        "silog": 28.464564352325766,
+        "abs_rel": 0.22229501994807188,
+        "rmse_m": 0.6213410839217393,
+        "delta1": 0.6566214432049658,
+        "point_epe_m": 0.4211448487448559
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 28.421823884459865,
+        "abs_rel": 0.22167586146758028,
+        "rmse_m": 0.6209100038060119,
+        "delta1": 0.6573530736588964,
+        "point_epe_m": 0.42030274414635643
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 28.407919125195573,
+        "abs_rel": 0.22151753625480397,
+        "rmse_m": 0.6205574108533766,
+        "delta1": 0.6573530736588964,
+        "point_epe_m": 0.4198890113234285
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0032",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 32,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 30.32745743764388,
+        "abs_rel": 0.2435694884556317,
+        "rmse_m": 0.6980481792583662,
+        "delta1": 0.6199293712837765,
+        "point_epe_m": 0.4767284237354249
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 30.344345662992318,
+        "abs_rel": 0.24383139944629742,
+        "rmse_m": 0.6982514630690662,
+        "delta1": 0.6199293712837765,
+        "point_epe_m": 0.47717733222058134
+      },
+      "random": {
+        "silog": 30.32473150823669,
+        "abs_rel": 0.24354336374550412,
+        "rmse_m": 0.6979140366258607,
+        "delta1": 0.6200623597099824,
+        "point_epe_m": 0.4767164366453385
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 30.241006834466134,
+        "abs_rel": 0.24243104371292898,
+        "rmse_m": 0.6967893899571436,
+        "delta1": 0.6220125987692111,
+        "point_epe_m": 0.47500045460832896
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 30.22217169780722,
+        "abs_rel": 0.2423187643300523,
+        "rmse_m": 0.6958642593638572,
+        "delta1": 0.618904781119842,
+        "point_epe_m": 0.4749652523790657
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0033",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 33,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 29.38704004180999,
+        "abs_rel": 0.2311589451365298,
+        "rmse_m": 0.7670337527243589,
+        "delta1": 0.6706309179215758,
+        "point_epe_m": 0.5115388372971772
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 29.389997198214456,
+        "abs_rel": 0.23128936058230207,
+        "rmse_m": 0.7667536513706275,
+        "delta1": 0.6706309179215758,
+        "point_epe_m": 0.5118440129606739
+      },
+      "random": {
+        "silog": 29.375519684947868,
+        "abs_rel": 0.23105112912603715,
+        "rmse_m": 0.7665964812326319,
+        "delta1": 0.6707626801903616,
+        "point_epe_m": 0.5114747514145641
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 29.397858772263543,
+        "abs_rel": 0.2314269046892046,
+        "rmse_m": 0.766793384592646,
+        "delta1": 0.6706309179215758,
+        "point_epe_m": 0.5121298150447182
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 29.240044216367735,
+        "abs_rel": 0.22965007872199544,
+        "rmse_m": 0.7623190306015082,
+        "delta1": 0.6706309179215758,
+        "point_epe_m": 0.5095366513923973
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0034",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 34,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 26.347529379332276,
+        "abs_rel": 0.20847181717809124,
+        "rmse_m": 0.6851605023449028,
+        "delta1": 0.6220109933925724,
+        "point_epe_m": 0.4810868886338213
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 26.386434417407273,
+        "abs_rel": 0.20892569207172418,
+        "rmse_m": 0.6860536630926606,
+        "delta1": 0.6196243449532923,
+        "point_epe_m": 0.4819518428018513
+      },
+      "random": {
+        "silog": 26.365050982906407,
+        "abs_rel": 0.2086214183336233,
+        "rmse_m": 0.6858164184517818,
+        "delta1": 0.6211673066355727,
+        "point_epe_m": 0.48154645586120887
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 26.386434417407273,
+        "abs_rel": 0.20892569207172418,
+        "rmse_m": 0.6860536630926606,
+        "delta1": 0.6196243449532923,
+        "point_epe_m": 0.4819518428018513
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 26.28871855878399,
+        "abs_rel": 0.2077543044574124,
+        "rmse_m": 0.6842905927917906,
+        "delta1": 0.6220109933925724,
+        "point_epe_m": 0.4801394300619025
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0035",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 35,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 28.626734839460223,
+        "abs_rel": 0.22630322664505112,
+        "rmse_m": 0.7880801589572987,
+        "delta1": 0.6104819099835826,
+        "point_epe_m": 0.5565326530708952
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 28.662025633683378,
+        "abs_rel": 0.2267299054880286,
+        "rmse_m": 0.7888262944390366,
+        "delta1": 0.60929707586036,
+        "point_epe_m": 0.5573436872331604
+      },
+      "random": {
+        "silog": 28.641223940863238,
+        "abs_rel": 0.22639392821607363,
+        "rmse_m": 0.7885924737611575,
+        "delta1": 0.6097013422444328,
+        "point_epe_m": 0.5568557515881891
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 28.611227733934815,
+        "abs_rel": 0.22594386088291613,
+        "rmse_m": 0.7880195663274978,
+        "delta1": 0.6104819099835826,
+        "point_epe_m": 0.5559987910563728
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 28.56099312841492,
+        "abs_rel": 0.225284597381533,
+        "rmse_m": 0.7874318942485042,
+        "delta1": 0.6104819099835826,
+        "point_epe_m": 0.5550285286402756
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0036",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 36,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 28.456506302813267,
+        "abs_rel": 0.2525021911588112,
+        "rmse_m": 0.7294742041127964,
+        "delta1": 0.591270701107168,
+        "point_epe_m": 0.5576369861457079
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 28.50112731532959,
+        "abs_rel": 0.25307961169835413,
+        "rmse_m": 0.7304280469506892,
+        "delta1": 0.591270701107168,
+        "point_epe_m": 0.5588562330022213
+      },
+      "random": {
+        "silog": 28.46525449548356,
+        "abs_rel": 0.25262757275637115,
+        "rmse_m": 0.7296945588825785,
+        "delta1": 0.5905423550261966,
+        "point_epe_m": 0.5581027364631979
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 28.41615844399645,
+        "abs_rel": 0.25196280883926064,
+        "rmse_m": 0.7286179762085732,
+        "delta1": 0.5937769825142031,
+        "point_epe_m": 0.5568227274956195
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 28.378385794080298,
+        "abs_rel": 0.25152644483679054,
+        "rmse_m": 0.7276570457365217,
+        "delta1": 0.5950085096077992,
+        "point_epe_m": 0.5562119937498049
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0037",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 37,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 28.16031522191728,
+        "abs_rel": 0.22507672810079168,
+        "rmse_m": 0.7796076706245555,
+        "delta1": 0.5727429557216792,
+        "point_epe_m": 0.5792299535977933
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 28.211258345519816,
+        "abs_rel": 0.22567191698997235,
+        "rmse_m": 0.7806309174392722,
+        "delta1": 0.5727429557216792,
+        "point_epe_m": 0.5803584039641506
+      },
+      "random": {
+        "silog": 28.17738447025687,
+        "abs_rel": 0.22527000520443935,
+        "rmse_m": 0.7800296608085964,
+        "delta1": 0.5727788959171939,
+        "point_epe_m": 0.5796769560209316
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 28.149038302503886,
+        "abs_rel": 0.2249038590236404,
+        "rmse_m": 0.7795436820964275,
+        "delta1": 0.5727429557216792,
+        "point_epe_m": 0.5790324320603638
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 28.119088256674534,
+        "abs_rel": 0.22464848234409832,
+        "rmse_m": 0.7787046761951208,
+        "delta1": 0.5727429557216792,
+        "point_epe_m": 0.5784333245986966
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0038",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 38,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 28.86361316959838,
+        "abs_rel": 0.23920737824706867,
+        "rmse_m": 0.873413965477606,
+        "delta1": 0.5373756664306536,
+        "point_epe_m": 0.6452547391976734
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 28.921200967425158,
+        "abs_rel": 0.2399363743545092,
+        "rmse_m": 0.874292248715093,
+        "delta1": 0.5359790183859608,
+        "point_epe_m": 0.6464649233604952
+      },
+      "random": {
+        "silog": 28.88465385071003,
+        "abs_rel": 0.23946332364147463,
+        "rmse_m": 0.8737627981689983,
+        "delta1": 0.5359382754701878,
+        "point_epe_m": 0.6457226948788738
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 28.847871105929755,
+        "abs_rel": 0.2389911857191526,
+        "rmse_m": 0.8731814613104489,
+        "delta1": 0.5387270177820049,
+        "point_epe_m": 0.6449756395051252
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 28.825018954816773,
+        "abs_rel": 0.23877113068460012,
+        "rmse_m": 0.8726764377987483,
+        "delta1": 0.5373756664306536,
+        "point_epe_m": 0.6446524064632393
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0039",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 39,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.76129978432104,
+        "abs_rel": 0.22533062818529545,
+        "rmse_m": 0.8440789894293442,
+        "delta1": 0.5481749947072947,
+        "point_epe_m": 0.6267418949431006
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.80657248892484,
+        "abs_rel": 0.22580430728761905,
+        "rmse_m": 0.845160385218669,
+        "delta1": 0.5481749947072947,
+        "point_epe_m": 0.6277982232989778
+      },
+      "random": {
+        "silog": 27.778852073898406,
+        "abs_rel": 0.22551866325216607,
+        "rmse_m": 0.8445371121770998,
+        "delta1": 0.5482842604415605,
+        "point_epe_m": 0.6272194980817396
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.76368788563142,
+        "abs_rel": 0.22536182985028133,
+        "rmse_m": 0.8442064058103582,
+        "delta1": 0.5481749947072947,
+        "point_epe_m": 0.6268774690329866
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.738982926136995,
+        "abs_rel": 0.22515234425568617,
+        "rmse_m": 0.8436848674306034,
+        "delta1": 0.5481749947072947,
+        "point_epe_m": 0.6265911023321681
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0040",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 40,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 26.960619976003784,
+        "abs_rel": 0.22309215368811344,
+        "rmse_m": 0.8017860638017009,
+        "delta1": 0.5564625262378071,
+        "point_epe_m": 0.6103378978770667
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 27.00079907230571,
+        "abs_rel": 0.2235461915442709,
+        "rmse_m": 0.8025852439334323,
+        "delta1": 0.5550580318557847,
+        "point_epe_m": 0.6111924189674001
+      },
+      "random": {
+        "silog": 26.9734973366924,
+        "abs_rel": 0.22323281510955856,
+        "rmse_m": 0.8020818333139681,
+        "delta1": 0.5561115724163477,
+        "point_epe_m": 0.6106481959357305
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 26.951295908031057,
+        "abs_rel": 0.2229958176115325,
+        "rmse_m": 0.8017060595476361,
+        "delta1": 0.5564625262378071,
+        "point_epe_m": 0.6103356051157536
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 26.932018983881054,
+        "abs_rel": 0.2227733731200364,
+        "rmse_m": 0.8015132931676514,
+        "delta1": 0.5578670206198296,
+        "point_epe_m": 0.61008793651084
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0041",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 41,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.695689125542792,
+        "abs_rel": 0.22917529802807401,
+        "rmse_m": 0.841605711761648,
+        "delta1": 0.5523096989715488,
+        "point_epe_m": 0.6323732730202696
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.744906936296033,
+        "abs_rel": 0.22972104477881933,
+        "rmse_m": 0.8426665794768222,
+        "delta1": 0.5523096989715488,
+        "point_epe_m": 0.6334789010472954
+      },
+      "random": {
+        "silog": 27.71393237209464,
+        "abs_rel": 0.22936884704265237,
+        "rmse_m": 0.8420700107684744,
+        "delta1": 0.5524136346699967,
+        "point_epe_m": 0.6328208345883579
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.691736690138,
+        "abs_rel": 0.22913554214630874,
+        "rmse_m": 0.8416851966884675,
+        "delta1": 0.5523096989715488,
+        "point_epe_m": 0.6324611918133682
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 27.671514002844166,
+        "abs_rel": 0.22889959373982718,
+        "rmse_m": 0.8414805286619802,
+        "delta1": 0.5537301535170032,
+        "point_epe_m": 0.6321524283701314
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0042",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 42,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 28.323868937795215,
+        "abs_rel": 0.22729534077737423,
+        "rmse_m": 0.9635978626422285,
+        "delta1": 0.5402876808538859,
+        "point_epe_m": 0.6660246455031531
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 28.36031909795841,
+        "abs_rel": 0.22770783800631836,
+        "rmse_m": 0.9643380666718588,
+        "delta1": 0.5388341924817929,
+        "point_epe_m": 0.6668153159913501
+      },
+      "random": {
+        "silog": 28.329170192029395,
+        "abs_rel": 0.22736596314986326,
+        "rmse_m": 0.9637577927104791,
+        "delta1": 0.5393508235528259,
+        "point_epe_m": 0.6661973073671875
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 28.293665123449703,
+        "abs_rel": 0.22697092537724278,
+        "rmse_m": 0.9631744473963821,
+        "delta1": 0.5388341924817929,
+        "point_epe_m": 0.665569713438554
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 28.289042227614136,
+        "abs_rel": 0.22694042642949316,
+        "rmse_m": 0.9631802915061757,
+        "delta1": 0.5388341924817929,
+        "point_epe_m": 0.6655781178273928
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0043",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 43,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 30.960579516491528,
+        "abs_rel": 0.2491050389336031,
+        "rmse_m": 0.9159567401478825,
+        "delta1": 0.5549506044250859,
+        "point_epe_m": 0.6584062330626315
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 31.000373025313586,
+        "abs_rel": 0.2497392722594956,
+        "rmse_m": 0.916387821712025,
+        "delta1": 0.5549506044250859,
+        "point_epe_m": 0.6596177785673247
+      },
+      "random": {
+        "silog": 30.96846892128161,
+        "abs_rel": 0.24928971589541768,
+        "rmse_m": 0.9158641196068378,
+        "delta1": 0.5551454855476012,
+        "point_epe_m": 0.6588449086130246
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 31.021377389313304,
+        "abs_rel": 0.2499420958345022,
+        "rmse_m": 0.9171884110381938,
+        "delta1": 0.5549506044250859,
+        "point_epe_m": 0.6598946899428484
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 30.888322056531862,
+        "abs_rel": 0.2483181663678932,
+        "rmse_m": 0.9139943250152347,
+        "delta1": 0.5549506044250859,
+        "point_epe_m": 0.6572587296871629
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0044",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 44,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 28.931289380739397,
+        "abs_rel": 0.2392108337356462,
+        "rmse_m": 0.8177159072065467,
+        "delta1": 0.5674559858076205,
+        "point_epe_m": 0.6003882579219018
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 28.972114340401127,
+        "abs_rel": 0.2398010381376563,
+        "rmse_m": 0.8183860327805594,
+        "delta1": 0.5674559858076205,
+        "point_epe_m": 0.6015116058845752
+      },
+      "random": {
+        "silog": 28.940051672682888,
+        "abs_rel": 0.23933018790090213,
+        "rmse_m": 0.8177869072837549,
+        "delta1": 0.5673334694590388,
+        "point_epe_m": 0.6007158230746422
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 28.920930386195494,
+        "abs_rel": 0.23902392326986893,
+        "rmse_m": 0.8175312885894583,
+        "delta1": 0.5674559858076205,
+        "point_epe_m": 0.6002007714193203
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 28.878833429123677,
+        "abs_rel": 0.23850484328129473,
+        "rmse_m": 0.8164779878544824,
+        "delta1": 0.5661118997861151,
+        "point_epe_m": 0.5994820350791603
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0045",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 45,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 29.597742317010667,
+        "abs_rel": 0.23803020036394312,
+        "rmse_m": 0.8696363524440844,
+        "delta1": 0.5958173877954807,
+        "point_epe_m": 0.5768513979115223
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 29.6214754267692,
+        "abs_rel": 0.23841817735473703,
+        "rmse_m": 0.8699852180625071,
+        "delta1": 0.5932653044621472,
+        "point_epe_m": 0.5776782836530974
+      },
+      "random": {
+        "silog": 29.596392440636173,
+        "abs_rel": 0.2380195940409757,
+        "rmse_m": 0.8696831715572808,
+        "delta1": 0.5948969683229778,
+        "point_epe_m": 0.5771203820848775
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 29.60401614308695,
+        "abs_rel": 0.2381400910556366,
+        "rmse_m": 0.8699078110102373,
+        "delta1": 0.5945153044621472,
+        "point_epe_m": 0.5774435775271913
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 29.534939742840553,
+        "abs_rel": 0.23714828757113,
+        "rmse_m": 0.868538093547386,
+        "delta1": 0.5945153044621472,
+        "point_epe_m": 0.5760532760751691
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0046",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 46,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 29.922393793339012,
+        "abs_rel": 0.24086676294803877,
+        "rmse_m": 0.7885368078989743,
+        "delta1": 0.6016654453658274,
+        "point_epe_m": 0.5539572113515328
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 29.955488559908503,
+        "abs_rel": 0.2413592953850129,
+        "rmse_m": 0.789071122482265,
+        "delta1": 0.6016654453658274,
+        "point_epe_m": 0.5549513290403456
+      },
+      "random": {
+        "silog": 29.927817423909552,
+        "abs_rel": 0.24093431286629013,
+        "rmse_m": 0.7887157879167982,
+        "delta1": 0.6018237400049158,
+        "point_epe_m": 0.5542955949700104
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 29.913271122055363,
+        "abs_rel": 0.2407152190893862,
+        "rmse_m": 0.7886221354638084,
+        "delta1": 0.6016654453658274,
+        "point_epe_m": 0.5537994422493424
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 29.867092968573427,
+        "abs_rel": 0.24007673879724617,
+        "rmse_m": 0.787491898149155,
+        "delta1": 0.6028790375988371,
+        "point_epe_m": 0.5532344653761453
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0047",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 47,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 29.416363045171767,
+        "abs_rel": 0.2339546927618305,
+        "rmse_m": 0.7806266063721419,
+        "delta1": 0.6186951873315563,
+        "point_epe_m": 0.5345332470777591
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 29.43878274323866,
+        "abs_rel": 0.23429546995212594,
+        "rmse_m": 0.7809848630233808,
+        "delta1": 0.6175047111410801,
+        "point_epe_m": 0.5351552115843063
+      },
+      "random": {
+        "silog": 29.41699335007403,
+        "abs_rel": 0.23393078628759875,
+        "rmse_m": 0.780750093570877,
+        "delta1": 0.6180112967540486,
+        "point_epe_m": 0.5346210054479316
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 29.43308071894991,
+        "abs_rel": 0.23414951595150815,
+        "rmse_m": 0.7809988258118736,
+        "delta1": 0.6175047111410801,
+        "point_epe_m": 0.5349367867829447
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 29.355678954754044,
+        "abs_rel": 0.233096754730976,
+        "rmse_m": 0.7796674192809995,
+        "delta1": 0.6186951873315563,
+        "point_epe_m": 0.533189469488436
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0048",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 48,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 29.784686958892074,
+        "abs_rel": 0.219626828949069,
+        "rmse_m": 0.7814388436208836,
+        "delta1": 0.6806496144491021,
+        "point_epe_m": 0.5030033472476596
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 29.794152037226404,
+        "abs_rel": 0.21980163429962438,
+        "rmse_m": 0.7815595452942314,
+        "delta1": 0.6806496144491021,
+        "point_epe_m": 0.5033578824067504
+      },
+      "random": {
+        "silog": 29.782362655912106,
+        "abs_rel": 0.2195908438042017,
+        "rmse_m": 0.7815060700770272,
+        "delta1": 0.6801656542721108,
+        "point_epe_m": 0.5030476506232364
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 29.782260250165493,
+        "abs_rel": 0.21962936439400438,
+        "rmse_m": 0.7814890877274372,
+        "delta1": 0.6806496144491021,
+        "point_epe_m": 0.5030893708461055
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 29.72413750082125,
+        "abs_rel": 0.21888199623307733,
+        "rmse_m": 0.7803738294789677,
+        "delta1": 0.6817558091393676,
+        "point_epe_m": 0.5017569266691595
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0049",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 49,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 29.17381940812994,
+        "abs_rel": 0.2130255443533466,
+        "rmse_m": 0.6817083809297866,
+        "delta1": 0.6677951526159049,
+        "point_epe_m": 0.457240843372555
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 29.183881630159878,
+        "abs_rel": 0.21315164396327937,
+        "rmse_m": 0.6819040571472149,
+        "delta1": 0.6667221912425143,
+        "point_epe_m": 0.45744586452371166
+      },
+      "random": {
+        "silog": 29.168697950838943,
+        "abs_rel": 0.21293483736974214,
+        "rmse_m": 0.6817304201709112,
+        "delta1": 0.6674416634235324,
+        "point_epe_m": 0.4571268086637696
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 29.19458045421732,
+        "abs_rel": 0.2132551437004715,
+        "rmse_m": 0.6820389472411856,
+        "delta1": 0.6667221912425143,
+        "point_epe_m": 0.457605367872149
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 29.107325695445923,
+        "abs_rel": 0.21215697521221827,
+        "rmse_m": 0.6810054961968677,
+        "delta1": 0.6699139488523482,
+        "point_epe_m": 0.45594069411226884
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0050",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 50,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 32.07275748749758,
+        "abs_rel": 0.2453243634958581,
+        "rmse_m": 0.6978971317413369,
+        "delta1": 0.5954104235215119,
+        "point_epe_m": 0.4975169094404669
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 32.08051720414389,
+        "abs_rel": 0.245457489001585,
+        "rmse_m": 0.6979880028960431,
+        "delta1": 0.5943555712008367,
+        "point_epe_m": 0.4977535513701137
+      },
+      "random": {
+        "silog": 32.068402813055734,
+        "abs_rel": 0.24527787072297846,
+        "rmse_m": 0.6978146118233688,
+        "delta1": 0.5952205501037903,
+        "point_epe_m": 0.49748026494154074
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 32.100535907998804,
+        "abs_rel": 0.24571107680575643,
+        "rmse_m": 0.6983106561068048,
+        "delta1": 0.5943555712008367,
+        "point_epe_m": 0.4980887551127594
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 32.01955279983283,
+        "abs_rel": 0.24460141187203865,
+        "rmse_m": 0.697093545237923,
+        "delta1": 0.5964652758421869,
+        "point_epe_m": 0.4964974976334935
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0051",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 51,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 32.24433609152626,
+        "abs_rel": 0.23387639469875648,
+        "rmse_m": 0.6033650722569277,
+        "delta1": 0.598924304472833,
+        "point_epe_m": 0.4549584108787829
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 32.24064040940779,
+        "abs_rel": 0.23387018933421017,
+        "rmse_m": 0.603275690223103,
+        "delta1": 0.598924304472833,
+        "point_epe_m": 0.4549613275940415
+      },
+      "random": {
+        "silog": 32.22932600172414,
+        "abs_rel": 0.23371263971641457,
+        "rmse_m": 0.6031451905257142,
+        "delta1": 0.5989243044728328,
+        "point_epe_m": 0.45472168293739346
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 32.251057740027804,
+        "abs_rel": 0.23398594351386148,
+        "rmse_m": 0.6034107907236002,
+        "delta1": 0.598924304472833,
+        "point_epe_m": 0.4551395169203403
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 32.16833998560137,
+        "abs_rel": 0.2329516447792933,
+        "rmse_m": 0.6024012306187325,
+        "delta1": 0.598924304472833,
+        "point_epe_m": 0.4535739105750458
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0052",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 52,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 31.531576575829945,
+        "abs_rel": 0.20993938418705313,
+        "rmse_m": 0.5678689918376651,
+        "delta1": 0.6365540958837745,
+        "point_epe_m": 0.4122990983561193
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 31.530621498280286,
+        "abs_rel": 0.20993025787645528,
+        "rmse_m": 0.5678915230797237,
+        "delta1": 0.6365540958837745,
+        "point_epe_m": 0.4122808860329576
+      },
+      "random": {
+        "silog": 31.521831318262247,
+        "abs_rel": 0.20981327338216138,
+        "rmse_m": 0.5678443569072159,
+        "delta1": 0.6366506358899531,
+        "point_epe_m": 0.4121120743138277
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 31.49592992854759,
+        "abs_rel": 0.2094786933392116,
+        "rmse_m": 0.5677535535406011,
+        "delta1": 0.6365540958837745,
+        "point_epe_m": 0.4116105904106079
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 31.467440542727157,
+        "abs_rel": 0.20915409200054938,
+        "rmse_m": 0.5674236882452779,
+        "delta1": 0.6375581119480316,
+        "point_epe_m": 0.4110835184571118
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0053",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 53,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 35.31964341101674,
+        "abs_rel": 0.24861810378170907,
+        "rmse_m": 0.5998085972293179,
+        "delta1": 0.5478764940239044,
+        "point_epe_m": 0.473058701329423
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 35.31282849570144,
+        "abs_rel": 0.24854916872503613,
+        "rmse_m": 0.5997186660805098,
+        "delta1": 0.5488764940239044,
+        "point_epe_m": 0.4729419391657389
+      },
+      "random": {
+        "silog": 35.30601118786325,
+        "abs_rel": 0.24846049624500388,
+        "rmse_m": 0.5996639250647162,
+        "delta1": 0.5485368713823949,
+        "point_epe_m": 0.4728171694613176
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 35.23292340574432,
+        "abs_rel": 0.24760106752189148,
+        "rmse_m": 0.5989424313963962,
+        "delta1": 0.5498764940239044,
+        "point_epe_m": 0.47150701770369924
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 35.23263868329987,
+        "abs_rel": 0.24758425590601169,
+        "rmse_m": 0.59896321825405,
+        "delta1": 0.5498764940239044,
+        "point_epe_m": 0.4714948053570809
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0054",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 54,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 37.384219035636406,
+        "abs_rel": 0.2739767683821883,
+        "rmse_m": 0.6356505772340504,
+        "delta1": 0.46900750373296296,
+        "point_epe_m": 0.5160923416616086
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 37.37813559859071,
+        "abs_rel": 0.2739163551722016,
+        "rmse_m": 0.6355453575797281,
+        "delta1": 0.47102363276522097,
+        "point_epe_m": 0.5159842691076941
+      },
+      "random": {
+        "silog": 37.373130222277645,
+        "abs_rel": 0.27384550488159815,
+        "rmse_m": 0.6355214595837024,
+        "delta1": 0.4704632964378325,
+        "point_epe_m": 0.5158902552371971
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 37.333005184994974,
+        "abs_rel": 0.273364749110353,
+        "rmse_m": 0.6350596100059,
+        "delta1": 0.47102363276522097,
+        "point_epe_m": 0.5151601014760874
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 37.29735619528424,
+        "abs_rel": 0.27296758092086315,
+        "rmse_m": 0.6345809981106053,
+        "delta1": 0.47303166489373505,
+        "point_epe_m": 0.5145291369116778
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0055",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 55,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 35.04285799039356,
+        "abs_rel": 0.25228652347214797,
+        "rmse_m": 0.6153686523601593,
+        "delta1": 0.5263592167979778,
+        "point_epe_m": 0.48353700753770495
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 35.04721545328284,
+        "abs_rel": 0.25234726284059533,
+        "rmse_m": 0.6153628548041586,
+        "delta1": 0.5263592167979778,
+        "point_epe_m": 0.483600393171327
+      },
+      "random": {
+        "silog": 35.03891388179811,
+        "abs_rel": 0.25224479608773687,
+        "rmse_m": 0.615317938704629,
+        "delta1": 0.5264154843571489,
+        "point_epe_m": 0.48345915474248224
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 35.02143320554038,
+        "abs_rel": 0.2520480959425327,
+        "rmse_m": 0.6151661418147876,
+        "delta1": 0.5263592167979778,
+        "point_epe_m": 0.4831521129185856
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 34.979223326956586,
+        "abs_rel": 0.25156118127805593,
+        "rmse_m": 0.6148258689221047,
+        "delta1": 0.5284084315456051,
+        "point_epe_m": 0.4823929604407755
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0056",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 56,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 34.97237130358189,
+        "abs_rel": 0.2647433707630387,
+        "rmse_m": 0.5852300928538331,
+        "delta1": 0.4842498735447571,
+        "point_epe_m": 0.48824600347799707
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 34.974450795986385,
+        "abs_rel": 0.26476914286796943,
+        "rmse_m": 0.5852226428129168,
+        "delta1": 0.4842498735447571,
+        "point_epe_m": 0.4882659412988195
+      },
+      "random": {
+        "silog": 34.96828592450026,
+        "abs_rel": 0.26469505802399546,
+        "rmse_m": 0.5852113888778195,
+        "delta1": 0.4842498735447571,
+        "point_epe_m": 0.4881694955838953
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 34.93206163108178,
+        "abs_rel": 0.26428548163317755,
+        "rmse_m": 0.5850263804621286,
+        "delta1": 0.4842498735447571,
+        "point_epe_m": 0.4875518904476853
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 34.91206488779581,
+        "abs_rel": 0.2640626134943883,
+        "rmse_m": 0.5848974384028689,
+        "delta1": 0.4842498735447571,
+        "point_epe_m": 0.48718937258879436
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0057",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 57,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 35.56010097160435,
+        "abs_rel": 0.2699279676048502,
+        "rmse_m": 0.5672823894821749,
+        "delta1": 0.5015262015805155,
+        "point_epe_m": 0.47555246938241574
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 35.55881485806369,
+        "abs_rel": 0.269967722625075,
+        "rmse_m": 0.5671893511933617,
+        "delta1": 0.5015262015805155,
+        "point_epe_m": 0.4755618764771102
+      },
+      "random": {
+        "silog": 35.55235176723102,
+        "abs_rel": 0.269901082411391,
+        "rmse_m": 0.5671597468427407,
+        "delta1": 0.5013139774718568,
+        "point_epe_m": 0.4754755109023257
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 35.572984509441255,
+        "abs_rel": 0.2699764977541872,
+        "rmse_m": 0.567479289228908,
+        "delta1": 0.5005181370643865,
+        "point_epe_m": 0.47567597057396416
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 35.504393412096135,
+        "abs_rel": 0.2696675692446339,
+        "rmse_m": 0.5664958740215744,
+        "delta1": 0.5015262015805155,
+        "point_epe_m": 0.4749577836206019
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0058",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 58,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 34.89652086541046,
+        "abs_rel": 0.2524114930365835,
+        "rmse_m": 0.6167764375967976,
+        "delta1": 0.5144458745427448,
+        "point_epe_m": 0.48848069290182056
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 34.89896621562588,
+        "abs_rel": 0.25245571847103576,
+        "rmse_m": 0.6167604716476867,
+        "delta1": 0.5144458745427448,
+        "point_epe_m": 0.48853430241319784
+      },
+      "random": {
+        "silog": 34.88775506629322,
+        "abs_rel": 0.25232448539718705,
+        "rmse_m": 0.6166715155622222,
+        "delta1": 0.5153508951221448,
+        "point_epe_m": 0.4883298544094561
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 34.93869130827897,
+        "abs_rel": 0.2528556248659164,
+        "rmse_m": 0.6172140353672503,
+        "delta1": 0.5134212843788104,
+        "point_epe_m": 0.4892315218849875
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 34.81187589837496,
+        "abs_rel": 0.25152958535171177,
+        "rmse_m": 0.6159020137370668,
+        "delta1": 0.5185696382603983,
+        "point_epe_m": 0.48701914571682925
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0059",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 59,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 37.90101034919395,
+        "abs_rel": 0.26656428739182336,
+        "rmse_m": 0.685652034552139,
+        "delta1": 0.5579998218349138,
+        "point_epe_m": 0.5152602642735039
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 37.89881373861344,
+        "abs_rel": 0.2665945162913873,
+        "rmse_m": 0.6854726197832206,
+        "delta1": 0.5579998218349138,
+        "point_epe_m": 0.5152974760190471
+      },
+      "random": {
+        "silog": 37.88394396872529,
+        "abs_rel": 0.2663919185758236,
+        "rmse_m": 0.6852000882772403,
+        "delta1": 0.5583930069847236,
+        "point_epe_m": 0.5149690659684549
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 37.973896037555924,
+        "abs_rel": 0.26748620693671654,
+        "rmse_m": 0.6869646852567989,
+        "delta1": 0.5579998218349138,
+        "point_epe_m": 0.5167905870692943
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 37.7852954952373,
+        "abs_rel": 0.26513165172706127,
+        "rmse_m": 0.6834271305286792,
+        "delta1": 0.5601006992601913,
+        "point_epe_m": 0.5129212283284654
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0060",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 60,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 35.73113226305259,
+        "abs_rel": 0.2505221962925539,
+        "rmse_m": 0.6727816344108594,
+        "delta1": 0.5835262563523433,
+        "point_epe_m": 0.5003310449451885
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 35.722133559148084,
+        "abs_rel": 0.2504596984047214,
+        "rmse_m": 0.6724246724189236,
+        "delta1": 0.5835262563523433,
+        "point_epe_m": 0.5002021950806569
+      },
+      "random": {
+        "silog": 35.71386622751244,
+        "abs_rel": 0.25033257276679793,
+        "rmse_m": 0.6723544413810271,
+        "delta1": 0.5834902597402597,
+        "point_epe_m": 0.4999976488452736
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 35.68832171512341,
+        "abs_rel": 0.25004176820123486,
+        "rmse_m": 0.671763476876297,
+        "delta1": 0.5835262563523433,
+        "point_epe_m": 0.49949567014080415
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 35.62403658294319,
+        "abs_rel": 0.24918465834398187,
+        "rmse_m": 0.6707095583695835,
+        "delta1": 0.5867824204780727,
+        "point_epe_m": 0.4980607752054112
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0061",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 61,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 35.9449223148458,
+        "abs_rel": 0.2532674282397564,
+        "rmse_m": 0.722954209418412,
+        "delta1": 0.6064476385995314,
+        "point_epe_m": 0.5082270623663011
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 35.929065289731724,
+        "abs_rel": 0.2531155408095688,
+        "rmse_m": 0.7223425797134653,
+        "delta1": 0.6064476385995314,
+        "point_epe_m": 0.5079708757784355
+      },
+      "random": {
+        "silog": 35.92563728831592,
+        "abs_rel": 0.25304274172692665,
+        "rmse_m": 0.7224014901646638,
+        "delta1": 0.6063063158182993,
+        "point_epe_m": 0.50784105640751
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 35.97891576848815,
+        "abs_rel": 0.25370696738654325,
+        "rmse_m": 0.7236792549882796,
+        "delta1": 0.6053700523926349,
+        "point_epe_m": 0.5089925634214191
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 35.839156234747655,
+        "abs_rel": 0.2521197735817251,
+        "rmse_m": 0.7197373575613608,
+        "delta1": 0.6064476385995314,
+        "point_epe_m": 0.5062349949876419
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0062",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 62,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 30.859972368410816,
+        "abs_rel": 0.22143058897496387,
+        "rmse_m": 0.7473838811448675,
+        "delta1": 0.6305389414110232,
+        "point_epe_m": 0.4709725309382202
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 30.8573802625312,
+        "abs_rel": 0.2214648144273214,
+        "rmse_m": 0.7472242783671774,
+        "delta1": 0.6293652324908354,
+        "point_epe_m": 0.4710106400612888
+      },
+      "random": {
+        "silog": 30.850580707921207,
+        "abs_rel": 0.22130916097703654,
+        "rmse_m": 0.7471773034624548,
+        "delta1": 0.6305573535483041,
+        "point_epe_m": 0.470760647300184
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 30.830875786475488,
+        "abs_rel": 0.22096660258598844,
+        "rmse_m": 0.7468656153407213,
+        "delta1": 0.6328863592513988,
+        "point_epe_m": 0.47016926967836575
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 30.783792933032466,
+        "abs_rel": 0.22029170229357437,
+        "rmse_m": 0.7460844003440823,
+        "delta1": 0.6340279117628144,
+        "point_epe_m": 0.46904841947446724
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0063",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 63,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 28.183217836162914,
+        "abs_rel": 0.22300219478130506,
+        "rmse_m": 0.7317997019012652,
+        "delta1": 0.6618121833392248,
+        "point_epe_m": 0.46599254277706254
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 28.182878902014767,
+        "abs_rel": 0.22318784581155043,
+        "rmse_m": 0.7313513036574858,
+        "delta1": 0.6618121833392248,
+        "point_epe_m": 0.4662510554525349
+      },
+      "random": {
+        "silog": 28.165629604021074,
+        "abs_rel": 0.22287480463714515,
+        "rmse_m": 0.7311288666887132,
+        "delta1": 0.6618508980120855,
+        "point_epe_m": 0.46575106627013463
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 28.09010474545124,
+        "abs_rel": 0.22194148058645505,
+        "rmse_m": 0.7288844004505559,
+        "delta1": 0.6630316955343467,
+        "point_epe_m": 0.46412531176791016
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 28.05459470565619,
+        "abs_rel": 0.22186963589917286,
+        "rmse_m": 0.7267035763639713,
+        "delta1": 0.6618121833392248,
+        "point_epe_m": 0.46382205125428033
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0064",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 28.133161720141864,
+        "abs_rel": 0.22296596827866452,
+        "rmse_m": 0.8318191018930987,
+        "delta1": 0.7176412407765169,
+        "point_epe_m": 0.45976034637206853
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 28.121566862125935,
+        "abs_rel": 0.22296871593852519,
+        "rmse_m": 0.8310175691857035,
+        "delta1": 0.7164157505804385,
+        "point_epe_m": 0.4597776750102882
+      },
+      "random": {
+        "silog": 28.11158575291045,
+        "abs_rel": 0.22274932296513705,
+        "rmse_m": 0.831042039546495,
+        "delta1": 0.7170284956784776,
+        "point_epe_m": 0.4594050321544242
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 28.1071658116011,
+        "abs_rel": 0.2225596548167279,
+        "rmse_m": 0.831273921291225,
+        "delta1": 0.7176412407765169,
+        "point_epe_m": 0.45911093335501635
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 27.990872837205146,
+        "abs_rel": 0.2216037368989422,
+        "rmse_m": 0.8259970873554668,
+        "delta1": 0.7176412407765169,
+        "point_epe_m": 0.45742199118529203
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0065",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 27.580370127016824,
+        "abs_rel": 0.200725044108095,
+        "rmse_m": 0.8283054529903439,
+        "delta1": 0.7360946955804639,
+        "point_epe_m": 0.44465492865689504
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 27.575006166382362,
+        "abs_rel": 0.20078474073905236,
+        "rmse_m": 0.8280131964980719,
+        "delta1": 0.7348869661118649,
+        "point_epe_m": 0.4447826886356794
+      },
+      "random": {
+        "silog": 27.5654025106463,
+        "abs_rel": 0.20055808348741094,
+        "rmse_m": 0.827986166261,
+        "delta1": 0.736226790991092,
+        "point_epe_m": 0.4444195926470418
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 27.568656954994626,
+        "abs_rel": 0.20055201736222353,
+        "rmse_m": 0.8282172010932598,
+        "delta1": 0.7360946955804639,
+        "point_epe_m": 0.44443108587892377
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 27.475248593780698,
+        "abs_rel": 0.19958120013449748,
+        "rmse_m": 0.8256712430568852,
+        "delta1": 0.737302425049063,
+        "point_epe_m": 0.44283643706752773
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0066",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 28.752858057376564,
+        "abs_rel": 0.20146931320986716,
+        "rmse_m": 0.8123950678273659,
+        "delta1": 0.7514989896783976,
+        "point_epe_m": 0.4279900082294351
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 28.742321232123885,
+        "abs_rel": 0.201426046543628,
+        "rmse_m": 0.8121275618957357,
+        "delta1": 0.7503469159456786,
+        "point_epe_m": 0.42795873082741354
+      },
+      "random": {
+        "silog": 28.731563974334748,
+        "abs_rel": 0.2012157827637701,
+        "rmse_m": 0.8120403193030117,
+        "delta1": 0.7511392954250886,
+        "point_epe_m": 0.4276187483706477
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 28.742321232123885,
+        "abs_rel": 0.201426046543628,
+        "rmse_m": 0.8121275618957357,
+        "delta1": 0.7503469159456786,
+        "point_epe_m": 0.42795873082741354
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 28.652921833060915,
+        "abs_rel": 0.20035543136218437,
+        "rmse_m": 0.8103926128512109,
+        "delta1": 0.7514989896783976,
+        "point_epe_m": 0.426279116885256
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0067",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 30.928561995060708,
+        "abs_rel": 0.24604431232774984,
+        "rmse_m": 0.7223483320587687,
+        "delta1": 0.6779972730805374,
+        "point_epe_m": 0.455746706286583
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 30.924551197665714,
+        "abs_rel": 0.24609039491330414,
+        "rmse_m": 0.7219055172120626,
+        "delta1": 0.6769007818524672,
+        "point_epe_m": 0.4557942052316344
+      },
+      "random": {
+        "silog": 30.916430956688586,
+        "abs_rel": 0.24583905062397113,
+        "rmse_m": 0.722064677914966,
+        "delta1": 0.677927391750617,
+        "point_epe_m": 0.4554572583246468
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 30.909091805503063,
+        "abs_rel": 0.24547232934443425,
+        "rmse_m": 0.722780122862168,
+        "delta1": 0.680185467365376,
+        "point_epe_m": 0.45502543466125184
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 30.787705773355075,
+        "abs_rel": 0.24393497425876376,
+        "rmse_m": 0.7195899548165372,
+        "delta1": 0.6856583471631237,
+        "point_epe_m": 0.4526959362724731
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0068",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 31.870583289971346,
+        "abs_rel": 0.2733891365015102,
+        "rmse_m": 0.6961980289667105,
+        "delta1": 0.6508880442754869,
+        "point_epe_m": 0.4404234713336887
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 31.859699511477597,
+        "abs_rel": 0.2732855938687897,
+        "rmse_m": 0.6959772811163274,
+        "delta1": 0.6508880442754869,
+        "point_epe_m": 0.4404187048662075
+      },
+      "random": {
+        "silog": 31.845020903279238,
+        "abs_rel": 0.27299741530934796,
+        "rmse_m": 0.6957836203924889,
+        "delta1": 0.6510408975363565,
+        "point_epe_m": 0.44002596670070976
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 31.87909648954885,
+        "abs_rel": 0.27352825777319434,
+        "rmse_m": 0.6962654467432008,
+        "delta1": 0.6508880442754869,
+        "point_epe_m": 0.4406433547586217
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 31.70909090322817,
+        "abs_rel": 0.2708286245046526,
+        "rmse_m": 0.6937657858915409,
+        "delta1": 0.651975000797226,
+        "point_epe_m": 0.4372983948722818
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0069",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 31.28817280045345,
+        "abs_rel": 0.2731075948301486,
+        "rmse_m": 0.5869524715928797,
+        "delta1": 0.5647819690957016,
+        "point_epe_m": 0.3965678216801617
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 31.289485468057524,
+        "abs_rel": 0.27311793329707534,
+        "rmse_m": 0.5870527324869643,
+        "delta1": 0.5647819690957016,
+        "point_epe_m": 0.396718076696594
+      },
+      "random": {
+        "silog": 31.270257681963823,
+        "abs_rel": 0.27279294957080696,
+        "rmse_m": 0.5867835521761708,
+        "delta1": 0.565226506020641,
+        "point_epe_m": 0.3963003655380214
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 31.232480445421178,
+        "abs_rel": 0.2722576762107359,
+        "rmse_m": 0.5861231842389314,
+        "delta1": 0.5647819690957016,
+        "point_epe_m": 0.39568815487367454
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 31.110868075383536,
+        "abs_rel": 0.2706000989030447,
+        "rmse_m": 0.5842368993070487,
+        "delta1": 0.566891711297667,
+        "point_epe_m": 0.3936651560418752
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0070",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 30.262590368398758,
+        "abs_rel": 0.25851291597103476,
+        "rmse_m": 0.570604285341953,
+        "delta1": 0.5712029157422945,
+        "point_epe_m": 0.3747711674883514
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 30.264923246009925,
+        "abs_rel": 0.2584274256380978,
+        "rmse_m": 0.5710060254924739,
+        "delta1": 0.5691453025735702,
+        "point_epe_m": 0.374809243186376
+      },
+      "random": {
+        "silog": 30.248553809233577,
+        "abs_rel": 0.2581938934282477,
+        "rmse_m": 0.5708540256873114,
+        "delta1": 0.5705117559979918,
+        "point_epe_m": 0.37452822866266267
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 30.227741661513647,
+        "abs_rel": 0.25785523158060364,
+        "rmse_m": 0.5706634281845553,
+        "delta1": 0.5712029157422945,
+        "point_epe_m": 0.3740905358671691
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 30.11804484812948,
+        "abs_rel": 0.25657320005615064,
+        "rmse_m": 0.5694911358067688,
+        "delta1": 0.5773717122069062,
+        "point_epe_m": 0.37265971255689895
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0071",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 30.438739565598247,
+        "abs_rel": 0.2452046144402735,
+        "rmse_m": 0.5835431082490112,
+        "delta1": 0.5283034973903712,
+        "point_epe_m": 0.3504286894075993
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 30.443995052122908,
+        "abs_rel": 0.2451139807515292,
+        "rmse_m": 0.5840041567646985,
+        "delta1": 0.5272994813261142,
+        "point_epe_m": 0.3504200976750891
+      },
+      "random": {
+        "silog": 30.433926114169793,
+        "abs_rel": 0.24487482490522944,
+        "rmse_m": 0.5841438381841918,
+        "delta1": 0.5284476087548575,
+        "point_epe_m": 0.35020779619791237
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 30.427086053772914,
+        "abs_rel": 0.24479920810550101,
+        "rmse_m": 0.5840068873237171,
+        "delta1": 0.5283034973903712,
+        "point_epe_m": 0.3500987699448894
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 30.32401139470121,
+        "abs_rel": 0.24317274709311426,
+        "rmse_m": 0.5838366980375091,
+        "delta1": 0.530327788888347,
+        "point_epe_m": 0.3484325924698374
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0072",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 28.885752301625555,
+        "abs_rel": 0.22404341341575923,
+        "rmse_m": 0.5262927922473744,
+        "delta1": 0.6048249836513513,
+        "point_epe_m": 0.30723966500676775
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 28.887761338451455,
+        "abs_rel": 0.22396938227706578,
+        "rmse_m": 0.526489193959516,
+        "delta1": 0.6058289997156083,
+        "point_epe_m": 0.307216724383886
+      },
+      "random": {
+        "silog": 28.881476343436745,
+        "abs_rel": 0.22382487385507926,
+        "rmse_m": 0.5265975995274146,
+        "delta1": 0.6049661734103875,
+        "point_epe_m": 0.3071123056947678
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 28.869359358863402,
+        "abs_rel": 0.22363359263081925,
+        "rmse_m": 0.526616970772512,
+        "delta1": 0.6048249836513513,
+        "point_epe_m": 0.3069558034393324
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 28.779421300465568,
+        "abs_rel": 0.22254944534558868,
+        "rmse_m": 0.5261068504611632,
+        "delta1": 0.6048249836513513,
+        "point_epe_m": 0.305937727587494
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0073",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 28.333651380614207,
+        "abs_rel": 0.21319195476334565,
+        "rmse_m": 0.5130424026496305,
+        "delta1": 0.6001258366800536,
+        "point_epe_m": 0.29080400747701407
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 28.269344049505087,
+        "abs_rel": 0.21195280677326117,
+        "rmse_m": 0.5135017938222395,
+        "delta1": 0.6051020271562441,
+        "point_epe_m": 0.28975644449487675
+      },
+      "random": {
+        "silog": 28.3286462931428,
+        "abs_rel": 0.21296955024484773,
+        "rmse_m": 0.5133018628245419,
+        "delta1": 0.6011526821572003,
+        "point_epe_m": 0.2906457853372151
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 28.269344049505087,
+        "abs_rel": 0.21195280677326117,
+        "rmse_m": 0.5135017938222395,
+        "delta1": 0.6051020271562441,
+        "point_epe_m": 0.28975644449487675
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 28.254235282904137,
+        "abs_rel": 0.2118280500271788,
+        "rmse_m": 0.5132641068630468,
+        "delta1": 0.6061020271562441,
+        "point_epe_m": 0.28959611634584737
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0074",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 27.384907289568652,
+        "abs_rel": 0.18256305775375187,
+        "rmse_m": 0.48243059361926743,
+        "delta1": 0.6700324829713404,
+        "point_epe_m": 0.24422227550194234
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 27.319073776431672,
+        "abs_rel": 0.1817204317660867,
+        "rmse_m": 0.48235252260239936,
+        "delta1": 0.6740205307801054,
+        "point_epe_m": 0.24358438900465257
+      },
+      "random": {
+        "silog": 27.377502553383117,
+        "abs_rel": 0.1824620726187311,
+        "rmse_m": 0.4824501804918896,
+        "delta1": 0.6716044451227349,
+        "point_epe_m": 0.24416122848584887
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 27.362652795693414,
+        "abs_rel": 0.18232278968338794,
+        "rmse_m": 0.4823434581906949,
+        "delta1": 0.6720245148438504,
+        "point_epe_m": 0.24403860952819317
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 27.309955233399613,
+        "abs_rel": 0.18162212873791866,
+        "rmse_m": 0.48228170999551495,
+        "delta1": 0.6740205307801054,
+        "point_epe_m": 0.24348464793123245
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0075",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 26.40807863297493,
+        "abs_rel": 0.16916879822467815,
+        "rmse_m": 0.39708750879712906,
+        "delta1": 0.715164658634538,
+        "point_epe_m": 0.18775897816146114
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 26.35547277083466,
+        "abs_rel": 0.16855688259392995,
+        "rmse_m": 0.39692396896604776,
+        "delta1": 0.7171726907630522,
+        "point_epe_m": 0.18733580593155913
+      },
+      "random": {
+        "silog": 26.398082003971204,
+        "abs_rel": 0.16903895367018237,
+        "rmse_m": 0.3970669642250131,
+        "delta1": 0.7157764181726908,
+        "point_epe_m": 0.18767129543973735
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 26.35547277083466,
+        "abs_rel": 0.16855688259392995,
+        "rmse_m": 0.39692396896604776,
+        "delta1": 0.7171726907630522,
+        "point_epe_m": 0.18733580593155913
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 26.335893339895854,
+        "abs_rel": 0.16829644478689865,
+        "rmse_m": 0.39687353331559555,
+        "delta1": 0.7201807228915663,
+        "point_epe_m": 0.18714675571134176
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0076",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 24.552600467858504,
+        "abs_rel": 0.16538950977533315,
+        "rmse_m": 0.36428559869929317,
+        "delta1": 0.7608210851373622,
+        "point_epe_m": 0.1787629724473793
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 24.489015914465973,
+        "abs_rel": 0.1648180683488461,
+        "rmse_m": 0.36392615741107187,
+        "delta1": 0.7628171010736171,
+        "point_epe_m": 0.17832951297913185
+      },
+      "random": {
+        "silog": 24.537722181137525,
+        "abs_rel": 0.16526798384504346,
+        "rmse_m": 0.36419690575532243,
+        "delta1": 0.7611480841193459,
+        "point_epe_m": 0.1786706153715979
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 24.489015914465973,
+        "abs_rel": 0.1648180683488461,
+        "rmse_m": 0.36392615741107187,
+        "delta1": 0.7628171010736171,
+        "point_epe_m": 0.17832951297913185
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 24.465092415164534,
+        "abs_rel": 0.16459031038781052,
+        "rmse_m": 0.36378995166457434,
+        "delta1": 0.7638171010736172,
+        "point_epe_m": 0.17815198872671428
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0077",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 28.82278688777255,
+        "abs_rel": 0.21057841692522844,
+        "rmse_m": 0.5088244170420843,
+        "delta1": 0.6134565963512785,
+        "point_epe_m": 0.2829684236394534
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 28.752906716848763,
+        "abs_rel": 0.20922489447936532,
+        "rmse_m": 0.5091668122878309,
+        "delta1": 0.6144526122875335,
+        "point_epe_m": 0.28184269357024927
+      },
+      "random": {
+        "silog": 28.810535742339216,
+        "abs_rel": 0.21024689902264831,
+        "rmse_m": 0.5090053774326009,
+        "delta1": 0.6138612278253821,
+        "point_epe_m": 0.28270350244058084
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 28.728103961475824,
+        "abs_rel": 0.2089059273386928,
+        "rmse_m": 0.5090175643215337,
+        "delta1": 0.6144526122875335,
+        "point_epe_m": 0.28154111711960095
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 28.710009822811926,
+        "abs_rel": 0.2087245763593035,
+        "rmse_m": 0.5088575111199616,
+        "delta1": 0.6144526122875335,
+        "point_epe_m": 0.2813546353548675
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0078",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 29.1901005071805,
+        "abs_rel": 0.20977053656598355,
+        "rmse_m": 0.5831574340278509,
+        "delta1": 0.6450569173209915,
+        "point_epe_m": 0.3309006400746458
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 29.135382451433042,
+        "abs_rel": 0.2084433163897845,
+        "rmse_m": 0.5837904812174475,
+        "delta1": 0.6470489491935014,
+        "point_epe_m": 0.32977766398883274
+      },
+      "random": {
+        "silog": 29.188181377711196,
+        "abs_rel": 0.20947864045873554,
+        "rmse_m": 0.5835244964983739,
+        "delta1": 0.645928620970819,
+        "point_epe_m": 0.3306839853225721
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 29.140168586486656,
+        "abs_rel": 0.2087851822111179,
+        "rmse_m": 0.5833991736664733,
+        "delta1": 0.6480489491935014,
+        "point_epe_m": 0.3300170348728957
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 29.107493080697274,
+        "abs_rel": 0.20811429325960634,
+        "rmse_m": 0.5835778401639392,
+        "delta1": 0.6490370914859915,
+        "point_epe_m": 0.3294219824855523
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0079",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 27.516929173415072,
+        "abs_rel": 0.2110041505459685,
+        "rmse_m": 0.5356144683866652,
+        "delta1": 0.6596359629373119,
+        "point_epe_m": 0.3246871989420732
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 27.41056990078433,
+        "abs_rel": 0.20941042585706607,
+        "rmse_m": 0.535453101695867,
+        "delta1": 0.6616359949378238,
+        "point_epe_m": 0.32314113529584576
+      },
+      "random": {
+        "silog": 27.496380645396997,
+        "abs_rel": 0.21062514514289205,
+        "rmse_m": 0.5357275901349668,
+        "delta1": 0.6601207105385115,
+        "point_epe_m": 0.3243477705201781
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 27.436660178166534,
+        "abs_rel": 0.20991745726344202,
+        "rmse_m": 0.5353040995110853,
+        "delta1": 0.6616359949378238,
+        "point_epe_m": 0.32359156107828074
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 27.374710538890483,
+        "abs_rel": 0.20904792980657294,
+        "rmse_m": 0.5350304701549968,
+        "delta1": 0.6626359949378238,
+        "point_epe_m": 0.32270025036205935
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0080",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 28.347503464973048,
+        "abs_rel": 0.21335660903821058,
+        "rmse_m": 0.5842143815872461,
+        "delta1": 0.7017684933281513,
+        "point_epe_m": 0.35773760153038164
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 28.244625737042753,
+        "abs_rel": 0.21174912609014013,
+        "rmse_m": 0.583962360260798,
+        "delta1": 0.7027725093924083,
+        "point_epe_m": 0.35611442235677015
+      },
+      "random": {
+        "silog": 28.328649700763457,
+        "abs_rel": 0.21299570329799083,
+        "rmse_m": 0.5843017390802895,
+        "delta1": 0.7023326830507515,
+        "point_epe_m": 0.3573999339123971
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 28.322867233621984,
+        "abs_rel": 0.21292464008958295,
+        "rmse_m": 0.5842232713876938,
+        "delta1": 0.7027725093924083,
+        "point_epe_m": 0.35730985009857624
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 28.22259605537306,
+        "abs_rel": 0.21151457241338645,
+        "rmse_m": 0.5836916837918081,
+        "delta1": 0.7027725093924083,
+        "point_epe_m": 0.3558281627444838
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0081",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 29.410415544968345,
+        "abs_rel": 0.23412171868030318,
+        "rmse_m": 0.6118042599750652,
+        "delta1": 0.6383711824146928,
+        "point_epe_m": 0.39515242764484004
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 29.274590667980327,
+        "abs_rel": 0.23207811970545295,
+        "rmse_m": 0.6109427067023717,
+        "delta1": 0.6393751984789499,
+        "point_epe_m": 0.3928196765661241
+      },
+      "random": {
+        "silog": 29.380589309473148,
+        "abs_rel": 0.23361640534841727,
+        "rmse_m": 0.6117327304563978,
+        "delta1": 0.6381373879252056,
+        "point_epe_m": 0.3946033751561905
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 29.37516297336235,
+        "abs_rel": 0.23350904273126238,
+        "rmse_m": 0.6117331430428299,
+        "delta1": 0.6393751984789499,
+        "point_epe_m": 0.3944877055945946
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 29.240408831925475,
+        "abs_rel": 0.23168107860959547,
+        "rmse_m": 0.6104665199716566,
+        "delta1": 0.6393751984789499,
+        "point_epe_m": 0.39229747391320524
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0082",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 28.094002852641847,
+        "abs_rel": 0.23194575930787703,
+        "rmse_m": 0.6375958588972503,
+        "delta1": 0.63733555227931,
+        "point_epe_m": 0.422263660653714
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 28.003917687276605,
+        "abs_rel": 0.23016899238468871,
+        "rmse_m": 0.6386726801868579,
+        "delta1": 0.6404051751902027,
+        "point_epe_m": 0.4205684734720199
+      },
+      "random": {
+        "silog": 28.081654380067242,
+        "abs_rel": 0.23152932923401037,
+        "rmse_m": 0.6382999961641599,
+        "delta1": 0.6364626673265246,
+        "point_epe_m": 0.4219778843151926
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 28.094085265952724,
+        "abs_rel": 0.23161809434201833,
+        "rmse_m": 0.6387738933119858,
+        "delta1": 0.6352736878437082,
+        "point_epe_m": 0.42223837085170696
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 27.95510828243131,
+        "abs_rel": 0.22963115971574322,
+        "rmse_m": 0.6378346275320315,
+        "delta1": 0.6404051751902027,
+        "point_epe_m": 0.4197674643686817
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0083",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 29.081536409218035,
+        "abs_rel": 0.23411720860472146,
+        "rmse_m": 0.7379607036606319,
+        "delta1": 0.6747169579128722,
+        "point_epe_m": 0.49247113564401945
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 28.937197803336844,
+        "abs_rel": 0.23185184214908486,
+        "rmse_m": 0.7359172427412917,
+        "delta1": 0.676813403185542,
+        "point_epe_m": 0.4893357233281983
+      },
+      "random": {
+        "silog": 29.05173207613739,
+        "abs_rel": 0.23362075679584454,
+        "rmse_m": 0.7375860664716931,
+        "delta1": 0.6755692568606939,
+        "point_epe_m": 0.49185899170343306
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 29.048998240146556,
+        "abs_rel": 0.23359663302395905,
+        "rmse_m": 0.7375157733643805,
+        "delta1": 0.6757673780809395,
+        "point_epe_m": 0.4918257521320517
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 28.914936318150843,
+        "abs_rel": 0.2315515282854282,
+        "rmse_m": 0.7356249701271524,
+        "delta1": 0.676813403185542,
+        "point_epe_m": 0.4888121521575698
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0084",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 27.95364825487136,
+        "abs_rel": 0.20810771777785625,
+        "rmse_m": 0.7830021006036948,
+        "delta1": 0.676009237937489,
+        "point_epe_m": 0.5057750919810621
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 27.845028275783125,
+        "abs_rel": 0.20631668989148458,
+        "rmse_m": 0.7819381617052494,
+        "delta1": 0.6782414252817841,
+        "point_epe_m": 0.5030549866086003
+      },
+      "random": {
+        "silog": 27.94573425811951,
+        "abs_rel": 0.20791633159985734,
+        "rmse_m": 0.7830703726877073,
+        "delta1": 0.6764093882980513,
+        "point_epe_m": 0.505549704885617
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 27.935169702233658,
+        "abs_rel": 0.20765351222752282,
+        "rmse_m": 0.7830989535408188,
+        "delta1": 0.6771303141706728,
+        "point_epe_m": 0.505165282163709
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 27.831192678802225,
+        "abs_rel": 0.20619385400790557,
+        "rmse_m": 0.7816559389872131,
+        "delta1": 0.6782414252817841,
+        "point_epe_m": 0.5028037083741879
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0085",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 26.283057371182707,
+        "abs_rel": 0.2111227145546299,
+        "rmse_m": 0.7140686096777689,
+        "delta1": 0.6468284973974324,
+        "point_epe_m": 0.48900552751285736
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 26.17407096626756,
+        "abs_rel": 0.20960568394906842,
+        "rmse_m": 0.7119172769178215,
+        "delta1": 0.6468442074937877,
+        "point_epe_m": 0.48671299551996805
+      },
+      "random": {
+        "silog": 26.26851106482208,
+        "abs_rel": 0.21093370251315444,
+        "rmse_m": 0.713735082741195,
+        "delta1": 0.6463148323933579,
+        "point_epe_m": 0.48878100950845105
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 26.289761457077226,
+        "abs_rel": 0.21113313213134832,
+        "rmse_m": 0.714314921132905,
+        "delta1": 0.645686944886017,
+        "point_epe_m": 0.4891735302020078
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 26.15985158228818,
+        "abs_rel": 0.20947824277775756,
+        "rmse_m": 0.7116772569955856,
+        "delta1": 0.6468442074937877,
+        "point_epe_m": 0.4864026825630258
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0086",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 26.290362238855536,
+        "abs_rel": 0.20482125403196869,
+        "rmse_m": 0.7227301855230984,
+        "delta1": 0.6264174762367645,
+        "point_epe_m": 0.5105781583870225
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 26.186560186252677,
+        "abs_rel": 0.20354987733624946,
+        "rmse_m": 0.7206896235859634,
+        "delta1": 0.6252213039879606,
+        "point_epe_m": 0.5086123714778659
+      },
+      "random": {
+        "silog": 26.27708087883794,
+        "abs_rel": 0.204680533073758,
+        "rmse_m": 0.7224415344328349,
+        "delta1": 0.6254194384690297,
+        "point_epe_m": 0.5104190224483951
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 26.27642981850331,
+        "abs_rel": 0.20463831518913725,
+        "rmse_m": 0.7224399139535117,
+        "delta1": 0.6264174762367645,
+        "point_epe_m": 0.5103395443825915
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 26.186560186252677,
+        "abs_rel": 0.20354987733624946,
+        "rmse_m": 0.7206896235859634,
+        "delta1": 0.6252213039879606,
+        "point_epe_m": 0.5086123714778659
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0087",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 25.377308792083028,
+        "abs_rel": 0.1936670435000062,
+        "rmse_m": 0.7517747696705034,
+        "delta1": 0.6108678086619264,
+        "point_epe_m": 0.5310639009353519
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 25.294498830603853,
+        "abs_rel": 0.19259350427523286,
+        "rmse_m": 0.7509557947185798,
+        "delta1": 0.6096773324714502,
+        "point_epe_m": 0.529229399222901
+      },
+      "random": {
+        "silog": 25.369223208520953,
+        "abs_rel": 0.1935467245487715,
+        "rmse_m": 0.7517996861726912,
+        "delta1": 0.6106821649934013,
+        "point_epe_m": 0.5309085428866105
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 25.363116710806473,
+        "abs_rel": 0.19349000436604813,
+        "rmse_m": 0.7515472748837799,
+        "delta1": 0.6096773324714502,
+        "point_epe_m": 0.5307564173581562
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 25.294498830603853,
+        "abs_rel": 0.19259350427523286,
+        "rmse_m": 0.7509557947185798,
+        "delta1": 0.6096773324714502,
+        "point_epe_m": 0.529229399222901
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0088",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 25.423527130160174,
+        "abs_rel": 0.19636813450937157,
+        "rmse_m": 0.9083497595277181,
+        "delta1": 0.6346368927125505,
+        "point_epe_m": 0.5810205915823894
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 25.383183941935265,
+        "abs_rel": 0.19554909295790399,
+        "rmse_m": 0.9094291558107861,
+        "delta1": 0.635938976045884,
+        "point_epe_m": 0.5801334291494865
+      },
+      "random": {
+        "silog": 25.426624669786747,
+        "abs_rel": 0.1963244397133148,
+        "rmse_m": 0.9090361614059244,
+        "delta1": 0.6348146145675184,
+        "point_epe_m": 0.5811392516783296
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 25.422310550458228,
+        "abs_rel": 0.1962381380038878,
+        "rmse_m": 0.9091889978543872,
+        "delta1": 0.6346368927125505,
+        "point_epe_m": 0.5810709137621959
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 25.383183941935265,
+        "abs_rel": 0.19554909295790399,
+        "rmse_m": 0.9094291558107861,
+        "delta1": 0.635938976045884,
+        "point_epe_m": 0.5801334291494865
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0089",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 25.194154948038047,
+        "abs_rel": 0.1978895717819385,
+        "rmse_m": 0.771889920032669,
+        "delta1": 0.5728743654822335,
+        "point_epe_m": 0.5742906054113471
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 25.102846515552017,
+        "abs_rel": 0.19683768325855,
+        "rmse_m": 0.770326146566876,
+        "delta1": 0.5728743654822335,
+        "point_epe_m": 0.57235109333986
+      },
+      "random": {
+        "silog": 25.187575117175186,
+        "abs_rel": 0.19783008991339213,
+        "rmse_m": 0.771788527514339,
+        "delta1": 0.5725967639593909,
+        "point_epe_m": 0.5742267023728731
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 25.171937470848246,
+        "abs_rel": 0.19765781524800174,
+        "rmse_m": 0.7715080653556341,
+        "delta1": 0.5728743654822335,
+        "point_epe_m": 0.5738489452039388
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 25.102846515552017,
+        "abs_rel": 0.19683768325855,
+        "rmse_m": 0.770326146566876,
+        "delta1": 0.5728743654822335,
+        "point_epe_m": 0.57235109333986
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0090",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 22.87415566900057,
+        "abs_rel": 0.17754292394243193,
+        "rmse_m": 0.7651807360935358,
+        "delta1": 0.6450557424110615,
+        "point_epe_m": 0.5533793488618466
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 22.831694113776347,
+        "abs_rel": 0.17700141836329375,
+        "rmse_m": 0.7648469824411116,
+        "delta1": 0.643658243753983,
+        "point_epe_m": 0.5525596238314762
+      },
+      "random": {
+        "silog": 22.877301515655144,
+        "abs_rel": 0.1775695503863862,
+        "rmse_m": 0.7653628365103995,
+        "delta1": 0.6446744330103127,
+        "point_epe_m": 0.5535025623463488
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 22.89760708321133,
+        "abs_rel": 0.17780488465338062,
+        "rmse_m": 0.7657436118332943,
+        "delta1": 0.6464144380632354,
+        "point_epe_m": 0.5539572734749593
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 22.831694113776347,
+        "abs_rel": 0.17700141836329375,
+        "rmse_m": 0.7648469824411116,
+        "delta1": 0.643658243753983,
+        "point_epe_m": 0.5525596238314762
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0100",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 23.563244393621297,
+        "abs_rel": 0.19047759111385434,
+        "rmse_m": 0.7580133527106423,
+        "delta1": 0.5641316769832684,
+        "point_epe_m": 0.5914208666805918
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 23.508203458382756,
+        "abs_rel": 0.18988585483296586,
+        "rmse_m": 0.7579289581499438,
+        "delta1": 0.5679647486734829,
+        "point_epe_m": 0.5904490857589664
+      },
+      "random": {
+        "silog": 23.565383539802255,
+        "abs_rel": 0.19049182408434226,
+        "rmse_m": 0.7582754633326015,
+        "delta1": 0.5646720313461674,
+        "point_epe_m": 0.5915371922955163
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 23.58121154521162,
+        "abs_rel": 0.19066986324373206,
+        "rmse_m": 0.7586214004611251,
+        "delta1": 0.5641316769832684,
+        "point_epe_m": 0.5919693640614433
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 23.508203458382756,
+        "abs_rel": 0.18988585483296586,
+        "rmse_m": 0.7579289581499438,
+        "delta1": 0.5679647486734829,
+        "point_epe_m": 0.5904490857589664
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0101",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 22.76864642345421,
+        "abs_rel": 0.1813007776464986,
+        "rmse_m": 0.7363747507153304,
+        "delta1": 0.6142518708866358,
+        "point_epe_m": 0.5431915907872538
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 22.70117867191516,
+        "abs_rel": 0.1807542928516104,
+        "rmse_m": 0.7353982958547428,
+        "delta1": 0.6155209064196308,
+        "point_epe_m": 0.5419215808106159
+      },
+      "random": {
+        "silog": 22.770636012431623,
+        "abs_rel": 0.18133411175353087,
+        "rmse_m": 0.7366097435016878,
+        "delta1": 0.6138156399221688,
+        "point_epe_m": 0.5433365676625106
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 22.769485926387983,
+        "abs_rel": 0.1813693910867073,
+        "rmse_m": 0.7359959983187232,
+        "delta1": 0.6129828353536408,
+        "point_epe_m": 0.5431399172578538
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 22.70117867191516,
+        "abs_rel": 0.1807542928516104,
+        "rmse_m": 0.7353982958547428,
+        "delta1": 0.6155209064196308,
+        "point_epe_m": 0.5419215808106159
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0102",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 24.23599926999679,
+        "abs_rel": 0.19668080282324862,
+        "rmse_m": 0.7289775676175451,
+        "delta1": 0.6467428434788549,
+        "point_epe_m": 0.5440919337899849
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 24.165426815674262,
+        "abs_rel": 0.1959347912227588,
+        "rmse_m": 0.7279764229607585,
+        "delta1": 0.6455173532827765,
+        "point_epe_m": 0.5432451489986999
+      },
+      "random": {
+        "silog": 24.237491263729908,
+        "abs_rel": 0.19671920023688938,
+        "rmse_m": 0.7290332550257623,
+        "delta1": 0.646127362911628,
+        "point_epe_m": 0.5443469528408358
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 24.247653291286436,
+        "abs_rel": 0.19680875290427813,
+        "rmse_m": 0.7294797504096142,
+        "delta1": 0.6467428434788549,
+        "point_epe_m": 0.5445949957791677
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 24.165426815674262,
+        "abs_rel": 0.1959347912227588,
+        "rmse_m": 0.7279764229607585,
+        "delta1": 0.6455173532827765,
+        "point_epe_m": 0.5432451489986999
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0103",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 24.18157488535909,
+        "abs_rel": 0.18711999760476886,
+        "rmse_m": 0.7844386497849292,
+        "delta1": 0.6372577463211266,
+        "point_epe_m": 0.5562881422177999
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 24.130995049599267,
+        "abs_rel": 0.18626252101681698,
+        "rmse_m": 0.7849052585328985,
+        "delta1": 0.6372577463211266,
+        "point_epe_m": 0.555307556097766
+      },
+      "random": {
+        "silog": 24.184026839063854,
+        "abs_rel": 0.18710299821754164,
+        "rmse_m": 0.7847970329910138,
+        "delta1": 0.6372577463211266,
+        "point_epe_m": 0.5564203127516566
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 24.184096136298038,
+        "abs_rel": 0.1871823108210929,
+        "rmse_m": 0.784272162510695,
+        "delta1": 0.6372577463211266,
+        "point_epe_m": 0.5563003618474935
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 24.130995049599267,
+        "abs_rel": 0.18626252101681698,
+        "rmse_m": 0.7849052585328985,
+        "delta1": 0.6372577463211266,
+        "point_epe_m": 0.555307556097766
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0104",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 25.227919262287337,
+        "abs_rel": 0.19023662402427388,
+        "rmse_m": 0.7992729353407463,
+        "delta1": 0.6333308647039164,
+        "point_epe_m": 0.5478773083225128
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 25.204648718401046,
+        "abs_rel": 0.1898158144681683,
+        "rmse_m": 0.7996804112783737,
+        "delta1": 0.6333308647039164,
+        "point_epe_m": 0.5475174685302564
+      },
+      "random": {
+        "silog": 25.237570625711538,
+        "abs_rel": 0.19026998696016978,
+        "rmse_m": 0.7998018270239091,
+        "delta1": 0.6327780934775014,
+        "point_epe_m": 0.5481222286052531
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 25.25477609276185,
+        "abs_rel": 0.1904649296926341,
+        "rmse_m": 0.800034187057542,
+        "delta1": 0.6321516194208975,
+        "point_epe_m": 0.5484489951647148
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 25.17293325585347,
+        "abs_rel": 0.1893440281819204,
+        "rmse_m": 0.7993652381787661,
+        "delta1": 0.6333308647039164,
+        "point_epe_m": 0.5467511712554882
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0105",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 27.174880804003894,
+        "abs_rel": 0.20879507123129815,
+        "rmse_m": 0.8377214653607592,
+        "delta1": 0.6073063658956424,
+        "point_epe_m": 0.5836780755163892
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 27.160616966954642,
+        "abs_rel": 0.20843413140953732,
+        "rmse_m": 0.838752591012888,
+        "delta1": 0.6073063658956424,
+        "point_epe_m": 0.5837235399560443
+      },
+      "random": {
+        "silog": 27.18066786350962,
+        "abs_rel": 0.2088180099229922,
+        "rmse_m": 0.8380828743985353,
+        "delta1": 0.6067973004799934,
+        "point_epe_m": 0.5838870776442207
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 27.176022716793327,
+        "abs_rel": 0.20887218413653127,
+        "rmse_m": 0.837437161570876,
+        "delta1": 0.6073063658956424,
+        "point_epe_m": 0.5836608296888441
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 27.12523525131556,
+        "abs_rel": 0.20801070920198753,
+        "rmse_m": 0.8381716987947162,
+        "delta1": 0.6073063658956424,
+        "point_epe_m": 0.5829911805249162
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0106",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 28.630743198522616,
+        "abs_rel": 0.23021351406483215,
+        "rmse_m": 0.7896601869118269,
+        "delta1": 0.5948835712761542,
+        "point_epe_m": 0.5579044624778609
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 28.56834999280764,
+        "abs_rel": 0.22932747316909596,
+        "rmse_m": 0.7891645079749054,
+        "delta1": 0.5937966147544151,
+        "point_epe_m": 0.557181163213498
+      },
+      "random": {
+        "silog": 28.62229860428663,
+        "abs_rel": 0.23010061481155342,
+        "rmse_m": 0.7896061949257469,
+        "delta1": 0.5940859387732685,
+        "point_epe_m": 0.5578857238644841
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 28.580613055536617,
+        "abs_rel": 0.2294640362668661,
+        "rmse_m": 0.7893847257852844,
+        "delta1": 0.5937966147544151,
+        "point_epe_m": 0.557391057035988
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 28.52958481261597,
+        "abs_rel": 0.2287796523958999,
+        "rmse_m": 0.7886624045018483,
+        "delta1": 0.5960090041349461,
+        "point_epe_m": 0.556359949788676
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0107",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 28.958310227570436,
+        "abs_rel": 0.2319592130097517,
+        "rmse_m": 0.813650500748303,
+        "delta1": 0.5830099733883523,
+        "point_epe_m": 0.5708645675254207
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 28.91604581373405,
+        "abs_rel": 0.23113254565422733,
+        "rmse_m": 0.8140589221021737,
+        "delta1": 0.5830099733883523,
+        "point_epe_m": 0.5709153041045107
+      },
+      "random": {
+        "silog": 28.96528168283429,
+        "abs_rel": 0.23195157784554712,
+        "rmse_m": 0.8141964044895876,
+        "delta1": 0.5820709596494,
+        "point_epe_m": 0.5712018496196893
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 28.93018671198448,
+        "abs_rel": 0.23126115614414772,
+        "rmse_m": 0.8143533352772587,
+        "delta1": 0.5830099733883523,
+        "point_epe_m": 0.5710591140710514
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 28.878636501358173,
+        "abs_rel": 0.23045483160537378,
+        "rmse_m": 0.8137429775917135,
+        "delta1": 0.586505299971194,
+        "point_epe_m": 0.569861139501976
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0108",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 30.81084185731634,
+        "abs_rel": 0.2538906452309894,
+        "rmse_m": 0.8326640620582026,
+        "delta1": 0.5327516568954925,
+        "point_epe_m": 0.5865338614021001
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 30.766493017819435,
+        "abs_rel": 0.2526388673107964,
+        "rmse_m": 0.8334801255087783,
+        "delta1": 0.536125076169647,
+        "point_epe_m": 0.5856525893965707
+      },
+      "random": {
+        "silog": 30.827287071864664,
+        "abs_rel": 0.2539765931446788,
+        "rmse_m": 0.8333087933251653,
+        "delta1": 0.532021653914025,
+        "point_epe_m": 0.586931236487432
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 30.84881054841623,
+        "abs_rel": 0.25429594604797734,
+        "rmse_m": 0.8335545459523965,
+        "delta1": 0.531610104384077,
+        "point_epe_m": 0.5873506802348587
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 30.766493017819435,
+        "abs_rel": 0.2526388673107964,
+        "rmse_m": 0.8334801255087783,
+        "delta1": 0.536125076169647,
+        "point_epe_m": 0.5856525893965707
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0109",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 32.34159828966144,
+        "abs_rel": 0.2529528025311266,
+        "rmse_m": 0.8052492910782135,
+        "delta1": 0.5825309024150591,
+        "point_epe_m": 0.5496813990497753
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 32.3175574692733,
+        "abs_rel": 0.2518924426736512,
+        "rmse_m": 0.8069949623820742,
+        "delta1": 0.5835682468133994,
+        "point_epe_m": 0.5493172356134899
+      },
+      "random": {
+        "silog": 32.35503633384103,
+        "abs_rel": 0.2529165823640074,
+        "rmse_m": 0.8059234690808805,
+        "delta1": 0.5827902385146443,
+        "point_epe_m": 0.5498935222136254
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 32.36268196175196,
+        "abs_rel": 0.2531992192302753,
+        "rmse_m": 0.8055110547280964,
+        "delta1": 0.5825309024150591,
+        "point_epe_m": 0.5500121432594235
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 32.30295783365849,
+        "abs_rel": 0.2528212440641009,
+        "rmse_m": 0.803745186568252,
+        "delta1": 0.5825309024150591,
+        "point_epe_m": 0.54899625478943
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0110",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 31.055228430163726,
+        "abs_rel": 0.2677901707590458,
+        "rmse_m": 0.5745639550608657,
+        "delta1": 0.5499734336401885,
+        "point_epe_m": 0.4266945789709525
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.941261454587885,
+        "abs_rel": 0.2660459269337284,
+        "rmse_m": 0.5739111446099503,
+        "delta1": 0.5578166312046473,
+        "point_epe_m": 0.4251832401709364
+      },
+      "random": {
+        "silog": 31.03970479915545,
+        "abs_rel": 0.26751826699192915,
+        "rmse_m": 0.5745699924232319,
+        "delta1": 0.5511071383446957,
+        "point_epe_m": 0.4265205396212707
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.96157545682985,
+        "abs_rel": 0.26629189894093086,
+        "rmse_m": 0.5742142005766284,
+        "delta1": 0.5558519870792806,
+        "point_epe_m": 0.4255209609698626
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.941261454587885,
+        "abs_rel": 0.2660459269337284,
+        "rmse_m": 0.5739111446099503,
+        "delta1": 0.5578166312046473,
+        "point_epe_m": 0.4251832401709364
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0111",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 29.92136072619962,
+        "abs_rel": 0.2537259761195492,
+        "rmse_m": 0.5338992731258538,
+        "delta1": 0.5235603204126138,
+        "point_epe_m": 0.3908000467796123
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 29.82831681953548,
+        "abs_rel": 0.25226581677036686,
+        "rmse_m": 0.534021926241055,
+        "delta1": 0.5265053566948432,
+        "point_epe_m": 0.38965786852023787
+      },
+      "random": {
+        "silog": 29.906056508464367,
+        "abs_rel": 0.25344115265394085,
+        "rmse_m": 0.5340104927096825,
+        "delta1": 0.5239141546982351,
+        "point_epe_m": 0.3906029845627461
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 29.84787417277464,
+        "abs_rel": 0.2524605636414312,
+        "rmse_m": 0.5343108063443328,
+        "delta1": 0.5245407125694765,
+        "point_epe_m": 0.3899275338073461
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 29.82831681953548,
+        "abs_rel": 0.25226581677036686,
+        "rmse_m": 0.534021926241055,
+        "delta1": 0.5265053566948432,
+        "point_epe_m": 0.38965786852023787
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0112",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.700999489231656,
+        "abs_rel": 0.25598791563211487,
+        "rmse_m": 0.5469111742070946,
+        "delta1": 0.533203125,
+        "point_epe_m": 0.3917684037593273
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.618987086119,
+        "abs_rel": 0.2546181439946402,
+        "rmse_m": 0.5471470735947112,
+        "delta1": 0.5380859375,
+        "point_epe_m": 0.39083291416527927
+      },
+      "random": {
+        "silog": 30.691014064928325,
+        "abs_rel": 0.2557801663130399,
+        "rmse_m": 0.5470736409046857,
+        "delta1": 0.5332794189453125,
+        "point_epe_m": 0.39168528602663427
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.637122068664958,
+        "abs_rel": 0.2548410691606757,
+        "rmse_m": 0.54734410087504,
+        "delta1": 0.5341796875,
+        "point_epe_m": 0.3910839937758186
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.618987086119,
+        "abs_rel": 0.2546181439946402,
+        "rmse_m": 0.5471470735947112,
+        "delta1": 0.5380859375,
+        "point_epe_m": 0.39083291416527927
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0113",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 26.42192082408729,
+        "abs_rel": 0.21845285178388413,
+        "rmse_m": 0.4434171527220485,
+        "delta1": 0.5857115502450981,
+        "point_epe_m": 0.30946920132365807
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 26.328396505710863,
+        "abs_rel": 0.21746160641849732,
+        "rmse_m": 0.4429223028130449,
+        "delta1": 0.5866957720588236,
+        "point_epe_m": 0.30852793428349284
+      },
+      "random": {
+        "silog": 26.409554243426975,
+        "abs_rel": 0.2183060555204503,
+        "rmse_m": 0.4434267227249676,
+        "delta1": 0.585772944431679,
+        "point_epe_m": 0.30935702006112054
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 26.409439839591478,
+        "abs_rel": 0.21835718386241945,
+        "rmse_m": 0.44313396228785423,
+        "delta1": 0.5857115502450981,
+        "point_epe_m": 0.3092904852207437
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 26.328396505710863,
+        "abs_rel": 0.21746160641849732,
+        "rmse_m": 0.4429223028130449,
+        "delta1": 0.5866957720588236,
+        "point_epe_m": 0.30852793428349284
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0114",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.193844736159527,
+        "abs_rel": 0.24040211984116958,
+        "rmse_m": 0.5506448021767139,
+        "delta1": 0.5715807195171376,
+        "point_epe_m": 0.3726531422989217
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.13983470445551,
+        "abs_rel": 0.2392655967618163,
+        "rmse_m": 0.5511638847367578,
+        "delta1": 0.5725611116740004,
+        "point_epe_m": 0.3718546003272499
+      },
+      "random": {
+        "silog": 30.18990883848381,
+        "abs_rel": 0.24024693938562414,
+        "rmse_m": 0.5508352023209873,
+        "delta1": 0.5715195646841105,
+        "point_epe_m": 0.37257975388192166
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.15347725020514,
+        "abs_rel": 0.23970091901633792,
+        "rmse_m": 0.550705226212583,
+        "delta1": 0.5715807195171376,
+        "point_epe_m": 0.3720764640939904
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 30.13983470445551,
+        "abs_rel": 0.2392655967618163,
+        "rmse_m": 0.5511638847367578,
+        "delta1": 0.5725611116740004,
+        "point_epe_m": 0.3718546003272499
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0115",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 31.49657018310173,
+        "abs_rel": 0.2571101610720268,
+        "rmse_m": 0.5791505840498145,
+        "delta1": 0.5220819823992588,
+        "point_epe_m": 0.3981111138340015
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 31.43832326203445,
+        "abs_rel": 0.25588517400656896,
+        "rmse_m": 0.5795820477035072,
+        "delta1": 0.5230623745561216,
+        "point_epe_m": 0.39719850397319967
+      },
+      "random": {
+        "silog": 31.491961148366272,
+        "abs_rel": 0.2569414742139765,
+        "rmse_m": 0.5793178789315254,
+        "delta1": 0.5224955853404354,
+        "point_epe_m": 0.3980140978711336
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 31.488075727218032,
+        "abs_rel": 0.2570037848388955,
+        "rmse_m": 0.5790170775818969,
+        "delta1": 0.5220819823992588,
+        "point_epe_m": 0.39797375111878563
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 31.43832326203445,
+        "abs_rel": 0.25588517400656896,
+        "rmse_m": 0.5795820477035072,
+        "delta1": 0.5230623745561216,
+        "point_epe_m": 0.39719850397319967
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0116",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 32.533701659838336,
+        "abs_rel": 0.2588833207375594,
+        "rmse_m": 0.6112881509358873,
+        "delta1": 0.5142311255210745,
+        "point_epe_m": 0.4121905747797964
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 32.480595431481916,
+        "abs_rel": 0.25764025487706593,
+        "rmse_m": 0.6117713352748337,
+        "delta1": 0.5161919098348,
+        "point_epe_m": 0.4112450465966288
+      },
+      "random": {
+        "silog": 32.52930118265069,
+        "abs_rel": 0.2587188318083824,
+        "rmse_m": 0.6114362696124636,
+        "delta1": 0.5138324190404508,
+        "point_epe_m": 0.4120854084140253
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 32.51351320829116,
+        "abs_rel": 0.25839452462053464,
+        "rmse_m": 0.6115184934494514,
+        "delta1": 0.5142311255210745,
+        "point_epe_m": 0.41182829125071035
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 32.480595431481916,
+        "abs_rel": 0.25764025487706593,
+        "rmse_m": 0.6117713352748337,
+        "delta1": 0.5161919098348,
+        "point_epe_m": 0.4112450465966288
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0117",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 34.063652573557405,
+        "abs_rel": 0.27541436063360747,
+        "rmse_m": 0.6399709221125114,
+        "delta1": 0.4936120117338274,
+        "point_epe_m": 0.43933014434000556
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 33.99095951081374,
+        "abs_rel": 0.27401113112474584,
+        "rmse_m": 0.6401441692670614,
+        "delta1": 0.4945885742338274,
+        "point_epe_m": 0.43820923398894673
+      },
+      "random": {
+        "silog": 34.054914342028496,
+        "abs_rel": 0.2752149105872842,
+        "rmse_m": 0.6400469613899178,
+        "delta1": 0.4936730468900774,
+        "point_epe_m": 0.43918241051958606
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 34.08299313414577,
+        "abs_rel": 0.2757619142789082,
+        "rmse_m": 0.6399791141744385,
+        "delta1": 0.4936120117338274,
+        "point_epe_m": 0.43961987112609924
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 33.99095951081374,
+        "abs_rel": 0.27401113112474584,
+        "rmse_m": 0.6401441692670614,
+        "delta1": 0.4945885742338274,
+        "point_epe_m": 0.43820923398894673
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0118",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 33.486055407242496,
+        "abs_rel": 0.2601734446902327,
+        "rmse_m": 0.6374490947996325,
+        "delta1": 0.5293504901960784,
+        "point_epe_m": 0.4210242942717589
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 33.42258181591476,
+        "abs_rel": 0.25878311258067443,
+        "rmse_m": 0.6377725825121892,
+        "delta1": 0.5322878370098039,
+        "point_epe_m": 0.41986040348405423
+      },
+      "random": {
+        "silog": 33.47874378602893,
+        "abs_rel": 0.25996211737472175,
+        "rmse_m": 0.6375655767815263,
+        "delta1": 0.5296563840379902,
+        "point_epe_m": 0.4208614195742776
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 33.480669720237444,
+        "abs_rel": 0.25997685694775297,
+        "rmse_m": 0.6376001234560053,
+        "delta1": 0.5293504901960784,
+        "point_epe_m": 0.4208766894096482
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 33.42258181591476,
+        "abs_rel": 0.25878311258067443,
+        "rmse_m": 0.6377725825121892,
+        "delta1": 0.5322878370098039,
+        "point_epe_m": 0.41986040348405423
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0119",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 31.81380038560474,
+        "abs_rel": 0.2413837590855546,
+        "rmse_m": 0.5959131504559113,
+        "delta1": 0.5402469378621052,
+        "point_epe_m": 0.3844008478066544
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 31.762414409022313,
+        "abs_rel": 0.2401992770518274,
+        "rmse_m": 0.5963110916446982,
+        "delta1": 0.5422193321230993,
+        "point_epe_m": 0.383414559818569
+      },
+      "random": {
+        "silog": 31.809742360685505,
+        "abs_rel": 0.2412002464510536,
+        "rmse_m": 0.5960725137728364,
+        "delta1": 0.5403567706235608,
+        "point_epe_m": 0.38426955207395763
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 31.83556191971812,
+        "abs_rel": 0.24185933997488207,
+        "rmse_m": 0.5957698170662156,
+        "delta1": 0.5392665457052425,
+        "point_epe_m": 0.38479550758002445
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 31.762414409022313,
+        "abs_rel": 0.2401992770518274,
+        "rmse_m": 0.5963110916446982,
+        "delta1": 0.5422193321230993,
+        "point_epe_m": 0.383414559818569
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0120",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 33.68750023720697,
+        "abs_rel": 0.2706778291285621,
+        "rmse_m": 0.6282742120329313,
+        "delta1": 0.49754901960784315,
+        "point_epe_m": 0.4283042647239982
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 33.618204959261064,
+        "abs_rel": 0.2693891435276605,
+        "rmse_m": 0.6282957512214862,
+        "delta1": 0.49950980392156863,
+        "point_epe_m": 0.42722493676416384
+      },
+      "random": {
+        "silog": 33.67959092333916,
+        "abs_rel": 0.27048957261660195,
+        "rmse_m": 0.6283449463755074,
+        "delta1": 0.4978094362745098,
+        "point_epe_m": 0.428164029620862
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 33.67994606302524,
+        "abs_rel": 0.2705730049173958,
+        "rmse_m": 0.6281926677884397,
+        "delta1": 0.49754901960784315,
+        "point_epe_m": 0.4281888864950675
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 33.618204959261064,
+        "abs_rel": 0.2693891435276605,
+        "rmse_m": 0.6282957512214862,
+        "delta1": 0.49950980392156863,
+        "point_epe_m": 0.42722493676416384
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0121",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 33.4087478020232,
+        "abs_rel": 0.2770045142281977,
+        "rmse_m": 0.6146770663282519,
+        "delta1": 0.48524394009572336,
+        "point_epe_m": 0.4303521616834254
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 33.33609032885071,
+        "abs_rel": 0.2756336520032196,
+        "rmse_m": 0.6147769729929022,
+        "delta1": 0.49015748031496065,
+        "point_epe_m": 0.4292935717103617
+      },
+      "random": {
+        "silog": 33.40070746527809,
+        "abs_rel": 0.27680510636816613,
+        "rmse_m": 0.614774990668961,
+        "delta1": 0.4861816330863054,
+        "point_epe_m": 0.43022221096130103
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 33.426164704994086,
+        "abs_rel": 0.2773056809200686,
+        "rmse_m": 0.61470671513849,
+        "delta1": 0.4842635479388606,
+        "point_epe_m": 0.4306008467554223
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 33.33609032885071,
+        "abs_rel": 0.2756336520032196,
+        "rmse_m": 0.6147769729929022,
+        "delta1": 0.49015748031496065,
+        "point_epe_m": 0.4292935717103617
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0071",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 32.71391199771987,
+        "abs_rel": 0.2897791815451876,
+        "rmse_m": 0.9741157426668765,
+        "delta1": 0.4464180947969739,
+        "point_epe_m": 0.8055256012640554
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 32.32694597820869,
+        "abs_rel": 0.2847623013125443,
+        "rmse_m": 0.9608337282124239,
+        "delta1": 0.45035124285934847,
+        "point_epe_m": 0.7937812102402851
+      },
+      "random": {
+        "silog": 32.556741235381395,
+        "abs_rel": 0.2877708802975819,
+        "rmse_m": 0.9686509894234288,
+        "delta1": 0.4475704295005404,
+        "point_epe_m": 0.8006772447843371
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 32.467796791227514,
+        "abs_rel": 0.2866397867715838,
+        "rmse_m": 0.9636647365393833,
+        "delta1": 0.4483865987339818,
+        "point_epe_m": 0.7973143825277167
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 32.262139800933014,
+        "abs_rel": 0.2840915906079411,
+        "rmse_m": 0.9583178270181397,
+        "delta1": 0.4513354948278524,
+        "point_epe_m": 0.7920484720639743
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0072",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 26.69624323174068,
+        "abs_rel": 0.22496603756571773,
+        "rmse_m": 0.6317853234846192,
+        "delta1": 0.4832369586614173,
+        "point_epe_m": 0.538822733274294
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 26.597078286290845,
+        "abs_rel": 0.22400830494472657,
+        "rmse_m": 0.629744839855609,
+        "delta1": 0.4861897145669291,
+        "point_epe_m": 0.5368264322874389
+      },
+      "random": {
+        "silog": 26.564219777421712,
+        "abs_rel": 0.2236460402264481,
+        "rmse_m": 0.6290955474500256,
+        "delta1": 0.4865431898222195,
+        "point_epe_m": 0.5361267545645908
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 26.473084314583026,
+        "abs_rel": 0.22275841151114653,
+        "rmse_m": 0.6271196407831765,
+        "delta1": 0.48815821850393704,
+        "point_epe_m": 0.5342952360197233
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 26.35529435064648,
+        "abs_rel": 0.22164251376834843,
+        "rmse_m": 0.624698184536084,
+        "delta1": 0.4930794783464567,
+        "point_epe_m": 0.5320569326243184
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0073",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 25.592879536318286,
+        "abs_rel": 0.22811879561985476,
+        "rmse_m": 0.6990654760614051,
+        "delta1": 0.5283314999228037,
+        "point_epe_m": 0.5803874801450976
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 25.56476717458921,
+        "abs_rel": 0.2277032709208229,
+        "rmse_m": 0.6989978744327769,
+        "delta1": 0.5302884545796664,
+        "point_epe_m": 0.5798953288678135
+      },
+      "random": {
+        "silog": 25.539902599575022,
+        "abs_rel": 0.22744235446109135,
+        "rmse_m": 0.698745807781943,
+        "delta1": 0.529891666225653,
+        "point_epe_m": 0.5794684745120379
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 25.462623490784946,
+        "abs_rel": 0.22660384259023597,
+        "rmse_m": 0.6977629435166478,
+        "delta1": 0.5312688467365292,
+        "point_epe_m": 0.5781042400308481
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 25.42864512306172,
+        "abs_rel": 0.22619375700566918,
+        "rmse_m": 0.6975071848899143,
+        "delta1": 0.5322492388933919,
+        "point_epe_m": 0.5774502748363403
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0074",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.576790698594117,
+        "abs_rel": 0.26387316274361394,
+        "rmse_m": 0.7637908298913081,
+        "delta1": 0.41796875,
+        "point_epe_m": 0.6603183103891801
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.53618469296546,
+        "abs_rel": 0.2634170084890448,
+        "rmse_m": 0.7628351674620084,
+        "delta1": 0.41796875,
+        "point_epe_m": 0.6594215871768287
+      },
+      "random": {
+        "silog": 30.53298354886065,
+        "abs_rel": 0.2633955662274583,
+        "rmse_m": 0.7628177671681213,
+        "delta1": 0.418487548828125,
+        "point_epe_m": 0.6593994372778353
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.54128845888668,
+        "abs_rel": 0.26347669057306267,
+        "rmse_m": 0.7629481792971341,
+        "delta1": 0.41796875,
+        "point_epe_m": 0.6595415769756916
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 30.36500757602555,
+        "abs_rel": 0.2616083357356242,
+        "rmse_m": 0.7588750044238173,
+        "delta1": 0.421875,
+        "point_epe_m": 0.6558924931013251
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0075",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.013689655552522,
+        "abs_rel": 0.2525282807617959,
+        "rmse_m": 0.8503851329123594,
+        "delta1": 0.5390625,
+        "point_epe_m": 0.6859238587526695
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 28.97942293488387,
+        "abs_rel": 0.25219083422418787,
+        "rmse_m": 0.84943681957942,
+        "delta1": 0.5390625,
+        "point_epe_m": 0.6852463947806645
+      },
+      "random": {
+        "silog": 28.978024325568164,
+        "abs_rel": 0.252146977860533,
+        "rmse_m": 0.8490965326850922,
+        "delta1": 0.5385894775390625,
+        "point_epe_m": 0.6850707515711014
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 28.979194345627015,
+        "abs_rel": 0.2521130893412692,
+        "rmse_m": 0.8494850115260458,
+        "delta1": 0.5390625,
+        "point_epe_m": 0.6850334834376882
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 28.816313093463496,
+        "abs_rel": 0.2503274586607667,
+        "rmse_m": 0.8443068355368233,
+        "delta1": 0.5400390625,
+        "point_epe_m": 0.6813464676925864
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0076",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.81323283584465,
+        "abs_rel": 0.24149161463683566,
+        "rmse_m": 1.0609938308096538,
+        "delta1": 0.509765625,
+        "point_epe_m": 0.8723157908513846
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.53756317915524,
+        "abs_rel": 0.23864437907642536,
+        "rmse_m": 1.04584394914178,
+        "delta1": 0.517578125,
+        "point_epe_m": 0.8617647569272278
+      },
+      "random": {
+        "silog": 29.71439882255101,
+        "abs_rel": 0.24042422561975962,
+        "rmse_m": 1.0540287800456536,
+        "delta1": 0.5142059326171875,
+        "point_epe_m": 0.8677264371938445
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.65804924694819,
+        "abs_rel": 0.2397508093134675,
+        "rmse_m": 1.0461737478320159,
+        "delta1": 0.5166015625,
+        "point_epe_m": 0.863374171663688
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.50069588966072,
+        "abs_rel": 0.23820700176880782,
+        "rmse_m": 1.0434213091969027,
+        "delta1": 0.517578125,
+        "point_epe_m": 0.8603596185422844
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0077",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 33.57680222674627,
+        "abs_rel": 0.27272936792161445,
+        "rmse_m": 0.8707450535228765,
+        "delta1": 0.503450717375743,
+        "point_epe_m": 0.7138686528028226
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 33.35351468148755,
+        "abs_rel": 0.27027780822614955,
+        "rmse_m": 0.8632956353689267,
+        "delta1": 0.5054192213127509,
+        "point_epe_m": 0.7081927427049698
+      },
+      "random": {
+        "silog": 33.50966622109148,
+        "abs_rel": 0.27198266378349545,
+        "rmse_m": 0.8682171631134565,
+        "delta1": 0.504203922955032,
+        "point_epe_m": 0.7119935793065765
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 33.63317692853006,
+        "abs_rel": 0.2734213746513102,
+        "rmse_m": 0.8718773856350995,
+        "delta1": 0.5034545771873842,
+        "point_epe_m": 0.7150117569118752
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 33.226956452409375,
+        "abs_rel": 0.26880595401675467,
+        "rmse_m": 0.8591107729048828,
+        "delta1": 0.5093407899402018,
+        "point_epe_m": 0.7051370394499266
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0078",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 37.72978524245035,
+        "abs_rel": 0.32853633808688143,
+        "rmse_m": 0.9836487063367397,
+        "delta1": 0.4385324996140188,
+        "point_epe_m": 0.8404893273094223
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 37.3798297372755,
+        "abs_rel": 0.32390898151286285,
+        "rmse_m": 0.9709071202768043,
+        "delta1": 0.4434537594565385,
+        "point_epe_m": 0.8290857845247085
+      },
+      "random": {
+        "silog": 37.59807521969824,
+        "abs_rel": 0.32677640847524625,
+        "rmse_m": 0.978490961728163,
+        "delta1": 0.43987125115794345,
+        "point_epe_m": 0.8360007757567027
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 37.70937935663298,
+        "abs_rel": 0.3282664518102686,
+        "rmse_m": 0.9826562141573746,
+        "delta1": 0.4385324996140188,
+        "point_epe_m": 0.8398663001243462
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 37.28472277564548,
+        "abs_rel": 0.3228537171751379,
+        "rmse_m": 0.9668982860928887,
+        "delta1": 0.4444380114250424,
+        "point_epe_m": 0.825827393109537
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0079",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "accepted": true,
+      "bank_size": 64,
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 40.57887307907761,
+        "abs_rel": 0.34574637222398147,
+        "rmse_m": 0.9641115258842696,
+        "delta1": 0.401376396626311,
+        "point_epe_m": 0.780632142576289
+      },
+      "full": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 40.272237825595774,
+        "abs_rel": 0.3421205322899239,
+        "rmse_m": 0.9557715409158477,
+        "delta1": 0.4053211851482991,
+        "point_epe_m": 0.7724564738650719
+      },
+      "random": {
+        "silog": 40.461859317611825,
+        "abs_rel": 0.3445283847722776,
+        "rmse_m": 0.9610190373790457,
+        "delta1": 0.4022233323153652,
+        "point_epe_m": 0.7776431011194418
+      },
+      "appearance": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 40.53629801743975,
+        "abs_rel": 0.3456763839082444,
+        "rmse_m": 0.9629573196644263,
+        "delta1": 0.4003882543338209,
+        "point_epe_m": 0.7796687869680843
+      },
+      "oracle": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 40.17734501009543,
+        "abs_rel": 0.3411467632691799,
+        "rmse_m": 0.9536051439870079,
+        "delta1": 0.40532507547228536,
+        "point_epe_m": 0.7701283048959222
+      }
+    }
+  ]
+}

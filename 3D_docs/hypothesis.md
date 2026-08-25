@@ -6,7 +6,7 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Partially supported.** Global and slot states failed context selectivity, whereas transported visual local codes produced reusable geometry benefit after the EXP-028 refit. EXP-030 and the untouched EXP-031 terminal evaluation show that the selected local-memory policy improves all three primary means over current-only TTT. A controlled global-state implementation still failed earlier, but universal superiority of local codes across backbones/datasets is not established.
+Status: **Supported for the tested FastVGGT depth/point setting.** Global and slot states failed context selectivity, whereas transported visual local codes improved all primary means in EXP-030/031 and again over current-only within every TUM sequence in EXP-035. Universal superiority across backbones, pose heads, and dynamic scenes is not established.
 
 ## H2-P — Predicted geometry as the update carrier
 
@@ -24,13 +24,13 @@ Status: **Rejected as a primary input.** No-alignment observable routing general
 
 Current/source descriptors, current-only loss changes, update statistics, and transport evidence predict the future utility of a past local correction without accessing future frames online.
 
-Status: **Supported in the tested static-revisit setting.** EXP-029 learned a source-safe metric-utility address without online query access. The frozen address generalized in EXP-030 and EXP-031: selected memory improved SILog, aligned AbsRel, and 3D EPE over current-only and same-bank random means. Cross-dataset observability remains open.
+Status: **Supported in the tested static-revisit setting.** EXP-029 learned a source-safe metric-utility address without online query access. The frozen address generalized in EXP-030/031 and retained positive sequence-balanced means in zero-shot TUM EXP-035. TUM acceptance was 100%, so cross-domain rejection calibration remains unsupported.
 
 ## H4-U — Learnable utility addressing and routing
 
 A trainable candidate/current utility model can retrieve and apply more useful adaptation than identity, appearance/place similarity, current-loss heuristics, and matched random addressing.
 
-Status: **Supported in the tested static-revisit setting.** The single factorized metric-utility Ridge address beat matched random and appearance in development. Frozen terminal memory improved every primary mean over both controls, with positive comparison-family intervals. This does not establish reliable per-sample harm rejection or transfer beyond nuScenes/FastVGGT.
+Status: **Supported in the tested static-revisit setting.** The single factorized metric-utility Ridge address beat matched random and appearance means in development, untouched nuScenes terminal evaluation, and the three-sequence TUM descriptive transfer. This does not establish reliable per-sample harm rejection or transfer beyond the FastVGGT feature space.
 
 ## H4-R — Learnable negative-transfer risk
 
