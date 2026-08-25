@@ -330,3 +330,10 @@ gain of `6.05e-5` with positive scene-bootstrap interval and 1.67% harm. These
 inspected numbers are not confirmatory evidence. EXP-044 will preserve the
 post-hoc diagnostic, after which the algebraic zero rule may be frozen for one
 validation experiment without fitting a router or threshold.
+
+EXP-044 recorded the post-hoc result: zero-agreement routing accepts 48.33%,
+gains `6.05e-5` with CI `[2.60e-5, 1.04e-4]`, and harms 1.67%, nearly matching
+oracle fallback. D123 freezes that exact rule and EXP-043 checkpoint. EXP-045
+is registered for a one-shot 14-scene/213-pair validation with ungated and
+independently routed spatial-shuffle controls. Validation pixels remain unopened
+at registration; terminal remains closed.

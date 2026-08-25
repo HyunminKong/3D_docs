@@ -1,6 +1,6 @@
 # EXP-044 — Post-hoc Zero-Agreement Routing Diagnostic
 
-Status: Registered as post-hoc analysis
+Status: Completed as post-hoc analysis
 Purpose: Preserve the EXP-043 routing lead without confirmatory claims
 
 ## Question
@@ -26,3 +26,19 @@ is to freeze a hypothesis for a later untouched split.
 - Config: `configs/EXP-044_posthoc_zero_agreement_routing_v10.yaml`
 - Script: `revisit3d/scripts/analyze_exp044_posthoc_zero_agreement_routing.py`
 - Result: `revisit3d/results/EXP-044/posthoc_zero_agreement_routing_v10.json`
+
+## Result
+
+Agreement has Pearson `r=0.7518` with future reuse utility. Unconditional reuse
+gains `9.30e-6`, has CI `[-3.30e-5, 5.02e-5]`, and harms 50.0%. The fixed
+positive-agreement rule accepts 48.33%, gains `6.05e-5` with scene-bootstrap CI
+`[2.60e-5, 1.04e-4]`, improves 14/15 scenes, and harms 1.67%. Oracle fallback
+gains `6.12e-5`; thus the post-hoc rule retains nearly all observed oracle
+headroom on this exposed audit.
+
+## Conclusion
+
+The failed ungated mean hides a sharply addressable utility structure. This is
+not confirmatory evidence, but it justifies freezing the algebraic zero rule for
+one untouched validation evaluation. No threshold was fitted and no learned
+router was introduced.

@@ -1329,3 +1329,19 @@ is algebraic descent agreement, not a calibrated threshold. EXP-044 must record
 the post-hoc development calculation transparently. Only after its code and
 policy are frozen may a new EXP ID open validation once. No learned address,
 risk head, threshold sweep, new loss, or memory bank is authorized yet.
+
+## D123 — Freeze zero-agreement routing for one-shot validation
+
+Date: 2026-08-25
+Status: Accepted after post-hoc EXP-044
+
+EXP-044 transparently confirms the inspected development pattern: the strict
+positive-agreement rule retains nearly all oracle fallback gain and reduces
+harm to one of 60 pairs. This remains post-hoc and cannot support the paper
+claim by itself.
+
+The EXP-043 checkpoint, one-step loss, visual transport, and threshold zero are
+now immutable. EXP-045 may open every EXP-039 validation pair once and must
+compare unconditional reuse plus an independently scored spatial-shuffle
+control. No validation result may tune the threshold, basis, step size,
+transport, or gate. Terminal remains closed.

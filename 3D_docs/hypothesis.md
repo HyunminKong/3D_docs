@@ -112,3 +112,13 @@ correct-over-shuffle confidence intervals crossed zero. Post-hoc analysis found
 large oracle-abstention headroom and strong association between online
 current/memory code agreement and utility. EXP-044 records that lead; only a
 pre-frozen validation policy can support the routing sub-hypothesis.
+
+## H10 — Parameter-free descent-agreement routing
+
+The algebraic sign of the cosine between current and transported memory codes
+is sufficient online evidence to reject most harmful reuse without a learned
+router or tuned threshold.
+
+Status: **Open.** EXP-044 provides strong but explicitly post-hoc development
+support. The exact positive-sign rule is frozen for EXP-045; only unseen
+scene-disjoint validation can support the hypothesis.

@@ -1,0 +1,1688 @@
+{
+  "experiment": "EXP-044",
+  "stage": "posthoc_zero_agreement_routing_diagnostic",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-044_posthoc_zero_agreement_routing_v10.yaml",
+  "posthoc": true,
+  "threshold_fitted": false,
+  "threshold": 0.0,
+  "pairs": 60,
+  "scenes": 15,
+  "agreement_utility_pearson": 0.7517763925711969,
+  "policies": {
+    "ungated": {
+      "selected_loss": 0.15887452835838,
+      "gain_over_current": 9.300032009662562e-06,
+      "acceptance_fraction": 1.0,
+      "harm_fraction": 0.5,
+      "uncertainty": {
+        "mean": 9.300032009681066e-06,
+        "ci95": [
+          -3.295579692348838e-05,
+          5.016996990889305e-05
+        ],
+        "positive_scenes": 8,
+        "scenes": 15
+      },
+      "rows": [
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:000",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": -0.1477781981229782,
+          "target_current_loss": 0.21467125415802002,
+          "target_full_loss": 0.21470995247364044,
+          "selected_loss": 0.21470995247364044
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:001",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": -0.08105756342411041,
+          "target_current_loss": 0.2077338993549347,
+          "target_full_loss": 0.20777007937431335,
+          "selected_loss": 0.20777007937431335
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:002",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": 0.4145803451538086,
+          "target_current_loss": 0.36926692724227905,
+          "target_full_loss": 0.36914336681365967,
+          "selected_loss": 0.36914336681365967
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:003",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": -0.018602289259433746,
+          "target_current_loss": 0.1381075382232666,
+          "target_full_loss": 0.13813486695289612,
+          "selected_loss": 0.13813486695289612
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:000",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.09453323483467102,
+          "target_current_loss": 0.04254375398159027,
+          "target_full_loss": 0.042534153908491135,
+          "selected_loss": 0.042534153908491135
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:001",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": -0.08793637156486511,
+          "target_current_loss": 0.04489210620522499,
+          "target_full_loss": 0.04491167515516281,
+          "selected_loss": 0.04491167515516281
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:002",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": -0.30043378472328186,
+          "target_current_loss": 0.04625147953629494,
+          "target_full_loss": 0.046268776059150696,
+          "selected_loss": 0.046268776059150696
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:003",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.011907489970326424,
+          "target_current_loss": 0.04578162357211113,
+          "target_full_loss": 0.04577251523733139,
+          "selected_loss": 0.04577251523733139
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:000",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": true,
+          "agreement": -0.016375204548239708,
+          "target_current_loss": 0.1953657865524292,
+          "target_full_loss": 0.19532838463783264,
+          "selected_loss": 0.19532838463783264
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:001",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": true,
+          "agreement": -0.2714155614376068,
+          "target_current_loss": 0.2165205180644989,
+          "target_full_loss": 0.21665343642234802,
+          "selected_loss": 0.21665343642234802
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:002",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": true,
+          "agreement": -0.27482250332832336,
+          "target_current_loss": 0.2993932068347931,
+          "target_full_loss": 0.2995263934135437,
+          "selected_loss": 0.2995263934135437
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:003",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": true,
+          "agreement": -0.1275634765625,
+          "target_current_loss": 0.28895753622055054,
+          "target_full_loss": 0.28896087408065796,
+          "selected_loss": 0.28896087408065796
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:000",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.23131439089775085,
+          "target_current_loss": 0.2582201063632965,
+          "target_full_loss": 0.2581419348716736,
+          "selected_loss": 0.2581419348716736
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:001",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.260847806930542,
+          "target_current_loss": 0.19599056243896484,
+          "target_full_loss": 0.19584062695503235,
+          "selected_loss": 0.19584062695503235
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:002",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": -0.13214075565338135,
+          "target_current_loss": 0.25963878631591797,
+          "target_full_loss": 0.2596382796764374,
+          "selected_loss": 0.2596382796764374
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:003",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": -0.14727245271205902,
+          "target_current_loss": 0.2101212441921234,
+          "target_full_loss": 0.21021392941474915,
+          "selected_loss": 0.21021392941474915
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:000",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.11561872810125351,
+          "target_current_loss": 0.14927531778812408,
+          "target_full_loss": 0.1492031067609787,
+          "selected_loss": 0.1492031067609787
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:001",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.3924234211444855,
+          "target_current_loss": 0.14485515654087067,
+          "target_full_loss": 0.1447778344154358,
+          "selected_loss": 0.1447778344154358
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:002",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.28053605556488037,
+          "target_current_loss": 0.14331132173538208,
+          "target_full_loss": 0.14321622252464294,
+          "selected_loss": 0.14321622252464294
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:003",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": -0.48807159066200256,
+          "target_current_loss": 0.1619659811258316,
+          "target_full_loss": 0.16214483976364136,
+          "selected_loss": 0.16214483976364136
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:000",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.1495509147644043,
+          "target_current_loss": 0.1389363706111908,
+          "target_full_loss": 0.13890939950942993,
+          "selected_loss": 0.13890939950942993
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:001",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": -0.10757763683795929,
+          "target_current_loss": 0.1085919588804245,
+          "target_full_loss": 0.10862433165311813,
+          "selected_loss": 0.10862433165311813
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:002",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.3299562335014343,
+          "target_current_loss": 0.10142519325017929,
+          "target_full_loss": 0.10137572884559631,
+          "selected_loss": 0.10137572884559631
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:003",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": -0.18793684244155884,
+          "target_current_loss": 0.09973590075969696,
+          "target_full_loss": 0.09977073967456818,
+          "selected_loss": 0.09977073967456818
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:000",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": -0.410544753074646,
+          "target_current_loss": 0.180779367685318,
+          "target_full_loss": 0.1810408979654312,
+          "selected_loss": 0.1810408979654312
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:001",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.29110968112945557,
+          "target_current_loss": 0.15142109990119934,
+          "target_full_loss": 0.15130126476287842,
+          "selected_loss": 0.15130126476287842
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:002",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.1707802414894104,
+          "target_current_loss": 0.14190775156021118,
+          "target_full_loss": 0.14175018668174744,
+          "selected_loss": 0.14175018668174744
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:003",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": -0.07864445447921753,
+          "target_current_loss": 0.2889517843723297,
+          "target_full_loss": 0.2889782190322876,
+          "selected_loss": 0.2889782190322876
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:000",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": -0.1855592131614685,
+          "target_current_loss": 0.15089231729507446,
+          "target_full_loss": 0.15133988857269287,
+          "selected_loss": 0.15133988857269287
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:001",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": -0.13244259357452393,
+          "target_current_loss": 0.2624000310897827,
+          "target_full_loss": 0.26247674226760864,
+          "selected_loss": 0.26247674226760864
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:002",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.622646689414978,
+          "target_current_loss": 0.27732235193252563,
+          "target_full_loss": 0.27682986855506897,
+          "selected_loss": 0.27682986855506897
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:003",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.3592396378517151,
+          "target_current_loss": 0.22795498371124268,
+          "target_full_loss": 0.22748826444149017,
+          "selected_loss": 0.22748826444149017
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:000",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.543718159198761,
+          "target_current_loss": 0.09625110030174255,
+          "target_full_loss": 0.0961475819349289,
+          "selected_loss": 0.0961475819349289
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:001",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": -0.4225894808769226,
+          "target_current_loss": 0.07825857400894165,
+          "target_full_loss": 0.07831089198589325,
+          "selected_loss": 0.07831089198589325
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:002",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.1567760556936264,
+          "target_current_loss": 0.12955747544765472,
+          "target_full_loss": 0.1295357644557953,
+          "selected_loss": 0.1295357644557953
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:003",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.14571020007133484,
+          "target_current_loss": 0.06797723472118378,
+          "target_full_loss": 0.06794769316911697,
+          "selected_loss": 0.06794769316911697
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:000",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": -0.07407355308532715,
+          "target_current_loss": 0.04085597023367882,
+          "target_full_loss": 0.04085680842399597,
+          "selected_loss": 0.04085680842399597
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:001",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": -0.21601945161819458,
+          "target_current_loss": 0.03351883590221405,
+          "target_full_loss": 0.033523380756378174,
+          "selected_loss": 0.033523380756378174
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:002",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": -0.3691711723804474,
+          "target_current_loss": 0.03031116910278797,
+          "target_full_loss": 0.030333541333675385,
+          "selected_loss": 0.030333541333675385
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:003",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": 0.36922192573547363,
+          "target_current_loss": 0.035355959087610245,
+          "target_full_loss": 0.03533530235290527,
+          "selected_loss": 0.03533530235290527
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:000",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.09046954661607742,
+          "target_current_loss": 0.058935508131980896,
+          "target_full_loss": 0.05891827493906021,
+          "selected_loss": 0.05891827493906021
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:001",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.270327627658844,
+          "target_current_loss": 0.05670437961816788,
+          "target_full_loss": 0.05667155236005783,
+          "selected_loss": 0.05667155236005783
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:002",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.19414246082305908,
+          "target_current_loss": 0.10630251467227936,
+          "target_full_loss": 0.10626234114170074,
+          "selected_loss": 0.10626234114170074
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:003",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": -0.4128710627555847,
+          "target_current_loss": 0.14490334689617157,
+          "target_full_loss": 0.1450892686843872,
+          "selected_loss": 0.1450892686843872
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:000",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.02183254063129425,
+          "target_current_loss": 0.45410850644111633,
+          "target_full_loss": 0.45371711254119873,
+          "selected_loss": 0.45371711254119873
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:001",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": -0.0406867116689682,
+          "target_current_loss": 0.29626113176345825,
+          "target_full_loss": 0.2963823676109314,
+          "selected_loss": 0.2963823676109314
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:002",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": -0.17994998395442963,
+          "target_current_loss": 0.3032994568347931,
+          "target_full_loss": 0.3034437596797943,
+          "selected_loss": 0.3034437596797943
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:003",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.614587664604187,
+          "target_current_loss": 0.3326475918292999,
+          "target_full_loss": 0.33200132846832275,
+          "selected_loss": 0.33200132846832275
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:000",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": -0.49261975288391113,
+          "target_current_loss": 0.12248009443283081,
+          "target_full_loss": 0.12278629839420319,
+          "selected_loss": 0.12278629839420319
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:001",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": -0.6972099542617798,
+          "target_current_loss": 0.07352831214666367,
+          "target_full_loss": 0.07406362891197205,
+          "selected_loss": 0.07406362891197205
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:002",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": 0.3411765396595001,
+          "target_current_loss": 0.14097651839256287,
+          "target_full_loss": 0.14089399576187134,
+          "selected_loss": 0.14089399576187134
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:003",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": -0.2126845121383667,
+          "target_current_loss": 0.12277375906705856,
+          "target_full_loss": 0.12281444668769836,
+          "selected_loss": 0.12281444668769836
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:000",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": -0.2903898060321808,
+          "target_current_loss": 0.14334075152873993,
+          "target_full_loss": 0.14339131116867065,
+          "selected_loss": 0.14339131116867065
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:001",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": -0.11379756778478622,
+          "target_current_loss": 0.21898092329502106,
+          "target_full_loss": 0.21901261806488037,
+          "selected_loss": 0.21901261806488037
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:002",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": -0.34928375482559204,
+          "target_current_loss": 0.16921763122081757,
+          "target_full_loss": 0.16927388310432434,
+          "selected_loss": 0.16927388310432434
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:003",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": 0.04471062496304512,
+          "target_current_loss": 0.14378896355628967,
+          "target_full_loss": 0.14376959204673767,
+          "selected_loss": 0.14376959204673767
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:000",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.1367296278476715,
+          "target_current_loss": 0.061412692070007324,
+          "target_full_loss": 0.06141326203942299,
+          "selected_loss": 0.06141326203942299
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:001",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.5837719440460205,
+          "target_current_loss": 0.10480654239654541,
+          "target_full_loss": 0.1047038808465004,
+          "selected_loss": 0.1047038808465004
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:002",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.4723699688911438,
+          "target_current_loss": 0.09977268427610397,
+          "target_full_loss": 0.09966118633747101,
+          "selected_loss": 0.09966118633747101
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:003",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.38640621304512024,
+          "target_current_loss": 0.10351885855197906,
+          "target_full_loss": 0.10343384742736816,
+          "selected_loss": 0.10343384742736816
+        }
+      ]
+    },
+    "zero_agreement": {
+      "selected_loss": 0.1588232973900934,
+      "gain_over_current": 6.053100029626557e-05,
+      "acceptance_fraction": 0.48333333333333334,
+      "harm_fraction": 0.016666666666666666,
+      "uncertainty": {
+        "mean": 6.053100029627482e-05,
+        "ci95": [
+          2.5974212524791557e-05,
+          0.00010426670933763183
+        ],
+        "positive_scenes": 14,
+        "scenes": 15
+      },
+      "rows": [
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:000",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.1477781981229782,
+          "target_current_loss": 0.21467125415802002,
+          "target_full_loss": 0.21470995247364044,
+          "selected_loss": 0.21467125415802002
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:001",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.08105756342411041,
+          "target_current_loss": 0.2077338993549347,
+          "target_full_loss": 0.20777007937431335,
+          "selected_loss": 0.2077338993549347
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:002",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": 0.4145803451538086,
+          "target_current_loss": 0.36926692724227905,
+          "target_full_loss": 0.36914336681365967,
+          "selected_loss": 0.36914336681365967
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:003",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.018602289259433746,
+          "target_current_loss": 0.1381075382232666,
+          "target_full_loss": 0.13813486695289612,
+          "selected_loss": 0.1381075382232666
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:000",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.09453323483467102,
+          "target_current_loss": 0.04254375398159027,
+          "target_full_loss": 0.042534153908491135,
+          "selected_loss": 0.042534153908491135
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:001",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": false,
+          "agreement": -0.08793637156486511,
+          "target_current_loss": 0.04489210620522499,
+          "target_full_loss": 0.04491167515516281,
+          "selected_loss": 0.04489210620522499
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:002",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": false,
+          "agreement": -0.30043378472328186,
+          "target_current_loss": 0.04625147953629494,
+          "target_full_loss": 0.046268776059150696,
+          "selected_loss": 0.04625147953629494
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:003",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.011907489970326424,
+          "target_current_loss": 0.04578162357211113,
+          "target_full_loss": 0.04577251523733139,
+          "selected_loss": 0.04577251523733139
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:000",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.016375204548239708,
+          "target_current_loss": 0.1953657865524292,
+          "target_full_loss": 0.19532838463783264,
+          "selected_loss": 0.1953657865524292
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:001",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.2714155614376068,
+          "target_current_loss": 0.2165205180644989,
+          "target_full_loss": 0.21665343642234802,
+          "selected_loss": 0.2165205180644989
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:002",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.27482250332832336,
+          "target_current_loss": 0.2993932068347931,
+          "target_full_loss": 0.2995263934135437,
+          "selected_loss": 0.2993932068347931
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:003",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.1275634765625,
+          "target_current_loss": 0.28895753622055054,
+          "target_full_loss": 0.28896087408065796,
+          "selected_loss": 0.28895753622055054
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:000",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.23131439089775085,
+          "target_current_loss": 0.2582201063632965,
+          "target_full_loss": 0.2581419348716736,
+          "selected_loss": 0.2581419348716736
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:001",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.260847806930542,
+          "target_current_loss": 0.19599056243896484,
+          "target_full_loss": 0.19584062695503235,
+          "selected_loss": 0.19584062695503235
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:002",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": false,
+          "agreement": -0.13214075565338135,
+          "target_current_loss": 0.25963878631591797,
+          "target_full_loss": 0.2596382796764374,
+          "selected_loss": 0.25963878631591797
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:003",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": false,
+          "agreement": -0.14727245271205902,
+          "target_current_loss": 0.2101212441921234,
+          "target_full_loss": 0.21021392941474915,
+          "selected_loss": 0.2101212441921234
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:000",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.11561872810125351,
+          "target_current_loss": 0.14927531778812408,
+          "target_full_loss": 0.1492031067609787,
+          "selected_loss": 0.1492031067609787
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:001",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.3924234211444855,
+          "target_current_loss": 0.14485515654087067,
+          "target_full_loss": 0.1447778344154358,
+          "selected_loss": 0.1447778344154358
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:002",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.28053605556488037,
+          "target_current_loss": 0.14331132173538208,
+          "target_full_loss": 0.14321622252464294,
+          "selected_loss": 0.14321622252464294
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:003",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": false,
+          "agreement": -0.48807159066200256,
+          "target_current_loss": 0.1619659811258316,
+          "target_full_loss": 0.16214483976364136,
+          "selected_loss": 0.1619659811258316
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:000",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.1495509147644043,
+          "target_current_loss": 0.1389363706111908,
+          "target_full_loss": 0.13890939950942993,
+          "selected_loss": 0.13890939950942993
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:001",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": false,
+          "agreement": -0.10757763683795929,
+          "target_current_loss": 0.1085919588804245,
+          "target_full_loss": 0.10862433165311813,
+          "selected_loss": 0.1085919588804245
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:002",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.3299562335014343,
+          "target_current_loss": 0.10142519325017929,
+          "target_full_loss": 0.10137572884559631,
+          "selected_loss": 0.10137572884559631
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:003",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": false,
+          "agreement": -0.18793684244155884,
+          "target_current_loss": 0.09973590075969696,
+          "target_full_loss": 0.09977073967456818,
+          "selected_loss": 0.09973590075969696
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:000",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": false,
+          "agreement": -0.410544753074646,
+          "target_current_loss": 0.180779367685318,
+          "target_full_loss": 0.1810408979654312,
+          "selected_loss": 0.180779367685318
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:001",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.29110968112945557,
+          "target_current_loss": 0.15142109990119934,
+          "target_full_loss": 0.15130126476287842,
+          "selected_loss": 0.15130126476287842
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:002",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.1707802414894104,
+          "target_current_loss": 0.14190775156021118,
+          "target_full_loss": 0.14175018668174744,
+          "selected_loss": 0.14175018668174744
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:003",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": false,
+          "agreement": -0.07864445447921753,
+          "target_current_loss": 0.2889517843723297,
+          "target_full_loss": 0.2889782190322876,
+          "selected_loss": 0.2889517843723297
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:000",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": false,
+          "agreement": -0.1855592131614685,
+          "target_current_loss": 0.15089231729507446,
+          "target_full_loss": 0.15133988857269287,
+          "selected_loss": 0.15089231729507446
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:001",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": false,
+          "agreement": -0.13244259357452393,
+          "target_current_loss": 0.2624000310897827,
+          "target_full_loss": 0.26247674226760864,
+          "selected_loss": 0.2624000310897827
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:002",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.622646689414978,
+          "target_current_loss": 0.27732235193252563,
+          "target_full_loss": 0.27682986855506897,
+          "selected_loss": 0.27682986855506897
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:003",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.3592396378517151,
+          "target_current_loss": 0.22795498371124268,
+          "target_full_loss": 0.22748826444149017,
+          "selected_loss": 0.22748826444149017
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:000",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.543718159198761,
+          "target_current_loss": 0.09625110030174255,
+          "target_full_loss": 0.0961475819349289,
+          "selected_loss": 0.0961475819349289
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:001",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": false,
+          "agreement": -0.4225894808769226,
+          "target_current_loss": 0.07825857400894165,
+          "target_full_loss": 0.07831089198589325,
+          "selected_loss": 0.07825857400894165
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:002",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.1567760556936264,
+          "target_current_loss": 0.12955747544765472,
+          "target_full_loss": 0.1295357644557953,
+          "selected_loss": 0.1295357644557953
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:003",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.14571020007133484,
+          "target_current_loss": 0.06797723472118378,
+          "target_full_loss": 0.06794769316911697,
+          "selected_loss": 0.06794769316911697
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:000",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.07407355308532715,
+          "target_current_loss": 0.04085597023367882,
+          "target_full_loss": 0.04085680842399597,
+          "selected_loss": 0.04085597023367882
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:001",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.21601945161819458,
+          "target_current_loss": 0.03351883590221405,
+          "target_full_loss": 0.033523380756378174,
+          "selected_loss": 0.03351883590221405
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:002",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.3691711723804474,
+          "target_current_loss": 0.03031116910278797,
+          "target_full_loss": 0.030333541333675385,
+          "selected_loss": 0.03031116910278797
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:003",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": 0.36922192573547363,
+          "target_current_loss": 0.035355959087610245,
+          "target_full_loss": 0.03533530235290527,
+          "selected_loss": 0.03533530235290527
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:000",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.09046954661607742,
+          "target_current_loss": 0.058935508131980896,
+          "target_full_loss": 0.05891827493906021,
+          "selected_loss": 0.05891827493906021
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:001",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.270327627658844,
+          "target_current_loss": 0.05670437961816788,
+          "target_full_loss": 0.05667155236005783,
+          "selected_loss": 0.05667155236005783
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:002",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.19414246082305908,
+          "target_current_loss": 0.10630251467227936,
+          "target_full_loss": 0.10626234114170074,
+          "selected_loss": 0.10626234114170074
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:003",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": false,
+          "agreement": -0.4128710627555847,
+          "target_current_loss": 0.14490334689617157,
+          "target_full_loss": 0.1450892686843872,
+          "selected_loss": 0.14490334689617157
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:000",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.02183254063129425,
+          "target_current_loss": 0.45410850644111633,
+          "target_full_loss": 0.45371711254119873,
+          "selected_loss": 0.45371711254119873
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:001",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": false,
+          "agreement": -0.0406867116689682,
+          "target_current_loss": 0.29626113176345825,
+          "target_full_loss": 0.2963823676109314,
+          "selected_loss": 0.29626113176345825
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:002",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": false,
+          "agreement": -0.17994998395442963,
+          "target_current_loss": 0.3032994568347931,
+          "target_full_loss": 0.3034437596797943,
+          "selected_loss": 0.3032994568347931
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:003",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.614587664604187,
+          "target_current_loss": 0.3326475918292999,
+          "target_full_loss": 0.33200132846832275,
+          "selected_loss": 0.33200132846832275
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:000",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.49261975288391113,
+          "target_current_loss": 0.12248009443283081,
+          "target_full_loss": 0.12278629839420319,
+          "selected_loss": 0.12248009443283081
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:001",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.6972099542617798,
+          "target_current_loss": 0.07352831214666367,
+          "target_full_loss": 0.07406362891197205,
+          "selected_loss": 0.07352831214666367
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:002",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": 0.3411765396595001,
+          "target_current_loss": 0.14097651839256287,
+          "target_full_loss": 0.14089399576187134,
+          "selected_loss": 0.14089399576187134
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:003",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.2126845121383667,
+          "target_current_loss": 0.12277375906705856,
+          "target_full_loss": 0.12281444668769836,
+          "selected_loss": 0.12277375906705856
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:000",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.2903898060321808,
+          "target_current_loss": 0.14334075152873993,
+          "target_full_loss": 0.14339131116867065,
+          "selected_loss": 0.14334075152873993
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:001",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.11379756778478622,
+          "target_current_loss": 0.21898092329502106,
+          "target_full_loss": 0.21901261806488037,
+          "selected_loss": 0.21898092329502106
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:002",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.34928375482559204,
+          "target_current_loss": 0.16921763122081757,
+          "target_full_loss": 0.16927388310432434,
+          "selected_loss": 0.16921763122081757
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:003",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": 0.04471062496304512,
+          "target_current_loss": 0.14378896355628967,
+          "target_full_loss": 0.14376959204673767,
+          "selected_loss": 0.14376959204673767
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:000",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.1367296278476715,
+          "target_current_loss": 0.061412692070007324,
+          "target_full_loss": 0.06141326203942299,
+          "selected_loss": 0.06141326203942299
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:001",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.5837719440460205,
+          "target_current_loss": 0.10480654239654541,
+          "target_full_loss": 0.1047038808465004,
+          "selected_loss": 0.1047038808465004
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:002",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.4723699688911438,
+          "target_current_loss": 0.09977268427610397,
+          "target_full_loss": 0.09966118633747101,
+          "selected_loss": 0.09966118633747101
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:003",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.38640621304512024,
+          "target_current_loss": 0.10351885855197906,
+          "target_full_loss": 0.10343384742736816,
+          "selected_loss": 0.10343384742736816
+        }
+      ]
+    },
+    "oracle_fallback": {
+      "selected_loss": 0.15882265608136853,
+      "gain_over_current": 6.117230902114024e-05,
+      "acceptance_fraction": 0.5,
+      "harm_fraction": 0.0,
+      "uncertainty": {
+        "mean": 6.117230902115504e-05,
+        "ci95": [
+          2.699049965788921e-05,
+          0.0001045538826535145
+        ],
+        "positive_scenes": 15,
+        "scenes": 15
+      },
+      "rows": [
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:000",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.1477781981229782,
+          "target_current_loss": 0.21467125415802002,
+          "target_full_loss": 0.21470995247364044,
+          "selected_loss": 0.21467125415802002
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:001",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.08105756342411041,
+          "target_current_loss": 0.2077338993549347,
+          "target_full_loss": 0.20777007937431335,
+          "selected_loss": 0.2077338993549347
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:002",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": true,
+          "agreement": 0.4145803451538086,
+          "target_current_loss": 0.36926692724227905,
+          "target_full_loss": 0.36914336681365967,
+          "selected_loss": 0.36914336681365967
+        },
+        {
+          "pair_id": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17:003",
+          "scene": "8fdc5130f0731360cc053f59049bfe6db509567457c5471c970292966cb34f17",
+          "accepted": false,
+          "agreement": -0.018602289259433746,
+          "target_current_loss": 0.1381075382232666,
+          "target_full_loss": 0.13813486695289612,
+          "selected_loss": 0.1381075382232666
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:000",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.09453323483467102,
+          "target_current_loss": 0.04254375398159027,
+          "target_full_loss": 0.042534153908491135,
+          "selected_loss": 0.042534153908491135
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:001",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": false,
+          "agreement": -0.08793637156486511,
+          "target_current_loss": 0.04489210620522499,
+          "target_full_loss": 0.04491167515516281,
+          "selected_loss": 0.04489210620522499
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:002",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": false,
+          "agreement": -0.30043378472328186,
+          "target_current_loss": 0.04625147953629494,
+          "target_full_loss": 0.046268776059150696,
+          "selected_loss": 0.04625147953629494
+        },
+        {
+          "pair_id": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a:003",
+          "scene": "35872363e17af5d173b6a0b09fcf5de94627ad5dc5f8a9ad4c579f3e70b4797a",
+          "accepted": true,
+          "agreement": 0.011907489970326424,
+          "target_current_loss": 0.04578162357211113,
+          "target_full_loss": 0.04577251523733139,
+          "selected_loss": 0.04577251523733139
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:000",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": true,
+          "agreement": -0.016375204548239708,
+          "target_current_loss": 0.1953657865524292,
+          "target_full_loss": 0.19532838463783264,
+          "selected_loss": 0.19532838463783264
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:001",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.2714155614376068,
+          "target_current_loss": 0.2165205180644989,
+          "target_full_loss": 0.21665343642234802,
+          "selected_loss": 0.2165205180644989
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:002",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.27482250332832336,
+          "target_current_loss": 0.2993932068347931,
+          "target_full_loss": 0.2995263934135437,
+          "selected_loss": 0.2993932068347931
+        },
+        {
+          "pair_id": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7:003",
+          "scene": "7da3db99059a436adf537bc23309a6a4db9e011696d086f3a64037f7497d9df7",
+          "accepted": false,
+          "agreement": -0.1275634765625,
+          "target_current_loss": 0.28895753622055054,
+          "target_full_loss": 0.28896087408065796,
+          "selected_loss": 0.28895753622055054
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:000",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.23131439089775085,
+          "target_current_loss": 0.2582201063632965,
+          "target_full_loss": 0.2581419348716736,
+          "selected_loss": 0.2581419348716736
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:001",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": 0.260847806930542,
+          "target_current_loss": 0.19599056243896484,
+          "target_full_loss": 0.19584062695503235,
+          "selected_loss": 0.19584062695503235
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:002",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": true,
+          "agreement": -0.13214075565338135,
+          "target_current_loss": 0.25963878631591797,
+          "target_full_loss": 0.2596382796764374,
+          "selected_loss": 0.2596382796764374
+        },
+        {
+          "pair_id": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8:003",
+          "scene": "9c8c0e0fadd97abf60088f667eba058ef077a71a8c0f5a4eff2782aa97f1ceb8",
+          "accepted": false,
+          "agreement": -0.14727245271205902,
+          "target_current_loss": 0.2101212441921234,
+          "target_full_loss": 0.21021392941474915,
+          "selected_loss": 0.2101212441921234
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:000",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.11561872810125351,
+          "target_current_loss": 0.14927531778812408,
+          "target_full_loss": 0.1492031067609787,
+          "selected_loss": 0.1492031067609787
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:001",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.3924234211444855,
+          "target_current_loss": 0.14485515654087067,
+          "target_full_loss": 0.1447778344154358,
+          "selected_loss": 0.1447778344154358
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:002",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": true,
+          "agreement": 0.28053605556488037,
+          "target_current_loss": 0.14331132173538208,
+          "target_full_loss": 0.14321622252464294,
+          "selected_loss": 0.14321622252464294
+        },
+        {
+          "pair_id": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924:003",
+          "scene": "946f49be73928469000baa5ca04d2573137c5ee6a66362bcf8d130354dca8924",
+          "accepted": false,
+          "agreement": -0.48807159066200256,
+          "target_current_loss": 0.1619659811258316,
+          "target_full_loss": 0.16214483976364136,
+          "selected_loss": 0.1619659811258316
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:000",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.1495509147644043,
+          "target_current_loss": 0.1389363706111908,
+          "target_full_loss": 0.13890939950942993,
+          "selected_loss": 0.13890939950942993
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:001",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": false,
+          "agreement": -0.10757763683795929,
+          "target_current_loss": 0.1085919588804245,
+          "target_full_loss": 0.10862433165311813,
+          "selected_loss": 0.1085919588804245
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:002",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": true,
+          "agreement": 0.3299562335014343,
+          "target_current_loss": 0.10142519325017929,
+          "target_full_loss": 0.10137572884559631,
+          "selected_loss": 0.10137572884559631
+        },
+        {
+          "pair_id": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee:003",
+          "scene": "389a460ca1995e0658e85fe8e6b520b4e88b370cd6710dfe728b1564bba31aee",
+          "accepted": false,
+          "agreement": -0.18793684244155884,
+          "target_current_loss": 0.09973590075969696,
+          "target_full_loss": 0.09977073967456818,
+          "selected_loss": 0.09973590075969696
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:000",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": false,
+          "agreement": -0.410544753074646,
+          "target_current_loss": 0.180779367685318,
+          "target_full_loss": 0.1810408979654312,
+          "selected_loss": 0.180779367685318
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:001",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.29110968112945557,
+          "target_current_loss": 0.15142109990119934,
+          "target_full_loss": 0.15130126476287842,
+          "selected_loss": 0.15130126476287842
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:002",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": true,
+          "agreement": 0.1707802414894104,
+          "target_current_loss": 0.14190775156021118,
+          "target_full_loss": 0.14175018668174744,
+          "selected_loss": 0.14175018668174744
+        },
+        {
+          "pair_id": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07:003",
+          "scene": "cc08c0bdc34ddd2867705d0b17a86ec2a9d7c7926ce99070ed1fdc66a812de07",
+          "accepted": false,
+          "agreement": -0.07864445447921753,
+          "target_current_loss": 0.2889517843723297,
+          "target_full_loss": 0.2889782190322876,
+          "selected_loss": 0.2889517843723297
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:000",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": false,
+          "agreement": -0.1855592131614685,
+          "target_current_loss": 0.15089231729507446,
+          "target_full_loss": 0.15133988857269287,
+          "selected_loss": 0.15089231729507446
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:001",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": false,
+          "agreement": -0.13244259357452393,
+          "target_current_loss": 0.2624000310897827,
+          "target_full_loss": 0.26247674226760864,
+          "selected_loss": 0.2624000310897827
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:002",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.622646689414978,
+          "target_current_loss": 0.27732235193252563,
+          "target_full_loss": 0.27682986855506897,
+          "selected_loss": 0.27682986855506897
+        },
+        {
+          "pair_id": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b:003",
+          "scene": "c076929db6501cf7ebe386c70e6d77ea3af844a745e794f2ec17c981c465a69b",
+          "accepted": true,
+          "agreement": 0.3592396378517151,
+          "target_current_loss": 0.22795498371124268,
+          "target_full_loss": 0.22748826444149017,
+          "selected_loss": 0.22748826444149017
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:000",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.543718159198761,
+          "target_current_loss": 0.09625110030174255,
+          "target_full_loss": 0.0961475819349289,
+          "selected_loss": 0.0961475819349289
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:001",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": false,
+          "agreement": -0.4225894808769226,
+          "target_current_loss": 0.07825857400894165,
+          "target_full_loss": 0.07831089198589325,
+          "selected_loss": 0.07825857400894165
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:002",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.1567760556936264,
+          "target_current_loss": 0.12955747544765472,
+          "target_full_loss": 0.1295357644557953,
+          "selected_loss": 0.1295357644557953
+        },
+        {
+          "pair_id": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92:003",
+          "scene": "90cb7ef95384138c2370f13a9ae1698fb1b5bdd68e8b3d01f8e53d38933a4b92",
+          "accepted": true,
+          "agreement": 0.14571020007133484,
+          "target_current_loss": 0.06797723472118378,
+          "target_full_loss": 0.06794769316911697,
+          "selected_loss": 0.06794769316911697
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:000",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.07407355308532715,
+          "target_current_loss": 0.04085597023367882,
+          "target_full_loss": 0.04085680842399597,
+          "selected_loss": 0.04085597023367882
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:001",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.21601945161819458,
+          "target_current_loss": 0.03351883590221405,
+          "target_full_loss": 0.033523380756378174,
+          "selected_loss": 0.03351883590221405
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:002",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": false,
+          "agreement": -0.3691711723804474,
+          "target_current_loss": 0.03031116910278797,
+          "target_full_loss": 0.030333541333675385,
+          "selected_loss": 0.03031116910278797
+        },
+        {
+          "pair_id": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510:003",
+          "scene": "341b4ff3dfd3d377d7167bd81f443bedafbff003bf04881b99760fc0aeb69510",
+          "accepted": true,
+          "agreement": 0.36922192573547363,
+          "target_current_loss": 0.035355959087610245,
+          "target_full_loss": 0.03533530235290527,
+          "selected_loss": 0.03533530235290527
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:000",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.09046954661607742,
+          "target_current_loss": 0.058935508131980896,
+          "target_full_loss": 0.05891827493906021,
+          "selected_loss": 0.05891827493906021
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:001",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.270327627658844,
+          "target_current_loss": 0.05670437961816788,
+          "target_full_loss": 0.05667155236005783,
+          "selected_loss": 0.05667155236005783
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:002",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": true,
+          "agreement": 0.19414246082305908,
+          "target_current_loss": 0.10630251467227936,
+          "target_full_loss": 0.10626234114170074,
+          "selected_loss": 0.10626234114170074
+        },
+        {
+          "pair_id": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3:003",
+          "scene": "e5684b3292bfd77db297839fc37ee4cce7fd59775af1a6a4827e3b4f59c036d3",
+          "accepted": false,
+          "agreement": -0.4128710627555847,
+          "target_current_loss": 0.14490334689617157,
+          "target_full_loss": 0.1450892686843872,
+          "selected_loss": 0.14490334689617157
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:000",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.02183254063129425,
+          "target_current_loss": 0.45410850644111633,
+          "target_full_loss": 0.45371711254119873,
+          "selected_loss": 0.45371711254119873
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:001",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": false,
+          "agreement": -0.0406867116689682,
+          "target_current_loss": 0.29626113176345825,
+          "target_full_loss": 0.2963823676109314,
+          "selected_loss": 0.29626113176345825
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:002",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": false,
+          "agreement": -0.17994998395442963,
+          "target_current_loss": 0.3032994568347931,
+          "target_full_loss": 0.3034437596797943,
+          "selected_loss": 0.3032994568347931
+        },
+        {
+          "pair_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade:003",
+          "scene": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+          "accepted": true,
+          "agreement": 0.614587664604187,
+          "target_current_loss": 0.3326475918292999,
+          "target_full_loss": 0.33200132846832275,
+          "selected_loss": 0.33200132846832275
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:000",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.49261975288391113,
+          "target_current_loss": 0.12248009443283081,
+          "target_full_loss": 0.12278629839420319,
+          "selected_loss": 0.12248009443283081
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:001",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.6972099542617798,
+          "target_current_loss": 0.07352831214666367,
+          "target_full_loss": 0.07406362891197205,
+          "selected_loss": 0.07352831214666367
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:002",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": true,
+          "agreement": 0.3411765396595001,
+          "target_current_loss": 0.14097651839256287,
+          "target_full_loss": 0.14089399576187134,
+          "selected_loss": 0.14089399576187134
+        },
+        {
+          "pair_id": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03:003",
+          "scene": "f71ac346cd0fc4652a89afb37044887ec3907d37d01d1ceb0ad28e1a780d8e03",
+          "accepted": false,
+          "agreement": -0.2126845121383667,
+          "target_current_loss": 0.12277375906705856,
+          "target_full_loss": 0.12281444668769836,
+          "selected_loss": 0.12277375906705856
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:000",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.2903898060321808,
+          "target_current_loss": 0.14334075152873993,
+          "target_full_loss": 0.14339131116867065,
+          "selected_loss": 0.14334075152873993
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:001",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.11379756778478622,
+          "target_current_loss": 0.21898092329502106,
+          "target_full_loss": 0.21901261806488037,
+          "selected_loss": 0.21898092329502106
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:002",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": false,
+          "agreement": -0.34928375482559204,
+          "target_current_loss": 0.16921763122081757,
+          "target_full_loss": 0.16927388310432434,
+          "selected_loss": 0.16921763122081757
+        },
+        {
+          "pair_id": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1:003",
+          "scene": "66fd66cbed40a2d11ecd17ae6d6d60cd60d476616864ecdd351fe69e644f30a1",
+          "accepted": true,
+          "agreement": 0.04471062496304512,
+          "target_current_loss": 0.14378896355628967,
+          "target_full_loss": 0.14376959204673767,
+          "selected_loss": 0.14376959204673767
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:000",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": false,
+          "agreement": 0.1367296278476715,
+          "target_current_loss": 0.061412692070007324,
+          "target_full_loss": 0.06141326203942299,
+          "selected_loss": 0.061412692070007324
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:001",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.5837719440460205,
+          "target_current_loss": 0.10480654239654541,
+          "target_full_loss": 0.1047038808465004,
+          "selected_loss": 0.1047038808465004
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:002",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.4723699688911438,
+          "target_current_loss": 0.09977268427610397,
+          "target_full_loss": 0.09966118633747101,
+          "selected_loss": 0.09966118633747101
+        },
+        {
+          "pair_id": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334:003",
+          "scene": "093ef327b4e4f9d4ee52c02a354a53558a8652157fb0d58f3b4a708734afb334",
+          "accepted": true,
+          "agreement": 0.38640621304512024,
+          "target_current_loss": 0.10351885855197906,
+          "target_full_loss": 0.10343384742736816,
+          "selected_loss": 0.10343384742736816
+        }
+      ]
+    }
+  },
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "confirmatory_claim_authorized": false
+}
