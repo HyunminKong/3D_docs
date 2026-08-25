@@ -1,0 +1,35 @@
+experiment: EXP-039
+protocol_revision: v1.0
+purpose: metadata_only_source_safe_partition
+seed: 3900010
+data:
+  root: tttLRM/data_example/dl3dv_benchmark
+  metadata_glob: "*/nerfstudio/transforms.json"
+  metadata_inventory_sha256: a88c26590368e305cc991c024a481e2fb704ffbc45fa948407f58f12e02721c0
+  expected_scenes: 141
+  image_directory: images_4
+revisit:
+  minimum_temporal_gap_frames: 30
+  maximum_translation_in_median_steps: 5.0
+  maximum_rotation_degrees: 30.0
+  minimum_pairs_per_scene: 8
+  maximum_pairs_per_scene: 16
+split:
+  train_scenes: 63
+  validation_scenes: 14
+  terminal_scenes: 14
+  assignment: sha256_scene_seed_order_after_metadata_eligibility
+success:
+  exact_eligible_scenes: 91
+  minimum_train_pairs: 504
+  minimum_validation_pairs: 112
+  minimum_terminal_pairs: 112
+  require_scene_disjoint: true
+  require_all_rgb_paths_exist: true
+  require_no_sensor_decode: true
+  require_no_model_access: true
+output:
+  result: revisit3d/results/EXP-039/dl3dv_partition_audit_v10.json
+  train_manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v10.json
+  validation_manifest: revisit3d/manifests/dl3dv_recurrent_revisit_validation_exp039_v10.json
+  terminal_manifest: revisit3d/manifests/dl3dv_recurrent_revisit_terminal_exp039_v10.json
