@@ -27,5 +27,6 @@
 | [EXP-023](EXP-023_metric_utility_oracle.md) | Can one sparse metric label identify broadly useful frozen corrections? | Completed, all gates passed | Metric oracle improves all primary metrics with positive intervals and beats the proxy oracle; 68% raw candidate harm confirms the need for utility selection. |
 | [EXP-024](EXP-024_metric_aligned_atom.md) | Can one offline metric loss train a broadly healthy reusable atom? | Completed, gate failed | SILog/EPE and oracle reuse improved significantly, but current aligned AbsRel worsened; no checkpoint accepted. |
 | [EXP-025](EXP-025_terminal_metric_atom.md) | Can a fixed two-residual geometry objective pass the terminal atom gate? | Completed, terminal gate failed | AbsRel improved significantly but SILog/EPE worsened significantly; scalar atom-objective development is stopped. |
+| [EXP-026](EXP-026_pareto_gradient_diagnosis.md) | Do the two metric endpoints conflict locally, and does a parameter-free common-descent direction exist? | Registered | No-fit diagnosis; EXP-027 is forbidden unless every registered gate passes. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

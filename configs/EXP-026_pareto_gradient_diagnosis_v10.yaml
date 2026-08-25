@@ -1,0 +1,66 @@
+experiment: EXP-026
+protocol_revision: v1.0
+seed: 2600010
+prior_stage: revisit3d/results/EXP-025/stage0_terminal_metric_atom_train_v10.json
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  nuscenes_root: /mnt/ssd/nuscenes
+  split: train
+
+model:
+  feature_dim: 2048
+  key_dim: 64
+  code_dim: 8
+  hidden_dim: 128
+  visual_key: frozen_train_pca
+
+method:
+  online_loss: track3d_only
+  step_size: 0.0125
+  steps: 1
+  transport: visual
+  reuse_strength: 0.10
+
+diagnosis:
+  objectives: [aligned_absolute_log_depth, aligned_absolute_relative_depth]
+  aggregation: equal_mean_current_and_objective_specific_best_candidate
+  anchors:
+    - name: fresh_pca_head
+      kind: fresh
+      seed: 2600010
+    - name: exp006_proxy_head
+      kind: checkpoint
+      path: revisit3d/checkpoints/exp006_atom_stage1_v26.pt
+    - name: exp015_proxy_head
+      kind: checkpoint
+      path: revisit3d/checkpoints/exp015_core_atom_v10.pt
+  minimum_gradient_norm: 1.0e-12
+  descent_tolerance: 1.0e-8
+  minimum_depth: 1.0e-6
+
+meta_candidates:
+  count: 5
+  foreign_count: 3
+
+lidar:
+  minimum_depth_m: 1.0
+  maximum_depth_m: 80.0
+  minimum_cells_per_view: 8
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 2600010
+
+success:
+  minimum_targets_per_anchor: 200
+  minimum_components_per_anchor: 20
+  minimum_conflict_rate_any_anchor: 0.10
+  minimum_raw_average_sacrifice_rate_any_anchor: 0.10
+  minimum_normalized_common_descent_rate_all_anchors: 0.95
+  minimum_median_bisector_norm_ratio_all_anchors: 0.05
+
+output:
+  result: revisit3d/results/EXP-026/stage0_pareto_gradient_diagnosis_v10.json

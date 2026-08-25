@@ -102,7 +102,7 @@ method but is not a worst-case safety theorem. EXP-020's 33% proxy harm confirms
 that the bound alone is insufficient without a utility target calibrated to the
 paper endpoint.
 
-## Allowed next-method change
+## Approved next-method branch
 
 The self-supervised track3D objective remains the single online loss. EXP-022
 rejects it as the sole offline meta/utility label because its gains are
@@ -123,11 +123,17 @@ of the existing aligned log residual and an aligned relative-depth residual.
 This adds no tunable loss weight and changes no inference computation. No third
 residual or proxy preservation term is allowed.
 
-EXP-025 failed the terminal gate with the inverse metric trade-off, so the
-authorized atom branch is closed and no checkpoint is accepted. The current
-repository has no paper-ready final model. Any constrained/Pareto optimizer or
-multi-objective update is a new method branch requiring an explicit scope
-decision, not an allowed continuation of this specification.
+EXP-025 failed the terminal gate with the inverse metric trade-off, so no scalar
+atom checkpoint is accepted. The user explicitly approved one new central
+branch: during offline meta-training only, compute the aligned-log and
+aligned-relative gradients separately and seek a common descent direction.
+EXP-026 must first show that this mechanism matches the empirical failure.
+
+If EXP-026 passes, EXP-027 may use only the parameter-free unit-normalized
+bisector. It adds no objective weight or inference operation. Online adaptation
+remains the unchanged single `track3D` gradient step; sparse LiDAR and future
+geometry gradients remain offline labels. Generic gradient consensus is prior
+art and is not part of the novelty claim.
 
 ## Claim boundary
 

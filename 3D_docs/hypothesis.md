@@ -50,6 +50,17 @@ The same utility-routed local-memory principle can attach to tracked dynamic poi
 
 Status: **Open; outside the completed static-revisit milestone.**
 
+## H7 — Pareto-healthy offline plasticity
+
+The aligned log-depth and aligned relative-depth meta objectives expose
+different but jointly necessary geometry signals. A parameter-free common
+descent update applied only during offline head meta-training can preserve
+improvement in both, while deployment remains one-loss/one-step TTT.
+
+Status: **Open.** EXP-024/025 establish an endpoint trade-off under scalar
+training, not yet a local gradient explanation or a successful common-descent
+fit. EXP-026 is the no-fit premise test. Failure blocks EXP-027.
+
 ## Rejected or narrowed hypotheses
 
 - A small global/slot fast-weight vector is sufficiently context-selective for retrieval.

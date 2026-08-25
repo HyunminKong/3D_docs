@@ -23,6 +23,34 @@ Primary sources: [CUT3R](https://openaccess.thecvf.com/content/CVPR2025/html/Wan
 
 Primary sources: [T3AR](https://openaccess.thecvf.com/content/CVPR2023/html/Zancato_TrainTest-Time_Adaptation_With_Retrieval_CVPR_2023_paper.html), [PETAL](https://openaccess.thecvf.com/content/CVPR2023/html/Brahma_A_Probabilistic_Framework_for_Lifelong_Test-Time_Adaptation_CVPR_2023_paper.html), and [ReGrad](https://arxiv.org/abs/2606.15734).
 
+## Multi-objective and gradient-consensus collision audit
+
+The post-EXP-025 branch cannot claim generic gradient alignment, gradient
+surgery, common descent, or plasticity-constrained TTA as new:
+
+- PCGrad (NeurIPS 2020) projects conflicting task gradients; CAGrad (NeurIPS
+  2021) optimizes worst local task improvement while retaining an average-loss
+  convergence target; Nash-MTL (ICML 2022) derives a bargaining solution.
+- Aligned-MTL (CVPR 2023) stabilizes multi-task gradients by aligning
+  orthogonal components and evaluates depth and surface normals.
+- GraTa (AAAI 2025) explicitly aligns pseudo and auxiliary gradients during
+  TTA and uses their cosine to control the online learning rate.
+- ConFIG (ICLR 2025 Spotlight) constructs updates with positive dot product
+  against every loss-specific gradient.
+- CoCo-MT-TTA (AAAI 2026) is the closest naming and conceptual collision: it
+  performs multi-task test-time gradient consensus inspired by CAGrad and adds
+  a second-moment plasticity constraint.
+
+Primary sources: [PCGrad](https://proceedings.neurips.cc/paper/2020/hash/3fe78a8acf5fda99de95303940a2420c-Abstract.html), [CAGrad](https://proceedings.neurips.cc/paper/2021/hash/9d27fdf2477ffbff837d73ef7ae23db9-Abstract.html), [Nash-MTL](https://proceedings.mlr.press/v162/navon22a.html), [Aligned-MTL](https://arxiv.org/abs/2305.19000), [GraTa](https://ojs.aaai.org/index.php/AAAI/article/view/32244), [ConFIG](https://arxiv.org/abs/2408.11104), and [CoCo-MT-TTA](https://ojs.aaai.org/index.php/AAAI/article/view/40006).
+
+The remaining distinction is precise: Revisit3D uses multiple metric endpoint
+gradients only offline to meta-learn one local code-to-geometry plasticity map.
+Online inference still has one self-supervised gradient and no endpoint labels,
+consensus solver, or extra task. Consequently, the optimizer is an enabling
+mechanism; the paper-level novelty remains spatial adaptation objects,
+cross-view transport, causal future-utility addressing, and physical-revisit
+evaluation.
+
 ## Defensible novelty
 
 The paper should claim only the conjunction below:

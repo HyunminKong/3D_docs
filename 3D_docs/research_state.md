@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-020)
+Last updated: 2026-08-25 (EXP-026 registered)
 
 ## First objective
 
@@ -107,8 +107,14 @@ SILog/EPE, the inverse of EXP-024. No atom checkpoint was accepted. Scalar
 atom-objective development is stopped. The empirical reusable-memory oracle
 remains positive, but learning a Pareto-healthy current direction is unresolved.
 
-The next action requires a paper-scope decision. A top-tier broad-geometry path
-would need constrained/Pareto multi-objective plasticity as a new central
-contribution; a narrow aligned-relative-depth claim would preserve the compact
-method but is unlikely to support the originally intended broad reconstruction
-paper. EXP-021 remains fully unopened while this decision is pending.
+The constrained/Pareto multi-objective branch is now explicitly approved. The
+generic idea of gradient consensus is not novel—CoCo-MT-TTA, GraTa, PCGrad,
+CAGrad, Aligned-MTL, and ConFIG directly constrain that claim—so it is treated
+as an offline geometry-health mechanism rather than the standalone novelty.
+
+EXP-026 is registered as a zero-fit premise test. It measures whether the two
+endpoint gradients materially conflict, whether equal averaging sacrifices an
+endpoint, and whether a parameter-free unit-normalized bisector supplies
+non-degenerate common descent at a fresh and two frozen historical heads. Only
+a full registered-gate pass authorizes EXP-027. The online graph remains one
+`track3D` loss and one local-code step, and EXP-021 remains fully unopened.

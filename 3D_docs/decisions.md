@@ -788,3 +788,39 @@ either narrow the endpoint to aligned relative depth, abandon this paper path,
 or make constrained/Pareto multi-objective plasticity a new central method. The
 last option changes the paper's methodological contribution and cannot be
 treated as another ablation.
+
+## D093 — Approve the constrained multi-objective plasticity branch
+
+Date: 2026-08-25
+Status: Accepted by explicit user approval
+
+The paper may continue with constrained/Pareto multi-objective plasticity as a
+central training mechanism. This is a scope change, not another scalar-loss
+variant. The method must remain compact: the inference architecture, one
+online `track3D` loss, one local-code step, 8-D code, visual transport, and
+fixed reuse residual do not change. The two sparse geometry objectives exist
+only during offline meta-training, and no loss coefficient, extra head,
+learned threshold, second online step, or terminal-data tuning is authorized.
+
+Because gradient-consensus TTA and multi-objective gradient manipulation are
+established prior art, the paper must not claim either generic idea as novel.
+The defensible contribution remains transported, utility-addressed spatial
+adaptation experience; constrained training is the geometry-health mechanism
+needed to make that contribution valid on broad endpoints.
+
+## D094 — Require a no-fit common-descent diagnosis before EXP-027
+
+Date: 2026-08-25
+Status: Accepted before EXP-026 execution
+
+EXP-026 performs zero parameter updates on the existing train benchmark. At a
+fresh head and two historical frozen heads it measures the gradient geometry
+between aligned absolute log-depth and aligned absolute relative-depth outer
+objectives. It compares raw equal averaging, exact raw two-objective MGDA, and
+a parameter-free unit-normalized bisector.
+
+The gate is registered in the EXP-026 record. A new fit is authorized only if
+metric conflict and raw-average sacrifice are material, while the normalized
+bisector supplies non-degenerate common descent across all anchors. This
+prevents adopting a fashionable optimizer without evidence that it addresses
+the repository's actual failure. EXP-021 remains unopened.

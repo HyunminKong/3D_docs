@@ -128,8 +128,11 @@ EXP-025. It keeps one online loss and adds no module or inference hyperparameter
 failure stops method development for this paper.
 
 EXP-025 failed with significant AbsRel improvement but significant SILog/EPE
-degradation. The compact scalar-objective path is therefore stopped. The paper
-cannot proceed to address fitting, efficiency, or the locked terminal test
-without a new central-method decision. A Pareto/constrained training branch
-would materially change the contribution; a narrow AbsRel-only paper would
-materially narrow the claim.
+degradation. The compact scalar-objective path is stopped. A constrained
+multi-objective offline plasticity branch is now explicitly approved, while
+the inference graph remains unchanged. Generic gradient consensus is not
+claimed as novel because of direct MTL/TTA prior art. EXP-026 must first pass a
+no-fit local-gradient premise gate; only then may one parameter-free
+common-descent atom be trained. Address fitting, efficiency evaluation, and the
+locked terminal test remain forbidden until that atom passes source-safe OOF
+broad-geometry gates.
