@@ -166,3 +166,13 @@ train-internal scene split. It strengthened current adaptation but failed the
 pre-registered revisit-compatibility gate and did not show robust reuse beyond
 shuffle. Consequently the compact v2 method is stopped: no validation run,
 utility address, or bank is authorized from this checkpoint.
+
+## Approved exact-meta revision
+
+D121 reopens only offline differentiation. The active EXP-043 candidate is
+identical at inference, but its offline objective retains the computation graph
+through source and target one-step code generation. Thus the shared basis is
+optimized for how it induces an update as well as how it decodes that update.
+No module, loss family, or deployment operation is added. This candidate is not
+accepted unless it passes the scene-bootstrap functional reuse gate on the last
+15 unopened train scenes.

@@ -1,0 +1,66 @@
+experiment: EXP-043
+protocol_revision: v1.0
+purpose: exact_meta_cut3r_plasticity_coordinate_oracle_premise
+seed: 4300010
+data:
+  manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v11.json
+  manifest_sha256: 539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05
+  pairs_per_scene: 4
+  fit_scene_offset: 0
+  fit_scenes: 48
+  fit_pairs: 192
+  fit_pair_ids_sha256: a07b9185db7000225a16a348d6d0d853356f26a27360e649ca87e35133811586
+  audit_scene_offset: 48
+  audit_scenes: 15
+  audit_pairs: 60
+  audit_pair_ids_sha256: d2e5f742d0297f983325ef91c60387c1314db8518f860b73ce95914b3626dda9
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  image_size: 512
+  crop: false
+plasticity:
+  code_dim: 8
+  basis_seed: 3800010
+  normalized_step: 0.001
+  patch_size: 16
+transport:
+  method: visual
+  visual_temperature: 0.07
+  spatial_shuffle_seed: 4300010
+training:
+  fitted_parameters: residual_projection_only
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.0
+  epochs: 1
+  optimizer_steps: 192
+  differentiate_through_source_code_step: true
+  differentiate_through_target_code_step: true
+  current_loss_weight: 0.5
+  oracle_reuse_loss_weight: 0.5
+  auxiliary_losses: 0
+audit:
+  compare_initial_basis: true
+  compare_visual_spatial_shuffle: true
+  bootstrap_unit: scene
+  bootstrap_draws: 20000
+  bootstrap_seed: 4300010
+success:
+  exact_fit_scenes: 48
+  exact_fit_pairs: 192
+  exact_audit_scenes: 15
+  exact_audit_pairs: 60
+  require_finite: true
+  require_basis_changed: true
+  require_positive_current_ttt_gain_ci95: true
+  require_positive_oracle_reuse_gain_ci95: true
+  require_positive_full_over_visual_shuffle_ci95: true
+  maximum_reuse_harm_fraction: 0.5
+  require_reuse_gain_better_than_initial_basis: true
+output:
+  checkpoint: revisit3d/checkpoints/exp043_exact_meta_cut3r_plasticity_coordinate_v10.pt
+  result: revisit3d/results/EXP-043/exact_meta_cut3r_plasticity_coordinate_v10.json

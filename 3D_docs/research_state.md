@@ -304,3 +304,10 @@ explicit project-level decision because every available path changes the paper
 claim or method scope: abandon adaptation-memory reuse on CUT3R, reopen the
 plasticity representation/objective beyond the one-module constraint, or return
 to the archived noncompetitive mechanism-proof system.
+
+D121 records explicit approval to reopen only the plasticity objective. EXP-043
+is registered to differentiate the same future consistency objective through
+both online code steps while keeping every inference component unchanged. The
+48 train scenes exposed by EXP-042 are fit data; the last 15 previously unopened
+train scenes are now a locked internal audit. A fit-only technical smoke test is
+next, followed by the single fixed run if exact autograd is feasible.

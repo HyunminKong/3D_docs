@@ -99,3 +99,15 @@ plasticity representation is impossible.
 - Past utility history is a reliable learned eviction priority at capacity 8.
 - Capacity 8 is a general sufficient bound.
 - Reservoir sampling is demonstrably superior to FIFO at capacity 64; the final test does not support this stronger claim.
+
+## H9 — Future-utility-differentiated plasticity
+
+The same compact basis can become revisit-compatible when offline training
+differentiates future consistency through the online source and target code
+creation steps, rather than treating those generated codes as fixed.
+
+Status: **Open after explicit scope reopening.** EXP-042 established that the
+first-order detached objective mostly strengthens current adaptation. EXP-043
+tests the exact meta-gradient with no new module, online loss, or inference
+hyperparameter. It must show statistically positive functional reuse on the
+last unopened train scenes before validation.

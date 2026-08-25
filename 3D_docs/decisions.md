@@ -1283,3 +1283,26 @@ explicit project-level scope decision because it must either remove continual
 reuse from the primary claim or introduce a materially different plasticity
 objective/representation. The archived FastVGGT mechanism candidate remains
 unchanged but cannot satisfy the absolute competitive-carrier requirement.
+
+## D121 — Reopen only the plasticity objective with exact future-utility differentiation
+
+Date: 2026-08-25
+Status: Accepted by explicit project decision
+
+The project approves one material revision while preserving the one-paper
+architecture budget. The carrier, local-code capacity, online loss, online
+step, transport, and head interface remain unchanged. Offline training may now
+differentiate future geometry consistency through the source and target code
+generation steps so the basis controls both the update coordinate and its
+future effect.
+
+This is a replacement for EXP-042's detached first-order training, not an added
+module or auxiliary loss. The deterministic optimizer and one-pass budget stay
+the same. Previously exposed train scenes may be used for fitting, but the
+remaining 15 unopened EXP-039 train scenes must be locked as a new internal
+audit before any pixel access. Validation and terminal remain closed.
+
+Functional future-utility confidence intervals replace code cosine as the
+primary gate because basis coordinates are only meaningful through their
+decoded effect. Failure stops the exact-meta realization. Success permits one
+frozen validation run; it does not automatically authorize an address or bank.
