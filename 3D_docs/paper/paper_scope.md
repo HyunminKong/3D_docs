@@ -19,38 +19,33 @@ The first target is a CVPR-style paper: one compact method, standard geometry me
 The paper contains three ideas, but only two learned components:
 
 1. **Local plasticity atom.** A frozen geometry backbone exposes dense features. One self-supervised gradient step updates an 8-D per-token code; backbone weights never change online.
-2. **Utility retrieval.** A cheap linear pair score retrieves K candidates, then one compact linear utility model selects a transported code or returns current-only TTT. These are presented as coarse and fine stages of one utility-retrieval module, not as unrelated heads.
+2. **Utility retrieval.** One factorized linear pair score retrieves the highest predicted-utility record and applies it only when predicted utility is positive. Retrieval and routing are one model, not separate coarse/fine heads.
 3. **Bounded causal store.** A fixed-capacity reservoir is an implementation constraint, not a novel learned consolidation module.
 
 The primary path excludes DINO place retrieval, predicted Sim(3) transport, neural risk classification, learned eviction, pose adaptation, a second TTT step, and dynamic 4D state.
 
 ## Minimal online objective
 
-The deployed TTT objective has one main signal and two small regularizers:
+EXP-011 selected one deployed TTT signal:
 
 \[
-\mathcal L_{\mathrm{TTT}}
-=
-\mathcal L_{\mathrm{track3D}}
-+\lambda_s\mathcal L_{\mathrm{smooth}}
-+\lambda_z\lVert z\rVert_2^2.
+\mathcal L_{\mathrm{TTT}}=\mathcal L_{\mathrm{track3D}}.
 \]
 
-Only the local code `z` is differentiated. The main paper should report the geometry-consistency term alone, plus the full three-term objective; it should not introduce additional online losses unless the main objective fails independently.
+Only the local code `z` is differentiated. Smoothness and code regularization were numerically immaterial in the registered train audit and are removed.
 
-The existing atom was meta-trained with extra protection/key regularizers developed during feasibility work. Before paper submission, a train/validation-only simplification experiment must test a two-concept meta-objective: current-quality preservation plus future reuse utility. Extra terms may remain only if an ablation demonstrates material independent value.
+EXP-012 tests a single equal-weight meta-objective: the mean of future current-only loss and future matched-reuse loss. No auxiliary key, neutralization, centering, smoothness, or code-norm loss is admitted in the primary candidate.
 
 ## Main hyperparameters
 
-Only five quantities are treated as visible method hyperparameters:
+Only three quantities are treated as visible method hyperparameters in the EXP-012 candidate:
 
 - one-step TTT step size `eta`;
 - reuse residual strength `alpha`;
-- retrieved candidate count `K`;
-- bank capacity `C`;
-- train-calibrated utility acceptance threshold `tau`.
+- bank capacity `C`.
 
-PCA dimension and Ridge regularization are implementation choices fixed once, not separately tuned per dataset. The paper must include sensitivity only for `eta`, `alpha`, and `C`; K receives a small `{1, 5, 10}` ablation if compute permits.
+Retrieval is top-1 and reuse uses the semantic zero predicted-utility threshold, so neither is tuned. PCA dimension and Ridge regularization are fixed implementation choices. The paper reports sensitivity only for `eta`, `alpha`, and `C`.
+
 
 ## Formal learning problem
 
@@ -72,7 +67,7 @@ Future utility is an offline meta-label only:
 U_{t,i}=\frac{F_t(z_t)-F_t(z_t+\delta_{t,i})}{|F_t(z_t)|+\epsilon},
 \]
 
-where `F_t` is evaluated on disjoint future/query observations. At runtime, neither `F_t` nor query frames are available. The address and router estimate utility from current/source observables.
+where `F_t` is evaluated on disjoint future/query observations. At runtime, neither `F_t` nor query frames are available. The unified address estimates utility from current/source observables.
 
 ## Theoretical rationale and claim boundary
 
@@ -86,7 +81,7 @@ F(z)-F(z+\delta)
 
 Thus useful reuse requires directional agreement with future improvement, while the fixed residual and code clamp bound the second-order damage term. This motivates learning future utility rather than using appearance similarity or raw gradient cosine. It is a rationale, not a worst-case safety guarantee.
 
-If a calibrated router `r(o)` approximates conditional expected utility with error at most `e`, accepting only when `r(o)>tau>e` yields positive conditional expected utility at least `tau-e`. The empirical Ridge router is not claimed to satisfy a uniform error bound; calibration and harmful-rate tests are therefore mandatory.
+The linear score is trained as a conditional-utility regressor and uses the semantic decision `r(o)>0`. This is Bayes-consistent under squared loss when the regressor estimates `E[U|o]`, but finite-sample Ridge has no uniform calibration guarantee. Component-disjoint utility, harmful-rate, and absolute-geometry tests are therefore mandatory; the zero rule is not presented as worst-case safety.
 
 The linear pair score over `[c_t,c_i,c_t-c_i,c_t*c_i]` factorizes exactly into maximum inner product search. Reservoir sampling supplies fixed memory and unbiased historical inclusion, but no superiority over FIFO is claimed.
 
@@ -94,7 +89,7 @@ The linear pair score over `[c_t,c_i,c_t-c_i,c_t*c_i]` factorizes exactly into m
 
 1. Absolute depth/point metrics, not only the future-loss utility proxy.
 2. Component-disjoint and source-entity-safe generalization with paired confidence intervals.
-3. `base → current TTT → random memory → utility address → full router` ablation.
+3. `base → current TTT → random memory → appearance address → utility address` ablation.
 4. Comparison with frozen VGGT/FastVGGT, current-only TTT, CUT3R/TTT3R-style streaming baselines where protocols permit, and bounded/unbounded memory controls.
 5. Runtime, peak GPU memory, per-record bank bytes, and sequence-length scaling.
 6. At least one independent dataset or backbone before a strong general claim.

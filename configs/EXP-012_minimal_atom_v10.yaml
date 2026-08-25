@@ -1,0 +1,47 @@
+experiment: EXP-012
+protocol_revision: v1.0
+seed: 1200010
+prerequisite: revisit3d/results/EXP-011/stage1_locked_objective_validation_v11.json
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  split: train
+
+model:
+  feature_dim: 2048
+  key_dim: 64
+  code_dim: 8
+  hidden_dim: 128
+  visual_key: frozen_train_pca
+
+method:
+  online_loss: track3d_only
+  step_size: 0.0125
+  steps: 1
+  transport: visual
+  reuse_strength: 0.10
+
+training:
+  epochs: 3
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clip: 1.0
+  log_every: 100
+
+crossfit:
+  folds: 5
+  grouping: physical_overlap_component
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 1200010
+
+success:
+  maximum_current_to_base: 1.0
+  minimum_matched_utility: 0.005
+  maximum_matched_harm: 0.20
+
+output:
+  checkpoint: revisit3d/checkpoints/exp012_paper_minimal_v10.pt
+  result: revisit3d/results/EXP-012/stage0_minimal_atom_crossfit_train_v10.json

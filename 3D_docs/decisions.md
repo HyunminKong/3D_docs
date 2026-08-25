@@ -491,3 +491,12 @@ Status: Accepted after EXP-011 one-shot validation
 The frozen one-loss, one-step objective passed on all 103 valid validation targets over 17 components. SILog, aligned AbsRel, and same-ray 3D EPE improved by 0.474%, 0.959%, and 0.992% respectively; the component-bootstrap EPE interval was strictly positive. This independently confirms the train-stage direction while retaining one online loss and one step-size hyperparameter.
 
 EXP-012 may now retrain the local atom and utility address/router on train data using this fixed objective. It must simplify the feasibility meta-objective rather than add heads or losses. Validation is exposed for the registered paper-model gate; EXP-009 test remains closed and a new external component-disjoint benchmark is required for final evidence.
+
+## D070 — Test a one-objective atom before refitting memory
+
+Date: 2026-08-25
+Status: Accepted before EXP-012 Stage 0 execution
+
+The paper candidate freezes the train-PCA visual transport key and trains only the 157,121-parameter local-code decoder. Its entire meta-objective is the equal average of current-only and matched-reuse future 3D-track loss. Five feasibility terms—key contrastive, harmful-code neutralization, code centering, depth smoothness, and code norm—are removed. Three training epochs are fixed without checkpoint selection.
+
+Evaluation is five-fold over the immutable 25 physical overlap-component IDs. The minimal atom must preserve current TTT, exceed 0.5% matched reuse utility with at most 20% harm, and beat the distant within-episode source with a positive component-bootstrap lower bound. No memory scorer is fitted unless this gate passes.

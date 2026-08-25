@@ -13,5 +13,6 @@
 | [EXP-009](EXP-009_unseen_paperscale_benchmark.md) | Does utility-addressed local TTT memory generalize to fully unseen overlap components at paper scale? | Completed | The locked reservoir-64 system passed all terminal gates; it beat matched random addressing on 22 components, while reservoir superiority over FIFO was not established. |
 | [EXP-010](EXP-010_paper_geometry_validity.md) | Does the locked utility improvement correspond to absolute depth/point accuracy? | Completed, gate failed | Aligned AbsRel improved, but SILog and 3D EPE worsened; broad geometry claim was rejected. |
 | [EXP-011](EXP-011_objective_health.md) | Can a single self-supervised TTT loss improve all primary geometry metrics? | Completed, all gates passed | One 3D-track loss at eta 0.0125 improved SILog, AbsRel, and 3D EPE on train and one-shot validation. |
+| [EXP-012](EXP-012_paper_minimal_refit.md) | Does the core result survive a one-objective atom and unified utility address? | Stage 0 registered | Component-cross-fit the minimal atom before fitting any memory score. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
