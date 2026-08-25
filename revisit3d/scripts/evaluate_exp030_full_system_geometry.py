@@ -55,6 +55,7 @@ def main():
     ckpt = torch.load(atom_path, map_location="cpu", weights_only=False)
     if not (ckpt["experiment"] == "EXP-028" and not ckpt["exp021_terminal_accessed"]): raise RuntimeError("atom contract failed")
     context, targets, _ = _context_tables(manifest); dev = torch.device("cuda")
+    torch.backends.cuda.matmul.allow_tf32 = True
     head = SpatialPlasticityHead(feature_dim=int(c["model"]["feature_dim"])).to(dev); head.load_state_dict(ckpt["head"])
     head.eval().requires_grad_(False); lidar = _lidar_cache(manifest, geo, c, dev)
     needed = {r["target_context"] for r in meta} | {r["source_context"] for r in meta}; atoms = {}
