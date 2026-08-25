@@ -942,3 +942,18 @@ The full policy must improve mean SILog, aligned AbsRel, and 3D EPE over each
 of current-only, random, and appearance, with at least one positive component
 interval per comparison family. Failure keeps EXP-021 locked; success alone
 authorizes assembly of the terminal artifact.
+
+## D102 — Freeze the complete development system for terminal evaluation
+
+Date: 2026-08-25
+Status: Accepted after EXP-030
+
+EXP-030 passed every no-fit gate on 217 targets and 25 components. The full
+policy improved SILog, aligned AbsRel, and 3D EPE over current-only, matched
+random, and appearance; all nine component intervals were positive.
+
+The terminal candidate is now immutable: EXP-028 checkpoint, EXP-029 address,
+one `track3D` step at 0.0125, 8-D code, visual transport, residual 0.10, top-1
+semantic-zero reuse, causal write-after-predict, and the registered bounded
+memory protocol. EXP-031 may open EXP-021 exactly once. No development result
+after this decision may change the model, threshold, comparator, or gate.

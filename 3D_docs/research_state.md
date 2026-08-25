@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-028)
+Last updated: 2026-08-25 (after EXP-030)
 
 ## First objective
 
@@ -139,3 +139,9 @@ appearance. The frozen artifact hash is
 Before opening EXP-021, EXP-030 must perform a no-fit full-system OOF audit of
 the selected candidates on SILog, aligned AbsRel, and 3D EPE directly. No
 parameter, threshold, or policy may change.
+
+EXP-030 passed that frozen audit on 217 targets/25 components. Full metric
+memory beat current-only, matched random, and appearance on SILog, aligned
+AbsRel, and 3D EPE, with positive intervals for every comparison. Development
+model selection is closed. EXP-031 is authorized to open the untouched
+EXP-021 benchmark once using the immutable checkpoint/address/protocol.
