@@ -1,0 +1,46 @@
+experiment: EXP-016
+protocol_revision: v1.0
+seed: 1600010
+
+data:
+  manifest: revisit3d/manifests/exp009_geometry_pilot_train_v15.json
+  geometry_cache: revisit3d/cache/EXP-009/locked_transfer_geometry_train_v15.pt
+  scene_root: tttLRM/data_example/nuscenes_exp009_unseen
+  split: train
+
+model:
+  atom_checkpoint: revisit3d/checkpoints/exp015_core_atom_v10.pt
+  atom_result: revisit3d/results/EXP-015/stage0_core_atom_train_v10.json
+  feature_dim: 2048
+
+method:
+  step_size: 0.0125
+  steps: 1
+  reuse_strength: 0.10
+  panel_size: 64
+  retrieval_topk: 1
+  acceptance_threshold: 0.0
+
+address:
+  descriptor_dim: 64
+  pair_features: [current, source, difference, product]
+  standardize: true
+  ridge_alpha: 1.0
+  crossfit: leave_one_location_out_with_source_exclusion
+
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 1600010
+
+success:
+  minimum_each_location_spearman: 0.0
+  minimum_policy_utility: 0.005
+  minimum_acceptance: 0.20
+  maximum_harmful_rate: 0.20
+  require_random_component_ci_positive: true
+  require_above_appearance: true
+
+output:
+  candidate_cache: revisit3d/cache/EXP-016/causal_utility_pairs_train_v10.pt
+  artifact: revisit3d/checkpoints/exp016_unified_utility_address_v10.joblib
+  result: revisit3d/results/EXP-016/stage0_unified_address_train_v10.json

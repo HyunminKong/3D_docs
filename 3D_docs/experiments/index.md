@@ -17,5 +17,6 @@
 | [EXP-013](EXP-013_utility_key_atom.md) | Can the existing transport key be trained directly by future utility without an auxiliary loss? | Completed, gate failed | Selection headroom grew, but mean utility and harm became substantially worse. |
 | [EXP-014](EXP-014_budget_sufficient_atom.md) | Was the minimal frozen-key failure caused by an insufficient optimization budget? | Completed, gate failed narrowly | Oracle utility reached 0.9205%; all other gates passed. |
 | [EXP-015](EXP-015_core_atom.md) | Are absolute reuse quality and relative ranking jointly sufficient without auxiliary losses? | Completed, all gates passed | The terminal core atom exceeded 1% OOF oracle utility without auxiliary losses. |
+| [EXP-016](EXP-016_unified_utility_address.md) | Can one source-safe linear score perform both retrieval and reuse gating? | Registered | Causal 64-memory panels, top-1, zero threshold, no fine router. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

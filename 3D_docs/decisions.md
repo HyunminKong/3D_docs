@@ -554,3 +554,12 @@ Status: Accepted after EXP-015
 EXP-015 passed every terminal atom gate on 225 OOF episodes/25 components. Current/base was 0.80194, oracle five-candidate utility +1.04799%, mean utility +0.52105%, harm 26.37%, and oracle-minus-mean CI `[+0.00439, +0.00618]`. The final 1000-step train refit is frozen by checkpoint hash.
 
 No further atom, key, loss, optimizer, step size, reuse residual, or transport change is permitted. The next stage may fit only one source-entity-safe linear utility regressor whose score performs both retrieval and the semantic positive-utility decision. A separate fine router, risk head, calibrated threshold, or additional candidate network is prohibited.
+
+## D077 — Register a top-1 zero-threshold unified address
+
+Date: 2026-08-25
+Status: Accepted before EXP-016 execution
+
+EXP-016 uses one Ridge score over the exact-factorizable descriptor interaction `[c,s,c-s,c*s]`. The highest-scoring memory is the only retrieved candidate and is applied only when its predicted utility exceeds semantic zero. `K`, a learned threshold, PCA, fine router, and risk head are removed, leaving only `eta`, `alpha`, and capacity as visible inference hyperparameters.
+
+Training/evaluation is leave-one-location-out with every held-location source entity removed from training. The causal candidate panel is sampled before target write and future/query frames are label-only. The fixed gates compare against matched-acceptance random and appearance addresses and must pass before any validation access.
