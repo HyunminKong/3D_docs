@@ -134,3 +134,8 @@ Status: **Supported on curated-source development; full-stream setting open.**
 EXP-046 passes all development gates and improves all scenes despite selecting
 the manifest-paired record only 17.37%. A full-stream test must remove curated
 writes and pair resets before terminal evaluation.
+
+**EXP-047 update:** agreement addressing remains supported in full streams, but
+long-term reservoir retention is rejected relative to FIFO-16. The active
+memory hypothesis is narrowed to useful bounded recent experience and remains
+open against a second-current-step explanation until EXP-048.

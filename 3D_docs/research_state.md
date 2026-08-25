@@ -362,3 +362,10 @@ EXP-047 is registered to process 4,532 ordinary frames in continuous recurrent
 order, predict before write, and compare a capacity-16 reservoir agreement bank
 with same-bank appearance/random and FIFO agreement. This is the last
 development system test before any terminal access.
+
+EXP-047 processed all 4,532 frames and 213 queries. Reservoir agreement gains
+`2.76e-4`, beats appearance/random in every scene, and harms 0.47%, but FIFO-16
+is better by `6.24e-5` in every scene and harms 0%. The registered gate fails.
+FIFO selects records only 6.18 frames old, so EXP-048 is now registered as a
+decisive novelty audit against a second current TTT step. Terminal remains
+closed.

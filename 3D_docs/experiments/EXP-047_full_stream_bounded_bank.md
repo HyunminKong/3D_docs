@@ -1,6 +1,6 @@
 # EXP-047 — Full-Stream Bounded Agreement Bank
 
-Status: Registered development experiment
+Status: Completed; registered gate failed on reservoir versus FIFO
 Purpose: Remove curated-write and pair-reset assumptions
 
 ## Question
@@ -38,3 +38,32 @@ remain exact. Terminal remains unopened.
 - Config: `configs/EXP-047_full_stream_bounded_bank_v10.yaml`
 - Script: `revisit3d/scripts/evaluate_exp047_full_stream_bounded_bank.py`
 - Result: `revisit3d/results/EXP-047/full_stream_bounded_bank_v10.json`
+
+## Result
+
+Exact coverage and capacity were achieved. Both agreement banks are useful, but
+the registered assumption that long-term reservoir retention beats FIFO was
+reversed.
+
+| Comparison | Gain | 95% CI | Positive scenes |
+| --- | ---: | ---: | ---: |
+| current TTT over zero code | `7.85e-4` | `[5.44e-4, 1.05e-3]` | 14/14 |
+| reservoir agreement over current | `2.76e-4` | `[1.94e-4, 3.69e-4]` | 14/14 |
+| reservoir over appearance | `1.87e-4` | `[1.16e-4, 2.70e-4]` | 14/14 |
+| reservoir over random | `2.13e-4` | `[1.44e-4, 2.96e-4]` | 14/14 |
+| reservoir over FIFO | `-6.24e-5` | `[-8.87e-5, -4.06e-5]` | 0/14 |
+
+Reservoir agreement harms 0.47% and selects records 128.3 frames old on
+average. FIFO agreement harms 0%, selects records only 6.18 frames old, and
+gains `3.38e-4` over current with post-result descriptive CI
+`[2.41e-4, 4.54e-4]`. The complete registered gate fails because FIFO is
+strictly better in every scene.
+
+## Conclusion
+
+Every-frame bounded agreement memory works, and agreement—not appearance or
+random selection—remains essential. But the result supports short-term FIFO
+adaptation more strongly than long-term continual retention. Before terminal,
+the method must beat an equal-budget second current TTT step; otherwise FIFO
+memory may only cache a recent descent direction rather than recall reusable
+long-term experience.

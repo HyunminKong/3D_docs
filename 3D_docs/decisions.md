@@ -1381,3 +1381,20 @@ process the ordinary RGB stream continuously, write every eligible frame after
 prediction, and use a deterministic capacity-16 reservoir. FIFO-16,
 same-reservoir appearance, and same-reservoir random are fixed controls. Only
 this experiment may select retention before terminal is opened.
+
+## D126 — Select FIFO-16 provisionally and require an optimization-equivalence audit
+
+Date: 2026-08-26
+Status: Accepted after EXP-047
+
+Every-frame reservoir agreement remains useful and beats appearance/random, but
+FIFO agreement is significantly better in every scene and has zero observed
+harm. Reservoir superiority and a strong long-term-retention interpretation are
+rejected on this development stream. FIFO-16 is the provisional retention rule.
+
+The selected FIFO records are only 6.18 frames old on average. This creates a
+central novelty risk: transported recent memory may approximate a second
+current TTT step. EXP-048 must compare those alternatives at equal normalized
+step size on the exact full-stream protocol. No terminal access or memory claim
+is authorized until FIFO memory beats that control with a positive confidence
+bound.
