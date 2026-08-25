@@ -311,3 +311,8 @@ both online code steps while keeping every inference component unchanged. The
 48 train scenes exposed by EXP-042 are fit data; the last 15 previously unopened
 train scenes are now a locked internal audit. A fit-only technical smoke test is
 next, followed by the single fixed run if exact autograd is feasible.
+
+The EXP-043 fit-only smoke passed after forcing the mathematically equivalent
+math SDPA backend because the default efficient kernel lacks double backward.
+The exact gradient is finite and peak allocated memory is 36.61 GiB. No audit
+frame was opened. The registered 192-step fit is now authorized.

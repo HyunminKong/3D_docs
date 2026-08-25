@@ -1,6 +1,6 @@
 # EXP-043 — Exact-Meta CUT3R Plasticity Coordinate
 
-Status: Registered; implementation feasibility pending
+Status: Registered; fit-only implementation smoke passed
 Purpose: Approved minimal scope reopening after EXP-042
 
 ## Question
@@ -39,6 +39,13 @@ Validation and terminal remain closed.
 One technical smoke run may use only the first fit pair to verify second-order
 autograd and memory feasibility. It may not change the registered learning
 rate, loss, capacity, or audit protocol based on performance.
+
+The first smoke exposed that this PyTorch build does not implement double
+backward for its memory-efficient SDPA kernel. Re-running the identical
+attention operation with PyTorch's math SDPA backend succeeded: the exact-meta
+gradient was finite (`6.29e-4`), the basis changed, peak allocated CUDA memory
+was 36.61 GiB, and no audit pair was accessed. This is an autograd backend
+correction; it changes no model, objective, or registered hyperparameter.
 
 ## Fixed fit
 
