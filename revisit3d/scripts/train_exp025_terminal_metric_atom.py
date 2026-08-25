@@ -34,6 +34,12 @@ def _metric_loss(prediction, target, valid, config):
 
 
 def _risk(prediction, target, valid, config):
+    if torch.is_tensor(prediction):
+        prediction = prediction.detach().cpu().numpy()
+    if torch.is_tensor(target):
+        target = target.detach().cpu().numpy()
+    if torch.is_tensor(valid):
+        valid = valid.detach().cpu().numpy()
     rows = []
     minimum_cells = int(config["lidar"]["minimum_cells_per_view"])
     epsilon = float(config["meta_objective"]["minimum_depth"])
