@@ -1,0 +1,2449 @@
+{
+  "experiment": "EXP-011",
+  "stage": "stage1_locked_objective_validation",
+  "protocol_revision": "v1.1",
+  "split": "val",
+  "query_lidar_evaluation_only": true,
+  "query_or_future_online_input": false,
+  "config": "configs/EXP-011_locked_validation_v11.yaml",
+  "targets": 103,
+  "components": 17,
+  "locked_objective": {
+    "name": "track3d_only",
+    "step_size": 0.0125,
+    "steps": 1,
+    "selected_by": "revisit3d/results/EXP-011/stage0_objective_health_train_v10.json"
+  },
+  "summaries": {
+    "base": {
+      "targets": 103,
+      "silog": 47.999438992476925,
+      "abs_rel": 0.7401336091386191,
+      "rmse_m": 8.313862004900837,
+      "delta1": 0.5331933684974757,
+      "point_epe_m": 5.228339643422915
+    },
+    "current": {
+      "targets": 103,
+      "silog": 47.77209775129187,
+      "abs_rel": 0.7330360976476253,
+      "rmse_m": 8.243110180783505,
+      "delta1": 0.5377247472241485,
+      "point_epe_m": 5.176469170571837
+    }
+  },
+  "relative_improvement": {
+    "silog": 0.004736331214635454,
+    "abs_rel": 0.009589500332587266,
+    "point_epe_m": 0.009921022043074379
+  },
+  "bootstrap": {
+    "silog": {
+      "direction": "base_error_minus_adapted_error",
+      "components": 17,
+      "mean_improvement": 0.10329634850531931,
+      "ci95": [
+        -0.006640811497949523,
+        0.21253450875144173
+      ]
+    },
+    "abs_rel": {
+      "direction": "base_error_minus_adapted_error",
+      "components": 17,
+      "mean_improvement": 0.0035324319335703633,
+      "ci95": [
+        -0.0009677903119094019,
+        0.0072804105064690275
+      ]
+    },
+    "point_epe_m": {
+      "direction": "base_error_minus_adapted_error",
+      "components": 17,
+      "mean_improvement": 0.03290947669379608,
+      "ci95": [
+        0.0011950058754615083,
+        0.06480258306828783
+      ]
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "coverage": true,
+      "all_primary_means_improve": true,
+      "positive_intervals": true
+    },
+    "passed": true
+  },
+  "test_accessed": false,
+  "rows": [
+    {
+      "episode": "target-9f22f579162fe050",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 730,
+        "silog": 40.71918529017277,
+        "abs_rel": 0.34268064824242966,
+        "rmse_m": 9.492871220564982,
+        "delta1": 0.4839679939261119,
+        "point_epe_m": 5.857650200623445
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 730,
+        "silog": 40.322050330029754,
+        "abs_rel": 0.32861779853081935,
+        "rmse_m": 9.582134457504596,
+        "delta1": 0.5112201928054717,
+        "point_epe_m": 5.746958354200596
+      }
+    },
+    {
+      "episode": "target-f01f6b801db5edb2",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 783,
+        "silog": 48.86536479705234,
+        "abs_rel": 0.6691919987353327,
+        "rmse_m": 9.116665163540814,
+        "delta1": 0.4632038065027756,
+        "point_epe_m": 5.70901573132603
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 783,
+        "silog": 48.35518736258342,
+        "abs_rel": 0.6622191536551334,
+        "rmse_m": 9.050390487633258,
+        "delta1": 0.45953773460216757,
+        "point_epe_m": 5.609471183157087
+      }
+    },
+    {
+      "episode": "target-df473ab80d69e855",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 770,
+        "silog": 34.37945072356554,
+        "abs_rel": 0.28129658496915866,
+        "rmse_m": 7.457166810907999,
+        "delta1": 0.5729557537020304,
+        "point_epe_m": 4.190296231263465
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 770,
+        "silog": 34.53591132083707,
+        "abs_rel": 0.28278145796607373,
+        "rmse_m": 7.50796193112926,
+        "delta1": 0.5846536413066538,
+        "point_epe_m": 4.220958072233449
+      }
+    },
+    {
+      "episode": "target-c0be5474c42d1b3a",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 761,
+        "silog": 42.807202816572506,
+        "abs_rel": 0.44317966420044835,
+        "rmse_m": 6.883209765136172,
+        "delta1": 0.5287830370634222,
+        "point_epe_m": 4.277512706268248
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 761,
+        "silog": 43.243652203946965,
+        "abs_rel": 0.45451959059549574,
+        "rmse_m": 7.002590934898171,
+        "delta1": 0.5248669274158344,
+        "point_epe_m": 4.38842067636288
+      }
+    },
+    {
+      "episode": "target-1e1729f1f07a0bee",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 44.86729858589396,
+        "abs_rel": 0.4016680907688652,
+        "rmse_m": 7.796775326642549,
+        "delta1": 0.4973666449689417,
+        "point_epe_m": 5.517127155336207
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 44.30554471860555,
+        "abs_rel": 0.39266090228422806,
+        "rmse_m": 7.746226709737895,
+        "delta1": 0.49361683724705263,
+        "point_epe_m": 5.475056158122499
+      }
+    },
+    {
+      "episode": "target-9550eaf53a19638d",
+      "component": "component-39",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 734,
+        "silog": 48.55792637328728,
+        "abs_rel": 0.9243524420734082,
+        "rmse_m": 7.572562587268721,
+        "delta1": 0.4789364217454777,
+        "point_epe_m": 4.994865057542073
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 734,
+        "silog": 48.5851954202306,
+        "abs_rel": 0.9121272244579586,
+        "rmse_m": 7.597925876209251,
+        "delta1": 0.46808049491802395,
+        "point_epe_m": 5.032223979469608
+      }
+    },
+    {
+      "episode": "target-2e002120d5dcc815",
+      "component": "component-39",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 805,
+        "silog": 53.50770243858484,
+        "abs_rel": 0.9755355870827037,
+        "rmse_m": 8.407796101409478,
+        "delta1": 0.46367014995421874,
+        "point_epe_m": 5.694083977556486
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 805,
+        "silog": 53.389467105177644,
+        "abs_rel": 0.9863828105222718,
+        "rmse_m": 7.943391749929793,
+        "delta1": 0.47138364043256775,
+        "point_epe_m": 5.422178428434165
+      }
+    },
+    {
+      "episode": "target-675a65a6bab066d7",
+      "component": "component-39",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 681,
+        "silog": 52.23891977241833,
+        "abs_rel": 1.3686967829461838,
+        "rmse_m": 7.354426227432488,
+        "delta1": 0.5469134494529961,
+        "point_epe_m": 4.785785737135223
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 681,
+        "silog": 52.07138380439088,
+        "abs_rel": 1.3248234522588453,
+        "rmse_m": 7.318881316262381,
+        "delta1": 0.5350613269239376,
+        "point_epe_m": 4.815528290017358
+      }
+    },
+    {
+      "episode": "target-b963ab2ff1a3b32d",
+      "component": "component-39",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 693,
+        "silog": 53.2729500728555,
+        "abs_rel": 0.9481231229946989,
+        "rmse_m": 6.733118221634583,
+        "delta1": 0.4803693416410179,
+        "point_epe_m": 4.992578276626335
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 693,
+        "silog": 53.453341262335314,
+        "abs_rel": 0.9548822050305155,
+        "rmse_m": 6.808666810145949,
+        "delta1": 0.48044323812026124,
+        "point_epe_m": 5.0323055222270465
+      }
+    },
+    {
+      "episode": "target-f71dd88fb1430a22",
+      "component": "component-29",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 50.08260074133713,
+        "abs_rel": 0.5646312621545377,
+        "rmse_m": 8.505600232877807,
+        "delta1": 0.5789817934805671,
+        "point_epe_m": 5.586657456557129
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 49.565510372350055,
+        "abs_rel": 0.5535491698133378,
+        "rmse_m": 8.13692805934128,
+        "delta1": 0.590139800263249,
+        "point_epe_m": 5.391834345848693
+      }
+    },
+    {
+      "episode": "target-1442332448160f3d",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 802,
+        "silog": 52.910707968854055,
+        "abs_rel": 0.4503327640387698,
+        "rmse_m": 12.127340442285465,
+        "delta1": 0.446409025324643,
+        "point_epe_m": 7.515585394913275
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 802,
+        "silog": 53.445531138787175,
+        "abs_rel": 0.45354210368622633,
+        "rmse_m": 12.253597671928283,
+        "delta1": 0.44637171003532516,
+        "point_epe_m": 7.601186921607178
+      }
+    },
+    {
+      "episode": "target-081584008e6ba447",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 741,
+        "silog": 58.34819478920176,
+        "abs_rel": 0.9588179521126112,
+        "rmse_m": 9.572883051634054,
+        "delta1": 0.4366766546623151,
+        "point_epe_m": 6.591715659389845
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 741,
+        "silog": 58.20425377357534,
+        "abs_rel": 0.9347370968014498,
+        "rmse_m": 9.556432213135595,
+        "delta1": 0.43159254604794234,
+        "point_epe_m": 6.589921629916228
+      }
+    },
+    {
+      "episode": "target-35967ca73f4af14a",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 762,
+        "silog": 43.95059695134512,
+        "abs_rel": 0.47196987000809953,
+        "rmse_m": 7.326781182892622,
+        "delta1": 0.5137029014904723,
+        "point_epe_m": 4.661000097035478
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 762,
+        "silog": 43.95731709936375,
+        "abs_rel": 0.4666279349844039,
+        "rmse_m": 7.411752681860609,
+        "delta1": 0.5203732013318545,
+        "point_epe_m": 4.658701192417925
+      }
+    },
+    {
+      "episode": "target-2d39468bc6bc536c",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 755,
+        "silog": 67.46840653342637,
+        "abs_rel": 1.1179404515666722,
+        "rmse_m": 9.899625200585874,
+        "delta1": 0.3680997783044796,
+        "point_epe_m": 6.870108134250655
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 755,
+        "silog": 67.35527265284047,
+        "abs_rel": 1.1114154192599617,
+        "rmse_m": 9.980146483056458,
+        "delta1": 0.37350824461501,
+        "point_epe_m": 6.949641494554639
+      }
+    },
+    {
+      "episode": "target-cc7b4a8deff06339",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 47.11445775369215,
+        "abs_rel": 0.7389631963169545,
+        "rmse_m": 8.002362877933752,
+        "delta1": 0.5638631197057187,
+        "point_epe_m": 5.223181570795479
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 46.547842249596464,
+        "abs_rel": 0.7245723530575772,
+        "rmse_m": 7.861265658538931,
+        "delta1": 0.5599464712622721,
+        "point_epe_m": 5.118103011322076
+      }
+    },
+    {
+      "episode": "target-d9860304d4e18372",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 813,
+        "silog": 36.451024451824324,
+        "abs_rel": 0.30210481458964283,
+        "rmse_m": 7.178229462917545,
+        "delta1": 0.5338368105863035,
+        "point_epe_m": 4.650021772239502
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 813,
+        "silog": 36.63752842601305,
+        "abs_rel": 0.3027325418075428,
+        "rmse_m": 7.2529769362001035,
+        "delta1": 0.5301543031005506,
+        "point_epe_m": 4.677229864819611
+      }
+    },
+    {
+      "episode": "target-55fc48188a409654",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 748,
+        "silog": 58.06048153104564,
+        "abs_rel": 0.6603900941206431,
+        "rmse_m": 13.094098757028085,
+        "delta1": 0.4854619643279149,
+        "point_epe_m": 7.7854246859805665
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 748,
+        "silog": 57.894067886581965,
+        "abs_rel": 0.6519801760736972,
+        "rmse_m": 13.088727307858893,
+        "delta1": 0.485260730944689,
+        "point_epe_m": 7.785494986508002
+      }
+    },
+    {
+      "episode": "target-3e52e14d96cd7e6d",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 55.90447117001964,
+        "abs_rel": 0.913306726792507,
+        "rmse_m": 11.848900651590837,
+        "delta1": 0.5225618030717442,
+        "point_epe_m": 7.704818859927818
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 55.27106849054337,
+        "abs_rel": 0.9356877735326672,
+        "rmse_m": 11.734732944383598,
+        "delta1": 0.5468514622343783,
+        "point_epe_m": 7.51892277702887
+      }
+    },
+    {
+      "episode": "target-fa17c0239538b34a",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 794,
+        "silog": 66.79582078212567,
+        "abs_rel": 1.2191002570669327,
+        "rmse_m": 7.365705016577589,
+        "delta1": 0.5049745349068009,
+        "point_epe_m": 4.974677878424028
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 794,
+        "silog": 66.95686236954552,
+        "abs_rel": 1.2285110039421165,
+        "rmse_m": 7.390423599138741,
+        "delta1": 0.4985446552626356,
+        "point_epe_m": 4.993904108136603
+      }
+    },
+    {
+      "episode": "target-b88fa3e54510e8d6",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 71.67437933291019,
+        "abs_rel": 1.2119871313024624,
+        "rmse_m": 9.317279848218472,
+        "delta1": 0.42942283577835083,
+        "point_epe_m": 6.278906455384957
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 71.9860524099464,
+        "abs_rel": 1.2084646775440955,
+        "rmse_m": 9.431513781104526,
+        "delta1": 0.43574829632396306,
+        "point_epe_m": 6.3134402873127575
+      }
+    },
+    {
+      "episode": "target-3c8937f0b051f661",
+      "component": "component-12",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 772,
+        "silog": 46.594120433786735,
+        "abs_rel": 0.808522196561799,
+        "rmse_m": 7.570208683570254,
+        "delta1": 0.6311717354510559,
+        "point_epe_m": 4.9084193418229445
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 772,
+        "silog": 46.31820872005692,
+        "abs_rel": 0.8122897262252158,
+        "rmse_m": 7.5635348656591965,
+        "delta1": 0.640334610918869,
+        "point_epe_m": 4.831539245771035
+      }
+    },
+    {
+      "episode": "target-d8b5a3b254623df2",
+      "component": "component-29",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 23.995837714902702,
+        "abs_rel": 0.18405772877239623,
+        "rmse_m": 5.89570286341608,
+        "delta1": 0.7697159971754319,
+        "point_epe_m": 3.518278370900834
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 23.596341731306126,
+        "abs_rel": 0.17933565678936703,
+        "rmse_m": 5.739627036021156,
+        "delta1": 0.7833036011433083,
+        "point_epe_m": 3.3958822373693347
+      }
+    },
+    {
+      "episode": "target-828b7244e61efe89",
+      "component": "component-31",
+      "location": "singapore-onenorth",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 723,
+        "silog": 45.52235655669003,
+        "abs_rel": 0.4194251703883136,
+        "rmse_m": 12.324212145887484,
+        "delta1": 0.5154805662946045,
+        "point_epe_m": 7.7871552801680535
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 723,
+        "silog": 44.40163579416804,
+        "abs_rel": 0.40344358888854187,
+        "rmse_m": 11.922057040782253,
+        "delta1": 0.5195789269503421,
+        "point_epe_m": 7.48738237872235
+      }
+    },
+    {
+      "episode": "target-2802a177de28422d",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 714,
+        "silog": 35.70043428040645,
+        "abs_rel": 0.3407003457044896,
+        "rmse_m": 5.757620111128931,
+        "delta1": 0.6301898128002812,
+        "point_epe_m": 3.6459168752826874
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 714,
+        "silog": 35.5105074971866,
+        "abs_rel": 0.3377361055937959,
+        "rmse_m": 5.7307064954451326,
+        "delta1": 0.625889925373796,
+        "point_epe_m": 3.6480265728271726
+      }
+    },
+    {
+      "episode": "target-e7023327361ee1d1",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 692,
+        "silog": 34.27694763930943,
+        "abs_rel": 0.28143286713512927,
+        "rmse_m": 9.522813667160635,
+        "delta1": 0.6040299935564394,
+        "point_epe_m": 5.526535930666214
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 692,
+        "silog": 32.619005875572014,
+        "abs_rel": 0.2590749042096784,
+        "rmse_m": 8.564376494232912,
+        "delta1": 0.6082646565445049,
+        "point_epe_m": 4.992343920400991
+      }
+    },
+    {
+      "episode": "target-24cef9e463ef6836",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 716,
+        "silog": 47.79168888024598,
+        "abs_rel": 0.7559563948317285,
+        "rmse_m": 7.235706635804924,
+        "delta1": 0.6025128236443577,
+        "point_epe_m": 3.965535526818682
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 716,
+        "silog": 47.71806744613348,
+        "abs_rel": 0.7501715745925711,
+        "rmse_m": 7.313874674558399,
+        "delta1": 0.6175660334413999,
+        "point_epe_m": 4.003496914048273
+      }
+    },
+    {
+      "episode": "target-d631219505835d3f",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 689,
+        "silog": 48.79582837504945,
+        "abs_rel": 0.7297107645544387,
+        "rmse_m": 8.783174944688339,
+        "delta1": 0.5930333391856432,
+        "point_epe_m": 5.004344777471143
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 689,
+        "silog": 48.730710108004345,
+        "abs_rel": 0.7343045386706868,
+        "rmse_m": 8.759088593522437,
+        "delta1": 0.5957702826032972,
+        "point_epe_m": 4.969926666466417
+      }
+    },
+    {
+      "episode": "target-de7c3a19e14cbbc3",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 691,
+        "silog": 76.44650513907287,
+        "abs_rel": 1.8620093001953513,
+        "rmse_m": 9.407731764479971,
+        "delta1": 0.47775173527761244,
+        "point_epe_m": 5.95699127724368
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 691,
+        "silog": 76.07871940880378,
+        "abs_rel": 1.8353942287825409,
+        "rmse_m": 9.395314920628149,
+        "delta1": 0.4821367310151527,
+        "point_epe_m": 5.929157693852597
+      }
+    },
+    {
+      "episode": "target-8b0a8995bec5b2a4",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 727,
+        "silog": 19.07706600171424,
+        "abs_rel": 0.14178373394797325,
+        "rmse_m": 5.038205989848011,
+        "delta1": 0.7966025417682876,
+        "point_epe_m": 3.202504767237136
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 727,
+        "silog": 18.837576588403632,
+        "abs_rel": 0.1401495238145017,
+        "rmse_m": 4.959692665613677,
+        "delta1": 0.8102355117548488,
+        "point_epe_m": 3.1386861974998723
+      }
+    },
+    {
+      "episode": "target-247bea0659a886d4",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 56.15252227890004,
+        "abs_rel": 0.8322318717298516,
+        "rmse_m": 7.932399907102366,
+        "delta1": 0.6194383062589585,
+        "point_epe_m": 5.125430389019383
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 56.19388970492408,
+        "abs_rel": 0.8207704437735601,
+        "rmse_m": 8.002950736246174,
+        "delta1": 0.6194084448160535,
+        "point_epe_m": 5.134540590062582
+      }
+    },
+    {
+      "episode": "target-f614ca50f949f3d5",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 757,
+        "silog": 28.224323132913508,
+        "abs_rel": 0.21824160850328503,
+        "rmse_m": 6.916826448880856,
+        "delta1": 0.5936871828342245,
+        "point_epe_m": 4.137108911173303
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 757,
+        "silog": 28.219663455131005,
+        "abs_rel": 0.218133482887937,
+        "rmse_m": 6.9618430749877875,
+        "delta1": 0.5946535801048995,
+        "point_epe_m": 4.167904504453621
+      }
+    },
+    {
+      "episode": "target-2ac094b9915ecd70",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 38.62083489517691,
+        "abs_rel": 0.3054448517523872,
+        "rmse_m": 10.803535091345541,
+        "delta1": 0.5737419340974409,
+        "point_epe_m": 6.006062239013461
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 38.149305548254695,
+        "abs_rel": 0.2985960376518986,
+        "rmse_m": 10.79499824184555,
+        "delta1": 0.5931476985679491,
+        "point_epe_m": 5.9714734557773985
+      }
+    },
+    {
+      "episode": "target-54d18d14ddba66af",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 43.81924330840603,
+        "abs_rel": 0.4190031887093428,
+        "rmse_m": 8.076290494383834,
+        "delta1": 0.5157403674875288,
+        "point_epe_m": 4.938011312896957
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 43.75498124680779,
+        "abs_rel": 0.41234149707635,
+        "rmse_m": 8.165167573683082,
+        "delta1": 0.5243558267695185,
+        "point_epe_m": 4.9665377971580735
+      }
+    },
+    {
+      "episode": "target-aceba493a5969f56",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 771,
+        "silog": 50.912339325331445,
+        "abs_rel": 0.812724032268173,
+        "rmse_m": 8.481874309197654,
+        "delta1": 0.4929073614557486,
+        "point_epe_m": 5.156097933912782
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 771,
+        "silog": 50.3760579145328,
+        "abs_rel": 0.8051164047059884,
+        "rmse_m": 8.42964571532813,
+        "delta1": 0.5109801488833747,
+        "point_epe_m": 5.077457471041342
+      }
+    },
+    {
+      "episode": "target-e2eed80b12c4885b",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 58.27585200954361,
+        "abs_rel": 0.9430559709782311,
+        "rmse_m": 10.123727821439044,
+        "delta1": 0.5497060517471185,
+        "point_epe_m": 5.579871378926357
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 57.964506618282414,
+        "abs_rel": 0.9260998363732548,
+        "rmse_m": 10.098861075979833,
+        "delta1": 0.5625476903659168,
+        "point_epe_m": 5.504010458298784
+      }
+    },
+    {
+      "episode": "target-efcd6ba327157ea4",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 783,
+        "silog": 57.51437488128228,
+        "abs_rel": 1.0963676241088918,
+        "rmse_m": 9.207105885335904,
+        "delta1": 0.48310783219240494,
+        "point_epe_m": 5.859307551441367
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 783,
+        "silog": 57.440657672894226,
+        "abs_rel": 1.0941829897380002,
+        "rmse_m": 9.209982959715353,
+        "delta1": 0.49592832748955373,
+        "point_epe_m": 5.84000533114788
+      }
+    },
+    {
+      "episode": "target-155d5dacb7adf0b2",
+      "component": "component-61",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 746,
+        "silog": 75.05927510735037,
+        "abs_rel": 1.4098295505369731,
+        "rmse_m": 11.66566950842067,
+        "delta1": 0.4930824835907241,
+        "point_epe_m": 6.879114592444813
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 746,
+        "silog": 75.12476979116805,
+        "abs_rel": 1.394661976726648,
+        "rmse_m": 11.70236203704075,
+        "delta1": 0.4862749870291814,
+        "point_epe_m": 6.890944014656685
+      }
+    },
+    {
+      "episode": "target-573bbc52ffba70d0",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 44.57368219145468,
+        "abs_rel": 0.6276602397103903,
+        "rmse_m": 7.667286195888848,
+        "delta1": 0.5618520239393059,
+        "point_epe_m": 4.8517577679647665
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 44.22779074708271,
+        "abs_rel": 0.6423677616524378,
+        "rmse_m": 7.5994938317925325,
+        "delta1": 0.5671560132164585,
+        "point_epe_m": 4.822368900892572
+      }
+    },
+    {
+      "episode": "target-f2ea60d395683232",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 748,
+        "silog": 85.80719341752271,
+        "abs_rel": 1.944954857658934,
+        "rmse_m": 11.465228272562229,
+        "delta1": 0.5632591983252714,
+        "point_epe_m": 6.706081551145248
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 748,
+        "silog": 85.14461688040322,
+        "abs_rel": 1.878460493261204,
+        "rmse_m": 11.464054396191639,
+        "delta1": 0.5684892494706576,
+        "point_epe_m": 6.711644323634123
+      }
+    },
+    {
+      "episode": "target-7ddb66891bc43ae7",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 59.32293112243566,
+        "abs_rel": 0.8837074445149493,
+        "rmse_m": 12.221465463483351,
+        "delta1": 0.42872284724904863,
+        "point_epe_m": 7.8729772056987875
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 59.30070256228604,
+        "abs_rel": 0.8549988945558491,
+        "rmse_m": 12.37010048835216,
+        "delta1": 0.4299712320993641,
+        "point_epe_m": 7.88761881106971
+      }
+    },
+    {
+      "episode": "target-bfca813650981946",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 769,
+        "silog": 60.04102262617219,
+        "abs_rel": 0.9212511618947775,
+        "rmse_m": 11.797246760697195,
+        "delta1": 0.39930151183137086,
+        "point_epe_m": 8.510684333374668
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 769,
+        "silog": 59.66207073837085,
+        "abs_rel": 0.9253882688584233,
+        "rmse_m": 11.687380530558237,
+        "delta1": 0.3978304496975183,
+        "point_epe_m": 8.431401203541599
+      }
+    },
+    {
+      "episode": "target-a4a13c0eb7150b68",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 763,
+        "silog": 56.269907041458694,
+        "abs_rel": 0.7592237124402429,
+        "rmse_m": 10.437421090813146,
+        "delta1": 0.43731914735339356,
+        "point_epe_m": 6.70837809983149
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 763,
+        "silog": 56.357803299694105,
+        "abs_rel": 0.7635973530617952,
+        "rmse_m": 10.483125676348418,
+        "delta1": 0.4254464203898397,
+        "point_epe_m": 6.704484499117149
+      }
+    },
+    {
+      "episode": "target-7f63131ae88eeed8",
+      "component": "component-24",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 769,
+        "silog": 51.03129157809383,
+        "abs_rel": 0.7132354149248189,
+        "rmse_m": 8.965116520697096,
+        "delta1": 0.4794195479228374,
+        "point_epe_m": 5.572678939017866
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 769,
+        "silog": 50.48983345560483,
+        "abs_rel": 0.7014969914842999,
+        "rmse_m": 8.995624844470179,
+        "delta1": 0.4703446392179945,
+        "point_epe_m": 5.545678381357174
+      }
+    },
+    {
+      "episode": "target-1f85b5f348205d1c",
+      "component": "component-24",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 698,
+        "silog": 51.12292009038715,
+        "abs_rel": 0.796624992164866,
+        "rmse_m": 11.316423316202783,
+        "delta1": 0.5271191710336447,
+        "point_epe_m": 7.442913129630825
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 698,
+        "silog": 50.73276225662755,
+        "abs_rel": 0.8081953129859729,
+        "rmse_m": 10.910364836090649,
+        "delta1": 0.5315294865952761,
+        "point_epe_m": 7.183995436282765
+      }
+    },
+    {
+      "episode": "target-ae05a051d5d8c216",
+      "component": "component-38",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 658,
+        "silog": 32.359320047669826,
+        "abs_rel": 0.2748134307342927,
+        "rmse_m": 6.385036096913105,
+        "delta1": 0.552710843373494,
+        "point_epe_m": 4.048980892713351
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 658,
+        "silog": 32.266749215863655,
+        "abs_rel": 0.2728478804850713,
+        "rmse_m": 6.294802088239155,
+        "delta1": 0.552710843373494,
+        "point_epe_m": 3.9895747855945354
+      }
+    },
+    {
+      "episode": "target-bc228482e1b9c36c",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 614,
+        "silog": 79.01306172590978,
+        "abs_rel": 2.1699154141936954,
+        "rmse_m": 8.825422799327825,
+        "delta1": 0.48959749789684914,
+        "point_epe_m": 5.910537692252715
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 614,
+        "silog": 78.88909502298203,
+        "abs_rel": 2.1508225230269544,
+        "rmse_m": 8.805753324362218,
+        "delta1": 0.4993588507700182,
+        "point_epe_m": 5.916783590677198
+      }
+    },
+    {
+      "episode": "target-b8f84d9980cfb5db",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 631,
+        "silog": 36.876326384864754,
+        "abs_rel": 0.4397024061738572,
+        "rmse_m": 6.438697231055657,
+        "delta1": 0.6704970474730059,
+        "point_epe_m": 3.595848867458372
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 631,
+        "silog": 36.494152248186474,
+        "abs_rel": 0.43645050501065624,
+        "rmse_m": 6.4538363680441355,
+        "delta1": 0.6800018108470449,
+        "point_epe_m": 3.546566070355682
+      }
+    },
+    {
+      "episode": "target-e02a370c4a639e9c",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 653,
+        "silog": 48.9738159483942,
+        "abs_rel": 0.7490987691279724,
+        "rmse_m": 7.92033826345334,
+        "delta1": 0.6390107247162117,
+        "point_epe_m": 4.069129192553609
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 653,
+        "silog": 49.12881193106772,
+        "abs_rel": 0.7363666151252589,
+        "rmse_m": 8.005072257391888,
+        "delta1": 0.6468679397340289,
+        "point_epe_m": 4.109589505180873
+      }
+    },
+    {
+      "episode": "target-a1ca6877148bc856",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 654,
+        "silog": 56.0163837961336,
+        "abs_rel": 1.2508093274178442,
+        "rmse_m": 6.158062828502081,
+        "delta1": 0.578629393830703,
+        "point_epe_m": 3.9361548992867528
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 654,
+        "silog": 55.96443387781222,
+        "abs_rel": 1.2452265231947197,
+        "rmse_m": 6.16579359456707,
+        "delta1": 0.5860518292682927,
+        "point_epe_m": 3.9293020399291034
+      }
+    },
+    {
+      "episode": "target-d702330fb2a5a340",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 649,
+        "silog": 39.40551371913436,
+        "abs_rel": 0.4130976256499132,
+        "rmse_m": 7.137050571315014,
+        "delta1": 0.5424435001151101,
+        "point_epe_m": 4.655902709106606
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 649,
+        "silog": 39.05672586431399,
+        "abs_rel": 0.4088013717110335,
+        "rmse_m": 7.02510715072701,
+        "delta1": 0.5500865724042667,
+        "point_epe_m": 4.623805566247296
+      }
+    },
+    {
+      "episode": "target-c7e0e59e2cb6c22f",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 627,
+        "silog": 24.746125124227582,
+        "abs_rel": 0.17632110130821177,
+        "rmse_m": 6.8816566075119585,
+        "delta1": 0.7431659407393532,
+        "point_epe_m": 3.3051380761669353
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 627,
+        "silog": 24.77636414009163,
+        "abs_rel": 0.17699108815348633,
+        "rmse_m": 7.018705928784257,
+        "delta1": 0.7544373282752592,
+        "point_epe_m": 3.361989528448237
+      }
+    },
+    {
+      "episode": "target-a0fe8b8897340e53",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 667,
+        "silog": 23.43576237568338,
+        "abs_rel": 0.19146848405352873,
+        "rmse_m": 6.279569838100343,
+        "delta1": 0.6776331158680917,
+        "point_epe_m": 3.9075904473038596
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 667,
+        "silog": 23.40655763188502,
+        "abs_rel": 0.192367433997611,
+        "rmse_m": 6.291288383401935,
+        "delta1": 0.6626626265541207,
+        "point_epe_m": 3.9502589474197607
+      }
+    },
+    {
+      "episode": "target-76f5e6f68bd9bcb2",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 663,
+        "silog": 62.989067256547685,
+        "abs_rel": 1.376973620170039,
+        "rmse_m": 10.881801349257287,
+        "delta1": 0.3910476659126041,
+        "point_epe_m": 6.83363831377942
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 663,
+        "silog": 62.06001712129366,
+        "abs_rel": 1.3821407479847683,
+        "rmse_m": 9.944886393648389,
+        "delta1": 0.4000670744748368,
+        "point_epe_m": 6.469573433216778
+      }
+    },
+    {
+      "episode": "target-4d404edd26fa4f52",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 667,
+        "silog": 50.647445808441184,
+        "abs_rel": 0.620769498041021,
+        "rmse_m": 9.10549860606279,
+        "delta1": 0.3971508910709494,
+        "point_epe_m": 5.449379207646859
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 667,
+        "silog": 49.24621141330914,
+        "abs_rel": 0.594725717069423,
+        "rmse_m": 8.01517401673593,
+        "delta1": 0.4111153756016045,
+        "point_epe_m": 4.782060099389339
+      }
+    },
+    {
+      "episode": "target-74373775b08d0eaa",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 652,
+        "silog": 54.96575892416662,
+        "abs_rel": 1.2411549029543356,
+        "rmse_m": 8.665114884148336,
+        "delta1": 0.591593173397698,
+        "point_epe_m": 5.251062384542765
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 652,
+        "silog": 54.987532933179324,
+        "abs_rel": 1.237288562813494,
+        "rmse_m": 8.789022398141258,
+        "delta1": 0.5916865914612468,
+        "point_epe_m": 5.307536321484348
+      }
+    },
+    {
+      "episode": "target-193662da8128d64c",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 671,
+        "silog": 74.173728073857,
+        "abs_rel": 1.7224511216878815,
+        "rmse_m": 8.46880725433757,
+        "delta1": 0.3968946489124608,
+        "point_epe_m": 6.11765091385813
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 671,
+        "silog": 73.98860603892432,
+        "abs_rel": 1.7113024820693261,
+        "rmse_m": 8.26579978290342,
+        "delta1": 0.3983445999666858,
+        "point_epe_m": 6.014717519327131
+      }
+    },
+    {
+      "episode": "target-b66df57de2813bf0",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 629,
+        "silog": 53.4330726318658,
+        "abs_rel": 0.9908742788855798,
+        "rmse_m": 9.595710284430627,
+        "delta1": 0.5580705612003984,
+        "point_epe_m": 5.781817537156041
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 629,
+        "silog": 52.81166570387013,
+        "abs_rel": 0.9545936613186771,
+        "rmse_m": 9.39301014657769,
+        "delta1": 0.5580112234394792,
+        "point_epe_m": 5.627007095337128
+      }
+    },
+    {
+      "episode": "target-bca00107acd385ce",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 673,
+        "silog": 31.28522745917278,
+        "abs_rel": 0.2800482312062673,
+        "rmse_m": 7.35230873080492,
+        "delta1": 0.4756805598439638,
+        "point_epe_m": 4.813967764514288
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 673,
+        "silog": 30.472204015753984,
+        "abs_rel": 0.27113575474664303,
+        "rmse_m": 6.9453219342923145,
+        "delta1": 0.4890562282029348,
+        "point_epe_m": 4.639204996774479
+      }
+    },
+    {
+      "episode": "target-cd34caaddd7a4f8c",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 650,
+        "silog": 27.313012313114324,
+        "abs_rel": 0.2123760618385246,
+        "rmse_m": 5.404257484741516,
+        "delta1": 0.7123002347951224,
+        "point_epe_m": 3.3666473760008917
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 650,
+        "silog": 27.27502736861636,
+        "abs_rel": 0.21214351520380909,
+        "rmse_m": 5.407436688296279,
+        "delta1": 0.716920396879497,
+        "point_epe_m": 3.357725638920113
+      }
+    },
+    {
+      "episode": "target-80ea2dcfc5d149c9",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 795,
+        "silog": 55.02995700137778,
+        "abs_rel": 0.5774302978560284,
+        "rmse_m": 5.041982300424525,
+        "delta1": 0.24275484341229359,
+        "point_epe_m": 3.328845035989775
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 795,
+        "silog": 55.29579154289518,
+        "abs_rel": 0.5845192061110281,
+        "rmse_m": 5.09377620685343,
+        "delta1": 0.2428971351820231,
+        "point_epe_m": 3.3846305420078275
+      }
+    },
+    {
+      "episode": "target-2a5654d554b4c116",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 702,
+        "silog": 46.48006228999391,
+        "abs_rel": 0.805467243173522,
+        "rmse_m": 7.035054099499974,
+        "delta1": 0.5838549130607964,
+        "point_epe_m": 4.369534728141855
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 702,
+        "silog": 44.79928918310458,
+        "abs_rel": 0.7751458369224639,
+        "rmse_m": 6.548132777607124,
+        "delta1": 0.6267060260978967,
+        "point_epe_m": 3.958542674284172
+      }
+    },
+    {
+      "episode": "target-d83ed620a27b6111",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 631,
+        "silog": 54.987820058000814,
+        "abs_rel": 0.8815501605066979,
+        "rmse_m": 9.042942353889416,
+        "delta1": 0.5174334798350008,
+        "point_epe_m": 5.191363975962599
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 631,
+        "silog": 54.96421228622608,
+        "abs_rel": 0.8673505460536983,
+        "rmse_m": 9.25056747283232,
+        "delta1": 0.5207604559062331,
+        "point_epe_m": 5.231487349549381
+      }
+    },
+    {
+      "episode": "target-d156ec1fb7d5d226",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 732,
+        "silog": 29.108450083266916,
+        "abs_rel": 0.24161331131935487,
+        "rmse_m": 5.202986543205119,
+        "delta1": 0.6787999583571572,
+        "point_epe_m": 3.518538729059736
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 732,
+        "silog": 29.492492245185396,
+        "abs_rel": 0.24473118203334773,
+        "rmse_m": 5.356796394599183,
+        "delta1": 0.6678709150198815,
+        "point_epe_m": 3.5499419379384802
+      }
+    },
+    {
+      "episode": "target-bd27bd8467c4fd9f",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 736,
+        "silog": 35.78178855066463,
+        "abs_rel": 0.36382153984443727,
+        "rmse_m": 5.652354894976402,
+        "delta1": 0.587682735673703,
+        "point_epe_m": 3.9346600038881325
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 736,
+        "silog": 34.080809316769084,
+        "abs_rel": 0.34561041395769515,
+        "rmse_m": 5.021522474512198,
+        "delta1": 0.6216995019788537,
+        "point_epe_m": 3.5286579434578997
+      }
+    },
+    {
+      "episode": "target-7234665f2fc5e98f",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 689,
+        "silog": 52.98360090864976,
+        "abs_rel": 0.9810676206914364,
+        "rmse_m": 7.235619125843501,
+        "delta1": 0.7216675962074734,
+        "point_epe_m": 3.8288411448697515
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 689,
+        "silog": 52.717060172303604,
+        "abs_rel": 0.9655217196117666,
+        "rmse_m": 7.137849846621207,
+        "delta1": 0.7174951697075931,
+        "point_epe_m": 3.7934027438762152
+      }
+    },
+    {
+      "episode": "target-e625297fd89f59f7",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 670,
+        "silog": 79.2907295257848,
+        "abs_rel": 2.338025789501906,
+        "rmse_m": 13.333763158067653,
+        "delta1": 0.5210873983739838,
+        "point_epe_m": 8.229231491217437
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 670,
+        "silog": 79.20924292889548,
+        "abs_rel": 2.3087446916557175,
+        "rmse_m": 13.472765769129218,
+        "delta1": 0.535886999879851,
+        "point_epe_m": 8.23671872746085
+      }
+    },
+    {
+      "episode": "target-3b3c619eb12e7a5e",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 727,
+        "silog": 59.976605197653484,
+        "abs_rel": 1.163452334498751,
+        "rmse_m": 8.061063047140571,
+        "delta1": 0.48315483534601356,
+        "point_epe_m": 5.035933393851599
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 727,
+        "silog": 59.83240790009586,
+        "abs_rel": 1.1888397462848834,
+        "rmse_m": 8.080347272584309,
+        "delta1": 0.48881782464169643,
+        "point_epe_m": 5.032362964984102
+      }
+    },
+    {
+      "episode": "target-53917b218c4371a0",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 717,
+        "silog": 38.827255243771,
+        "abs_rel": 0.3932740578313818,
+        "rmse_m": 4.715372592689135,
+        "delta1": 0.5940633577081383,
+        "point_epe_m": 3.5585794685938055
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 717,
+        "silog": 38.74961388103921,
+        "abs_rel": 0.39540437917011917,
+        "rmse_m": 4.659611209867377,
+        "delta1": 0.6024824776629434,
+        "point_epe_m": 3.565035329805752
+      }
+    },
+    {
+      "episode": "target-a16991b3f2d79218",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 681,
+        "silog": 58.78471605464673,
+        "abs_rel": 0.775282668799546,
+        "rmse_m": 10.91392203641556,
+        "delta1": 0.5154337189836977,
+        "point_epe_m": 5.611720198444203
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 681,
+        "silog": 59.50822918223977,
+        "abs_rel": 0.7778856214998322,
+        "rmse_m": 11.09032438633383,
+        "delta1": 0.504971503232067,
+        "point_epe_m": 5.6651942607523615
+      }
+    },
+    {
+      "episode": "target-64d79e3b77bb3efc",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 26.094090026905498,
+        "abs_rel": 0.22405885638594006,
+        "rmse_m": 6.524322791536026,
+        "delta1": 0.6025461968199398,
+        "point_epe_m": 4.201764600215709
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 25.766692811029387,
+        "abs_rel": 0.220386539856745,
+        "rmse_m": 6.356850193682801,
+        "delta1": 0.6122766897906563,
+        "point_epe_m": 4.107195842743987
+      }
+    },
+    {
+      "episode": "target-c47acf2aace07120",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 711,
+        "silog": 24.814165255165516,
+        "abs_rel": 0.2087784015066555,
+        "rmse_m": 5.346010101760456,
+        "delta1": 0.6455960113500836,
+        "point_epe_m": 3.706402034893477
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 711,
+        "silog": 24.378976449218957,
+        "abs_rel": 0.2033810641703415,
+        "rmse_m": 5.11930047370192,
+        "delta1": 0.6414458338801992,
+        "point_epe_m": 3.576051690014085
+      }
+    },
+    {
+      "episode": "target-fdb800b3a82d502b",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 45.86957669284983,
+        "abs_rel": 0.4644383591867851,
+        "rmse_m": 7.865112787631768,
+        "delta1": 0.6011663597298956,
+        "point_epe_m": 4.801912505564147
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 45.68810405684829,
+        "abs_rel": 0.46258917064466154,
+        "rmse_m": 7.777450991057934,
+        "delta1": 0.6039211172498465,
+        "point_epe_m": 4.770846792839102
+      }
+    },
+    {
+      "episode": "target-0818a24f6e47e079",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 775,
+        "silog": 25.906705485570292,
+        "abs_rel": 0.21966821882665288,
+        "rmse_m": 3.1508163404911165,
+        "delta1": 0.665800951625694,
+        "point_epe_m": 2.3850142697178662
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 775,
+        "silog": 25.55900704635127,
+        "abs_rel": 0.21605755761970308,
+        "rmse_m": 3.0393427590020483,
+        "delta1": 0.6632035999867829,
+        "point_epe_m": 2.3341948936323575
+      }
+    },
+    {
+      "episode": "target-a03616a4c59f7b81",
+      "component": "component-40",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 420,
+        "silog": 60.40759961463615,
+        "abs_rel": 1.195073523230057,
+        "rmse_m": 9.287259318043118,
+        "delta1": 0.3704427836623926,
+        "point_epe_m": 6.31120230564252
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 420,
+        "silog": 60.33975976639589,
+        "abs_rel": 1.2178600505602515,
+        "rmse_m": 9.320845872600845,
+        "delta1": 0.37277661487971897,
+        "point_epe_m": 6.323113561957914
+      }
+    },
+    {
+      "episode": "target-03a8f1d4c74b2cfd",
+      "component": "component-11",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 617,
+        "silog": 38.3416250378366,
+        "abs_rel": 0.32433291390680447,
+        "rmse_m": 9.138881015993093,
+        "delta1": 0.483146615596306,
+        "point_epe_m": 6.0820973232493625
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 617,
+        "silog": 38.2677355505669,
+        "abs_rel": 0.3247524225155185,
+        "rmse_m": 9.132280484947017,
+        "delta1": 0.4863831666269747,
+        "point_epe_m": 6.076372281850135
+      }
+    },
+    {
+      "episode": "target-7ac03bb4d9708244",
+      "component": "component-11",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 680,
+        "silog": 41.89288994697573,
+        "abs_rel": 0.4016707199276855,
+        "rmse_m": 8.452245421644088,
+        "delta1": 0.5359158732167187,
+        "point_epe_m": 5.37818906480789
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 680,
+        "silog": 42.491807459628184,
+        "abs_rel": 0.4054148622836031,
+        "rmse_m": 8.830264684512402,
+        "delta1": 0.5213406396816855,
+        "point_epe_m": 5.5685529370403115
+      }
+    },
+    {
+      "episode": "target-7ca45ef628c6f8bc",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 59.47258529035843,
+        "abs_rel": 1.4258501591175323,
+        "rmse_m": 10.800452559928786,
+        "delta1": 0.4421221074154327,
+        "point_epe_m": 6.684549375342211
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 58.91546723780434,
+        "abs_rel": 1.4155844201945138,
+        "rmse_m": 10.545810295012709,
+        "delta1": 0.4562776881184618,
+        "point_epe_m": 6.620338970076006
+      }
+    },
+    {
+      "episode": "target-3bfb9c0eb4ce23bb",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 601,
+        "silog": 56.84878027161412,
+        "abs_rel": 1.282057442378492,
+        "rmse_m": 9.936397311647905,
+        "delta1": 0.4617745025984161,
+        "point_epe_m": 6.106220301988407
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 601,
+        "silog": 57.164673123499654,
+        "abs_rel": 1.2857347772359944,
+        "rmse_m": 10.092216863454794,
+        "delta1": 0.4517004517772736,
+        "point_epe_m": 6.202035449731969
+      }
+    },
+    {
+      "episode": "target-773ed0346748f720",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 671,
+        "silog": 28.140831034013956,
+        "abs_rel": 0.24383682121892541,
+        "rmse_m": 7.040539838760457,
+        "delta1": 0.5764400178716759,
+        "point_epe_m": 4.235409409029401
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 671,
+        "silog": 27.63812783048824,
+        "abs_rel": 0.24190841827419765,
+        "rmse_m": 6.7724634070867715,
+        "delta1": 0.5765710704990357,
+        "point_epe_m": 4.150334634277682
+      }
+    },
+    {
+      "episode": "target-7c0c6324f18d846f",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 42.87536101914395,
+        "abs_rel": 0.38684932252049825,
+        "rmse_m": 3.28407054420816,
+        "delta1": 0.2858974358974359,
+        "point_epe_m": 2.9361148694284602
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 42.69930867945185,
+        "abs_rel": 0.38550059946647386,
+        "rmse_m": 3.2583427826558298,
+        "delta1": 0.28205128205128205,
+        "point_epe_m": 2.918085632059264
+      }
+    },
+    {
+      "episode": "target-8aecbc80a2b83794",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 37.31515084393094,
+        "abs_rel": 0.3173702193948992,
+        "rmse_m": 10.113153288609958,
+        "delta1": 0.4793334493560738,
+        "point_epe_m": 6.273153939903076
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 36.95893332942012,
+        "abs_rel": 0.3166417915338674,
+        "rmse_m": 10.029430833796741,
+        "delta1": 0.47191938905739816,
+        "point_epe_m": 6.389531384556441
+      }
+    },
+    {
+      "episode": "target-08f382e3ba09ce2f",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 698,
+        "silog": 88.68262112178543,
+        "abs_rel": 3.152745068202119,
+        "rmse_m": 17.00390017331211,
+        "delta1": 0.4004750781627332,
+        "point_epe_m": 9.686554005913793
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 698,
+        "silog": 88.29703797161046,
+        "abs_rel": 3.1640766814823738,
+        "rmse_m": 16.68847044219888,
+        "delta1": 0.4062070119290912,
+        "point_epe_m": 9.524519053280208
+      }
+    },
+    {
+      "episode": "target-bcc4e6e251f24292",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 735,
+        "silog": 24.76694746406713,
+        "abs_rel": 0.183071053678181,
+        "rmse_m": 6.484066144297377,
+        "delta1": 0.707640716627236,
+        "point_epe_m": 3.30795218884824
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 735,
+        "silog": 24.94258639358945,
+        "abs_rel": 0.1832587474556285,
+        "rmse_m": 6.644449558148834,
+        "delta1": 0.7252992439398096,
+        "point_epe_m": 3.324265008638316
+      }
+    },
+    {
+      "episode": "target-05120b8e3bdfcc08",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 757,
+        "silog": 35.89022601397548,
+        "abs_rel": 0.3346007706596955,
+        "rmse_m": 6.497508534505968,
+        "delta1": 0.3896250673966239,
+        "point_epe_m": 4.232582864944923
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 757,
+        "silog": 35.4284005941761,
+        "abs_rel": 0.3299296861329969,
+        "rmse_m": 6.374911276683115,
+        "delta1": 0.39628800132719505,
+        "point_epe_m": 4.152470371604338
+      }
+    },
+    {
+      "episode": "target-6ce1ba6693adefd6",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 645,
+        "silog": 52.092353515992,
+        "abs_rel": 0.7685959832808926,
+        "rmse_m": 10.119030960777412,
+        "delta1": 0.4993392686684296,
+        "point_epe_m": 6.490437440171439
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 645,
+        "silog": 51.597500430336325,
+        "abs_rel": 0.7559546599274074,
+        "rmse_m": 10.140384718718911,
+        "delta1": 0.5290752091610083,
+        "point_epe_m": 6.443966998272403
+      }
+    },
+    {
+      "episode": "target-179041c2e373edf7",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 679,
+        "silog": 27.47512497231996,
+        "abs_rel": 0.20993704050375034,
+        "rmse_m": 5.696687284614442,
+        "delta1": 0.811500397937645,
+        "point_epe_m": 3.2233799696113765
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 679,
+        "silog": 27.292771392987063,
+        "abs_rel": 0.20895603975456561,
+        "rmse_m": 5.645768262138108,
+        "delta1": 0.8217946173590375,
+        "point_epe_m": 3.201202640841874
+      }
+    },
+    {
+      "episode": "target-e60d173d4d40b212",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 630,
+        "silog": 68.87819873270467,
+        "abs_rel": 1.436083436038341,
+        "rmse_m": 8.643917166975326,
+        "delta1": 0.6008643441644282,
+        "point_epe_m": 4.928623329454913
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 630,
+        "silog": 67.97431653877861,
+        "abs_rel": 1.3438875350073258,
+        "rmse_m": 8.49266359103521,
+        "delta1": 0.5912670305623752,
+        "point_epe_m": 4.888641859985602
+      }
+    },
+    {
+      "episode": "target-25ef4902c5ef00f9",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 53.88835370849756,
+        "abs_rel": 1.132020177357735,
+        "rmse_m": 6.639860113328904,
+        "delta1": 0.48995500900440836,
+        "point_epe_m": 4.809375038427213
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 722,
+        "silog": 53.36729242091458,
+        "abs_rel": 1.1156985851324521,
+        "rmse_m": 6.505316877797663,
+        "delta1": 0.47891740283610706,
+        "point_epe_m": 4.755545039896587
+      }
+    },
+    {
+      "episode": "target-10370b2bcc59e23e",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 64.36069651803334,
+        "abs_rel": 0.8830433600135061,
+        "rmse_m": 8.904416608805997,
+        "delta1": 0.38605252506114573,
+        "point_epe_m": 5.703171314035979
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 65.09703891449358,
+        "abs_rel": 0.8832534183228514,
+        "rmse_m": 9.083290683210768,
+        "delta1": 0.3804789041676392,
+        "point_epe_m": 5.842368475833249
+      }
+    },
+    {
+      "episode": "target-3027a165d1d6fecf",
+      "component": "component-41",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 714,
+        "silog": 30.617804834484826,
+        "abs_rel": 0.26332339861929516,
+        "rmse_m": 5.734546087381056,
+        "delta1": 0.6484520187910019,
+        "point_epe_m": 3.3151288662520906
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 714,
+        "silog": 30.036771771944462,
+        "abs_rel": 0.2551469941525222,
+        "rmse_m": 5.663975806906925,
+        "delta1": 0.6750584631940565,
+        "point_epe_m": 3.1929672352964467
+      }
+    },
+    {
+      "episode": "target-dbfabd73ee835549",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 44.74553620386818,
+        "abs_rel": 0.4259008053098418,
+        "rmse_m": 2.585041893458982,
+        "delta1": 0.2762503552145496,
+        "point_epe_m": 2.2757771085680956
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 44.08794830019727,
+        "abs_rel": 0.4137384958533842,
+        "rmse_m": 2.5606879970882894,
+        "delta1": 0.27383489627735147,
+        "point_epe_m": 2.260521839542776
+      }
+    },
+    {
+      "episode": "target-d69a808dc6fb91b9",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 731,
+        "silog": 52.35701032247225,
+        "abs_rel": 1.19525956357247,
+        "rmse_m": 8.4605815326189,
+        "delta1": 0.5217318120213414,
+        "point_epe_m": 5.636079725894357
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 731,
+        "silog": 50.88505319897014,
+        "abs_rel": 1.1261977702837211,
+        "rmse_m": 7.488199336096946,
+        "delta1": 0.5271066871608914,
+        "point_epe_m": 5.072412597232499
+      }
+    },
+    {
+      "episode": "target-6f5e1c63f80476ea",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 712,
+        "silog": 43.482689368030904,
+        "abs_rel": 0.43130227330375087,
+        "rmse_m": 7.768542974357312,
+        "delta1": 0.622191011235955,
+        "point_epe_m": 4.6189992505126245
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 712,
+        "silog": 43.146994056347616,
+        "abs_rel": 0.4262286044967731,
+        "rmse_m": 7.558726851238405,
+        "delta1": 0.6235955056179775,
+        "point_epe_m": 4.5229746701860005
+      }
+    },
+    {
+      "episode": "target-0a4358de511238e0",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 731,
+        "silog": 42.260925752060366,
+        "abs_rel": 0.4169156140498608,
+        "rmse_m": 6.718684140254571,
+        "delta1": 0.6567032267083558,
+        "point_epe_m": 4.187660056362814
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 731,
+        "silog": 42.588632171468554,
+        "abs_rel": 0.4208260916783942,
+        "rmse_m": 6.720777822296132,
+        "delta1": 0.6649375630883045,
+        "point_epe_m": 4.183730530323435
+      }
+    },
+    {
+      "episode": "target-778511f405d730cc",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 41.20913762309582,
+        "abs_rel": 0.41320035951221223,
+        "rmse_m": 6.912659920685423,
+        "delta1": 0.5593668329769541,
+        "point_epe_m": 4.59432875741965
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 733,
+        "silog": 41.38797682627147,
+        "abs_rel": 0.41492347014987496,
+        "rmse_m": 6.85396901306604,
+        "delta1": 0.5839272986457591,
+        "point_epe_m": 4.540278161539007
+      }
+    },
+    {
+      "episode": "target-d2af4a96249c9d89",
+      "component": "component-5",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 712,
+        "silog": 45.15533113466138,
+        "abs_rel": 0.4610403208563911,
+        "rmse_m": 7.874286686549452,
+        "delta1": 0.6290634576098059,
+        "point_epe_m": 4.63178735440105
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 712,
+        "silog": 44.992846399893295,
+        "abs_rel": 0.4585271972648765,
+        "rmse_m": 7.801144300163013,
+        "delta1": 0.6360866388605153,
+        "point_epe_m": 4.568892642165999
+      }
+    },
+    {
+      "episode": "target-83d0956b4937cd84",
+      "component": "component-2",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 736,
+        "silog": 37.87632257933156,
+        "abs_rel": 0.30585899040273223,
+        "rmse_m": 10.105423545209817,
+        "delta1": 0.5488722299801094,
+        "point_epe_m": 6.905904855289269
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 736,
+        "silog": 37.90519742219628,
+        "abs_rel": 0.30530194169852465,
+        "rmse_m": 10.007857139319828,
+        "delta1": 0.5488870014650025,
+        "point_epe_m": 6.809431259483029
+      }
+    },
+    {
+      "episode": "target-5b17014f1ff882f8",
+      "component": "component-55",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 772,
+        "silog": 27.979519437826085,
+        "abs_rel": 0.2345508854409645,
+        "rmse_m": 5.54283930922443,
+        "delta1": 0.7098209814513113,
+        "point_epe_m": 3.5822386235808694
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 772,
+        "silog": 27.554247860389577,
+        "abs_rel": 0.22992955822310016,
+        "rmse_m": 5.384647152492272,
+        "delta1": 0.7266471448061891,
+        "point_epe_m": 3.4604255795384438
+      }
+    },
+    {
+      "episode": "target-04561f3eec9e0840",
+      "component": "component-14",
+      "location": "boston-seaport",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 682,
+        "silog": 39.51211238939392,
+        "abs_rel": 0.34777177250170477,
+        "rmse_m": 8.82157670209192,
+        "delta1": 0.3589882079315291,
+        "point_epe_m": 5.8538921496359855
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 682,
+        "silog": 39.72498954115802,
+        "abs_rel": 0.34803368442269295,
+        "rmse_m": 8.9505967990206,
+        "delta1": 0.35903921099171276,
+        "point_epe_m": 5.91701933562476
+      }
+    },
+    {
+      "episode": "target-dff59c1832659197",
+      "component": "component-53",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 35.0647198799991,
+        "abs_rel": 0.2637598515492434,
+        "rmse_m": 8.792513346429814,
+        "delta1": 0.5151020009810274,
+        "point_epe_m": 5.152272250751059
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 774,
+        "silog": 35.310372193292466,
+        "abs_rel": 0.2601317156859866,
+        "rmse_m": 9.025564529519023,
+        "delta1": 0.5282666977175361,
+        "point_epe_m": 5.188066313816737
+      }
+    },
+    {
+      "episode": "target-4385f0f210ed43fc",
+      "component": "component-54",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 773,
+        "silog": 74.64161294739895,
+        "abs_rel": 1.698156972558916,
+        "rmse_m": 9.739075261415554,
+        "delta1": 0.4165649499010714,
+        "point_epe_m": 6.3747672692255914
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 773,
+        "silog": 74.24655266547455,
+        "abs_rel": 1.676572417829862,
+        "rmse_m": 9.753218225526798,
+        "delta1": 0.4190422692660136,
+        "point_epe_m": 6.3221112362327485
+      }
+    },
+    {
+      "episode": "target-6d14740cb484b862",
+      "component": "component-55",
+      "location": "singapore-queenstown",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 762,
+        "silog": 49.60466111350725,
+        "abs_rel": 0.8244852050003962,
+        "rmse_m": 7.829412957703125,
+        "delta1": 0.5384066758714832,
+        "point_epe_m": 4.913229166669588
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 762,
+        "silog": 50.01986520907954,
+        "abs_rel": 0.8237068403146923,
+        "rmse_m": 8.016671957748024,
+        "delta1": 0.5357941707859091,
+        "point_epe_m": 5.033054470686715
+      }
+    },
+    {
+      "episode": "target-8e1ea1e2f88b7203",
+      "component": "component-13",
+      "location": "singapore-hollandvillage",
+      "base": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 45.61070266583153,
+        "abs_rel": 0.3558701177280382,
+        "rmse_m": 13.113168816904233,
+        "delta1": 0.38035851322945513,
+        "point_epe_m": 8.618946720767664
+      },
+      "current": {
+        "valid_views": 4,
+        "valid_cells": 676,
+        "silog": 46.26655414390651,
+        "abs_rel": 0.35852608470309605,
+        "rmse_m": 13.3908559566311,
+        "delta1": 0.3787632211137433,
+        "point_epe_m": 8.785147276532886
+      }
+    }
+  ]
+}

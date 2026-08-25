@@ -482,3 +482,12 @@ Status: Accepted after EXP-011 Stage 0 and before validation LiDAR access
 The train-only audit covered 218 unique targets and 25 components. A single absolute 3D frozen-track consistency loss at `eta=0.0125` improved the means of SILog, median-aligned AbsRel, and same-ray 3D EPE; the component-bootstrap AbsRel interval was strictly positive. Adding smoothness and code regularization was numerically immaterial, so the paper online objective is simplified to one loss. The symmetric reprojection alternative improved SILog/EPE at the smallest step but worsened AbsRel, and larger steps exposed the same overshoot seen in EXP-010.
 
 The loss, one-step count, and `eta=0.0125` are now frozen for one validation audit. Validation may confirm or reject this objective but may not tune it. EXP-009 test remains terminal and unavailable.
+
+## D069 — Accept the minimal objective for the paper refit
+
+Date: 2026-08-25
+Status: Accepted after EXP-011 one-shot validation
+
+The frozen one-loss, one-step objective passed on all 103 valid validation targets over 17 components. SILog, aligned AbsRel, and same-ray 3D EPE improved by 0.474%, 0.959%, and 0.992% respectively; the component-bootstrap EPE interval was strictly positive. This independently confirms the train-stage direction while retaining one online loss and one step-size hyperparameter.
+
+EXP-012 may now retrain the local atom and utility address/router on train data using this fixed objective. It must simplify the feasibility meta-objective rather than add heads or losses. Validation is exposed for the registered paper-model gate; EXP-009 test remains closed and a new external component-disjoint benchmark is required for final evidence.

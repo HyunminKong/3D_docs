@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-011 Stage 0)
+Last updated: 2026-08-25 (after EXP-011 completion)
 
 ## Research goal
 
@@ -77,12 +77,12 @@ The demonstrated endpoint is a static nuScenes revisit benchmark using normalize
 
 EXP-010 has now shown that the locked method significantly improves aligned AbsRel but worsens SILog and same-ray 3D endpoint error. The proxy-to-geometry bridge therefore failed its registered full gate. The immediate milestone is a train-only objective-health experiment; memory/router expansion is paused until one-step TTT improves all primary geometry metrics together.
 
-EXP-011 Stage 0 found a minimal healthy train objective: one absolute 3D frozen-track consistency loss, one local-code step, and `eta=0.0125`. Across 218 targets/25 components it improved all three primary target means; aligned AbsRel had a positive component-bootstrap interval. The previous smoothness and code penalties are unnecessary for the online step. This is development evidence only and is now frozen for a one-shot 103-target/17-component validation audit.
+EXP-011 established a minimal healthy objective: one absolute 3D frozen-track consistency loss, one local-code step, and `eta=0.0125`. Across 218 train targets/25 components it improved all primary target means with a positive aligned-AbsRel interval. The frozen choice then improved SILog, aligned AbsRel, and 3D EPE by 0.474%, 0.959%, and 0.992% on 103 one-shot validation targets/17 components; the EPE interval was positive. The previous smoothness and code penalties are unnecessary for the online step.
 
 The remaining priority order is:
 
-1. run the one-shot validation of the train-selected single 3D-track loss at `eta=0.0125`;
-2. only if healthy, refit the minimal atom/utility retrieval on train and run one locked validation before any new external test;
+1. refit the paper-minimal atom/utility retrieval on train with the EXP-011 objective frozen;
+2. run one registered validation gate for the refit before any new external test;
 3. report absolute depth/point metrics and online latency/memory against no-TTT, current-only TTT, random address, and bounded/unbounded controls;
 4. evaluate on a second dataset with a newly frozen component-disjoint protocol.
 

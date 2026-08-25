@@ -1,6 +1,6 @@
 # EXP-011 — Minimal Online-Objective Health
 
-Status: Stage 0 completed; Stage 1 registered before validation LiDAR access
+Status: Completed; train selection and one-shot validation gates passed
 
 ## Question
 
@@ -52,6 +52,18 @@ The selected objective improved target means by 0.186% SILog, 0.878% AbsRel, and
 The selected Stage-0 choice is immutable. Stage 1 uses the existing 117-direction validation pilot, deduplicated to 103 unique A-prime targets over 17 components. It compares only no-TTT and current-only one-step TTT with the frozen 3D-track-only objective at `eta=0.0125`. Sparse LiDAR remains evaluation-only.
 
 The Stage-1 gate requires at least 85 valid targets and 15 components, improvement in the mean of all three primary metrics, and a strictly positive component-bootstrap lower bound for at least one metric. Failure stops reuse-model refitting and sends the paper to a new-data/objective decision. The terminal EXP-009 test remains closed.
+
+## Stage 1 result — one-shot validation
+
+All 103 unique targets across 17 components had valid LiDAR coverage. The frozen objective improved all registered target means:
+
+| Metric | No TTT | One-step TTT | Relative improvement | Component-bootstrap improvement, 95% CI |
+|---|---:|---:|---:|---:|
+| SILog | 47.9994 | 47.7721 | +0.474% | +0.1033 `[-0.0066, +0.2125]` |
+| AbsRel | 0.74013 | 0.73304 | +0.959% | +0.00353 `[-0.00097, +0.00728]` |
+| 3D EPE (m) | 5.22834 | 5.17647 | +0.992% | +0.03291 `[+0.00120, +0.06480]` |
+
+The registered gate passed. This supports refitting the paper-minimal atom and utility retrieval with the objective fixed. It does not authorize another EXP-009 test evaluation.
 
 ## Files
 

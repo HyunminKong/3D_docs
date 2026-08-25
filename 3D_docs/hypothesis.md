@@ -6,7 +6,7 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Partially supported.** Global and slot states failed context selectivity, whereas visual local-code transport produced positive self-supervised utility throughout train, validation, and final test. EXP-010 then showed a significant aligned-AbsRel gain but worse SILog and 3D endpoint error. Local adaptation is reusable for the proxy and one relative-depth metric, not yet for consistent reconstruction quality.
+Status: **Partially supported.** Global and slot states failed context selectivity, whereas visual local-code transport produced positive self-supervised utility throughout train, validation, and final test. EXP-010 exposed an oversized/misaligned online step. EXP-011 then showed that a single smaller 3D-track step improves SILog, aligned AbsRel, and 3D EPE on train and one-shot validation. Reuse under the corrected objective still requires a clean refit and new external test.
 
 ## H2-P — Predicted geometry as the update carrier
 
