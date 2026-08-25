@@ -1,91 +1,93 @@
 # Current Research State
 
-Last updated: 2026-08-25 (after EXP-015)
+Last updated: 2026-08-25 (after EXP-020)
 
-## Research goal
+## First objective
 
-Develop a streaming 3D/4D reconstruction framework that learns compact local corrections from current geometric evidence and reuses useful adaptation experience without uncontrolled interference or unbounded memory growth.
+Produce one compact CVPR-first paper on streaming static 3D revisits. The paper
+must establish novelty, absolute geometry benefit, causal/source-safe
+generalization, and efficiency without accumulating heads, losses, thresholds,
+or unrelated 4D tasks. A broader dissertation architecture is deferred.
 
-The completed first milestone targets depth/point geometry under static cross-traversal revisits. Pose adaptation, dynamic point tracking, and 4D memory remain later milestones.
+## Research question
 
-## Supported central claim
+Can a streaming 3D model store a spatially local **adaptation experience**, move
+that correction into a later observation's token frame, and retrieve it by
+expected geometric utility rather than by place appearance alone?
 
-> **A spatial local TTT correction is reusable after token-level visual transport, and its future utility can be addressed from current/source observable geometry descriptors. A fixed utility router can then apply useful memories through a bounded residual, while a capacity-64 causal reservoir retains the benefit on fully unseen revisit components.**
+## Defensible novelty boundary
 
-This is an adaptation-utility claim, not a place-recognition claim. Generic DINOv2 place compatibility, predicted Sim(3) transport, and raw update similarity are not the selected memory address.
+Generic TTT memory, fast-weight scene compression, and retrievable gradients
+are not novel claims because of direct overlap with tttLRM, ZipMap, TTT3R,
+Mem3R, and ReGrad. The defensible conjunction is:
 
-## Final static-revisit architecture after EXP-009
+1. a per-token local plasticity code rather than model-wide gradients or scene
+   content;
+2. explicit cross-view transport of that code;
+3. an address supervised by causal future geometry utility rather than place
+   identity or RGB similarity;
+4. physical-revisit evaluation with same-bank random-address controls.
 
-1. A frozen VGGT/FastVGGT foundation supplies dense tokens, predicted geometry, and controlled frozen-track evidence.
-2. A custom plasticity head performs exactly one current-context TTT step on an 8-D per-token fast code. Foundation and head weights remain frozen online.
-3. Each causal memory record stores the local code/key, a pooled 64-D transport descriptor, and observable adaptation statistics.
-4. A train-only Ridge pair scorer over `[current, source, current-source, current*source]` descriptors is compiled exactly into a 64-D maximum-inner-product address.
-5. Each official-location stream uses deterministic reservoir retention with capacity 64 and retrieves K=5 candidates.
-6. A source code is moved to current tokens by learned visual correspondence and added after current TTT as a fixed 0.10 residual.
-7. A frozen `StandardScaler → PCA(16) → Ridge(alpha=1)` utility router selects one candidate only above its train-locked threshold; otherwise the model returns current-only TTT.
-8. Query/future frames are offline utility labels only. They never enter online TTT, memory addressing, transport, or routing.
+## Compact frozen candidate evaluated in EXP-020
 
-Predicted geometry transport, DINO-only retrieval, learned history eviction, and a second TTT step are excluded from the primary path.
+- frozen VGGT/FastVGGT geometry backbone;
+- one 3D-track online loss, one local-code step, `eta=0.0125`;
+- 8-D per-token code and visual transport with residual `alpha=0.10`;
+- one factorized 64-D Ridge utility address, top `K=5`;
+- parameter-free current-geometry agreement reranking with coarse fallback;
+- deterministic reservoir capacity `C=64` per official-location stream;
+- no fine router, risk head, learned threshold, learned eviction, second TTT
+  step, pose adaptation, or dynamic 4D state.
 
-## Authoritative EXP-009 evidence
+## Evidence that survives
 
-| Split/protocol | Routed utility | Harm | Comparator | Main inference |
-|---|---:|---:|---|---|
-| Train, source-safe leave-one-location-out | +1.933% | 9.17% | matched random +1.614% | Factorable observable utility address transfers to unseen locations. |
-| Validation, unbounded one-shot | +2.642% | 5.83% | current-only TTT | Address/router transfer; capacity 8 fails. |
-| Validation, selected reservoir-64 | +2.647% | 5.83% | random address +1.923% | Capacity 64 is the smallest registered passing value. |
-| Locked test, reservoir-64 | **+2.088%** | **3.85%** | random address +1.602% | All eight terminal gates pass on 104 targets/22 components. |
+- EXP-009: the earlier source-safe bounded system beat matched random addressing
+  on a terminal 22-component self-supervised future-utility test. Reservoir did
+  not beat FIFO significantly and no retention-policy superiority is claimed.
+- EXP-011: before atom meta-refitting, one absolute 3D frozen-track loss at
+  `eta=0.0125` improved SILog, aligned AbsRel, and 3D EPE on 218 train targets
+  and a one-shot 103-target/17-component validation.
+- EXP-015: the auxiliary-free core atom produced +1.048% OOF oracle reuse
+  utility and positive selection headroom on 25 train components.
+- EXP-019: one utility-MIPS address plus parameter-free agreement fallback beat
+  coarse and matched random proxy utility on train folds.
+- EXP-020: the frozen full method improved aligned AbsRel over current-only TTT
+  by 0.00165 with component 95% CI `[0.00078, 0.00276]`; proxy utility beat
+  matched random by 0.00286 with CI `[0.00120, 0.00459]`.
 
-Locked-test details:
+## Decisive failure
 
-- Current one-step TTT/base future loss ratio: **0.7018**.
-- Reservoir-64 oracle top-K utility: **+3.356%**.
-- Reservoir-64 routed utility: **+2.088%**; beneficial rate **65.38%**; acceptance **86.54%**.
-- Same-bank random-address utility: **+1.602%**.
-- Reservoir minus random component-bootstrap difference: **+0.475 points**, 95% CI **[+0.086, +0.924]**.
-- Unbounded routed utility: **+2.068%**; reservoir retention: **100.98%**.
-- FIFO-64 routed utility: **+2.068%**. Reservoir minus FIFO CI is **[-0.013, +0.059]** points, so retention-policy superiority is not supported.
+EXP-020 rejected the frozen paper model. On 103 targets/17 unseen components,
+current-only TTT from the EXP-015 refit worsened mean SILog and 3D EPE versus no
+TTT. Full memory did not obtain a positive primary LiDAR interval over random,
+and proxy harm was 33.01% versus the registered 20% maximum. The model improves
+its utility proxy and aligned relative depth, but does not support a broad 3D
+reconstruction claim.
 
-The final compact result is `revisit3d/results/EXP-009/stage16_final_locked_test_v24.json`. The final artifact hash is `b5c7c1d0ce46ee078a1ea6d890a16e7bc5cc217a2a3777ee578d2b34ed760e98`.
+This localizes the bottleneck to **metric alignment and negative-transfer
+calibration after meta-training**, not to lack of proxy retrieval signal. The
+EXP-015 checkpoint and EXP-019 address are frozen historical candidates, not an
+accepted final architecture.
 
-## Hypothesis status
+## Data-use boundary
 
-- H1 local reusable adaptation: **supported for proxy utility and aligned AbsRel, but not yet for consistent metric geometry**.
-- H2-P predicted geometry carrier: **rejected**.
-- H2-E predicted geometry primary router evidence: **rejected**.
-- H3 online utility observability: **supported for the self-supervised future-loss target; metric-geometry observability is not supported**.
-- H4-U learned utility addressing/routing: **supported for proxy ranking and aligned AbsRel only**; broad geometry utility and perfect negative-transfer rejection are not supported.
-- H4-R separate learned risk classifier: **rejected in its current form**.
-- H5 continual local-code consolidation: **supported only for bounded retention of proxy utility; open for consistent metric geometry**.
-- H6 dynamic 4D extension: **open**.
+- The original EXP-005 six-episode test is closed.
+- The EXP-009 22-component terminal test is closed.
+- EXP-020 validation is now exposed and cannot select a replacement.
+- Any changed model requires new development data and a newly locked
+  component-disjoint final benchmark.
+- Query/future observations and LiDAR remain offline labels only and may never
+  enter online TTT, memory write, retrieval, or routing.
 
-## Experiment status
+## Immediate next step
 
-- EXP-001 — tttLRM fast-weight premise probes: completed, negative.
-- EXP-002 — independent Revisit3D benchmark and objective health: completed.
-- EXP-003 — compact/global/slot reuse: completed, negative for selectivity.
-- EXP-004 — retrieval keys and vector routing: completed, partial/negative.
-- EXP-005 — dense oracle 3D transport: completed as controlled evidence; old test split closed.
-- EXP-006 — local visual plasticity atom and observable utility routing: completed.
-- EXP-007 — bounded continual-bank feasibility: completed, partial.
-- EXP-008 — true timestamp replay: completed on the original train split.
-- EXP-009 — **completed** with a pre-locked 22-component terminal test; all registered gates passed.
+Run a metadata-only audit of untouched nuScenes test scenes and any other local
+datasets to determine whether a credible independent revisit benchmark can be
+frozen. Then make one explicit paper-scope choice before training:
 
-## Evidence boundary and next research milestone
+1. keep the method fully self-supervised and narrow the endpoint to revisit
+   utility/aligned relative depth; or
+2. add exactly one metric-aligned **offline meta-training signal**, while
+   retaining the single online TTT loss and compact inference architecture.
 
-The demonstrated endpoint is a static nuScenes revisit benchmark using normalized future query-loss utility from frozen foundation geometry/tracking outputs. It is not yet an end-to-end claim for metric point-cloud accuracy, camera-pose correction, dynamic point tracking, arbitrary environments, or indefinite streams. One test component remains harmful, reservoir is not statistically superior to FIFO at capacity 64, and memory/query computation and wall-clock scaling still require a systems audit.
-
-EXP-010 has now shown that the locked method significantly improves aligned AbsRel but worsens SILog and same-ray 3D endpoint error. The proxy-to-geometry bridge therefore failed its registered full gate. The immediate milestone is a train-only objective-health experiment; memory/router expansion is paused until one-step TTT improves all primary geometry metrics together.
-
-EXP-011 established a minimal healthy objective: one absolute 3D frozen-track consistency loss, one local-code step, and `eta=0.0125`. Across 218 train targets/25 components it improved all primary target means with a positive aligned-AbsRel interval. The frozen choice then improved SILog, aligned AbsRel, and 3D EPE by 0.474%, 0.959%, and 0.992% on 103 one-shot validation targets/17 components; the EPE interval was positive. The previous smoothness and code penalties are unnecessary for the online step.
-
-EXP-012–015 simplified the atom meta-training under immutable component folds. Matched identity, equal averaging, frozen-key ranking at a short budget, and direct utility-key training failed their registered gates. The terminal core objective combines normalized current quality, absolute best-reuse quality, and an unweighted relative ranking, all from the same 3D-track signal. At the pre-selected 1000-step budget it passed all OOF gates: current/base `0.80194`, oracle utility `+1.04799%`, mean utility `+0.52105%`, harm `26.37%`, and oracle-minus-mean 95% CI `[+0.00439, +0.00618]`. The refit head is frozen; no auxiliary online/meta losses remain.
-
-The remaining priority order is:
-
-1. fit one source-safe factorized utility score that performs both top-1 retrieval and the positive-utility decision;
-2. run one registered validation gate for the fully frozen paper model before any new external test;
-3. report absolute depth/point metrics and online latency/memory against no-TTT, current-only TTT, random address, and bounded/unbounded controls;
-4. evaluate on a second dataset with a newly frozen component-disjoint protocol.
-
-No EXP-009 test outcome may be used for further model selection.
+No new model is trained until this scope/data decision is recorded.

@@ -599,3 +599,25 @@ Status: Accepted after EXP-019 and before EXP-020
 EXP-019 passed every gate: +0.835% utility, 18.45% harm, 94.72% acceptance, random-difference CI `[+0.00041,+0.00512]`, and coarse-difference CI `[+0.00010,+0.00147]`. The final retrieval module is one 64-D utility-MIPS Ridge followed by current-geometry reranking of five candidates and coarse fallback. No learned fine router is required.
 
 The atom/head, Ridge, eta, alpha, K=5, zero thresholds, reranking rule, reservoir policy, and capacity 64 are now frozen. EXP-020 is a one-shot validation of proxy and sparse-LiDAR geometry. Its outcome may accept or reject the paper model but cannot tune it; the closed EXP-009 test remains unavailable.
+
+## D082 — Reject the frozen paper model and close EXP-020 validation
+
+Date: 2026-08-25
+Status: Accepted after the single locked EXP-020 validation
+
+The EXP-015 atom plus EXP-019 address failed the registered broad-geometry
+gate on 103 targets/17 components. Full memory significantly improved aligned
+AbsRel over current-only TTT and self-supervised utility over matched random,
+but current-only TTT itself worsened mean SILog and 3D EPE versus no TTT, no
+primary LiDAR interval established full-memory superiority over random, and
+proxy harm reached 33.01% against the locked 20% limit.
+
+The compact utility-memory hypothesis is therefore not discarded, but this
+frozen combination is rejected as a paper model. The failure localizes the
+main problem to metric alignment and negative-transfer calibration after atom
+meta-training: EXP-011 had already shown that the same one-loss online step can
+be metric-healthy before the terminal proxy-oriented refit. EXP-020 validation
+is now exposed and prohibited for model selection. No additional atom variant,
+loss, threshold, or router may be tuned on EXP-009 test or EXP-020 validation.
+A changed method requires a newly frozen component-disjoint benchmark and an
+explicit paper-scope decision before training.

@@ -1,97 +1,122 @@
 # Current Method Specification
 
-## Final static-revisit architecture: utility-addressed local plasticity memory
+## Status
+
+The compact EXP-015 + EXP-019 architecture below is the most recent frozen
+candidate, but EXP-020 rejected it as the final paper model. It is retained as
+the reference implementation and ablation anchor; it must not be presented as
+a validated broad reconstruction method.
+
+## Frozen reference candidate
 
 ```text
-streaming RGB context x_t
+streaming RGB context
         ↓
-frozen VGGT/FastVGGT encoder and geometry evidence
+frozen VGGT/FastVGGT dense features and geometry evidence
         ↓
-custom spatial plasticity head
+8-D per-token plasticity code initialized at zero
         ↓
-one current-only TTT step on 8-D per-token code z_t
+one local-code step on L_track3D, eta=0.0125
         │
-        ├────────────────────────────── current-only fallback
+        ├── current-only fallback
         │
-pooled transport descriptor c_t
+64-D pooled descriptor → one factorized Ridge utility-MIPS top-5
         ↓
-exact 64-D utility-MIPS address ── top K=5 from causal bank
+visual token correspondence transports five stored codes
         ↓
-visual token correspondence transports each stored local code
+positive current-geometry agreement reranking; coarse top-1 fallback
         ↓
-observable utility router selects one candidate or rejects all
-        ↓
-z_out = clamp(z_t + 0.10 z_memory, -1, 1)
+z_out = clamp(z_current + 0.10 z_memory, -1, 1)
         ↓
 depth / point readout
 
-causal write after prediction
-        ↓
-deterministic reservoir bank, capacity 64 per location stream
+write after prediction → deterministic reservoir, capacity 64/location
 ```
 
-The foundation, plasticity-head weights, utility address, and router are frozen online. Only the local fast code is updated by TTT.
+The only learned inference-time additions to the frozen foundation are the
+plasticity head and one linear utility address. Agreement reranking, fallback,
+and reservoir retention are parameter-free. There is no fine router, risk head,
+learned decision threshold, learned eviction, pose update, second TTT step, or
+dynamic state.
 
-## Plasticity memory object
+## Online objective
 
-Each record contains:
+The deployed TTT objective is exactly one absolute frozen-track 3D consistency
+loss:
 
-- a normalized per-token visual key;
-- an 8-D per-token fast code obtained by one current-only TTT step;
-- a pooled 64-D transport descriptor;
-- predicted 3D anchor, scale, and confidence as metadata;
-- current-only objective and track-consistency statistics;
-- timestamp and stream partition needed for causal replay and retention.
+\[
+\mathcal L_{\mathrm{TTT}}=\mathcal L_{\mathrm{track3D}}.
+\]
 
-Predicted `xyz` is not used to transport the code or as a primary address. The local key is used for token-level visual transport; the pooled descriptor is used for long-term candidate addressing. This separation is necessary because a useful correspondence key and a useful adaptation-utility address need different invariances.
+Only the local code is differentiated, for one step. Query/future observations
+are never online inputs. EXP-011 established that this objective and step size
+can be metric-healthy; EXP-020 showed that metric health was not preserved by
+the later atom meta-refit.
 
-## Online TTT objective
+## Offline atom objective used by the rejected candidate
 
-The online objective uses only the current context:
+EXP-015 used three unweighted readouts of the same track3D signal:
 
-- frozen-track 3D consistency;
-- edge-aware depth smoothness;
-- bounded code regularization.
+1. normalized current-only future quality;
+2. absolute best-reuse future quality among five train-only candidates;
+3. a softplus ranking of best reuse against stop-gradient current quality.
 
-Exactly one step with the locked step size is applied. A second step was harmful in EXP-006. Query/future frames are read-only: they produce meta-training utility labels and evaluation metrics but never enter adaptation, memory retrieval, transport, or router features.
+No key contrastive, harmful-code neutralization, centering, smoothness, or code
+norm loss was used. Despite strong OOF proxy headroom, EXP-020 indicates that
+this proxy-oriented objective did not preserve broad LiDAR metric alignment.
+
+## Plasticity record and causal contract
+
+Each record contains a local visual key, an 8-D per-token code, a pooled 64-D
+descriptor, current-observable adaptation statistics, timestamp, and stream
+partition. A target is predicted before its record is written. Future/query
+frames may produce offline meta labels and evaluation metrics only. Source-safe
+folds remove held physical entities from both target and memory-source training
+rows.
 
 ## Utility address
 
-Let `c_t` and `c_i` be pooled current and source transport descriptors. The pair scorer is a Ridge model over
+For current/source descriptors `c_t,c_i`, a Ridge score over
 
 ```text
-[c_t, c_i, c_t - c_i, c_t * c_i].
+[c_t, c_i, c_t-c_i, c_t*c_i]
 ```
 
-Its linear score is algebraically compiled into a 64-D maximum-inner-product search score, so retrieval does not enumerate future utility or run code transport across the full bank. The compilation error at lock time was below `3.5e-9`. The scorer was trained on train-only future utility and validated with source-entity-safe leave-one-location-out folds.
+factorizes exactly into maximum inner-product search. Five candidates are
+retrieved. A candidate with positive coarse score and positive current-geometry
+agreement can reroute the coarse winner; otherwise the coarse top-1 is used.
+Both decisions use semantic zero rather than calibrated thresholds.
 
-Frozen DINOv2 place descriptors are retained only as a negative/control representation. They achieved strong place-overlap AUC but were worse than matched random retrieval for causal plasticity utility.
+## Theoretical rationale
 
-## Transport and utility routing
+For an `L`-smooth future loss `F` and transported residual `delta`,
 
-For each of the K=5 addressed memories:
+\[
+F(z)-F(z+\delta)\ge
+-\langle\nabla F(z),\delta\rangle-\frac{L}{2}\lVert\delta\rVert^2.
+\]
 
-1. learned visual correspondence reads the source code at current tokens;
-2. the transported code is provisionally combined with current TTT at fixed strength 0.10;
-3. observable current/source objective histories, descriptor interactions, code statistics, and visual-transport statistics form the router input;
-4. a frozen `StandardScaler → PCA(16) → Ridge(alpha=1)` model predicts utility;
-5. the best candidate is accepted only above the train-locked threshold; otherwise the system returns current-only TTT.
+Transport and utility addressing aim to make the first-order term favorable;
+the fixed residual and clamp bound second-order damage. This motivates the
+method but is not a worst-case safety theorem. EXP-020's 33% proxy harm confirms
+that the bound alone is insufficient without a utility target calibrated to the
+paper endpoint.
 
-No query/future feature is present. Predicted Sim(3) alignment is an ablation and does not gate visual transport.
+## Allowed next-method change
 
-## Continual bank
+No change is authorized yet. After a new independent benchmark is identified,
+the next paper-scope decision may authorize at most one metric-aligned offline
+meta signal. The online objective must remain one loss and the inference graph
+must not gain another learned module unless a new decision explicitly replaces,
+rather than stacks onto, an existing component.
 
-- Stream partition: official location for the current benchmark.
-- Causal order: true nuScenes capture timestamp; each target is evaluated before its own write.
-- Retention: deterministic reservoir sampling.
-- Capacity: 64 records per stream partition.
-- Retrieval: utility-MIPS K=5.
-- Write: after current prediction/adaptation.
+## Claim boundary
 
-Capacity 64 is the smallest value passing the registered validation gate among `{8,16,32,64}`. It is a benchmark-selected operating point, not a universal constant. Learned utility-history eviction was rejected. Reservoir is retained as a simple unbiased policy, but final-test reservoir and FIFO utilities were statistically indistinguishable; the supported claim is bounded retention, not reservoir superiority.
+Supported: local transported corrections contain reusable proxy information;
+utility addressing can beat appearance and matched random controls; bounded
+causal storage can retain this proxy effect; aligned AbsRel improvement over
+current TTT exists in EXP-020.
 
-## Evidence boundary
-
-The terminal EXP-009 test contains 104 unique target contexts from 117 canonical directions, grouped into 22 physical overlap components across four locations. Reservoir-64 produced +2.088% normalized future utility versus +1.602% for same-bank random addressing; the paired component 95% CI was [+0.086, +0.924] percentage points. It retained 100.98% of unbounded addressed-bank utility and passed all pre-registered gates.
-
-The current output metric is a normalized future depth/point query-loss proxy derived from frozen reconstruction and tracking evidence. The method has not yet established end-to-end metric depth, point-cloud, pose, dynamic tracking, cross-dataset, indefinite-stream, or wall-clock claims. Those are EXP-010 and later milestones. EXP-009 test is terminal and cannot be used for further method selection.
+Unsupported: broad metric reconstruction improvement, reliable negative
+transfer rejection, pose/4D claims, reservoir superiority, universal capacity,
+or generalization to a second dataset/backbone.

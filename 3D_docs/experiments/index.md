@@ -21,6 +21,6 @@
 | [EXP-017](EXP-017_adaptation_context_address.md) | Does one online self-improvement scalar complete the utility address? | Completed, gate failed | Pair correlation/harm improved, but random superiority remained insignificant. |
 | [EXP-018](EXP-018_geometry_agreement.md) | Can strict current-geometry agreement safely select within utility top-5? | Completed, gate failed | Harm/random superiority improved, but abstention reduced utility below the gate. |
 | [EXP-019](EXP-019_agreement_fallback.md) | Can agreement reranking plus coarse fallback improve top-1? | Completed, all gates passed | Significantly beat coarse and random without a learned fine router. |
-| [EXP-020](EXP-020_paper_model_validation.md) | Does the frozen compact paper model improve proxy and LiDAR geometry? | Registered | One-shot 103-target/17-component causal validation; no tuning afterward. |
+| [EXP-020](EXP-020_paper_model_validation.md) | Does the frozen compact paper model improve proxy and LiDAR geometry? | Completed, gate failed | Proxy and aligned AbsRel effects persisted, but current TTT was not broadly metric-healthy, LiDAR superiority over random was insignificant, and proxy harm was 33%. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

@@ -2,6 +2,14 @@
 
 Last updated: 2026-08-25
 
+## Current decision status
+
+The frozen EXP-015 + EXP-019 candidate is **not paper-ready**. EXP-020 retained
+significant proxy utility and aligned-AbsRel evidence, but failed the registered
+broad-geometry and harm gates. The title and thesis below remain the research
+target, not an accepted final model. Any replacement must be selected on new
+development data and tested on a newly locked component-disjoint benchmark.
+
 ## Working title
 
 **Revisit3D: Utility-Addressed Test-Time Plasticity for Streaming 3D Reconstruction**
@@ -102,3 +110,10 @@ The linear pair score over `[c_t,c_i,c_t-c_i,c_t*c_i]` factorizes exactly into m
 - If utility address does not beat a matched random address on absolute metrics, similarity-independent utility retrieval is not established.
 - If the simplified meta-objective collapses, retain only independently justified regularizers and report them transparently.
 - No result from the closed EXP-009 test may be used to tune the method.
+
+EXP-020 triggered the first two stop conditions. Consequently, the paper may
+not claim general reconstruction improvement from the current model. The next
+scope decision is whether to preserve a fully self-supervised but narrower
+relative-depth/revisit claim, or introduce one explicitly metric-aligned offline
+meta signal while retaining the single online TTT loss. That decision must be
+made before any new model training.
