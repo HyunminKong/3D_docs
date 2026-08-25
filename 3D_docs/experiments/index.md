@@ -22,5 +22,6 @@
 | [EXP-018](EXP-018_geometry_agreement.md) | Can strict current-geometry agreement safely select within utility top-5? | Completed, gate failed | Harm/random superiority improved, but abstention reduced utility below the gate. |
 | [EXP-019](EXP-019_agreement_fallback.md) | Can agreement reranking plus coarse fallback improve top-1? | Completed, all gates passed | Significantly beat coarse and random without a learned fine router. |
 | [EXP-020](EXP-020_paper_model_validation.md) | Does the frozen compact paper model improve proxy and LiDAR geometry? | Completed, gate failed | Proxy and aligned AbsRel effects persisted, but current TTT was not broadly metric-healthy, LiDAR superiority over random was insignificant, and proxy harm was 33%. |
+| [EXP-021](EXP-021_independent_benchmark.md) | Can untouched official-test scenes support a new component-disjoint benchmark? | Registered | Metadata-only overlap and file-availability audit; no RGB, LiDAR, or model access. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

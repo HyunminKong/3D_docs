@@ -621,3 +621,17 @@ is now exposed and prohibited for model selection. No additional atom variant,
 loss, threshold, or router may be tuned on EXP-009 test or EXP-020 validation.
 A changed method requires a newly frozen component-disjoint benchmark and an
 explicit paper-scope decision before training.
+
+## D083 — Audit official-test revisits before choosing a replacement method
+
+Date: 2026-08-25
+Status: Accepted before EXP-021 metadata access
+
+The local nuScenes `v1.0-test` metadata is the only untouched paper-scale data
+currently available in the workspace. EXP-021 Stage 0 may read official pose,
+timestamp, calibration, scene, location, and file-path metadata only. It may
+check file existence but may not decode RGB/LiDAR or run a model. Physical
+overlap connected components are the only admissible future split unit. Passing
+the registered audit authorizes design of a new development/final-test split,
+not model-output access. This preserves a clean endpoint before deciding between
+a narrow self-supervised paper and one metric-aligned offline meta signal.

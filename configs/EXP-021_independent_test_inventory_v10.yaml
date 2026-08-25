@@ -1,0 +1,30 @@
+experiment: EXP-021
+protocol_revision: v1.0
+seed: 2100010
+
+metadata:
+  root: /mnt/ssd/nuscenes
+  version: v1.0-test
+  reference_version: v1.0-trainval
+  camera_channel: CAM_FRONT
+  lidar_channel: LIDAR_TOP
+  minimum_camera_frames: 200
+  previous_manifest_glob: revisit3d/manifests/*.json
+
+overlap:
+  maximum_distance_m: 2.0
+  same_location_only: true
+
+success:
+  minimum_eligible_scenes: 140
+  minimum_overlap_scenes: 50
+  minimum_undirected_edges: 40
+  minimum_components: 10
+  minimum_locations: 3
+  require_zero_reference_scene_token_overlap: true
+  require_zero_previous_manifest_name_overlap: true
+  minimum_keyframe_file_existence: 1.0
+
+output:
+  inventory_cache: revisit3d/cache/EXP-021/independent_test_inventory_v10.json
+  summary: revisit3d/results/EXP-021/stage0_independent_test_inventory_v10.json
