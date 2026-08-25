@@ -635,3 +635,18 @@ overlap connected components are the only admissible future split unit. Passing
 the registered audit authorizes design of a new development/final-test split,
 not model-output access. This preserves a clean endpoint before deciding between
 a narrow self-supervised paper and one metric-aligned offline meta signal.
+
+## D084 — Reserve all official-test revisit components for one terminal test
+
+Date: 2026-08-25
+Status: Accepted after EXP-021 Stage 0 and before Stage 1
+
+The metadata audit passed with 107 edges, 96 overlap scenes, and 29 independent
+components. One Boston component contains 54 edges, so a balanced two-way split
+would either leave development with very few independent components or reduce
+the terminal test below the desired target count. All 29 components are instead
+reserved for one terminal test. Replacement-method design and selection must use
+source-safe component OOF on the existing 25-component train benchmark only.
+No official-test RGB, LiDAR, feature, or model output may be opened until one
+method, all hyperparameters, all gates, and an artifact hash are frozen. Stage 1
+may generate only the directional metadata manifest.

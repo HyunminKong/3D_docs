@@ -1,0 +1,22 @@
+experiment: EXP-021
+protocol_revision: v1.1
+seed: 2100010
+
+source:
+  inventory: revisit3d/cache/EXP-021/independent_test_inventory_v10.json
+  inventory_summary: revisit3d/results/EXP-021/stage0_independent_test_inventory_v10.json
+
+segments:
+  context_frames: 8
+  query_frames: 4
+  local_radius_fraction: 0.15
+
+minimum_health:
+  directional_episodes: 200
+  scenes: 90
+  components: 25
+  locations: 3
+
+output:
+  manifest: revisit3d/manifests/nuscenes_official_test_revisit_exp021_v11.json
+  result: revisit3d/results/EXP-021/stage1_terminal_manifest_v11.json
