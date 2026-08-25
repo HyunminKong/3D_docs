@@ -91,6 +91,90 @@ def track_3d_consistency_loss(
     return loss
 
 
+def track_reprojection_consistency_loss(
+    depth: Tensor,
+    intrinsics: Tensor,
+    w2c: Tensor,
+    tracks: Tensor,
+    visibility: Tensor,
+    confidence: Tensor,
+    *,
+    image_size: tuple[int, int],
+    return_stats: bool = False,
+) -> Tensor | tuple[Tensor, dict[str, Tensor]]:
+    """Symmetrically reproject frozen tracks using each view's predicted depth.
+
+    Unlike :func:`track_3d_consistency_loss`, this objective measures a
+    dimensionless image-plane residual.  Every view serves as a source, so the
+    loss updates all view-local depth tokens while using no future frame, GT
+    depth, or GT pose.
+    """
+    if depth.ndim != 4 or intrinsics.ndim != 3 or w2c.ndim != 4 or tracks.ndim != 4:
+        raise ValueError("depth [B,V,H,W], intrinsics [B,V,4], w2c [B,V,4,4], tracks [B,V,N,2] expected")
+    batch, views, _, _ = depth.shape
+    if views < 2:
+        zero = depth.sum() * 0
+        return (zero, {"track_coverage": zero, "mean_reprojection_residual": zero}) if return_stats else zero
+    if tracks.shape[:2] != (batch, views) or visibility.shape != tracks.shape[:3] or confidence.shape != tracks.shape[:3]:
+        raise ValueError("track, visibility, and confidence dimensions do not match depth views")
+    image_h, image_w = image_size
+    points = tracks.to(depth.dtype)
+    normalized = torch.stack((
+        2 * points[..., 0] / max(image_w - 1, 1) - 1,
+        2 * points[..., 1] / max(image_h - 1, 1) - 1,
+    ), dim=-1)
+    samples = F.grid_sample(
+        depth.flatten(0, 1).unsqueeze(1), normalized.flatten(0, 1).unsqueeze(1),
+        mode="bilinear", padding_mode="zeros", align_corners=True,
+    )
+    sampled_depth = samples.squeeze(1).squeeze(1).reshape(batch, views, -1).clamp_min(1e-5)
+    fx, fy, cx, cy = intrinsics.to(depth.dtype).unbind(dim=-1)
+    x = (points[..., 0] - cx[..., None]) / fx[..., None] * sampled_depth
+    y = (points[..., 1] - cy[..., None]) / fy[..., None] * sampled_depth
+    camera_points = torch.stack((x, y, sampled_depth, torch.ones_like(sampled_depth)), dim=-1)
+    c2w = torch.linalg.inv(w2c.to(depth.dtype))
+    world = torch.einsum("bvij,bvnj->bvni", c2w, camera_points)
+    in_bounds = (
+        (points[..., 0] >= 0) & (points[..., 0] <= image_w - 1)
+        & (points[..., 1] >= 0) & (points[..., 1] <= image_h - 1)
+    ).to(depth.dtype)
+    evidence = visibility.to(depth.dtype) * confidence.to(depth.dtype) * in_bounds
+    diagonal = float((image_h ** 2 + image_w ** 2) ** 0.5)
+    total = depth.new_zeros(())
+    total_weight = depth.new_zeros(())
+    raw_residual = depth.new_zeros(())
+    pairs = 0
+    for source in range(views):
+        source_world = world[:, source]
+        for target in range(views):
+            if source == target:
+                continue
+            camera = torch.einsum("bij,bnj->bni", w2c[:, target].to(depth.dtype), source_world)
+            z = camera[..., 2].clamp_min(1e-5)
+            u = fx[:, target, None] * camera[..., 0] / z + cx[:, target, None]
+            v = fy[:, target, None] * camera[..., 1] / z + cy[:, target, None]
+            residual = torch.sqrt(
+                (u - points[:, target, :, 0]).square()
+                + (v - points[:, target, :, 1]).square() + 1e-4
+            ) / diagonal
+            # A source ray that lands behind the target camera is not a valid
+            # reprojection constraint.  Excluding it also prevents the
+            # clamped denominator from creating arbitrarily large gradients.
+            positive_depth = (camera[..., 2] > 1e-5).to(depth.dtype)
+            weight = evidence[:, source] * evidence[:, target] * positive_depth
+            total = total + (weight * torch.sqrt(residual.square() + 1e-6)).sum()
+            raw_residual = raw_residual + (weight * residual).sum()
+            total_weight = total_weight + weight.sum()
+            pairs += 1
+    loss = total / total_weight.clamp_min(1e-6)
+    if return_stats:
+        return loss, {
+            "track_coverage": total_weight / max(evidence.numel() * pairs / views, 1),
+            "mean_reprojection_residual": raw_residual / total_weight.clamp_min(1e-6),
+        }
+    return loss
+
+
 def relative_w2c_from_twist(twist: Tensor) -> Tensor:
     """Convert [translation, axis-angle] predictions to view-0-relative w2c.
 
