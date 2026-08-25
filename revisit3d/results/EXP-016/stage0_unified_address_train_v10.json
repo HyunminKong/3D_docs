@@ -1,0 +1,111 @@
+{
+  "experiment": "EXP-016",
+  "stage": "unified_utility_address",
+  "split": "train",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-016_unified_utility_address_v10.yaml",
+  "targets": 218,
+  "pairs": 13631,
+  "components": 25,
+  "locations": 4,
+  "source_entity_excluded": true,
+  "query_or_future_online_input": false,
+  "candidate_cache": "revisit3d/cache/EXP-016/causal_utility_pairs_train_v10.pt",
+  "candidate_cache_sha256": "e7cd9fa9453535eafce05552f3b8de0483918e8409a233ca455ec54efcfd0f11",
+  "pair_oof_spearman": 0.18565694857171217,
+  "pair_oof_spearman_p": 5.70224884684567e-106,
+  "folds": [
+    {
+      "held_out_location": "boston-seaport",
+      "train_pairs": 5980,
+      "test_pairs": 4002,
+      "spearman": 0.02338901018383702,
+      "spearman_p": 0.13904391274380293
+    },
+    {
+      "held_out_location": "singapore-hollandvillage",
+      "train_pairs": 10909,
+      "test_pairs": 2560,
+      "spearman": 0.16340330662205604,
+      "spearman_p": 8.828806674513299e-17
+    },
+    {
+      "held_out_location": "singapore-onenorth",
+      "train_pairs": 5930,
+      "test_pairs": 3762,
+      "spearman": 0.24845578369881038,
+      "spearman_p": 4.936415203544158e-54
+    },
+    {
+      "held_out_location": "singapore-queenstown",
+      "train_pairs": 8815,
+      "test_pairs": 3307,
+      "spearman": 0.23313156127479837,
+      "spearman_p": 4.6424648905661505e-42
+    }
+  ],
+  "policies": {
+    "unified": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.0077136192391227465,
+      "harmful_rate": 0.18516612554112555,
+      "acceptance": 0.9471930272108844
+    },
+    "random_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.005552941191574875,
+      "harmful_rate": 0.17329808286951143,
+      "acceptance": 0.9471930272108844
+    },
+    "appearance_same_accept": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.005157094234971402,
+      "harmful_rate": 0.27122711811997524,
+      "acceptance": 0.9471930272108844
+    },
+    "oracle_panel": {
+      "targets": 218,
+      "components": 25,
+      "mean_utility": 0.01769091142918841,
+      "harmful_rate": 0.0,
+      "acceptance": 0.999375
+    }
+  },
+  "bootstrap": {
+    "unified_minus_random": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0021606780475478715,
+      "ci95": [
+        -0.00010831531632736518,
+        0.004494223984672104
+      ]
+    },
+    "unified_minus_appearance": {
+      "unit": "physical_overlap_component",
+      "components": 25,
+      "mean_difference": 0.0025565250041513442,
+      "ci95": [
+        8.609785274964363e-05,
+        0.005231185271168517
+      ]
+    }
+  },
+  "registered_gate": {
+    "checks": {
+      "positive_pooled_spearman": true,
+      "positive_each_location_spearman": true,
+      "minimum_policy_utility": true,
+      "minimum_acceptance": true,
+      "maximum_harm": true,
+      "above_appearance": true,
+      "random_component_ci_positive": false
+    },
+    "passed": false
+  },
+  "validation_accessed": false,
+  "test_accessed": false
+}

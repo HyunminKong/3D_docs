@@ -563,3 +563,12 @@ Status: Accepted before EXP-016 execution
 EXP-016 uses one Ridge score over the exact-factorizable descriptor interaction `[c,s,c-s,c*s]`. The highest-scoring memory is the only retrieved candidate and is applied only when its predicted utility exceeds semantic zero. `K`, a learned threshold, PCA, fine router, and risk head are removed, leaving only `eta`, `alpha`, and capacity as visible inference hyperparameters.
 
 Training/evaluation is leave-one-location-out with every held-location source entity removed from training. The causal candidate panel is sampled before target write and future/query frames are label-only. The fixed gates compare against matched-acceptance random and appearance addresses and must pass before any validation access.
+
+## D078 — Add one adaptation-context scalar under unchanged address gates
+
+Date: 2026-08-25
+Status: Accepted after EXP-016 and before EXP-017
+
+EXP-016 achieved +0.771% utility, 18.52% harm, positive association in every location, and significant superiority over appearance. Its random difference was +0.00216 but the component CI `[-0.00011, +0.00449]` crossed zero, so no artifact was accepted.
+
+EXP-017 appends one already observable scalar: the normalized loss improvement produced by each context's own online TTT step. This directly represents adaptation dynamics while adding no loss, module, threshold, or hyperparameter. The pair score remains one exact factorized Ridge, now over 65-D states. All EXP-016 gates remain unchanged; failure ends address augmentation.

@@ -1,6 +1,6 @@
 # EXP-016 — Unified Utility Address
 
-Status: Registered before execution
+Status: Completed; one statistical gate failed narrowly
 
 ## Question
 
@@ -17,6 +17,10 @@ Replay all 557 unique train contexts in capture-time order. Before each of 218 t
 Cross-fit by official location. For a held location, remove every training pair whose target **or source** belongs to it. The deployable policy is compared with uniform-random and appearance top-1 under the exact same accept/reject targets, plus panel oracle.
 
 The gate requires positive utility association in every location, component-mean policy utility above 0.5%, at least 20% acceptance, no more than 20% harm, higher utility than appearance, and a positive component-bootstrap lower bound over matched-acceptance random selection. Passing freezes one all-train Ridge/MIPS artifact; failure ends the unified-address candidate.
+
+## Result
+
+The visual-only score reached `+0.771%` component-mean utility, 18.52% harm, and 94.72% acceptance. It beat appearance with a positive CI and had positive pair association in all four locations. Unified minus matched-acceptance random was `+0.00216`, 95% CI `[-0.00011, +0.00449]`; only this registered gate failed. No artifact was produced. EXP-017 tests one adaptation-history scalar under identical gates.
 
 ## Files
 
