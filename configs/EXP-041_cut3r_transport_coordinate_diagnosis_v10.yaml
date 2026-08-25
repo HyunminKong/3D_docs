@@ -1,0 +1,32 @@
+experiment: EXP-041
+protocol_revision: v1.0
+purpose: train_only_transport_coordinate_diagnosis
+seed: 4100010
+data:
+  manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v11.json
+  manifest_sha256: 539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05
+  selected_scenes: 8
+  pairs_per_scene: 4
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  image_size: 512
+  crop: false
+plasticity:
+  code_dim: 8
+  basis_seed: 3800010
+  normalized_step: 0.001
+  patch_size: 16
+transport:
+  candidates: [untransported, visual, geometry]
+  visual_temperature: 0.07
+  spatial_shuffle_seed: 4100010
+decision:
+  require_positive_gain_over_current: true
+  require_positive_alignment_with_current_code: true
+  require_better_than_visual_spatial_shuffle: true
+output:
+  result: revisit3d/results/EXP-041/cut3r_transport_coordinate_diagnosis_v10.json

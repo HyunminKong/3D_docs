@@ -49,6 +49,7 @@ def _adapt_code(carrier, view, state, previous_points, config):
         "adapted_points": adapted_points.detach(),
         "adapted_loss": float(adapted_loss),
         "code": updated_code,
+        "features": auxiliary["image_tokens"],
         "gradient_norm": float(gradient.norm()),
         "next_state": next_state,
     }

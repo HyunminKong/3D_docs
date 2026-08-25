@@ -42,5 +42,6 @@
 | [EXP-038](EXP-038_recurrent_carrier_interface.md) | Can a local 8-D code modify frozen CUT3R geometry with exact zero-code parity, online gradients, and explicit 3D transport? | Corrected v1.1 passed all gates | Exact base/zero parity, finite descent, and exact identity 3D transport establish the minimal carrier interface. |
 | [EXP-039](EXP-039_dl3dv_source_safe_partition.md) | Can unused DL3DV scenes provide a source-safe recurrent-revisit development and terminal split? | Corrected v1.1 passed all gates | Locked 63/14/14 disjoint scenes with 982/213/224 pairs before any pixel or model access. |
 | [EXP-040](EXP-040_cut3r_oracle_reuse_premise.md) | Do current and oracle-transported 8-D codes improve frozen CUT3R future 3D consistency? | Completed, gate failed | Current TTT works, but raw 3D reuse harms 68.75% and loses to spatial shuffle; diagnose carrier/coordinate before memory. |
+| [EXP-041](EXP-041_cut3r_transport_coordinate_diagnosis.md) | Is CUT3R reuse failure caused by 3D transport or raw update-coordinate incompatibility? | Registered | Compare untransported, visual, geometry, and shuffle on the same train-only pairs without fitting. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

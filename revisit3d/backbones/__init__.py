@@ -7,6 +7,7 @@ from .recurrent_carrier import (
     patch_center_points,
     symmetric_point_consistency,
     transport_code_3d,
+    transport_code_visual,
 )
 
 __all__ = [
@@ -19,4 +20,5 @@ __all__ = [
     "patch_center_points",
     "symmetric_point_consistency",
     "transport_code_3d",
+    "transport_code_visual",
 ]

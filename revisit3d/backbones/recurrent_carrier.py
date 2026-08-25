@@ -13,6 +13,7 @@ from typing import Any
 
 import torch
 from torch import Tensor, nn
+from torch.nn import functional as F
 
 
 @dataclass(frozen=True)
@@ -248,3 +249,22 @@ def transport_code_3d(
         nearest[..., None].expand(-1, -1, source_code.shape[-1]),
     )
     return transported, nearest_distance
+
+
+def transport_code_visual(
+    source_features: Tensor,
+    source_code: Tensor,
+    target_features: Tensor,
+    *,
+    temperature: float = 0.07,
+) -> tuple[Tensor, Tensor]:
+    """Soft cosine transport using frozen carrier patch features."""
+    if source_features.shape[:2] != source_code.shape[:2]:
+        raise ValueError("source feature/code layouts differ")
+    if target_features.shape[0] != source_features.shape[0]:
+        raise ValueError("source and target batch sizes differ")
+    cosine = F.normalize(target_features.float(), dim=-1) @ F.normalize(
+        source_features.float(), dim=-1
+    ).transpose(-1, -2)
+    weights = torch.softmax(cosine / float(temperature), dim=-1)
+    return weights @ source_code, weights.max(dim=-1).values
