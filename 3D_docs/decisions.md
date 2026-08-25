@@ -734,3 +734,25 @@ current TTT and oracle reuse to improve all three primary metric means, at least
 one positive component interval for each stage, and positive oracle headroom
 over uniform candidates. Failure ends the from-scratch one-loss atom instead of
 adding proxy preservation, regularizers, or weighted metric terms.
+
+## D090 — Permit one terminal two-residual geometry objective
+
+Date: 2026-08-25
+Status: Supersedes only the post-failure next step in D089
+
+EXP-024 ended the one-loss branch as registered and produced no checkpoint.
+It nevertheless isolated a single missing property: the scale-aligned log
+residual significantly improved SILog and 3D EPE and learned strong oracle
+reuse, while aligned AbsRel alone worsened. The terminal EXP-025 objective is
+therefore the fixed equal average of (a) the existing aligned absolute log-depth
+residual and (b) aligned absolute relative-depth residual. The second residual
+directly equals the failed evaluation quantity at sparse cells; the first
+controls multiplicative/scale-invariant error. Equal averaging is immutable and
+introduces no loss-weight hyperparameter.
+
+This is a new explicitly registered two-residual branch, not a repair of the
+failed EXP-024 record. Online TTT still has one track3D loss and inference adds
+nothing. All other architecture, folds, candidates, optimizer, 1000-step budget,
+eta, and residual strength remain fixed. EXP-025 is terminal: failure stops atom
+objective development for this paper, and no third metric term, proxy term,
+regularizer, or threshold tuning is permitted.

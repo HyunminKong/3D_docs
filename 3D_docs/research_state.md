@@ -95,3 +95,9 @@ current TTT and the old proxy oracle on the registered component tests. EXP-024
 is therefore authorized to replace the EXP-015 meta objective with the equal
 mean of current and best-reuse evaluations of this one metric loss. No other
 loss or module is added.
+
+EXP-024 then improved SILog/EPE and oracle reuse but failed current aligned
+AbsRel, so its one-loss checkpoint was rejected. One terminal EXP-025 objective
+is authorized: a fixed equal mean of aligned log-depth and aligned relative-depth
+residuals. The online method remains one loss/one step; failure ends atom
+objective development for this paper.

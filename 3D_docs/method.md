@@ -117,6 +117,12 @@ replace the EXP-015 three-readout proxy objective with the equal mean of current
 and best-candidate evaluations of the same sparse scale-aligned log-depth loss.
 This is one offline loss; the online graph and online loss are unchanged.
 
+EXP-024 failed only the current aligned-AbsRel gate. Its one-loss checkpoint is
+rejected. EXP-025 may perform one terminal replacement with a fixed equal mean
+of the existing aligned log residual and an aligned relative-depth residual.
+This adds no tunable loss weight and changes no inference computation. No third
+residual or proxy preservation term is allowed.
+
 ## Claim boundary
 
 Supported: local transported corrections contain reusable proxy information;
