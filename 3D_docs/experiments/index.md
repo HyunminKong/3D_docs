@@ -31,5 +31,6 @@
 | [EXP-027](EXP-027_pareto_plasticity_atom.md) | Can coefficient-free common-gradient training produce a broadly metric-healthy reusable atom? | Completed, gate failed | SILog/EPE improved and reuse headroom survived, but AbsRel worsened slightly and AdamW preserved common descent on only 72.5% of steps. |
 | [EXP-028](EXP-028_safeguarded_pareto_atom.md) | Does enforcing a feasible realized optimizer displacement recover broad metric health? | Completed, all gates passed | Current TTT and oracle reuse improve all three geometry means; safeguard restores 100% common descent and adds no inference cost. |
 | [EXP-029](EXP-029_metric_utility_address.md) | Can one source-safe linear address retrieve metric-useful EXP-028 corrections? | Completed, all gates passed | Positive association in every location; selected utility beats random and appearance while reducing harm to 11.4%. |
+| [EXP-030](EXP-030_full_system_geometry_audit.md) | Does the frozen atom-plus-address improve all absolute geometry endpoints and beat matched controls? | Registered | No-fit final development audit before any EXP-021 sensor/model access. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

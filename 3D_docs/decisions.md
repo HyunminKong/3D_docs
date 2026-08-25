@@ -927,3 +927,18 @@ The address, zero acceptance rule, atom checkpoint, and all inference settings
 are frozen. EXP-030 must recompute OOF selected candidates and verify SILog,
 aligned AbsRel, and 3D EPE directly. This is a no-fit audit, not another model
 selection stage. EXP-021 may be opened only if the frozen full system passes.
+
+## D101 — Register the frozen full-system geometry gate
+
+Date: 2026-08-25
+Status: Accepted before EXP-030 execution
+
+EXP-030 performs no fit and recomputes the frozen causal panels using the
+EXP-028 checkpoint and source-safe OOF EXP-029 predictions. Top-1/zero,
+candidate panels, descriptors, transport, and residual are immutable. Matched
+random and appearance policies use identical acceptance.
+
+The full policy must improve mean SILog, aligned AbsRel, and 3D EPE over each
+of current-only, random, and appearance, with at least one positive component
+interval per comparison family. Failure keeps EXP-021 locked; success alone
+authorizes assembly of the terminal artifact.
