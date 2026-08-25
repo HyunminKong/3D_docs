@@ -1,6 +1,6 @@
 # EXP-040 — CUT3R Local-Code Oracle Reuse Premise
 
-Status: Registered before execution
+Status: Completed; registered gate failed
 Purpose: Train-only feasibility; no fitting and no validation/terminal access
 
 ## Question
@@ -41,3 +41,28 @@ bank is built.
 - Config: `configs/EXP-040_cut3r_oracle_reuse_premise_v10.yaml`
 - Script: `revisit3d/scripts/evaluate_exp040_cut3r_oracle_reuse_premise.py`
 - Result: `revisit3d/results/EXP-040/cut3r_oracle_reuse_premise_v10.json`
+
+## Result
+
+Current one-step plasticity was valid but past reuse was not:
+
+| Measurement | Scene-balanced value |
+| --- | ---: |
+| source base -> TTT loss | `0.207097 -> 0.206988` |
+| target base -> current TTT loss | `0.187214 -> 0.187111` |
+| target current -> full 3D reuse loss | `0.187111 -> 0.187131` |
+| target spatial-shuffle loss | `0.187110` |
+| reuse harm fraction | `68.75%` |
+
+Source and target current-TTT checks passed. Correct 3D reuse worsened the
+scene-balanced target loss by `2.022e-5`, was worse than shuffled placement by
+`2.036e-5`, and exceeded the 50% harm limit. The gate failed.
+
+## Conclusion
+
+On the competitive recurrent carrier, a physical revisit and nearest predicted
+canonical 3D position are not sufficient to make a raw local update reusable.
+No utility address or memory bank is authorized. The next train-only diagnosis
+must compare untransported, visual-feature, 3D, and shuffled carriers and
+measure update-coordinate agreement. Only a transport/coordinate supported by
+that diagnosis may enter shared-basis training.

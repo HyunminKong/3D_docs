@@ -6,13 +6,13 @@ Status values are `Supported`, `Partially supported`, `Open`, or `Rejected`.
 
 Reusable streaming adaptation is better represented by spatially local fast codes than by a model-wide update, provided the local code is transported into the current token frame.
 
-Status: **Supported for the tested FastVGGT depth/point setting.** Global and slot states failed context selectivity, whereas transported visual local codes improved all primary means in EXP-030/031 and again over current-only within every TUM sequence in EXP-035. Universal superiority across backbones, pose heads, and dynamic scenes is not established.
+Status: **Supported only for the tested FastVGGT depth/point setting; open on the competitive carrier.** Global and slot states failed context selectivity, whereas transported visual local codes improved all primary means in EXP-030/031 and again over current-only within every TUM sequence in EXP-035. EXP-040 showed that a raw 8-D CUT3R code transported by predicted canonical 3D is harmful, so cross-backbone reuse is not established.
 
 ## H2-P — Predicted geometry as the update carrier
 
 Predicted 3D alignment transports a reusable update better and more safely than appearance-only correspondence.
 
-Status: **Rejected.** Predicted geometry and geometry+appearance transport did not improve over visual transport, reduced coverage, and increased harm. Oracle-coordinate EXP-005 remains an upper bound, not deployable evidence.
+Status: **Rejected.** Predicted geometry and geometry+appearance transport did not improve over visual transport in the FastVGGT branch, reduced coverage, and increased harm. EXP-040 independently found that nearest canonical-3D transport on frozen CUT3R harmed 68.75% of train pairs and lost to a spatial shuffle. Predicted geometry may remain routing evidence, but it is not the accepted update carrier.
 
 ## H2-E — Predicted geometry as routing evidence
 
@@ -72,6 +72,7 @@ not the paper's standalone novelty claim or a general Pareto theorem.
 - The paired physical revisit is always the uniquely correct or most useful memory.
 - A parameter-free current-loss threshold is a sufficient negative-transfer safeguard.
 - Predicted 3D correspondence should be the primary carrier of the fast update.
+- A physical revisit plus nearest predicted canonical-3D transport is sufficient to make a CUT3R local update reusable.
 - Geometry-alignment failure should hard-reject a candidate that still has valid visual transport.
 - A second current TTT step is an equivalent replacement for memory reuse.
 - Generic DINOv2 place compatibility is a causal adaptation-utility address.

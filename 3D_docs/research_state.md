@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-039 locked new DL3DV development and terminal splits)
+Last updated: 2026-08-25 (EXP-040 rejected raw 3D update reuse on frozen CUT3R)
 
 ## First objective
 
@@ -260,3 +260,15 @@ orthonormal 8-D scaffold and one normalized code step, it must test whether
 current TTT lowers adjacent canonical-point consistency and whether the
 correctly transported source code improves target future consistency beyond
 current TTT and a spatially shuffled control. No basis or address is fit yet.
+
+EXP-040 failed that premise. Current TTT lowered source and target consistency,
+but correctly paired nearest-3D reuse worsened the target mean, lost to spatial
+shuffle, and harmed 68.75% of pairs. Thus the v2 scaffold currently supports a
+new TTT coordinate but not continual reuse. No address or memory bank should be
+built yet.
+
+The immediate next step is a train-only carrier decomposition on the same 32
+pairs: compare no transport, cosine visual-token transport, predicted-3D
+transport, and spatial shuffle, while measuring agreement with the target
+current code. This determines whether the failure is the 3D correspondence or
+the update coordinate itself. Validation and terminal remain closed.

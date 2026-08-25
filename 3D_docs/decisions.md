@@ -1217,3 +1217,22 @@ test whether the fixed 8-D coordinate supplies (a) beneficial current TTT and
 (b) oracle past-code utility after predicted-3D transport. This premise must be
 tested before training the shared basis or fitting an address. Validation and
 terminal images remain closed.
+
+## D118 — Reject raw canonical-3D update reuse on the CUT3R carrier
+
+Date: 2026-08-25
+Status: Accepted after EXP-040
+
+The frozen 8-D coordinate produced positive current TTT at source and target,
+but adding the correctly paired 3D-transported source code worsened target loss,
+lost to a spatial shuffle, and harmed 68.75% of pairs. A physical revisit plus
+nearest predicted 3D correspondence is therefore insufficient evidence of
+adaptation compatibility on this carrier.
+
+No address, bank, risk gate, or basis meta-training is authorized from this
+result alone. One train-only decomposition may compare untransported,
+visual-feature, canonical-3D, and shuffled code placement and measure alignment
+with the target current direction. This adds no module and does not open
+validation or terminal data. If no carrier produces positive oracle utility,
+the v2 memory hypothesis must be narrowed or abandoned rather than hidden by a
+learned router.

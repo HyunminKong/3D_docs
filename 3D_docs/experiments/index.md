@@ -41,6 +41,6 @@
 | [EXP-037](EXP-037_official_fastvggt_carrier.md) | Can the official FastVGGT depth head serve as a competitive minimal geometry carrier? | Completed, gate failed | It greatly improves the custom head, but AbsRel/EPE remain 1.43x/1.32x TTT3R; integrate a CUT3R/TTT3R-class carrier. |
 | [EXP-038](EXP-038_recurrent_carrier_interface.md) | Can a local 8-D code modify frozen CUT3R geometry with exact zero-code parity, online gradients, and explicit 3D transport? | Corrected v1.1 passed all gates | Exact base/zero parity, finite descent, and exact identity 3D transport establish the minimal carrier interface. |
 | [EXP-039](EXP-039_dl3dv_source_safe_partition.md) | Can unused DL3DV scenes provide a source-safe recurrent-revisit development and terminal split? | Corrected v1.1 passed all gates | Locked 63/14/14 disjoint scenes with 982/213/224 pairs before any pixel or model access. |
-| [EXP-040](EXP-040_cut3r_oracle_reuse_premise.md) | Do current and oracle-transported 8-D codes improve frozen CUT3R future 3D consistency? | Registered | Train-only 32-pair premise before basis training or utility-address fitting. |
+| [EXP-040](EXP-040_cut3r_oracle_reuse_premise.md) | Do current and oracle-transported 8-D codes improve frozen CUT3R future 3D consistency? | Completed, gate failed | Current TTT works, but raw 3D reuse harms 68.75% and loses to spatial shuffle; diagnose carrier/coordinate before memory. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
