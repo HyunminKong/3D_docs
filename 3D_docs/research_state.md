@@ -89,8 +89,9 @@ The proxy cannot remain the sole offline utility target.
 EXP-021 has frozen an untouched terminal benchmark with 214 directional
 episodes, 96 scenes, 29 components, and three locations. Its manifest hash is
 `22f7ec04caf83ead7efef828dab3231c7919757d13f88509b66ea0257ea95d61`;
-no sensor or model output has been opened. EXP-023 is the remaining no-fit
-feasibility test: use one scale-aligned sparse log-depth label to select among
-the frozen candidate corrections. Only if it improves all primary metrics may
-the same single label replace the proxy in atom/address meta-training. The
-online loss and compact inference architecture remain unchanged.
+no sensor or model output has been opened. EXP-023 passed its no-fit feasibility
+gate: its oracle improved SILog, aligned AbsRel, and 3D EPE over both
+current TTT and the old proxy oracle on the registered component tests. EXP-024
+is therefore authorized to replace the EXP-015 meta objective with the equal
+mean of current and best-reuse evaluations of this one metric loss. No other
+loss or module is added.

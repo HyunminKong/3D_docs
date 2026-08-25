@@ -1,6 +1,6 @@
 # EXP-023 — Metric-Utility Oracle
 
-Status: Registered before execution
+Status: Completed; all gates passed
 
 ## Question
 
@@ -48,3 +48,34 @@ loss, but does not authorize address fitting or terminal-test access.
 - Config: `configs/EXP-023_metric_utility_oracle_v10.yaml`
 - Evaluator: `revisit3d/scripts/evaluate_exp023_metric_utility_oracle.py`
 - Result: `revisit3d/results/EXP-023/stage0_metric_utility_oracle_train_v10.json`
+
+## Result
+
+All gates passed on 225 episodes/25 components.
+
+| Policy | metric risk | SILog | aligned AbsRel | 3D EPE (m) |
+|---|---:|---:|---:|---:|
+| current TTT | 0.379750 | 53.3668 | 0.79276 | 6.51368 |
+| metric oracle | 0.379374 | 53.3186 | 0.79074 | 6.50106 |
+| proxy oracle | 0.379896 | 53.3700 | 0.79122 | 6.51430 |
+| uniform candidate expectation | 0.379779 | 53.3617 | 0.79134 | 6.51212 |
+
+Metric-oracle improvements over current had positive component intervals for
+all three primary metrics: SILog `[0.0168,0.0928]`, AbsRel
+`[0.00108,0.00317]`, and 3D EPE `[0.00286,0.02572]`. It also beat the proxy
+oracle significantly on metric risk, SILog, and EPE. Candidate metric utility
+was nevertheless harmful in 68% of the 1,125 frozen candidate applications.
+
+## Interpretation
+
+The single label is aligned with all three paper metrics and separates a useful
+candidate from the rejected track3D proxy. The high candidate harm confirms
+that retrieval/routing is necessary; it does not justify unconditional reuse.
+The effect is an oracle upper bound over frozen candidates and does not yet show
+that a head or address can learn the label out of component.
+
+## Conclusion
+
+The scalar metric label is admitted for one component-OOF atom feasibility fit.
+The fit must replace, not augment, the EXP-015 proxy meta-objective. Online TTT
+remains one self-supervised track3D loss and no inference module is added.

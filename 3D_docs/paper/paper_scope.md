@@ -117,3 +117,7 @@ self-supervised proxy-only endpoint is rejected for the primary CVPR path. The
 only active alternative is one explicitly metric-aligned offline meta label
 while retaining the single self-supervised online TTT loss. Its oracle utility
 must pass EXP-023 before any new model training.
+
+EXP-023 passed the oracle gate across all three primary metrics. One
+component-OOF atom fit with that single offline loss is now authorized; address
+and terminal evaluation remain locked until its absolute-geometry gates pass.

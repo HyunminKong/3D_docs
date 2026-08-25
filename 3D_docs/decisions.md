@@ -700,3 +700,22 @@ aligned AbsRel, and 3D EPE together, obtains at least one positive component
 interval over current, is no worse than the proxy oracle on all three means, and
 beats the proxy oracle on its own risk with a positive component interval.
 Failure ends this scalar label rather than adding weighted metric terms.
+
+## D088 — Admit the single metric label for one atom feasibility fit
+
+Date: 2026-08-25
+Status: Accepted after EXP-023
+
+The median-aligned absolute log-depth oracle passed every gate on 225 episodes
+and 25 components. Relative to current TTT it improved SILog, aligned AbsRel,
+and 3D EPE with positive component intervals for all three, and it beat the
+track3D proxy oracle significantly on metric risk, SILog, and EPE. Because 68%
+of individual frozen candidates were harmful, unconditional reuse is rejected.
+
+EXP-024 may train a fresh frozen-key 8-D atom from scratch using only the equal
+mean of current and best-candidate evaluations of this same metric loss. This
+replaces all three EXP-015 proxy terms; it does not add a fourth term. Online
+adaptation remains one track3D step at eta 0.0125 and reuse remains a 0.10 visual
+residual. Training budget 1000, five component folds, optimizer settings, and
+candidate construction remain fixed. No address, threshold, risk head, or
+terminal-test access is authorized.

@@ -24,6 +24,6 @@
 | [EXP-020](EXP-020_paper_model_validation.md) | Does the frozen compact paper model improve proxy and LiDAR geometry? | Completed, gate failed | Proxy and aligned AbsRel effects persisted, but current TTT was not broadly metric-healthy, LiDAR superiority over random was insignificant, and proxy harm was 33%. |
 | [EXP-021](EXP-021_independent_benchmark.md) | Can untouched official-test scenes support a new component-disjoint benchmark? | Completed, all gates passed | Frozen terminal manifest: 214 directional episodes, 96 scenes, 29 components, three locations; no RGB/LiDAR/model access. |
 | [EXP-022](EXP-022_metric_alignment_diagnosis.md) | Where did the terminal atom lose metric alignment? | Completed | Zero-code equals foundation; the online direction improves AbsRel but worsens mean SILog/EPE, and proxy gain is significantly anti-correlated with SILog/EPE gain. |
-| [EXP-023](EXP-023_metric_utility_oracle.md) | Can one sparse metric label identify broadly useful frozen corrections? | Registered | No-fit metric-oracle versus proxy-oracle test on 225 train episodes/25 components. |
+| [EXP-023](EXP-023_metric_utility_oracle.md) | Can one sparse metric label identify broadly useful frozen corrections? | Completed, all gates passed | Metric oracle improves all primary metrics with positive intervals and beats the proxy oracle; 68% raw candidate harm confirms the need for utility selection. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

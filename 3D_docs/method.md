@@ -112,6 +112,11 @@ label. No training change is authorized until that label demonstrates oracle
 headroom across all primary geometry metrics. The inference graph must not gain
 another learned module.
 
+EXP-023 passed that oracle gate. The only authorized training change is now to
+replace the EXP-015 three-readout proxy objective with the equal mean of current
+and best-candidate evaluations of the same sparse scale-aligned log-depth loss.
+This is one offline loss; the online graph and online loss are unchanged.
+
 ## Claim boundary
 
 Supported: local transported corrections contain reusable proxy information;
