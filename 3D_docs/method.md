@@ -363,3 +363,9 @@ than the chronological aggregate. EXP-064 therefore tests only the local
 direction from a chronological output toward a scale-quotiented geometry
 consensus. No head or loss exists until that direction beats its spatial-
 permutation control without negative transfer.
+
+EXP-064 rejects that final direction: its tiny chronological gain is uncertain,
+negative in one scene, harms 43.75% of contexts, and does not significantly
+beat the spatial-permutation control. Consequently there is no order-robust
+method, loss, head, or checkpoint. H20 is closed as a method candidate; its
+order-variance result remains diagnostic evidence only.

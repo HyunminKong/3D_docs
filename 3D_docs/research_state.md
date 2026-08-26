@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-062 order-sensitivity premise preregistered)
+Last updated: 2026-08-26 (EXP-064 completed; H20 method candidate closed)
 
 ## First objective
 
@@ -673,7 +673,7 @@ The next compact candidate must again undergo a literature collision audit and
 a zero-fit premise. Incremental gauge thresholds, longer windows chosen after
 this result, or a hierarchical uncertainty head are not authorized.
 
-## Active order-robustness premise
+## Closed order-robustness premise
 
 D150 selects H20 after a separate collision audit. EXP-062 will hold the first
 history frame, the set of the following three history frames, and a non-updating
@@ -707,3 +707,15 @@ step toward the output geometry consensus and a matched spatially shuffled
 direction to ask whether the single deployable chronological path has a healthy
 geometry-consensus direction. It adds no model and reuses only exposed train
 contexts.
+
+EXP-064 failed five of seven gates. The chronological gain is only `7.69e-5`
+with CI `[-1.12e-4, 2.71e-4]`, is negative in `stairs`, harms 43.75% of
+contexts, and does not significantly beat a spatially shuffled residual. The
+six-order mean improves weakly in every scene, preserving the failure-mode
+observation but not a deployable correction.
+
+D153 therefore closes H20 as a paper-method candidate. No coefficient tuning,
+order selection, risk gate, or commutator-loss fit is authorized. There is no
+accepted active method. The next compact streaming-3D candidate requires a
+fresh collision audit and no-fit premise; validation and terminal roles remain
+unopened.

@@ -299,7 +299,7 @@ identical. Local path inconsistency is therefore a distinct source of
 long-horizon instability that can in principle be reduced by an offline
 commutator-consistency objective without changing causal inference.
 
-Status: **Premise supported; method-specific capacity open.** EXP-062 passed
+Status: **Empirical premise supported; paper-method candidate rejected.** EXP-062 passed
 every gate. Identical evidence orders span 12.58% of chronological query EPE on
 average; 12/16 contexts exceed 5%; every scene has positive range; exact replay
 is bitwise; and label-free geometric output dispersion predicts metric range
@@ -320,3 +320,12 @@ pointmap barycenter improves the mean-order EPE in all 16 contexts. EXP-064 is
 authorized only to test whether a fixed small geometry-consensus direction is
 also healthy for the single chronological path. Failure ends H20 as a method
 candidate; success authorizes trainability design, not a latent commutator.
+
+EXP-064 failed five of seven gates. The 10% geometry-consensus step yields only
+`7.69e-5` chronological EPE gain with CI `[-1.12e-4, 2.71e-4]`, is negative in
+`stairs`, harms 43.75% of contexts, and does not significantly beat a spatially
+shuffled residual. Its all-order average remains weakly positive in every
+scene, so output ensembling has descriptive denoising value, but the measured
+commutator does not supply a healthy deployable chronological correction.
+Coefficient tuning, order selection, confidence gating, and training on these
+exposed contexts are prohibited. H20 is retained as evaluation anatomy only.

@@ -2,10 +2,10 @@
 
 ## Project
 
-Order-Robust Streaming 3D Reconstruction.
+Compact Reliable Streaming 3D Reconstruction Research.
 
-The former continual adaptation-memory line and the rejected gauge/local
-reliability premise are preserved through EXP-061. Neither is active.
+The former continual adaptation-memory, gauge/local-reliability, and
+order-robustness lines are preserved through EXP-064. None is active.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

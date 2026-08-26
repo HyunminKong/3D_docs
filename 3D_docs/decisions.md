@@ -2068,3 +2068,27 @@ coefficient-frozen direction test: move each scale-normalized query pointmap
 with the identical direction after spatial permutation. No strength, loss,
 head, adapter, order choice, or validation may be fit. Failure closes the
 order-robust method candidate; success only authorizes a trainability design.
+
+## D153 — Reject the chronological consensus direction and close H20
+
+Date: 2026-08-26
+Status: Accepted after EXP-064
+
+EXP-064 exactly reproduces the EXP-063 base but fails five of seven frozen
+gates. The 10% decoded-consensus direction improves chronological EPE by only
+`7.69e-5`, with a confidence interval crossing zero, a negative `stairs`
+effect, and 43.75% context harm. Its gain over the norm/payload-matched spatial
+shuffle is also uncertain and negative in `stairs`. Only the secondary mean
+over all six paths is positive in every scene.
+
+The recurrent order-sensitivity phenomenon from EXP-062 remains valid, but the
+tested geometry disagreement does not identify a safe local direction for the
+actual causal path. Per the preregistered stop rule, no coefficient search,
+favorable-order choice, risk gate, adapter, or decoded-commutator training is
+authorized on these contexts. The generic latent formulation also remains
+occupied by SIRE. H20 is therefore closed as the active top-tier paper method
+and retained only as a diagnostic result.
+
+The next candidate must be a different compact streaming-3D question, undergo
+a fresh 2023--2026 collision audit, and pass a no-fit premise before any model
+is implemented. Existing validation and terminal partitions remain unopened.
