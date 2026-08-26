@@ -10,14 +10,15 @@ absolute geometry/reliability benefit, source-safe generalization, and efficienc
 without accumulating heads, losses, thresholds, or unrelated 4D tasks. A broader
 dissertation architecture is deferred.
 
-## Research question
+## Current research question
 
-For a static scene and a fixed set of observations, do recurrent streaming-3D
-updates produce materially different query geometry solely because the same
-evidence arrives in a different order, and can local update commutativity make
-the final reconstruction path-independent without a new memory architecture?
+No paper question or method is currently accepted. The compact TTT adaptation-
+experience line is closed by EXP-067, and the subsequent gauge, order,
+calibration-shock, and evidence-provenance premises did not support a method.
+The next question must pass a fresh literature-collision audit and a no-fit
+premise before architecture work.
 
-## Defensible novelty boundary
+## Archived order-robustness novelty boundary
 
 Offline permutation-equivariant SfM/set reconstruction, adaptive recurrent
 learning rates, latent filtering, cache compression, and long-stream state
@@ -32,7 +33,8 @@ regularization are occupied directions. The provisional boundary is:
 4. preserve causal single-pass inference even though swapped paths are used as
    offline training counterfactuals.
 
-This is a selected research question, not an accepted novelty or method claim.
+This was the selected H20 research question, not an accepted novelty or method
+claim. EXP-064 closed it as a paper-method candidate.
 
 ## Archived compact mechanism-proof candidate
 
@@ -740,7 +742,7 @@ gates. Its persistent penalty is positive on average in all scenes but only
 not significantly beat resampling or missing-periphery controls. D156 closes
 H21 without stronger zoom or method fitting. There is again no active model.
 
-## Active evidence-provenance premise
+## Closed evidence-provenance premise
 
 D157 rejects rolling shutter as the immediate compact branch and selects H22
 after a separate collision audit. CUT3R can answer a future camera ray query
@@ -766,7 +768,7 @@ result closes H22 rather than exposing an implementation or data-use failure.
 D158 prohibits alternate distances, fusion weights, thresholds, contexts,
 heads, or validation access. There is no active paper method.
 
-## Active function-space plasticity premise
+## Closed function-space plasticity premise
 
 D159 excludes dynamic-state filtering and long-stream memory as occupied, then
 returns to the project's original TTT-experience question with a different
@@ -797,3 +799,12 @@ into a paper would require a new novelty claim beyond Point3R/LONG3R/Mem3R and a
 natural, deployable missing-evidence trigger; H22's first provenance trigger
 failed. Otherwise the project must select a genuinely new paper problem rather
 than another local repair. This is a project-level decision boundary.
+
+## Detailed retrospective
+
+The complete reconstruction of the original hypothesis, EXP-001--067 evidence,
+failure causes, exact controls, and the distinction between rejected and still-
+open claims is preserved in the
+[TTT adaptation-memory hypothesis retrospective](analysis/ttt_adaptation_memory_hypothesis_retrospective.md).
+This analysis adds no new experiment or method decision; individual EXP records
+and their compact result artifacts remain the numerical source of truth.

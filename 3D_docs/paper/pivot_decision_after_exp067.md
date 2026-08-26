@@ -2,6 +2,9 @@
 
 Date: 2026-08-26
 
+Detailed evidence record:
+[TTT adaptation-memory hypothesis retrospective](../analysis/ttt_adaptation_memory_hypothesis_retrospective.md)
+
 ## Decision required
 
 The compact adaptation-experience thesis is exhausted on the competitive

@@ -40,6 +40,7 @@ For method or architecture work also read `3D_docs/method.md`. For literature wo
 - Active implementation: `revisit3d/`
 - Historical probes: `skillmem/`, `ttt_continual/`, `dnpc/`
 - Research source documents: `3D_docs/`
+- Hypothesis retrospectives: `3D_docs/analysis/`
 - Preserved long-form notes: `Research/`
 - External reference repositories: `CUT3R/`, `FastVGGT/`, `Open-d4rt/`, `TTT3R/`, `UniSplat/`, `dust3r/`, `gaussian-splatting/`, `tttLRM/`, `vggt/`
 
