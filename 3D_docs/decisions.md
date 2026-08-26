@@ -1814,3 +1814,30 @@ spatial shuffle similarly, predicted coverage is at least 50%, and predicted
 fusion harms at most 25% of anchors. Failure prevents architecture work and
 localizes whether the blocker is information availability or predicted surface
 quality.
+
+## D143 — Accept the missing-surface premise and remove oracle dependencies next
+
+Date: 2026-08-26
+Status: Accepted after EXP-057 passed all gates
+
+EXP-057 establishes the first decisive unique-information result in the
+competitive-carrier branch. The controlled erasure increased error by `0.429`
+mean relative 3D EPE. A second current local-TTT step did not recover it.
+Predicted past-surface fusion improved over that control by `0.408`, beat a
+spatial permutation by `0.129`, passed in every scene with wholly positive
+intervals, achieved 89.5% mean coverage, and caused zero observed harm.
+
+This supports explicit surface complementarity, not a deployable method or a
+generic memory novelty claim. The result still uses ground-truth relative pose,
+past median scale, and visibility. EXP-058 must remove those three dependencies
+without fitting: transform the stored source pointmap using the frozen TTT3R
+source/target predicted poses, fuse in their common predicted scale, use only
+the known synthetic erasure mask and z-buffer validity, then apply the standard
+target evaluation scale outside the erased region. Camera intrinsics remain a
+known calibrated-stream input.
+
+EXP-058 must beat second-current TTT and an identical-payload spatial shuffle
+in every scene with positive intervals and at most 25% harm. Failure localizes
+the next bottleneck to deployable pose/scale/visibility rather than memory
+capacity and prevents head or bank design. Success authorizes one minimal
+visibility/address mechanism, not validation.

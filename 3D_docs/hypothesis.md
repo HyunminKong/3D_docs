@@ -233,10 +233,10 @@ visible in the immediately preceding clean observation, explicitly retained
 past surface geometry contains information that cannot be recovered by the
 frozen recurrent TTT3R state plus an equal second current local-TTT step.
 
-Status: **Open.** EXP-057 must separate three premises on train-only controlled
-erasures: ground-truth past surface establishes information availability;
-predicted past surface with offline pose/scale/visibility establishes
-representation capacity; repeated current TTT is the equal-optimization
-control. The predicted-past representation oracle must beat both second-current
-TTT and a spatially shuffled past surface before any explicit-memory model is
-authorized.
+Status: **Supported under controlled erasure and oracle alignment.** EXP-057
+passed every gate. Erasure increased error in every train scene, while
+predicted past-surface fusion beat second-current TTT by `0.408` mean relative
+3D EPE with CI `[0.292, 0.525]`, beat spatial shuffle by `0.129` with CI
+`[0.091, 0.174]`, and harmed 0% of anchors at 89.5% mean coverage. GT pose,
+scale, visibility, and known erasure remain oracle dependencies; deployable
+evidence fusion is not yet established.

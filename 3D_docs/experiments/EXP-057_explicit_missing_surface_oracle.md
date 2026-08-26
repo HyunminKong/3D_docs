@@ -1,6 +1,6 @@
 # EXP-057 — Explicit Missing-Surface Oracle
 
-Status: Registered; train-only controlled-erasure premise
+Status: Completed; all registered gates passed
 Purpose: Test whether explicit past surface evidence contains geometry that
 recurrent TTT3R plus repeated current optimization cannot recover
 
@@ -70,3 +70,23 @@ surface quality.
 - Config: `configs/EXP-057_explicit_missing_surface_oracle_v10.yaml`
 - Runner: `revisit3d/scripts/evaluate_exp057_explicit_missing_surface_oracle.py`
 - Result: `revisit3d/results/EXP-057/explicit_missing_surface_oracle_v10.json`
+
+## Result
+
+All 16 anchors completed with 26,413--46,544 supported erased pixels, exact
+zero-code parity, and 59.7--98.8% predicted-past coverage (89.5% mean). Erasure
+increased current error by `0.429`, CI `[0.312, 0.546]`, and the two local-code
+steps were effectively unable to repair it.
+
+GT-past fusion improved over second-current by `0.480`, CI
+`[0.364, 0.596]`. More importantly, the frozen TTT3R predicted-past surface
+improved by `0.408`, CI `[0.292, 0.525]`, was positive in every scene and every
+anchor, and caused 0% harm. Correct spatial addressing beat a permutation of
+the same predicted payload by `0.129`, CI `[0.091, 0.174]`, again in every
+scene.
+
+H17's oracle premise is supported: explicit past surface evidence contains
+information that recurrent TTT3R plus repeated current local optimization does
+not recover. The result is not deployable because GT pose, scale, visibility,
+and the synthetic erasure mask are used. D143 authorizes only a no-fit removal
+of the first three oracle dependencies in EXP-058.

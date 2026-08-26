@@ -1,0 +1,51 @@
+experiment: EXP-058
+protocol_revision: v1.0_registered_before_execution
+purpose: train_only_no_fit_predicted_surface_dependency_audit
+seed: 5700010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-01, heads/seq-01, chess/seq-01, stairs/seq-01]
+  target_frames: [63, 127, 191, 255]
+  context_frames: 4
+  depth_preparation: revisit3d/results/EXP-052/selected_train_depth_registration_v11.json
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+erasure:
+  width_fraction: 0.5
+  height_fraction: 0.5
+  normalized_fill: 0.0
+visibility:
+  depth_consistency_m: 0.05
+  minimum_supported_pixels: 2048
+  minimum_predicted_coverage: 0.5
+plasticity:
+  code_dim: 8
+  basis_seed: 5200010
+  patch_size: 16
+  normalized_step: 0.001
+  current_steps: 2
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+bootstrap:
+  samples: 10000
+  seed: 5801010
+controls:
+  exp057_result: revisit3d/results/EXP-057/explicit_missing_surface_oracle_v10.json
+  exp057_result_sha256: 6d9b142d1f327887dafa238740e4d5f95a5eaf5cf393a00b1789ff9e5da080e3
+success:
+  exact_scenes: 4
+  exact_anchors: 16
+  maximum_exp057_reproduction_abs_difference: 0.00001
+  maximum_predicted_fusion_harm_fraction: 0.25
+  minimum_oracle_gain_retention: 0.5
+output:
+  result: revisit3d/results/EXP-058/predicted_surface_dependency_audit_v10.json

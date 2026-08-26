@@ -274,3 +274,10 @@ median metric scale, test whether the foundation representation can carry that
 information. Ground-truth visibility defines only the evaluation/fusion oracle.
 A spatial permutation of the identical predicted surface payload is the address
 control. This is a premise experiment, not a proposed deployment architecture.
+
+EXP-057 passed all information and representation gates. Explicit predicted
+past surface strongly repairs the erased region, while repeated current local
+TTT does not. The accepted result is still an oracle-aligned premise. D143
+authorizes EXP-058 to use frozen TTT3R predicted source/target poses, their
+native common scale, a known erasure mask, and z-buffer validity. No learned
+visibility, fusion, or bank module exists.

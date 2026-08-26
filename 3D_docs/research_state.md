@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-057 explicit missing-surface oracle registered)
+Last updated: 2026-08-26 (EXP-057 passed; EXP-058 dependency audit registered)
 
 ## First objective
 
@@ -579,3 +579,15 @@ fixed central target region after three clean TTT3R observations and test
 whether correctly aligned GT and predicted past surfaces beat two current local
 TTT steps and a spatially shuffled past-surface control. No memory architecture
 or validation access is authorized yet.
+
+EXP-057 passed every gate. Controlled erasure exposes a large information gap:
+predicted past surface improves relative 3D EPE over second-current TTT by
+`0.408` and over spatial shuffle by `0.129`, with positive intervals, gains in
+all four scenes, 89.5% mean coverage, and 0% harm. This is the first evidence
+in the competitive-carrier branch that past information cannot be replaced by
+more current optimization.
+
+The result remains oracle-aligned. D143 registers EXP-058 to remove GT pose,
+past metric scale, and GT visibility using frozen TTT3R predicted poses, native
+predicted scale, the known synthetic erasure mask, and z-buffer validity. No
+model component is fit and validation/terminal remain closed.
