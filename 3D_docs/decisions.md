@@ -2092,3 +2092,27 @@ and retained only as a diagnostic result.
 The next candidate must be a different compact streaming-3D question, undergo
 a fresh 2023--2026 collision audit, and pass a no-fit premise before any model
 is implemented. Existing validation and terminal partitions remain unopened.
+
+## D154 — Select dynamic-intrinsics state poisoning and register EXP-065
+
+Date: 2026-08-26
+Status: Accepted before EXP-065
+
+The 2023--2026 audit finds dynamic camera intrinsics to be important but sharply
+partitioned. DroidCalib, GeoCalib, AnyCalib, InFlux, and InFlux++ address
+calibration; Pow3R and G-CUT3R inject known priors; TCO-VGGT incorporates priors
+through test-time optimization; CAM3R addresses camera-model-agnostic
+feed-forward reconstruction. None of these observations authorizes a generic
+calibration head, prior encoder, ray decoder, or TTT-prior claim here.
+
+The selected residual question is temporal and causal: whether a single valid
+focal/FoV reparameterization poisons a persistent pointmap state and damages a
+later clean query after one clean recovery update. EXP-065 uses fresh train
+contexts and fixes a 4/3 center zoom, `update=false` skip paths, full-FoV
+resampling, and missing-periphery controls. Its difference-in-differences gate
+must establish an all-scene persistent effect and distinguish camera-coordinate
+change from generic image bandwidth/support loss.
+
+Failure closes H21 without zoom-strength or context repair. Success authorizes
+only a real InFlux++ feasibility/capacity decision. No architecture, loss,
+checkpoint, validation access, or terminal access is currently authorized.

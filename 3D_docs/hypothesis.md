@@ -329,3 +329,22 @@ scene, so output ensembling has descriptive denoising value, but the measured
 commutator does not supply a healthy deployable chronological correction.
 Coefficient tuning, order selection, confidence gating, and training on these
 exposed contexts are prohibited. H20 is retained as evaluation anatomy only.
+
+## H21 — Persistent calibration-shock contamination
+
+In a recurrent streaming pointmap model, an observation is written into a
+persistent scene state without an explicit camera-coordinate input. A transient
+change in focal length/FoV can therefore be entangled with scene structure:
+even after the camera returns to its original regime and one clean observation
+is written, later clean-query geometry remains worse than if the zoomed frame
+had been skipped.
+
+The claim is specifically a difference-in-differences state effect, not the
+immediate difficulty of a cropped image. A valid premise must exceed a
+full-FoV resampling control and a missing-periphery control, remain after one
+clean recovery write, and be positive across scenes.
+
+Status: **Preregistered zero-fit premise.** The collision audit rejects camera
+calibration, generic known-prior fusion, generic TTT with priors, and generic
+reliability gating as novelty claims. EXP-065 tests only the persistent causal
+failure on fresh train contexts. No model or validation access is authorized.

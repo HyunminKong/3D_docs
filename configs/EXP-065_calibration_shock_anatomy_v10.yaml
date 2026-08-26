@@ -1,0 +1,52 @@
+experiment: EXP-065
+protocol_revision: v1.0
+purpose: train_only_zero_fit_dynamic_intrinsics_state_poisoning
+seed: 6500010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-03, heads/seq-01, chess/seq-03, stairs/seq-03]
+  query_frames: [115, 195, 355, 435]
+  context_frames: 5
+  intervention_index: 2
+  recovery_index: 3
+  query_index: 4
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+intervention:
+  retained_axis_fraction: 0.75
+  implied_focal_multiplier: 1.3333333333333333
+  interpolation: bilinear
+  align_corners: false
+  conditions:
+    [clean_write, zoom_write, clean_skip, zoom_skip, resample_write, periphery_mask_write]
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+  minimum_valid_pixels: 4096
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context_stratified_by_scene
+success:
+  exact_scenes: 4
+  exact_contexts: 16
+  exact_conditions: 6
+  maximum_replay_abs_difference: 0.00001
+  maximum_skip_path_abs_difference: 0.00001
+  minimum_persistent_excess_fraction: 0.05
+  minimum_positive_context_fraction: 0.75
+  require_all_scene_persistent_excess_positive: true
+  require_all_scene_zoom_over_resample_positive: true
+  require_all_scene_zoom_over_mask_positive: true
+  require_all_scene_immediate_and_persistent_positive: true
+  require_bootstrap_lower_positive: true
+output:
+  result: revisit3d/results/EXP-065/calibration_shock_anatomy_v10.json
+

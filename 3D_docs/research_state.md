@@ -719,3 +719,17 @@ order selection, risk gate, or commutator-loss fit is authorized. There is no
 accepted active method. The next compact streaming-3D candidate requires a
 fresh collision audit and no-fit premise; validation and terminal roles remain
 unopened.
+
+## Active calibration-shock premise
+
+D154 selects H21 after a fresh dynamic-intrinsics collision audit. Dynamic
+intrinsics estimation is already formalized by InFlux/InFlux++, and known-camera
+prior fusion is occupied by Pow3R, G-CUT3R, and TCO-VGGT. The only provisional
+boundary is persistent recurrent-state contamination: a transient focal/FoV
+change continues to damage a later clean query after the camera regime returns.
+
+EXP-065 is a no-fit train-only anatomy test on 16 fresh contexts. It freezes one
+4/3 zoom and compares write versus skip, full-FoV resampling, and matched
+missing-periphery controls before and after one clean recovery write. The
+premise must be positive in every scene, materially large, and specifically
+stronger than both image controls. No method or validation access is authorized.

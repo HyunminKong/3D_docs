@@ -66,5 +66,6 @@
 | [EXP-062](EXP-062_order_sensitivity_anatomy.md) | Does fixed evidence yield materially different query geometry under recurrent update permutations? | Completed; all gates passed | Identical evidence spans 12.58% of chronological EPE; label-free geometry dispersion predicts the range at Spearman 0.835. |
 | [EXP-063](EXP-063_geometry_commutator_capacity.md) | Is geometry-decoded path inconsistency more useful than latent distance, and is a symmetric state healthy? | Completed; gate failed | Geometry is far more diagnostic than latent distance, but latent barycentering significantly worsens EPE; generic commutator regularization stops. |
 | [EXP-064](EXP-064_geometry_consensus_direction.md) | Does a small decoded-geometry consensus direction improve the single chronological path? | Completed; gate failed | Gain is tiny/uncertain, negative in one scene, harms 43.75%, and does not significantly beat spatial shuffle; H20 method work stops. |
+| [EXP-065](EXP-065_calibration_shock_anatomy.md) | Does one focal/FoV shock persistently poison later clean recurrent geometry beyond matched image controls? | Preregistered | Fixed 4/3 zoom, write/skip difference-in-differences, resampling and missing-periphery controls; no fit. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.
