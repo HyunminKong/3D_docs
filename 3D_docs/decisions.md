@@ -2251,3 +2251,61 @@ generic content memory is occupied and its first natural provenance trigger
 failed in EXP-066. Advancing it requires a new paper-level novelty and trigger,
 while leaving it requires a genuinely different research problem. That scope
 choice changes the paper thesis and is the next user-judgment boundary.
+
+## D161 — Select cross-clip query equivalence and register EXP-068
+
+Date: 2026-08-27
+
+Status: Accepted before fresh ADT role assignment and model inference
+
+The fresh audit rejects generic long-video memory, sliding-window alignment,
+rigidity regularization, continuous-time encoding, and corrupted-state repair
+as immediate claims. LASER, Geo4D, and V-DPM already align and fuse temporal
+windows; Shape of Motion and 4DRegSDF already impose relational rigidity; D4RT
+already trains with random temporal stride; RayMap3R and related streaming work
+already suppress contaminated state updates.
+
+The selected residual question is specific to independently queried 4D
+foundation models. An identical physical query in an overlap should be an
+equivalence class: changing the surrounding encoded clip must not change its
+3D answer except for removable gauge. The external OpenD4RT study suggests a
+large effect but used ten exposed sequences and an unofficial reproduction, so
+it is lead evidence only.
+
+EXP-068 deterministically freezes the remaining 39 ADT-mini sequence names into
+16 premise, 11 validation, and 12 terminal roles before reading NPZ content or
+running the model. It compares a 16-frame clip shift with a one-frame control,
+exact replay, held-out Sim(3), and a deliberately strong four-depth-layer oracle
+alignment. Failure closes the question without offset, layer, threshold, query,
+or alignment repair. Success authorizes only a matched fine-tuning test of the
+original D4RT loss versus one cross-clip equivalence loss. No memory, TTT,
+query-query attention, inference optimization, or additional head is accepted.
+
+## D162 — Reject H24 as a paper premise and correct gate accounting
+
+Date: 2026-08-27
+
+Status: Accepted after EXP-068
+
+EXP-068 completes all 16 fresh premise sequences and 48 target frames with
+bitwise exact replay, no layer-fit fallback, and no validation, terminal, or
+model fitting. The same physical query has a substantial context-dependent
+residual: 2.8292% of scene scale remains after held-out four-depth-layer Sim(3),
+with CI `[1.7779%, 4.3952%]`; the large clip shift exceeds the adjacent shift in
+16/16 sequences by 1.8999% of scale on average; and pair-distance disagreement
+also has a positive interval. This supports the diagnostic observation that
+fixed-clip query decoding is not cross-window equivariant up to simple gauge.
+
+The registered complete gate fails because the mean absolute APD difference is
+`0.06051`, exceeding the frozen `<0.05` blindness threshold. Therefore the
+effect is not sufficiently hidden from a standard pointwise metric to sustain
+the intended paper distinction. Since overlapping-window alignment and generic
+relational consistency are already occupied, no equivalence-loss fit,
+validation access, threshold repair, offset search, layer search, or query
+selection is authorized. H24 is closed as a paper-method candidate.
+
+The immutable v1.0 result reports 14/17 because `validation_accessed=false` and
+`terminal_accessed=false` were stored in a dictionary counted as pass booleans.
+Correction v1.1 changes only their accounting names to
+`validation_not_accessed=true` and `terminal_not_accessed=true`, producing the
+correct 16/17 count. No inference, metric, threshold, or conclusion changes.

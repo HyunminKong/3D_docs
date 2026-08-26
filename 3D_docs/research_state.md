@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-067 completed; compact TTT-reuse branch closed)
+Last updated: 2026-08-27 (EXP-068 completed; cross-clip paper premise closed)
 
 ## First objective
 
@@ -12,11 +12,12 @@ dissertation architecture is deferred.
 
 ## Current research question
 
-No paper question or method is currently accepted. The compact TTT adaptation-
-experience line is closed by EXP-067, and the subsequent gauge, order,
-calibration-shock, and evidence-provenance premises did not support a method.
-The next question must pass a fresh literature-collision audit and a no-fit
-premise before architecture work.
+There is currently no accepted paper method or active premise. H24's structural
+observation is supported: an identical physical 4D query decoded from
+overlapping clips retains a 2.83%-of-scale residual after strong held-out
+alignment. The complete EXP-068 gate failed because ordinary APD changed by
+0.0605, above the frozen 0.05 blindness limit. D162 closes cross-clip
+equivalence as the paper center without fitting a loss or opening validation.
 
 ## Archived order-robustness novelty boundary
 
@@ -808,3 +809,30 @@ open claims is preserved in the
 [TTT adaptation-memory hypothesis retrospective](analysis/ttt_adaptation_memory_hypothesis_retrospective.md).
 This analysis adds no new experiment or method decision; individual EXP records
 and their compact result artifacts remain the numerical source of truth.
+
+## Closed cross-clip 4D consistency premise
+
+D161 and the fresh
+[collision audit](literature/cross_clip_4d_consistency_audit.md) reject generic
+window stitching, layer-scale alignment, rigidity loss, long-video memory, and
+corrupted-state repair as paper claims. The only provisional boundary is an
+identical-query equivalence residual specific to independent query decoding.
+
+EXP-068 froze the 39 ADT-mini sequences not used by the external OpenD4RT
+weakness study into 16 premise, 11 validation, and 12 terminal roles from names
+alone, then opened only premise. It completed exact replay, a one-frame
+context-shift control, held-out Sim(3), and a deliberately generous four-depth-
+layer Sim(3) oracle on 16 sequences/48 targets.
+
+The large clip shift leaves a 2.8292%-of-scale layer-aligned residual with CI
+`[1.7779%, 4.3952%]`, retains 34.51% of raw disagreement, exceeds the adjacent
+shift by 1.8999% in all 16 sequences, and retains a positive pair-distance
+residual. However, mean absolute A/B APD difference is `0.06051`, failing the
+registered `<0.05` blindness gate. The correct accounting is 16/17 gates; the
+v1.0 JSON's 14/17 count mistakenly treated two `*_accessed=false` source-safety
+indicators as failures. Correction v1.1 changes accounting only.
+
+D162 therefore rejects H24 as the top-tier paper premise. No offset, layer,
+query, alignment, or threshold repair; no equivalence loss; and no validation
+or terminal access is authorized. The next step is a fresh candidate selection,
+not a repair of this exposed premise.

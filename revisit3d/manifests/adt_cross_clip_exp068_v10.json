@@ -1,0 +1,264 @@
+{
+  "experiment": "EXP-068",
+  "protocol_revision": "v1.0",
+  "assignment": "family_stratified_sha256_name_round_robin",
+  "selection_inputs": "filename_only",
+  "npz_content_accessed": false,
+  "model_accessed": false,
+  "exposed_external_sequences": [
+    "Apartment_release_clean_seq131_0",
+    "Apartment_release_clean_seq133_0",
+    "Apartment_release_clean_seq133_8",
+    "Apartment_release_clean_seq134_7",
+    "Apartment_release_clean_seq135_7",
+    "Apartment_release_clean_seq136_6",
+    "Apartment_release_clean_seq138_5",
+    "Apartment_release_clean_seq140_4",
+    "Apartment_release_clean_seq141_4",
+    "Apartment_release_clean_seq142_3"
+  ],
+  "roles": {
+    "premise": [
+      {
+        "sequence": "Apartment_release_clean_seq146_0",
+        "relative_path": "Apartment_release_clean_seq146_0.npz",
+        "bytes": 35467112,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq145_1",
+        "relative_path": "Apartment_release_clean_seq145_1.npz",
+        "bytes": 33836828,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq146_8",
+        "relative_path": "Apartment_release_clean_seq146_8.npz",
+        "bytes": 34828112,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq136_1",
+        "relative_path": "Apartment_release_decoration_seq136_1.npz",
+        "bytes": 35164676,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq138_8",
+        "relative_path": "Apartment_release_decoration_seq138_8.npz",
+        "bytes": 27025544,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq137_8",
+        "relative_path": "Apartment_release_decoration_seq137_8.npz",
+        "bytes": 32085068,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq133_3",
+        "relative_path": "Apartment_release_decoration_seq133_3.npz",
+        "bytes": 34373672,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq134_3",
+        "relative_path": "Apartment_release_decoration_skeleton_seq134_3.npz",
+        "bytes": 31646444,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq131_5",
+        "relative_path": "Apartment_release_decoration_skeleton_seq131_5.npz",
+        "bytes": 34563860,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq139_0",
+        "relative_path": "Apartment_release_decoration_skeleton_seq139_0.npz",
+        "bytes": 32254136,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq138_0",
+        "relative_path": "Apartment_release_decoration_skeleton_seq138_0.npz",
+        "bytes": 34590380,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq139_0",
+        "relative_path": "Apartment_release_meal_seq139_0.npz",
+        "bytes": 35002364,
+        "filename_family": "meal"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq131_3",
+        "relative_path": "Apartment_release_meal_seq131_3.npz",
+        "bytes": 33900920,
+        "filename_family": "meal"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq136_0",
+        "relative_path": "Apartment_release_meal_seq136_0.npz",
+        "bytes": 36071108,
+        "filename_family": "meal"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq132_2",
+        "relative_path": "Apartment_release_meal_seq132_2.npz",
+        "bytes": 35611016,
+        "filename_family": "meal"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq139_8",
+        "relative_path": "Apartment_release_meal_seq139_8.npz",
+        "bytes": 35498948,
+        "filename_family": "meal"
+      }
+    ],
+    "validation": [
+      {
+        "sequence": "Apartment_release_clean_seq149_6",
+        "relative_path": "Apartment_release_clean_seq149_6.npz",
+        "bytes": 34156772,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq144_1",
+        "relative_path": "Apartment_release_clean_seq144_1.npz",
+        "bytes": 35451620,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq143_2",
+        "relative_path": "Apartment_release_clean_seq143_2.npz",
+        "bytes": 35581304,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq134_2",
+        "relative_path": "Apartment_release_decoration_seq134_2.npz",
+        "bytes": 34560644,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq135_2",
+        "relative_path": "Apartment_release_decoration_seq135_2.npz",
+        "bytes": 34038992,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq131_5",
+        "relative_path": "Apartment_release_decoration_seq131_5.npz",
+        "bytes": 34381604,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq139_7",
+        "relative_path": "Apartment_release_decoration_seq139_7.npz",
+        "bytes": 31999436,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq135_3",
+        "relative_path": "Apartment_release_decoration_skeleton_seq135_3.npz",
+        "bytes": 33759224,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq139_8",
+        "relative_path": "Apartment_release_decoration_skeleton_seq139_8.npz",
+        "bytes": 33936596,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq133_4",
+        "relative_path": "Apartment_release_decoration_skeleton_seq133_4.npz",
+        "bytes": 25752740,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_golden_skeleton_seq100_4",
+        "relative_path": "Apartment_release_golden_skeleton_seq100_4.npz",
+        "bytes": 34645220,
+        "filename_family": "golden_skeleton"
+      }
+    ],
+    "terminal": [
+      {
+        "sequence": "Apartment_release_clean_seq147_7",
+        "relative_path": "Apartment_release_clean_seq147_7.npz",
+        "bytes": 35020964,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq150_5",
+        "relative_path": "Apartment_release_clean_seq150_5.npz",
+        "bytes": 34115816,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_clean_seq148_7",
+        "relative_path": "Apartment_release_clean_seq148_7.npz",
+        "bytes": 35905712,
+        "filename_family": "clean"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq137_0",
+        "relative_path": "Apartment_release_decoration_seq137_0.npz",
+        "bytes": 33227168,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq140_6",
+        "relative_path": "Apartment_release_decoration_seq140_6.npz",
+        "bytes": 33625856,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_seq132_4",
+        "relative_path": "Apartment_release_decoration_seq132_4.npz",
+        "bytes": 33592352,
+        "filename_family": "decoration"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq137_1",
+        "relative_path": "Apartment_release_decoration_skeleton_seq137_1.npz",
+        "bytes": 33019580,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq132_5",
+        "relative_path": "Apartment_release_decoration_skeleton_seq132_5.npz",
+        "bytes": 34981880,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq136_2",
+        "relative_path": "Apartment_release_decoration_skeleton_seq136_2.npz",
+        "bytes": 29845868,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_decoration_skeleton_seq140_7",
+        "relative_path": "Apartment_release_decoration_skeleton_seq140_7.npz",
+        "bytes": 27962048,
+        "filename_family": "decoration_skeleton"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq138_0",
+        "relative_path": "Apartment_release_meal_seq138_0.npz",
+        "bytes": 33484532,
+        "filename_family": "meal"
+      },
+      {
+        "sequence": "Apartment_release_meal_seq133_1",
+        "relative_path": "Apartment_release_meal_seq133_1.npz",
+        "bytes": 34216172,
+        "filename_family": "meal"
+      }
+    ]
+  },
+  "config": "configs/EXP-068_cross_clip_relational_consistency_v10.yaml",
+  "config_sha256": "a4f5ea3adcaae3e43f844230666629864bb222d06ea04782607f0643acfcfb1f"
+}

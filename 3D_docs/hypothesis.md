@@ -400,3 +400,28 @@ function residual in all pairs because the transported displacement is much
 smaller than that code step. The preregistered stop rule prohibits step or
 solver repair. Compact reusable TTT experience is therefore closed on this
 carrier in both coordinate and function-space forms.
+
+## H24 — Cross-clip query-equivalence residual
+
+For a fixed physical point, target time, and camera reference in the overlap of
+two video clips, a query-based 4D reconstruction model should return the same
+3D point independent of the surrounding clip used to encode the scene. The
+tested hypothesis is that OpenD4RT violates this equivalence through a material
+non-rigid residual that cannot be explained by global Sim(3) or depth-layer
+scale mismatch and is poorly exposed by pointwise APD.
+
+Status: **Rejected as the registered paper premise; diagnostic residual
+supported.** EXP-068 finds a 2.8292%-of-scale residual after held-out four-layer
+Sim(3), with positive CI, 34.51% retention from raw disagreement, and a
+1.8999%-of-scale advantage over the one-frame context shift in all 16 premise
+sequences. Pair-distance disagreement also remains positive. Exact replay is
+bitwise and no validation, terminal, or model fit is involved.
+
+The complete gate fails because mean absolute A/B APD difference is `0.06051`,
+above the frozen `<0.05` blindness threshold. Thus the window-dependent
+non-gauge phenomenon is real, but it is not sufficiently distinct from an
+ordinary pointwise accuracy change to carry the intended novelty. Generic
+window alignment and relational regularization are already occupied, so no
+equivalence loss, new head, memory, or validation run is authorized from these
+exposed premise sequences. The immutable v1.0 gate-counting bug is corrected
+separately to 16/17; it does not change this rejection.

@@ -1,0 +1,67 @@
+experiment: EXP-068
+protocol_revision: v1.0
+purpose: fresh_no_fit_cross_clip_query_equivalence
+seed: 6800010
+data:
+  root: Open-d4rt/data/worldtrack_release/adt_mini
+  manifest: revisit3d/manifests/adt_cross_clip_exp068_v10.json
+  exposed_external_sequences:
+    - Apartment_release_clean_seq131_0
+    - Apartment_release_clean_seq133_0
+    - Apartment_release_clean_seq133_8
+    - Apartment_release_clean_seq134_7
+    - Apartment_release_clean_seq135_7
+    - Apartment_release_clean_seq136_6
+    - Apartment_release_clean_seq138_5
+    - Apartment_release_clean_seq140_4
+    - Apartment_release_clean_seq141_4
+    - Apartment_release_clean_seq142_3
+  roles:
+    premise: 16
+    validation: 11
+    terminal: 12
+  role_assignment: family_stratified_sha256_name_round_robin
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: Open-d4rt
+  status: unofficial_D4RT_reproduction
+  model_config: Open-d4rt/checkpoints/OpenD4RT_32CLIP_9Dataset_NoAUG/model.yaml
+  checkpoint: Open-d4rt/checkpoints/OpenD4RT_32CLIP_9Dataset_NoAUG/opend4rt.ckpt
+  clip_frames: 32
+  image_size: [256, 256]
+query:
+  clips:
+    reference: {start: 0, end: 32}
+    large_shift: {start: 16, end: 48}
+    adjacent_shift: {start: 1, end: 33}
+  source_global_frame: 16
+  target_global_frames: [20, 24, 28]
+  maximum_tracks_per_sequence: 512
+  alignment_fraction: 0.5
+  split_seed: 6801010
+  chunk_size: 2048
+alignment:
+  global: sim3_umeyama
+  depth_layer:
+    type: heldout_per_reference_depth_quantile_sim3
+    layers: 4
+  minimum_alignment_points: 32
+metric:
+  scene_scale: median_finite_gt_target_range
+  apd_relative_thresholds: [0.01, 0.02, 0.04, 0.08]
+  pair_knn: 4
+  pair_max_distance_scene_fraction: 0.30
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 6802010
+success:
+  maximum_replay_abs_difference: 0.000001
+  exact_premise_sequences: 16
+  exact_targets_per_sequence: 3
+  minimum_layer_residual_scene_fraction: 0.005
+  minimum_large_over_adjacent_positive_sequences: 12
+  minimum_layer_residual_retention: 0.25
+  maximum_mean_absolute_apd_difference: 0.05
+output:
+  result: revisit3d/results/EXP-068/cross_clip_relational_consistency_v10.json
