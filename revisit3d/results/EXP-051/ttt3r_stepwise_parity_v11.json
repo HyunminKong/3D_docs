@@ -1,0 +1,99 @@
+{
+  "experiment": "EXP-051",
+  "stage": "ttt3r_stepwise_zero_code_parity",
+  "config": "configs/EXP-051_ttt3r_metric_aligned_prerequisites_v11.yaml",
+  "inventory_sha256": "1d69fa02e7e13da120da4186528d6fa4422a7ec2df322f6a31efbd81d466acf7",
+  "train_manifest_sha256": "f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a",
+  "sequence": "pumpkin/seq-01",
+  "frames": 8,
+  "maximum_abs_difference": 0.0,
+  "threshold": 1e-05,
+  "registered_gate": {
+    "checks": {
+      "exact_frame_coverage": true,
+      "finite": true,
+      "native_stepwise_parity": true,
+      "train_rgb_only": true,
+      "ground_truth_accessed": false,
+      "terminal_accessed": false
+    },
+    "passed": false
+  },
+  "basis_fit_performed": false,
+  "ground_truth_accessed": false,
+  "terminal_accessed": false,
+  "rows": [
+    {
+      "frame": 0,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 1,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 2,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 3,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 4,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 5,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 6,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    },
+    {
+      "frame": 7,
+      "maximum_abs_difference": 0.0,
+      "by_output": {
+        "pts3d_in_self_view": 0.0,
+        "pts3d_in_other_view": 0.0,
+        "camera_pose": 0.0
+      }
+    }
+  ]
+}

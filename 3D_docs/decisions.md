@@ -1537,3 +1537,78 @@ and its current-only consistency improvement does not transfer to absolute
 geometry. Continuing requires a fresh-data, metric-aligned TTT objective on a
 stronger carrier mode or a fundamentally new explicit-evidence memory under
 controlled missing information. Either is a new project-scope decision.
+
+## D133 — Reopen a fresh-data metric-aligned current-only TTT3R branch
+
+Date: 2026-08-26
+Status: Accepted by explicit user choice
+
+The project selects option 1 after D132: design a new current-only TTT method
+on the stronger official TTT3R recurrent update, using unused metric training
+data. This is not a repair or hyperparameter sweep of EXP-043/050. The old
+basis, exposed TUM protocol, update memory, retrieval, transport, routing, and
+EXP-039 terminal data are excluded from method selection.
+
+The paper budget remains deliberately small. Deployment may contain one 8-D
+per-token code, one symmetric predicted-3D consistency loss, and one normalized
+code step on the frozen TTT3R carrier. Offline RGB-D supervision may learn only
+the shared code basis so that the deployed step improves absolute geometry. No
+memory bank, auxiliary inference head, learned gate, second online loss, or
+online metric label is authorized.
+
+EXP-051 must first freeze scene-disjoint local 7Scenes roles without sensor
+decoding and establish exact zero-code parity between native and step-wise
+TTT3R. The assignment is deterministic from seed `5100010`: four scenes train,
+one validation, and two terminal. Terminal pixels remain closed. Previously
+used Neural RGB-D scenes (`staircase`, `whiteroom`, `complete_kitchen`) are
+exposed and cannot be presented as fresh terminal evidence.
+
+After EXP-051 passes, the only authorized next question is a train-only,
+zero-fit metric-alignment premise. It must show that a one-step direction can
+reduce the online loss while having positive first-order or realized utility
+for one fixed absolute 3D metric objective. Failure returns the project to a
+method-design decision rather than opening validation or adding modules.
+
+## D134 — Register one relative 3D metric-alignment premise
+
+Date: 2026-08-26
+Status: Accepted before EXP-052 train RGB-D access
+
+EXP-051 passed both data and exact-carrier prerequisites. EXP-052 may now decode
+only 16 deterministic train anchors, four in each of the four train scenes. It
+performs no parameter update. The deployed inner objective remains the single
+symmetric canonical-point consistency loss and one normalized `0.001` code
+step.
+
+The only offline objective under consideration is median-scale-aligned relative
+3D point EPE in the RGB camera frame. It has no weighted metric terms. A
+same-code, same-norm metric-gradient step is an oracle capacity diagnostic, not
+an online method. Exact differentiation of realized post-online-step metric
+loss with respect to the shared basis is the trainability diagnostic.
+
+Basis fitting is authorized only if online loss descends in every train scene,
+the metric oracle improves every scene, and every exact meta-gradient is finite
+and nonzero. The generic basis's online/metric conflict is descriptive because
+rotating that conflict is the proposed role of offline learning. Validation and
+both terminal partitions remain closed.
+
+## D135 — Authorize one exact metric-aligned TTT3R basis fit
+
+Date: 2026-08-26
+Status: Accepted after EXP-052
+
+EXP-052 passed every premise gate. The same 8-D code supports metric-improving
+directions in all four scenes, while the untrained online direction conflicts
+with the metric on 37.5% of anchors. Exact differentiation through the one-step
+update is finite and feasible at 36.47 GiB peak memory.
+
+One basis fit is authorized using only the single post-online-step relative 3D
+point objective. Deployment remains unchanged: one consistency loss and one
+code step. The fit may update only the 6,144 projection weights with one AdamW
+pass at the historical exact-meta learning rate `1e-4`, zero weight decay, and
+no auxiliary loss, coefficient, scheduler, second step, or new module.
+
+The first fit must use three train scenes and audit on the fourth train scene.
+It must beat the identical initial basis on absolute 3D gain, retain online-loss
+descent, and reduce metric harm before any EXP-051 validation access. Failure
+stops this fixed fit rather than tuning its learning rate or adding losses.

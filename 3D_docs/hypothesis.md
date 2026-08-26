@@ -173,3 +173,16 @@ AbsRel or 3D EPE gain. It also fails every capacity-matched generic-coordinate
 comparison and is substantially worse than matched official TTT3R. The online
 consistency gain does not imply absolute geometry gain. This rejects the
 current realization, not every possible metric-aligned TTT objective.
+
+## H14 — Metric-aligned current-only plasticity on TTT3R
+
+A shared low-dimensional plasticity basis can be trained on fresh RGB-D scenes
+so that one online self-supervised local-code step improves absolute geometry
+on top of the stronger official TTT3R recurrent update, while preserving one
+online loss, one step, and zero additional recurrent or retrieval modules.
+
+Status: **Open.** EXP-050 motivates this replacement but supplies no positive
+evidence: its CUT3R-mode coordinate optimized consistency without improving
+absolute geometry. EXP-051 first freezes unused scene-disjoint data and requires
+exact TTT3R-mode carrier parity. Metric-gradient alignment and one-step causal
+utility must pass on train data before a basis fit or validation access.

@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-048 stopped terminal promotion of the competitive-carrier memory)
+Last updated: 2026-08-26 (EXP-051 registered for the fresh-data TTT3R redesign)
 
 ## First objective
 
@@ -460,3 +460,31 @@ scientifically unauthorized. The next branch must be chosen explicitly:
    occlusion, accepting that this is a new memory object and novelty audit.
 
 D132 closes the present frozen implementation before either redesign.
+
+## Active fresh-data current-only branch
+
+D133 records the explicit choice of option 1. The active goal is no longer to
+repair the EXP-043 CUT3R coordinate or its memory. It is to learn one compact
+plasticity basis on top of official TTT3R recurrence such that the same single
+online symmetric predicted-3D consistency step is aligned with absolute RGB-D
+geometry.
+
+EXP-051 passed after two preserved implementation corrections. It deterministically assigns unused
+7Scenes scenes to four train scenes, one validation scene, and two terminal
+scenes, with every sequence from a physical scene kept in the same role. It
+also established exact zero-error parity across eight train frames between
+native and step-wise TTT3R. Terminal data and the EXP-039 terminal remain closed.
+
+No new model has been fit. EXP-052 is the next train-only zero-fit/one-step
+premise for one median-scale-aligned relative 3D point objective. A basis fit is
+authorized only if the deployed online loss descends, the identical code space
+contains a metric-improving one-step direction, and exact differentiation of
+that realized metric through the online step is finite and nonzero.
+
+EXP-052 passed all prerequisites on 16 train anchors. The generic code reduces
+the deployed loss in every scene but conflicts with the absolute 3D metric on
+37.5% of anchors. A same-code, same-norm metric oracle improves every scene,
+and exact meta-gradients are finite at every anchor. D135 therefore authorizes
+one train-only shared-basis fit with the single realized relative-3D outer
+objective. Validation remains closed until its disjoint train-scene audit
+passes.

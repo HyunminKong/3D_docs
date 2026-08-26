@@ -1,0 +1,322 @@
+{
+  "experiment": "EXP-051",
+  "role": "terminal",
+  "root": "FastVGGT/data/7scenes_raw",
+  "scenes": [
+    "office",
+    "redkitchen"
+  ],
+  "sequences": [
+    {
+      "scene": "office",
+      "sequence": "seq-01",
+      "relative_path": "office/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 479079933,
+      "path_size_inventory_sha256": "d4ca22a4ea7f1842aabe81aaa81e57c429b0d40db9ea6bccd4146c1ebc432e51"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-02",
+      "relative_path": "office/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 473220090,
+      "path_size_inventory_sha256": "7b7f17e38b7946570663d2d5ee500cbd7e82cfa0bc8318cebb113e0ddcaa2eca"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-03",
+      "relative_path": "office/seq-03",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 465476711,
+      "path_size_inventory_sha256": "f6f21157bc7fae07b406432dc8888be6927c7da7a91b04c5fce57564a9ed8ce4"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-04",
+      "relative_path": "office/seq-04",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 481597147,
+      "path_size_inventory_sha256": "e3753fce37773eb7b5d1b69f921e455d20a96e2f9990af3059e881a195cb9b81"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-05",
+      "relative_path": "office/seq-05",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 460843260,
+      "path_size_inventory_sha256": "912f0e655438a32a2389cd13d48a4fcdce51a598fdafcb5dedcf7e25846e8e23"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-06",
+      "relative_path": "office/seq-06",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 465085493,
+      "path_size_inventory_sha256": "c52f200c0dccf2a45be676b40dacac418781326241148726ea426eb4760febc9"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-07",
+      "relative_path": "office/seq-07",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 464674645,
+      "path_size_inventory_sha256": "6cb5b3be375801a5cae226ea514a6db8f0ac4b4c48b0fb1bc1b2ebe5b387f4a9"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-08",
+      "relative_path": "office/seq-08",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 472012917,
+      "path_size_inventory_sha256": "6e7396ca202d838aadc9ac301a3caef561f1c5275eeb6a24bc39d9d3ab5fc534"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-09",
+      "relative_path": "office/seq-09",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 472174996,
+      "path_size_inventory_sha256": "4631e6bbd0c3015a9db378b07f9cd4ac01da371669d15f5308899c0006303cb8"
+    },
+    {
+      "scene": "office",
+      "sequence": "seq-10",
+      "relative_path": "office/seq-10",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 469704558,
+      "path_size_inventory_sha256": "d1756dce11374bb588042fab7108b40d4bb44d2e0c21b8959b92c49ca5843531"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-01",
+      "relative_path": "redkitchen/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 511035361,
+      "path_size_inventory_sha256": "06395a69a1a12c3f348ee225ffb4e268371f33c789c56874b3f79e52c21ffcf7"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-02",
+      "relative_path": "redkitchen/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 530997923,
+      "path_size_inventory_sha256": "49d469820b54d4bf5f733c2378401457e9659c27c51351b2d066574868d46feb"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-03",
+      "relative_path": "redkitchen/seq-03",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 503490783,
+      "path_size_inventory_sha256": "a6a249f5a3f1b38f9f3e0feb25db904a84d6dbbc00e3430a84197da432c816d6"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-04",
+      "relative_path": "redkitchen/seq-04",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 517339372,
+      "path_size_inventory_sha256": "c7bbf128d0ad91ca7eba167ab221a8b97476efabf01d5f0ac4b263d892ae4695"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-05",
+      "relative_path": "redkitchen/seq-05",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 500241483,
+      "path_size_inventory_sha256": "87f77c278f1cb51a08f00da2447be8670f3ec04a22740f04770b95f6ac7e6047"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-06",
+      "relative_path": "redkitchen/seq-06",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 519143365,
+      "path_size_inventory_sha256": "647b2653f1cd0e4223e26db12166bbbf2aac61481d6a32b359deb5414e3e85d5"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-07",
+      "relative_path": "redkitchen/seq-07",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 526138655,
+      "path_size_inventory_sha256": "8fb93585fd839460b9624ee857724c99e6bd03f3e1d3cd0410a865bbc43b4a76"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-08",
+      "relative_path": "redkitchen/seq-08",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 514450831,
+      "path_size_inventory_sha256": "6e00b598fde5529b60c9298983b7855b39b21330bd58ace6950506f1343a88cd"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-11",
+      "relative_path": "redkitchen/seq-11",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 513605920,
+      "path_size_inventory_sha256": "714c2a3298ac77a7f2bcac50d6be71aa9050967e9ed300f71a76c96e174fc03f"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-12",
+      "relative_path": "redkitchen/seq-12",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 503216317,
+      "path_size_inventory_sha256": "ef2dff1b42329718d4bffe1396296846d6477290072f668a9c2492b533cde563"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-13",
+      "relative_path": "redkitchen/seq-13",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 495282587,
+      "path_size_inventory_sha256": "72f66a40a404e5685da88ab4407dac0a3a4b7aa2bb8a868f0d683ea9cf2f3ebf"
+    },
+    {
+      "scene": "redkitchen",
+      "sequence": "seq-14",
+      "relative_path": "redkitchen/seq-14",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 501064415,
+      "path_size_inventory_sha256": "c7974649a2f780b0df7fbc34edef772e27668c6f9f6786e69b02914fa5e873b3"
+    }
+  ],
+  "sensor_content_decoded": false,
+  "model_accessed": false,
+  "terminal_accessed": false
+}

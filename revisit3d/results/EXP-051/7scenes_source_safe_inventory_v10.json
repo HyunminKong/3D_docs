@@ -1,0 +1,67 @@
+{
+  "experiment": "EXP-051",
+  "stage": "metadata_only_source_safe_partition",
+  "config": "configs/EXP-051_ttt3r_metric_aligned_prerequisites_v10.yaml",
+  "config_sha256": "f48704316db536d45eb30ac4fe73d10c510a54bc8314d4efee9837917119be5e",
+  "scene_order": [
+    "pumpkin",
+    "heads",
+    "chess",
+    "stairs",
+    "fire",
+    "office",
+    "redkitchen"
+  ],
+  "assignments": {
+    "train": [
+      "pumpkin",
+      "heads",
+      "chess",
+      "stairs"
+    ],
+    "validation": [
+      "fire"
+    ],
+    "terminal": [
+      "office",
+      "redkitchen"
+    ]
+  },
+  "counts": {
+    "train": {
+      "scenes": 4,
+      "sequences": 20,
+      "frames": 17000
+    },
+    "validation": {
+      "scenes": 1,
+      "sequences": 4,
+      "frames": 4000
+    },
+    "terminal": {
+      "scenes": 2,
+      "sequences": 22,
+      "frames": 22000
+    }
+  },
+  "manifest_sha256": {
+    "train": "f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a",
+    "validation": "236d00ffcb764fc596e1e31fee3571461e1f0892c426b0a2639f3a92f3746eef",
+    "terminal": "df056310644e2d9aefd48b538f6dca8ce94f9f02cabc1272c5e82fe631630ead"
+  },
+  "registered_gate": {
+    "checks": {
+      "exact_total_scenes": true,
+      "exact_total_sequences": true,
+      "exact_total_frames": true,
+      "exact_role_frames": true,
+      "scene_disjoint": true,
+      "complete_triplets": true,
+      "inventory_metadata_only": true
+    },
+    "passed": true
+  },
+  "sensor_content_decoded": false,
+  "model_accessed": false,
+  "terminal_accessed": false
+}

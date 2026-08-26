@@ -1,0 +1,69 @@
+{
+  "experiment": "EXP-051",
+  "role": "validation",
+  "root": "FastVGGT/data/7scenes_raw",
+  "scenes": [
+    "fire"
+  ],
+  "sequences": [
+    {
+      "scene": "fire",
+      "sequence": "seq-01",
+      "relative_path": "fire/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 562287682,
+      "path_size_inventory_sha256": "080a219be3a2998f0f97841224553384ce36fe2243f638fe947cf098ca881361"
+    },
+    {
+      "scene": "fire",
+      "sequence": "seq-02",
+      "relative_path": "fire/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 571993939,
+      "path_size_inventory_sha256": "b7a676a98823e34568af6f1c195133721e67a295770a724403af6ceb36d6e57d"
+    },
+    {
+      "scene": "fire",
+      "sequence": "seq-03",
+      "relative_path": "fire/seq-03",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 575904132,
+      "path_size_inventory_sha256": "7106b54f94a1f0e5a2eaf30c6487185d3ee16d6d4af19f3f3e6503392a0420cb"
+    },
+    {
+      "scene": "fire",
+      "sequence": "seq-04",
+      "relative_path": "fire/seq-04",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 588480351,
+      "path_size_inventory_sha256": "002a42f2d2c472c14df10a9850c7a4ea1136a740b636f52aeb00355bfa356b16"
+    }
+  ],
+  "sensor_content_decoded": false,
+  "model_accessed": false,
+  "terminal_accessed": false
+}

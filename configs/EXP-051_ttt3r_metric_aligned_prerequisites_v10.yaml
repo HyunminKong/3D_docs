@@ -1,0 +1,41 @@
+experiment: EXP-051
+protocol_revision: v1.0
+purpose: fresh_data_and_ttt3r_interface_prerequisites
+seed: 5100010
+data:
+  root: FastVGGT/data/7scenes_raw
+  assignment: sha256_seeded_scene_order
+  train_scenes: 4
+  validation_scenes: 1
+  terminal_scenes: 2
+  expected_total_scenes: 7
+  expected_total_sequences: 46
+  expected_total_frames: 43000
+  expected_train_frames: 17000
+  expected_validation_frames: 4000
+  expected_terminal_frames: 22000
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  image_size: 512
+  crop: false
+  parity_train_frames: 8
+  parity_sequence: pumpkin/seq-01
+plasticity:
+  code_dim: 8
+  zero_code_only: true
+success:
+  require_scene_disjoint: true
+  require_complete_rgb_depth_pose_triplets: true
+  require_no_sensor_decode_during_inventory: true
+  require_no_model_access_during_inventory: true
+  maximum_native_stepwise_abs_difference: 0.00001
+output:
+  inventory: revisit3d/results/EXP-051/7scenes_source_safe_inventory_v10.json
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  validation_manifest: revisit3d/manifests/7scenes_metric_validation_exp051_v10.json
+  terminal_manifest: revisit3d/manifests/7scenes_metric_terminal_exp051_v10.json
+  parity_result: revisit3d/results/EXP-051/ttt3r_stepwise_parity_v10.json

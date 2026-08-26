@@ -1,0 +1,296 @@
+{
+  "experiment": "EXP-051",
+  "role": "train",
+  "root": "FastVGGT/data/7scenes_raw",
+  "scenes": [
+    "pumpkin",
+    "heads",
+    "chess",
+    "stairs"
+  ],
+  "sequences": [
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-01",
+      "relative_path": "pumpkin/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 479302271,
+      "path_size_inventory_sha256": "f6ddbef97c40134eb1f4b6a7eeffa850f591042a386f9f35cada890951255f1a"
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-02",
+      "relative_path": "pumpkin/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 501341704,
+      "path_size_inventory_sha256": "f879d2a6a4765ea3a4744f81e75ffa115a6b4b881e3dc0ef0537d429eb2ed7fd"
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-03",
+      "relative_path": "pumpkin/seq-03",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 483683218,
+      "path_size_inventory_sha256": "0dd3f979e80a16a4af907ac89133dc90e9e665005331e14af5c4b9902e4e8d0c"
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-06",
+      "relative_path": "pumpkin/seq-06",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 474627721,
+      "path_size_inventory_sha256": "58de05e9bb1770e350699fce9bf3f5d6153f52f3ce44bb8d212d7090f3ac53be"
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-07",
+      "relative_path": "pumpkin/seq-07",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 473630241,
+      "path_size_inventory_sha256": "478f4d185e45993c07f456964047c06a08224872768dc5bc8df2f1951523aaab"
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "seq-08",
+      "relative_path": "pumpkin/seq-08",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 476118661,
+      "path_size_inventory_sha256": "f7b9f44c6018e05962cf7cc6bf95f1e1f0093bb152d5b0780d1907d4227613a6"
+    },
+    {
+      "scene": "heads",
+      "sequence": "seq-01",
+      "relative_path": "heads/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 479806184,
+      "path_size_inventory_sha256": "e2739aba3804ab145de90c1556324226f51d63cb00e9a7dbb13efcaac613f827"
+    },
+    {
+      "scene": "heads",
+      "sequence": "seq-02",
+      "relative_path": "heads/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 475455213,
+      "path_size_inventory_sha256": "f0d7654021575321764fffa27648439157faf7ae044541d21f4f157dddfb0a22"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-01",
+      "relative_path": "chess/seq-01",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 525273451,
+      "path_size_inventory_sha256": "4d45804eab733ee4b096ff067735259de5bc55a82c51f51d703e508a505fad22"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-02",
+      "relative_path": "chess/seq-02",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 508108941,
+      "path_size_inventory_sha256": "97ea151cf5d63f674fb8e0c433855c7e66710a1e82c4970d5d4ce9b95e38e609"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-03",
+      "relative_path": "chess/seq-03",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 506741963,
+      "path_size_inventory_sha256": "6297728f6b6ba863491330f6fc4dff9ea99152a79759dc3792a6243faca77713"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-04",
+      "relative_path": "chess/seq-04",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 509997497,
+      "path_size_inventory_sha256": "cd18102e79cf026b953f5d8cbeb813f1173b063cfb069315c2532f2444ee3a95"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-05",
+      "relative_path": "chess/seq-05",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 513603787,
+      "path_size_inventory_sha256": "5e2e780f6ad4591855b27f4e1d30ad49316357efd609d595e5b82159f8b5115e"
+    },
+    {
+      "scene": "chess",
+      "sequence": "seq-06",
+      "relative_path": "chess/seq-06",
+      "frames": 1000,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 1000,
+        "depth.png": 1000,
+        "pose.txt": 1000
+      },
+      "total_bytes": 513664208,
+      "path_size_inventory_sha256": "82e285fc82e0cf2c0f41410a3259c6ca254dd2bf65131464f9d0d1c2a91f81b1"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-01",
+      "relative_path": "stairs/seq-01",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 260635519,
+      "path_size_inventory_sha256": "11d64b9d41da95e087b11e764626c1088d8a89ae9693d6655f13067b65c5e0e9"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-02",
+      "relative_path": "stairs/seq-02",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 253892972,
+      "path_size_inventory_sha256": "12947058c9b795f02540da7b8f854ea82d9712361a05c8ef07da9c05d07d9480"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-03",
+      "relative_path": "stairs/seq-03",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 231748838,
+      "path_size_inventory_sha256": "e9721c1d80d6b6720d5246cbae9da598f99c951bef27addd76f70f2dfc9b7049"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-04",
+      "relative_path": "stairs/seq-04",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 252211052,
+      "path_size_inventory_sha256": "7d2f91f1b2cf0339d82ee45d622653329c4a95545b5ea2b0dfb74787644e2a03"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-05",
+      "relative_path": "stairs/seq-05",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 251475242,
+      "path_size_inventory_sha256": "c5cbe0a8a520ba257992cfd6ae450a41243d45d364b6565cdc6229d62ddeec8b"
+    },
+    {
+      "scene": "stairs",
+      "sequence": "seq-06",
+      "relative_path": "stairs/seq-06",
+      "frames": 500,
+      "complete_triplets": true,
+      "modality_counts": {
+        "color.png": 500,
+        "depth.png": 500,
+        "pose.txt": 500
+      },
+      "total_bytes": 245019297,
+      "path_size_inventory_sha256": "1296069eae926079f22f1cc9e349081133316d4bface1409b73d866277030236"
+    }
+  ],
+  "sensor_content_decoded": false,
+  "model_accessed": false,
+  "terminal_accessed": false
+}

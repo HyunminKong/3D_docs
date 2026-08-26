@@ -1,4 +1,4 @@
-"""Minimal CUT3R carrier interface for local test-time plasticity.
+"""Minimal CUT3R/TTT3R carrier interface for local test-time plasticity.
 
 The external recurrent model stays frozen. A small spatial code can modify
 only its final image-token input to the official geometry head; zero code is
@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 import torch
+from einops import rearrange
 from torch import Tensor, nn
 from torch.nn import functional as F
 
@@ -65,7 +66,7 @@ class LocalTokenResidual(nn.Module):
 
 
 class FrozenCUT3RCarrier(nn.Module):
-    """Step-wise RGB-only interface around an unchanged official CUT3R model."""
+    """Step-wise RGB-only interface around an unchanged official recurrent model."""
 
     def __init__(
         self,
@@ -74,6 +75,7 @@ class FrozenCUT3RCarrier(nn.Module):
         repository: str | Path = "TTT3R",
         code_dim: int = 8,
         basis_seed: int = 3800010,
+        update_type: str = "cut3r",
     ) -> None:
         super().__init__()
         repository = Path(repository).resolve()
@@ -82,8 +84,10 @@ class FrozenCUT3RCarrier(nn.Module):
             sys.path.insert(0, str(source))
         from dust3r.model import ARCroco3DStereo
 
+        if update_type not in {"cut3r", "ttt3r"}:
+            raise ValueError("update_type must be 'cut3r' or 'ttt3r'")
         self.model = ARCroco3DStereo.from_pretrained(str(checkpoint))
-        self.model.config.model_update_type = "cut3r"
+        self.model.config.model_update_type = update_type
         self.model.eval().requires_grad_(False)
         self.residual = LocalTokenResidual(
             code_dim=code_dim,
@@ -150,7 +154,14 @@ class FrozenCUT3RCarrier(nn.Module):
             pose_pos = -torch.ones(
                 image_feat.shape[0], 1, 2, device=device, dtype=image_pos.dtype
             )
-            new_state_feat, decoder, *_ = self.model._recurrent_rollout(
+            (
+                new_state_feat,
+                decoder,
+                _,
+                cross_attn_state,
+                _,
+                _,
+            ) = self.model._recurrent_rollout(
                 state_feat,
                 state_pos,
                 image_feat,
@@ -181,7 +192,27 @@ class FrozenCUT3RCarrier(nn.Module):
             update = gpu_view.get("update")
             update_mask = gpu_view["img_mask"] if update is None else gpu_view["img_mask"] & update
             update_mask = update_mask[:, None, None].float()
-            next_state_feat = new_state_feat * update_mask + state_feat * (1 - update_mask)
+            if first or previous_reset:
+                state_update_mask = update_mask
+            elif self.model.config.model_update_type == "cut3r":
+                state_update_mask = update_mask
+            else:
+                # Exact tensor layout used by official TTT3R:
+                # [L,H,Nstate,Nimg] -> [1,Nstate,Nimg,L*H].  Its mean score
+                # supplies a token-wise soft learning rate for recurrent state.
+                attention = rearrange(
+                    torch.cat(cross_attn_state, dim=0),
+                    "layer head state image -> 1 state image (layer head)",
+                )
+                state_query_image_key = attention.mean(dim=(-1, -2))
+                state_update_mask = update_mask * torch.sigmoid(
+                    state_query_image_key
+                )[..., None]
+
+            next_state_feat = (
+                new_state_feat * state_update_mask
+                + state_feat * (1 - state_update_mask)
+            )
             next_mem = new_mem * update_mask + mem * (1 - update_mask)
             reset = self._flag(gpu_view.get("reset", False))
             if reset:
