@@ -6,9 +6,9 @@ Compact Streaming 3D Reconstruction Research.
 
 The former continual adaptation-memory, gauge/local-reliability,
 order-robustness, and calibration-shock lines are preserved through EXP-065
-and are inactive. H22/EXP-066 is the active zero-fit premise: determine whether
-an RGB-free ray query can report which geometry is supported by the causal
-observation history. No provenance head or memory architecture exists.
+and are inactive. H22 was rejected by EXP-066: binary history visibility was
+heterogeneous, predicted support distance underperformed native confidence, and
+fusion worsened AURC. No provenance head or memory architecture exists.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

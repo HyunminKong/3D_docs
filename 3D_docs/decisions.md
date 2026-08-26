@@ -2180,3 +2180,24 @@ controlled oracle coordinate and must not be reported as deployable camera
 prediction. Failure stops the signal without alternate distances, thresholds,
 feature engineering, or a learned head. Success only authorizes a broader
 baseline/capacity decision; it does not accept a method.
+
+## D158 — Reject causal ray-query provenance as the paper center
+
+Date: 2026-08-26
+Status: Accepted after EXP-066
+
+EXP-066 completes exact replay on all 16 train-only contexts but fails 10 of 13
+gates. The unsupported-versus-supported error gap is only 8.62% overall, crosses
+zero under scene-stratified bootstrap, and reverses sign in three scenes. The
+parameter-free predicted support distance has lower error association than
+native confidence (0.196 versus 0.343 Spearman), with a wholly negative paired
+advantage interval. Equal-rank fusion worsens AURC by 7.68%, again with a wholly
+negative gain interval.
+
+The result is not caused by query leakage, recurrence write, or numerical
+instability: the query has no RGB, uses `update=false`, and replays exactly.
+The registered visibility/provenance abstraction is simply not a reliable
+complement to native confidence in this setting. The stop rule applies. No
+support tolerance, query spacing, alternate distance, fusion coefficient,
+threshold, learned provenance head, validation run, or memory system may be
+selected using these exposed contexts. H22 is closed and no method is accepted.

@@ -1,7 +1,9 @@
 # EXP-066 — RGB-Free Ray-Query Evidence-Provenance Anatomy
 
-Status: Registered before execution  
-Protocol: v1.0  
+Status: Completed; gate failed
+
+Protocol: v1.0
+
 Date: 2026-08-26
 
 ## Question
@@ -60,4 +62,44 @@ evaluation.
 
 ## Result
 
-Not run.
+The immutable run completed all 16 contexts with exact replay and no
+validation/terminal access. Only 3 of 13 gates passed.
+
+| Quantity | Result |
+|---|---:|
+| Valid patch evaluations | 8,482 |
+| Supported / unsupported fraction | 85.88% / 14.12% |
+| Supported EPE | 0.13744 |
+| Unsupported EPE | 0.14928 |
+| Relative unsupported error gap | +8.62% |
+| Gap bootstrap 95% CI | `[-0.00535, 0.06878]` |
+| Provenance/error Spearman | 0.196 |
+| Confidence/error Spearman | 0.343 |
+| Spearman advantage | -0.147 |
+| Advantage bootstrap 95% CI | `[-0.360, -0.185]` |
+| Confidence AURC | 0.09139 |
+| Equal-rank combined AURC | 0.09841 |
+| Relative combined AURC gain | -7.68% |
+| Combined-gain bootstrap 95% CI | `[-0.00657, -0.00171]` |
+| Maximum replay difference | 0 |
+
+Unsupported geometry is harder only weakly in aggregate and not consistently:
+the error gap is negative in `pumpkin`, `heads`, and `chess`, and positive only
+in `stairs`. `stairs` also has only 4.38% unsupported support, missing the 5%
+coverage gate. The predicted nearest-history distance has positive association
+with error in every scene but is substantially weaker than native confidence.
+Its equal-rank fusion significantly worsens rather than improves selective
+risk. This is not an oracle-pose or replay failure; it rejects the fixed
+predicted-geometry provenance signal and the stronger binary-support premise in
+this carrier/protocol.
+
+## Conclusion
+
+H22 is rejected as a paper center. No alternate distance, tolerance, context,
+fusion weight, threshold, head, validation run, or memory system is authorized
+from these exposed contexts.
+
+Result hashes:
+
+- result: `a04cca8fc194998d1ec58a51f0f933569480bca8b16b3afc04df5ea25fa37076`
+- depth preparation: `97db5ce74f37afb591149c66cf4cc7db8dee44a283dda8b0ff1d58c5f471df33`

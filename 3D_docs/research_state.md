@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (H22/EXP-066 registered; no active method)
+Last updated: 2026-08-26 (EXP-066 completed; H22 closed, no active method)
 
 ## First objective
 
@@ -756,3 +756,12 @@ normalized nearest distance to prior predicted pointmaps; the only fusion is an
 equal mean of ranks with native confidence. No head, loss, threshold, memory,
 or validation/terminal access is authorized. Known query rays are controlled
 oracle conditioning, not deployable pose estimation.
+
+EXP-066 failed 10 of 13 gates. Across 8,482 patches, unsupported geometry is
+only 8.62% worse in aggregate and is easier in three of four scenes. Predicted
+nearest-history distance has error Spearman 0.196, below native confidence at
+0.343, and equal-rank fusion worsens AURC by 7.68%. Both paired intervals favor
+native confidence. Replay is exact and the causal/query contract passes, so the
+result closes H22 rather than exposing an implementation or data-use failure.
+D158 prohibits alternate distances, fusion weights, thresholds, contexts,
+heads, or validation access. There is no active paper method.

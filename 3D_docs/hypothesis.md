@@ -367,8 +367,13 @@ query range. Ground-truth visibility is only an offline label. The camera pose
 used to form the ray query is controlled oracle input and cannot be described
 as deployable pose estimation.
 
-Status: **Registered, not yet tested.** EXP-066 must establish adequate
-supported/unsupported coverage, a positive error gap, cross-scene risk
-association beyond native confidence, and lower risk-coverage area when the
-two rankings are fused equally. Failure rejects this fixed signal and prohibits
-head fitting or alternate-distance repair on the exposed contexts.
+Status: **Rejected for the registered carrier and signal.** EXP-066 obtains an
+aggregate +8.62% unsupported error gap, below the 20% gate, with a confidence
+interval crossing zero and negative scene gaps in `pumpkin`, `heads`, and
+`chess`. Predicted provenance has error Spearman 0.196 versus 0.343 for native
+confidence; its paired advantage interval is wholly negative. Equal-rank fusion
+worsens AURC by 7.68%, also with a wholly negative gain interval. Exact replay
+passes and no query RGB or update is used. Thus binary historical visibility is
+not a stable risk partition here, and nearest predicted-history geometry does
+not add complementary reliability. No alternate-distance or learned-head repair
+is authorized on these contexts.
