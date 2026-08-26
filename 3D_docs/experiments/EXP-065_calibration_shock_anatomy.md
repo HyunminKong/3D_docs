@@ -2,9 +2,7 @@
 
 ## Status
 
-Corrected v1.1 preregistration; not yet run. The first launch stopped before
-loading any context or producing model output because selected projected-depth
-files had not been materialized.
+Corrected v1.1 completed; gate failed. No model was fit.
 
 ## Question
 
@@ -77,6 +75,58 @@ prediction, metric, or result artifact was produced. The underlying raw train
 depth exists; 7Scenes requires a deterministic registration into the RGB frame.
 Revision v1.1 adds the same selected-frame registration used by EXP-061/062 and
 does not change contexts, intervention, controls, metrics, or success gates.
+
+## Result
+
+All 16 contexts, 96 condition paths, and both deterministic controls completed.
+Clean replay and `clean_skip`/`zoom_skip` state equivalence were exact. The mean
+post-recovery clean-query EPE was `0.069581`. The zoom difference-in-differences
+penalty was `0.001030`, only 1.48% of clean EPE versus the frozen 5% minimum.
+It was positive in 11/16 contexts (`68.75%`) versus the required 75%, and its
+stratified bootstrap interval `[-0.000351, 0.002366]` crossed zero.
+
+The mean penalty was positive in all four scenes, and the immediate penalty had
+a positive CI `[0.000449, 0.003619]`. This shows that zoomed input is initially
+more disruptive. The persistent attribution is not secure: zoom exceeded the
+resampling control by only `0.000698` with CI
+`[-0.000646, 0.001937]`, and exceeded the missing-periphery control by
+`0.001029` with CI `[-0.000714, 0.002848]`. The latter comparison was negative
+in `stairs` (`-0.002285`).
+
+Frozen gates passed only exact coverage/replay/skip equivalence, all-scene mean
+persistent excess, all-scene mean zoom-over-resampling, and all-scene immediate
+plus persistent signs. The magnitude, context-frequency, confidence-bound, and
+missing-periphery attribution gates failed. Overall status: failed.
+
+## Interpretation and conclusion
+
+A 4/3 focal/FoV shock has a measurable immediate effect and a small positive
+mean residual after one clean recovery update. It is too small, heterogeneous,
+and confounded with visible-support loss to carry a compact top-tier paper on
+this frozen carrier. H21 is rejected as the central method premise. The project
+will not increase zoom strength, choose favorable contexts, or add a
+calibration gate/encoder on this evidence.
+
+## Verification
+
+```bash
+PYTHONPATH=. /home/khm/anaconda3/envs/tttlrm/bin/python \
+  revisit3d/scripts/prepare_exp065_selected_train_depth.py \
+  --config configs/EXP-065_calibration_shock_anatomy_v10.yaml \
+  --confirm-selected-train-depth-registration
+
+PYTHONPATH=. /home/khm/anaconda3/envs/tttlrm/bin/python \
+  revisit3d/scripts/evaluate_exp065_calibration_shock_anatomy.py \
+  --config configs/EXP-065_calibration_shock_anatomy_v10.yaml \
+  --confirm-train-rgbd-calibration-anatomy
+```
+
+- peak allocated GPU memory: `4,955,941,376` bytes;
+- validation/terminal accessed: no/no;
+- depth-preparation SHA-256:
+  `1216e0e82b8121a81118623adf7edbe7d8b5e5352ece921fdac5d3821112cdec`;
+- result SHA-256:
+  `037a5f4e3b2f35114498311c595e75b778eae6294cadc5813b7e98907c6234ac`.
 
 ## Artifacts
 

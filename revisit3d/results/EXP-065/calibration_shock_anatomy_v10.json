@@ -1,0 +1,1431 @@
+{
+  "experiment": "EXP-065",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-065_calibration_shock_anatomy_v10.yaml",
+  "config_sha256": "f0ac15735057e4dfbe432c12cb412945bb18999e99686cddc5a570dbc1247b85",
+  "checkpoint_sha256": "45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103",
+  "manifest_sha256": "f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a",
+  "depth_preparation_sha256": "1216e0e82b8121a81118623adf7edbe7d8b5e5352ece921fdac5d3821112cdec",
+  "fit_performed": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "peak_gpu_memory_bytes": 4955941376,
+  "summary": {
+    "mean_persistent_clean_write_epe": 0.06958058077620058,
+    "mean_persistent_excess_write_penalty": 0.001030241833148408,
+    "persistent_excess_fraction_of_clean_epe": 0.014806456365492039,
+    "positive_context_fraction": 0.6875,
+    "mean_immediate_excess_write_penalty": 0.0020022725189409495,
+    "mean_persistent_zoom_over_resample": 0.0006981125079293293,
+    "mean_persistent_zoom_over_mask": 0.0010286395941816145,
+    "maximum_clean_replay_difference": 0.0,
+    "maximum_skip_path_difference": 0.0
+  },
+  "scene_summaries": {
+    "persistent_excess_write_penalty": {
+      "chess": 0.0010416074786946707,
+      "heads": 0.0008673486778589118,
+      "pumpkin": 0.001736056946024976,
+      "stairs": 0.0004759542300150736
+    },
+    "persistent_zoom_over_resample": {
+      "chess": 0.0010306072828639209,
+      "heads": 0.00024099999363498027,
+      "pumpkin": 0.0010204337185493748,
+      "stairs": 0.0005004090366690413
+    },
+    "persistent_zoom_over_mask": {
+      "chess": 0.0007000207242380575,
+      "heads": 0.0025127887141929636,
+      "pumpkin": 0.0031868062254505804,
+      "stairs": -0.0022850572871551435
+    },
+    "immediate_excess_write_penalty": {
+      "chess": 0.0030642808870573225,
+      "heads": 0.0015118729851016765,
+      "pumpkin": 0.0025350665111086293,
+      "stairs": 0.0008978696924961706
+    }
+  },
+  "bootstrap_95": {
+    "persistent_excess_write_penalty": [
+      -0.0003508174445353563,
+      0.0023661770713567583
+    ],
+    "persistent_zoom_over_resample": [
+      -0.0006461807737348455,
+      0.0019365335186357904
+    ],
+    "persistent_zoom_over_mask": [
+      -0.0007143996762959666,
+      0.002847851859389792
+    ],
+    "immediate_excess_write_penalty": [
+      0.000448869850666348,
+      0.003619314216472036
+    ]
+  },
+  "gates": {
+    "exact_counts": true,
+    "clean_replay_within_tolerance": true,
+    "skip_paths_within_tolerance": true,
+    "persistent_excess_positive_all_scenes": true,
+    "persistent_excess_bootstrap_lower_positive": false,
+    "minimum_persistent_excess_fraction": false,
+    "minimum_positive_context_fraction": false,
+    "zoom_over_resample_positive_all_scenes": true,
+    "zoom_over_resample_bootstrap_lower_positive": false,
+    "zoom_over_mask_positive_all_scenes": false,
+    "zoom_over_mask_bootstrap_lower_positive": false,
+    "immediate_and_persistent_positive_all_scenes": true
+  },
+  "passed": false,
+  "rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "frame_indices": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "immediate_errors": {
+        "clean_write": 0.0351983150769227,
+        "zoom_write": 0.034383838121917906,
+        "clean_skip": 0.03549123964263733,
+        "zoom_skip": 0.03549123964263733,
+        "resample_write": 0.035234641777399704,
+        "periphery_mask_write": 0.03602651241129914
+      },
+      "persistent_errors": {
+        "clean_write": 0.03107536780806937,
+        "zoom_write": 0.030076854855206826,
+        "clean_skip": 0.03108332515244663,
+        "zoom_skip": 0.03108332515244663,
+        "resample_write": 0.031070002875718074,
+        "periphery_mask_write": 0.03163868534663027
+      },
+      "immediate_excess_write_penalty": -0.000814476955004792,
+      "persistent_excess_write_penalty": -0.0009985129528625458,
+      "persistent_zoom_over_resample": -0.0009931480205112482,
+      "persistent_zoom_over_mask": -0.0015618304914234472,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 153119,
+      "persistent_valid_pixels": 152871
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "frame_indices": [
+        191,
+        192,
+        193,
+        194,
+        195
+      ],
+      "immediate_errors": {
+        "clean_write": 0.06062293455520936,
+        "zoom_write": 0.06858068656384213,
+        "clean_skip": 0.060274642080633205,
+        "zoom_skip": 0.060274642080633205,
+        "resample_write": 0.06335239081392322,
+        "periphery_mask_write": 0.055021535582799874
+      },
+      "persistent_errors": {
+        "clean_write": 0.04593112386586513,
+        "zoom_write": 0.05201492619310204,
+        "clean_skip": 0.0445446554898858,
+        "zoom_skip": 0.0445446554898858,
+        "resample_write": 0.04901347426561995,
+        "periphery_mask_write": 0.040798920483253856
+      },
+      "immediate_excess_write_penalty": 0.007957752008632767,
+      "persistent_excess_write_penalty": 0.0060838023272369104,
+      "persistent_zoom_over_resample": 0.0030014519274820864,
+      "persistent_zoom_over_mask": 0.011216005709848181,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 149560,
+      "persistent_valid_pixels": 149870
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "frame_indices": [
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "immediate_errors": {
+        "clean_write": 0.058118048254558685,
+        "zoom_write": 0.05972458769291118,
+        "clean_skip": 0.05789188714566117,
+        "zoom_skip": 0.05789188714566117,
+        "resample_write": 0.05775679760716446,
+        "periphery_mask_write": 0.05724071237373277
+      },
+      "persistent_errors": {
+        "clean_write": 0.05831279594107642,
+        "zoom_write": 0.05970344770991922,
+        "clean_skip": 0.05815266974091233,
+        "zoom_skip": 0.05815266974091233,
+        "resample_write": 0.058035443097340635,
+        "periphery_mask_write": 0.057410151505576164
+      },
+      "immediate_excess_write_penalty": 0.0016065394383524972,
+      "persistent_excess_write_penalty": 0.0013906517688428016,
+      "persistent_zoom_over_resample": 0.0016680046125785858,
+      "persistent_zoom_over_mask": 0.0022932962043430566,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 137271,
+      "persistent_valid_pixels": 139085
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "frame_indices": [
+        431,
+        432,
+        433,
+        434,
+        435
+      ],
+      "immediate_errors": {
+        "clean_write": 0.019375161310134968,
+        "zoom_write": 0.020765612862589013,
+        "clean_skip": 0.01950162835678671,
+        "zoom_skip": 0.01950162835678671,
+        "resample_write": 0.019717239597741174,
+        "periphery_mask_write": 0.01899527003146158
+      },
+      "persistent_errors": {
+        "clean_write": 0.017824300574056977,
+        "zoom_write": 0.018292587214939714,
+        "clean_skip": 0.017935557885232756,
+        "zoom_skip": 0.017935557885232756,
+        "resample_write": 0.01788716086029164,
+        "periphery_mask_write": 0.017492833735905183
+      },
+      "immediate_excess_write_penalty": 0.0013904515524540452,
+      "persistent_excess_write_penalty": 0.00046828664088273755,
+      "persistent_zoom_over_resample": 0.0004054263546480752,
+      "persistent_zoom_over_mask": 0.0007997534790345311,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 136233,
+      "persistent_valid_pixels": 120610
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "frame_indices": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "immediate_errors": {
+        "clean_write": 0.03996043844727983,
+        "zoom_write": 0.04067399888533775,
+        "clean_skip": 0.03877029109855712,
+        "zoom_skip": 0.03877029109855712,
+        "resample_write": 0.0409045355056381,
+        "periphery_mask_write": 0.03693550748472643
+      },
+      "persistent_errors": {
+        "clean_write": 0.04843108886841154,
+        "zoom_write": 0.04824823170151003,
+        "clean_skip": 0.0465047839884371,
+        "zoom_skip": 0.0465047839884371,
+        "resample_write": 0.04973631556234372,
+        "periphery_mask_write": 0.044087691581612694
+      },
+      "immediate_excess_write_penalty": 0.0007135604380579183,
+      "persistent_excess_write_penalty": -0.00018285716690150805,
+      "persistent_zoom_over_resample": -0.0014880838608336902,
+      "persistent_zoom_over_mask": 0.004160540119897339,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 98029,
+      "persistent_valid_pixels": 102746
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "frame_indices": [
+        191,
+        192,
+        193,
+        194,
+        195
+      ],
+      "immediate_errors": {
+        "clean_write": 0.059024372500880135,
+        "zoom_write": 0.06362416159555152,
+        "clean_skip": 0.059652841921097495,
+        "zoom_skip": 0.059652841921097495,
+        "resample_write": 0.05983376125992511,
+        "periphery_mask_write": 0.057988171393565935
+      },
+      "persistent_errors": {
+        "clean_write": 0.05531188224198562,
+        "zoom_write": 0.05875992057569257,
+        "clean_skip": 0.055396779890575856,
+        "zoom_skip": 0.055396779890575856,
+        "resample_write": 0.05585557391644204,
+        "periphery_mask_write": 0.05514387151140883
+      },
+      "immediate_excess_write_penalty": 0.004599789094671389,
+      "persistent_excess_write_penalty": 0.0034480383337069515,
+      "persistent_zoom_over_resample": 0.0029043466592505313,
+      "persistent_zoom_over_mask": 0.003616049064283741,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 145628,
+      "persistent_valid_pixels": 144235
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "frame_indices": [
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "immediate_errors": {
+        "clean_write": 0.06036729167393585,
+        "zoom_write": 0.057106387781298625,
+        "clean_skip": 0.05996276022865289,
+        "zoom_skip": 0.05996276022865289,
+        "resample_write": 0.059859370234688875,
+        "periphery_mask_write": 0.05866065558546537
+      },
+      "persistent_errors": {
+        "clean_write": 0.05750860036178429,
+        "zoom_write": 0.05477613151059999,
+        "clean_skip": 0.056577875472977074,
+        "zoom_skip": 0.056577875472977074,
+        "resample_write": 0.057084202120780046,
+        "periphery_mask_write": 0.055938041337344646
+      },
+      "immediate_excess_write_penalty": -0.0032609038926372236,
+      "persistent_excess_write_penalty": -0.0027324688511842984,
+      "persistent_zoom_over_resample": -0.0023080706101800547,
+      "persistent_zoom_over_mask": -0.0011619098267446545,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 121438,
+      "persistent_valid_pixels": 121558
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "frame_indices": [
+        431,
+        432,
+        433,
+        434,
+        435
+      ],
+      "immediate_errors": {
+        "clean_write": 0.11096555057637354,
+        "zoom_write": 0.11496059687668816,
+        "clean_skip": 0.10924118796525994,
+        "zoom_skip": 0.10924118796525994,
+        "resample_write": 0.1125354422181693,
+        "periphery_mask_write": 0.1100586705989626
+      },
+      "persistent_errors": {
+        "clean_write": 0.11823969526829059,
+        "zoom_write": 0.12117637766410509,
+        "clean_skip": 0.11705553695344278,
+        "zoom_skip": 0.11705553695344278,
+        "resample_write": 0.11932056987780196,
+        "periphery_mask_write": 0.11773990216476966
+      },
+      "immediate_excess_write_penalty": 0.0039950463003146225,
+      "persistent_excess_write_penalty": 0.002936682395814502,
+      "persistent_zoom_over_resample": 0.0018558077863031347,
+      "persistent_zoom_over_mask": 0.0034364754993354285,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 127719,
+      "persistent_valid_pixels": 136321
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "frame_indices": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "immediate_errors": {
+        "clean_write": 0.06193936150228883,
+        "zoom_write": 0.0672896236497959,
+        "clean_skip": 0.05937413437852241,
+        "zoom_skip": 0.05937413437852241,
+        "resample_write": 0.06155793811566968,
+        "periphery_mask_write": 0.061728070212277907
+      },
+      "persistent_errors": {
+        "clean_write": 0.055768071575636416,
+        "zoom_write": 0.0582438609302975,
+        "clean_skip": 0.05412062071939481,
+        "zoom_skip": 0.05412062071939481,
+        "resample_write": 0.055596133682262995,
+        "periphery_mask_write": 0.05595171357850684
+      },
+      "immediate_excess_write_penalty": 0.0053502621475070775,
+      "persistent_excess_write_penalty": 0.0024757893546610843,
+      "persistent_zoom_over_resample": 0.002647727248034505,
+      "persistent_zoom_over_mask": 0.0022921473517906604,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 143157,
+      "persistent_valid_pixels": 141805
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "frame_indices": [
+        191,
+        192,
+        193,
+        194,
+        195
+      ],
+      "immediate_errors": {
+        "clean_write": 0.05058011044921645,
+        "zoom_write": 0.0526156015642807,
+        "clean_skip": 0.050855854119489,
+        "zoom_skip": 0.050855854119489,
+        "resample_write": 0.05082271862019046,
+        "periphery_mask_write": 0.05114711197796625
+      },
+      "persistent_errors": {
+        "clean_write": 0.056032884242847886,
+        "zoom_write": 0.05682188728360288,
+        "clean_skip": 0.05676322119017513,
+        "zoom_skip": 0.05676322119017513,
+        "resample_write": 0.05596534707612511,
+        "periphery_mask_write": 0.056746125892572254
+      },
+      "immediate_excess_write_penalty": 0.00203549111506425,
+      "persistent_excess_write_penalty": 0.0007890030407549931,
+      "persistent_zoom_over_resample": 0.000856540207477767,
+      "persistent_zoom_over_mask": 7.576139103062512e-05,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 144446,
+      "persistent_valid_pixels": 145945
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "frame_indices": [
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "immediate_errors": {
+        "clean_write": 0.12231225263401214,
+        "zoom_write": 0.1260321248606821,
+        "clean_skip": 0.12186314470664898,
+        "zoom_skip": 0.12186314470664898,
+        "resample_write": 0.12145619149929218,
+        "periphery_mask_write": 0.12467563053336225
+      },
+      "persistent_errors": {
+        "clean_write": 0.11684325520453563,
+        "zoom_write": 0.12049886942101456,
+        "clean_skip": 0.116854957262393,
+        "zoom_skip": 0.116854957262393,
+        "resample_write": 0.11604036287872513,
+        "periphery_mask_write": 0.11834515180218083
+      },
+      "immediate_excess_write_penalty": 0.0037198722266699596,
+      "persistent_excess_write_penalty": 0.0036556142164789335,
+      "persistent_zoom_over_resample": 0.0044585065422894365,
+      "persistent_zoom_over_mask": 0.0021537176188337337,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 134619,
+      "persistent_valid_pixels": 134995
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "frame_indices": [
+        431,
+        432,
+        433,
+        434,
+        435
+      ],
+      "immediate_errors": {
+        "clean_write": 0.05491623750260645,
+        "zoom_write": 0.05606773556159445,
+        "clean_skip": 0.05509945324442798,
+        "zoom_skip": 0.05509945324442798,
+        "resample_write": 0.05596837320409261,
+        "periphery_mask_write": 0.05413683691859715
+      },
+      "persistent_errors": {
+        "clean_write": 0.06043452506812956,
+        "zoom_write": 0.05768054837101323,
+        "clean_skip": 0.060738494128546185,
+        "zoom_skip": 0.060738494128546185,
+        "resample_write": 0.06152089323735926,
+        "periphery_mask_write": 0.05940209183571602
+      },
+      "immediate_excess_write_penalty": 0.0011514980589880028,
+      "persistent_excess_write_penalty": -0.002753976697116328,
+      "persistent_zoom_over_resample": -0.003840344866346025,
+      "persistent_zoom_over_mask": -0.0017215434647027891,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 142487,
+      "persistent_valid_pixels": 140749
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "frame_indices": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "immediate_errors": {
+        "clean_write": 0.06366647560980987,
+        "zoom_write": 0.07040344014705457,
+        "clean_skip": 0.06399875142820342,
+        "zoom_skip": 0.06399875142820342,
+        "resample_write": 0.06362667796048267,
+        "periphery_mask_write": 0.06532468964036259
+      },
+      "persistent_errors": {
+        "clean_write": 0.07522600294194236,
+        "zoom_write": 0.07951044730954435,
+        "clean_skip": 0.07566045878957864,
+        "zoom_skip": 0.07566045878957864,
+        "resample_write": 0.07501921325750392,
+        "periphery_mask_write": 0.0755142295560948
+      },
+      "immediate_excess_write_penalty": 0.006736964537244705,
+      "persistent_excess_write_penalty": 0.004284444367601989,
+      "persistent_zoom_over_resample": 0.004491234052040424,
+      "persistent_zoom_over_mask": 0.003996217753449549,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 151805,
+      "persistent_valid_pixels": 152221
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "frame_indices": [
+        191,
+        192,
+        193,
+        194,
+        195
+      ],
+      "immediate_errors": {
+        "clean_write": 0.09671551194219881,
+        "zoom_write": 0.09413094962611056,
+        "clean_skip": 0.09566857237260393,
+        "zoom_skip": 0.09566857237260393,
+        "resample_write": 0.09660105128210288,
+        "periphery_mask_write": 0.09190688940745445
+      },
+      "persistent_errors": {
+        "clean_write": 0.09098969644563581,
+        "zoom_write": 0.0914746672196084,
+        "clean_skip": 0.09018112073450527,
+        "zoom_skip": 0.09018112073450527,
+        "resample_write": 0.0909598948767221,
+        "periphery_mask_write": 0.09017310866782448
+      },
+      "immediate_excess_write_penalty": -0.0025845623160882514,
+      "persistent_excess_write_penalty": 0.0004849707739725817,
+      "persistent_zoom_over_resample": 0.0005147723428862994,
+      "persistent_zoom_over_mask": 0.0013015585517839184,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 147700,
+      "persistent_valid_pixels": 146917
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "frame_indices": [
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "immediate_errors": {
+        "clean_write": 0.1860665027477593,
+        "zoom_write": 0.18185282600956043,
+        "clean_skip": 0.18889066669481713,
+        "zoom_skip": 0.18889066669481713,
+        "resample_write": 0.18612750343887172,
+        "periphery_mask_write": 0.19048496610475424
+      },
+      "persistent_errors": {
+        "clean_write": 0.1773169030671979,
+        "zoom_write": 0.1726451908126402,
+        "clean_skip": 0.17867237027069804,
+        "zoom_skip": 0.17867237027069804,
+        "resample_write": 0.17742885880640075,
+        "periphery_mask_write": 0.17991043493445785
+      },
+      "immediate_excess_write_penalty": -0.004213676738198863,
+      "persistent_excess_write_penalty": -0.004671712254557703,
+      "persistent_zoom_over_resample": -0.0047836679937605375,
+      "persistent_zoom_over_mask": -0.007265244121817643,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 153010,
+      "persistent_valid_pixels": 146255
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "frame_indices": [
+        431,
+        432,
+        433,
+        434,
+        435
+      ],
+      "immediate_errors": {
+        "clean_write": 0.0677488101096781,
+        "zoom_write": 0.0714015633967052,
+        "clean_skip": 0.07114330616422704,
+        "zoom_skip": 0.07114330616422704,
+        "resample_write": 0.06786691935785476,
+        "periphery_mask_write": 0.0828770050479643
+      },
+      "persistent_errors": {
+        "clean_write": 0.04804309894374374,
+        "zoom_write": 0.04984921297678717,
+        "clean_skip": 0.04680507870916299,
+        "zoom_skip": 0.04680507870916299,
+        "resample_write": 0.04806991523127719,
+        "periphery_mask_write": 0.05702197430882357
+      },
+      "immediate_excess_write_penalty": 0.0036527532870270912,
+      "persistent_excess_write_penalty": 0.0018061140330434267,
+      "persistent_zoom_over_resample": 0.0017792977455099793,
+      "persistent_zoom_over_mask": -0.007172761332036398,
+      "clean_replay_maximum_abs_difference": 0.0,
+      "skip_path_maximum_abs_difference": 0.0,
+      "immediate_valid_pixels": 134661,
+      "persistent_valid_pixels": 136889
+    }
+  ],
+  "condition_rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.0351983150769227,
+      "persistent_relative_3d_epe": 0.03107536780806937
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.034383838121917906,
+      "persistent_relative_3d_epe": 0.030076854855206826
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.03549123964263733,
+      "persistent_relative_3d_epe": 0.03108332515244663
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.03549123964263733,
+      "persistent_relative_3d_epe": 0.03108332515244663
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.035234641777399704,
+      "persistent_relative_3d_epe": 0.031070002875718074
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 115,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.03602651241129914,
+      "persistent_relative_3d_epe": 0.03163868534663027
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.06062293455520936,
+      "persistent_relative_3d_epe": 0.04593112386586513
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.06858068656384213,
+      "persistent_relative_3d_epe": 0.05201492619310204
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.060274642080633205,
+      "persistent_relative_3d_epe": 0.0445446554898858
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.060274642080633205,
+      "persistent_relative_3d_epe": 0.0445446554898858
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.06335239081392322,
+      "persistent_relative_3d_epe": 0.04901347426561995
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 195,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.055021535582799874,
+      "persistent_relative_3d_epe": 0.040798920483253856
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.058118048254558685,
+      "persistent_relative_3d_epe": 0.05831279594107642
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.05972458769291118,
+      "persistent_relative_3d_epe": 0.05970344770991922
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.05789188714566117,
+      "persistent_relative_3d_epe": 0.05815266974091233
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.05789188714566117,
+      "persistent_relative_3d_epe": 0.05815266974091233
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.05775679760716446,
+      "persistent_relative_3d_epe": 0.058035443097340635
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 355,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.05724071237373277,
+      "persistent_relative_3d_epe": 0.057410151505576164
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.019375161310134968,
+      "persistent_relative_3d_epe": 0.017824300574056977
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.020765612862589013,
+      "persistent_relative_3d_epe": 0.018292587214939714
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.01950162835678671,
+      "persistent_relative_3d_epe": 0.017935557885232756
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.01950162835678671,
+      "persistent_relative_3d_epe": 0.017935557885232756
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.019717239597741174,
+      "persistent_relative_3d_epe": 0.01788716086029164
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 435,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.01899527003146158,
+      "persistent_relative_3d_epe": 0.017492833735905183
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.03996043844727983,
+      "persistent_relative_3d_epe": 0.04843108886841154
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.04067399888533775,
+      "persistent_relative_3d_epe": 0.04824823170151003
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.03877029109855712,
+      "persistent_relative_3d_epe": 0.0465047839884371
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.03877029109855712,
+      "persistent_relative_3d_epe": 0.0465047839884371
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.0409045355056381,
+      "persistent_relative_3d_epe": 0.04973631556234372
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 115,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.03693550748472643,
+      "persistent_relative_3d_epe": 0.044087691581612694
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.059024372500880135,
+      "persistent_relative_3d_epe": 0.05531188224198562
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.06362416159555152,
+      "persistent_relative_3d_epe": 0.05875992057569257
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.059652841921097495,
+      "persistent_relative_3d_epe": 0.055396779890575856
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.059652841921097495,
+      "persistent_relative_3d_epe": 0.055396779890575856
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.05983376125992511,
+      "persistent_relative_3d_epe": 0.05585557391644204
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 195,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.057988171393565935,
+      "persistent_relative_3d_epe": 0.05514387151140883
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.06036729167393585,
+      "persistent_relative_3d_epe": 0.05750860036178429
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.057106387781298625,
+      "persistent_relative_3d_epe": 0.05477613151059999
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.05996276022865289,
+      "persistent_relative_3d_epe": 0.056577875472977074
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.05996276022865289,
+      "persistent_relative_3d_epe": 0.056577875472977074
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.059859370234688875,
+      "persistent_relative_3d_epe": 0.057084202120780046
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 355,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.05866065558546537,
+      "persistent_relative_3d_epe": 0.055938041337344646
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.11096555057637354,
+      "persistent_relative_3d_epe": 0.11823969526829059
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.11496059687668816,
+      "persistent_relative_3d_epe": 0.12117637766410509
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.10924118796525994,
+      "persistent_relative_3d_epe": 0.11705553695344278
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.10924118796525994,
+      "persistent_relative_3d_epe": 0.11705553695344278
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.1125354422181693,
+      "persistent_relative_3d_epe": 0.11932056987780196
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 435,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.1100586705989626,
+      "persistent_relative_3d_epe": 0.11773990216476966
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.06193936150228883,
+      "persistent_relative_3d_epe": 0.055768071575636416
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.0672896236497959,
+      "persistent_relative_3d_epe": 0.0582438609302975
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.05937413437852241,
+      "persistent_relative_3d_epe": 0.05412062071939481
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.05937413437852241,
+      "persistent_relative_3d_epe": 0.05412062071939481
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.06155793811566968,
+      "persistent_relative_3d_epe": 0.055596133682262995
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 115,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.061728070212277907,
+      "persistent_relative_3d_epe": 0.05595171357850684
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.05058011044921645,
+      "persistent_relative_3d_epe": 0.056032884242847886
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.0526156015642807,
+      "persistent_relative_3d_epe": 0.05682188728360288
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.050855854119489,
+      "persistent_relative_3d_epe": 0.05676322119017513
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.050855854119489,
+      "persistent_relative_3d_epe": 0.05676322119017513
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.05082271862019046,
+      "persistent_relative_3d_epe": 0.05596534707612511
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 195,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.05114711197796625,
+      "persistent_relative_3d_epe": 0.056746125892572254
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.12231225263401214,
+      "persistent_relative_3d_epe": 0.11684325520453563
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.1260321248606821,
+      "persistent_relative_3d_epe": 0.12049886942101456
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.12186314470664898,
+      "persistent_relative_3d_epe": 0.116854957262393
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.12186314470664898,
+      "persistent_relative_3d_epe": 0.116854957262393
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.12145619149929218,
+      "persistent_relative_3d_epe": 0.11604036287872513
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 355,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.12467563053336225,
+      "persistent_relative_3d_epe": 0.11834515180218083
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.05491623750260645,
+      "persistent_relative_3d_epe": 0.06043452506812956
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.05606773556159445,
+      "persistent_relative_3d_epe": 0.05768054837101323
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.05509945324442798,
+      "persistent_relative_3d_epe": 0.060738494128546185
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.05509945324442798,
+      "persistent_relative_3d_epe": 0.060738494128546185
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.05596837320409261,
+      "persistent_relative_3d_epe": 0.06152089323735926
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 435,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.05413683691859715,
+      "persistent_relative_3d_epe": 0.05940209183571602
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.06366647560980987,
+      "persistent_relative_3d_epe": 0.07522600294194236
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.07040344014705457,
+      "persistent_relative_3d_epe": 0.07951044730954435
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.06399875142820342,
+      "persistent_relative_3d_epe": 0.07566045878957864
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.06399875142820342,
+      "persistent_relative_3d_epe": 0.07566045878957864
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.06362667796048267,
+      "persistent_relative_3d_epe": 0.07501921325750392
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 115,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.06532468964036259,
+      "persistent_relative_3d_epe": 0.0755142295560948
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.09671551194219881,
+      "persistent_relative_3d_epe": 0.09098969644563581
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.09413094962611056,
+      "persistent_relative_3d_epe": 0.0914746672196084
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.09566857237260393,
+      "persistent_relative_3d_epe": 0.09018112073450527
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.09566857237260393,
+      "persistent_relative_3d_epe": 0.09018112073450527
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.09660105128210288,
+      "persistent_relative_3d_epe": 0.0909598948767221
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 195,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.09190688940745445,
+      "persistent_relative_3d_epe": 0.09017310866782448
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.1860665027477593,
+      "persistent_relative_3d_epe": 0.1773169030671979
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.18185282600956043,
+      "persistent_relative_3d_epe": 0.1726451908126402
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.18889066669481713,
+      "persistent_relative_3d_epe": 0.17867237027069804
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.18889066669481713,
+      "persistent_relative_3d_epe": 0.17867237027069804
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.18612750343887172,
+      "persistent_relative_3d_epe": 0.17742885880640075
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 355,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.19048496610475424,
+      "persistent_relative_3d_epe": 0.17991043493445785
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "clean_write",
+      "immediate_relative_3d_epe": 0.0677488101096781,
+      "persistent_relative_3d_epe": 0.04804309894374374
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_write",
+      "immediate_relative_3d_epe": 0.0714015633967052,
+      "persistent_relative_3d_epe": 0.04984921297678717
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "clean_skip",
+      "immediate_relative_3d_epe": 0.07114330616422704,
+      "persistent_relative_3d_epe": 0.04680507870916299
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "zoom_skip",
+      "immediate_relative_3d_epe": 0.07114330616422704,
+      "persistent_relative_3d_epe": 0.04680507870916299
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "resample_write",
+      "immediate_relative_3d_epe": 0.06786691935785476,
+      "persistent_relative_3d_epe": 0.04806991523127719
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 435,
+      "condition": "periphery_mask_write",
+      "immediate_relative_3d_epe": 0.0828770050479643,
+      "persistent_relative_3d_epe": 0.05702197430882357
+    }
+  ]
+}

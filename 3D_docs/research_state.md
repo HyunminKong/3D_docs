@@ -720,7 +720,7 @@ accepted active method. The next compact streaming-3D candidate requires a
 fresh collision audit and no-fit premise; validation and terminal roles remain
 unopened.
 
-## Active calibration-shock premise
+## Closed calibration-shock premise
 
 D154 selects H21 after a fresh dynamic-intrinsics collision audit. Dynamic
 intrinsics estimation is already formalized by InFlux/InFlux++, and known-camera
@@ -733,3 +733,9 @@ EXP-065 is a no-fit train-only anatomy test on 16 fresh contexts. It freezes one
 missing-periphery controls before and after one clean recovery write. The
 premise must be positive in every scene, materially large, and specifically
 stronger than both image controls. No method or validation access is authorized.
+
+EXP-065 failed the central magnitude, frequency, interval, and attribution
+gates. Its persistent penalty is positive on average in all scenes but only
+1.48% of clean EPE, with CI crossing zero and 68.75% positive contexts. It does
+not significantly beat resampling or missing-periphery controls. D156 closes
+H21 without stronger zoom or method fitting. There is again no active model.

@@ -2,11 +2,11 @@
 
 ## Project
 
-Calibration-Shock-Resilient Streaming 3D Reconstruction Research.
+Compact Streaming 3D Reconstruction Research.
 
 The former continual adaptation-memory, gauge/local-reliability, and
 order-robustness lines are preserved through EXP-064. None is active.
-H21 is an active no-fit premise only; no calibration-aware method exists yet.
+H21 was rejected by EXP-065; no calibration-aware method exists.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

@@ -2132,3 +2132,25 @@ The v1.1 correction deterministically registers exactly the 80 already selected
 train depths using the existing FastVGGT 7Scenes utility and records their
 hashes. It changes no query frame, zoom, control, metric, or gate. This is a
 pre-result data-materialization correction, not model selection.
+
+## D156 — Reject calibration-shock state poisoning as the paper center
+
+Date: 2026-08-26
+Status: Accepted after EXP-065
+
+EXP-065 completed with exact replay and exact non-writing-path equivalence. The
+registered 4/3 zoom produces a small positive mean persistent penalty in all
+four scenes, but only 1.48% of clean EPE, with a confidence interval crossing
+zero and 68.75% positive contexts. Its advantages over resampling and
+missing-periphery controls are uncertain; `stairs` is negative against the
+latter. Five substantive gates fail.
+
+The result supports immediate zoom sensitivity but not dominant, specifically
+camera-coordinate state poisoning. The preregistered stop rule applies. No zoom
+increase, favorable-context selection, InFlux++ download, known-K encoder,
+focal TTT, or state gate is authorized from this result. H21 is closed as a
+method candidate and retained only as a negative robustness audit.
+
+The next paper candidate must not be another generic state-update reliability
+variant. It requires a fresh problem-level audit and a no-fit premise with a
+directly identifiable geometric target.

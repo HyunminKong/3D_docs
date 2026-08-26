@@ -344,7 +344,11 @@ immediate difficulty of a cropped image. A valid premise must exceed a
 full-FoV resampling control and a missing-periphery control, remain after one
 clean recovery write, and be positive across scenes.
 
-Status: **Preregistered zero-fit premise.** The collision audit rejects camera
-calibration, generic known-prior fusion, generic TTT with priors, and generic
-reliability gating as novelty claims. EXP-065 tests only the persistent causal
-failure on fresh train contexts. No model or validation access is authorized.
+Status: **Rejected as a central paper premise for the registered shock.** The
+mean persistent difference-in-differences penalty is positive in every scene
+but is only 1.48% of clean EPE, with CI `[-0.000351, 0.002366]` and 68.75%
+positive contexts. It does not significantly exceed either the resampling or
+missing-periphery control, and loses to the latter in `stairs`. The immediate
+effect is significant, but persistent camera-coordinate contamination is too
+small and confounded to justify a method. No stronger zoom, context selection,
+camera-prior encoder, or calibration gate is authorized under H21.
