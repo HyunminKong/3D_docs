@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-054 conditional-tangent oracle registered)
+Last updated: 2026-08-26 (EXP-054 passed; EXP-055 conditioner fit registered)
 
 ## First objective
 
@@ -517,3 +517,17 @@ exposed EXP-052 anchors and asks whether an offline token-axis sign oracle beats
 the global basis, a scene-global axis oracle, and a spatially shuffled mask on
 realized relative-3D utility while preserving online descent. The learned
 conditioner may be fit only if this conditional capacity gate passes.
+
+EXP-054 passed every gate. The token-axis oracle produced `2.00e-5` mean
+metric gain with 0% harm, approximately ten times the global basis gain, and
+beat spatial shuffle with a wholly positive paired interval. A scene-global
+axis oracle was also much weaker. This localizes the missing capacity to the
+joint spatial-token/axis structure rather than merely selecting a global subset
+of basis directions.
+
+D138 now authorizes EXP-055: freeze the generic shared basis and fit only the
+zero-initialized 6,144-weight conditioner on the exact EXP-053 48-anchor fit
+set, then audit on the same disjoint 16 held-train-scene anchors. The objective,
+step, loss, optimizer budget, and learning rate remain fixed. It must also beat
+EXP-053's learned global basis with a positive paired interval before any
+validation access.

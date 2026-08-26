@@ -1665,3 +1665,28 @@ selection has realized benefit beyond the global basis, a scene-global axis
 mask, and a spatially shuffled token mask. RGB-D gradients are offline oracle
 labels only. Failure rejects this minimal conditional representation before
 training; success authorizes one fixed train-only fit protocol, not validation.
+
+## D138 — Authorize one conditioner-only exact-meta fit
+
+Date: 2026-08-26
+Status: Accepted after EXP-054 passed all gates
+
+EXP-054 establishes a large spatially specific capacity gap: the token-axis
+oracle improves every anchor and beats global, scene-global-axis, and shuffled
+controls, with zero observed harm. The zero-initialized conditioner also has a
+finite nonzero exact meta-gradient at every anchor. H15 may therefore advance
+from capacity to learnability.
+
+EXP-055 freezes the generic EXP-052 basis and updates only the 6,144 weights of
+the bias-free token conditioner. It reuses the exact EXP-053 48 fit anchors and
+16 held-train-scene audit anchors, their data seed, one 48-step AdamW pass,
+learning rate `1e-4`, and the sole realized relative-3D outer objective. This
+keeps the comparison with EXP-053's learned global basis capacity- and data-
+matched. No loss, coefficient, scheduler, second step, basis update, gate,
+validation access, or hyperparameter selection is allowed.
+
+The learned conditional model must pass the original absolute gain, paired
+improvement, online descent, and 25% harm gates and must beat EXP-053's learned
+global basis with a positive paired anchor-bootstrap interval. A passing result
+authorizes a separately registered scene-disjoint validation; failure stops
+this minimal token-only conditioner rather than tuning it.

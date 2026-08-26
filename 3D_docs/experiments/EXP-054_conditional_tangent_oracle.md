@@ -1,6 +1,6 @@
 # EXP-054 — Conditional Tangent Oracle Premise
 
-Status: Registered; no-fit train-only experiment
+Status: Completed; all registered gates passed
 Purpose: Determine whether spatially conditioned weighting of the same eight
 TTT3R code axes can resolve metric conflict before fitting a conditioner
 
@@ -64,3 +64,21 @@ method-level decision.
 - Config: `configs/EXP-054_conditional_tangent_oracle_v10.yaml`
 - Runner: `revisit3d/scripts/evaluate_exp054_conditional_tangent_oracle.py`
 - Result: `revisit3d/results/EXP-054/conditional_tangent_oracle_v10.json`
+
+## Result
+
+All 16 anchors across four train scenes completed with exact zero-code and
+zero-conditioner/global parity. The proposed conditioner has 6,144 parameters
+(12,288 including the frozen shared basis), and its exact meta-gradient was
+finite and nonzero at every anchor.
+
+The token-axis oracle achieved mean relative-3D gain `2.0039e-5`, positive in
+all four scenes and all 16 anchors, while preserving positive online-loss
+descent in every scene. The global policy gained `1.9590e-6`, the scene-global
+axis oracle `3.9700e-6`, and spatial shuffle `1.7106e-6`. Token conditioning
+beat global by `1.8080e-5`, CI `[1.5640e-5, 2.0686e-5]`, and shuffle by
+`1.8329e-5`, CI `[1.5309e-5, 2.1639e-5]`. Harm was 0%.
+
+The result supports the conditional capacity premise, not deployability: the
+mask uses offline RGB-D metric gradients. D138 therefore authorizes exactly one
+conditioner-only train-scene fit in EXP-055. Validation remains unopened.
