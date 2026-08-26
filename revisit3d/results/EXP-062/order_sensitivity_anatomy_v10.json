@@ -1,0 +1,2530 @@
+{
+  "experiment": "EXP-062",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-062_order_sensitivity_anatomy_v10.yaml",
+  "config_sha256": "8253b86ecebca47c94d6628e716d1bb84bc089374bf78832bc52f299c9199070",
+  "checkpoint_sha256": "45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103",
+  "depth_preparation_sha256": "ca4a3274112ba1c4352155ee39e73982df9f093b9a30e9c5b5254087a0c0ed69",
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "first_history_fixed": true,
+  "history_payload_identical": true,
+  "query_identical_and_update_false": true,
+  "summary": {
+    "mean_chronological_epe": 0.07991401731665385,
+    "mean_best_epe": 0.07625123215071425,
+    "mean_worst_epe": 0.08630100944396504,
+    "mean_absolute_range": 0.010049777293250805,
+    "aggregate_relative_range": 0.1257573781259081,
+    "context_fraction_above_relative_threshold": 0.75,
+    "dispersion_absolute_range_spearman": 0.8352941176470589,
+    "maximum_replay_abs_difference": 0.0
+  },
+  "scene_absolute_ranges": {
+    "chess": 0.011547216744246682,
+    "heads": 0.005938047668436709,
+    "pumpkin": 0.00581423946477095,
+    "stairs": 0.016899605295548875
+  },
+  "absolute_range_bootstrap_95": [
+    0.006497918183666775,
+    0.014045536303148167
+  ],
+  "gates": {
+    "exact_counts": true,
+    "replay_within_tolerance": true,
+    "range_positive_all_scenes": true,
+    "bootstrap_lower_positive": true,
+    "minimum_aggregate_relative_range": true,
+    "minimum_context_fraction": true,
+    "minimum_dispersion_range_spearman": true
+  },
+  "passed": true,
+  "peak_gpu_memory_bytes": 4951565312,
+  "context_rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "chronological_epe": 0.037080690255885354,
+      "best_epe": 0.033339355221628696,
+      "worst_epe": 0.037080690255885354,
+      "best_middle_order": [
+        2,
+        1,
+        3
+      ],
+      "worst_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "absolute_range": 0.0037413350342566584,
+      "relative_range": 0.10089712484957972,
+      "prediction_dispersion": 0.003591023708926717,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "chronological_epe": 0.1243829465794976,
+      "best_epe": 0.1243829465794976,
+      "worst_epe": 0.12596598802492442,
+      "best_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "worst_middle_order": [
+        2,
+        1,
+        3
+      ],
+      "absolute_range": 0.0015830414454268277,
+      "relative_range": 0.012727158255694234,
+      "prediction_dispersion": 0.0021941140527942777,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "chronological_epe": 0.04469916960115689,
+      "best_epe": 0.0445698768751639,
+      "worst_epe": 0.04480970526559661,
+      "best_middle_order": [
+        2,
+        1,
+        3
+      ],
+      "worst_middle_order": [
+        3,
+        1,
+        2
+      ],
+      "absolute_range": 0.00023982839043271142,
+      "relative_range": 0.005365388050217923,
+      "prediction_dispersion": 0.002999331276872509,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "chronological_epe": 0.049371931411943015,
+      "best_epe": 0.031679178422975414,
+      "worst_epe": 0.049371931411943015,
+      "best_middle_order": [
+        3,
+        1,
+        2
+      ],
+      "worst_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "absolute_range": 0.0176927529889676,
+      "relative_range": 0.35835650911334904,
+      "prediction_dispersion": 0.012711593512447321,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "chronological_epe": 0.094671578162994,
+      "best_epe": 0.09223235942999393,
+      "worst_epe": 0.09800913426301355,
+      "best_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "worst_middle_order": [
+        2,
+        3,
+        1
+      ],
+      "absolute_range": 0.005776774833019624,
+      "relative_range": 0.06101910356954097,
+      "prediction_dispersion": 0.007437100352631198,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "chronological_epe": 0.10335978635611741,
+      "best_epe": 0.10335978635611741,
+      "worst_epe": 0.10596637854550699,
+      "best_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "worst_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "absolute_range": 0.0026065921893895783,
+      "relative_range": 0.025218629810328606,
+      "prediction_dispersion": 0.005275393636839982,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "chronological_epe": 0.03763709322602174,
+      "best_epe": 0.035393791000185755,
+      "worst_epe": 0.03763709322602174,
+      "best_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "worst_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "absolute_range": 0.0022433022258359844,
+      "relative_range": 0.05960349308498133,
+      "prediction_dispersion": 0.005516956316553606,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "chronological_epe": 0.12130168678505018,
+      "best_epe": 0.10825329480712051,
+      "worst_epe": 0.12137881623262216,
+      "best_middle_order": [
+        2,
+        1,
+        3
+      ],
+      "worst_middle_order": [
+        1,
+        3,
+        2
+      ],
+      "absolute_range": 0.013125521425501649,
+      "relative_range": 0.10820559691606285,
+      "prediction_dispersion": 0.012173781047948584,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "chronological_epe": 0.04865832489428495,
+      "best_epe": 0.04865832489428495,
+      "worst_epe": 0.05996194442941323,
+      "best_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "worst_middle_order": [
+        2,
+        3,
+        1
+      ],
+      "absolute_range": 0.011303619535128283,
+      "relative_range": 0.2323059735345703,
+      "prediction_dispersion": 0.010257081469533072,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "chronological_epe": 0.055429333923519196,
+      "best_epe": 0.05435104965563337,
+      "worst_epe": 0.05585112641428871,
+      "best_middle_order": [
+        2,
+        3,
+        1
+      ],
+      "worst_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "absolute_range": 0.001500076758655336,
+      "relative_range": 0.027062868204859286,
+      "prediction_dispersion": 0.012396007205430815,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "chronological_epe": 0.07578421822612813,
+      "best_epe": 0.07578421822612813,
+      "worst_epe": 0.09533139207036868,
+      "best_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "worst_middle_order": [
+        3,
+        1,
+        2
+      ],
+      "absolute_range": 0.019547173844240553,
+      "relative_range": 0.2579319850726028,
+      "prediction_dispersion": 0.024065102834037604,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "chronological_epe": 0.07757542496798746,
+      "best_epe": 0.0637374281290249,
+      "worst_epe": 0.07757542496798746,
+      "best_middle_order": [
+        3,
+        1,
+        2
+      ],
+      "worst_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "absolute_range": 0.013837996838962557,
+      "relative_range": 0.17838119281554685,
+      "prediction_dispersion": 0.019570884784898872,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "chronological_epe": 0.051455010996141096,
+      "best_epe": 0.048589615378222505,
+      "worst_epe": 0.056004081032555046,
+      "best_middle_order": [
+        2,
+        3,
+        1
+      ],
+      "worst_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "absolute_range": 0.007414465654332542,
+      "relative_range": 0.14409608531399584,
+      "prediction_dispersion": 0.007853439402860063,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "chronological_epe": 0.12280755678346814,
+      "best_epe": 0.12280755678346814,
+      "worst_epe": 0.13108973665931223,
+      "best_middle_order": [
+        1,
+        2,
+        3
+      ],
+      "worst_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "absolute_range": 0.008282179875844092,
+      "relative_range": 0.06744031143333523,
+      "prediction_dispersion": 0.01645319455960389,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "chronological_epe": 0.18223386247273413,
+      "best_epe": 0.18186270035019497,
+      "worst_epe": 0.19785065773620242,
+      "best_middle_order": [
+        1,
+        3,
+        2
+      ],
+      "worst_middle_order": [
+        3,
+        1,
+        2
+      ],
+      "absolute_range": 0.015987957386007445,
+      "relative_range": 0.08773318618760861,
+      "prediction_dispersion": 0.019026871811023676,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "chronological_epe": 0.0521756624235323,
+      "best_epe": 0.05101823230178771,
+      "worst_epe": 0.08693205056779912,
+      "best_middle_order": [
+        2,
+        1,
+        3
+      ],
+      "worst_middle_order": [
+        3,
+        2,
+        1
+      ],
+      "absolute_range": 0.035913818266011414,
+      "relative_range": 0.6883251040395713,
+      "prediction_dispersion": 0.030093190000696785,
+      "replay_maximum_abs_difference": 0.0,
+      "valid_pixels": 134891
+    }
+  ],
+  "order_rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.037080690255885354,
+      "scale": 0.9366383892256378,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        91,
+        92,
+        94,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03707171496353807,
+      "scale": 0.9366106415441932,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        91,
+        93,
+        92,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.033339355221628696,
+      "scale": 0.9449685906088793,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        91,
+        93,
+        94,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03336587691274537,
+      "scale": 0.9449190589721963,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        91,
+        94,
+        92,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03355881183171642,
+      "scale": 0.9401625341197886,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        91,
+        94,
+        93,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.033615058722442345,
+      "scale": 0.9401230447635007,
+      "valid_pixels": 154821
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.1243829465794976,
+      "scale": 1.097341302927681,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        171,
+        172,
+        174,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12440912767193549,
+      "scale": 1.0973327779429274,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        171,
+        173,
+        172,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12596598802492442,
+      "scale": 1.0945585547065835,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        171,
+        173,
+        174,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12585601823966783,
+      "scale": 1.0943121370766384,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        171,
+        174,
+        172,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12458054783104168,
+      "scale": 1.1028087709349486,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        171,
+        174,
+        173,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.1245803025134561,
+      "scale": 1.1027171050977451,
+      "valid_pixels": 135965
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        331,
+        332,
+        333,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04469916960115689,
+      "scale": 0.9080739059281151,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        331,
+        332,
+        334,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04471715989597548,
+      "scale": 0.9080636164083196,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        331,
+        333,
+        332,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.0445698768751639,
+      "scale": 0.9137903897692056,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        331,
+        333,
+        334,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04460395347878648,
+      "scale": 0.9136920120615398,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        331,
+        334,
+        332,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04480970526559661,
+      "scale": 0.9348132572231076,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        331,
+        334,
+        333,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04472964991959634,
+      "scale": 0.9347569502838664,
+      "valid_pixels": 150319
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        411,
+        412,
+        413,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.049371931411943015,
+      "scale": 1.0040328049092124,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        411,
+        412,
+        414,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.048828537622089344,
+      "scale": 1.0035651487743749,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        411,
+        413,
+        412,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04368492387101976,
+      "scale": 0.9837835325708089,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        411,
+        413,
+        414,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.043462901842815094,
+      "scale": 0.9836044075868208,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        411,
+        414,
+        412,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.031679178422975414,
+      "scale": 0.9550878524363373,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        411,
+        414,
+        413,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.031692813647666976,
+      "scale": 0.9550317823810612,
+      "valid_pixels": 136808
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.094671578162994,
+      "scale": 0.8911810096464313,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        91,
+        92,
+        94,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09472731916186419,
+      "scale": 0.8910192341201323,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        91,
+        93,
+        92,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09792467370050259,
+      "scale": 0.8784044846999836,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        91,
+        93,
+        94,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09800913426301355,
+      "scale": 0.8781832010193561,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        91,
+        94,
+        92,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09261253722438603,
+      "scale": 0.8638934717017525,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        91,
+        94,
+        93,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09223235942999393,
+      "scale": 0.8632288857162745,
+      "valid_pixels": 101409
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10335978635611741,
+      "scale": 0.9900115706048337,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        171,
+        172,
+        174,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10358934307148114,
+      "scale": 0.9903206959668651,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        171,
+        173,
+        172,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10344477023807708,
+      "scale": 0.9754574410364953,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        171,
+        173,
+        174,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10340489000558856,
+      "scale": 0.9749044868745579,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        171,
+        174,
+        172,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.1059411479276784,
+      "scale": 0.9624877359246315,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        171,
+        174,
+        173,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10596637854550699,
+      "scale": 0.962325015095504,
+      "valid_pixels": 147917
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        331,
+        332,
+        333,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03763709322602174,
+      "scale": 0.7997576188793908,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        331,
+        332,
+        334,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03740436742994101,
+      "scale": 0.7995547924087429,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        331,
+        333,
+        332,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03680421095028807,
+      "scale": 0.7785980580815615,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        331,
+        333,
+        334,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03653207514401925,
+      "scale": 0.7786545178473221,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        331,
+        334,
+        332,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.03541831714164966,
+      "scale": 0.7763350885781126,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        331,
+        334,
+        333,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.035393791000185755,
+      "scale": 0.7763397328584841,
+      "valid_pixels": 121318
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        411,
+        412,
+        413,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12130168678505018,
+      "scale": 0.9790332135037663,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        411,
+        412,
+        414,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12137881623262216,
+      "scale": 0.9790189991956629,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        411,
+        413,
+        412,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10825329480712051,
+      "scale": 0.9707677597855342,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        411,
+        413,
+        414,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.10828628312559598,
+      "scale": 0.9704002353909079,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        411,
+        414,
+        412,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.11653674309371394,
+      "scale": 0.9865862415140547,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        411,
+        414,
+        413,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.11668588685905786,
+      "scale": 0.9864513511795145,
+      "valid_pixels": 128613
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04865832489428495,
+      "scale": 0.965976789576904,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        91,
+        92,
+        94,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.0489023699639643,
+      "scale": 0.9664213068279159,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        91,
+        93,
+        92,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05950375971993775,
+      "scale": 0.9751970851926721,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        91,
+        93,
+        94,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05996194442941323,
+      "scale": 0.975108462513978,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        91,
+        94,
+        92,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05784859181170999,
+      "scale": 0.963992449417543,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        91,
+        94,
+        93,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05756752527395282,
+      "scale": 0.9636567079096786,
+      "valid_pixels": 138764
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.055429333923519196,
+      "scale": 0.9572863325636132,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        171,
+        172,
+        174,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05546931699765544,
+      "scale": 0.9573005249759635,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        171,
+        173,
+        172,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05440265027152234,
+      "scale": 0.9486018361193068,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        171,
+        173,
+        174,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05435104965563337,
+      "scale": 0.9488866679469816,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        171,
+        174,
+        172,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05579486970830541,
+      "scale": 0.9250535253580956,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        171,
+        174,
+        173,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05585112641428871,
+      "scale": 0.9253268970994769,
+      "valid_pixels": 146320
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        331,
+        332,
+        333,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07578421822612813,
+      "scale": 1.0253595114985583,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        331,
+        332,
+        334,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07586322788594771,
+      "scale": 1.0257936155906988,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        331,
+        333,
+        332,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.08367614539627427,
+      "scale": 1.0725528485825904,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        331,
+        333,
+        334,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.08367216412965539,
+      "scale": 1.0728624559400528,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        331,
+        334,
+        332,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09533139207036868,
+      "scale": 1.1309886010186194,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        331,
+        334,
+        333,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.09511371239006454,
+      "scale": 1.130868123204694,
+      "valid_pixels": 126912
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        411,
+        412,
+        413,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07757542496798746,
+      "scale": 1.2547190481520298,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        411,
+        412,
+        414,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07741880341184788,
+      "scale": 1.254375570498078,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        411,
+        413,
+        412,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07487373658532454,
+      "scale": 1.2310564745358494,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        411,
+        413,
+        414,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.07494218762306123,
+      "scale": 1.2310257505254927,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        411,
+        414,
+        412,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.0637374281290249,
+      "scale": 1.2046537436533347,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        411,
+        414,
+        413,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.06400593582089445,
+      "scale": 1.2041651612063213,
+      "valid_pixels": 140681
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.051455010996141096,
+      "scale": 0.8607730991701937,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        91,
+        92,
+        94,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05127207826583013,
+      "scale": 0.8605540145533281,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        91,
+        93,
+        92,
+        94,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.04870492980249076,
+      "scale": 0.8665188933934793,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        91,
+        93,
+        94,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.048589615378222505,
+      "scale": 0.8662439912370712,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        91,
+        94,
+        92,
+        93,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05594012761372773,
+      "scale": 0.8787439073668272,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        91,
+        94,
+        93,
+        92,
+        95
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.056004081032555046,
+      "scale": 0.8788228401818126,
+      "valid_pixels": 147833
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12280755678346814,
+      "scale": 1.0443161381316008,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        171,
+        172,
+        174,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12292902665041776,
+      "scale": 1.044400013788824,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        171,
+        173,
+        172,
+        174,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.1275336780848902,
+      "scale": 1.0312278110635584,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        171,
+        173,
+        174,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.12785661444258936,
+      "scale": 1.0311439272002734,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        171,
+        174,
+        172,
+        173,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.13054228356904068,
+      "scale": 1.035786292720811,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        171,
+        174,
+        173,
+        172,
+        175
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.13108973665931223,
+      "scale": 1.0356862140230714,
+      "valid_pixels": 142972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        331,
+        332,
+        333,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.18223386247273413,
+      "scale": 1.0622647596036978,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        331,
+        332,
+        334,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.18186270035019497,
+      "scale": 1.0622297634893112,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        331,
+        333,
+        332,
+        334,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.19411194336201512,
+      "scale": 1.091194156087229,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        331,
+        333,
+        334,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.19280265710196787,
+      "scale": 1.0908774248746118,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        331,
+        334,
+        332,
+        333,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.19785065773620242,
+      "scale": 1.0943885009560825,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        331,
+        334,
+        333,
+        332,
+        335
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.19761448642646798,
+      "scale": 1.0940674403503932,
+      "valid_pixels": 150972
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        2,
+        3
+      ],
+      "frame_order": [
+        411,
+        412,
+        413,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.0521756624235323,
+      "scale": 0.7708534797585058,
+      "valid_pixels": 134891
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        1,
+        3,
+        2
+      ],
+      "frame_order": [
+        411,
+        412,
+        414,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05115370877168935,
+      "scale": 0.7724439602743453,
+      "valid_pixels": 134891
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        1,
+        3
+      ],
+      "frame_order": [
+        411,
+        413,
+        412,
+        414,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05101823230178771,
+      "scale": 0.7678922607450307,
+      "valid_pixels": 134891
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        2,
+        3,
+        1
+      ],
+      "frame_order": [
+        411,
+        413,
+        414,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.05110491042124213,
+      "scale": 0.7679187528533046,
+      "valid_pixels": 134891
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        1,
+        2
+      ],
+      "frame_order": [
+        411,
+        414,
+        412,
+        413,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.08579285951924367,
+      "scale": 0.7441011990663021,
+      "valid_pixels": 134891
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "middle_order": [
+        3,
+        2,
+        1
+      ],
+      "frame_order": [
+        411,
+        414,
+        413,
+        412,
+        415
+      ],
+      "query_update": false,
+      "relative_3d_epe": 0.08693205056779912,
+      "scale": 0.7432680928892756,
+      "valid_pixels": 134891
+    }
+  ],
+  "replay_rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 95,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 175,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 335,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-03",
+      "query_frame": 415,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 95,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 175,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 335,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "query_frame": 415,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 95,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 175,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 335,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-03",
+      "query_frame": 415,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 95,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 175,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 335,
+      "maximum_abs_point_difference": 0.0
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-03",
+      "query_frame": 415,
+      "maximum_abs_point_difference": 0.0
+    }
+  ]
+}

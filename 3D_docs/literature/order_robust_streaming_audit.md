@@ -19,18 +19,21 @@ independent, while retaining a single chronological pass at deployment.
 | Temporal state regularization | SSR | Regularizes a state trajectory on a Grassmannian/self-expressive model; not fixed-evidence path independence. |
 | Long-stream memory | LONG3R, LongStream, STAC | Memory selection/compression/scaling are excluded from the proposed method. |
 | Order ensembling/global alignment | CUT3R `demo_ga.py` | The released demo constructs forward/backward permutations before global alignment. This acknowledges practical dependence but pays repeated inference and does not learn a causal order-robust update. |
+| Recurrent permutation regularization | SIRE, NeurIPS 2020; Learnable Commutative Monoids, LoG 2022 | Direct generic collision: pairwise swapped paths are already regularized toward equal latent states. A generic commutator loss is not novel. |
 
 ## Provisional novelty boundary
 
-1. define and measure the recurrent observation-update commutator;
-2. connect it to fixed-query absolute geometry under an identical input set;
-3. use adjacent-swapped offline paths as one consistency objective;
+1. measure a *geometry-decoded* recurrent commutator at a fixed query;
+2. show it explains absolute 3D risk beyond normalized latent-state distance;
+3. formulate path consistency in the geometry quotient that removes only the
+   permitted monocular scale, not arbitrary latent differences;
 4. keep chronological causal inference unchanged.
 
 The exact phrase search found no direct streaming pointmap paper with this
 conjunction. That is not proof of novelty. A passing premise must be followed by
 a broader audit of order-robust RNNs, path-independent neural operators,
-commutative aggregation, and incremental SfM before training.
+commutative aggregation, and incremental SfM before training. The generic
+commutator claim is already rejected by SIRE.
 
 ## Primary sources
 
@@ -51,3 +54,8 @@ commutative aggregation, and incremental SfM before training.
   <https://openaccess.thecvf.com/content/CVPR2026/html/Cheng_LongStream_Long-Sequence_Streaming_Autoregressive_Visual_Geometry_CVPR_2026_paper.html>
 - STAC, CVPR 2026:
   <https://openaccess.thecvf.com/content/CVPR2026/html/Wang_STAC_Plug-and-Play_Spatio-Temporal_Aware_Cache_Compression_for_Streaming_3D_Reconstruction_CVPR_2026_paper.html>
+- SIRE, *Regularizing Towards Permutation Invariance in Recurrent Models*,
+  NeurIPS 2020:
+  <https://papers.nips.cc/paper_files/paper/2020/hash/d58f36f7679f85784d8b010ff248f898-Abstract.html>
+- *Learnable Commutative Monoids for Graph Neural Networks*, LoG 2022:
+  <https://proceedings.mlr.press/v198/ong22a.html>

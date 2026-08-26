@@ -299,10 +299,13 @@ identical. Local path inconsistency is therefore a distinct source of
 long-horizon instability that can in principle be reduced by an offline
 commutator-consistency objective without changing causal inference.
 
-Status: **Selected, zero-fit premise not yet tested.** EXP-062 freezes the first
-history frame, permutes exactly the same following three frames over all six
-orders, and reads the same query without updating state. It measures query
-relative-3D error range after per-output median scale alignment, output
-dispersion, exact replay, and scene/context bootstrap. No commutator loss or
-trainable parameter is authorized until the order effect is large, consistent,
-and geometry-relevant.
+Status: **Premise supported; method-specific capacity open.** EXP-062 passed
+every gate. Identical evidence orders span 12.58% of chronological query EPE on
+average; 12/16 contexts exceed 5%; every scene has positive range; exact replay
+is bitwise; and label-free geometric output dispersion predicts metric range
+with Spearman `0.835`. Chronological order is best in only 5/16 contexts and
+worst in 4/16, so no fixed favorable ordering explains the effect. Generic RNN
+swap regularization is prior art (SIRE, NeurIPS 2020), however. EXP-063 must
+establish that a geometry-decoded commutator is more informative than latent
+state distance and that a symmetric state lies in a geometry-healthy region
+before a 3D-specific method can be proposed.

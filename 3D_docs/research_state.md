@@ -682,3 +682,15 @@ The query self-view pointmap is median-scale aligned and scored against train
 RGB-D; thus changing the first anchor, evidence payload, query, or gauge cannot
 explain the measured range. No model is fit and validation/terminal remain
 closed.
+
+EXP-062 passed all registered gates. The identical-evidence order range is
+12.58% of chronological EPE, with a positive context-bootstrap interval and
+positive scene means. A geometry-only disagreement score has Spearman `0.835`
+with absolute range, while chronological order is neither consistently best nor
+worst. H20's empirical premise is supported.
+
+The method is not yet novel or accepted. D151 records that generic adjacent-
+swap RNN regularization is occupied by SIRE (NeurIPS 2020) and commutative-
+monoid work. EXP-063 must distinguish geometry-decoded path inconsistency from
+generic latent invariance and test whether a symmetric recurrent state remains
+geometry-healthy before any trainable architecture is designed.

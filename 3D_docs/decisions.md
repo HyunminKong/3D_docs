@@ -2013,3 +2013,32 @@ dispersion score has Spearman association at least 0.5 with metric order range.
 Success authorizes a separately registered commutator-capacity experiment, not
 training or validation. Failure closes this problem without order selection or
 gate repair.
+
+## D151 — Accept order sensitivity but reject generic swap regularization novelty
+
+Date: 2026-08-26
+Status: Accepted after EXP-062 and expanded collision audit
+
+EXP-062 passed all seven gates. With the first observation and complete history
+multiset fixed, the six paths produce a mean best--worst range of `0.010050`
+relative 3D EPE, 12.58% of chronological error. The range CI is
+`[0.006498, 0.014046]`, every scene is positive, 75% of contexts exceed 5%,
+and exact chronological replay has zero difference. Label-free normalized
+query-point dispersion associates with absolute metric range at Spearman
+`0.835`. No order dominates: chronological is best five times and worst four.
+
+The expanded audit found a crucial generic collision. SIRE (*Regularizing
+Towards Permutation Invariance in Recurrent Models*, NeurIPS 2020) already uses
+the pairwise swap loss `||U_b(U_a(s))-U_a(U_b(s))||^2`; Learnable Commutative
+Monoids later formalizes the same recurrent-fold view. Therefore neither
+"commutator loss" nor "regularize an RNN toward permutation invariance" is a
+novel contribution.
+
+The remaining 3D-specific distinction is quotient/output geometry. Latent
+states may differ under internal gauge or token symmetries while decoding the
+same surface, and small latent distance need not imply accurate geometry.
+EXP-063 is the sole authorized no-fit capacity audit. It must reproduce
+EXP-062, compare a preregistered normalized latent-state commutator with the
+geometry-decoded commutator as predictors of absolute error range, and query a
+permutation-barycenter recurrent state. No regularizer, adapter, training, or
+validation is authorized yet.

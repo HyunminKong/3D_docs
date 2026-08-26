@@ -1,0 +1,27 @@
+experiment: EXP-063
+protocol_revision: v1.0
+purpose: train_only_no_fit_geometry_commutator_capacity
+seed: 6300010
+source:
+  exp062_config: configs/EXP-062_order_sensitivity_anatomy_v10.yaml
+  exp062_config_sha256: 8253b86ecebca47c94d6628e716d1bb84bc089374bf78832bc52f299c9199070
+  exp062_result: revisit3d/results/EXP-062/order_sensitivity_anatomy_v10.json
+  exp062_result_sha256: dcca047f004335d39dae264ab619518f022a947be21a43458c0dcdbb37c7ceb1
+  depth_preparation: revisit3d/results/EXP-062/selected_train_depth_registration_v10.json
+  depth_preparation_sha256: ca4a3274112ba1c4352155ee39e73982df9f093b9a30e9c5b5254087a0c0ed69
+data:
+  validation_access: false
+  terminal_access: false
+metric:
+  maximum_reproduction_difference: 0.00001
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context
+success:
+  minimum_geometry_range_spearman: 0.50
+  minimum_geometry_over_latent_spearman: 0.20
+  require_barycenter_gain_all_scenes: true
+  require_barycenter_bootstrap_lower_positive: true
+  require_barycenter_not_worse_than_chronological: true
+output:
+  result: revisit3d/results/EXP-063/geometry_commutator_capacity_v10.json

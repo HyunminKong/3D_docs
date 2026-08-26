@@ -346,3 +346,12 @@ would remain the unmodified chronological single pass. This is only a method
 sketch: EXP-062 must first establish a material absolute-geometry effect, and a
 later capacity test must show that lowering the commutator helps geometry rather
 than merely collapsing state.
+
+EXP-062 establishes the error phenomenon but not this loss as novelty. SIRE
+already regularizes adjacent swapped recurrent paths in latent/output space.
+The only defensible candidate is a 3D quotient-space version: decode both paths
+at the same non-updating query, remove only the permitted monocular scale, and
+compare visible geometry. EXP-063 first asks whether this decoded discrepancy
+is more informative than normalized latent-state distance and whether averaging
+the recurrent paths lands in a geometry-healthy state. Until both hold, even
+this geometry-specific sketch is not an accepted method.

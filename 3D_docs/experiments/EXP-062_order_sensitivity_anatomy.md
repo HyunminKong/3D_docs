@@ -2,7 +2,7 @@
 
 ## Status
 
-Preregistered; not yet run.
+Completed; all registered gates passed.
 
 ## Question
 
@@ -60,3 +60,37 @@ Failure closes H20 without selecting favorable orders or tuning these gates.
 - Depth preparation:
   `revisit3d/results/EXP-062/selected_train_depth_registration_v10.json`
 - Result: `revisit3d/results/EXP-062/order_sensitivity_anatomy_v10.json`
+
+## Result
+
+- Exact coverage: 4 scenes, 16 contexts, 96 order evaluations, 16 replays.
+- Chronological replay maximum point difference: exactly zero.
+- Mean chronological/best/worst EPE: `0.079914 / 0.076251 / 0.086301`.
+- Mean absolute order range: `0.010050`, stratified context-bootstrap 95% CI
+  `[0.006498, 0.014046]`.
+- Aggregate relative range: `12.5757%` versus registered `10%`.
+- Contexts at or above 5% range: `12/16 = 75%`, exactly meeting the gate.
+- Scene absolute ranges: chess `0.011547`, heads `0.005938`, pumpkin `0.005814`,
+  stairs `0.016900`; all positive.
+- Label-free prediction dispersion versus absolute metric range: Spearman
+  `0.8353` versus registered `0.5`.
+- Chronological order is best in 5/16 contexts and worst in 4/16.
+- Peak allocated GPU memory: 4.61 GiB.
+- Result SHA-256:
+  `dcca047f004335d39dae264ab619518f022a947be21a43458c0dcdbb37c7ceb1`.
+
+## Interpretation
+
+Changing neither evidence nor the first anchor is enough to move fixed-query
+absolute geometry materially. The strong dispersion association makes the
+effect observable without RGB-D labels. This supports H20's phenomenon.
+
+It does not make a generic swap loss novel: SIRE already introduced recurrent
+permutation regularization. The next experiment must test the narrower 3D claim
+that decoded geometry is the correct quotient-level commutator and that
+symmetrizing state does not merely collapse it.
+
+## Conclusion
+
+All registered gates pass. EXP-063 is authorized as a no-fit capacity and
+collision-boundary audit; model training and validation remain closed.
