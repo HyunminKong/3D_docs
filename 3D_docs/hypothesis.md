@@ -142,3 +142,17 @@ second current step by `4.40e-4`, with a wholly negative confidence interval
 and zero favorable scenes out of 14. Thus agreement identifies useful update
 directions, but the tested memory supplies no demonstrated information beyond
 additional current optimization. Terminal generalization is not authorized.
+
+## H12 — Information-insufficient revisit advantage
+
+When the current adjacent observation has substantially weaker geometric
+baseline than a physically corresponding past observation, transported past
+adaptation contains useful information that cannot be replaced by an equal
+additional current TTT step.
+
+Status: **Open; EXP-049 registered on train metadata.** The first controlled
+regime is low target translation (`<=0.5` scene-median steps) with a supplied
+past source of at least `1.0` step, paired within scene with a target/source
+control both at least `1.0`. The primary evidence must be a future-oracle
+advantage over second-current TTT and a positive low-versus-sufficient
+interaction. This is an oracle premise, not a deployable pose-based method.

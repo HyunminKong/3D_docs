@@ -1,0 +1,27 @@
+experiment: EXP-049
+protocol_revision: v1.0
+purpose: metadata_only_low_parallax_oracle_premise
+seed: 4900010
+data:
+  source_manifest: revisit3d/manifests/dl3dv_recurrent_revisit_train_exp039_v11.json
+  source_manifest_sha256: 539722145fb4babc9a8526cdbd56e27acb77f5e32a4cc91ab6e165e5ba5f6f05
+  metadata_template: tttLRM/data_example/dl3dv_benchmark/{scene}/nerfstudio/transforms.json
+  role: train
+  validation_access: false
+  terminal_access: false
+definition:
+  normalization: per_scene_median_nonzero_adjacent_translation
+  minimum_source_adjacent_translation: 1.0
+  maximum_low_parallax_target_translation: 0.5
+  minimum_sufficient_target_translation: 1.0
+  selection: first_pair_id_per_regime_in_shared_scene
+  pairs_per_scene_per_regime: 1
+success:
+  exact_shared_scenes: 24
+  exact_pairs: 48
+  exact_pairs_per_regime: 24
+  require_all_rgb_paths: true
+  require_metadata_only: true
+output:
+  manifest: revisit3d/manifests/exp049_low_parallax_oracle_train_v10.json
+  audit: revisit3d/results/EXP-049/low_parallax_manifest_audit_v10.json

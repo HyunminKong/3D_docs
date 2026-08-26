@@ -388,5 +388,13 @@ promoted. On the competitive recurrent carrier, the evidence supports a strong
 compact current TTT coordinate and parameter-free agreement as a way to rank
 cached directions, but not the claim that past adaptation adds value beyond
 repeating current optimization at equal step budget. D127 stops post-hoc repair
-of this branch. A next experiment requires an explicit project-level choice of
-a new primary hypothesis; there is no authorized automatic continuation.
+of this branch.
+
+D128 records the explicit choice to test one new primary premise: memory may
+have unique value only when the current observation is geometrically
+underdetermined. EXP-049 is now registered as a train-only, metadata-defined
+low-parallax oracle audit with a matched motion-sufficient control. It adds no
+module or loss. The existing memory object must beat an equal second current
+step under the future-oracle fallback and show a positive regime interaction
+before any observable router, bank redesign, validation, or terminal access is
+allowed.

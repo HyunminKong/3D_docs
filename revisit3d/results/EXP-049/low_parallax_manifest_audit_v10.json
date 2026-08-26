@@ -1,0 +1,30 @@
+{
+  "experiment": "EXP-049",
+  "stage": "metadata_only_low_parallax_manifest",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-049_low_parallax_oracle_manifest_v10.yaml",
+  "source_rows": 982,
+  "shared_scenes": 24,
+  "pairs": 48,
+  "regime_counts": {
+    "low_parallax_complementary": 24,
+    "motion_sufficient": 24
+  },
+  "manifest": "revisit3d/manifests/exp049_low_parallax_oracle_train_v10.json",
+  "manifest_sha256": "88fff50e4641026c966ea3edc880f27381ceae87e2523cd73bdf42d34bcd4d82",
+  "registered_gate": {
+    "checks": {
+      "exact_shared_scenes": true,
+      "exact_pairs": true,
+      "exact_pairs_per_regime": true,
+      "all_rgb_paths": true,
+      "metadata_only": true,
+      "train_only": true
+    },
+    "passed": true
+  },
+  "image_decoded": false,
+  "model_accessed": false,
+  "validation_accessed": false,
+  "terminal_accessed": false
+}

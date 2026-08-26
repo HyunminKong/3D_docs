@@ -1423,3 +1423,27 @@ current-only streaming TTT paper, a fundamentally different memory object with
 an oracle advantage over repeated current optimization established on train
 data first, or closure of this line. Such a choice is a new hypothesis and
 cannot be inferred from EXP-048.
+
+## D128 — Reopen only the information-insufficient oracle premise
+
+Date: 2026-08-26
+Status: Accepted by explicit project decision
+
+The project elects to test whether memory becomes uniquely useful when current
+geometry is underdetermined, rather than pivoting immediately to a current-only
+TTT paper. The first realization is natural low parallax: a target adjacent
+translation no greater than half the scene median paired with an earlier source
+whose adjacent translation is at least the median. A motion-sufficient target
+from the same scene is the fixed control.
+
+EXP-049 is train-only and oracle-first. It preserves the frozen carrier,
+EXP-043 basis, online loss, code size, step, and visual transport. Camera pose
+may define the offline regime and supplied source but may not be presented as
+online retrieval. No new head, loss, threshold, bank, or terminal access is
+authorized.
+
+The mandatory question is whether future-oracle use of the supplied past code
+beats an equal second current step with a positive interval specifically in the
+low-parallax regime, and whether this margin exceeds the sufficient-regime
+margin. Failure stops this memory object; success only establishes headroom and
+permits design of an observable insufficiency/retrieval rule.
