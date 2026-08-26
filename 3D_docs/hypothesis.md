@@ -150,9 +150,11 @@ baseline than a physically corresponding past observation, transported past
 adaptation contains useful information that cannot be replaced by an equal
 additional current TTT step.
 
-Status: **Open; EXP-049 registered on train metadata.** The first controlled
-regime is low target translation (`<=0.5` scene-median steps) with a supplied
-past source of at least `1.0` step, paired within scene with a target/source
-control both at least `1.0`. The primary evidence must be a future-oracle
-advantage over second-current TTT and a positive low-versus-sufficient
-interaction. This is an oracle premise, not a deployable pose-based method.
+Status: **Rejected for natural low parallax and the tested update-code memory.**
+EXP-049 used low target translation (`<=0.5` scene-median steps), a supplied
+past source of at least `1.0` step, and a within-scene motion-sufficient control.
+Even future-oracle application lost to second-current TTT in all 24 low-parallax
+scenes, and the low-versus-sufficient interaction was not positive. This does
+not rule out explicit past geometry under true occlusion; it does reject the
+claim that weak parallax makes the existing adaptation-direction code uniquely
+useful.

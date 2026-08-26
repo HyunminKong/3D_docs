@@ -1447,3 +1447,28 @@ beats an equal second current step with a positive interval specifically in the
 low-parallax regime, and whether this margin exceeds the sufficient-regime
 margin. Failure stops this memory object; success only establishes headroom and
 permits design of an observable insufficiency/retrieval rule.
+
+## D129 — Reject low parallax as sufficient rescue for the update-code memory
+
+Date: 2026-08-26
+Status: Accepted after EXP-049
+
+EXP-049 evaluated the frozen candidate on 24 within-scene low/sufficient pairs.
+The second current step improved every low-parallax scene. Even future-oracle
+fallback between current and supplied past memory lost to that step in all 24
+scenes by `5.18e-4`, with a wholly negative confidence interval. The registered
+regime interaction also failed, and raw past memory tied spatial shuffle.
+
+This rejects two ideas for the tested realization: weak adjacent translation
+alone is not sufficient to make the current consistency signal
+underdetermined, and an 8-D past update direction does not store complementary
+scene evidence. No observable low-parallax router, retention change, bank, or
+terminal evaluation is justified.
+
+Any continuation must change the memory object from an adaptation direction to
+explicit past evidence (for example geometry/visibility content) and must use a
+setting where that evidence is genuinely absent from the current input, such as
+controlled occlusion. That would be a new method hypothesis and a material
+architecture-scope decision. Alternatively, the project may end the memory
+paper and retain the learned coordinate as a current-only TTT result. Neither
+choice is authorized automatically by EXP-049.

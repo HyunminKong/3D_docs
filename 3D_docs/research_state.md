@@ -398,3 +398,25 @@ module or loss. The existing memory object must beat an equal second current
 step under the future-oracle fallback and show a positive regime interaction
 before any observable router, bank redesign, validation, or terminal access is
 allowed.
+
+EXP-049 completed all 48 registered train pairs. In low-parallax targets, the
+second current step improved all 24 scenes by `5.78e-4`, whereas future-oracle
+fallback between current and supplied past memory was worse than the second
+step by `5.18e-4`, CI `[-6.40e-4, -4.02e-4]`, in every scene. The registered
+low-versus-sufficient interaction failed, and raw memory tied spatial shuffle.
+
+## Updated stop condition after EXP-049
+
+The existing CUT3R 8-D adaptation-direction memory is exhausted as a paper
+candidate. It fails against repeated current optimization in ordinary full
+streams and in a metadata-defined natural low-parallax oracle regime. The
+EXP-039 terminal split remains unopened. No retrieval, routing, capacity, or
+threshold work is authorized for this object.
+
+A scientifically distinct continuation would need to store explicit past
+geometry/visibility evidence and test controlled occlusion, where the relevant
+evidence is provably removed from the current input. That is a material memory
+representation and task change. The alternative is to drop continual memory
+and assess whether the exact-meta coordinate supports a sufficiently novel
+current-only streaming TTT paper. D129 requires explicit project choice before
+either branch begins.

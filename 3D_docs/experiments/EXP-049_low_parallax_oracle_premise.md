@@ -1,6 +1,6 @@
 # EXP-049 — Low-Parallax Complementary-Memory Oracle Premise
 
-Status: Registered; model gate pending
+Status: Completed; oracle gate failed
 Purpose: Test whether past adaptation has unique value when current geometry is
 underdetermined by weak adjacent camera translation
 
@@ -56,3 +56,33 @@ memory object before a new retrieval module or terminal access.
 - Model config: `configs/EXP-049_low_parallax_oracle_premise_v10.yaml`
 - Evaluator: `revisit3d/scripts/evaluate_exp049_low_parallax_oracle_premise.py`
 - Model result: `revisit3d/results/EXP-049/low_parallax_oracle_premise_v10.json`
+
+## Result
+
+The frozen evaluator completed all 48 train pairs from 24 scenes with exact
+zero-code/readout parity and no validation or terminal access. In the
+low-parallax regime, the first current step improved consistency by
+`5.52e-4`, and the equal second current step added `5.78e-4` with CI
+`[4.45e-4, 7.33e-4]`; all 24 scenes improved.
+
+The supplied past code was future-useful over one-step current in 45.83% of
+low-parallax pairs. Even an offline future-oracle fallback that chose the
+better of one-step current and supplied memory was nevertheless worse than the
+second current step by `5.18e-4`, CI `[-6.40e-4, -4.02e-4]`, with zero of 24
+scenes favoring memory. Agreement-gated memory had the same failure. Raw memory
+did not beat a spatial shuffle: the mean was `-8.40e-6`, CI
+`[-6.89e-5, 5.82e-5]`.
+
+The low-minus-sufficient oracle interaction was `-6.46e-5`, CI
+`[-1.89e-4, 6.90e-5]`; it did not support a low-parallax-specific advantage.
+
+## Conclusion
+
+Both mandatory oracle gates fail. Weak adjacent camera translation alone does
+not make the tested online consistency objective information-insufficient:
+repeated current optimization remains effective in every scene. More
+fundamentally, the existing 8-D adaptation-direction code does not carry
+complementary geometry that can beat repeated current optimization, even with
+offline pose pairing and future-oracle application. This memory object is
+stopped; no router, bank, threshold, or terminal experiment is authorized from
+EXP-049.
