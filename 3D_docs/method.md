@@ -191,3 +191,18 @@ candidate, compute its mean cosine with the current code, and apply it only when
 positive. The decision has no trained weights or scalar hyperparameter. A
 supplied-candidate result is not yet a deployable memory system; causal bank
 construction and candidate selection remain to be established.
+
+## Fresh-data TTT3R redesign status
+
+D133 removed memory from the active redesign and selected official TTT3R
+recurrence plus one local-code consistency step. EXP-051 established exact
+native/step-wise parity and froze scene-disjoint 7Scenes roles. EXP-052 verified
+that the 8-D code contains absolute-3D-improving directions and exposes finite
+exact meta-gradients.
+
+EXP-053 rejected the first learned realization: one global 6,144-parameter
+basis trained by one exact relative-3D outer objective. Although its mean moved
+in the desired direction, its held-train-scene confidence intervals crossed
+zero and 56.25% of anchors remained harmful. There is currently no accepted v3
+model or checkpoint, and validation/terminal access is prohibited pending a new
+method decision.

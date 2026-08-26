@@ -488,3 +488,19 @@ and exact meta-gradients are finite at every anchor. D135 therefore authorizes
 one train-only shared-basis fit with the single realized relative-3D outer
 objective. Validation remains closed until its disjoint train-scene audit
 passes.
+
+EXP-053 then executed the only authorized shared-basis fit. It improved the
+held-scene mean relative to the initial basis and reduced harm, but both
+registered confidence intervals crossed zero and final harm remained 56.25%.
+No checkpoint was created. Validation and both terminal partitions remain
+unopened.
+
+## Current decision after EXP-053
+
+The fresh-data TTT3R branch has established a real, differentiable metric-
+alignment signal but rejected the minimal single-global-basis realization.
+Post-hoc learning-rate, budget, seed, or loss tuning is closed. Continuing the
+current-only paper requires a materially new, still compact update
+representation; alternatively the project must return to explicit
+geometry/visibility evidence memory under controlled missing information. This
+choice changes the method claim and requires user judgment under D136.

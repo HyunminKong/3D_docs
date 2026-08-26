@@ -1,0 +1,64 @@
+experiment: EXP-053
+protocol_revision: v1.0
+purpose: exact_metric_aligned_ttt3r_basis_train_scene_audit
+seed: 5300010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  fit_sequences:
+    - pumpkin/seq-01
+    - pumpkin/seq-02
+    - heads/seq-01
+    - heads/seq-02
+    - chess/seq-01
+    - chess/seq-02
+  audit_sequences:
+    - stairs/seq-01
+    - stairs/seq-02
+  target_frames: [31, 63, 95, 127, 159, 191, 223, 255]
+  context_frames: 4
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+plasticity:
+  code_dim: 8
+  basis_seed: 5200010
+  patch_size: 16
+  normalized_step: 0.001
+  online_loss: symmetric_canonical_point_consistency
+metric:
+  objective: median_scale_aligned_relative_3d_point_epe
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+training:
+  fitted_parameters: residual_projection_only
+  optimizer: AdamW
+  learning_rate: 0.0001
+  weight_decay: 0.0
+  epochs: 1
+  optimizer_steps: 48
+  auxiliary_losses: 0
+analysis:
+  bootstrap_draws: 20000
+  bootstrap_seed: 5300010
+success:
+  exact_fit_scenes: 3
+  exact_fit_anchors: 48
+  exact_audit_scenes: 1
+  exact_audit_anchors: 16
+  maximum_zero_code_abs_difference: 0.00001
+  maximum_final_metric_harm_fraction: 0.25
+  require_positive_final_online_loss_gain: true
+  require_positive_final_metric_gain_ci95: true
+  require_final_metric_gain_better_initial_ci95: true
+  require_final_harm_no_worse_initial: true
+output:
+  depth_preparation: revisit3d/results/EXP-053/selected_train_depth_registration_v10.json
+  checkpoint: revisit3d/checkpoints/exp053_exact_metric_aligned_ttt3r_basis_v10.pt
+  result: revisit3d/results/EXP-053/exact_metric_aligned_ttt3r_basis_v10.json

@@ -1612,3 +1612,25 @@ The first fit must use three train scenes and audit on the fourth train scene.
 It must beat the identical initial basis on absolute 3D gain, retain online-loss
 descent, and reduce metric harm before any EXP-051 validation access. Failure
 stops this fixed fit rather than tuning its learning rate or adding losses.
+
+## D136 — Reject the fixed shared-basis fit before validation
+
+Date: 2026-08-26
+Status: Accepted after EXP-053
+
+EXP-053 completed all 48 registered optimizer steps and preserved both exact
+zero-code parity and online-loss descent. It shifted held-scene mean metric
+utility in the desired direction and reduced harm, confirming that the exact
+meta-gradient is operational rather than numerically degenerate.
+
+The confirmatory gates nevertheless fail. Final metric gain and paired
+improvement intervals both cross zero, final harm is 56.25%, and one of two
+audit sequences remains negative with 75% harm. No checkpoint exists and the
+EXP-051 validation and terminal roles remain unopened.
+
+D135 prohibits learning-rate, step-count, seed, or loss repair. The single
+global 8-D basis with one-pass AdamW is therefore stopped. Further work requires
+an explicit method decision: either introduce a more expressive but still
+single-module metric-conditioned update representation with a new novelty and
+complexity audit, or end the current-only branch and return to explicit missing-
+evidence memory. Incremental optimizer tuning is not authorized.

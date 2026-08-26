@@ -181,8 +181,12 @@ so that one online self-supervised local-code step improves absolute geometry
 on top of the stronger official TTT3R recurrent update, while preserving one
 online loss, one step, and zero additional recurrent or retrieval modules.
 
-Status: **Open.** EXP-050 motivates this replacement but supplies no positive
-evidence: its CUT3R-mode coordinate optimized consistency without improving
-absolute geometry. EXP-051 first freezes unused scene-disjoint data and requires
-exact TTT3R-mode carrier parity. Metric-gradient alignment and one-step causal
-utility must pass on train data before a basis fit or validation access.
+Status: **Rejected for the fixed EXP-053 shared-basis realization; broader
+formulation open.** EXP-051 established exact TTT3R-mode carrier parity and
+EXP-052 showed that the compact code contains metric-useful directions with
+finite exact meta-gradients. EXP-053 then moved held-train-scene mean utility in
+the intended direction, but both confidence intervals crossed zero and final
+harm remained 56.25%. Thus one 48-step AdamW pass on a single global shared
+basis is not sufficient for reliable metric alignment. Validation was not
+opened. Continuing requires a newly justified training formulation or
+representation, not post-hoc tuning of this fit.
