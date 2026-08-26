@@ -1,6 +1,6 @@
 # EXP-060 — Missing-Surface Plasticity Oracle
 
-Status: Registered; train-only no-fit premise
+Status: Completed; registered gate failed
 
 Protocol revision v1.1 changes only one unsupported PyTorch API call after the
 v1.0 runner stopped on its first anchor before computing a metric or writing a
@@ -67,3 +67,38 @@ the explicit-surface result remains a separate prior-art-colliding fact.
 - Config: `configs/EXP-060_missing_surface_plasticity_oracle_v10.yaml`
 - Runner: `revisit3d/scripts/evaluate_exp060_missing_surface_plasticity_oracle.py`
 - Result: `revisit3d/results/EXP-060/missing_surface_plasticity_oracle_v10.json`
+
+Result SHA-256:
+`346dc5160824f2d641738cc8cac2cd6c913e01bad674817ffa4b155871a5747e`.
+
+## Result
+
+All common guards passed. The 16 anchor identities, evaluation supports, and
+erased baselines reproduce EXP-058 exactly. Source adaptation, the first target
+step, and the second target step each reduce their deployed consistency loss at
+every anchor, so the code-generation mechanism is active and well formed.
+
+The memory premise fails:
+
+- transported past code versus second-current gain is `4.36e-6`, CI
+  `[-4.08e-6, 1.41e-5]`;
+- the scene mean is negative in `pumpkin` and `stairs`;
+- transported code is worse on average than untransported code by `1.79e-6`;
+- transported code is worse on average than spatial shuffle by `5.63e-7`;
+- both spatial-control intervals cross zero and the all-scene gates fail;
+- past-code reuse harms 56.25% of anchors, above the 25% maximum;
+- an offline per-pixel best fallback has only `2.03e-5` mean headroom, despite
+  EXP-058 explicit surface fusion gaining `0.3940` under the same task.
+
+## Conclusion
+
+H18 is rejected for the fixed generic local code. The failure is not caused by
+an inactive online objective, missing evaluation support, or a broken current
+step. A past update generated while the surface was visible carries no robust,
+spatially specific absolute-geometry value at the erased target: correct
+transport cannot be distinguished from grid identity or payload shuffle.
+
+No learned address, bank, visibility head, step-size change, transport change,
+basis refit, or validation experiment is authorized for this object. The large
+explicit-surface result and the failed compact-code result must remain separate;
+the former cannot be presented as evidence for adaptation-experience memory.

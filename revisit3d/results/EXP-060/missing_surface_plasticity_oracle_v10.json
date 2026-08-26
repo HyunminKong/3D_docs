@@ -1,0 +1,714 @@
+{
+  "experiment": "EXP-060",
+  "stage": "train_only_no_fit_missing_surface_plasticity_oracle",
+  "protocol_revision": "v1.1_torch_nonzero_api_correction",
+  "config": "configs/EXP-060_missing_surface_plasticity_oracle_v10.yaml",
+  "means": {
+    "memory_gain_vs_second": 4.361383616924286e-06,
+    "memory_gain_vs_untransported": -1.7923302948474884e-06,
+    "memory_gain_vs_shuffle": -5.62518835067749e-07,
+    "best_memory_gain_vs_second": 2.0293984562158585e-05
+  },
+  "scene_means": {
+    "memory_gain_vs_second": {
+      "chess": 2.2158026695251465e-05,
+      "heads": 5.498528480529785e-06,
+      "pumpkin": -6.40377402305603e-06,
+      "stairs": -3.807246685028076e-06
+    },
+    "memory_gain_vs_untransported": {
+      "chess": 6.243586540222168e-06,
+      "heads": -3.5390257835388184e-06,
+      "pumpkin": -2.4978071451187134e-06,
+      "stairs": -7.37607479095459e-06
+    },
+    "memory_gain_vs_shuffle": {
+      "chess": 3.084540367126465e-06,
+      "heads": -1.6838312149047852e-06,
+      "pumpkin": 5.811452865600586e-07,
+      "stairs": -4.231929779052734e-06
+    },
+    "best_memory_gain_vs_second": {
+      "chess": 2.6911497116088867e-05,
+      "heads": 2.3014843463897705e-05,
+      "pumpkin": 1.8710270524024963e-05,
+      "stairs": 1.2539327144622803e-05
+    }
+  },
+  "intervals": {
+    "memory_gain_vs_second": {
+      "mean": 4.361383616924286e-06,
+      "ci95": [
+        -4.080426879227161e-06,
+        1.4105951413512228e-05
+      ]
+    },
+    "memory_gain_vs_untransported": {
+      "mean": -1.7923302948474884e-06,
+      "ci95": [
+        -7.712410297244786e-06,
+        3.4769182093441444e-06
+      ]
+    },
+    "memory_gain_vs_shuffle": {
+      "mean": -5.62518835067749e-07,
+      "ci95": [
+        -3.902241587638855e-06,
+        3.123655915260315e-06
+      ]
+    }
+  },
+  "memory_harm_fraction": 0.5625,
+  "peak_allocated_gib": 4.629318714141846,
+  "registered_gate": {
+    "checks": {
+      "exact_coverage": true,
+      "finite": true,
+      "evaluation_support_matches_exp058": true,
+      "erased_base_reproduces_exp058": true,
+      "source_online_step_descends_every_anchor": true,
+      "target_first_online_step_descends_every_anchor": true,
+      "target_second_online_step_descends_every_anchor": true,
+      "memory_beats_second_all_scenes": false,
+      "memory_beats_second_positive_ci": false,
+      "memory_beats_untransported_all_scenes": false,
+      "memory_beats_untransported_positive_ci": false,
+      "memory_beats_shuffle_all_scenes": false,
+      "memory_beats_shuffle_positive_ci": false,
+      "memory_harm_within_bound": false,
+      "no_parameter_fit": true,
+      "no_validation_access": true,
+      "no_terminal_access": true
+    },
+    "passed": false
+  },
+  "parameter_fit_performed": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 63,
+      "supported_pixels": 32183,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.04036078229546547,
+        "source_adapted": 0.04028945416212082,
+        "target_base": 0.0901309922337532,
+        "target_current_one": 0.09004823863506317,
+        "target_current_two": 0.08997388184070587
+      },
+      "errors": {
+        "erased": 0.18014656007289886,
+        "current_one": 0.18014660477638245,
+        "current_two": 0.18013019859790802,
+        "transported_memory": 0.18013152480125427,
+        "untransported_memory": 0.18011973798274994,
+        "shuffled_memory": 0.1801341474056244,
+        "best_memory": 0.1801070123910904
+      },
+      "alignment_scales": {
+        "erased": 0.901690661907196,
+        "current_one": 0.9016812443733215,
+        "current_two": 0.9016866087913513,
+        "transported_memory": 0.9016730189323425,
+        "untransported_memory": 0.9016881585121155,
+        "shuffled_memory": 0.9016731381416321
+      },
+      "mean_transport_distance": 0.09674420952796936,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -1.3262033462524414e-06,
+      "memory_gain_vs_untransported": -1.1786818504333496e-05,
+      "memory_gain_vs_shuffle": 2.6226043701171875e-06,
+      "best_memory_gain_vs_second": 2.3186206817626953e-05,
+      "exp058_surface_gain_vs_second": 0.13561827316880226
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 127,
+      "supported_pixels": 26413,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.02061031386256218,
+        "source_adapted": 0.020553862676024437,
+        "target_base": 0.06257224082946777,
+        "target_current_one": 0.06250014901161194,
+        "target_current_two": 0.062430862337350845
+      },
+      "errors": {
+        "erased": 0.16728760302066803,
+        "current_one": 0.16728225350379944,
+        "current_two": 0.1672731637954712,
+        "transported_memory": 0.1672734171152115,
+        "untransported_memory": 0.16727995872497559,
+        "shuffled_memory": 0.1672843098640442,
+        "best_memory": 0.16725175082683563
+      },
+      "alignment_scales": {
+        "erased": 0.9172034859657288,
+        "current_one": 0.9172012209892273,
+        "current_two": 0.917210578918457,
+        "transported_memory": 0.9172159433364868,
+        "untransported_memory": 0.9172132015228271,
+        "shuffled_memory": 0.9172143340110779
+      },
+      "mean_transport_distance": 0.06725171208381653,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -2.5331974029541016e-07,
+      "memory_gain_vs_untransported": 6.541609764099121e-06,
+      "memory_gain_vs_shuffle": 1.0892748832702637e-05,
+      "best_memory_gain_vs_second": 2.1412968635559082e-05,
+      "exp058_surface_gain_vs_second": 0.13516319915652275
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 191,
+      "supported_pixels": 32146,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.024366460740566254,
+        "source_adapted": 0.02429518848657608,
+        "target_base": 0.09170215576887131,
+        "target_current_one": 0.09164219349622726,
+        "target_current_two": 0.09158109128475189
+      },
+      "errors": {
+        "erased": 0.16344867646694183,
+        "current_one": 0.16347958147525787,
+        "current_two": 0.16347768902778625,
+        "transported_memory": 0.16350850462913513,
+        "untransported_memory": 0.16350488364696503,
+        "shuffled_memory": 0.16350296139717102,
+        "best_memory": 0.1634683609008789
+      },
+      "alignment_scales": {
+        "erased": 0.996954083442688,
+        "current_one": 0.996912956237793,
+        "current_two": 0.9969210624694824,
+        "transported_memory": 0.9969075322151184,
+        "untransported_memory": 0.9969141483306885,
+        "shuffled_memory": 0.9969135522842407
+      },
+      "mean_transport_distance": 0.09136323630809784,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -3.081560134887695e-05,
+      "memory_gain_vs_untransported": -3.6209821701049805e-06,
+      "memory_gain_vs_shuffle": -5.543231964111328e-06,
+      "best_memory_gain_vs_second": 9.328126907348633e-06,
+      "exp058_surface_gain_vs_second": 0.12447534501552582
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 255,
+      "supported_pixels": 38121,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.030191196128726006,
+        "source_adapted": 0.030126703903079033,
+        "target_base": 0.04875557869672775,
+        "target_current_one": 0.0486910454928875,
+        "target_current_two": 0.04863225668668747
+      },
+      "errors": {
+        "erased": 0.10607732832431793,
+        "current_one": 0.10608228296041489,
+        "current_two": 0.10609473288059235,
+        "transported_memory": 0.10608795285224915,
+        "untransported_memory": 0.10608682781457901,
+        "shuffled_memory": 0.10608230531215668,
+        "best_memory": 0.10607381910085678
+      },
+      "alignment_scales": {
+        "erased": 1.1000709533691406,
+        "current_one": 1.10007643699646,
+        "current_two": 1.1000874042510986,
+        "transported_memory": 1.100082516670227,
+        "untransported_memory": 1.100069284439087,
+        "shuffled_memory": 1.1000852584838867
+      },
+      "mean_transport_distance": 0.04621877893805504,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 6.780028343200684e-06,
+      "memory_gain_vs_untransported": -1.125037670135498e-06,
+      "memory_gain_vs_shuffle": -5.647540092468262e-06,
+      "best_memory_gain_vs_second": 2.0913779735565186e-05,
+      "exp058_surface_gain_vs_second": 0.03891754895448685
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 63,
+      "supported_pixels": 33185,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.02124677412211895,
+        "source_adapted": 0.02122054621577263,
+        "target_base": 0.06120189279317856,
+        "target_current_one": 0.06117171049118042,
+        "target_current_two": 0.06114242970943451
+      },
+      "errors": {
+        "erased": 0.490549772977829,
+        "current_one": 0.49055811762809753,
+        "current_two": 0.49056923389434814,
+        "transported_memory": 0.4905509948730469,
+        "untransported_memory": 0.4905441701412201,
+        "shuffled_memory": 0.4905449151992798,
+        "best_memory": 0.49053555727005005
+      },
+      "alignment_scales": {
+        "erased": 0.966908872127533,
+        "current_one": 0.9668688178062439,
+        "current_two": 0.9668529033660889,
+        "transported_memory": 0.9668694734573364,
+        "untransported_memory": 0.9668743014335632,
+        "shuffled_memory": 0.9668757319450378
+      },
+      "mean_transport_distance": 0.08176209032535553,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 1.823902130126953e-05,
+      "memory_gain_vs_untransported": -6.8247318267822266e-06,
+      "memory_gain_vs_shuffle": -6.079673767089844e-06,
+      "best_memory_gain_vs_second": 3.36766242980957e-05,
+      "exp058_surface_gain_vs_second": 0.18229198455810547
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 127,
+      "supported_pixels": 42491,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.014452129602432251,
+        "source_adapted": 0.014416063204407692,
+        "target_base": 0.05750589445233345,
+        "target_current_one": 0.05747782438993454,
+        "target_current_two": 0.05744842439889908
+      },
+      "errors": {
+        "erased": 0.5726625919342041,
+        "current_one": 0.5726670622825623,
+        "current_two": 0.5726672410964966,
+        "transported_memory": 0.5726684927940369,
+        "untransported_memory": 0.5726732611656189,
+        "shuffled_memory": 0.5726643204689026,
+        "best_memory": 0.5726518034934998
+      },
+      "alignment_scales": {
+        "erased": 0.8728694319725037,
+        "current_one": 0.8728651404380798,
+        "current_two": 0.8728703856468201,
+        "transported_memory": 0.8728597164154053,
+        "untransported_memory": 0.8728691339492798,
+        "shuffled_memory": 0.8728635907173157
+      },
+      "mean_transport_distance": 0.08397781103849411,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -1.2516975402832031e-06,
+      "memory_gain_vs_untransported": 4.76837158203125e-06,
+      "memory_gain_vs_shuffle": -4.172325134277344e-06,
+      "best_memory_gain_vs_second": 1.5437602996826172e-05,
+      "exp058_surface_gain_vs_second": 0.4982392340898514
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 191,
+      "supported_pixels": 46544,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.008809172548353672,
+        "source_adapted": 0.00876758061349392,
+        "target_base": 0.055354099720716476,
+        "target_current_one": 0.05532022565603256,
+        "target_current_two": 0.05529213696718216
+      },
+      "errors": {
+        "erased": 0.3328079283237457,
+        "current_one": 0.3328073024749756,
+        "current_two": 0.33280080556869507,
+        "transported_memory": 0.33281177282333374,
+        "untransported_memory": 0.3328115940093994,
+        "shuffled_memory": 0.3328225314617157,
+        "best_memory": 0.3327844738960266
+      },
+      "alignment_scales": {
+        "erased": 0.8381709456443787,
+        "current_one": 0.8381649851799011,
+        "current_two": 0.8381604552268982,
+        "transported_memory": 0.8381601572036743,
+        "untransported_memory": 0.8381524085998535,
+        "shuffled_memory": 0.83814537525177
+      },
+      "mean_transport_distance": 0.06590142101049423,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -1.0967254638671875e-05,
+      "memory_gain_vs_untransported": -1.7881393432617188e-07,
+      "memory_gain_vs_shuffle": 1.0758638381958008e-05,
+      "best_memory_gain_vs_second": 1.633167266845703e-05,
+      "exp058_surface_gain_vs_second": 0.1970396786928177
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 255,
+      "supported_pixels": 42396,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.01901629939675331,
+        "source_adapted": 0.01896495558321476,
+        "target_base": 0.0649619847536087,
+        "target_current_one": 0.06491954624652863,
+        "target_current_two": 0.06487394869327545
+      },
+      "errors": {
+        "erased": 0.4110153317451477,
+        "current_one": 0.41103237867355347,
+        "current_two": 0.4110441207885742,
+        "transported_memory": 0.4110281467437744,
+        "untransported_memory": 0.41101622581481934,
+        "shuffled_memory": 0.4110209047794342,
+        "best_memory": 0.411017507314682
+      },
+      "alignment_scales": {
+        "erased": 0.7998799085617065,
+        "current_one": 0.7998781204223633,
+        "current_two": 0.799875020980835,
+        "transported_memory": 0.7998813986778259,
+        "untransported_memory": 0.7998884320259094,
+        "shuffled_memory": 0.7998875975608826
+      },
+      "mean_transport_distance": 0.08019962906837463,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 1.5974044799804688e-05,
+      "memory_gain_vs_untransported": -1.1920928955078125e-05,
+      "memory_gain_vs_shuffle": -7.241964340209961e-06,
+      "best_memory_gain_vs_second": 2.6613473892211914e-05,
+      "exp058_surface_gain_vs_second": 0.3032720163464546
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 63,
+      "supported_pixels": 42533,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.08088506758213043,
+        "source_adapted": 0.08081665635108948,
+        "target_base": 0.270219624042511,
+        "target_current_one": 0.2701292634010315,
+        "target_current_two": 0.2700546681880951
+      },
+      "errors": {
+        "erased": 0.8802392482757568,
+        "current_one": 0.880241334438324,
+        "current_two": 0.8802491426467896,
+        "transported_memory": 0.8802493214607239,
+        "untransported_memory": 0.8802384734153748,
+        "shuffled_memory": 0.8802493214607239,
+        "best_memory": 0.8802414536476135
+      },
+      "alignment_scales": {
+        "erased": 0.9133550524711609,
+        "current_one": 0.9133661389350891,
+        "current_two": 0.9133672118186951,
+        "transported_memory": 0.9133678674697876,
+        "untransported_memory": 0.9133913516998291,
+        "shuffled_memory": 0.9133678674697876
+      },
+      "mean_transport_distance": 0.4006595313549042,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -1.7881393432617188e-07,
+      "memory_gain_vs_untransported": -1.0848045349121094e-05,
+      "memory_gain_vs_shuffle": 0.0,
+      "best_memory_gain_vs_second": 7.68899917602539e-06,
+      "exp058_surface_gain_vs_second": 0.7864004597067833
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 127,
+      "supported_pixels": 44110,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.03858627751469612,
+        "source_adapted": 0.03852640837430954,
+        "target_base": 0.15958261489868164,
+        "target_current_one": 0.15950459241867065,
+        "target_current_two": 0.1594369113445282
+      },
+      "errors": {
+        "erased": 0.8872132301330566,
+        "current_one": 0.8872174024581909,
+        "current_two": 0.8872197270393372,
+        "transported_memory": 0.8872035145759583,
+        "untransported_memory": 0.8872146010398865,
+        "shuffled_memory": 0.8872031569480896,
+        "best_memory": 0.887202262878418
+      },
+      "alignment_scales": {
+        "erased": 0.9328997135162354,
+        "current_one": 0.9328941702842712,
+        "current_two": 0.9328835010528564,
+        "transported_memory": 0.9329168200492859,
+        "untransported_memory": 0.9328954815864563,
+        "shuffled_memory": 0.9329217076301575
+      },
+      "mean_transport_distance": 0.24253007769584656,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 1.621246337890625e-05,
+      "memory_gain_vs_untransported": 1.1086463928222656e-05,
+      "memory_gain_vs_shuffle": -3.5762786865234375e-07,
+      "best_memory_gain_vs_second": 1.7464160919189453e-05,
+      "exp058_surface_gain_vs_second": 0.69190314412117
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 191,
+      "supported_pixels": 37932,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.03034740313887596,
+        "source_adapted": 0.030294213443994522,
+        "target_base": 0.11336646974086761,
+        "target_current_one": 0.11329800635576248,
+        "target_current_two": 0.1132349818944931
+      },
+      "errors": {
+        "erased": 0.6678566336631775,
+        "current_one": 0.6678910851478577,
+        "current_two": 0.6679031252861023,
+        "transported_memory": 0.6678453087806702,
+        "untransported_memory": 0.6678600907325745,
+        "shuffled_memory": 0.6678609251976013,
+        "best_memory": 0.6678442358970642
+      },
+      "alignment_scales": {
+        "erased": 0.9732454419136047,
+        "current_one": 0.9732074737548828,
+        "current_two": 0.9732150435447693,
+        "transported_memory": 0.9732663035392761,
+        "untransported_memory": 0.9732609391212463,
+        "shuffled_memory": 0.9732260704040527
+      },
+      "mean_transport_distance": 0.16410255432128906,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 5.7816505432128906e-05,
+      "memory_gain_vs_untransported": 1.4781951904296875e-05,
+      "memory_gain_vs_shuffle": 1.5616416931152344e-05,
+      "best_memory_gain_vs_second": 5.888938903808594e-05,
+      "exp058_surface_gain_vs_second": 0.627529188990593
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 255,
+      "supported_pixels": 46498,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.03139067441225052,
+        "source_adapted": 0.03133655712008476,
+        "target_base": 0.11295153200626373,
+        "target_current_one": 0.11290234327316284,
+        "target_current_two": 0.11284706741571426
+      },
+      "errors": {
+        "erased": 0.6592701077461243,
+        "current_one": 0.6592751741409302,
+        "current_two": 0.6592805981636047,
+        "transported_memory": 0.6592658162117004,
+        "untransported_memory": 0.6592757701873779,
+        "shuffled_memory": 0.6592628955841064,
+        "best_memory": 0.6592569947242737
+      },
+      "alignment_scales": {
+        "erased": 0.9158891439437866,
+        "current_one": 0.9158881306648254,
+        "current_two": 0.9158828258514404,
+        "transported_memory": 0.915865957736969,
+        "untransported_memory": 0.9158576130867004,
+        "shuffled_memory": 0.9158750772476196
+      },
+      "mean_transport_distance": 0.16409604251384735,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 1.4781951904296875e-05,
+      "memory_gain_vs_untransported": 9.953975677490234e-06,
+      "memory_gain_vs_shuffle": -2.9206275939941406e-06,
+      "best_memory_gain_vs_second": 2.3603439331054688e-05,
+      "exp058_surface_gain_vs_second": 0.5684287548065186
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 63,
+      "supported_pixels": 43545,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.041370198130607605,
+        "source_adapted": 0.04131604731082916,
+        "target_base": 0.13086558878421783,
+        "target_current_one": 0.13080844283103943,
+        "target_current_two": 0.13075385987758636
+      },
+      "errors": {
+        "erased": 0.6117441654205322,
+        "current_one": 0.6117647886276245,
+        "current_two": 0.6117668151855469,
+        "transported_memory": 0.6117598414421082,
+        "untransported_memory": 0.6117563247680664,
+        "shuffled_memory": 0.6117573976516724,
+        "best_memory": 0.6117491722106934
+      },
+      "alignment_scales": {
+        "erased": 0.8161082863807678,
+        "current_one": 0.8160859942436218,
+        "current_two": 0.8160948157310486,
+        "transported_memory": 0.8160943388938904,
+        "untransported_memory": 0.8161046504974365,
+        "shuffled_memory": 0.8160958886146545
+      },
+      "mean_transport_distance": 0.16682331264019012,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": 6.973743438720703e-06,
+      "memory_gain_vs_untransported": -3.516674041748047e-06,
+      "memory_gain_vs_shuffle": -2.4437904357910156e-06,
+      "best_memory_gain_vs_second": 1.7642974853515625e-05,
+      "exp058_surface_gain_vs_second": 0.5611052848398685
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 127,
+      "supported_pixels": 41571,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.0653352290391922,
+        "source_adapted": 0.06525654345750809,
+        "target_base": 0.16526609659194946,
+        "target_current_one": 0.16520078480243683,
+        "target_current_two": 0.1651453971862793
+      },
+      "errors": {
+        "erased": 0.46898096799850464,
+        "current_one": 0.4689735472202301,
+        "current_two": 0.46894967555999756,
+        "transported_memory": 0.4689539670944214,
+        "untransported_memory": 0.46896082162857056,
+        "shuffled_memory": 0.4689517319202423,
+        "best_memory": 0.4689348340034485
+      },
+      "alignment_scales": {
+        "erased": 0.755843460559845,
+        "current_one": 0.755841076374054,
+        "current_two": 0.7558565139770508,
+        "transported_memory": 0.7558664083480835,
+        "untransported_memory": 0.7558724880218506,
+        "shuffled_memory": 0.7558673620223999
+      },
+      "mean_transport_distance": 0.20597855746746063,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -4.291534423828125e-06,
+      "memory_gain_vs_untransported": 6.854534149169922e-06,
+      "memory_gain_vs_shuffle": -2.2351741790771484e-06,
+      "best_memory_gain_vs_second": 1.4841556549072266e-05,
+      "exp058_surface_gain_vs_second": 0.43141215294599533
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 191,
+      "supported_pixels": 41072,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.03060487098991871,
+        "source_adapted": 0.03054610639810562,
+        "target_base": 0.14684447646141052,
+        "target_current_one": 0.14678043127059937,
+        "target_current_two": 0.14672507345676422
+      },
+      "errors": {
+        "erased": 0.6435950398445129,
+        "current_one": 0.6435917615890503,
+        "current_two": 0.6435951590538025,
+        "transported_memory": 0.6436110138893127,
+        "untransported_memory": 0.6435783505439758,
+        "shuffled_memory": 0.6435985565185547,
+        "best_memory": 0.643588662147522
+      },
+      "alignment_scales": {
+        "erased": 0.8976364135742188,
+        "current_one": 0.8976423740386963,
+        "current_two": 0.8976240158081055,
+        "transported_memory": 0.8976299166679382,
+        "untransported_memory": 0.897654116153717,
+        "shuffled_memory": 0.8976460099220276
+      },
+      "mean_transport_distance": 0.20321087539196014,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -1.5854835510253906e-05,
+      "memory_gain_vs_untransported": -3.266334533691406e-05,
+      "memory_gain_vs_shuffle": -1.245737075805664e-05,
+      "best_memory_gain_vs_second": 6.496906280517578e-06,
+      "exp058_surface_gain_vs_second": 0.5939251221716404
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 255,
+      "supported_pixels": 39639,
+      "supported_pixels_match_exp058": true,
+      "erased_reproduction_abs": 0.0,
+      "online_losses": {
+        "source_base": 0.03723476827144623,
+        "source_adapted": 0.037183478474617004,
+        "target_base": 0.12415128946304321,
+        "target_current_one": 0.12411196529865265,
+        "target_current_two": 0.12408566474914551
+      },
+      "errors": {
+        "erased": 0.4903014004230499,
+        "current_one": 0.49029669165611267,
+        "current_two": 0.49029749631881714,
+        "transported_memory": 0.4902995526790619,
+        "untransported_memory": 0.49029937386512756,
+        "shuffled_memory": 0.4902997612953186,
+        "best_memory": 0.49028632044792175
+      },
+      "alignment_scales": {
+        "erased": 0.9971067905426025,
+        "current_one": 0.9971112012863159,
+        "current_two": 0.9971058368682861,
+        "transported_memory": 0.9971063733100891,
+        "untransported_memory": 0.9971154928207397,
+        "shuffled_memory": 0.99710613489151
+      },
+      "mean_transport_distance": 0.16301709413528442,
+      "masked_token_count": 192,
+      "memory_gain_vs_second": -2.0563602447509766e-06,
+      "memory_gain_vs_untransported": -1.7881393432617188e-07,
+      "memory_gain_vs_shuffle": 2.086162567138672e-07,
+      "best_memory_gain_vs_second": 1.1175870895385742e-05,
+      "exp058_surface_gain_vs_second": 0.4288356900215149
+    }
+  ]
+}

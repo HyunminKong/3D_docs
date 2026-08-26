@@ -1890,3 +1890,30 @@ threshold, or bank is added. Failure ends the current plasticity-memory object
 even in the controlled information-insufficient regime. It may not be repaired
 by changing transport, step size, basis seed, mask, or loss on these exposed
 anchors.
+
+## D146 — Reject the current adaptation object and require a paper-level pivot
+
+Date: 2026-08-26
+Status: Accepted after EXP-060
+
+EXP-060 passes every mechanism guard: all 16 rows and supports reproduce,
+erased predictions are exact, and source plus both current local steps descend
+their online consistency objectives at every anchor. The registered memory
+gates all fail. Transported-code gain over second current is `4.36e-6` with an
+interval crossing zero, two scene means are negative, spatial and untransported
+controls are not beaten, and harm is 56.25%.
+
+This rules out the fixed generic 8-D adaptation record even in the controlled
+regime most favorable to complementary memory. Together with EXP-048 and
+EXP-049, it prevents incremental repair by routing, retention, pose, transport,
+step size, mask, basis seed, or loss. EXP-051 validation and all terminal roles
+remain unopened.
+
+The explicit-surface effect from EXP-057/058 is approximately five orders of
+magnitude larger, but it is a different memory object: scene content rather
+than adaptation experience. Because generic explicit geometry memory is already
+occupied, continuing requires an explicit claim-level pivot and fresh novelty
+design around information sufficiency or controlled missing observations. The
+alternative is to close this line and choose another compact paper problem.
+This decision changes the paper contribution and therefore requires user
+judgment before EXP-061 or any architecture is registered.

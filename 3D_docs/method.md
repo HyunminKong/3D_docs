@@ -302,3 +302,11 @@ nearest-3D transport moves the code, a supplied erasure mask zeros non-missing
 target patches, and the result is added to one current code step. No explicit
 surface payload is read out. Until this beats equal current compute and spatial
 controls, there is no active adaptation-memory architecture.
+
+EXP-060 failed that prerequisite. The online code steps all descend their
+deployed consistency objectives, but transported past code does not reliably
+improve absolute geometry, does not beat untransported or shuffled payloads,
+and harms 56.25% of anchors. This plasticity object is stopped before address,
+bank, validation, or training. There remains no active paper method. The only
+strong missing-evidence object is the explicit predicted surface in EXP-057/058,
+which is content memory and cannot inherit the adaptation-memory claim.

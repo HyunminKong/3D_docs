@@ -256,10 +256,12 @@ experience. After predicted-3D transport to a later observation where the same
 surface evidence is erased, that code improves target geometry beyond both an
 equal second current local-TTT step and a spatially shuffled identical code.
 
-Status: **Open; EXP-060 registered.** This is deliberately stronger and more
-specific than H17. H17 establishes that storing the surface itself adds missing
-information, which is expected and overlaps explicit 3D-memory prior art.
-H18 asks whether the compact update experience that motivated this project
-also carries unique value. The first test uses an oracle-paired immediately
-previous source and a fixed generic code; it fits no method and cannot establish
-retrieval or generalization.
+Status: **Rejected for the fixed generic local code.** EXP-060 reproduced the
+same 16 anchors and scoring support exactly, and source/current consistency
+steps descended at every anchor. Nevertheless transported past code gained only
+`4.36e-6` over second-current TTT with CI `[-4.08e-6, 1.41e-5]`, was negative
+in two of four scenes, lost on average to both untransported and spatially
+shuffled controls, and harmed 56.25% of anchors. Correct spatial transport is
+therefore not observably useful. This rejects the current adaptation object,
+not the general possibility of a radically different learned representation;
+such a redesign is not authorized on these exposed anchors.

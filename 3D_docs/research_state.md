@@ -618,9 +618,33 @@ shuffle, the adaptation-memory claim should be rejected for this controlled
 missing-information setting rather than replaced silently by generic geometry
 fusion.
 
-H18 and EXP-060 now formalize that decision. The experiment stores only one
+H18 and EXP-060 formalized that decision. The experiment stores only one
 8-D per-patch update code from the last clean observation, transports it by
 predicted canonical 3D, and applies it inside the known erased patch region on
 top of one current step. It must beat a second current step, untransported code,
 and spatial shuffle before any address, bank, validation, or learned component
 is authorized.
+
+EXP-060 failed decisively. All source and current online steps descend at every
+anchor, and data/support/base prediction reproduce exactly, but transported
+past code gains only `4.36e-6` over the second current step with CI
+`[-4.08e-6, 1.41e-5]`. It is negative in two scenes, loses on average to both
+untransported and shuffled controls, and harms 56.25% of anchors. The tiny
+offline best fallback (`2.03e-5`) is also negligible beside EXP-058's `0.3940`
+explicit-surface gain.
+
+## Current project decision after EXP-060
+
+The original compact adaptation-experience object is exhausted on the
+competitive carrier: it failed ordinary streams, low-parallax oracle tests,
+and now controlled missing current evidence. No router, bank, threshold,
+transport, basis, or validation work is authorized for it.
+
+Explicit predicted surface memory remains strongly useful under controlled
+erasure and works with predicted pose/native scale, but a generic stored-surface
+method collides with Point3R, LONG3R, Mem3R, and persistent mapping. Advancing
+that branch requires an explicit paper-level claim change toward an
+information-sufficiency/controlled-missing-observation problem plus a fresh
+novelty design. Otherwise this line should close and a different compact paper
+problem should be selected. This is now a user-judgment boundary; neither path
+may be inferred from the failed adaptation hypothesis.
