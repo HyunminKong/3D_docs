@@ -1,0 +1,48 @@
+experiment: EXP-066
+protocol_revision: v1.0
+purpose: train_only_zero_fit_ray_query_evidence_provenance
+seed: 6600010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-03, heads/seq-01, chess/seq-03, stairs/seq-03]
+  query_frames: [135, 235, 375, 475]
+  frame_offsets: [-40, -30, -20, -10, 0]
+  history_views: 4
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: cut3r
+  resolution: [512, 384]
+  patch_size: 16
+support:
+  absolute_depth_tolerance_m: 0.05
+  relative_depth_tolerance: 0.05
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+  minimum_valid_patches: 256
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context_stratified_by_scene
+success:
+  exact_scenes: 4
+  exact_contexts: 16
+  maximum_replay_abs_difference: 0.00001
+  minimum_scene_supported_fraction: 0.05
+  minimum_scene_unsupported_fraction: 0.05
+  minimum_relative_error_gap: 0.20
+  minimum_provenance_error_spearman: 0.30
+  minimum_spearman_advantage_over_confidence: 0.10
+  minimum_relative_aurc_gain: 0.05
+  require_all_scene_error_gaps_positive: true
+  require_all_scene_spearman_positive: true
+  require_all_scene_aurc_gains_positive: true
+  require_bootstrap_lower_positive: true
+output:
+  depth_preparation: revisit3d/results/EXP-066/selected_train_depth_registration_v10.json
+  result: revisit3d/results/EXP-066/ray_query_provenance_anatomy_v10.json

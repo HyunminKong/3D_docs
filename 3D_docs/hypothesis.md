@@ -352,3 +352,23 @@ missing-periphery control, and loses to the latter in `stairs`. The immediate
 effect is significant, but persistent camera-coordinate contamination is too
 small and confounded to justify a method. No stronger zoom, context selection,
 camera-prior encoder, or calibration gate is authorized under H21.
+
+## H22 — Causal observation support predicts ray-query geometry risk
+
+After a recurrent pointmap carrier has consumed only a causal RGB history, an
+RGB-free camera-ray query contains geometry supported by surfaces visible in
+the history and geometry completed without direct historical evidence.
+Unsupported patches should have higher absolute 3D error, and their risk should
+be observable from predicted history/query geometry beyond native confidence.
+
+The fixed zero-fit provenance signal is nearest predicted 3D distance from a
+query patch to the union of predicted history pointmaps, normalized by predicted
+query range. Ground-truth visibility is only an offline label. The camera pose
+used to form the ray query is controlled oracle input and cannot be described
+as deployable pose estimation.
+
+Status: **Registered, not yet tested.** EXP-066 must establish adequate
+supported/unsupported coverage, a positive error gap, cross-scene risk
+association beyond native confidence, and lower risk-coverage area when the
+two rankings are fused equally. Failure rejects this fixed signal and prohibits
+head fitting or alternate-distance repair on the exposed contexts.

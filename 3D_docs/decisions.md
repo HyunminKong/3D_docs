@@ -2154,3 +2154,29 @@ method candidate and retained only as a negative robustness audit.
 The next paper candidate must not be another generic state-update reliability
 variant. It requires a fresh problem-level audit and a no-fit premise with a
 directly identifiable geometric target.
+
+## D157 — Select causal ray-query evidence provenance and register EXP-066
+
+Date: 2026-08-26
+Status: Accepted before EXP-066
+
+After H21, rolling shutter was considered but rejected before an EXP: available
+paired data and existing row-wise correction methods would require a new
+sensor/data/training scope and would not preserve the compact paper target. The
+next candidate instead uses a native but under-characterized CUT3R mode: RGB
+observations write recurrent state, while a later ray-only query reads geometry
+without seeing the query image.
+
+The literature audit excludes generic uncertainty, explicit memory, active
+view planning, and confidence calibration as the central claim. EXP-066 asks a
+smaller causal question: does the frozen carrier distinguish historically
+supported geometry from prior-only completion, and can a parameter-free
+predicted 3D support distance rank its error beyond native confidence?
+
+The protocol uses 16 fresh train contexts, four history views, one later
+ray-only non-writing query, offline GT visibility labels, and no fitting. One
+fixed equal-rank fusion tests complementary information. Known query rays are a
+controlled oracle coordinate and must not be reported as deployable camera
+prediction. Failure stops the signal without alternate distances, thresholds,
+feature engineering, or a learned head. Success only authorizes a broader
+baseline/capacity decision; it does not accept a method.

@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-064 completed; H20 method candidate closed)
+Last updated: 2026-08-26 (H22/EXP-066 registered; no active method)
 
 ## First objective
 
@@ -739,3 +739,20 @@ gates. Its persistent penalty is positive on average in all scenes but only
 1.48% of clean EPE, with CI crossing zero and 68.75% positive contexts. It does
 not significantly beat resampling or missing-periphery controls. D156 closes
 H21 without stronger zoom or method fitting. There is again no active model.
+
+## Active evidence-provenance premise
+
+D157 rejects rolling shutter as the immediate compact branch and selects H22
+after a separate collision audit. CUT3R can answer a future camera ray query
+from its persistent RGB history without query RGB, but its output does not state
+which surfaces are grounded in that causal history rather than completed from a
+prior. This is distinct from generic uncertainty only if historical observation
+support predicts absolute error beyond native confidence.
+
+EXP-066 is the next mandatory zero-fit experiment. It uses 16 fresh train-only
+contexts, four past RGB writes, and one non-writing ray-only query. Offline GT
+visibility supplies the support label. The only predicted provenance signal is
+normalized nearest distance to prior predicted pointmaps; the only fusion is an
+equal mean of ranks with native confidence. No head, loss, threshold, memory,
+or validation/terminal access is authorized. Known query rays are controlled
+oracle conditioning, not deployable pose estimation.
