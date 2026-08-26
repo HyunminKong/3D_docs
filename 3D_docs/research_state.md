@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-055 token-only conditioner rejected)
+Last updated: 2026-08-26 (EXP-056 pairwise-residual observability registered)
 
 ## First objective
 
@@ -546,3 +546,10 @@ seed, joint-basis, or loss repair is closed under D139. Continuing requires user
 judgment between one newly audited pairwise geometry-residual conditioner and a
 return to explicit missing-evidence memory. There is no active paper-ready
 model.
+
+The user selected the pairwise-geometry option. D140 keeps this as a no-method-
+checkpoint diagnostic: EXP-056 adds only a normalized current/previous
+predicted-point residual to the condition input and evaluates leave-one-scene-
+out moment-linear scores on the same 16 exposed train anchors. It must beat
+token-only, global, and spatially shuffled-residual controls on realized metric
+utility before another end-to-end fit can be designed.

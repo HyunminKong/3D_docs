@@ -1718,3 +1718,33 @@ geometry-conditioned tangent module that observes source-safe current/previous
 geometric residual evidence and undergoes a fresh learned-optimizer collision
 audit, or (b) closing current-only TTT and returning to explicit missing-
 evidence memory. No validation or terminal access is authorized.
+
+## D140 — Audit pairwise geometry residual observability before another fit
+
+Date: 2026-08-26
+Status: Accepted by explicit user choice before EXP-056
+
+The project selects D139 option (a), but does not authorize another end-to-end
+fit yet. EXP-056 first asks whether an online-available geometric signal can
+explain the oracle opportunity that current tokens failed to learn.
+
+For each current patch, the only new input is the residual to its nearest point
+in the previous predicted canonical point map: a three-dimensional residual
+normalized by the anchor median distance plus one log relative-distance
+scalar. No pose, RGB-D label, future frame, gradient, memory, confidence head,
+or new online loss enters the feature. The previous prediction is already the
+deployed consistency-loss input.
+
+The diagnostic uses leave-one-scene-out moment-linear predictors of the
+offline sign label `g_online * g_metric > 0`. It compares current token,
+geometry residual, their concatenation, and a spatially shuffled residual.
+Each fold standardizes only its three training scenes; score RMS supplies the
+only scale normalization. These are diagnostic OOF weights, not a deployable
+checkpoint or a new auxiliary training objective.
+
+To advance, the combined signal must improve realized one-step relative-3D
+utility over global, token-only, and shuffled-residual controls in every scene,
+with positive paired anchor-bootstrap intervals, at most 25% harm, and online
+descent in every scene. Failure rejects pairwise residual observability for
+this minimal linear realization without optimizer or feature tuning. Success
+authorizes design of one final conditioner-training protocol but not validation.

@@ -235,3 +235,20 @@ nontrivial scales yet did not obtain positive absolute-3D or paired intervals,
 did not meet the harm gate, and did not beat the capacity-matched learned global
 basis. There is still no accepted v3 model or checkpoint. The equation above
 is an oracle-motivated failed candidate, not the current method.
+
+## Pairwise-residual observability candidate
+
+D140 authorizes only a train-only diagnostic extension of the condition input.
+For current canonical patch point `p_n`, let `p^-_{j(n)}` be its nearest point
+in the previous predicted canonical point map and let `m` be the median nearest
+distance. The four new source-safe scalars are
+
+\[
+q_n=\left[(p_n-p^-_{j(n)})/m,\;\log(1+\|p_n-p^-_{j(n)}\|/m)\right].
+\]
+
+EXP-056 tests a single linear axis score over `[LN(h_n), q_n]` against
+token-only, residual-only, global, and spatial-shuffle controls using
+leave-one-scene-out offline oracle labels. This predictor is not an accepted
+head and is not saved for deployment. It may justify a later one-module fit
+only if its actual geometry update, not merely its mask accuracy, passes.
