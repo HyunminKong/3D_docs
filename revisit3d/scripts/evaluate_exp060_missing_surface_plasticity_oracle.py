@@ -260,7 +260,9 @@ def main() -> None:
             untransported_masked, _ = _masked_patch_code(
                 source_code, erased_mask, patch_size
             )
-            masked_indices = torch.flatnonzero(token_mask[0, :, 0])
+            masked_indices = torch.nonzero(
+                token_mask[0, :, 0], as_tuple=False
+            ).flatten()
             generator = torch.Generator(device="cpu").manual_seed(
                 int(config["controls"]["spatial_shuffle_seed"]) + len(rows)
             )

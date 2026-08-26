@@ -2,6 +2,12 @@
 
 Status: Registered; train-only no-fit premise
 
+Protocol revision v1.1 changes only one unsupported PyTorch API call after the
+v1.0 runner stopped on its first anchor before computing a metric or writing a
+result. `torch.flatnonzero(mask)` is replaced by the equivalent supported
+`torch.nonzero(mask).flatten()`; method, data, randomness, controls, and gates
+are unchanged.
+
 ## Question
 
 When current evidence is deliberately removed, does a spatially local TTT code

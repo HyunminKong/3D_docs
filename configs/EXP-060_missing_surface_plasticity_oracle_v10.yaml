@@ -1,5 +1,5 @@
 experiment: EXP-060
-protocol_revision: v1.0
+protocol_revision: v1.1_torch_nonzero_api_correction
 purpose: train_only_no_fit_missing_surface_plasticity_oracle
 # Match EXP-058's immutable data/carrier seed; control randomness is separate.
 seed: 5700010
