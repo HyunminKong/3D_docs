@@ -1398,3 +1398,28 @@ current TTT step. EXP-048 must compare those alternatives at equal normalized
 step size on the exact full-stream protocol. No terminal access or memory claim
 is authorized until FIFO memory beats that control with a positive confidence
 bound.
+
+## D127 — Stop terminal promotion of competitive-carrier adaptation memory
+
+Date: 2026-08-26
+Status: Accepted after EXP-048
+
+EXP-048 completed the exact 4,532-frame development stream and rejected the
+decisive novelty premise. FIFO-16 memory improved one-step current TTT and beat
+appearance/random addressing, but an equal normalized second current step was
+better by `4.40e-4`, with a wholly negative 95% scene-bootstrap interval for
+FIFO-minus-second-current and zero favorable scenes out of 14.
+
+The current result is therefore cached local optimization, not evidence that
+past adaptation contributes information unavailable in the present
+observation. The EXP-039 terminal split remains unopened. No capacity,
+retention, threshold, transport, step-size, or loss repair may be selected on
+the exposed validation streams, and no terminal evaluation of this candidate
+is authorized.
+
+The compact competitive-carrier branch is stopped as a continual-memory paper
+candidate. Continuing requires an explicit project-level choice among a
+current-only streaming TTT paper, a fundamentally different memory object with
+an oracle advantage over repeated current optimization established on train
+data first, or closure of this line. Such a choice is a new hypothesis and
+cannot be inferred from EXP-048.

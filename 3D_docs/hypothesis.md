@@ -94,7 +94,10 @@ plasticity representation is impossible.
 - Raw source TTT directions are naturally compatible with target TTT directions on a competitive recurrent carrier.
 - One fixed-pass first-order shared basis trained only through current/revisit consistency is sufficient to make CUT3R codes robustly revisit-compatible.
 - Geometry-alignment failure should hard-reject a candidate that still has valid visual transport.
-- A second current TTT step is an equivalent replacement for memory reuse.
+- On the archived FastVGGT mechanism proof, a second current TTT step replaces
+  memory reuse. This rejection does not transfer to the competitive CUT3R
+  branch: EXP-048 found that the second current step decisively dominates
+  FIFO-16 memory there.
 - Generic DINOv2 place compatibility is a causal adaptation-utility address.
 - Past utility history is a reliable learned eviction priority at capacity 8.
 - Capacity 8 is a general sufficient bound.
@@ -130,12 +133,12 @@ remains open.
 Among multiple causal memory records, maximum current/memory code agreement
 selects more useful adaptation than frozen appearance or random addressing.
 
-Status: **Supported on curated-source development; full-stream setting open.**
-EXP-046 passes all development gates and improves all scenes despite selecting
-the manifest-paired record only 17.37%. A full-stream test must remove curated
-writes and pair resets before terminal evaluation.
-
-**EXP-047 update:** agreement addressing remains supported in full streams, but
-long-term reservoir retention is rejected relative to FIFO-16. The active
-memory hypothesis is narrowed to useful bounded recent experience and remains
-open against a second-current-step explanation until EXP-048.
+Status: **Supported as a cached-direction ranking signal, rejected as a
+continual-memory advantage on the competitive full-stream carrier.** EXP-046
+showed that agreement beats appearance/random in a curated causal bank.
+EXP-047 preserved that ordering under every-frame writes, but selected recent
+FIFO records. EXP-048 then showed that FIFO memory loses to an equal normalized
+second current step by `4.40e-4`, with a wholly negative confidence interval
+and zero favorable scenes out of 14. Thus agreement identifies useful update
+directions, but the tested memory supplies no demonstrated information beyond
+additional current optimization. Terminal generalization is not authorized.

@@ -1,6 +1,6 @@
 # EXP-048 — FIFO Memory versus Second Current TTT
 
-Status: Registered decisive novelty audit
+Status: Completed; decisive novelty gate failed
 Purpose: Test whether bounded memory is more than another optimization step
 
 ## Question
@@ -32,3 +32,29 @@ optimization than continual adaptation recall; terminal memory claims stop.
 - Config: `configs/EXP-048_fifo_memory_vs_second_ttt_v10.yaml`
 - Script: `revisit3d/scripts/evaluate_exp047_full_stream_bounded_bank.py`
 - Result: `revisit3d/results/EXP-048/fifo_memory_vs_second_ttt_v10.json`
+
+## Result
+
+The immutable evaluator processed all 4,532 frames, 213 registered queries,
+and 14 development scenes with exact cached-readout parity and capacity-16
+banks. The first current step improved the scene-balanced consistency loss by
+`7.8244e-4` (95% scene-bootstrap CI `[5.4371e-4, 1.0521e-3]`). A second current
+step added `7.7791e-4` over the first step (CI `[5.4163e-4, 1.0402e-3]`).
+
+FIFO-16 agreement memory also improved the first current step by `3.3759e-4`
+(CI `[2.4012e-4, 4.5095e-4]`) and harmed one of 213 queries (0.47%). It beat
+reservoir appearance and random addressing in all 14 scenes. However, it was
+worse than the equal-step second-current baseline by `4.4033e-4`; the 95% CI
+was wholly negative (`[-6.1767e-4, -2.8623e-4]`) and zero of 14 scenes favored
+FIFO memory.
+
+## Conclusion
+
+The registered gate fails only on the decisive memory-specific comparison.
+Recent FIFO records are useful cached update directions, but the result is
+better explained by spending the same adaptation budget on the current
+observation than by recalling past experience. The competitive-carrier branch
+therefore does not support a continual-memory novelty claim and must not open
+the terminal split. Any continuation requires a new project-level decision and
+a materially different hypothesis, not a post-hoc threshold, capacity, or
+retention repair on this exposed development set.

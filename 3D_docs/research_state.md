@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-25 (EXP-041 localized failure to the raw update coordinate)
+Last updated: 2026-08-26 (EXP-048 stopped terminal promotion of the competitive-carrier memory)
 
 ## First objective
 
@@ -28,7 +28,7 @@ Mem3R, and ReGrad. The defensible conjunction is:
    identity or RGB similarity;
 4. physical-revisit evaluation with same-bank random-address controls.
 
-## Selected compact paper candidate
+## Archived compact mechanism-proof candidate
 
 - frozen VGGT/FastVGGT geometry backbone;
 - one 3D-track online loss, one local-code step, `eta=0.0125`;
@@ -38,6 +38,10 @@ Mem3R, and ReGrad. The defensible conjunction is:
 - deterministic reservoir capacity `C=64` per official-location stream;
 - no fine router, risk head, learned threshold, learned eviction, second TTT
   step, pose adaptation, or dynamic 4D state.
+
+This is the frozen FastVGGT-era mechanism proof, not the active top-tier paper
+candidate. EXP-036 established its absolute competitiveness blocker, and
+EXP-048 has now stopped the replacement CUT3R memory branch before terminal.
 
 ## Current decisive evidence
 
@@ -369,3 +373,20 @@ is better by `6.24e-5` in every scene and harms 0%. The registered gate fails.
 FIFO selects records only 6.18 frames old, so EXP-048 is now registered as a
 decisive novelty audit against a second current TTT step. Terminal remains
 closed.
+
+EXP-048 completed the decisive audit on the identical 4,532-frame streams.
+FIFO-16 agreement memory improves one-step current TTT by `3.38e-4` and remains
+safe (0.47% harm), but a second current TTT step improves by `7.78e-4`. FIFO is
+worse than the equal-step control by `4.40e-4`, CI
+`[-6.18e-4, -2.86e-4]`, and loses in all 14 scenes. The memory-specific gate
+therefore fails decisively.
+
+## Current stop condition
+
+The EXP-039 terminal split remains unopened and this candidate must not be
+promoted. On the competitive recurrent carrier, the evidence supports a strong
+compact current TTT coordinate and parameter-free agreement as a way to rank
+cached directions, but not the claim that past adaptation adds value beyond
+repeating current optimization at equal step budget. D127 stops post-hoc repair
+of this branch. A next experiment requires an explicit project-level choice of
+a new primary hypothesis; there is no authorized automatic continuation.
