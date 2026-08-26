@@ -1,0 +1,24 @@
+{
+  "experiment": "EXP-069",
+  "protocol_revision": "v1.0",
+  "status": "aborted_before_result",
+  "command": "/home/khm/.conda/envs/d4rt/bin/python revisit3d/scripts/evaluate_exp068_cross_clip_relational_consistency.py --config configs/EXP-069_query_integrity_ranking_v10.yaml",
+  "reason": "The ninth attempted confirmation sequence had zero tracks visible at the frozen global source frame 16, so the evaluator raised before writing any result.",
+  "failed_sequence": "Apartment_release_decoration_skeleton_seq139_8",
+  "eligible_tracks_at_source_16": 0,
+  "npz_content_accessed_sequences": [
+    "Apartment_release_clean_seq149_6",
+    "Apartment_release_clean_seq144_1",
+    "Apartment_release_clean_seq143_2",
+    "Apartment_release_decoration_seq134_2",
+    "Apartment_release_decoration_seq135_2",
+    "Apartment_release_decoration_seq131_5",
+    "Apartment_release_decoration_seq139_7",
+    "Apartment_release_decoration_skeleton_seq135_3",
+    "Apartment_release_decoration_skeleton_seq139_8"
+  ],
+  "aggregate_metrics_computed": false,
+  "result_file_written": false,
+  "model_fit": false,
+  "terminal_access": false
+}

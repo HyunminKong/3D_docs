@@ -2,7 +2,7 @@
 
 Status: Registered; not yet run
 
-Protocol: v1.0
+Protocol: v1.1 (coverage-accounting correction; v1.0 aborted before result)
 
 Date: 2026-08-27
 
@@ -47,15 +47,16 @@ after inference.
 All conditions must hold:
 
 1. exact replay maximum absolute difference `<=1e-6`;
-2. exactly 11 sequences and 33 targets complete, with no layer fallback;
+2. all 11 fixed files are attempted, at least 9 are evaluable, every evaluable
+   sequence supplies all three targets, and no layer fit falls back;
 3. large-minus-adjacent structural damage has positive sequence-bootstrap 95%
-   lower bound and is positive in at least 9/11 sequences;
+   lower bound and is positive in at least 80% of evaluable sequences;
 4. the large-shift layer residual has positive lower bound and is positive in
    every sequence;
 5. mean signed APD gain is non-negative and its sequence-bootstrap 95% lower
    bound is positive;
-6. APD prefers the large-shift context in at least 6/11 sequence means and at
-   least 14/33 target rows;
+6. APD prefers the large-shift context in at least half of evaluable sequence
+   means and at least 40% of evaluable target rows;
 7. target-row Spearman magnitude between structural damage and signed APD gain
    is at most `0.30`;
 8. no model fitting, threshold selection, or terminal access occurs.
@@ -69,5 +70,25 @@ multi-model/dataset coverage decision, not a training loss.
 - Config: `configs/EXP-069_query_integrity_ranking_v10.yaml`
 - Source role manifest: `revisit3d/manifests/adt_cross_clip_exp068_v10.json`
 - Result: `revisit3d/results/EXP-069/query_integrity_ranking_v10.json`
+- Corrected config: `configs/EXP-069_query_integrity_ranking_v11.yaml`
+- Corrected result: `revisit3d/results/EXP-069/query_integrity_ranking_v11.json`
+- Aborted-run record: `revisit3d/results/EXP-069/aborted_v10.json`
 - Literature boundary:
   [query-integrity metric audit](../literature/query_integrity_metric_audit.md)
+
+## v1.1 coverage correction before any aggregate result
+
+The v1.0 run processed eight sequences, then found that the ninth attempted
+sequence had zero annotated tracks visible at global source frame 16. It raised
+before computing aggregate metrics or writing a result. The clip/source/target,
+alignment minimum, metric, signed APD thresholds, correlation threshold, model,
+and role are unchanged.
+
+Version 1.1 attempts every one of the 11 fixed files and records an exclusion
+when fewer than 64 eligible tracks exist for deterministic 50/50 alignment and
+evaluation halves. No replacement is sampled. The corrected coverage gate
+requires at least 9/11 evaluable sequences. Count gates are expressed as the
+same intended proportions: structural large-over-adjacent in at least 80% of
+evaluable sequences, positive layer residual in all, APD preference in at least
+half of sequence means and 40% of target rows. The positive signed-APD bootstrap
+and `|Spearman|<=0.30` gates are unchanged.

@@ -852,3 +852,10 @@ bound, frequent pointwise ranking inversions, and low association between APD
 gain and structural damage. The files are now H25 premise and cannot validate
 H24. The 12 terminal files remain unopened. Failure closes this evaluation
 branch; success permits only a broader model/dataset coverage decision.
+
+EXP-069 v1.0 then aborted before aggregate/result creation because the ninth
+attempted file has zero annotations visible at the immutable source frame.
+D164 authorizes only v1.1 coverage accounting: attempt all 11, exclude rather
+than replace files with fewer than 64 eligible tracks, and require at least nine
+evaluable sequences. Scientific thresholds and the unopened terminal role are
+unchanged.

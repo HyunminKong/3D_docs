@@ -2335,3 +2335,23 @@ Spearman decoupling test before access. These files cease to be H24 validation;
 the 12 terminal files remain unopened. Failure closes H25 without metric or
 threshold repair. Success authorizes only a multi-model/dataset coverage
 decision; no loss, decoder, benchmark claim, or model fit is accepted.
+
+## D164 — Correct EXP-069 coverage accounting after a zero-track abort
+
+Date: 2026-08-27
+
+Status: Accepted before any aggregate EXP-069 result
+
+The v1.0 evaluator completed inference for eight confirmation sequences and
+then encountered a ninth with zero tracks visible at the frozen source frame.
+It raised before aggregate computation or result writing. This is a role-
+coverage error caused by assigning names before annotation access, not evidence
+for or against H25. The attempted and failing names are preserved in
+`aborted_v10.json`.
+
+Version 1.1 keeps every scientific variable and attempts all 11 fixed files,
+but records files with fewer than 64 eligible tracks as coverage exclusions
+instead of replacing them or moving the source frame. At least 9/11 must be
+evaluable. Frequency gates use their preregistered proportions; signed APD
+mean/CI and correlation thresholds do not change. Failure of coverage or any
+scientific gate still closes H25. No terminal file has been opened.

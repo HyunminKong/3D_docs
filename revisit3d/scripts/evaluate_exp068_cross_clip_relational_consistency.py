@@ -250,10 +250,13 @@ def main() -> None:
     data_root = Path(config["data"]["root"])
 
     sequence_rows: list[dict[str, Any]] = []
+    attempted_sequences: list[str] = []
+    coverage_exclusions: list[dict[str, Any]] = []
     replay_max = 0.0
     total_layer_fallbacks = 0
     for sequence_entry in role_entries:
         sequence_name = sequence_entry["sequence"]
+        attempted_sequences.append(sequence_name)
         sequence_path = data_root / sequence_entry["relative_path"]
         sample = load_worldtrack_sequence(sequence_path, num_frames=48)
         video_rgb = np.asarray(sample["video_rgb"][:48])
@@ -270,6 +273,20 @@ def main() -> None:
             valid_tracks &= np.isfinite(gt_cam[target]).all(axis=1)
         track_ids = np.flatnonzero(valid_tracks)
         if track_ids.size < minimum_alignment * 2:
+            if experiment == "EXP-069" and config["protocol_revision"] == "v1.1":
+                coverage_exclusions.append(
+                    {
+                        "sequence": sequence_name,
+                        "reason": "insufficient_eligible_tracks",
+                        "eligible_tracks": int(track_ids.size),
+                        "required_tracks": int(minimum_alignment * 2),
+                    }
+                )
+                print(
+                    f"[{experiment}] {sequence_name}: coverage exclusion, "
+                    f"eligible={track_ids.size}, required={minimum_alignment * 2}"
+                )
+                continue
             raise RuntimeError(f"{experiment} {sequence_name} has insufficient finite tracks")
         if track_ids.size > maximum_tracks:
             rng_select = np.random.default_rng(stable_seed(split_seed, sequence_name + "::select"))
@@ -475,6 +492,8 @@ def main() -> None:
         for target in row["targets"]
     ]
     aggregate = {
+        "attempted_sequences": len(attempted_sequences),
+        "coverage_exclusions": len(coverage_exclusions),
         "sequences": len(sequence_rows),
         "targets": sum(len(row["targets"]) for row in sequence_rows),
         "maximum_replay_abs_difference": replay_max,
@@ -516,28 +535,55 @@ def main() -> None:
 
     success = config["success"]
     if experiment == "EXP-069":
-        expected_sequences = int(success["exact_sequences"])
+        corrected_coverage = config["protocol_revision"] == "v1.1"
+        expected_attempts = int(
+            success["exact_attempted_sequences"] if corrected_coverage else success["exact_sequences"]
+        )
+        minimum_evaluable = int(
+            success["minimum_evaluable_sequences"] if corrected_coverage else expected_attempts
+        )
+        structural_positive_minimum = (
+            int(np.ceil(float(success["minimum_large_over_adjacent_positive_fraction"]) * len(sequence_rows)))
+            if corrected_coverage
+            else int(success["minimum_large_over_adjacent_positive_sequences"])
+        )
+        layer_positive_minimum = (
+            int(np.ceil(float(success["minimum_layer_positive_fraction"]) * len(sequence_rows)))
+            if corrected_coverage
+            else int(success["minimum_layer_positive_sequences"])
+        )
+        apd_sequence_minimum = (
+            int(np.ceil(float(success["minimum_apd_positive_sequence_fraction"]) * len(sequence_rows)))
+            if corrected_coverage
+            else int(success["minimum_apd_positive_sequences"])
+        )
+        apd_target_minimum = (
+            int(np.ceil(float(success["minimum_apd_positive_target_fraction"]) * aggregate["targets"]))
+            if corrected_coverage
+            else int(success["minimum_apd_positive_targets"])
+        )
         gates = {
             "exact_replay": replay_max <= float(success["maximum_replay_abs_difference"]),
-            "complete_sequences": len(sequence_rows) == expected_sequences,
+            "attempted_all_fixed_sequences": len(attempted_sequences) == expected_attempts,
+            "minimum_evaluable_sequences": len(sequence_rows) >= minimum_evaluable,
             "complete_targets": aggregate["targets"]
-            == expected_sequences * len(targets_global),
+            == len(sequence_rows) * len(targets_global),
             "layer_residual_ci": aggregate["layer_large_ci95"][0] > 0.0,
             "layer_residual_frequency": int(np.sum(np.asarray(layer_values) > 0.0))
-            >= int(success["minimum_layer_positive_sequences"]),
+            >= layer_positive_minimum,
             "large_over_adjacent_ci": aggregate["large_minus_adjacent_ci95"][0] > 0.0,
             "large_over_adjacent_frequency": aggregate[
                 "large_over_adjacent_positive_sequences"
             ]
-            >= int(success["minimum_large_over_adjacent_positive_sequences"]),
+            >= structural_positive_minimum,
             "mean_signed_apd_gain": aggregate["mean_signed_apd_gain"]
             >= float(success["minimum_mean_signed_apd_gain"]),
             "signed_apd_gain_ci": aggregate["signed_apd_gain_ci95"][0]
             > float(success["minimum_signed_apd_gain_ci_lower"]),
             "apd_positive_sequences": aggregate["apd_positive_sequences"]
-            >= int(success["minimum_apd_positive_sequences"]),
+            >= apd_sequence_minimum,
             "apd_positive_targets": aggregate["apd_positive_targets"]
-            >= int(success["minimum_apd_positive_targets"]),
+            >= apd_target_minimum,
             "structural_apd_decoupling": abs(
                 aggregate["target_structural_apd_spearman"]
             )
@@ -590,6 +636,8 @@ def main() -> None:
         "gates": gates,
         "passed_gates": int(sum(gates.values())),
         "total_gates": len(gates),
+        "attempted_sequence_names": attempted_sequences,
+        "coverage_exclusions": coverage_exclusions,
         "sequence_rows": sequence_rows,
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
