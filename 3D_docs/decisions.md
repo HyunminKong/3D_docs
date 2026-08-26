@@ -1776,3 +1776,41 @@ project decision: return to explicit past geometry/visibility evidence under a
 controlled missing-information task, or close this research line and select a
 different compact paper problem. It is not scientifically permissible to infer
 either pivot from this failed diagnostic.
+
+## D142 — Reopen only the explicit missing-surface oracle premise
+
+Date: 2026-08-26
+Status: Accepted by explicit user choice before EXP-057
+
+The project selects D141's explicit-evidence branch. Generic explicit geometry
+memory is not a defensible novelty claim: Point3R already maintains explicit
+3D spatial pointer memory; LONG3R uses a spatio-temporal 3D memory bank;
+Mem3R combines TTT with explicit geometry memory; and persistent Gaussian or
+token-cache systems also preserve geometry through time. The candidate question
+is narrower: whether controlled removal of currently visible evidence exposes a
+causal information gap between recurrent/optimization state and an explicitly
+retained past surface.
+
+EXP-057 is train-only and oracle-first. It reuses the 16 exposed EXP-052
+anchors. The first three frames are clean; the center half-width and half-height
+rectangle of the fourth RGB is replaced by zero in normalized input space. The
+official TTT3R state receives the clean history and erased target. Evaluation
+is restricted to erased target pixels whose static ground-truth surface
+forward-warps from the immediately previous clean frame within a fixed 5 cm
+depth-consistency margin.
+
+The controls are clean-target TTT3R, erased-target TTT3R, one and two normalized
+current local-code steps, ground-truth past-surface fusion, predicted past-
+surface fusion with offline ground-truth pose/median scale/visibility, and a
+within-mask spatial permutation of the same predicted evidence. GT pose, depth,
+scale, and visibility are oracle labels only and must not be described as
+deployable inference. No parameter, memory bank, visibility head, or routing
+policy is fit.
+
+The controlled premise passes only if erasure worsens current geometry in every
+scene, ground-truth and predicted past-surface fusions each beat second-current
+TTT in every scene with positive paired intervals, predicted fusion beats its
+spatial shuffle similarly, predicted coverage is at least 50%, and predicted
+fusion harms at most 25% of anchors. Failure prevents architecture work and
+localizes whether the blocker is information availability or predicted surface
+quality.

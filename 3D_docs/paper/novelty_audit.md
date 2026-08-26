@@ -109,3 +109,29 @@ consumes gradients nor emits parameter updates. It is not described as generic
 subspace TTA because its hypothesis concerns spatially varying geometry-token
 tangent axes. EXP-054/055 must demonstrate that token conditioning, rather
 than merely extra parameters, is causally necessary.
+
+## Explicit missing-surface pivot audit (2026-08-26)
+
+The post-EXP-056 branch cannot claim explicit 3D memory, long-term geometry
+retention, hybrid TTT/geometry memory, or visibility-preserving scene state in
+isolation:
+
+- Point3R maintains explicit spatial pointers tied directly to global 3D
+  structure and aggregates nearby scene information;
+- LONG3R uses a recurrent spatio-temporal 3D memory bank for long streams;
+- Mem3R explicitly decouples TTT camera-tracking memory from geometry memory;
+- STAC/GHOST retain or evict spatio-temporal geometry tokens efficiently;
+- persistent Gaussian scene memories already preserve geometry through
+  occlusion in 4D perception.
+
+Primary sources: [Point3R](https://papers.neurips.cc/paper_files/paper/2025/hash/650db8e1b0b016dc270d51c1476e91cf-Abstract-Conference.html),
+[LONG3R](https://www.openaccess.thecvf.com/content/ICCV2025/papers/Chen_LONG3R_Long_Sequence_Streaming_3D_Reconstruction_ICCV_2025_paper.pdf),
+[Mem3R](https://arxiv.org/abs/2604.07279),
+[STAC](https://arxiv.org/abs/2603.20284), and
+[GHOST](https://arxiv.org/abs/2605.15852).
+
+The only provisional paper question is a controlled causal distinction:
+whether explicit past surface evidence recovers erased-but-previously-visible
+geometry beyond an equally optimized recurrent TTT state. EXP-057 must first
+show an oracle advantage and a correct-over-spatially-shuffled address effect.
+Even success would justify method design, not establish novelty by itself.

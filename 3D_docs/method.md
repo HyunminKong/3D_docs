@@ -259,3 +259,18 @@ significantly better than global or shuffled controls. The pairwise-residual
 predictor is not an accepted head. D141 stops the complete fresh-data current-
 only v3 branch before validation; there remains no accepted v3 method or
 checkpoint.
+
+## Explicit missing-surface premise
+
+D142 closes current-only tangent repair and reopens only an oracle diagnostic.
+No explicit memory method is accepted. EXP-057 removes a fixed central RGB
+region from the current target after three clean recurrent observations and
+compares repeated current local TTT with a past surface forward-warped into the
+target camera.
+
+Ground-truth past depth tests whether complementary information exists at all.
+Frozen TTT3R past predicted points, aligned by offline ground-truth pose and
+median metric scale, test whether the foundation representation can carry that
+information. Ground-truth visibility defines only the evaluation/fusion oracle.
+A spatial permutation of the identical predicted surface payload is the address
+control. This is a premise experiment, not a proposed deployment architecture.

@@ -225,3 +225,18 @@ negative in `pumpkin`, harm was 50%, and paired intervals over global and
 shuffled geometry crossed zero. Only the comparison with token-only was
 positive. Thus the nearest-point residual does not expose the oracle axis label
 reliably across scenes and cannot justify another conditioner fit.
+
+## H17 — Explicit past-surface advantage under missing current evidence
+
+When a target image region is deliberately erased but its static surface was
+visible in the immediately preceding clean observation, explicitly retained
+past surface geometry contains information that cannot be recovered by the
+frozen recurrent TTT3R state plus an equal second current local-TTT step.
+
+Status: **Open.** EXP-057 must separate three premises on train-only controlled
+erasures: ground-truth past surface establishes information availability;
+predicted past surface with offline pose/scale/visibility establishes
+representation capacity; repeated current TTT is the equal-optimization
+control. The predicted-past representation oracle must beat both second-current
+TTT and a spatially shuffled past surface before any explicit-memory model is
+authorized.

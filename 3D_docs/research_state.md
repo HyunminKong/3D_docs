@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-056 failed; current-only TTT3R branch stopped)
+Last updated: 2026-08-26 (EXP-057 explicit missing-surface oracle registered)
 
 ## First objective
 
@@ -571,3 +571,11 @@ The next action requires user judgment: pivot to explicit past geometry and
 visibility evidence in a controlled missing-information task, accepting a new
 paper problem, or close this line and choose a different compact research
 question. There is no active paper-ready model.
+
+The user selected the explicit-evidence pivot. D142 and the renewed novelty
+audit prohibit a generic memory claim because Point3R/LONG3R/Mem3R directly
+occupy that space. EXP-057 is the next mandatory train-only premise: erase a
+fixed central target region after three clean TTT3R observations and test
+whether correctly aligned GT and predicted past surfaces beat two current local
+TTT steps and a spatially shuffled past-surface control. No memory architecture
+or validation access is authorized yet.
