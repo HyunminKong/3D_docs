@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-061 gauge/local premise rejected)
+Last updated: 2026-08-26 (EXP-062 order-sensitivity premise preregistered)
 
 ## First objective
 
@@ -12,24 +12,25 @@ dissertation architecture is deferred.
 
 ## Research question
 
-Does streaming pointmap error contain a shared, time-varying Sim(3) gauge
-component that is distinct from local surface residual, and must reliability be
-modeled hierarchically rather than by an independent per-point confidence alone?
+For a static scene and a fixed set of observations, do recurrent streaming-3D
+updates produce materially different query geometry solely because the same
+evidence arrives in a different order, and can local update commutativity make
+the final reconstruction path-independent without a new memory architecture?
 
 ## Defensible novelty boundary
 
-Generic per-point confidence, evidential uncertainty, confidence calibration,
-reliability-weighted recurrent updates, and cache/state compression are occupied
-by Trust3R, conformal multi-view calibration, ReCal3R, TTSA3R, SSR, MeMix,
-STAC, LONG3R, LongStream, and related work. The provisional boundary is:
+Offline permutation-equivariant SfM/set reconstruction, adaptive recurrent
+learning rates, latent filtering, cache compression, and long-stream state
+regularization are occupied directions. The provisional boundary is:
 
-1. explicitly separate a shared frame/trajectory Sim(3) gauge latent from local
-   surface residual uncertainty;
-2. represent the induced cross-point covariance rather than treating pixels as
-   independent confidence samples;
-3. evaluate both native/global geometry risk and gauge-removed local surface
-   risk, without allowing per-image alignment to hide the former;
-4. use the two risks for distinct decisions, not as another scalar update gate.
+1. characterize a recurrent 3D update as an observation-conditioned operator
+   and measure its local commutator while holding the observation set fixed;
+2. connect operator noncommutativity to absolute query-geometry variance, not
+   only latent-state distance;
+3. if the premise passes, regularize path independence with one training loss
+   rather than add a router, memory bank, filter, or inference optimization;
+4. preserve causal single-pass inference even though swapped paths are used as
+   offline training counterfactuals.
 
 This is a selected research question, not an accepted novelty or method claim.
 
@@ -671,3 +672,13 @@ No model was trained and all validation/terminal roles remain unopened.
 The next compact candidate must again undergo a literature collision audit and
 a zero-fit premise. Incremental gauge thresholds, longer windows chosen after
 this result, or a hierarchical uncertainty head are not authorized.
+
+## Active order-robustness premise
+
+D150 selects H20 after a separate collision audit. EXP-062 will hold the first
+history frame, the set of the following three history frames, and a non-updating
+query frame fixed. It evaluates all six orders of only the middle history set.
+The query self-view pointmap is median-scale aligned and scored against train
+RGB-D; thus changing the first anchor, evidence payload, query, or gauge cannot
+explain the measured range. No model is fit and validation/terminal remain
+closed.

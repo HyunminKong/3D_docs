@@ -1980,3 +1980,36 @@ phenomenon exists but is not dominant enough on this registered setting to
 carry a compact top-tier paper. No uncertainty head, calibration fit,
 validation access, longer-context amplification, or threshold repair is
 authorized from this result.
+
+## D150 — Select order noncommutativity and register EXP-062
+
+Date: 2026-08-26
+Status: Accepted before EXP-062
+
+The next audit selects order robustness because it admits both a compact
+geometric premise and a minimal eventual intervention. Offline set-based SfM
+and permutation-equivariant multi-view Transformers remove order by processing
+the full set jointly. ReCal3R, TTSA3R, PAS3R, FILT3R, SSR, and related streaming
+methods instead alter the magnitude, filtering, or temporal regularity of a
+causal update. The audited literature and local CUT3R implementation do not
+formulate the recurrent observation operators' commutator or train local path
+independence against fixed-query absolute geometry. CUT3R's own global-
+alignment demo evaluates multiple forward/backward permutations, which makes
+order sensitivity a known implementation concern but not a solved learned
+invariance.
+
+EXP-062 uses 16 fresh five-frame train contexts. The first history observation
+is fixed, exactly three middle histories are permuted over all six orders, and
+the fifth RGB query is identical and marked `update=false`. This removes the
+first-frame gauge/anchor and evidence-set confounds. Each query self-view
+pointmap is independently median-scale aligned to the same metric target before
+relative 3D EPE. A repeated chronological pass is the numerical control.
+
+The premise passes only if replay is within `1e-5`; every scene has positive
+mean order range; the stratified context-bootstrap lower bound is positive;
+the aggregate `(worst-best)/chronological` error range is at least 10%; at
+least 75% of contexts exceed 5%; and an RGB-D-free pairwise prediction-
+dispersion score has Spearman association at least 0.5 with metric order range.
+Success authorizes a separately registered commutator-capacity experiment, not
+training or validation. Failure closes this problem without order selection or
+gate repair.

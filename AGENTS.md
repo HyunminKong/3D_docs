@@ -2,10 +2,10 @@
 
 ## Project
 
-Gauge-Aware Reliability for Streaming 3D Reconstruction.
+Order-Robust Streaming 3D Reconstruction.
 
-The former continual adaptation-memory line is preserved as completed negative
-and mechanism evidence through EXP-060. It is not the active method direction.
+The former continual adaptation-memory line and the rejected gauge/local
+reliability premise are preserved through EXP-061. Neither is active.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

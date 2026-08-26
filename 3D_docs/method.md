@@ -331,3 +331,18 @@ cross-point covariance `J_i Sigma_g J_j^T`. This is theoretical motivation,
 not an implemented head or validated likelihood. EXP-061 found the component
 but rejected its paper-level magnitude and high-confidence persistence gates.
 The provisional direction is closed; there remains no accepted active method.
+
+## Provisional order-robust direction
+
+There is no accepted order-robust model. The candidate theoretical object is an
+observation-conditioned recurrent operator `U_x`. For two static observations,
+the local commutator compares `U_b(U_a(s))` with `U_a(U_b(s))`. If local
+commutators are small, arbitrary permutations can be related by adjacent swaps,
+which motivates a path-independence bound on accumulated state/output change.
+
+The minimal eventual intervention would be one offline consistency loss between
+the fixed-query geometry decoded from the two swapped paths. Deployed inference
+would remain the unmodified chronological single pass. This is only a method
+sketch: EXP-062 must first establish a material absolute-geometry effect, and a
+later capacity test must show that lowering the commutator helps geometry rather
+than merely collapsing state.

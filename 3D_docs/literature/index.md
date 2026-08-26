@@ -6,6 +6,7 @@
 - `Research/ttt_continual_streaming_3d_research_idea.md` — original adaptation-memory proposal and positioning.
 - `3D_docs/paper/novelty_audit.md` — active collision boundaries, including the EXP-054 current-only conditional-tangent audit.
 - `3D_docs/literature/gauge_aware_reliability_audit.md` — 2023--2026 collision audit for the post-EXP-060 paper pivot.
+- `3D_docs/literature/order_robust_streaming_audit.md` — collision audit for recurrent update commutativity and order robustness.
 
 ## Local reference repositories
 

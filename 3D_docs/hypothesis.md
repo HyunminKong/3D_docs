@@ -283,3 +283,26 @@ quartile it explained 6.47%, missed the 10% gate, and was slightly negative in
 `stairs`. This is useful evaluation anatomy but too small and heterogeneous to
 justify a new hierarchical uncertainty head. No threshold, context-length, or
 carrier repair is authorized under H19.
+
+## H20 — Geometry-relevant noncommutativity of recurrent updates
+
+Let `U_x` denote the frozen persistent-state update induced by observation `x`.
+For static-scene observations `a` and `b`, the commutator
+
+\[
+[U_a,U_b](s)=U_b(U_a(s))-U_a(U_b(s))
+\]
+
+is nonzero and large enough to cause material absolute-geometry variation at a
+fixed later query, even when the initial anchor and complete observation set are
+identical. Local path inconsistency is therefore a distinct source of
+long-horizon instability that can in principle be reduced by an offline
+commutator-consistency objective without changing causal inference.
+
+Status: **Selected, zero-fit premise not yet tested.** EXP-062 freezes the first
+history frame, permutes exactly the same following three frames over all six
+orders, and reads the same query without updating state. It measures query
+relative-3D error range after per-output median scale alignment, output
+dispersion, exact replay, and scene/context bootstrap. No commutator loss or
+trainable parameter is authorized until the order effect is large, consistent,
+and geometry-relevant.
