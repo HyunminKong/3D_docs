@@ -2116,3 +2116,19 @@ change from generic image bandwidth/support loss.
 Failure closes H21 without zoom-strength or context repair. Success authorizes
 only a real InFlux++ feasibility/capacity decision. No architecture, loss,
 checkpoint, validation access, or terminal access is currently authorized.
+
+## D155 — Add selected-depth registration before EXP-065 evaluation
+
+Date: 2026-08-26
+Status: Accepted before any EXP-065 context/model output
+
+The first EXP-065 launch loaded only the frozen checkpoint and stopped when the
+first selected `depth.proj.png` was absent. This sparse 7Scenes conversion stores
+raw depth for all frames but had registered RGB-frame depth only for earlier
+experiments. No context was loaded and no prediction, metric, or result file was
+created.
+
+The v1.1 correction deterministically registers exactly the 80 already selected
+train depths using the existing FastVGGT 7Scenes utility and records their
+hashes. It changes no query frame, zoom, control, metric, or gate. This is a
+pre-result data-materialization correction, not model selection.

@@ -48,5 +48,5 @@ success:
   require_all_scene_immediate_and_persistent_positive: true
   require_bootstrap_lower_positive: true
 output:
+  depth_preparation: revisit3d/results/EXP-065/selected_train_depth_registration_v10.json
   result: revisit3d/results/EXP-065/calibration_shock_anatomy_v10.json
-

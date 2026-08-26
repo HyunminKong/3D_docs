@@ -2,7 +2,9 @@
 
 ## Status
 
-Preregistered; not yet run.
+Corrected v1.1 preregistration; not yet run. The first launch stopped before
+loading any context or producing model output because selected projected-depth
+files had not been materialized.
 
 ## Question
 
@@ -67,8 +69,18 @@ strength, choosing contexts, or adding another corruption. Success authorizes
 only a fresh real-data and method-capacity decision; it does not authorize a
 camera-prior encoder, TTT loss, or validation access.
 
+## Pre-result implementation correction
+
+The first v1.0 launch loaded the frozen checkpoint, then failed on the first raw
+context because `frame-000111.depth.proj.png` did not exist. No image context,
+prediction, metric, or result artifact was produced. The underlying raw train
+depth exists; 7Scenes requires a deterministic registration into the RGB frame.
+Revision v1.1 adds the same selected-frame registration used by EXP-061/062 and
+does not change contexts, intervention, controls, metrics, or success gates.
+
 ## Artifacts
 
 - Config: `configs/EXP-065_calibration_shock_anatomy_v10.yaml`
+- Depth preparation:
+  `revisit3d/results/EXP-065/selected_train_depth_registration_v10.json`
 - Result: `revisit3d/results/EXP-065/calibration_shock_anatomy_v10.json`
-
