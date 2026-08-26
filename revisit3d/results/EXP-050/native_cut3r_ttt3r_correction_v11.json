@@ -1,0 +1,2490 @@
+{
+  "experiment": "EXP-050",
+  "stage": "matched_native_cut3r_ttt3r_replay",
+  "protocol_revision": "v1.1_baseline_reproduction_correction",
+  "config": "configs/EXP-050_native_baseline_correction_v11.yaml",
+  "input_inventory_sha256": "00c881889c9847b553adec26af459072b2247ed626111d857e7496ee3fff8ef7",
+  "summaries": {
+    "cut3r": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 17.701203524918398,
+      "abs_rel": 0.0823879792463071,
+      "rmse_m": 0.5681892135026353,
+      "delta1": 0.9086516691775781,
+      "point_epe_m": 0.25421872649542293
+    },
+    "ttt3r": {
+      "targets": 111,
+      "sequences": 3,
+      "silog": 15.241254600840193,
+      "abs_rel": 0.07753080337298347,
+      "rmse_m": 0.4648495188172314,
+      "delta1": 0.9164033459061255,
+      "point_epe_m": 0.21426729360609675
+    }
+  },
+  "runtime_seconds_including_preprocessing": {
+    "cut3r": 141.18309932760894,
+    "ttt3r": 140.70310467015952
+  },
+  "processed_frames": {
+    "cut3r": 2228,
+    "ttt3r": 2228
+  },
+  "registered_gate": {
+    "checks": {
+      "exact_coverage": true,
+      "finite": true
+    },
+    "passed": true
+  },
+  "query_update": false,
+  "sequence_reset_only": true,
+  "fitting_performed": false,
+  "terminal_accessed": false,
+  "rows": [
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0015",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 9.610552537995838,
+        "abs_rel": 0.05121949584429737,
+        "rmse_m": 0.17745295410734288,
+        "delta1": 0.9511928985845012,
+        "point_epe_m": 0.09159100752438118
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 9.420802852951377,
+        "abs_rel": 0.048710732737885516,
+        "rmse_m": 0.1755911108939097,
+        "delta1": 0.9534250414416441,
+        "point_epe_m": 0.0877154071940663
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0016",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 8.216066581434438,
+        "abs_rel": 0.036511666947506675,
+        "rmse_m": 0.07972197988740568,
+        "delta1": 0.959954962073325,
+        "point_epe_m": 0.03661244065472029
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 899,
+        "silog": 8.3196569463908,
+        "abs_rel": 0.03375395455078194,
+        "rmse_m": 0.08221871320670082,
+        "delta1": 0.9633081366764996,
+        "point_epe_m": 0.03405126255215205
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0017",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 8.57748682562395,
+        "abs_rel": 0.03752762017721441,
+        "rmse_m": 0.06721596743791397,
+        "delta1": 0.971907175032175,
+        "point_epe_m": 0.029565396556394712
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 890,
+        "silog": 8.605711301714074,
+        "abs_rel": 0.03995534037812755,
+        "rmse_m": 0.06539046071987714,
+        "delta1": 0.9730433558558559,
+        "point_epe_m": 0.029267940965548096
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg1_desk-0018",
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 6.990531415349793,
+        "abs_rel": 0.031775165306303796,
+        "rmse_m": 0.06437183842061464,
+        "delta1": 0.9690265486725663,
+        "point_epe_m": 0.029990625026279614
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 904,
+        "silog": 6.455082577426637,
+        "abs_rel": 0.027855215197049185,
+        "rmse_m": 0.057148576763143985,
+        "delta1": 0.9756637168141593,
+        "point_epe_m": 0.024852169076978892
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0015",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 25.905148071574896,
+        "abs_rel": 0.16937625556165428,
+        "rmse_m": 0.5729521428567558,
+        "delta1": 0.8553770468219073,
+        "point_epe_m": 0.2664913209540004
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 26.262824523376317,
+        "abs_rel": 0.17513387121467383,
+        "rmse_m": 0.5902620093130759,
+        "delta1": 0.8554021396654283,
+        "point_epe_m": 0.27398330255605613
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0016",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 17.039587035638256,
+        "abs_rel": 0.09776701228950618,
+        "rmse_m": 0.3175685856722074,
+        "delta1": 0.8551591347396317,
+        "point_epe_m": 0.16287936218982785
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1008,
+        "silog": 18.536656404018213,
+        "abs_rel": 0.10755899365171555,
+        "rmse_m": 0.35632417570916075,
+        "delta1": 0.8859256138799383,
+        "point_epe_m": 0.16957092164247423
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0017",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 16.65394527920362,
+        "abs_rel": 0.09581959293583298,
+        "rmse_m": 0.3289809552402167,
+        "delta1": 0.860759862721578,
+        "point_epe_m": 0.17337299019092284
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 976,
+        "silog": 18.499406709333474,
+        "abs_rel": 0.10926413984696229,
+        "rmse_m": 0.3696910999722585,
+        "delta1": 0.8904425729708116,
+        "point_epe_m": 0.17880582712441098
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0018",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 22.544577163073633,
+        "abs_rel": 0.1160655095046181,
+        "rmse_m": 0.5919807770134844,
+        "delta1": 0.8207007693907257,
+        "point_epe_m": 0.28586795468504644
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 920,
+        "silog": 16.999904432023058,
+        "abs_rel": 0.09888974372293842,
+        "rmse_m": 0.37240675362834563,
+        "delta1": 0.8924412559783739,
+        "point_epe_m": 0.18381972350117506
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0019",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 21.988024768051705,
+        "abs_rel": 0.09686866769311438,
+        "rmse_m": 0.6718574850538408,
+        "delta1": 0.8529766831181718,
+        "point_epe_m": 0.30675042158509513
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 912,
+        "silog": 13.829994473149165,
+        "abs_rel": 0.07496270458664503,
+        "rmse_m": 0.37602864052229756,
+        "delta1": 0.9221073492257554,
+        "point_epe_m": 0.18859027704787662
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0020",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 17.805909913169298,
+        "abs_rel": 0.09961034033045682,
+        "rmse_m": 0.5041586762063891,
+        "delta1": 0.8639011828580805,
+        "point_epe_m": 0.25723800452139
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 955,
+        "silog": 15.273887239420674,
+        "abs_rel": 0.09353945265810917,
+        "rmse_m": 0.36701562132413224,
+        "delta1": 0.9036857002215113,
+        "point_epe_m": 0.1998833253409822
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0021",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 16.5399528163238,
+        "abs_rel": 0.10353749420535857,
+        "rmse_m": 0.36873430025006715,
+        "delta1": 0.8664020219977163,
+        "point_epe_m": 0.21737640133076094
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 16.31443586332183,
+        "abs_rel": 0.10186004054014768,
+        "rmse_m": 0.35845666790863706,
+        "delta1": 0.8797516616702602,
+        "point_epe_m": 0.19922259317884117
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0022",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 16.790926542444456,
+        "abs_rel": 0.10607856756472941,
+        "rmse_m": 0.40241132686763187,
+        "delta1": 0.8655456227992844,
+        "point_epe_m": 0.23422904359619892
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 989,
+        "silog": 16.263760243021053,
+        "abs_rel": 0.09951783547335782,
+        "rmse_m": 0.36800307541691374,
+        "delta1": 0.8756346606927365,
+        "point_epe_m": 0.20512958749066393
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0023",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 17.390450668511484,
+        "abs_rel": 0.10842475265839169,
+        "rmse_m": 0.40324413938842907,
+        "delta1": 0.8765171330483223,
+        "point_epe_m": 0.23201479056553337
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 16.544044256444334,
+        "abs_rel": 0.09936910581221306,
+        "rmse_m": 0.36842129878956414,
+        "delta1": 0.8885654229822516,
+        "point_epe_m": 0.20434549079809528
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0024",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 15.1472885391929,
+        "abs_rel": 0.09806986544155796,
+        "rmse_m": 0.37722084252799903,
+        "delta1": 0.9005913101302176,
+        "point_epe_m": 0.22490074075754773
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 986,
+        "silog": 14.2545734237401,
+        "abs_rel": 0.08650696993454204,
+        "rmse_m": 0.3340124272560707,
+        "delta1": 0.9208682038739109,
+        "point_epe_m": 0.18818505006902875
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0025",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 15.561866347041965,
+        "abs_rel": 0.09669032188592779,
+        "rmse_m": 0.3659095923465822,
+        "delta1": 0.8797400954035766,
+        "point_epe_m": 0.2133576876109463
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 981,
+        "silog": 14.778302618106387,
+        "abs_rel": 0.08881136014162705,
+        "rmse_m": 0.30616940799251297,
+        "delta1": 0.8889158095813683,
+        "point_epe_m": 0.1791217832398316
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0026",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 16.19720721576187,
+        "abs_rel": 0.09822663874160245,
+        "rmse_m": 0.3900003503470159,
+        "delta1": 0.8938790425343162,
+        "point_epe_m": 0.21336665397807306
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 16.475022800726034,
+        "abs_rel": 0.09791396364931385,
+        "rmse_m": 0.3530650307342801,
+        "delta1": 0.9049037211477975,
+        "point_epe_m": 0.19328512178538043
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0027",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 14.522040323479306,
+        "abs_rel": 0.08456233207112572,
+        "rmse_m": 0.3818242274043374,
+        "delta1": 0.9049063027664837,
+        "point_epe_m": 0.20353273681981443
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 15.605397914037232,
+        "abs_rel": 0.08787632047148118,
+        "rmse_m": 0.3619684819030259,
+        "delta1": 0.9172190043402165,
+        "point_epe_m": 0.1931503462142131
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0028",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 14.982878860298634,
+        "abs_rel": 0.08295256820509316,
+        "rmse_m": 0.4225498825730904,
+        "delta1": 0.8997068107623872,
+        "point_epe_m": 0.21448654277519452
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 967,
+        "silog": 13.943167188750337,
+        "abs_rel": 0.08068639278719364,
+        "rmse_m": 0.35015100978097363,
+        "delta1": 0.9276039415347433,
+        "point_epe_m": 0.1863039911292867
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0029",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 15.363092799923631,
+        "abs_rel": 0.08775620745077324,
+        "rmse_m": 0.3791231915649853,
+        "delta1": 0.895878481060474,
+        "point_epe_m": 0.19874836008875288
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 14.163231031964797,
+        "abs_rel": 0.08151467779633127,
+        "rmse_m": 0.3368152921814747,
+        "delta1": 0.9114429693039041,
+        "point_epe_m": 0.1801900120287793
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0030",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 18.96071784238537,
+        "abs_rel": 0.11312124332811833,
+        "rmse_m": 0.42973371729533494,
+        "delta1": 0.8239115458108928,
+        "point_epe_m": 0.23107322683447565
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 960,
+        "silog": 17.75349557128218,
+        "abs_rel": 0.106589868074128,
+        "rmse_m": 0.38084130488840184,
+        "delta1": 0.8416121031717982,
+        "point_epe_m": 0.2116726567088248
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0031",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 21.12542198991861,
+        "abs_rel": 0.1228843448846236,
+        "rmse_m": 0.49799950914419344,
+        "delta1": 0.809541266871179,
+        "point_epe_m": 0.25656846638572683
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 966,
+        "silog": 18.857590936808577,
+        "abs_rel": 0.10992828901422347,
+        "rmse_m": 0.38849460704865746,
+        "delta1": 0.8447344218587512,
+        "point_epe_m": 0.2037944762869181
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0032",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 20.803384190441122,
+        "abs_rel": 0.12063366240418913,
+        "rmse_m": 0.529811255031355,
+        "delta1": 0.7924534734626547,
+        "point_epe_m": 0.27794990374850304
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 968,
+        "silog": 19.15822383237505,
+        "abs_rel": 0.11428638016430939,
+        "rmse_m": 0.40148271445325,
+        "delta1": 0.8450815613170404,
+        "point_epe_m": 0.21487521859864722
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0033",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 19.802472347173985,
+        "abs_rel": 0.11505021493476177,
+        "rmse_m": 0.4750016433469158,
+        "delta1": 0.862540345406323,
+        "point_epe_m": 0.23494268334388935
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 908,
+        "silog": 20.25343054924274,
+        "abs_rel": 0.11735263953054414,
+        "rmse_m": 0.4761675117132617,
+        "delta1": 0.8745478235431887,
+        "point_epe_m": 0.22961862232948768
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0034",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 17.380248135797558,
+        "abs_rel": 0.09777076618374374,
+        "rmse_m": 0.4514969315101064,
+        "delta1": 0.8827966441453283,
+        "point_epe_m": 0.21388625398533767
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 836,
+        "silog": 16.53078729976837,
+        "abs_rel": 0.09312035030210604,
+        "rmse_m": 0.42794649444859517,
+        "delta1": 0.8911470656536447,
+        "point_epe_m": 0.20092154064470905
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0035",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 18.396478009714293,
+        "abs_rel": 0.10523723152392535,
+        "rmse_m": 0.4955042463734888,
+        "delta1": 0.8721777278120534,
+        "point_epe_m": 0.2330370737342924
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 17.516799518432684,
+        "abs_rel": 0.09958070223299301,
+        "rmse_m": 0.46889897510467926,
+        "delta1": 0.8853889313126171,
+        "point_epe_m": 0.21440427485802552
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0036",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 20.036583211995886,
+        "abs_rel": 0.1223973645312127,
+        "rmse_m": 0.5202037164505502,
+        "delta1": 0.8837394387847082,
+        "point_epe_m": 0.25416845122279286
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 800,
+        "silog": 19.7461452435772,
+        "abs_rel": 0.11866028841502095,
+        "rmse_m": 0.5168721143157361,
+        "delta1": 0.8987970947687633,
+        "point_epe_m": 0.23995965652126
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0037",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 20.57210164966501,
+        "abs_rel": 0.1308744376766583,
+        "rmse_m": 0.5162451273800152,
+        "delta1": 0.862492811960897,
+        "point_epe_m": 0.2625747551531275
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 749,
+        "silog": 19.87178768168629,
+        "abs_rel": 0.12458661380508755,
+        "rmse_m": 0.5098151872319733,
+        "delta1": 0.8718228867165037,
+        "point_epe_m": 0.24877263510189673
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0038",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 21.738618320178517,
+        "abs_rel": 0.14149242044264024,
+        "rmse_m": 0.6197843771145429,
+        "delta1": 0.8548730956191254,
+        "point_epe_m": 0.3096841884501639
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 724,
+        "silog": 21.322674580774212,
+        "abs_rel": 0.1350857422511911,
+        "rmse_m": 0.6101172916393818,
+        "delta1": 0.8811214770178427,
+        "point_epe_m": 0.2953067808521105
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0039",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 21.079991244048838,
+        "abs_rel": 0.14132803709994393,
+        "rmse_m": 0.564992957528157,
+        "delta1": 0.8520629009380591,
+        "point_epe_m": 0.2990550932832478
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 20.834959368181494,
+        "abs_rel": 0.13704520286425143,
+        "rmse_m": 0.5582663888298525,
+        "delta1": 0.8735466548851878,
+        "point_epe_m": 0.2872260341924407
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0040",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 18.476510885373216,
+        "abs_rel": 0.12001706126078515,
+        "rmse_m": 0.4727819513061954,
+        "delta1": 0.8874046178540561,
+        "point_epe_m": 0.2631968991472483
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 18.10556020193617,
+        "abs_rel": 0.11289737302143427,
+        "rmse_m": 0.46756454714892304,
+        "delta1": 0.9113260896406964,
+        "point_epe_m": 0.24861322372738853
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0041",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 21.018644379475177,
+        "abs_rel": 0.14171439484895026,
+        "rmse_m": 0.5602643625965745,
+        "delta1": 0.8665202968996321,
+        "point_epe_m": 0.29924485405048573
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 697,
+        "silog": 20.644813361899473,
+        "abs_rel": 0.13436695532685944,
+        "rmse_m": 0.5572760687157937,
+        "delta1": 0.8736964661061483,
+        "point_epe_m": 0.284167029607309
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0042",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 24.192394911610176,
+        "abs_rel": 0.1671805923924554,
+        "rmse_m": 0.6668830057238861,
+        "delta1": 0.8521898597773003,
+        "point_epe_m": 0.34598549654504956
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 683,
+        "silog": 23.86813127273824,
+        "abs_rel": 0.15941295115497706,
+        "rmse_m": 0.6731321656977035,
+        "delta1": 0.8727302104368602,
+        "point_epe_m": 0.33044266217414914
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0043",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 23.390643257073695,
+        "abs_rel": 0.14605128769603795,
+        "rmse_m": 0.6625291336575461,
+        "delta1": 0.8873054950604425,
+        "point_epe_m": 0.3135704214488555
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 710,
+        "silog": 23.437440327810236,
+        "abs_rel": 0.14622270369891155,
+        "rmse_m": 0.6727483564127748,
+        "delta1": 0.8999857967995455,
+        "point_epe_m": 0.30387287614910685
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0044",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 23.378106121037746,
+        "abs_rel": 0.14560208440042693,
+        "rmse_m": 0.7129383530240896,
+        "delta1": 0.8692601505772253,
+        "point_epe_m": 0.3203068665366492
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 742,
+        "silog": 23.451011823383837,
+        "abs_rel": 0.1457148459612357,
+        "rmse_m": 0.7164621062169141,
+        "delta1": 0.8894731682394607,
+        "point_epe_m": 0.3129038076488748
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0045",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 24.176987350066558,
+        "abs_rel": 0.14737625544514157,
+        "rmse_m": 0.7615535686904136,
+        "delta1": 0.8483177782984483,
+        "point_epe_m": 0.33095960553373205
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 784,
+        "silog": 23.890668844864287,
+        "abs_rel": 0.14671405547930513,
+        "rmse_m": 0.7480344866786142,
+        "delta1": 0.8699425960637301,
+        "point_epe_m": 0.321008939173622
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0046",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 21.858022430997814,
+        "abs_rel": 0.1332788910878963,
+        "rmse_m": 0.6280646362760067,
+        "delta1": 0.8497876651352504,
+        "point_epe_m": 0.2853751203424713
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 806,
+        "silog": 21.601589659571133,
+        "abs_rel": 0.1311981144834952,
+        "rmse_m": 0.6327432832489033,
+        "delta1": 0.8708269671920111,
+        "point_epe_m": 0.2760959677575827
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0047",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 22.599760584256046,
+        "abs_rel": 0.13435840276542851,
+        "rmse_m": 0.6323730023726353,
+        "delta1": 0.8453221298054723,
+        "point_epe_m": 0.280926812895412
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 847,
+        "silog": 22.762221100466327,
+        "abs_rel": 0.13707937986562801,
+        "rmse_m": 0.6647360087538812,
+        "delta1": 0.859495848409522,
+        "point_epe_m": 0.2811890397881775
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0048",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 21.23889831429412,
+        "abs_rel": 0.12124944237904121,
+        "rmse_m": 0.5591311252895643,
+        "delta1": 0.8673662216012006,
+        "point_epe_m": 0.24914816815809787
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 905,
+        "silog": 21.556490262555105,
+        "abs_rel": 0.12453040871673537,
+        "rmse_m": 0.5986402455886436,
+        "delta1": 0.8762159085028204,
+        "point_epe_m": 0.2510585046525364
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0049",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 18.925567751292697,
+        "abs_rel": 0.11239708905804432,
+        "rmse_m": 0.4375048974180433,
+        "delta1": 0.8626161315191864,
+        "point_epe_m": 0.21765895164528212
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 939,
+        "silog": 19.604393266641193,
+        "abs_rel": 0.1165485150203889,
+        "rmse_m": 0.5037401961801083,
+        "delta1": 0.8636440104819302,
+        "point_epe_m": 0.22322961406591696
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0050",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 18.13354710473796,
+        "abs_rel": 0.10561606045055599,
+        "rmse_m": 0.39774182341873493,
+        "delta1": 0.8548844077190428,
+        "point_epe_m": 0.21526034729393237
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 944,
+        "silog": 21.125817347373953,
+        "abs_rel": 0.12329621029467173,
+        "rmse_m": 0.4997670114103451,
+        "delta1": 0.8602303778279287,
+        "point_epe_m": 0.22232531608947678
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0051",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 17.70883752078897,
+        "abs_rel": 0.09512302688168593,
+        "rmse_m": 0.420561067974081,
+        "delta1": 0.8305097223386553,
+        "point_epe_m": 0.21069495811985853
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 17.460615401569953,
+        "abs_rel": 0.09678662012489361,
+        "rmse_m": 0.3420455055770199,
+        "delta1": 0.8771242446662046,
+        "point_epe_m": 0.16495641817496234
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0052",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 16.696236150725525,
+        "abs_rel": 0.07892157955670376,
+        "rmse_m": 0.4194165387739279,
+        "delta1": 0.8613654634708289,
+        "point_epe_m": 0.18246847983714168
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 14.317939732377493,
+        "abs_rel": 0.07899688595018171,
+        "rmse_m": 0.29097079696550776,
+        "delta1": 0.8914473270545693,
+        "point_epe_m": 0.1428627680558251
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0053",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 17.009782114139405,
+        "abs_rel": 0.06761556520565953,
+        "rmse_m": 0.4353712099038644,
+        "delta1": 0.9121633466135458,
+        "point_epe_m": 0.17127842981522584
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 12.898937158782747,
+        "abs_rel": 0.06431353426540803,
+        "rmse_m": 0.29427441590464504,
+        "delta1": 0.9111593625498008,
+        "point_epe_m": 0.13731548458609777
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0054",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 19.556165845230574,
+        "abs_rel": 0.0858170829637428,
+        "rmse_m": 0.47933207778452447,
+        "delta1": 0.8578011551410629,
+        "point_epe_m": 0.19752433254564
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 998,
+        "silog": 16.217103366893493,
+        "abs_rel": 0.07986968497059226,
+        "rmse_m": 0.390655098465399,
+        "delta1": 0.866825412690474,
+        "point_epe_m": 0.17159497361519246
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0055",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 15.941300402019415,
+        "abs_rel": 0.07917591765674117,
+        "rmse_m": 0.3737011230347076,
+        "delta1": 0.8777420991498674,
+        "point_epe_m": 0.16642472419777266
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 975,
+        "silog": 15.139356170338486,
+        "abs_rel": 0.07722393316200406,
+        "rmse_m": 0.3450426202977535,
+        "delta1": 0.8756927450093588,
+        "point_epe_m": 0.1579924815462755
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0056",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 14.546681414272626,
+        "abs_rel": 0.0677101676814088,
+        "rmse_m": 0.32999166160000704,
+        "delta1": 0.8649885904791461,
+        "point_epe_m": 0.14281622116696754
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 14.001103346993547,
+        "abs_rel": 0.06636975510060912,
+        "rmse_m": 0.3145586109066001,
+        "delta1": 0.8660048506417479,
+        "point_epe_m": 0.13809010358445273
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0057",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 12.553720619631987,
+        "abs_rel": 0.057378268514639036,
+        "rmse_m": 0.2632861873649064,
+        "delta1": 0.913564904780412,
+        "point_epe_m": 0.10586183481161861
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 995,
+        "silog": 11.168410201626063,
+        "abs_rel": 0.05282963504923925,
+        "rmse_m": 0.2385835003130419,
+        "delta1": 0.9286415014898303,
+        "point_epe_m": 0.09623490755362811
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0058",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 15.175598502618428,
+        "abs_rel": 0.06927405619815766,
+        "rmse_m": 0.36287855092477445,
+        "delta1": 0.8753048367429888,
+        "point_epe_m": 0.15416336568318648
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 970,
+        "silog": 13.816314224404062,
+        "abs_rel": 0.0670923235325106,
+        "rmse_m": 0.32234697741010515,
+        "delta1": 0.8845769543422299,
+        "point_epe_m": 0.14293307862549343
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0059",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 20.283783301117207,
+        "abs_rel": 0.12114797638671412,
+        "rmse_m": 0.44279730693506325,
+        "delta1": 0.8475368271637685,
+        "point_epe_m": 0.2064238963801058
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 957,
+        "silog": 19.57003854559282,
+        "abs_rel": 0.11537144677218558,
+        "rmse_m": 0.42364098301181424,
+        "delta1": 0.8517559795964578,
+        "point_epe_m": 0.2036413428347491
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0060",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 24.266730823895895,
+        "abs_rel": 0.15931612324216318,
+        "rmse_m": 0.5598339118216608,
+        "delta1": 0.8112648221343874,
+        "point_epe_m": 0.28101957523800775
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 922,
+        "silog": 23.407615866272188,
+        "abs_rel": 0.14859889785421335,
+        "rmse_m": 0.535905030444803,
+        "delta1": 0.8080274797666102,
+        "point_epe_m": 0.2647041322772966
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0061",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 26.771224981621813,
+        "abs_rel": 0.17568189209732393,
+        "rmse_m": 0.6671923697092952,
+        "delta1": 0.8866425147815702,
+        "point_epe_m": 0.3065099372932065
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 917,
+        "silog": 25.84580577662102,
+        "abs_rel": 0.16446670627582022,
+        "rmse_m": 0.6429991753374453,
+        "delta1": 0.8899616141604523,
+        "point_epe_m": 0.2869737014683608
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0062",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 29.572728742388108,
+        "abs_rel": 0.2068613030455388,
+        "rmse_m": 0.8463343598745257,
+        "delta1": 0.8307125860183935,
+        "point_epe_m": 0.3742201511849318
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 29.52236447662184,
+        "abs_rel": 0.20331343738994206,
+        "rmse_m": 0.8698505214496844,
+        "delta1": 0.8471766673097947,
+        "point_epe_m": 0.3678274957699149
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0063",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 32.158744734972124,
+        "abs_rel": 0.23841254611777205,
+        "rmse_m": 0.9951614122886145,
+        "delta1": 0.813897725933781,
+        "point_epe_m": 0.4501161366445958
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 822,
+        "silog": 31.45114522594607,
+        "abs_rel": 0.22893266930419431,
+        "rmse_m": 0.972713022821435,
+        "delta1": 0.813885943207258,
+        "point_epe_m": 0.4314029603139811
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0064",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 35.664386954462714,
+        "abs_rel": 0.29574277530165893,
+        "rmse_m": 1.2043414945794835,
+        "delta1": 0.7840778156387281,
+        "point_epe_m": 0.5161444099550919
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 825,
+        "silog": 35.4432369903226,
+        "abs_rel": 0.2916353100668583,
+        "rmse_m": 1.200696293608124,
+        "delta1": 0.7731023716682288,
+        "point_epe_m": 0.510967210780272
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0065",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 36.03690332508596,
+        "abs_rel": 0.2933188623338082,
+        "rmse_m": 1.2025644174899495,
+        "delta1": 0.8219610694891013,
+        "point_epe_m": 0.5211612810154196
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 837,
+        "silog": 35.87854046175495,
+        "abs_rel": 0.28861688140908914,
+        "rmse_m": 1.207715904153161,
+        "delta1": 0.8231916943030765,
+        "point_epe_m": 0.5120738203896245
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0066",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 31.956461034811078,
+        "abs_rel": 0.23583631674087077,
+        "rmse_m": 0.9366475554708771,
+        "delta1": 0.8231777244702566,
+        "point_epe_m": 0.40075274320642945
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 877,
+        "silog": 33.07806412425099,
+        "abs_rel": 0.24875679111846177,
+        "rmse_m": 0.998686330120927,
+        "delta1": 0.8186066092606084,
+        "point_epe_m": 0.41554294098683564
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0067",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 28.04702927373645,
+        "abs_rel": 0.17838635078628898,
+        "rmse_m": 0.7297177689321523,
+        "delta1": 0.8472804352176413,
+        "point_epe_m": 0.3029256811923638
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 910,
+        "silog": 29.887914654151672,
+        "abs_rel": 0.19502091932647667,
+        "rmse_m": 0.8618794430623605,
+        "delta1": 0.8571442374050946,
+        "point_epe_m": 0.3290971627783364
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0068",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 26.61437896563798,
+        "abs_rel": 0.16402362059050596,
+        "rmse_m": 0.6114365546824746,
+        "delta1": 0.8711859909006838,
+        "point_epe_m": 0.245916930642692
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 916,
+        "silog": 27.559695417409646,
+        "abs_rel": 0.17062757678612525,
+        "rmse_m": 0.6693432485867884,
+        "delta1": 0.8810646173187278,
+        "point_epe_m": 0.2522493680001896
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0069",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 17.46481751327604,
+        "abs_rel": 0.09824837635908594,
+        "rmse_m": 0.3665695791809497,
+        "delta1": 0.8619614855374105,
+        "point_epe_m": 0.17745703629820975
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 949,
+        "silog": 21.71504922650566,
+        "abs_rel": 0.12526175937904582,
+        "rmse_m": 0.43021148032305645,
+        "delta1": 0.8841005375982035,
+        "point_epe_m": 0.18597237025128216
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0070",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 19.60261282915298,
+        "abs_rel": 0.09861092305572831,
+        "rmse_m": 0.48474435548886796,
+        "delta1": 0.8403384605290886,
+        "point_epe_m": 0.20377842928521633
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 977,
+        "silog": 18.31669405757743,
+        "abs_rel": 0.09772774402538317,
+        "rmse_m": 0.3644212501732256,
+        "delta1": 0.8966441605026704,
+        "point_epe_m": 0.14793600821803338
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0071",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 19.589238296736852,
+        "abs_rel": 0.0985711721235631,
+        "rmse_m": 0.4637996193698552,
+        "delta1": 0.8676853161634391,
+        "point_epe_m": 0.1888285855796697
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 990,
+        "silog": 18.016864248091288,
+        "abs_rel": 0.09551608547857696,
+        "rmse_m": 0.3632965548223377,
+        "delta1": 0.9050534120286815,
+        "point_epe_m": 0.15212701851697122
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0072",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 14.294750690886168,
+        "abs_rel": 0.06546150987241722,
+        "rmse_m": 0.3790594112539046,
+        "delta1": 0.9197817487660448,
+        "point_epe_m": 0.14159441704096304
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 12.642409186600394,
+        "abs_rel": 0.064766427474523,
+        "rmse_m": 0.30869083793822527,
+        "delta1": 0.9177817167655328,
+        "point_epe_m": 0.12491485026826896
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0073",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 19.638928970241924,
+        "abs_rel": 0.06583722442112538,
+        "rmse_m": 0.4733949232508512,
+        "delta1": 0.9182370434117423,
+        "point_epe_m": 0.15909654147865537
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1003,
+        "silog": 18.8903712145934,
+        "abs_rel": 0.06509708414313542,
+        "rmse_m": 0.4575031669931803,
+        "delta1": 0.9212211703958691,
+        "point_epe_m": 0.155943610761825
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0074",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 16.280938173831892,
+        "abs_rel": 0.05654662832693641,
+        "rmse_m": 0.381922298828197,
+        "delta1": 0.9348257935997945,
+        "point_epe_m": 0.12758422316861742
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 16.090213696964256,
+        "abs_rel": 0.0553614106264268,
+        "rmse_m": 0.38484895516692763,
+        "delta1": 0.9438541639892045,
+        "point_epe_m": 0.12767498680059672
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0075",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 13.228455799775647,
+        "abs_rel": 0.043848241339999885,
+        "rmse_m": 0.2920372502444637,
+        "delta1": 0.9648915662650602,
+        "point_epe_m": 0.08525530225836817
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 997,
+        "silog": 12.857839738068725,
+        "abs_rel": 0.04162245468906663,
+        "rmse_m": 0.28184958571024943,
+        "delta1": 0.9668995983935743,
+        "point_epe_m": 0.08097051049693932
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0076",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 13.691206483177844,
+        "abs_rel": 0.048201621825493764,
+        "rmse_m": 0.2853930751173517,
+        "delta1": 0.9569754556072897,
+        "point_epe_m": 0.08559823000170338
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 999,
+        "silog": 11.62518666992667,
+        "abs_rel": 0.04562573133494433,
+        "rmse_m": 0.24503752921645922,
+        "delta1": 0.9569754556072897,
+        "point_epe_m": 0.07687088982316671
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0077",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 18.623957315017293,
+        "abs_rel": 0.0631595820255753,
+        "rmse_m": 0.4432423683923042,
+        "delta1": 0.922487423291338,
+        "point_epe_m": 0.15382197599729042
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 16.88170790298398,
+        "abs_rel": 0.06134169287963953,
+        "rmse_m": 0.41447742814664423,
+        "delta1": 0.9234794867834016,
+        "point_epe_m": 0.14592010285901624
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0078",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 21.213802592107847,
+        "abs_rel": 0.06983369436230778,
+        "rmse_m": 0.5308919314427913,
+        "delta1": 0.9135270120971662,
+        "point_epe_m": 0.19532469123852725
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1006,
+        "silog": 18.1706911178256,
+        "abs_rel": 0.0669963138358464,
+        "rmse_m": 0.47902008997209544,
+        "delta1": 0.9135270120971662,
+        "point_epe_m": 0.1809591238361488
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0079",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 20.1251617037548,
+        "abs_rel": 0.07120379685769174,
+        "rmse_m": 0.5283484688463445,
+        "delta1": 0.9111858517355325,
+        "point_epe_m": 0.19566853188394237
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1002,
+        "silog": 17.415773433891967,
+        "abs_rel": 0.06891717434306577,
+        "rmse_m": 0.47425485227049585,
+        "delta1": 0.9072057088151505,
+        "point_epe_m": 0.18160028036012094
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0080",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 21.04582963268321,
+        "abs_rel": 0.08103219351868479,
+        "rmse_m": 0.5667685551325268,
+        "delta1": 0.8795251975644515,
+        "point_epe_m": 0.22686905103101812
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 996,
+        "silog": 18.1884054820109,
+        "abs_rel": 0.07965564114994361,
+        "rmse_m": 0.49186818794946774,
+        "delta1": 0.8684728915662651,
+        "point_epe_m": 0.20715762761752085
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0081",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 19.900913505076176,
+        "abs_rel": 0.08334514403345647,
+        "rmse_m": 0.5480497256821123,
+        "delta1": 0.8608465544473164,
+        "point_epe_m": 0.22571718488346026
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 985,
+        "silog": 17.595645106529286,
+        "abs_rel": 0.0823580447364525,
+        "rmse_m": 0.48926745995008,
+        "delta1": 0.8659363851653038,
+        "point_epe_m": 0.21155035292208477
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0082",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 21.80576105070609,
+        "abs_rel": 0.09715827105149419,
+        "rmse_m": 0.6650695664488517,
+        "delta1": 0.8243430150495642,
+        "point_epe_m": 0.28577499802514117
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 979,
+        "silog": 18.66164508852822,
+        "abs_rel": 0.09153357336154108,
+        "rmse_m": 0.5831951141863094,
+        "delta1": 0.8262761667619194,
+        "point_epe_m": 0.25980772343838066
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0083",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 20.668352316900037,
+        "abs_rel": 0.10983460742852201,
+        "rmse_m": 0.6147523354453902,
+        "delta1": 0.7912037199817166,
+        "point_epe_m": 0.30512280650976664
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 953,
+        "silog": 20.613577828094304,
+        "abs_rel": 0.10711422170348396,
+        "rmse_m": 0.645739703549731,
+        "delta1": 0.807997257480398,
+        "point_epe_m": 0.3097878049665983
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0084",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 23.2368822189285,
+        "abs_rel": 0.14035229525023893,
+        "rmse_m": 0.619486124746788,
+        "delta1": 0.8531746993630402,
+        "point_epe_m": 0.2828323252598972
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 892,
+        "silog": 23.385428855153094,
+        "abs_rel": 0.14030976710955792,
+        "rmse_m": 0.653132974988523,
+        "delta1": 0.8666130031376669,
+        "point_epe_m": 0.28377365187270476
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0085",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 24.499594563254323,
+        "abs_rel": 0.1597359588364396,
+        "rmse_m": 0.7134238734908229,
+        "delta1": 0.8422845971233067,
+        "point_epe_m": 0.33050049224201433
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 875,
+        "silog": 24.9602483740568,
+        "abs_rel": 0.16304312952205408,
+        "rmse_m": 0.7595450907060419,
+        "delta1": 0.851427681907134,
+        "point_epe_m": 0.33913714079992724
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0086",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 18.004866312036995,
+        "abs_rel": 0.11448432105474157,
+        "rmse_m": 0.4744891388278647,
+        "delta1": 0.8463338941413927,
+        "point_epe_m": 0.2712836595861668
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 846,
+        "silog": 20.384193935580857,
+        "abs_rel": 0.1294286480279481,
+        "rmse_m": 0.5818608386154196,
+        "delta1": 0.852297828419627,
+        "point_epe_m": 0.29897983808343587
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0087",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 15.45215305459934,
+        "abs_rel": 0.09755314099427062,
+        "rmse_m": 0.44944499573351804,
+        "delta1": 0.8891914458090928,
+        "point_epe_m": 0.2463256950872194
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 830,
+        "silog": 17.313581184976535,
+        "abs_rel": 0.10729683866866567,
+        "rmse_m": 0.537612218650358,
+        "delta1": 0.9061833387201035,
+        "point_epe_m": 0.26658630416353585
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0088",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 22.062174537432227,
+        "abs_rel": 0.14241863480196312,
+        "rmse_m": 0.8218366432146456,
+        "delta1": 0.8638103070175438,
+        "point_epe_m": 0.37854767986272025
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 777,
+        "silog": 21.638413961053566,
+        "abs_rel": 0.13970385508867522,
+        "rmse_m": 0.7726026178785895,
+        "delta1": 0.8818779520917679,
+        "point_epe_m": 0.36195283037269
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0089",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 18.8629955907883,
+        "abs_rel": 0.12434608255822471,
+        "rmse_m": 0.6174732720410138,
+        "delta1": 0.88247461928934,
+        "point_epe_m": 0.32847751515666934
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 791,
+        "silog": 18.78231199205016,
+        "abs_rel": 0.12320049477059394,
+        "rmse_m": 0.614515671385462,
+        "delta1": 0.8761294416243655,
+        "point_epe_m": 0.3307087340454781
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0090",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 18.94865099358222,
+        "abs_rel": 0.12203046572613806,
+        "rmse_m": 0.6694972444029939,
+        "delta1": 0.8953247360145562,
+        "point_epe_m": 0.3488924380332859
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 726,
+        "silog": 18.470276180502104,
+        "abs_rel": 0.12052995890089181,
+        "rmse_m": 0.6150454278797275,
+        "delta1": 0.8953948358693186,
+        "point_epe_m": 0.33761079831444313
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0100",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 18.382352275123207,
+        "abs_rel": 0.11169461139836416,
+        "rmse_m": 0.710960231915682,
+        "delta1": 0.8961366970064232,
+        "point_epe_m": 0.3499327343612274
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 780,
+        "silog": 16.862109360704796,
+        "abs_rel": 0.11186028179900166,
+        "rmse_m": 0.603730881927244,
+        "delta1": 0.9025075035992874,
+        "point_epe_m": 0.33634480275776735
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0101",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 17.60867556299468,
+        "abs_rel": 0.10475274216350527,
+        "rmse_m": 0.656460002736605,
+        "delta1": 0.9139330246364255,
+        "point_epe_m": 0.3118230316754561
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 801,
+        "silog": 16.493524804927617,
+        "abs_rel": 0.10369690900253617,
+        "rmse_m": 0.5908623096952275,
+        "delta1": 0.9139269877389079,
+        "point_epe_m": 0.3055039428893246
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0102",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 18.684235859140273,
+        "abs_rel": 0.11634043637382215,
+        "rmse_m": 0.6237096769159092,
+        "delta1": 0.896268019402883,
+        "point_epe_m": 0.320073404028568
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 829,
+        "silog": 18.18844746590949,
+        "abs_rel": 0.11200314562121465,
+        "rmse_m": 0.6035171125055929,
+        "delta1": 0.8986899637903942,
+        "point_epe_m": 0.3134691411984163
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0103",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 18.052557965491904,
+        "abs_rel": 0.11094278405149498,
+        "rmse_m": 0.5698578506509359,
+        "delta1": 0.8872669710741552,
+        "point_epe_m": 0.2976578965423086
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 860,
+        "silog": 17.773688441737818,
+        "abs_rel": 0.10876425901966222,
+        "rmse_m": 0.549044889976374,
+        "delta1": 0.8989170206410542,
+        "point_epe_m": 0.29261888316048307
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0104",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 18.14228929453885,
+        "abs_rel": 0.10345370834099585,
+        "rmse_m": 0.5673738901438761,
+        "delta1": 0.915953856704472,
+        "point_epe_m": 0.2530475685176673
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 845,
+        "silog": 17.579954361469277,
+        "abs_rel": 0.09899569793775931,
+        "rmse_m": 0.5410946547214157,
+        "delta1": 0.9112302292624278,
+        "point_epe_m": 0.24848347401507603
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0105",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 17.20618121382454,
+        "abs_rel": 0.09382672821674518,
+        "rmse_m": 0.49367144772728677,
+        "delta1": 0.9032799797245399,
+        "point_epe_m": 0.23736365824612657
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 889,
+        "silog": 16.87864407525271,
+        "abs_rel": 0.09059711318781043,
+        "rmse_m": 0.4877091378214834,
+        "delta1": 0.9089412765623073,
+        "point_epe_m": 0.23496119814216462
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0106",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 19.051418431754747,
+        "abs_rel": 0.09195844211128255,
+        "rmse_m": 0.5905747349090741,
+        "delta1": 0.8759299428231551,
+        "point_epe_m": 0.26628887635731446
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 911,
+        "silog": 18.552578066263656,
+        "abs_rel": 0.09922713200056156,
+        "rmse_m": 0.5341837470348605,
+        "delta1": 0.8692880281465327,
+        "point_epe_m": 0.24720140272412178
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0107",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 20.552261097195746,
+        "abs_rel": 0.10836777822184243,
+        "rmse_m": 0.637072835885004,
+        "delta1": 0.841339775314083,
+        "point_epe_m": 0.3093987526197505
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 858,
+        "silog": 20.064859572930438,
+        "abs_rel": 0.10926363668157385,
+        "rmse_m": 0.6109959091701134,
+        "delta1": 0.8459101360324207,
+        "point_epe_m": 0.295036830507739
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0108",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 18.981471933252223,
+        "abs_rel": 0.1050333809357294,
+        "rmse_m": 0.5546856548622243,
+        "delta1": 0.8487334329397181,
+        "point_epe_m": 0.27873058389927136
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 886,
+        "silog": 19.82445690381449,
+        "abs_rel": 0.10777912539366494,
+        "rmse_m": 0.5970181103272298,
+        "delta1": 0.8555115399583068,
+        "point_epe_m": 0.2887246391995714
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0109",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 23.652199988406256,
+        "abs_rel": 0.10902775000197266,
+        "rmse_m": 0.755905497689107,
+        "delta1": 0.79338408318457,
+        "point_epe_m": 0.37462809672691194
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 973,
+        "silog": 19.608434470652945,
+        "abs_rel": 0.08924533928200848,
+        "rmse_m": 0.6142553311101723,
+        "delta1": 0.8631877442083391,
+        "point_epe_m": 0.2838697013209354
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0110",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 21.478368601264805,
+        "abs_rel": 0.09609951825108039,
+        "rmse_m": 0.5636507922920617,
+        "delta1": 0.8480495587752818,
+        "point_epe_m": 0.2676726112575358
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 23.602408988733497,
+        "abs_rel": 0.08959454763773836,
+        "rmse_m": 0.5956376424761824,
+        "delta1": 0.8519558087752818,
+        "point_epe_m": 0.26829622945537623
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0111",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 20.07849569982049,
+        "abs_rel": 0.08347498131972445,
+        "rmse_m": 0.5341054297490181,
+        "delta1": 0.8637359539041995,
+        "point_epe_m": 0.23954295151917204
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 22.671974424086997,
+        "abs_rel": 0.08673636036365058,
+        "rmse_m": 0.5716513766626055,
+        "delta1": 0.8686418046549329,
+        "point_epe_m": 0.2526158473294514
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0112",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 24.01108662050501,
+        "abs_rel": 0.09002953438675171,
+        "rmse_m": 0.5870144633129935,
+        "delta1": 0.8603515625,
+        "point_epe_m": 0.25820053882459415
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 24.203885070760595,
+        "abs_rel": 0.09081765301522751,
+        "rmse_m": 0.5925181477694423,
+        "delta1": 0.8623046875,
+        "point_epe_m": 0.2606477928221855
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0113",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 19.048812455124075,
+        "abs_rel": 0.07970468758651392,
+        "rmse_m": 0.4612927616737239,
+        "delta1": 0.8912875306372549,
+        "point_epe_m": 0.19723061745725284
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 16.229408295020697,
+        "abs_rel": 0.07353811418343031,
+        "rmse_m": 0.3895596071767782,
+        "delta1": 0.8912875306372549,
+        "point_epe_m": 0.17047361200944688
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0114",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 19.120385160021108,
+        "abs_rel": 0.08223895453918564,
+        "rmse_m": 0.4750168978228439,
+        "delta1": 0.8794070002508878,
+        "point_epe_m": 0.21108226378515038
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 19.527139220452316,
+        "abs_rel": 0.0822698359552889,
+        "rmse_m": 0.47426628680567984,
+        "delta1": 0.8764773429056663,
+        "point_epe_m": 0.21075375838485177
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0115",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 22.59148322829884,
+        "abs_rel": 0.08782432771650392,
+        "rmse_m": 0.5652214951907005,
+        "delta1": 0.8792998301682878,
+        "point_epe_m": 0.24526637940106608
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 23.481710328585553,
+        "abs_rel": 0.0886469766092106,
+        "rmse_m": 0.5793506860655514,
+        "delta1": 0.8773351860429212,
+        "point_epe_m": 0.24957465667546203
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0116",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 24.676588355400007,
+        "abs_rel": 0.09218105442419294,
+        "rmse_m": 0.6065122282294628,
+        "delta1": 0.8783155781997839,
+        "point_epe_m": 0.2636243503740071
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 24.620792668019913,
+        "abs_rel": 0.09126781958107383,
+        "rmse_m": 0.6078690589562635,
+        "delta1": 0.8832213987957388,
+        "point_epe_m": 0.2628886975776935
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0117",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 24.429778088054235,
+        "abs_rel": 0.09755578635918546,
+        "rmse_m": 0.6152027523683059,
+        "delta1": 0.8560421431121662,
+        "point_epe_m": 0.2749131558368258
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1021,
+        "silog": 24.71549505732736,
+        "abs_rel": 0.09594993485737173,
+        "rmse_m": 0.6195077009761707,
+        "delta1": 0.8609326450806701,
+        "point_epe_m": 0.27396907630281886
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0118",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 23.596744598854464,
+        "abs_rel": 0.09566103696284423,
+        "rmse_m": 0.5883642740080844,
+        "delta1": 0.8659466911764706,
+        "point_epe_m": 0.26130646034843275
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1022,
+        "silog": 24.196018545997212,
+        "abs_rel": 0.09429996569006777,
+        "rmse_m": 0.5956426037300242,
+        "delta1": 0.8669270833333333,
+        "point_epe_m": 0.26150637780126806
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0119",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 20.564301198891922,
+        "abs_rel": 0.08349824242241763,
+        "rmse_m": 0.5034918981749797,
+        "delta1": 0.8870523419445273,
+        "point_epe_m": 0.2191604680294669
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 21.02106700656816,
+        "abs_rel": 0.08286445034980275,
+        "rmse_m": 0.5170806082953933,
+        "delta1": 0.890005128362384,
+        "point_epe_m": 0.22301075054884242
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0120",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 23.401381876823798,
+        "abs_rel": 0.09135397562549923,
+        "rmse_m": 0.5876179834754232,
+        "delta1": 0.8812567546703721,
+        "point_epe_m": 0.25807896972109423
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1019,
+        "silog": 24.046598660782593,
+        "abs_rel": 0.09242579006419133,
+        "rmse_m": 0.5954795758694379,
+        "delta1": 0.8802763625135094,
+        "point_epe_m": 0.26106538749009367
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg2_xyz-0121",
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 23.41949655881139,
+        "abs_rel": 0.09299295748519004,
+        "rmse_m": 0.5969099747221955,
+        "delta1": 0.8772078122587618,
+        "point_epe_m": 0.2643639500477649
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 23.905801651265048,
+        "abs_rel": 0.09307448313552222,
+        "rmse_m": 0.6041220355454668,
+        "delta1": 0.8772078122587618,
+        "point_epe_m": 0.26646320630130144
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0071",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 26.26766680391352,
+        "abs_rel": 0.08415656756073682,
+        "rmse_m": 1.115384081002024,
+        "delta1": 0.9114829396325459,
+        "point_epe_m": 0.41802081766521315
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 24.823508146432694,
+        "abs_rel": 0.08641582650392697,
+        "rmse_m": 1.07638340655271,
+        "delta1": 0.906557819978385,
+        "point_epe_m": 0.4163368102196955
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0072",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 9.719009285981054,
+        "abs_rel": 0.05379672038543784,
+        "rmse_m": 0.25672949508302756,
+        "delta1": 0.9577540600393701,
+        "point_epe_m": 0.12532016374923366
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1018,
+        "silog": 9.867271353697967,
+        "abs_rel": 0.05328279951071762,
+        "rmse_m": 0.2704208074339174,
+        "delta1": 0.9577463705708662,
+        "point_epe_m": 0.12600601079539078
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0073",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 12.803790807311987,
+        "abs_rel": 0.06133530163483695,
+        "rmse_m": 0.485029426274145,
+        "delta1": 0.9382271221726879,
+        "point_epe_m": 0.19695558013834283
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1020,
+        "silog": 13.037126705763376,
+        "abs_rel": 0.061421967431933074,
+        "rmse_m": 0.49280750734453027,
+        "delta1": 0.9441095052686428,
+        "point_epe_m": 0.19903006520153568
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0074",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 10.60789103452198,
+        "abs_rel": 0.059518948503489155,
+        "rmse_m": 0.37184566104974753,
+        "delta1": 0.9560546875,
+        "point_epe_m": 0.1708148917028581
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 10.686300534905811,
+        "abs_rel": 0.05982448227529369,
+        "rmse_m": 0.36394374734966256,
+        "delta1": 0.9541015625,
+        "point_epe_m": 0.16805878684196762
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0075",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 32.51718842044337,
+        "abs_rel": 0.1025096034199036,
+        "rmse_m": 1.435583520621387,
+        "delta1": 0.896484375,
+        "point_epe_m": 0.5638954538149019
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 32.31414909806906,
+        "abs_rel": 0.1030296826069992,
+        "rmse_m": 1.4465278063827198,
+        "delta1": 0.89453125,
+        "point_epe_m": 0.5696333947362123
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0076",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 29.518482072221865,
+        "abs_rel": 0.12488431803294507,
+        "rmse_m": 1.4222106167435475,
+        "delta1": 0.8623046875,
+        "point_epe_m": 0.6888354987250939
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1024,
+        "silog": 17.012828389588194,
+        "abs_rel": 0.09972156922676993,
+        "rmse_m": 0.8699621782923157,
+        "delta1": 0.90234375,
+        "point_epe_m": 0.4905197912269744
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0077",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 29.44109756074006,
+        "abs_rel": 0.12461386303522438,
+        "rmse_m": 1.384102925604707,
+        "delta1": 0.8554760352991218,
+        "point_epe_m": 0.6520073717571335
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 19.300736135727618,
+        "abs_rel": 0.10563836967042876,
+        "rmse_m": 0.9579307117895558,
+        "delta1": 0.8633307825012922,
+        "point_epe_m": 0.500058525489551
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0078",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 30.381357613264154,
+        "abs_rel": 0.12435574896836024,
+        "rmse_m": 1.3996769049464306,
+        "delta1": 0.8190829087540528,
+        "point_epe_m": 0.6197952172027825
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1017,
+        "silog": 16.474024765741923,
+        "abs_rel": 0.09458725387677658,
+        "rmse_m": 0.7661088115915223,
+        "delta1": 0.8466110853790336,
+        "point_epe_m": 0.3809056877502133
+      }
+    },
+    {
+      "target": "rgbd_dataset_freiburg3_long_office_household-0079",
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "cut3r": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 38.11703963992564,
+        "abs_rel": 0.11870172605935346,
+        "rmse_m": 1.6746677211477161,
+        "delta1": 0.85503096697893,
+        "point_epe_m": 0.7154534480626542
+      },
+      "ttt3r": {
+        "valid_views": 4,
+        "valid_cells": 1014,
+        "silog": 15.75923776374309,
+        "abs_rel": 0.08827049314270666,
+        "rmse_m": 0.731803216344903,
+        "delta1": 0.8530391210980051,
+        "point_epe_m": 0.3691026318091547
+      }
+    }
+  ]
+}

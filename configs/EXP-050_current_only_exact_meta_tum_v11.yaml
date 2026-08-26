@@ -1,0 +1,25 @@
+experiment: EXP-050
+protocol_revision: v1.1_baseline_reproduction_correction
+purpose: corrected_current_only_exact_meta_absolute_geometry_feasibility
+source:
+  registered_config: configs/EXP-050_current_only_exact_meta_tum_v10.yaml
+  registered_config_sha256: 94a669d0ed54e22ca11c2e420a76d421cf6f533bed9555a5a90415178d041739
+  method_result: revisit3d/results/EXP-050/current_only_exact_meta_tum_v10.json
+  method_result_sha256: f34df1becbb4457c429efcdfe63fa7e0069bdc57dfc618b06e09060d4847cadf
+  native_baseline_result: revisit3d/results/EXP-050/native_cut3r_ttt3r_correction_v11.json
+  native_baseline_result_sha256: c689c64fdf423d7e84dee11e9dafd9b07ef15cb9fc16df5eb74de2b5048d047f
+  long_parity_result: revisit3d/results/EXP-050/long_replay_parity_diagnosis_v10.json
+  long_parity_result_sha256: a3446e1d434186fb297a6eb394187d637f9626210ecf988ff1eaa27594b6dd4f
+  input_inventory_sha256: 00c881889c9847b553adec26af459072b2247ed626111d857e7496ee3fff8ef7
+analysis:
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  bootstrap_unit: sequence
+  bootstrap_draws: 20000
+  bootstrap_seed: 5000010
+success:
+  maximum_base_reproduction_abs_difference: 0.00001
+  require_exact_meta_better_cut3r_ci95_all_primary: true
+  require_exact_meta_better_generic_ci95_all_primary: true
+  require_exact_meta_better_ttt3r_ci95_all_primary_for_competitive_paper: true
+output:
+  result: revisit3d/results/EXP-050/current_only_exact_meta_tum_v11.json
