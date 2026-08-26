@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (adaptation-memory line closed; EXP-061 preregistered)
+Last updated: 2026-08-26 (EXP-061 gauge/local premise rejected)
 
 ## First objective
 
@@ -653,3 +653,21 @@ information-sufficiency/controlled-missing-observation problem plus a fresh
 novelty design. Otherwise this line should close and a different compact paper
 problem should be selected. This is now a user-judgment boundary; neither path
 may be inferred from the failed adaptation hypothesis.
+
+## Post-memory paper pivot: gauge-aware reliability
+
+D147 records the explicit choice to close adaptation memory and select a
+different compact paper problem. A 2023--2026 audit selected hierarchical
+gauge/local reliability only after rejecting crowded update-gating, cache,
+generic uncertainty, and 4D-tracking directions. EXP-061 then tested the
+phenomenon before any architecture.
+
+EXP-061 failed its magnitude gate. Held-pixel per-frame Sim(3) alignment is
+statistically and temporally specific, but it removes only 3.66% of aggregate
+relative 3D error; the top-confidence fraction is 6.47% and is not positive in
+all scenes. H19 is therefore closed as the central short-stream paper claim.
+No model was trained and all validation/terminal roles remain unopened.
+
+The next compact candidate must again undergo a literature collision audit and
+a zero-fit premise. Incremental gauge thresholds, longer windows chosen after
+this result, or a hierarchical uncertainty head are not authorized.

@@ -328,5 +328,6 @@ For predicted point `x_i`, the provisional first-order error covariance is
 where `g` is a frame/trajectory Sim(3) latent shared by all points and
 `Sigma_l,i` is local surface uncertainty. The shared term also induces
 cross-point covariance `J_i Sigma_g J_j^T`. This is theoretical motivation,
-not yet an implemented head or validated likelihood. EXP-061 first tests
-whether the corresponding error anatomy exists under held-pixel evaluation.
+not an implemented head or validated likelihood. EXP-061 found the component
+but rejected its paper-level magnitude and high-confidence persistence gates.
+The provisional direction is closed; there remains no accepted active method.

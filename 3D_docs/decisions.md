@@ -1960,3 +1960,23 @@ These thresholds, sequences, frames, seed, and bootstrap are frozen before any
 new RGB-D/model output is opened. Success authorizes a separate observability
 experiment, not a trainable head. Failure closes this candidate without
 threshold repair.
+
+## D149 — Reject gauge/local factorization as the next paper center
+
+Date: 2026-08-26
+Status: Accepted after EXP-061
+
+EXP-061 completed exactly 16 fresh train contexts and 64 frames with disjoint
+fit/evaluation pixels. The temporal specificity checks pass: per-frame Sim(3)
+beats one context transform by `0.003843` relative 3D EPE with CI
+`[0.002209, 0.005591]`, and beats cyclic transform reassignment by `0.008444`
+with CI `[0.005083, 0.011868]`. Every scene has a positive aggregate effect.
+
+The claim-level gates fail. Matching frame gauge removes only 3.66% of total
+error, far below 15%. The high-confidence fraction is 6.47%, below 10%, and
+the high-confidence effect is negative in `stairs`. Native frame uncertainty
+also has only weak descriptive association with transform displacement. The
+phenomenon exists but is not dominant enough on this registered setting to
+carry a compact top-tier paper. No uncertainty head, calibration fit,
+validation access, longer-context amplification, or threshold repair is
+authorized from this result.

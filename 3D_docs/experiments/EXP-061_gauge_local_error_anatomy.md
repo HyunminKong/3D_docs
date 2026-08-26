@@ -2,7 +2,7 @@
 
 ## Status
 
-Preregistered; not yet run.
+Completed; registered gate failed.
 
 ## Question
 
@@ -74,3 +74,37 @@ threshold or frame repair is allowed.
 - Config: `configs/EXP-061_gauge_local_error_anatomy_v10.yaml`
 - Preparation artifact: `revisit3d/results/EXP-061/selected_train_depth_registration_v10.json`
 - Result: `revisit3d/results/EXP-061/gauge_local_error_anatomy_v10.json`
+
+## Result
+
+- Exact coverage: 4 scenes, 16 contexts, 64 frames.
+- Fit/evaluation overlap: zero by checkerboard construction.
+- Context Sim(3) EPE: `0.104893`.
+- Matching per-frame Sim(3) EPE: `0.101050`.
+- Cyclic per-frame transform EPE: `0.109494`.
+- Matching-frame gain over context: `0.003843`, stratified context-bootstrap
+  95% CI `[0.002209, 0.005591]`.
+- Matching-frame gain over cyclic: `0.008444`, CI
+  `[0.005083, 0.011868]`.
+- Aggregate gauge fraction: `3.6636%` versus the registered `15%` minimum.
+- Top-confidence-quartile gauge fraction: `6.4706%` versus the registered `10%`
+  minimum; the `stairs` high-confidence scene effect is `-7.38e-5`.
+- Matching-frame gain is positive in all four scene aggregates, but only 50/64
+  individual frames; the high-confidence gain is positive in 42/64 frames.
+- Peak allocated GPU memory: 4.62 GiB.
+- Result SHA-256:
+  `feb46823342b5a6caa95d74d9e4842de735e45cd46fa2b2591f38135bf9e2e93`.
+
+## Interpretation
+
+The disjoint-pixel and cyclic controls show that time-varying gauge error is a
+real phenomenon rather than transform overfitting. It is nonetheless a small
+fraction of short-stream TTT3R error and does not persist across every scene
+after native high-confidence selection. The result supports reporting native
+and locally aligned reliability separately, but not building the next paper
+around a new gauge head.
+
+## Conclusion
+
+H19 is rejected as the central paper hypothesis for this registered
+carrier/protocol. No calibration/head fit or validation access is authorized.

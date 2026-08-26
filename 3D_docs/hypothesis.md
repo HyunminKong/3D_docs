@@ -274,11 +274,12 @@ error and a local surface residual after that gauge is removed. A per-point
 confidence alone cannot fully characterize native-coordinate risk because the
 shared gauge latent induces correlated error across all points in a frame.
 
-Status: **Selected, premise not yet tested.** EXP-061 is a zero-fit train-only
-error-anatomy experiment. Each Sim(3) is estimated on one checkerboard half of
-dense valid points and scored on the disjoint half. It compares one transform
-for the four-frame context, one transform per frame, and cyclically reassigned
-per-frame transforms. The analysis is repeated on only the top-confidence
-quartile. No uncertainty head, calibration model, loss, or validation access is
-authorized until the magnitude, temporal specificity, and high-confidence
-persistence gates pass.
+Status: **Rejected as a central paper hypothesis for the registered short-stream
+carrier/protocol.** EXP-061 found a real temporal gauge component: matching
+per-frame Sim(3) beat one context transform and cyclic reassignment with wholly
+positive intervals. Its magnitude was only 3.66% of total relative 3D error,
+however, versus the preregistered 15% minimum. On the native-confidence top
+quartile it explained 6.47%, missed the 10% gate, and was slightly negative in
+`stairs`. This is useful evaluation anatomy but too small and heterogeneous to
+justify a new hierarchical uncertainty head. No threshold, context-length, or
+carrier repair is authorized under H19.
