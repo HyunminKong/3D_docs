@@ -166,9 +166,10 @@ self-supervised local TTT step improve absolute depth and point accuracy on a
 frozen competitive recurrent carrier, beyond both zero-code CUT3R and an equal
 generic coordinate.
 
-Status: **Open; EXP-050 registered.** The hypothesis is explicitly
-current-only: no past code, retrieval, transport, or continual-memory claim.
-Method feasibility requires positive held-sequence bounds on SILog, aligned
-AbsRel, and 3D EPE over CUT3R and the generic basis. A separate competitiveness
-gate requires the same over official TTT3R. TUM is exposed development data,
-not final generalization.
+Status: **Rejected for the frozen EXP-043 coordinate.** Corrected EXP-050
+established exact official replay parity, then found that one exact-meta step
+worsens SILog in all three TUM sequences and yields no significant aligned
+AbsRel or 3D EPE gain. It also fails every capacity-matched generic-coordinate
+comparison and is substantially worse than matched official TTT3R. The online
+consistency gain does not imply absolute geometry gain. This rejects the
+current realization, not every possible metric-aligned TTT objective.

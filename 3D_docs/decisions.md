@@ -1513,3 +1513,27 @@ current RGB-D input, rerun official CUT3R and TTT3R on those bytes, require the
 new CUT3R rows to match v1.0's internal base, and recompute the already
 registered gates. The v1.0 result remains immutable. No exact-meta prediction,
 basis, step, metric, bootstrap, threshold, or success condition may change.
+
+## D132 — Stop the frozen exact-meta current-only paper candidate
+
+Date: 2026-08-26
+Status: Accepted after corrected EXP-050 v1.1
+
+The v1.1 correction passed exact coverage, 2,228-frame native/step-wise parity,
+and per-target CUT3R reproduction. It then failed every registered method and
+competitiveness check. Exact-meta significantly worsened SILog in all three
+sequences, did not significantly improve aligned AbsRel or EPE, did not beat
+the equal generic coordinate, and remained substantially worse than matched
+official TTT3R on all primary metrics.
+
+The frozen EXP-043 coordinate is therefore rejected as a current-only paper
+candidate. A second step worsened SILog further and cannot justify a step-count
+repair. No TUM-selected learning rate, objective, basis, layer, mode, or number
+of steps is authorized.
+
+Both surviving interpretations of the current implementation are now closed:
+its past-update memory lacks unique information beyond repeated current TTT,
+and its current-only consistency improvement does not transfer to absolute
+geometry. Continuing requires a fresh-data, metric-aligned TTT objective on a
+stronger carrier mode or a fundamentally new explicit-evidence memory under
+controlled missing information. Either is a new project-scope decision.

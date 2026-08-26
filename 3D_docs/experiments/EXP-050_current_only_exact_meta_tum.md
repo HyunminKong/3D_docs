@@ -1,6 +1,6 @@
 # EXP-050 — Current-Only Exact-Meta TTT Absolute Geometry Audit
 
-Status: v1.0 completed with stale-baseline guard failure; v1.1 correction running
+Status: Corrected v1.1 completed; method and competitiveness gates failed
 Purpose: Decide whether the surviving compact TTT coordinate is a competitive
 paper candidate without continual memory
 
@@ -75,3 +75,42 @@ change.
 - Input inventory: `revisit3d/results/EXP-050/tum_input_inventory_v11.json`
 - Native correction config: `configs/EXP-050_native_baseline_correction_v11.yaml`
 - Native correction result: `revisit3d/results/EXP-050/native_cut3r_ttt3r_correction_v11.json`
+
+## Corrected result
+
+The corrected official CUT3R rows match the v1.0 internal zero-code rows
+exactly (`max abs = 0`) and the long native/step-wise parity error is zero on
+all 2,228 frames. The v1.1 correction therefore resolves the common guard
+without changing any method prediction.
+
+Sequence-balanced absolute geometry is:
+
+| Method | SILog ↓ | aligned AbsRel ↓ | 3D EPE ↓ |
+|---|---:|---:|---:|
+| CUT3R | 17.70120 | 0.0823880 | 0.254219 m |
+| Generic 8-D, 1 step | 17.70124 | 0.0823883 | 0.254219 m |
+| Exact-meta, 1 step | 17.70143 | 0.0823876 | 0.254215 m |
+| Exact-meta, 2 steps (diagnostic) | 17.70165 | 0.0823874 | 0.254212 m |
+| Official TTT3R | **15.24125** | **0.0775308** | **0.214267 m** |
+
+Exact-meta worsens SILog relative to CUT3R in all three sequences by
+`2.29e-4`, CI `[-5.78e-4, -4.25e-5]`. Its AbsRel and EPE changes are only
+`3.58e-7` and `3.52e-6 m`, with both intervals crossing zero. The same pattern
+fails every comparison against the generic coordinate. A second exact-meta
+step further worsens SILog and does not create significant AbsRel/EPE benefit.
+
+Against matched official TTT3R, exact-meta is worse in all three sequences and
+all primary metrics: SILog by `2.4602`, aligned AbsRel by `0.004857`, and 3D
+EPE by `0.03995 m`, each with a wholly negative comparison interval.
+
+## Conclusion
+
+All common correction checks pass, but all six method-feasibility checks and
+all three competitiveness checks fail. The exact-meta basis learned to reduce
+its online canonical-point consistency signal, not to improve absolute
+geometry. It is neither a validated learned-coordinate ablation nor a
+competitive current-only reconstruction method. No TUM step-size, step-count,
+loss, or basis repair is permitted from this exposed result.
+
+- Corrected config: `configs/EXP-050_current_only_exact_meta_tum_v11.yaml`
+- Corrected result: `revisit3d/results/EXP-050/current_only_exact_meta_tum_v11.json`

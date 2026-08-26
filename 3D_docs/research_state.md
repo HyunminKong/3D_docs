@@ -436,5 +436,27 @@ RGB-only long-stream audit found exact native/step-wise parity on every one of
 2,228 frames, localizing the discrepancy to the old baseline/input environment
 rather than the carrier interface. D131 authorizes only a v1.1 matched native
 baseline correction after freezing the current 4,472-file RGB-D content digest.
-The v1.0 method predictions are immutable and H13 remains unclassified until
-the corrected common guard is evaluated.
+The v1.0 method predictions are immutable.
+
+Corrected EXP-050 v1.1 passed every common guard and failed every method and
+competitiveness gate. Exact-meta worsened SILog in all three sequences, did not
+significantly improve AbsRel/EPE over CUT3R or the generic coordinate, and was
+worse than matched TTT3R by `2.46` SILog, `0.00486` AbsRel, and `0.03995 m`
+EPE. H13 is rejected for the frozen coordinate.
+
+## Current project decision point
+
+There is no active paper-ready model. The competitive-carrier update-memory
+branch failed its equal-compute and low-parallax oracle tests; the surviving
+current-only coordinate failed absolute geometry and TTT3R competitiveness.
+The EXP-039 terminal split is still unopened and must remain closed.
+
+Further incremental bank, router, threshold, step-count, or TUM tuning is
+scientifically unauthorized. The next branch must be chosen explicitly:
+
+1. design a fresh-data metric-aligned current-only TTT objective on the stronger
+   TTT3R carrier mode; or
+2. design an explicit geometry/visibility evidence memory for controlled
+   occlusion, accepting that this is a new memory object and novelty audit.
+
+D132 closes the present frozen implementation before either redesign.
