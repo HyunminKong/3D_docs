@@ -158,3 +158,17 @@ scenes, and the low-versus-sufficient interaction was not positive. This does
 not rule out explicit past geometry under true occlusion; it does reject the
 claim that weak parallax makes the existing adaptation-direction code uniquely
 useful.
+
+## H13 — Exact-meta local coordinate for current-only 3D TTT
+
+A 6,144-parameter exact-meta low-dimensional coordinate makes a single
+self-supervised local TTT step improve absolute depth and point accuracy on a
+frozen competitive recurrent carrier, beyond both zero-code CUT3R and an equal
+generic coordinate.
+
+Status: **Open; EXP-050 registered.** The hypothesis is explicitly
+current-only: no past code, retrieval, transport, or continual-memory claim.
+Method feasibility requires positive held-sequence bounds on SILog, aligned
+AbsRel, and 3D EPE over CUT3R and the generic basis. A separate competitiveness
+gate requires the same over official TTT3R. TUM is exposed development data,
+not final generalization.

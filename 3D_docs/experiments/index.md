@@ -51,5 +51,6 @@
 | [EXP-047](EXP-047_full_stream_bounded_bank.md) | Does agreement-addressed memory survive every-frame writes, continuous recurrence, and capacity 16? | Completed; gate failed on retention | Agreement memory works, but FIFO beats reservoir in all scenes; recent-memory equivalence must be audited. |
 | [EXP-048](EXP-048_fifo_memory_vs_second_ttt.md) | Does FIFO agreement memory beat an equal-step second current TTT baseline? | Completed; decisive gate failed | FIFO helps over one current step and beats appearance/random, but loses to a second current step in all 14 scenes; terminal remains closed and the active memory claim stops. |
 | [EXP-049](EXP-049_low_parallax_oracle_premise.md) | Does complementary past adaptation beat repeated current TTT when the target has weak parallax? | Completed; oracle gate failed | Even future-oracle memory loses to second current TTT in all 24 low-parallax scenes; the existing update code is stopped and terminal remains closed. |
+| [EXP-050](EXP-050_current_only_exact_meta_tum.md) | Does the surviving exact-meta coordinate improve absolute CUT3R geometry and reach TTT3R? | Registered | Frozen current-only paper-feasibility audit on the matched 111-target TUM causal protocol. |
 
 Long-form chronological analyses remain under `Research/` and are linked from the individual experiment records.

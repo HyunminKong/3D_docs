@@ -420,3 +420,12 @@ representation and task change. The alternative is to drop continual memory
 and assess whether the exact-meta coordinate supports a sufficiently novel
 current-only streaming TTT paper. D129 requires explicit project choice before
 either branch begins.
+
+D130 records the explicit choice to audit the smaller current-only candidate
+first. EXP-050 is registered on the existing 111-target TUM causal RGB-D
+protocol with frozen weights and hyperparameters. It compares exact-meta
+one-step against CUT3R, an equal generic coordinate, an immutable two-step
+diagnostic, and official TTT3R. No memory component is active and no terminal
+data is opened. The result must pass both three-metric absolute-geometry and
+TTT3R competitiveness gates before this frozen realization can be treated as a
+standalone top-tier paper candidate.

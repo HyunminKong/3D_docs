@@ -1472,3 +1472,26 @@ controlled occlusion. That would be a new method hypothesis and a material
 architecture-scope decision. Alternatively, the project may end the memory
 paper and retain the learned coordinate as a current-only TTT result. Neither
 choice is authorized automatically by EXP-049.
+
+## D130 — Audit the exact-meta coordinate as a current-only paper candidate
+
+Date: 2026-08-26
+Status: Accepted by explicit project decision
+
+The project elects to test the smallest surviving result before redesigning
+memory: one local exact-meta TTT coordinate on frozen CUT3R, with no retrieval,
+transport, bank, or continual claim. EXP-050 reuses the already exposed TUM
+causal RGB-D protocol only as development evidence; no model component or
+hyperparameter may be fit to TUM.
+
+The primary method is the immutable EXP-043 basis, one normalized `0.001` step,
+and one symmetric point-consistency loss. A generic orthonormal basis is the
+capacity-matched ablation and a second exact-meta step is diagnostic only.
+Official CUT3R and TTT3R predictions are frozen references.
+
+Method feasibility requires exact-meta to improve SILog, aligned AbsRel, and 3D
+EPE over both CUT3R and the generic coordinate with positive sequence-bootstrap
+bounds. Standalone top-tier competitiveness additionally requires improvement
+over official TTT3R on all three. A failure cannot be repaired on TUM; it either
+ends this frozen current-only candidate or motivates a separately authorized
+carrier-mode integration selected on fresh train data.

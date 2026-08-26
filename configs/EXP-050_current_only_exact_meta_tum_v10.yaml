@@ -1,0 +1,49 @@
+experiment: EXP-050
+protocol_revision: v1.0
+purpose: current_only_exact_meta_absolute_geometry_feasibility
+seed: 5000010
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  baseline_result: revisit3d/results/EXP-036/cut3r_ttt3r_tum_baselines_v10.json
+  baseline_result_sha256: 1eb8140c1d8a60629a7aa3865eb6b9a5f2ccbc638d79a3b37829057ca74a53b3
+  role: exposed_transfer_development
+  exact_sequences: 3
+  exact_targets: 111
+  exact_stream_frames: 2228
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: cut3r
+  image_size: 512
+  crop: false
+plasticity:
+  exact_meta_checkpoint: revisit3d/checkpoints/exp043_exact_meta_cut3r_plasticity_coordinate_v10.pt
+  exact_meta_checkpoint_sha256: eaa1c57f34cdb485099ba1e90cbd212c7d0243f725dcf3165015e2eec054a3a2
+  generic_basis_seed: 3800010
+  code_dim: 8
+  normalized_step: 0.001
+  steps_primary: 1
+  steps_diagnostic: 2
+  patch_size: 16
+  online_loss: symmetric_canonical_point_consistency
+  persistent_state_update: false
+depth:
+  grid_side: 16
+  minimum_m: 0.2
+  maximum_m: 10.0
+  minimum_cells_per_view: 32
+analysis:
+  primary_metrics: [silog, abs_rel, point_epe_m]
+  bootstrap_unit: sequence
+  bootstrap_draws: 20000
+  bootstrap_seed: 5000010
+success:
+  maximum_base_reproduction_abs_difference: 0.00001
+  require_exact_meta_better_cut3r_ci95_all_primary: true
+  require_exact_meta_better_generic_ci95_all_primary: true
+  require_exact_meta_better_ttt3r_ci95_all_primary_for_competitive_paper: true
+output:
+  result: revisit3d/results/EXP-050/current_only_exact_meta_tum_v10.json
