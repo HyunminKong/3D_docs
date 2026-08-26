@@ -1,6 +1,6 @@
 # EXP-049 — Low-Parallax Complementary-Memory Oracle Premise
 
-Status: Registered metadata stage; model gate pending
+Status: Registered; model gate pending
 Purpose: Test whether past adaptation has unique value when current geometry is
 underdetermined by weak adjacent camera translation
 
@@ -53,4 +53,6 @@ memory object before a new retrieval module or terminal access.
 - Frozen pair manifest: `revisit3d/manifests/exp049_low_parallax_oracle_train_v10.json`
   (SHA-256 `88fff50e4641026c966ea3edc880f27381ceae87e2523cd73bdf42d34bcd4d82`)
 - Metadata audit: `revisit3d/results/EXP-049/low_parallax_manifest_audit_v10.json`
-- Model config/result: registered after the metadata artifact is frozen
+- Model config: `configs/EXP-049_low_parallax_oracle_premise_v10.yaml`
+- Evaluator: `revisit3d/scripts/evaluate_exp049_low_parallax_oracle_premise.py`
+- Model result: `revisit3d/results/EXP-049/low_parallax_oracle_premise_v10.json`
