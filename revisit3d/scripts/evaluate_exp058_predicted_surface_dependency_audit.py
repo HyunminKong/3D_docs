@@ -80,7 +80,6 @@ def main() -> None:
     repository = Path(config["carrier"]["repository"]).resolve()
     sys.path.insert(0, str(repository))
     sys.path.insert(0, str(repository / "src"))
-    from dust3r.utils.camera import pose_encoding_to_camera
     from eval.mv_recon.data import SevenScenes
 
     carrier = FrozenCUT3RCarrier(
@@ -93,6 +92,10 @@ def main() -> None:
     carrier.eval()
     carrier.model.requires_grad_(False)
     carrier.residual.requires_grad_(False)
+    # Import after the carrier has initialized dust3r's head registry. Importing
+    # camera utilities first triggers the external repository's camera/head
+    # circular import before either module has finished initialization.
+    from dust3r.utils.camera import pose_encoding_to_camera
     patch_size = int(config["plasticity"]["patch_size"])
     step_size = float(config["plasticity"]["normalized_step"])
     minimum_depth = float(config["metric"]["minimum_depth_m"])

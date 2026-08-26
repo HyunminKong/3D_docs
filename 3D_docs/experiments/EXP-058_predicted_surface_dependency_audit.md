@@ -4,6 +4,11 @@ Status: Registered; train-only no-fit dependency decomposition
 Purpose: Determine whether EXP-057's explicit-surface advantage survives after
 removing GT pose, past metric scale, and GT visibility from fusion
 
+Protocol revision v1.1 changes only import order after the registered v1.0
+runner stopped before model construction or data access on an external dust3r
+camera/head circular import. The carrier now initializes before importing the
+pose-decoding utility; method, data, controls, and gates are unchanged.
+
 ## Protocol
 
 Reuse the exact EXP-057 16 controlled-erasure anchors, carrier, mask, current

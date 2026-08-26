@@ -1,5 +1,5 @@
 experiment: EXP-058
-protocol_revision: v1.0_registered_before_execution
+protocol_revision: v1.1_external_import_order_correction
 purpose: train_only_no_fit_predicted_surface_dependency_audit
 seed: 5700010
 data:
