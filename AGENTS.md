@@ -2,7 +2,10 @@
 
 ## Project
 
-Continual Test-Time Adaptation Memory for Streaming 3D/4D Reconstruction.
+Gauge-Aware Reliability for Streaming 3D Reconstruction.
+
+The former continual adaptation-memory line is preserved as completed negative
+and mechanism evidence through EXP-060. It is not the active method direction.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

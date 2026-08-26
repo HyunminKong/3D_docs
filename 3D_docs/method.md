@@ -310,3 +310,23 @@ and harms 56.25% of anchors. This plasticity object is stopped before address,
 bank, validation, or training. There remains no active paper method. The only
 strong missing-evidence object is the explicit predicted surface in EXP-057/058,
 which is content memory and cannot inherit the adaptation-memory claim.
+
+## Provisional gauge-aware reliability direction
+
+There is currently no accepted new method. D147 archives the adaptation-memory
+architecture above. D148 selects a new error-factorization question whose
+minimal eventual model, if its premises pass, would use one shared gauge latent
+and one local residual field rather than a memory, TTT loop, router, cache, or
+collection of task heads.
+
+For predicted point `x_i`, the provisional first-order error covariance is
+
+\[
+\operatorname{Cov}(e_i) \approx J_i\Sigma_gJ_i^\top+\Sigma_{\ell,i},
+\]
+
+where `g` is a frame/trajectory Sim(3) latent shared by all points and
+`Sigma_l,i` is local surface uncertainty. The shared term also induces
+cross-point covariance `J_i Sigma_g J_j^T`. This is theoretical motivation,
+not yet an implemented head or validated likelihood. EXP-061 first tests
+whether the corresponding error anatomy exists under held-pixel evaluation.

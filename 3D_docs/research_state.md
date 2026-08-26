@@ -1,32 +1,37 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-058/059 dependency evidence qualified)
+Last updated: 2026-08-26 (adaptation-memory line closed; EXP-061 preregistered)
 
 ## First objective
 
-Produce one compact CVPR-first paper on streaming static 3D revisits. The paper
-must establish novelty, absolute geometry benefit, causal/source-safe
-generalization, and efficiency without accumulating heads, losses, thresholds,
-or unrelated 4D tasks. A broader dissertation architecture is deferred.
+Produce one compact CVPR-first paper on reliable streaming 3D reconstruction.
+The paper must establish a distinct empirical failure mode, a minimal method,
+absolute geometry/reliability benefit, source-safe generalization, and efficiency
+without accumulating heads, losses, thresholds, or unrelated 4D tasks. A broader
+dissertation architecture is deferred.
 
 ## Research question
 
-Can a streaming 3D model store a spatially local **adaptation experience**, move
-that correction into a later observation's token frame, and retrieve it by
-expected geometric utility rather than by place appearance alone?
+Does streaming pointmap error contain a shared, time-varying Sim(3) gauge
+component that is distinct from local surface residual, and must reliability be
+modeled hierarchically rather than by an independent per-point confidence alone?
 
 ## Defensible novelty boundary
 
-Generic TTT memory, fast-weight scene compression, and retrievable gradients
-are not novel claims because of direct overlap with tttLRM, ZipMap, TTT3R,
-Mem3R, and ReGrad. The defensible conjunction is:
+Generic per-point confidence, evidential uncertainty, confidence calibration,
+reliability-weighted recurrent updates, and cache/state compression are occupied
+by Trust3R, conformal multi-view calibration, ReCal3R, TTSA3R, SSR, MeMix,
+STAC, LONG3R, LongStream, and related work. The provisional boundary is:
 
-1. a per-token local plasticity code rather than model-wide gradients or scene
-   content;
-2. explicit cross-view transport of that code;
-3. an address supervised by causal future geometry utility rather than place
-   identity or RGB similarity;
-4. physical-revisit evaluation with same-bank random-address controls.
+1. explicitly separate a shared frame/trajectory Sim(3) gauge latent from local
+   surface residual uncertainty;
+2. represent the induced cross-point covariance rather than treating pixels as
+   independent confidence samples;
+3. evaluate both native/global geometry risk and gauge-removed local surface
+   risk, without allowing per-image alignment to hide the former;
+4. use the two risks for distinct decisions, not as another scalar update gate.
+
+This is a selected research question, not an accepted novelty or method claim.
 
 ## Archived compact mechanism-proof candidate
 

@@ -1917,3 +1917,46 @@ design around information sufficiency or controlled missing observations. The
 alternative is to close this line and choose another compact paper problem.
 This decision changes the paper contribution and therefore requires user
 judgment before EXP-061 or any architecture is registered.
+
+## D147 — Close adaptation memory and select a different compact paper problem
+
+Date: 2026-08-26
+Status: Accepted by explicit user choice
+
+The user selected the recommended option at D146: close the current
+adaptation-experience line rather than turn the large explicit-surface effect
+into a generic geometry-memory paper. H1--H18, EXP-001--060, and all immutable
+artifacts remain scientific evidence, but no bank, router, transport, TTT-code,
+or controlled-erasure repair is active. Previously unopened validation and
+terminal roles remain unopened; they do not transfer automatically to the new
+question.
+
+## D148 — Select gauge-aware reliability and register a zero-fit premise
+
+Date: 2026-08-26
+Status: Accepted before EXP-061
+
+A focused 2023--2026 collision audit rejects four nearby directions for this
+paper: reliability-scaled state updates, cache/state compression, generic
+per-point uncertainty/calibration, and joint 4D tracking. The remaining compact
+question is whether pointmap reliability incorrectly collapses a shared
+Sim(3)-gauge error and local surface error into one independent pixel score.
+
+EXP-061 uses four fresh train sequences and 16 fresh four-frame contexts from
+the existing 7Scenes train role. It fits no model. For every frame, dense
+predicted common-frame points are aligned to metric world points either with a
+single context Sim(3) or a per-frame Sim(3). Transform estimation uses only the
+even checkerboard pixels; all registered errors use disjoint odd checkerboard
+pixels. Cyclically assigning each learned frame transform to the next frame is
+the temporal-specificity control. The same analysis on the top native-
+confidence quartile tests whether the phenomenon is merely discarded by the
+existing confidence.
+
+The premise passes only if per-frame alignment beats context alignment and the
+cyclic control in every scene with positive anchor-bootstrap intervals, removes
+at least 15% of context-aligned relative 3D error overall, and still removes at
+least 10% on the top-confidence quartile with a positive effect in every scene.
+These thresholds, sequences, frames, seed, and bootstrap are frozen before any
+new RGB-D/model output is opened. Success authorizes a separate observability
+experiment, not a trainable head. Failure closes this candidate without
+threshold repair.

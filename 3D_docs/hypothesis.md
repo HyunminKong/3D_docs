@@ -265,3 +265,20 @@ shuffled controls, and harmed 56.25% of anchors. Correct spatial transport is
 therefore not observably useful. This rejects the current adaptation object,
 not the general possibility of a radically different learned representation;
 such a redesign is not authorized on these exposed anchors.
+
+## H19 — Hierarchical gauge/local reliability
+
+For streaming pointmap reconstruction, prediction error contains two
+empirically separable components: a frame-shared, time-varying Sim(3) gauge
+error and a local surface residual after that gauge is removed. A per-point
+confidence alone cannot fully characterize native-coordinate risk because the
+shared gauge latent induces correlated error across all points in a frame.
+
+Status: **Selected, premise not yet tested.** EXP-061 is a zero-fit train-only
+error-anatomy experiment. Each Sim(3) is estimated on one checkerboard half of
+dense valid points and scored on the disjoint half. It compares one transform
+for the four-frame context, one transform per frame, and cyclically reassigned
+per-frame transforms. The analysis is repeated on only the top-confidence
+quartile. No uncertainty head, calibration model, loss, or validation access is
+authorized until the magnitude, temporal specificity, and high-confidence
+persistence gates pass.

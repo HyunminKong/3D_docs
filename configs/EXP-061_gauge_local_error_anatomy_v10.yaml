@@ -1,0 +1,45 @@
+experiment: EXP-061
+protocol_revision: v1.0
+purpose: train_only_zero_fit_gauge_local_error_anatomy
+seed: 6100010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-02, heads/seq-02, chess/seq-02, stairs/seq-02]
+  target_frames: [79, 159, 239, 319]
+  context_frames: 4
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+  fit_checkerboard_parity: 0
+  evaluation_checkerboard_parity: 1
+  maximum_fit_points_per_frame: 8192
+  minimum_fit_points_per_frame: 4096
+  minimum_evaluation_points_per_frame: 4096
+  high_confidence_quantile: 0.75
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context
+success:
+  exact_scenes: 4
+  exact_contexts: 16
+  exact_frames: 64
+  minimum_gauge_fraction: 0.15
+  minimum_high_confidence_gauge_fraction: 0.10
+  require_context_gain_all_scenes: true
+  require_cyclic_gain_all_scenes: true
+  require_context_bootstrap_lower_positive: true
+  require_cyclic_bootstrap_lower_positive: true
+  require_high_confidence_gain_all_scenes: true
+output:
+  depth_preparation: revisit3d/results/EXP-061/selected_train_depth_registration_v10.json
+  result: revisit3d/results/EXP-061/gauge_local_error_anatomy_v10.json
