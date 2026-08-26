@@ -6,10 +6,11 @@ Compact Streaming 3D Reconstruction Research.
 
 The former continual adaptation-memory, gauge/local-reliability,
 order-robustness, and calibration-shock lines are preserved through EXP-065
-and are inactive. H22 was rejected by EXP-066. H23/EXP-067 is the active
-zero-fit premise: transport a local TTT experience through its induced 3D
-function displacement rather than reuse its observation-dependent code. No
-accepted method, bank, router, or learned component exists.
+and are inactive. H22 and H23 were rejected by EXP-066/067. Coordinate- and
+function-space local TTT reuse are both closed on the competitive carrier. Only
+explicit retained surface content has strong causal evidence, but its generic
+memory formulation is occupied and no natural trigger exists. No accepted
+method, bank, router, or learned component exists.
 
 This workspace contains the active research implementation plus several external reference repositories. The repository documents, not chat history, are the source of truth.
 

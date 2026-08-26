@@ -1,0 +1,891 @@
+{
+  "experiment": "EXP-067",
+  "protocol_revision": "v1.0",
+  "config": "configs/EXP-067_function_space_plasticity_transport_v10.yaml",
+  "config_sha256": "7fbfb2f059c2e48a7481e0838caeffb219a6f83d9893b34c17bb60efa994acaa",
+  "checkpoint_sha256": "45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103",
+  "depth_preparation_sha256": "6b5dab2152f237e25744533b63bc2c82a0731960f865bb4fb17f99676c80e7a6",
+  "fit_performed": false,
+  "oracle_pose_pair_selection_only": true,
+  "pose_used_by_online_method": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "means": {
+    "gain_vs_second_current": 2.0423797647689534e-06,
+    "gain_vs_direct_code": -9.361993806265845e-07,
+    "gain_vs_untransported": -1.1221907462121133e-06,
+    "gain_vs_shuffle": 1.897349130974401e-07
+  },
+  "scene_means": {
+    "gain_vs_second_current": {
+      "chess": 2.592301632201033e-06,
+      "heads": 8.938067202982763e-06,
+      "pumpkin": -5.810671526855146e-06,
+      "stairs": 2.4498217507471637e-06
+    },
+    "gain_vs_direct_code": {
+      "chess": -2.5257944896474316e-06,
+      "heads": 3.207214609489764e-06,
+      "pumpkin": -4.558041397675211e-06,
+      "stairs": 1.3182375532654056e-07
+    },
+    "gain_vs_untransported": {
+      "chess": -7.469039529847676e-07,
+      "heads": -1.0210023386574008e-06,
+      "pumpkin": -2.652335858658282e-06,
+      "stairs": -6.852083454800262e-08
+    },
+    "gain_vs_shuffle": {
+      "chess": 1.3219484769674134e-06,
+      "heads": -1.4201643817671195e-06,
+      "pumpkin": 1.080049102515114e-06,
+      "stairs": -2.2289354532564754e-07
+    }
+  },
+  "bootstrap_95": {
+    "gain_vs_second_current": [
+      -1.1214387038257511e-06,
+      5.217043341260467e-06
+    ],
+    "gain_vs_direct_code": [
+      -2.8616239217700306e-06,
+      1.0832076975895715e-06
+    ],
+    "gain_vs_untransported": [
+      -2.407102969166798e-06,
+      6.791274038167268e-08
+    ],
+    "gain_vs_shuffle": [
+      -1.039421840470469e-06,
+      1.4352650905589541e-06
+    ]
+  },
+  "mean_second_current_epe": 0.06841033135815108,
+  "relative_gain_vs_second_current": 2.985484391350787e-05,
+  "function_transport_harm_fraction": 0.4375,
+  "maximum_zero_code_abs_difference": 0.0,
+  "gates": {
+    "exact_counts": true,
+    "finite": true,
+    "zero_code_parity": true,
+    "source_step_descends_every_pair": true,
+    "first_current_step_descends_every_pair": true,
+    "second_current_step_descends_every_pair": true,
+    "function_pullback_descends_every_pair": false,
+    "function_beats_second_all_scenes": false,
+    "function_beats_second_positive_ci": false,
+    "minimum_relative_gain": false,
+    "harm_within_bound": false,
+    "function_beats_code_all_scenes": false,
+    "function_beats_code_positive_ci": false,
+    "function_beats_untransported_all_scenes": false,
+    "function_beats_untransported_positive_ci": false,
+    "function_beats_shuffle_all_scenes": false,
+    "function_beats_shuffle_positive_ci": false,
+    "no_fit_or_heldout_access": true
+  },
+  "passed": false,
+  "peak_gpu_allocated_gib": 4.6984782218933105,
+  "rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-07",
+      "source_frame": 531,
+      "target_frame": 843,
+      "frame_indices": [
+        530,
+        531,
+        842,
+        843
+      ],
+      "valid_pixels": 144233,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00018902953888755292,
+      "mean_code_transport_distance": 0.09399230778217316,
+      "mean_displacement_transport_distance": 0.09399230778217316,
+      "online_losses": {
+        "source_base": 0.06778490543365479,
+        "source_adapted": 0.06770339608192444,
+        "target_base": 0.02062719687819481,
+        "target_current_one": 0.02054855227470398,
+        "target_current_two": 0.020487695932388306,
+        "function_before": 0.00018606943194754422,
+        "function_after": 0.0002628581423778087,
+        "untransported_before": 0.00018902969895862043,
+        "untransported_after": 0.00027398375095799565,
+        "shuffle_before": 0.0001860684424173087,
+        "shuffle_after": 0.0002683560305740684
+      },
+      "errors": {
+        "current_one": 0.022353891123174836,
+        "current_two": 0.022355261222572663,
+        "direct_code_transport": 0.02235458498194752,
+        "function_transport": 0.0223607543896243,
+        "untransported_function": 0.022353854169611154,
+        "shuffled_function": 0.022360721002417105
+      },
+      "alignment_scales": {
+        "current_one": 0.9008549390372835,
+        "current_two": 0.9008385342617151,
+        "direct_code_transport": 0.9008661883715684,
+        "function_transport": 0.9008460335135536,
+        "untransported_function": 0.9008581263201403,
+        "shuffled_function": 0.9008450023590222
+      },
+      "gain_vs_second_current": -5.493167051638659e-06,
+      "gain_vs_direct_code": -6.169407676781535e-06,
+      "gain_vs_untransported": -6.900220013147246e-06,
+      "gain_vs_shuffle": -3.338720719683885e-08
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-07",
+      "source_frame": 278,
+      "target_frame": 512,
+      "frame_indices": [
+        277,
+        278,
+        511,
+        512
+      ],
+      "valid_pixels": 144646,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00017550794291310012,
+      "mean_code_transport_distance": 0.24588799476623535,
+      "mean_displacement_transport_distance": 0.24588799476623535,
+      "online_losses": {
+        "source_base": 0.03440222144126892,
+        "source_adapted": 0.03432321175932884,
+        "target_base": 0.04950200766324997,
+        "target_current_one": 0.04944915324449539,
+        "target_current_two": 0.049401815980672836,
+        "function_before": 0.0001677684485912323,
+        "function_after": 0.00025621632812544703,
+        "untransported_before": 0.0001755078264977783,
+        "untransported_after": 0.0002694215509109199,
+        "shuffle_before": 0.0001677672116784379,
+        "shuffle_after": 0.00025824824115261436
+      },
+      "errors": {
+        "current_one": 0.07734826409658162,
+        "current_two": 0.07734883023695949,
+        "direct_code_transport": 0.07734807391256956,
+        "function_transport": 0.07734635655848864,
+        "untransported_function": 0.0773439993154747,
+        "shuffled_function": 0.07735354985763684
+      },
+      "alignment_scales": {
+        "current_one": 0.9887612544228704,
+        "current_two": 0.9887633869949953,
+        "direct_code_transport": 0.9887496853794114,
+        "function_transport": 0.9887489923116703,
+        "untransported_function": 0.9887662659819559,
+        "shuffled_function": 0.9887549633886981
+      },
+      "gain_vs_second_current": 2.473678470851781e-06,
+      "gain_vs_direct_code": 1.7173540809295451e-06,
+      "gain_vs_untransported": -2.357243013936805e-06,
+      "gain_vs_shuffle": 7.193299148208765e-06
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-07",
+      "source_frame": 551,
+      "target_frame": 797,
+      "frame_indices": [
+        550,
+        551,
+        796,
+        797
+      ],
+      "valid_pixels": 143746,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00019949450506828725,
+      "mean_code_transport_distance": 0.1477767527103424,
+      "mean_displacement_transport_distance": 0.1477767527103424,
+      "online_losses": {
+        "source_base": 0.0303811002522707,
+        "source_adapted": 0.030303385108709335,
+        "target_base": 0.032070375978946686,
+        "target_current_one": 0.03201168403029442,
+        "target_current_two": 0.03194620832800865,
+        "function_before": 0.00018935033585876226,
+        "function_after": 0.000275011028861627,
+        "untransported_before": 0.00019949625129811466,
+        "untransported_after": 0.0002789149875752628,
+        "shuffle_before": 0.00018934949184767902,
+        "shuffle_after": 0.0002757046895567328
+      },
+      "errors": {
+        "current_one": 0.032198267973306056,
+        "current_two": 0.03219085658618748,
+        "direct_code_transport": 0.03219374497876655,
+        "function_transport": 0.0322005845462182,
+        "untransported_function": 0.032198268024794335,
+        "shuffled_function": 0.032196120917296296
+      },
+      "alignment_scales": {
+        "current_one": 0.925334229069982,
+        "current_two": 0.9253372825211669,
+        "direct_code_transport": 0.9253216277386015,
+        "function_transport": 0.9253401905886497,
+        "untransported_function": 0.9253330173885889,
+        "shuffled_function": 0.9253322903812762
+      },
+      "gain_vs_second_current": -9.727960030722627e-06,
+      "gain_vs_direct_code": -6.8395674516497085e-06,
+      "gain_vs_untransported": -2.316521423864626e-06,
+      "gain_vs_shuffle": -4.463628921903828e-06
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-07",
+      "source_frame": 188,
+      "target_frame": 734,
+      "frame_indices": [
+        187,
+        188,
+        733,
+        734
+      ],
+      "valid_pixels": 149032,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00018948425713460892,
+      "mean_code_transport_distance": 0.13592176139354706,
+      "mean_displacement_transport_distance": 0.13592176139354706,
+      "online_losses": {
+        "source_base": 0.0407591313123703,
+        "source_adapted": 0.04067607596516609,
+        "target_base": 0.016775861382484436,
+        "target_current_one": 0.016700871288776398,
+        "target_current_two": 0.01662176474928856,
+        "function_before": 0.00019172350584995002,
+        "function_after": 0.0002710202825255692,
+        "untransported_before": 0.00018948476645164192,
+        "untransported_after": 0.00027122555184178054,
+        "shuffle_before": 0.000191724015166983,
+        "shuffle_after": 0.000284365814877674
+      },
+      "errors": {
+        "current_one": 0.12914678054127549,
+        "current_two": 0.12914030678662697,
+        "direct_code_transport": 0.12914386147957968,
+        "function_transport": 0.12915080202412288,
+        "untransported_function": 0.1291517666651392,
+        "shuffled_function": 0.12915242593751383
+      },
+      "alignment_scales": {
+        "current_one": 1.0820085897993519,
+        "current_two": 1.082010424553404,
+        "direct_code_transport": 1.0819884690715322,
+        "function_transport": 1.0820106691877478,
+        "untransported_function": 1.0820136048085012,
+        "shuffled_function": 1.0820073054752177
+      },
+      "gain_vs_second_current": -1.049523749591108e-05,
+      "gain_vs_direct_code": -6.940544543199145e-06,
+      "gain_vs_untransported": 9.646410163155483e-07,
+      "gain_vs_shuffle": 1.6239133909523584e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-02",
+      "source_frame": 395,
+      "target_frame": 844,
+      "frame_indices": [
+        394,
+        395,
+        843,
+        844
+      ],
+      "valid_pixels": 124653,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 7.412282866425812e-05,
+      "mean_code_transport_distance": 0.05170218273997307,
+      "mean_displacement_transport_distance": 0.05170218273997307,
+      "online_losses": {
+        "source_base": 0.01583687961101532,
+        "source_adapted": 0.015798622742295265,
+        "target_base": 0.01171539444476366,
+        "target_current_one": 0.011674148961901665,
+        "target_current_two": 0.011627757921814919,
+        "function_before": 7.525187538703904e-05,
+        "function_after": 0.00010545431723585352,
+        "untransported_before": 7.412256672978401e-05,
+        "untransported_after": 0.00010636474326020107,
+        "shuffle_before": 7.525158434873447e-05,
+        "shuffle_after": 0.00010855052096303552
+      },
+      "errors": {
+        "current_one": 0.050939466034532976,
+        "current_two": 0.05094845752099441,
+        "direct_code_transport": 0.05093524942069689,
+        "function_transport": 0.050930241460976966,
+        "untransported_function": 0.05092948370391424,
+        "shuffled_function": 0.05093072274602068
+      },
+      "alignment_scales": {
+        "current_one": 1.015079671707274,
+        "current_two": 1.015087250067503,
+        "direct_code_transport": 1.0150802242922161,
+        "function_transport": 1.0150755668093963,
+        "untransported_function": 1.0150639627584392,
+        "shuffled_function": 1.0150739880113602
+      },
+      "gain_vs_second_current": 1.8216060017443858e-05,
+      "gain_vs_direct_code": 5.007959719922905e-06,
+      "gain_vs_untransported": -7.577570627290142e-07,
+      "gain_vs_shuffle": 4.812850437144189e-07
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-02",
+      "source_frame": 249,
+      "target_frame": 664,
+      "frame_indices": [
+        248,
+        249,
+        663,
+        664
+      ],
+      "valid_pixels": 145929,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00011637312127277255,
+      "mean_code_transport_distance": 0.1304214894771576,
+      "mean_displacement_transport_distance": 0.1304214894771576,
+      "online_losses": {
+        "source_base": 0.03710930049419403,
+        "source_adapted": 0.037058115005493164,
+        "target_base": 0.021857062354683876,
+        "target_current_one": 0.02181125059723854,
+        "target_current_two": 0.021763263270258904,
+        "function_before": 0.00012168394459877163,
+        "function_after": 0.00016253160720225424,
+        "untransported_before": 0.00011637249554041773,
+        "untransported_after": 0.000173023363458924,
+        "shuffle_before": 0.00012168355169706047,
+        "shuffle_after": 0.00018223431834485382
+      },
+      "errors": {
+        "current_one": 0.03544943003413966,
+        "current_two": 0.03545179327463737,
+        "direct_code_transport": 0.03544892145477181,
+        "function_transport": 0.03544998427854576,
+        "untransported_function": 0.03545111751754352,
+        "shuffled_function": 0.03544869219798872
+      },
+      "alignment_scales": {
+        "current_one": 0.7216382251143765,
+        "current_two": 0.7216495405164325,
+        "direct_code_transport": 0.7216447413337039,
+        "function_transport": 0.7216335581647494,
+        "untransported_function": 0.7216391497059006,
+        "shuffled_function": 0.7216347909380295
+      },
+      "gain_vs_second_current": 1.8089960916109482e-06,
+      "gain_vs_direct_code": -1.0628237739479518e-06,
+      "gain_vs_untransported": 1.133238997759467e-06,
+      "gain_vs_shuffle": -1.292080557040165e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-02",
+      "source_frame": 343,
+      "target_frame": 929,
+      "frame_indices": [
+        342,
+        343,
+        928,
+        929
+      ],
+      "valid_pixels": 130597,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 7.428527169395238e-05,
+      "mean_code_transport_distance": 0.05945853143930435,
+      "mean_displacement_transport_distance": 0.05945853143930435,
+      "online_losses": {
+        "source_base": 0.02384362928569317,
+        "source_adapted": 0.023810425773262978,
+        "target_base": 0.014900867827236652,
+        "target_current_one": 0.014856411144137383,
+        "target_current_two": 0.014813349582254887,
+        "function_before": 9.069140651263297e-05,
+        "function_after": 0.00011330594861647114,
+        "untransported_before": 7.428506069118157e-05,
+        "untransported_after": 0.0001053572486853227,
+        "shuffle_before": 9.069190127775073e-05,
+        "shuffle_after": 0.00011787260154960677
+      },
+      "errors": {
+        "current_one": 0.10929852940628879,
+        "current_two": 0.10929806025801012,
+        "direct_code_transport": 0.1093031888580571,
+        "function_transport": 0.10930340683626553,
+        "untransported_function": 0.10929658190149741,
+        "shuffled_function": 0.10929916040429084
+      },
+      "alignment_scales": {
+        "current_one": 0.9512365570558488,
+        "current_two": 0.9512525375677272,
+        "direct_code_transport": 0.9512345595296167,
+        "function_transport": 0.9512659383066935,
+        "untransported_function": 0.9512498741117936,
+        "shuffled_function": 0.9512418006021233
+      },
+      "gain_vs_second_current": -5.3465782554190655e-06,
+      "gain_vs_direct_code": -2.1797820844160487e-07,
+      "gain_vs_untransported": -6.8249347681265116e-06,
+      "gain_vs_shuffle": -4.246431974691545e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-02",
+      "source_frame": 2,
+      "target_frame": 52,
+      "frame_indices": [
+        1,
+        2,
+        51,
+        52
+      ],
+      "valid_pixels": 143093,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 9.127068187808618e-05,
+      "mean_code_transport_distance": 0.07567870616912842,
+      "mean_displacement_transport_distance": 0.07567870616912842,
+      "online_losses": {
+        "source_base": 0.00663481280207634,
+        "source_adapted": 0.00658778939396143,
+        "target_base": 0.004901934415102005,
+        "target_current_one": 0.0048607634380459785,
+        "target_current_two": 0.004811769351363182,
+        "function_before": 0.00010640091204550117,
+        "function_after": 0.00011827391426777467,
+        "untransported_before": 9.127070370595902e-05,
+        "untransported_after": 0.00011379252828191966,
+        "shuffle_before": 0.00010640201799105853,
+        "shuffle_after": 0.00012745262938551605
+      },
+      "errors": {
+        "current_one": 0.06550871294484599,
+        "current_two": 0.0655189824555088,
+        "direct_code_transport": 0.06550701036525093,
+        "function_transport": 0.0654979086645505,
+        "untransported_function": 0.06550027410802897,
+        "shuffled_function": 0.06549728523451145
+      },
+      "alignment_scales": {
+        "current_one": 0.9947826461052894,
+        "current_two": 0.9947454088759927,
+        "direct_code_transport": 0.9947507580826062,
+        "function_transport": 0.9947556210476327,
+        "untransported_function": 0.9947386703469483,
+        "shuffled_function": 0.9947537453269183
+      },
+      "gain_vs_second_current": 2.1073790958295313e-05,
+      "gain_vs_direct_code": 9.101700700425708e-06,
+      "gain_vs_untransported": 2.3654434784664558e-06,
+      "gain_vs_shuffle": -6.234300390511871e-07
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-04",
+      "source_frame": 158,
+      "target_frame": 259,
+      "frame_indices": [
+        157,
+        158,
+        258,
+        259
+      ],
+      "valid_pixels": 143859,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00017526221927255392,
+      "mean_code_transport_distance": 0.06351493299007416,
+      "mean_displacement_transport_distance": 0.06351493299007416,
+      "online_losses": {
+        "source_base": 0.09931390732526779,
+        "source_adapted": 0.09923745691776276,
+        "target_base": 0.04711778089404106,
+        "target_current_one": 0.04708513617515564,
+        "target_current_two": 0.0470404326915741,
+        "function_before": 0.00017418239440303296,
+        "function_after": 0.00022727280156686902,
+        "untransported_before": 0.00017526213196106255,
+        "untransported_after": 0.0002281411289004609,
+        "shuffle_before": 0.00017418332572560757,
+        "shuffle_after": 0.00024355435743927956
+      },
+      "errors": {
+        "current_one": 0.08499778771689562,
+        "current_two": 0.08500186936538758,
+        "direct_code_transport": 0.08499162788025147,
+        "function_transport": 0.08499539400473559,
+        "untransported_function": 0.0849967617972104,
+        "shuffled_function": 0.08499485402142355
+      },
+      "alignment_scales": {
+        "current_one": 0.9149238845306548,
+        "current_two": 0.9149337221325092,
+        "direct_code_transport": 0.9149370579190983,
+        "function_transport": 0.9149383017779507,
+        "untransported_function": 0.9149385844736161,
+        "shuffled_function": 0.9149377929261931
+      },
+      "gain_vs_second_current": 6.475360651986284e-06,
+      "gain_vs_direct_code": -3.766124484119726e-06,
+      "gain_vs_untransported": 1.3677924748101145e-06,
+      "gain_vs_shuffle": -5.399833120367514e-07
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-04",
+      "source_frame": 239,
+      "target_frame": 965,
+      "frame_indices": [
+        238,
+        239,
+        964,
+        965
+      ],
+      "valid_pixels": 142133,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00017284427303820848,
+      "mean_code_transport_distance": 0.12760639190673828,
+      "mean_displacement_transport_distance": 0.12760639190673828,
+      "online_losses": {
+        "source_base": 0.05749107152223587,
+        "source_adapted": 0.05742181837558746,
+        "target_base": 0.04265692085027695,
+        "target_current_one": 0.0426042377948761,
+        "target_current_two": 0.042560137808322906,
+        "function_before": 0.00017878782819025218,
+        "function_after": 0.00024559811572544277,
+        "untransported_before": 0.00017284262867178768,
+        "untransported_after": 0.00025965546956285834,
+        "shuffle_before": 0.00017878785729408264,
+        "shuffle_after": 0.00026606503524817526
+      },
+      "errors": {
+        "current_one": 0.042012141584537456,
+        "current_two": 0.042011878515138865,
+        "direct_code_transport": 0.04200643040331944,
+        "function_transport": 0.04201131137610752,
+        "untransported_function": 0.04201182441287356,
+        "shuffled_function": 0.04201037244881938
+      },
+      "alignment_scales": {
+        "current_one": 0.9708989649920284,
+        "current_two": 0.9709094682187418,
+        "direct_code_transport": 0.9709118399465471,
+        "function_transport": 0.9709215528574995,
+        "untransported_function": 0.9709177128462211,
+        "shuffled_function": 0.9709243764145826
+      },
+      "gain_vs_second_current": 5.671390313419233e-07,
+      "gain_vs_direct_code": -4.88097278808497e-06,
+      "gain_vs_untransported": 5.130367660352575e-07,
+      "gain_vs_shuffle": -9.389272881410449e-07
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-04",
+      "source_frame": 570,
+      "target_frame": 751,
+      "frame_indices": [
+        569,
+        570,
+        750,
+        751
+      ],
+      "valid_pixels": 133414,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.0001646337768761441,
+      "mean_code_transport_distance": 0.10166744887828827,
+      "mean_displacement_transport_distance": 0.10166744887828827,
+      "online_losses": {
+        "source_base": 0.03644590452313423,
+        "source_adapted": 0.0363602414727211,
+        "target_base": 0.03349514305591583,
+        "target_current_one": 0.033416517078876495,
+        "target_current_two": 0.03334431350231171,
+        "function_before": 0.0001774763804860413,
+        "function_after": 0.00022030316176824272,
+        "untransported_before": 0.00016463350038975477,
+        "untransported_after": 0.00020659265283029526,
+        "shuffle_before": 0.00017747702077031136,
+        "shuffle_after": 0.0002234515850432217
+      },
+      "errors": {
+        "current_one": 0.08755221195437722,
+        "current_two": 0.08755634032856274,
+        "direct_code_transport": 0.08755305051619186,
+        "function_transport": 0.08755808485863233,
+        "untransported_function": 0.08755567682722794,
+        "shuffled_function": 0.08756068699654523
+      },
+      "alignment_scales": {
+        "current_one": 1.0024186118970804,
+        "current_two": 1.0024122192587999,
+        "direct_code_transport": 1.0023952487217602,
+        "function_transport": 1.0023966565695674,
+        "untransported_function": 1.002393498430001,
+        "shuffled_function": 1.0023915198466766
+      },
+      "gain_vs_second_current": -1.7445300695834165e-06,
+      "gain_vs_direct_code": -5.0343424404658554e-06,
+      "gain_vs_untransported": -2.408031404388389e-06,
+      "gain_vs_shuffle": 2.6021379129076427e-06
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-04",
+      "source_frame": 29,
+      "target_frame": 624,
+      "frame_indices": [
+        28,
+        29,
+        623,
+        624
+      ],
+      "valid_pixels": 138482,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00019839117885567248,
+      "mean_code_transport_distance": 0.09615150094032288,
+      "mean_displacement_transport_distance": 0.09615150094032288,
+      "online_losses": {
+        "source_base": 0.04214722663164139,
+        "source_adapted": 0.042063694447278976,
+        "target_base": 0.03400947153568268,
+        "target_current_one": 0.03394237905740738,
+        "target_current_two": 0.03386503458023071,
+        "function_before": 0.00018721719970926642,
+        "function_after": 0.00026754464488476515,
+        "untransported_before": 0.0001983914989978075,
+        "untransported_after": 0.00028206335264258087,
+        "shuffle_before": 0.00018721818923950195,
+        "shuffle_after": 0.0002778901834972203
+      },
+      "errors": {
+        "current_one": 0.05942677381238844,
+        "current_two": 0.059429919123292166,
+        "direct_code_transport": 0.05942842614813119,
+        "function_transport": 0.059424847886377107,
+        "untransported_function": 0.05942238747272871,
+        "shuffled_function": 0.059429012452972246
+      },
+      "alignment_scales": {
+        "current_one": 0.9056827708948914,
+        "current_two": 0.9056746151741167,
+        "direct_code_transport": 0.9056871524863869,
+        "function_transport": 0.9056895819019215,
+        "untransported_function": 0.9056966533106037,
+        "shuffled_function": 0.9056754827970045
+      },
+      "gain_vs_second_current": 5.071236915059341e-06,
+      "gain_vs_direct_code": 3.578261754080825e-06,
+      "gain_vs_untransported": -2.4604136483960537e-06,
+      "gain_vs_shuffle": 4.164566595139807e-06
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-04",
+      "source_frame": 328,
+      "target_frame": 378,
+      "frame_indices": [
+        327,
+        328,
+        377,
+        378
+      ],
+      "valid_pixels": 139325,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00016212998889386654,
+      "mean_code_transport_distance": 0.0492069236934185,
+      "mean_displacement_transport_distance": 0.0492069236934185,
+      "online_losses": {
+        "source_base": 0.04663500562310219,
+        "source_adapted": 0.04656223952770233,
+        "target_base": 0.027014590799808502,
+        "target_current_one": 0.026951633393764496,
+        "target_current_two": 0.026881301775574684,
+        "function_before": 0.00016738356498535722,
+        "function_after": 0.00021861257846467197,
+        "untransported_before": 0.00016213060007430613,
+        "untransported_after": 0.0002203156182076782,
+        "shuffle_before": 0.00016738439444452524,
+        "shuffle_after": 0.00023981712001841515
+      },
+      "errors": {
+        "current_one": 0.08398175016452167,
+        "current_two": 0.0839826169273832,
+        "direct_code_transport": 0.08397202752597856,
+        "function_transport": 0.08397831822269053,
+        "untransported_function": 0.08397933001933355,
+        "shuffled_function": 0.08397771981559266
+      },
+      "alignment_scales": {
+        "current_one": 0.9962177682928175,
+        "current_two": 0.996224884148395,
+        "direct_code_transport": 0.9962194933393804,
+        "function_transport": 0.9962174807856379,
+        "untransported_function": 0.9962199964790867,
+        "shuffled_function": 0.9962055493840258
+      },
+      "gain_vs_second_current": 4.298704692665134e-06,
+      "gain_vs_direct_code": -6.29069671197191e-06,
+      "gain_vs_untransported": 1.0117966430245318e-06,
+      "gain_vs_shuffle": -5.984070978737321e-07
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-04",
+      "source_frame": 100,
+      "target_frame": 290,
+      "frame_indices": [
+        99,
+        100,
+        289,
+        290
+      ],
+      "valid_pixels": 136529,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00019278886611573398,
+      "mean_code_transport_distance": 0.06939761340618134,
+      "mean_displacement_transport_distance": 0.06939761340618134,
+      "online_losses": {
+        "source_base": 0.06480759382247925,
+        "source_adapted": 0.06471722573041916,
+        "target_base": 0.02375918999314308,
+        "target_current_one": 0.023650914430618286,
+        "target_current_two": 0.02355637587606907,
+        "function_before": 0.0001898803748190403,
+        "function_after": 0.0002887622104026377,
+        "untransported_before": 0.0001927887788042426,
+        "untransported_after": 0.00028027064399793744,
+        "shuffle_before": 0.00018988065130542964,
+        "shuffle_after": 0.0002888744929805398
+      },
+      "errors": {
+        "current_one": 0.08031749735745951,
+        "current_two": 0.08032232615341726,
+        "direct_code_transport": 0.08031545255406677,
+        "function_transport": 0.08031489772980231,
+        "untransported_function": 0.08031241934617214,
+        "shuffled_function": 0.0803131065684003
+      },
+      "alignment_scales": {
+        "current_one": 0.7792981589444044,
+        "current_two": 0.7792875232142381,
+        "direct_code_transport": 0.7792839780353622,
+        "function_transport": 0.7792837363197953,
+        "untransported_function": 0.7792968697495283,
+        "shuffled_function": 0.7792980783695996
+      },
+      "gain_vs_second_current": 7.42842361495244e-06,
+      "gain_vs_direct_code": 5.548242644620727e-07,
+      "gain_vs_untransported": -2.4783836301695006e-06,
+      "gain_vs_shuffle": -1.791161402017738e-06
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-04",
+      "source_frame": 440,
+      "target_frame": 490,
+      "frame_indices": [
+        439,
+        440,
+        489,
+        490
+      ],
+      "valid_pixels": 137368,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.00013880355982109904,
+      "mean_code_transport_distance": 0.04129939526319504,
+      "mean_displacement_transport_distance": 0.04129939526319504,
+      "online_losses": {
+        "source_base": 0.04424130544066429,
+        "source_adapted": 0.04418721795082092,
+        "target_base": 0.016284683719277382,
+        "target_current_one": 0.016209308058023453,
+        "target_current_two": 0.016135383397340775,
+        "function_before": 0.0001461440115235746,
+        "function_after": 0.0001941040245583281,
+        "untransported_before": 0.00013880357437301427,
+        "untransported_after": 0.00018986890790984035,
+        "shuffle_before": 0.00014614409883506596,
+        "shuffle_after": 0.00019551817968022078
+      },
+      "errors": {
+        "current_one": 0.04909673681209567,
+        "current_two": 0.049095710314979495,
+        "direct_code_transport": 0.049103723397730704,
+        "function_transport": 0.04909646298551307,
+        "untransported_function": 0.04909737888062825,
+        "shuffled_function": 0.04909623370260165
+      },
+      "alignment_scales": {
+        "current_one": 0.9259602454583049,
+        "current_two": 0.9259609495008271,
+        "direct_code_transport": 0.9259464547236026,
+        "function_transport": 0.9259628545624317,
+        "untransported_function": 0.9259624404179377,
+        "shuffled_function": 0.9259691496043503
+      },
+      "gain_vs_second_current": -7.526705335728079e-07,
+      "gain_vs_direct_code": 7.260412217637013e-06,
+      "gain_vs_untransported": 9.158951151805317e-07,
+      "gain_vs_shuffle": -2.2928291142088053e-07
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-04",
+      "source_frame": 368,
+      "target_frame": 418,
+      "frame_indices": [
+        367,
+        368,
+        417,
+        418
+      ],
+      "valid_pixels": 143319,
+      "zero_code_maximum_abs_difference": 0.0,
+      "source_displacement_mean_norm": 0.0001613104686839506,
+      "mean_code_transport_distance": 0.07046724855899811,
+      "mean_displacement_transport_distance": 0.07046724855899811,
+      "online_losses": {
+        "source_base": 0.04289769381284714,
+        "source_adapted": 0.042811717838048935,
+        "target_base": 0.02210402861237526,
+        "target_current_one": 0.022014975547790527,
+        "target_current_two": 0.021944373846054077,
+        "function_before": 0.00017182284500449896,
+        "function_after": 0.0002119546988978982,
+        "untransported_before": 0.00016131059965118766,
+        "untransported_after": 0.0002164663455914706,
+        "shuffle_before": 0.00017182377632707357,
+        "shuffle_after": 0.00022372421517502517
+      },
+      "errors": {
+        "current_one": 0.08491442228228852,
+        "current_two": 0.08491209266075878,
+        "direct_code_transport": 0.08491227058678101,
+        "function_transport": 0.08491326783152983,
+        "untransported_function": 0.0849135444400636,
+        "shuffled_function": 0.08491499510875984
+      },
+      "alignment_scales": {
+        "current_one": 0.9626452398100868,
+        "current_two": 0.96263416364038,
+        "direct_code_transport": 0.9626124521531875,
+        "function_transport": 0.962637391107225,
+        "untransported_function": 0.9626346037482209,
+        "shuffled_function": 0.9626372444037171
+      },
+      "gain_vs_second_current": -1.175170771056111e-06,
+      "gain_vs_direct_code": -9.972447488210134e-07,
+      "gain_vs_untransported": 2.7660853377242667e-07,
+      "gain_vs_shuffle": 1.7272772300097605e-06
+    }
+  ]
+}

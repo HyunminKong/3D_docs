@@ -391,7 +391,12 @@ is instead a function-space object. Transporting this displacement by predicted
 3D correspondence and pulling it back with one target gradient should preserve
 the intended 3D change despite observation-dependent coordinate charts.
 
-Status: **Registered, not yet tested.** EXP-067 compares this zero-fit operator
-with direct code transport, an equal-compute second current step, untransported
-function payload, and spatial shuffle on 16 pose-selected train revisits. It is
-an oracle-paired capacity test, not a deployable address or accepted method.
+Status: **Rejected for the frozen operator.** EXP-067's gain over equal-compute
+second-current TTT is only `2.04e-6` (0.00299% relative), with CI
+`[-1.12e-6, 5.22e-6]`, a negative `pumpkin` mean, and 43.75% harm. It loses on
+average to direct code and untransported function payloads and is tied with
+spatial shuffle. The fixed normalized pull-back step also increases its own
+function residual in all pairs because the transported displacement is much
+smaller than that code step. The preregistered stop rule prohibits step or
+solver repair. Compact reusable TTT experience is therefore closed on this
+carrier in both coordinate and function-space forms.

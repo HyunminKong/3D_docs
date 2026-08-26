@@ -1,6 +1,6 @@
 # EXP-067 — Function-Space Plasticity Transport Premise
 
-Status: Registered before execution
+Status: Completed; gate failed
 
 Protocol: v1.0
 
@@ -68,4 +68,39 @@ design.
 
 ## Result
 
-Not run.
+The immutable run completed all 16 train-only revisit pairs. Seven of 18 gates
+passed and 11 failed.
+
+| Quantity | Result |
+|---|---:|
+| Mean second-current EPE | 0.0684103 |
+| Function gain vs second current | `2.04e-6` |
+| Relative gain vs second current | 0.00299% |
+| Gain 95% CI | `[-1.12e-6, 5.22e-6]` |
+| Harm fraction | 43.75% |
+| Gain vs direct code | `-9.36e-7` |
+| Gain vs untransported function | `-1.12e-6` |
+| Gain vs spatial shuffle | `1.90e-7` |
+| Mean source displacement norm | `1.55e-4` |
+| Maximum zero-code difference | 0 |
+
+The point estimate beats equal current compute only negligibly, is negative in
+`pumpkin`, and its interval crosses zero. Function transport loses on average
+to direct code and untransported function payloads and is tied with spatial
+shuffle. All source and current consistency steps descend, but the fixed
+normalized pull-back step overshoots its much smaller desired displacement in
+all 16 pairs, so even the function residual itself increases. This is a
+registered failure, not permission for a step-size or optimizer repair.
+
+## Conclusion
+
+H23 is rejected for the frozen operator. Together with EXP-040--060, the result
+closes compact reuse of local TTT experience on this carrier in both coordinate
+and output-function forms. No line search, magnitude normalization, Jacobian
+solver, basis training, routing, address, bank, or validation run is authorized
+from these exposed pairs.
+
+Result hashes:
+
+- result: `53ab447444fb3d5c582d8c5290d6cacf8a07eb5947b1716e6a92a526355dfc65`
+- depth preparation: `6b5dab2152f237e25744533b63bc2c82a0731960f865bb4fb17f99676c80e7a6`

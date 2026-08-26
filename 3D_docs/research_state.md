@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (H23/EXP-067 registered; no accepted method)
+Last updated: 2026-08-26 (EXP-067 completed; compact TTT-reuse branch closed)
 
 ## First objective
 
@@ -780,3 +780,20 @@ access. It adds no learned component and compares function-space transport with
 direct code transport, equal current compute, untransported displacement, and
 spatial shuffle. No validation/terminal access, bank, address, router, or method
 claim is authorized until every registered capacity gate passes.
+
+EXP-067 failed 11 of 18 gates. Function-space transport improves equal-compute
+current TTT by only `2.04e-6` (0.00299% relative), with an interval crossing
+zero, a negative scene, and 43.75% pair harm. It does not beat direct code,
+untransported payload, or spatial shuffle. The fixed pull-back step overshoots
+the very small source displacement in every pair; preregistration prohibits a
+step/solver repair. D160 closes compact adaptation-experience reuse on this
+competitive carrier. No active model exists.
+
+The accumulated positive/negative boundary is now sharp: explicit retained
+surface content has a large causal advantage under missing evidence
+(EXP-057/058), while parameter/code/function-space TTT experience does not
+transfer robustly (EXP-040--060, EXP-067). Turning the explicit-content result
+into a paper would require a new novelty claim beyond Point3R/LONG3R/Mem3R and a
+natural, deployable missing-evidence trigger; H22's first provenance trigger
+failed. Otherwise the project must select a genuinely new paper problem rather
+than another local repair. This is a project-level decision boundary.

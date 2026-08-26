@@ -2225,3 +2225,29 @@ Sixteen train-only pairs are frozen from pose metadata before RGB/depth/model
 access. Failure stops the operator without tuning or validation. Success
 authorizes only a compact deployability design and does not establish continual
 memory or retrieval.
+
+## D160 — Reject function-space transport and close compact TTT reuse
+
+Date: 2026-08-26
+Status: Accepted after EXP-067
+
+EXP-067 completes all 16 oracle-paired train revisits with exact zero-code
+parity. Its function-space candidate gains only `2.04e-6` over equal-compute
+current TTT, has an interval crossing zero, is negative in one scene, and harms
+43.75% of pairs. It loses on average to direct code transport and untransported
+function payload and is indistinguishable from spatial shuffle. The fixed
+normalized pull-back step overshoots the `1.55e-4` mean source displacement in
+every pair; this is itself a failed registered gate, not a license to inspect
+line searches or alternate solvers.
+
+Together with EXP-040--060, this rejects the compact hypothesis that a local
+TTT experience can be made reusable on the frozen competitive carrier by
+changing only its coordinate representation. No step tuning, basis refit,
+Jacobian solver, meta-objective, router, address, bank, or validation access is
+authorized. The original adaptation-memory paper branch is closed.
+
+Only explicit retained surface content has shown a large causal advantage, but
+generic content memory is occupied and its first natural provenance trigger
+failed in EXP-066. Advancing it requires a new paper-level novelty and trigger,
+while leaving it requires a genuinely different research problem. That scope
+choice changes the paper thesis and is the next user-judgment boundary.
