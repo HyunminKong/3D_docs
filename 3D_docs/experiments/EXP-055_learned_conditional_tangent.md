@@ -1,6 +1,6 @@
 # EXP-055 — Learned Conditional Tangent
 
-Status: Registered; one train-only fit authorized
+Status: Completed; registered gate failed and no checkpoint was created
 Purpose: Test whether a token-only conditioner learns EXP-054's spatial tangent
 structure on a disjoint train scene
 
@@ -47,3 +47,26 @@ conditioner without learning-rate, loss, budget, or input-feature tuning.
 - Result: `revisit3d/results/EXP-055/learned_conditional_tangent_v10.json`
 - Conditional checkpoint (only on pass):
   `revisit3d/checkpoints/exp055_learned_conditional_tangent_v10.pt`
+
+## Result
+
+The conditioner completed all 48 registered steps, changed by L2 `0.0679`, and
+kept exact zero-code parity. Its final scale mean/std on the audit were
+`0.9844/0.2220`, confirming that the module learned nontrivial spatial axis
+weights. Online consistency still improved by `5.76e-5`.
+
+The weights did not generalize metric alignment. Mean metric gain moved from
+`-1.40e-6` to `-0.34e-6`, but the final CI was
+`[-2.60e-6, 2.11e-6]` and the paired improvement CI was
+`[-0.55e-6, 2.63e-6]`. Harm fell from 56.25% to 43.75% but remained above the
+25% gate. The model also trailed EXP-053's learned global basis by `0.90e-6`,
+CI `[-2.56e-6, 0.72e-6]`. `stairs/seq-01` was weakly positive, while
+`stairs/seq-02` remained negative with 62.5% harm.
+
+The exact EXP-053 initial-row reproduction guard missed its preregistered
+`1e-8` tolerance (`7.72e-6` maximum gain difference). Since all substantive
+metric gates independently fail, no rerun or guard correction is scientifically
+warranted. No checkpoint was written; validation and terminal remain closed.
+
+EXP-054/055 therefore show a capacity-observability gap: a label-derived local
+mask is highly useful, but a current-token-only linear map cannot infer it.

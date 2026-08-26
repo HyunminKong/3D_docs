@@ -1690,3 +1690,31 @@ improvement, online descent, and 25% harm gates and must beat EXP-053's learned
 global basis with a positive paired anchor-bootstrap interval. A passing result
 authorizes a separately registered scene-disjoint validation; failure stops
 this minimal token-only conditioner rather than tuning it.
+
+## D139 — Reject token-only conditional tangent learning before validation
+
+Date: 2026-08-26
+Status: Accepted after EXP-055
+
+The fixed conditioner-only fit completed all 48 steps and changed the proposed
+module, but it failed every confirmatory metric gate. Final audit gain was
+`-3.43e-7` with CI `[-2.60e-6, 2.11e-6]`; the paired improvement interval also
+crossed zero; harm remained 43.75%; and learned conditional utility was below
+the capacity-matched EXP-053 learned global basis with a non-positive interval.
+No checkpoint was created and validation remains unopened.
+
+The EXP-053 initial-row reproduction guard also failed at maximum gain
+difference `7.72e-6`, despite identical registered data seed and unit-scale
+interface. Because the absolute, paired, harm, and learned-global comparison
+gates fail independently, this does not authorize a rerun or tolerance repair.
+The result is frozen as failed.
+
+EXP-054 and EXP-055 together separate capacity from observability: offline
+metric gradients reveal a strong token-axis mask, but one frozen current token
+does not predict it reliably. Further epochs, learning rates, seeds, basis
+joint-training, or direct oracle-mask supervision are not authorized as repairs.
+Continuing requires an explicit method decision between (a) one pairwise
+geometry-conditioned tangent module that observes source-safe current/previous
+geometric residual evidence and undergoes a fresh learned-optimizer collision
+audit, or (b) closing current-only TTT and returning to explicit missing-
+evidence memory. No validation or terminal access is authorized.

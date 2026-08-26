@@ -199,7 +199,8 @@ the eight shared tangent axes at each spatial token, without changing the
 official recurrent update or adding a learned optimizer, memory, gate, or
 online objective.
 
-Status: **Supported at oracle capacity; learned generalization open.** EXP-054
+Status: **Supported at oracle capacity; rejected for the token-only linear
+conditioner.** EXP-054
 passed every zero-fit gate. Its token-axis oracle improved the metric on all 16
 anchors with mean gain `2.00e-5` and 0% harm, versus `1.96e-6` for the global
 basis and `1.71e-6` for the same mask after spatial shuffle. Both paired 95%
@@ -207,3 +208,8 @@ intervals were wholly positive, and a scene-global axis mask was substantially
 weaker. This establishes that spatially local axis selection is the missing
 capacity on the exposed anchors. EXP-055 must determine whether the proposed
 token-only conditioner can learn that structure on disjoint train scenes.
+EXP-055 answered no for the registered realization: final gain and paired
+improvement intervals crossed zero, harm remained 43.75%, and the conditional
+model did not beat EXP-053's learned global basis. The oracle result therefore
+identifies a spatial selection opportunity, but frozen current tokens alone do
+not make the required selection learnable under the compact fit.

@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-054 passed; EXP-055 conditioner fit registered)
+Last updated: 2026-08-26 (EXP-055 token-only conditioner rejected)
 
 ## First objective
 
@@ -531,3 +531,18 @@ set, then audit on the same disjoint 16 held-train-scene anchors. The objective,
 step, loss, optimizer budget, and learning rate remain fixed. It must also beat
 EXP-053's learned global basis with a positive paired interval before any
 validation access.
+
+EXP-055 failed that requirement. The learned scales were nontrivial and harm
+fell, but final gain was `-3.43e-7`, both final and paired intervals crossed
+zero, harm remained 43.75%, and the method did not beat EXP-053's learned
+global basis. No checkpoint was created. Validation and terminal remain closed.
+
+## Current decision after EXP-055
+
+The branch now has a precise capacity-observability result: offline metric
+gradients expose a strong spatial token-axis oracle, but a conditioner that sees
+only the frozen current geometry token cannot infer it. Hyperparameter, epoch,
+seed, joint-basis, or loss repair is closed under D139. Continuing requires user
+judgment between one newly audited pairwise geometry-residual conditioner and a
+return to explicit missing-evidence memory. There is no active paper-ready
+model.

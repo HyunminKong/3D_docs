@@ -228,3 +228,10 @@ This is a proposal, not an accepted method. EXP-054 must first show with a
 train-only metric-gradient oracle that token-conditioned axis weighting has
 useful capacity not explained by a global axis subset or a spatially shuffled
 mask. No learned conditioner, validation result, or v3 checkpoint exists.
+
+EXP-054 passed that capacity premise, but EXP-055 rejected the deployable
+token-only realization. A zero-initialized bias-free conditioner learned
+nontrivial scales yet did not obtain positive absolute-3D or paired intervals,
+did not meet the harm gate, and did not beat the capacity-matched learned global
+basis. There is still no accepted v3 model or checkpoint. The equation above
+is an oracle-motivated failed candidate, not the current method.
