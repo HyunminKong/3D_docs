@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-27 (EXP-068 completed; cross-clip paper premise closed)
+Last updated: 2026-08-27 (EXP-069 completed; query-integrity paper premise closed)
 
 ## First objective
 
@@ -12,12 +12,12 @@ dissertation architecture is deferred.
 
 ## Current research question
 
-There is no accepted paper method. H24 is closed, but its exposed result
-generated one distinct H25 discovery: APD preferred the structurally worse
-large-shift context in 9/16 sequences and did not track residual magnitude.
-EXP-069 is registered to confirm that metric-ranking contradiction once on the
-11 previously unopened files. This does not repair EXP-068 and authorizes no
-loss or architecture.
+There is no accepted paper method or active premise. H24 established a real
+cross-clip non-gauge residual but failed its APD-blindness gate. H25 then tested
+a distinct ranking contradiction on untouched files: frequent local inversions
+recurred, but mean signed APD gain was negative with an interval crossing zero.
+D165 closes the query-integrity evaluation branch without a loss, model, or
+terminal access.
 
 ## Archived order-robustness novelty boundary
 
@@ -837,7 +837,7 @@ query, alignment, or threshold repair; no equivalence loss; and no validation
 or terminal access is authorized. The next step is a fresh candidate selection,
 not a repair of this exposed premise.
 
-## Active query-integrity ranking premise
+## Closed query-integrity ranking premise
 
 D163 treats EXP-068's post-result APD ranking pattern as discovery evidence for
 a different hypothesis rather than changing H24's failed threshold. The latest
@@ -845,17 +845,22 @@ UniQuery4R release removes D4RT's fixed temporal embedding and predicts cameras
 per view, making the obvious D4RT architecture repairs weak/occupied, but it
 still reports pointwise WorldTrack APD/EPE without an equivalent-query test.
 
-EXP-069 freezes a one-shot confirmation on the 11 NPZ files inherited as the
-unused EXP-068 validation role. It requires universal/near-universal structural
-damage, positive signed APD gain with a positive sequence-bootstrap lower
-bound, frequent pointwise ranking inversions, and low association between APD
-gain and structural damage. The files are now H25 premise and cannot validate
-H24. The 12 terminal files remain unopened. Failure closes this evaluation
-branch; success permits only a broader model/dataset coverage decision.
-
 EXP-069 v1.0 then aborted before aggregate/result creation because the ninth
 attempted file has zero annotations visible at the immutable source frame.
 D164 authorizes only v1.1 coverage accounting: attempt all 11, exclude rather
 than replace files with fewer than 64 eligible tracks, and require at least nine
 evaluable sequences. Scientific thresholds and the unopened terminal role are
 unchanged.
+
+Version 1.1 attempted all 11 fixed files and evaluated 10; one fixed-source
+sequence had zero eligible annotations. The large shift again caused more
+structural damage in 10/10 sequences, and APD preferred it in 16/30 rows with
+structural/APD Spearman `0.123`.
+
+The complete gate nevertheless failed 15/17. Mean signed APD gain was
+`-0.01593`, and its sequence-bootstrap CI `[-0.08154, 0.04212]` crossed zero.
+D165 therefore rejects the systematic ranking-inversion claim. Query integrity
+is retained only as a complementary diagnostic; no metric expansion, loss,
+architecture, or terminal evaluation is authorized. The next paper candidate
+must not be another repair of D4RT's fixed-window/query formulation, especially
+after UniQuery4R's August 2026 variable-length query architecture.

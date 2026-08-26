@@ -2355,3 +2355,23 @@ instead of replacing them or moving the source frame. At least 9/11 must be
 evaluable. Frequency gates use their preregistered proportions; signed APD
 mean/CI and correlation thresholds do not change. Failure of coverage or any
 scientific gate still closes H25. No terminal file has been opened.
+
+## D165 — Reject systematic APD/query-integrity ranking inversion
+
+Date: 2026-08-27
+
+Status: Accepted after EXP-069 v1.1
+
+EXP-069 v1.1 attempts all 11 confirmation files, evaluates 10/11 and 30
+targets, replays exactly, and leaves terminal unopened. The non-gauge structural
+phenomenon is again strong: large shift exceeds adjacent shift in 10/10
+sequences by 1.6891% of scale with CI `[1.0044%, 2.5077%]`. APD prefers the
+large shift in 6/10 sequence means and 16/30 rows, and its association with
+structural damage is only Spearman `0.123`.
+
+The stronger ranking thesis fails. Mean signed APD gain is `-0.01593`, not
+non-negative, and its CI `[-0.08154, 0.04212]` does not have a positive lower
+bound. These are the sole failures among 17 gates. Therefore APD sometimes
+misranks query integrity but does not systematically reward the structurally
+worse context. H25 is closed; no multi-model benchmark, modified statistic,
+equivalence loss, or terminal run is authorized.

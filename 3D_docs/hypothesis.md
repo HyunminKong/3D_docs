@@ -433,10 +433,14 @@ change can produce a larger non-gauge structural residual while pointwise APD
 remains indifferent or improves. Pointwise accuracy and counterfactual query
 integrity are therefore empirically distinct model-selection axes.
 
-Status: **Open; EXP-069 registered before opening its 11 confirmation files.**
-The exposed EXP-068 premise rows are discovery evidence only: structural damage
-was universal, but APD preferred the large-shift context in 9/16 sequences and
-had near-zero association with residual magnitude. EXP-069 freezes a signed
-ranking test, inversion frequency, and correlation gate on the untouched role.
-A pass authorizes broader coverage analysis only, not a metric paper, loss, or
-architecture.
+Status: **Rejected as the registered evaluation-paper premise; complementary
+diagnostic supported.** EXP-069 reproduces positive large-minus-adjacent damage
+in all 10 evaluable confirmation sequences and APD still prefers the large
+shift in 16/30 target rows. Structural damage and APD gain remain weakly
+associated (Spearman `0.123`). However, mean signed APD gain is `-0.01593` with
+CI `[-0.08154, 0.04212]`, failing both preregistered mean/interval gates.
+
+Thus pointwise APD can locally misrank query integrity but does not
+systematically reward the less stable context. No benchmark expansion, metric
+repair, equivalence loss, or terminal access is authorized. The structural
+residual from H24/25 remains useful diagnostic evidence only.

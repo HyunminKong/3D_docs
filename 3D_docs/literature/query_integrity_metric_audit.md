@@ -69,6 +69,9 @@ It requires the pointwise metric to select the structurally less stable context
 often enough to matter, a non-negative mean signed APD gain, and near-zero
 association between APD gain and structural damage on untouched sequences.
 
-If EXP-069 fails, the evaluation branch closes. If it passes, it authorizes a
-broader multi-model/dataset feasibility audit. It does not yet authorize a loss,
-benchmark paper, or architecture.
+EXP-069 failed the strong ranking premise. On 10 evaluable confirmation
+sequences, structural damage remains positive in every sequence and APD prefers
+the large-shift context in 16/30 rows, but mean signed APD gain is negative and
+its confidence interval crosses zero. The evaluation branch therefore closes:
+query integrity is a complementary diagnostic, not a demonstrated replacement
+or systematic contradiction of pointwise ranking.

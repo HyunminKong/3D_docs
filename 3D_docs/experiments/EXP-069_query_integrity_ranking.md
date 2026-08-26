@@ -1,6 +1,6 @@
 # EXP-069 — Query-Integrity Ranking Premise
 
-Status: Registered; not yet run
+Status: Corrected v1.1 completed; gate failed
 
 Protocol: v1.1 (coverage-accounting correction; v1.0 aborted before result)
 
@@ -92,3 +92,52 @@ same intended proportions: structural large-over-adjacent in at least 80% of
 evaluable sequences, positive layer residual in all, APD preference in at least
 half of sequence means and 40% of target rows. The positive signed-APD bootstrap
 and `|Spearman|<=0.30` gates are unchanged.
+
+## Result
+
+Version 1.1 attempted all 11 fixed files. Ten were evaluable for all three
+targets; one had zero tracks visible at the immutable source frame and is
+retained as a coverage exclusion. Exact replay was bitwise, no layer fit fell
+back, no model was fit, and terminal remained unopened.
+
+| Quantity | Result |
+| --- | ---: |
+| Evaluable sequences / targets | 10 / 30 |
+| Layer-aligned large residual | 2.6613% of scene scale |
+| Layer residual 95% CI | [1.5473%, 3.9907%] |
+| Large minus adjacent structural damage | 1.6891% |
+| Structural-damage 95% CI | [1.0044%, 2.5077%] |
+| Sequences with large > adjacent | 10/10 |
+| Mean signed APD gain (large - reference) | -0.01593 |
+| Signed APD gain 95% CI | [-0.08154, 0.04212] |
+| Sequences where APD prefers large shift | 6/10 |
+| Targets where APD prefers large shift | 16/30 |
+| Structural/APD target Spearman | 0.1228 |
+| Complete gate | 15/17; failed |
+
+The structural diagnostic generalizes strongly, and APD makes frequent local
+ranking inversions. However, the paper premise deliberately required more than
+frequency: mean signed APD gain had to be non-negative with a positive
+sequence-bootstrap lower bound. Its observed mean is negative and its interval
+crosses zero. These are the only two failed gates.
+
+## Conclusion
+
+H25 is rejected as the registered evaluation-paper premise. APD does not encode
+query integrity and can prefer a structurally less stable context on individual
+rows, but it does not systematically reward that context on untouched data.
+This supports reporting query integrity as a complementary diagnostic, not the
+strong claim that standard pointwise evaluation ranks the failure backward.
+
+No correlation threshold, APD sign test, aggregation, coverage rule, clip, or
+query is changed. No multi-model benchmark, equivalence loss, validation fit,
+or terminal evaluation is authorized from EXP-069.
+
+## Immutable hashes
+
+- corrected result:
+  `365009557e8d30d3b670299d96f4fb79e8df50df6ab5e3966eb3883025f1a4a8`
+- corrected config:
+  `8277cb57af56a7322f7f32df7de93a7d8619c3d3e6e67cef540303287a7bb585`
+- aborted-run record:
+  `fdd4b6745f80df42c951e9f4e01551ce96d7b1eb0b54deebd0364b6cd06a0095`
