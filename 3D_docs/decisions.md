@@ -2042,3 +2042,29 @@ EXP-062, compare a preregistered normalized latent-state commutator with the
 geometry-decoded commutator as predictors of absolute error range, and query a
 permutation-barycenter recurrent state. No regularizer, adapter, training, or
 validation is authorized yet.
+
+## D152 — Reject latent symmetrization; audit one geometry-consensus direction
+
+Date: 2026-08-26
+Status: Accepted after EXP-063
+
+EXP-063 reproduces EXP-062 exactly and passes the quotient-observability gates:
+decoded geometry predicts metric range at Spearman `0.835`, normalized latent
+state at `-0.012`, a `0.847` advantage. Pose-retrieval memory is intermediate at
+`0.497`. This strongly rejects latent distance as the 3D commutator metric.
+
+The full gate fails because latent arithmetic symmetrization is geometry-
+unhealthy. State barycenter EPE is `0.082279`, worse than the six-order mean
+`0.081118` and chronological `0.079914`; three of four scene gains are negative
+and the bootstrap interval is wholly negative. Generic SIRE-style latent
+regularization is therefore stopped.
+
+One preregistered descriptive control separates the failure from output
+geometry: the arithmetic output-pointmap barycenter improves mean-order EPE in
+all 16 contexts and all four scenes. It remains slightly worse than aggregate
+chronological EPE, so this does not authorize training. EXP-064 performs one
+coefficient-frozen direction test: move each scale-normalized query pointmap
+10% toward the six-order geometry consensus and compare the chronological path
+with the identical direction after spatial permutation. No strength, loss,
+head, adapter, order choice, or validation may be fit. Failure closes the
+order-robust method candidate; success only authorizes a trainability design.

@@ -355,3 +355,11 @@ compare visible geometry. EXP-063 first asks whether this decoded discrepancy
 is more informative than normalized latent-state distance and whether averaging
 the recurrent paths lands in a geometry-healthy state. Until both hold, even
 this geometry-specific sketch is not an accepted method.
+
+EXP-063 rejects latent-state distance and arithmetic state averaging as the
+method object. Decoded geometry is substantially more predictive of absolute
+order risk, but a full output ensemble is not deployable and is slightly worse
+than the chronological aggregate. EXP-064 therefore tests only the local
+direction from a chronological output toward a scale-quotiented geometry
+consensus. No head or loss exists until that direction beats its spatial-
+permutation control without negative transfer.

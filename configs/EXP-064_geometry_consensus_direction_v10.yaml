@@ -1,0 +1,31 @@
+experiment: EXP-064
+protocol_revision: v1.0
+purpose: train_only_no_fit_chronological_geometry_consensus_direction
+seed: 6400010
+source:
+  exp062_config: configs/EXP-062_order_sensitivity_anatomy_v10.yaml
+  exp062_config_sha256: 8253b86ecebca47c94d6628e716d1bb84bc089374bf78832bc52f299c9199070
+  exp062_result: revisit3d/results/EXP-062/order_sensitivity_anatomy_v10.json
+  exp062_result_sha256: dcca047f004335d39dae264ab619518f022a947be21a43458c0dcdbb37c7ceb1
+  exp063_result: revisit3d/results/EXP-063/geometry_commutator_capacity_v10.json
+  exp063_result_sha256: 70264df08acda90a5f6731c9136e196c5e9e9439dad75d58fbef1205b4db854a
+data:
+  validation_access: false
+  terminal_access: false
+direction:
+  interpolation: 0.10
+  spatial_control_seed: 6400010
+metric:
+  maximum_reproduction_difference: 0.00001
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context
+success:
+  maximum_chronological_harm_fraction: 0.25
+  require_chronological_gain_all_scenes: true
+  require_chronological_bootstrap_lower_positive: true
+  require_spatial_control_gain_all_scenes: true
+  require_spatial_control_bootstrap_lower_positive: true
+  require_all_order_gain_all_scenes: true
+output:
+  result: revisit3d/results/EXP-064/geometry_consensus_direction_v10.json

@@ -309,3 +309,14 @@ swap regularization is prior art (SIRE, NeurIPS 2020), however. EXP-063 must
 establish that a geometry-decoded commutator is more informative than latent
 state distance and that a symmetric state lies in a geometry-healthy region
 before a 3D-specific method can be proposed.
+
+EXP-063 **rejects latent-state symmetrization but preserves one output-space
+sub-hypothesis.** Geometry dispersion retains Spearman `0.835` with metric
+range, while normalized latent-state dispersion is `-0.012`; the association
+gap is `0.847`. Arithmetic state barycentering worsens mean EPE by `0.001162`
+versus the six-order mean and by `0.002365` versus chronological, with negative
+gains in three scenes. In contrast, the preregistered descriptive output-
+pointmap barycenter improves the mean-order EPE in all 16 contexts. EXP-064 is
+authorized only to test whether a fixed small geometry-consensus direction is
+also healthy for the single chronological path. Failure ends H20 as a method
+candidate; success authorizes trainability design, not a latent commutator.

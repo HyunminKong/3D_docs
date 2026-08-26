@@ -694,3 +694,16 @@ swap RNN regularization is occupied by SIRE (NeurIPS 2020) and commutative-
 monoid work. EXP-063 must distinguish geometry-decoded path inconsistency from
 generic latent invariance and test whether a symmetric recurrent state remains
 geometry-healthy before any trainable architecture is designed.
+
+EXP-063 failed its complete gate. It shows why the generic method is wrong:
+latent dispersion has no association with absolute order risk and averaging
+the six recurrent states significantly worsens geometry. Decoded geometry is
+far more diagnostic, and averaging decoded pointmaps improves mean-order EPE in
+all 16 contexts, but not aggregate chronological EPE. No latent commutator
+method is authorized.
+
+EXP-064 is the final no-fit premise for this candidate. It uses a frozen 10%
+step toward the output geometry consensus and a matched spatially shuffled
+direction to ask whether the single deployable chronological path has a healthy
+geometry-consensus direction. It adds no model and reuses only exposed train
+contexts.

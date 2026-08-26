@@ -2,7 +2,7 @@
 
 ## Status
 
-Preregistered; not yet run.
+Completed; complete gate failed.
 
 ## Question
 
@@ -57,3 +57,34 @@ being presented as the paper method.
 
 - Config: `configs/EXP-063_geometry_commutator_capacity_v10.yaml`
 - Result: `revisit3d/results/EXP-063/geometry_commutator_capacity_v10.json`
+
+## Result
+
+- EXP-062 EPE and geometry dispersion reproduce exactly.
+- Geometry dispersion versus absolute range: Spearman `0.835294`.
+- Normalized latent-state dispersion versus range: `-0.011765`.
+- Geometry-over-latent association: `0.847059`, passing its gate.
+- Pose-memory dispersion versus range: `0.497059` (descriptive).
+- Six-order mean / chronological / state-barycenter EPE:
+  `0.081118 / 0.079914 / 0.082279`.
+- State-barycenter gain over order mean: `-0.001162`, 95% CI
+  `[-0.002499, -0.000053]`; negative in chess, heads, and stairs.
+- Output-pointmap barycenter EPE: `0.080265`; it improves the six-order mean by
+  `0.000852` in all 16 contexts and all scenes, but remains `0.000351` worse
+  than aggregate chronological EPE.
+- Peak allocated GPU memory: 4.65 GiB.
+- Result SHA-256:
+  `70264df08acda90a5f6731c9136e196c5e9e9439dad75d58fbef1205b4db854a`.
+
+## Interpretation
+
+Internal state distance is not the right measure of geometry-relevant
+noncommutativity. Forcing latent paths toward their arithmetic center risks
+state collapse and is not justified. The positive output-barycenter control
+localizes the remaining possibility to a decoded geometry quotient, but does
+not yet show benefit for the deployable chronological path.
+
+## Conclusion
+
+The registered experiment fails. Generic latent commutator regularization is
+stopped. D152 authorizes only EXP-064's fixed local output-direction audit.
