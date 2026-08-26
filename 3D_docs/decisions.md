@@ -1495,3 +1495,21 @@ bounds. Standalone top-tier competitiveness additionally requires improvement
 over official TTT3R on all three. A failure cannot be repaired on TUM; it either
 ends this frozen current-only candidate or motivates a separately authorized
 carrier-mode integration selected on fresh train data.
+
+## D131 — Correct only EXP-050's stale native-baseline reference
+
+Date: 2026-08-26
+Status: Accepted after the v1.0 common guard failed
+
+EXP-050 v1.0 completed all method predictions but its current CUT3R replay did
+not reproduce the older EXP-036 metric rows. A GT-free audit showed that the
+current step-wise carrier is bit-exact with official native CUT3R on all 2,228
+frames, so the discrepancy is not caused by the plasticity interface. The
+EXP-036 artifact cannot be treated as matched to the current TUM file bytes and
+runtime environment.
+
+One implementation correction is authorized. Freeze a content digest of every
+current RGB-D input, rerun official CUT3R and TTT3R on those bytes, require the
+new CUT3R rows to match v1.0's internal base, and recompute the already
+registered gates. The v1.0 result remains immutable. No exact-meta prediction,
+basis, step, metric, bootstrap, threshold, or success condition may change.

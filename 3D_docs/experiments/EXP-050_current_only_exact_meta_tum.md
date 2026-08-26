@@ -1,6 +1,6 @@
 # EXP-050 — Current-Only Exact-Meta TTT Absolute Geometry Audit
 
-Status: Registered
+Status: v1.0 completed with stale-baseline guard failure; v1.1 correction running
 Purpose: Decide whether the surviving compact TTT coordinate is a competitive
 paper candidate without continual memory
 
@@ -55,3 +55,23 @@ the EXP-039 terminal split remains unopened.
 - Config: `configs/EXP-050_current_only_exact_meta_tum_v10.yaml`
 - Evaluator: `revisit3d/scripts/evaluate_exp050_current_only_exact_meta_tum.py`
 - Result: `revisit3d/results/EXP-050/current_only_exact_meta_tum_v10.json`
+
+## v1.0 implementation correction note
+
+The complete v1.0 run reproduced exact cached-readout parity internally but did
+not reproduce the older EXP-036 metric artifact. A GT-free long-stream audit
+then established bit-exact native/step-wise geometry on all 2,228 frames. The
+method comparison is therefore internally valid, but the old TTT3R rows cannot
+be mixed with the current input bytes. No v1.0 result is overwritten.
+
+The v1.1 correction freezes a content inventory of all 4,472 current TUM RGB-D
+files (digest `00c881889c9847b553adec26af459072b2247ed626111d857e7496ee3fff8ef7`),
+reruns official CUT3R/TTT3R on those bytes, verifies its CUT3R rows against the
+v1.0 internal base, and recomputes only the previously registered gates. The
+exact-meta predictions, basis, step, policies, metrics, and hypotheses do not
+change.
+
+- Long parity diagnosis: `revisit3d/results/EXP-050/long_replay_parity_diagnosis_v10.json`
+- Input inventory: `revisit3d/results/EXP-050/tum_input_inventory_v11.json`
+- Native correction config: `configs/EXP-050_native_baseline_correction_v11.yaml`
+- Native correction result: `revisit3d/results/EXP-050/native_cut3r_ttt3r_correction_v11.json`

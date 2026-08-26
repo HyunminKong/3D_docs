@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP-050",
+  "stage": "tum_rgbd_input_inventory_v11",
+  "manifest": "revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json",
+  "manifest_sha256": "81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7",
+  "unique_files": 4472,
+  "files_by_suffix": {
+    ".png": 4472
+  },
+  "total_bytes": 1396640862,
+  "inventory_sha256": "00c881889c9847b553adec26af459072b2247ed626111d857e7496ee3fff8ef7",
+  "file_contents_decoded": false,
+  "model_accessed": false,
+  "terminal_accessed": false
+}

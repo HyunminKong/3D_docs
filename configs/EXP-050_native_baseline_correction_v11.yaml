@@ -1,0 +1,28 @@
+experiment: EXP-050
+protocol_revision: v1.1_baseline_reproduction_correction
+purpose: matched_native_cut3r_ttt3r_replay
+data:
+  manifest: revisit3d/manifests/tum_zero_shot_stream_exp034_v11.json
+  manifest_sha256: 81f18d47fe1c37037b95f6cef8021e103d006575660f38141b2fcfcd4174faa7
+  input_inventory: revisit3d/results/EXP-050/tum_input_inventory_v11.json
+  input_inventory_file_sha256: 9735ad20f1a1c9c9b9047430bde775985bd988f42bf56d83bd8438003cf6f19f
+  input_inventory_sha256: 00c881889c9847b553adec26af459072b2247ed626111d857e7496ee3fff8ef7
+  exact_sequences: 3
+  exact_targets: 111
+  exact_stream_frames_per_mode: 2228
+  terminal_access: false
+baseline:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  modes: [cut3r, ttt3r]
+  image_size: 512
+  crop: false
+  query_update: false
+depth:
+  grid_side: 16
+  minimum_m: 0.2
+  maximum_m: 10.0
+  minimum_cells_per_view: 32
+output:
+  result: revisit3d/results/EXP-050/native_cut3r_ttt3r_correction_v11.json

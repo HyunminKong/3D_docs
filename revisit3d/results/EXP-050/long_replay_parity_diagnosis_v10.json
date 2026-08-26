@@ -1,0 +1,40 @@
+{
+  "experiment": "EXP-050",
+  "stage": "gt_free_long_replay_parity_diagnosis",
+  "config": "configs/EXP-050_current_only_exact_meta_tum_v10.yaml",
+  "rows": [
+    {
+      "sequence": "rgbd_dataset_freiburg1_desk",
+      "frames": 168,
+      "queries": 16,
+      "maximum_error": 0.0,
+      "first_nonzero_frame": null,
+      "nonzero_frames": 0,
+      "maximum_query_error": 0.0,
+      "mean_query_error": 0.0
+    },
+    {
+      "sequence": "rgbd_dataset_freiburg2_xyz",
+      "frames": 1368,
+      "queries": 392,
+      "maximum_error": 0.0,
+      "first_nonzero_frame": null,
+      "nonzero_frames": 0,
+      "maximum_query_error": 0.0,
+      "mean_query_error": 0.0
+    },
+    {
+      "sequence": "rgbd_dataset_freiburg3_long_office_household",
+      "frames": 692,
+      "queries": 36,
+      "maximum_error": 0.0,
+      "first_nonzero_frame": null,
+      "nonzero_frames": 0,
+      "maximum_query_error": 0.0,
+      "mean_query_error": 0.0
+    }
+  ],
+  "ground_truth_accessed": false,
+  "model_or_parameter_selection_performed": false,
+  "terminal_accessed": false
+}

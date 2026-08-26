@@ -429,3 +429,12 @@ diagnostic, and official TTT3R. No memory component is active and no terminal
 data is opened. The result must pass both three-metric absolute-geometry and
 TTT3R competitiveness gates before this frozen realization can be treated as a
 standalone top-tier paper candidate.
+
+EXP-050 v1.0 finished, but its common reproduction guard detected that the old
+EXP-036 metric artifact is stale relative to the current replay. A separate
+RGB-only long-stream audit found exact native/step-wise parity on every one of
+2,228 frames, localizing the discrepancy to the old baseline/input environment
+rather than the carrier interface. D131 authorizes only a v1.1 matched native
+baseline correction after freezing the current 4,472-file RGB-D content digest.
+The v1.0 method predictions are immutable and H13 remains unclassified until
+the corrected common guard is evaluated.
