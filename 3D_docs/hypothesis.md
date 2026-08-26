@@ -425,3 +425,18 @@ window alignment and relational regularization are already occupied, so no
 equivalence loss, new head, memory, or validation run is authorized from these
 exposed premise sequences. The immutable v1.0 gate-counting bug is corrected
 separately to 16/17; it does not change this rejection.
+
+## H25 — Pointwise ranking does not measure query integrity
+
+For semantically identical 4D point queries, an irrelevant encoder-context
+change can produce a larger non-gauge structural residual while pointwise APD
+remains indifferent or improves. Pointwise accuracy and counterfactual query
+integrity are therefore empirically distinct model-selection axes.
+
+Status: **Open; EXP-069 registered before opening its 11 confirmation files.**
+The exposed EXP-068 premise rows are discovery evidence only: structural damage
+was universal, but APD preferred the large-shift context in 9/16 sequences and
+had near-zero association with residual magnitude. EXP-069 freezes a signed
+ranking test, inversion frequency, and correlation gate on the untouched role.
+A pass authorizes broader coverage analysis only, not a metric paper, loss, or
+architecture.

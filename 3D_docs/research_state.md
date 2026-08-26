@@ -12,12 +12,12 @@ dissertation architecture is deferred.
 
 ## Current research question
 
-There is currently no accepted paper method or active premise. H24's structural
-observation is supported: an identical physical 4D query decoded from
-overlapping clips retains a 2.83%-of-scale residual after strong held-out
-alignment. The complete EXP-068 gate failed because ordinary APD changed by
-0.0605, above the frozen 0.05 blindness limit. D162 closes cross-clip
-equivalence as the paper center without fitting a loss or opening validation.
+There is no accepted paper method. H24 is closed, but its exposed result
+generated one distinct H25 discovery: APD preferred the structurally worse
+large-shift context in 9/16 sequences and did not track residual magnitude.
+EXP-069 is registered to confirm that metric-ranking contradiction once on the
+11 previously unopened files. This does not repair EXP-068 and authorizes no
+loss or architecture.
 
 ## Archived order-robustness novelty boundary
 
@@ -836,3 +836,19 @@ D162 therefore rejects H24 as the top-tier paper premise. No offset, layer,
 query, alignment, or threshold repair; no equivalence loss; and no validation
 or terminal access is authorized. The next step is a fresh candidate selection,
 not a repair of this exposed premise.
+
+## Active query-integrity ranking premise
+
+D163 treats EXP-068's post-result APD ranking pattern as discovery evidence for
+a different hypothesis rather than changing H24's failed threshold. The latest
+UniQuery4R release removes D4RT's fixed temporal embedding and predicts cameras
+per view, making the obvious D4RT architecture repairs weak/occupied, but it
+still reports pointwise WorldTrack APD/EPE without an equivalent-query test.
+
+EXP-069 freezes a one-shot confirmation on the 11 NPZ files inherited as the
+unused EXP-068 validation role. It requires universal/near-universal structural
+damage, positive signed APD gain with a positive sequence-bootstrap lower
+bound, frequent pointwise ranking inversions, and low association between APD
+gain and structural damage. The files are now H25 premise and cannot validate
+H24. The 12 terminal files remain unopened. Failure closes this evaluation
+branch; success permits only a broader model/dataset coverage decision.

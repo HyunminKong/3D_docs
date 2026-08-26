@@ -2309,3 +2309,29 @@ The immutable v1.0 result reports 14/17 because `validation_accessed=false` and
 Correction v1.1 changes only their accounting names to
 `validation_not_accessed=true` and `terminal_not_accessed=true`, producing the
 correct 16/17 count. No inference, metric, threshold, or conclusion changes.
+
+## D163 — Register a distinct query-integrity ranking confirmation
+
+Date: 2026-08-27
+
+Status: Accepted before access to the 11 confirmation NPZ files
+
+EXP-068's registered absolute APD-blindness premise remains rejected and is not
+repaired. A different post-result observation motivates H25: although the large
+clip shift produced more structural damage in all 16 exposed premise sequences,
+APD preferred it in 9/16, its mean signed gain was positive, and its association
+with structural residual was approximately zero.
+
+The current literature still evaluates D4RT, UniQuery4R, and related WorldTrack
+models primarily with pointwise APD/EPE. PDI-Bench and dynamic reconstruction
+losses occupy generic rigidity metrics, while UniQuery4R's August 2026 release
+occupies the obvious variable-time/separate-camera architectural repairs. The
+remaining narrow question is whether a pointwise metric actively ranks a less
+query-integral context as better on untouched data.
+
+EXP-069 reassigns the 11 unopened files inherited as EXP-068 `validation` to a
+one-shot H25 premise. It freezes signed APD gain, inversion counts, and a
+Spearman decoupling test before access. These files cease to be H24 validation;
+the 12 terminal files remain unopened. Failure closes H25 without metric or
+threshold repair. Success authorizes only a multi-model/dataset coverage
+decision; no loss, decoder, benchmark claim, or model fit is accepted.

@@ -13,6 +13,9 @@
 - `3D_docs/literature/cross_clip_4d_consistency_audit.md` — fixed-clip
   query-equivalence, sliding-window alignment, relational 4D consistency, and
   the EXP-068 novelty boundary.
+- `3D_docs/literature/query_integrity_metric_audit.md` — pointwise WorldTrack
+  metrics versus counterfactual query-integrity ranking, including the August
+  2026 UniQuery4R collision update and EXP-069 boundary.
 
 ## Local reference repositories
 

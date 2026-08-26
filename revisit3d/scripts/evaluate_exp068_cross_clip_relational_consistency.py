@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate EXP-068 without fitting a model or opening held-out roles."""
+"""Evaluate frozen cross-clip query protocols without fitting a model."""
 from __future__ import annotations
 
 import argparse
@@ -155,6 +155,29 @@ def mean_rows(rows: list[dict[str, Any]], key: str) -> float:
     return float(np.mean([float(row[key]) for row in rows]))
 
 
+def average_ranks(values: np.ndarray) -> np.ndarray:
+    """Return deterministic average ranks for ties, starting at zero."""
+    values = np.asarray(values, dtype=np.float64)
+    order = np.argsort(values, kind="mergesort")
+    ranks = np.empty(values.size, dtype=np.float64)
+    start = 0
+    while start < values.size:
+        end = start + 1
+        while end < values.size and values[order[end]] == values[order[start]]:
+            end += 1
+        ranks[order[start:end]] = 0.5 * float(start + end - 1)
+        start = end
+    return ranks
+
+
+def spearman(values_a: list[float], values_b: list[float]) -> float:
+    ranks_a = average_ranks(np.asarray(values_a, dtype=np.float64))
+    ranks_b = average_ranks(np.asarray(values_b, dtype=np.float64))
+    if ranks_a.size < 2 or np.std(ranks_a) <= 0.0 or np.std(ranks_b) <= 0.0:
+        return float("nan")
+    return float(np.corrcoef(ranks_a, ranks_b)[0, 1])
+
+
 @torch.no_grad()
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -164,11 +187,13 @@ def main() -> None:
     args = parser.parse_args()
     config_path = Path(args.config)
     config = yaml.safe_load(config_path.read_text())
+    experiment = str(config.get("experiment", "EXP-068"))
+    role = str(config["data"].get("role", "premise"))
     manifest_path = Path(config["data"]["manifest"])
     manifest = json.loads(manifest_path.read_text())
     output_path = Path(config["output"]["result"])
     if output_path.exists():
-        raise RuntimeError(f"EXP-068 result already exists: {output_path}")
+        raise RuntimeError(f"{experiment} result already exists: {output_path}")
     if not (
         manifest["experiment"] == "EXP-068"
         and manifest["npz_content_accessed"] is False
@@ -176,10 +201,18 @@ def main() -> None:
         and len(manifest["roles"]["premise"]) == 16
         and len(manifest["roles"]["validation"]) == 11
         and len(manifest["roles"]["terminal"]) == 12
-        and config["data"]["validation_access"] is False
         and config["data"]["terminal_access"] is False
+        and role in {"premise", "validation"}
     ):
-        raise RuntimeError("EXP-068 source-safe role contract failed")
+        raise RuntimeError(f"{experiment} source-safe role contract failed")
+    if experiment == "EXP-068" and config["data"]["validation_access"] is not False:
+        raise RuntimeError("EXP-068 validation role must remain unopened")
+    if experiment == "EXP-069" and not (
+        role == "validation"
+        and config["data"]["role_content_accessed_before_registration"] is False
+    ):
+        raise RuntimeError("EXP-069 must use the previously unopened validation role")
+    role_entries = manifest["roles"][role]
 
     external_root = Path(config["carrier"]["repository"]).resolve()
     if str(external_root) not in sys.path:
@@ -200,7 +233,7 @@ def main() -> None:
     load_result = model.load_state_dict(state, strict=False)
     model = model.to(device).eval()
     if _model_clip_frames(model) != int(config["carrier"]["clip_frames"]):
-        raise RuntimeError("EXP-068 checkpoint clip length does not match the frozen config")
+        raise RuntimeError(f"{experiment} checkpoint clip length does not match the frozen config")
 
     image_hw = tuple(int(value) for value in config["carrier"]["image_size"])
     clip_specs = config["query"]["clips"]
@@ -219,7 +252,7 @@ def main() -> None:
     sequence_rows: list[dict[str, Any]] = []
     replay_max = 0.0
     total_layer_fallbacks = 0
-    for sequence_entry in manifest["roles"]["premise"]:
+    for sequence_entry in role_entries:
         sequence_name = sequence_entry["sequence"]
         sequence_path = data_root / sequence_entry["relative_path"]
         sample = load_worldtrack_sequence(sequence_path, num_frames=48)
@@ -228,7 +261,7 @@ def main() -> None:
         gt_uv = np.asarray(sample["tracks_uv"], dtype=np.float64)[:48]
         visibility = np.asarray(sample["visibility"], dtype=bool)[:48]
         if video_rgb.shape[0] != 48:
-            raise RuntimeError(f"EXP-068 {sequence_name} has fewer than 48 frames")
+            raise RuntimeError(f"{experiment} {sequence_name} has fewer than 48 frames")
         original_h, original_w = int(video_rgb.shape[1]), int(video_rgb.shape[2])
 
         valid_tracks = visibility[source_global].copy()
@@ -237,7 +270,7 @@ def main() -> None:
             valid_tracks &= np.isfinite(gt_cam[target]).all(axis=1)
         track_ids = np.flatnonzero(valid_tracks)
         if track_ids.size < minimum_alignment * 2:
-            raise RuntimeError(f"EXP-068 {sequence_name} has insufficient finite tracks")
+            raise RuntimeError(f"{experiment} {sequence_name} has insufficient finite tracks")
         if track_ids.size > maximum_tracks:
             rng_select = np.random.default_rng(stable_seed(split_seed, sequence_name + "::select"))
             track_ids = np.sort(rng_select.choice(track_ids, size=maximum_tracks, replace=False))
@@ -248,7 +281,7 @@ def main() -> None:
         alignment_ids = np.sort(shuffled[:split])
         evaluation_ids = np.sort(shuffled[split:])
         if min(alignment_ids.size, evaluation_ids.size) < minimum_alignment:
-            raise RuntimeError(f"EXP-068 {sequence_name} alignment/evaluation split is too small")
+            raise RuntimeError(f"{experiment} {sequence_name} alignment/evaluation split is too small")
 
         uv = gt_uv[source_global, track_ids].astype(np.float32)
         uv[:, 0] /= float(max(original_w - 1, 1))
@@ -321,7 +354,7 @@ def main() -> None:
             truth = gt_cam[target_global, track_ids]
             scene_scale = float(np.median(np.linalg.norm(truth[eval_local], axis=1)))
             if not np.isfinite(scene_scale) or scene_scale <= 1e-8:
-                raise RuntimeError(f"EXP-068 invalid scene scale for {sequence_name}/{target_global}")
+                raise RuntimeError(f"{experiment} invalid scene scale for {sequence_name}/{target_global}")
 
             large_global_transform = fit_sim3(large[cal_local], reference[cal_local])
             adjacent_global_transform = fit_sim3(adjacent[cal_local], reference[cal_local])
@@ -387,6 +420,7 @@ def main() -> None:
                     "epe_large": epe_large,
                     "apd_reference": apd_reference,
                     "apd_large": apd_large,
+                    "signed_apd_gain": apd_large - apd_reference,
                     "absolute_apd_difference": abs(apd_reference - apd_large),
                     "large_layer_fallbacks": large_fallbacks,
                     "adjacent_layer_fallbacks": adjacent_fallbacks,
@@ -411,10 +445,11 @@ def main() -> None:
                 "mean_absolute_apd_difference": mean_rows(
                     target_rows, "absolute_apd_difference"
                 ),
+                "mean_signed_apd_gain": mean_rows(target_rows, "signed_apd_gain"),
             }
         )
         print(
-            f"[EXP-068] {sequence_name}: layer-large="
+            f"[{experiment}] {sequence_name}: layer-large="
             f"{sequence_rows[-1]['mean_layer_large_fraction']:.6f}, "
             f"large-adj={sequence_rows[-1]['mean_large_minus_adjacent_fraction']:.6f}"
         )
@@ -428,6 +463,17 @@ def main() -> None:
     pair_values = [row["mean_pair_large_fraction"] for row in sequence_rows]
     retention_values = [row["mean_layer_retention"] for row in sequence_rows]
     apd_values = [row["mean_absolute_apd_difference"] for row in sequence_rows]
+    signed_apd_values = [row["mean_signed_apd_gain"] for row in sequence_rows]
+    target_delta_values = [
+        float(target["layer_large_fraction"] - target["layer_adjacent_fraction"])
+        for row in sequence_rows
+        for target in row["targets"]
+    ]
+    target_signed_apd_values = [
+        float(target["signed_apd_gain"])
+        for row in sequence_rows
+        for target in row["targets"]
+    ]
     aggregate = {
         "sequences": len(sequence_rows),
         "targets": sum(len(row["targets"]) for row in sequence_rows),
@@ -450,37 +496,86 @@ def main() -> None:
         "mean_pair_large_fraction": float(np.mean(pair_values)),
         "pair_large_ci95": bootstrap_ci(pair_values, samples, bootstrap_seed + 2),
         "mean_absolute_apd_difference": float(np.mean(apd_values)),
+        "mean_signed_apd_gain": float(np.mean(signed_apd_values)),
+        "signed_apd_gain_ci95": bootstrap_ci(
+            signed_apd_values, samples, bootstrap_seed + 3
+        ),
+        "apd_positive_sequences": int(np.sum(np.asarray(signed_apd_values) > 0.0)),
+        "apd_positive_targets": int(np.sum(np.asarray(target_signed_apd_values) > 0.0)),
+        "query_integrity_ranking_inversions": int(
+            np.sum(
+                (np.asarray(target_delta_values) > 0.0)
+                & (np.asarray(target_signed_apd_values) > 0.0)
+            )
+        ),
+        "target_structural_apd_spearman": spearman(
+            target_delta_values, target_signed_apd_values
+        ),
         "layer_fit_fallbacks": total_layer_fallbacks,
     }
 
     success = config["success"]
-    gates = {
-        "exact_replay": replay_max <= float(success["maximum_replay_abs_difference"]),
-        "complete_sequences": len(sequence_rows) == int(success["exact_premise_sequences"]),
-        "complete_targets": aggregate["targets"]
-        == int(success["exact_premise_sequences"]) * len(targets_global),
-        "layer_residual_magnitude": aggregate["mean_layer_large_fraction"]
-        >= float(success["minimum_layer_residual_scene_fraction"]),
-        "layer_residual_ci": aggregate["layer_large_ci95"][0] > 0.0,
-        "layer_residual_all_sequences": all(value > 0.0 for value in layer_values),
-        "large_over_adjacent_ci": aggregate["large_minus_adjacent_ci95"][0] > 0.0,
-        "large_over_adjacent_frequency": aggregate["large_over_adjacent_positive_sequences"]
-        >= int(success["minimum_large_over_adjacent_positive_sequences"]),
-        "layer_residual_retention": aggregate["mean_layer_retention"]
-        >= float(success["minimum_layer_residual_retention"]),
-        "pair_residual_ci": aggregate["pair_large_ci95"][0] > 0.0,
-        "pair_over_replay": aggregate["mean_pair_large_fraction"] > 2.0 * replay_max,
-        "pointwise_apd_blindness": aggregate["mean_absolute_apd_difference"]
-        < float(success["maximum_mean_absolute_apd_difference"]),
-        "no_layer_fit_fallbacks": total_layer_fallbacks == 0,
-        "source_safe_roles": True,
-        "no_model_fit": True,
-        "validation_not_accessed": True,
-        "terminal_not_accessed": True,
-    }
+    if experiment == "EXP-069":
+        expected_sequences = int(success["exact_sequences"])
+        gates = {
+            "exact_replay": replay_max <= float(success["maximum_replay_abs_difference"]),
+            "complete_sequences": len(sequence_rows) == expected_sequences,
+            "complete_targets": aggregate["targets"]
+            == expected_sequences * len(targets_global),
+            "layer_residual_ci": aggregate["layer_large_ci95"][0] > 0.0,
+            "layer_residual_frequency": int(np.sum(np.asarray(layer_values) > 0.0))
+            >= int(success["minimum_layer_positive_sequences"]),
+            "large_over_adjacent_ci": aggregate["large_minus_adjacent_ci95"][0] > 0.0,
+            "large_over_adjacent_frequency": aggregate[
+                "large_over_adjacent_positive_sequences"
+            ]
+            >= int(success["minimum_large_over_adjacent_positive_sequences"]),
+            "mean_signed_apd_gain": aggregate["mean_signed_apd_gain"]
+            >= float(success["minimum_mean_signed_apd_gain"]),
+            "signed_apd_gain_ci": aggregate["signed_apd_gain_ci95"][0]
+            > float(success["minimum_signed_apd_gain_ci_lower"]),
+            "apd_positive_sequences": aggregate["apd_positive_sequences"]
+            >= int(success["minimum_apd_positive_sequences"]),
+            "apd_positive_targets": aggregate["apd_positive_targets"]
+            >= int(success["minimum_apd_positive_targets"]),
+            "structural_apd_decoupling": abs(
+                aggregate["target_structural_apd_spearman"]
+            )
+            <= float(success["maximum_absolute_target_spearman"]),
+            "no_layer_fit_fallbacks": total_layer_fallbacks == 0,
+            "source_safe_reassignment": role == "validation",
+            "no_model_fit": True,
+            "terminal_not_accessed": True,
+        }
+    else:
+        gates = {
+            "exact_replay": replay_max <= float(success["maximum_replay_abs_difference"]),
+            "complete_sequences": len(sequence_rows) == int(success["exact_premise_sequences"]),
+            "complete_targets": aggregate["targets"]
+            == int(success["exact_premise_sequences"]) * len(targets_global),
+            "layer_residual_magnitude": aggregate["mean_layer_large_fraction"]
+            >= float(success["minimum_layer_residual_scene_fraction"]),
+            "layer_residual_ci": aggregate["layer_large_ci95"][0] > 0.0,
+            "layer_residual_all_sequences": all(value > 0.0 for value in layer_values),
+            "large_over_adjacent_ci": aggregate["large_minus_adjacent_ci95"][0] > 0.0,
+            "large_over_adjacent_frequency": aggregate["large_over_adjacent_positive_sequences"]
+            >= int(success["minimum_large_over_adjacent_positive_sequences"]),
+            "layer_residual_retention": aggregate["mean_layer_retention"]
+            >= float(success["minimum_layer_residual_retention"]),
+            "pair_residual_ci": aggregate["pair_large_ci95"][0] > 0.0,
+            "pair_over_replay": aggregate["mean_pair_large_fraction"] > 2.0 * replay_max,
+            "pointwise_apd_blindness": aggregate["mean_absolute_apd_difference"]
+            < float(success["maximum_mean_absolute_apd_difference"]),
+            "no_layer_fit_fallbacks": total_layer_fallbacks == 0,
+            "source_safe_roles": True,
+            "no_model_fit": True,
+            "validation_not_accessed": True,
+            "terminal_not_accessed": True,
+        }
     result = {
-        "experiment": "EXP-068",
+        "experiment": experiment,
         "protocol_revision": config["protocol_revision"],
+        "manifest_role_opened": role,
         "status": "passed" if all(gates.values()) else "failed",
         "config": str(config_path),
         "config_sha256": sha256_file(config_path),
