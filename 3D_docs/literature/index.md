@@ -4,6 +4,7 @@
 
 - `Research/literature_review.md` — TTT, continual learning, streaming 3D/4D reconstruction, depth, pose, and tracking review.
 - `Research/ttt_continual_streaming_3d_research_idea.md` — original adaptation-memory proposal and positioning.
+- `3D_docs/paper/novelty_audit.md` — active collision boundaries, including the EXP-054 current-only conditional-tangent audit.
 
 ## Local reference repositories
 

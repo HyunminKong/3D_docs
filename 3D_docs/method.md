@@ -206,3 +206,25 @@ in the desired direction, its held-train-scene confidence intervals crossed
 zero and 56.25% of anchors remained harmful. There is currently no accepted v3
 model or checkpoint, and validation/terminal access is prohibited pending a new
 method decision.
+
+## Proposed conditional-tangent revision
+
+D137 authorizes only the following candidate interface:
+
+\[
+\Delta h_n = B\left(s(h_n)\odot z_n\right),\qquad
+s(h_n)=1+\tanh(A\,\mathrm{LN}(h_n)).
+\]
+
+Here `B` is the existing shared `8 -> 768` basis, `h_n` is a detached frozen
+final decoder patch token, and `A` is one bias-free `768 -> 8` map initialized
+to zero. `B` and `A` together form one 12,288-weight conditional tangent
+module. The recurrent state, TTT3R state-update rule, DPT head, online
+consistency loss, code dimension, and one normalized code step do not change.
+At `z=0`, the official prediction is exact for any scale; at `A=0`, the
+generic shared-basis code path is exact.
+
+This is a proposal, not an accepted method. EXP-054 must first show with a
+train-only metric-gradient oracle that token-conditioned axis weighting has
+useful capacity not explained by a global axis subset or a spatially shuffled
+mask. No learned conditioner, validation result, or v3 checkpoint exists.

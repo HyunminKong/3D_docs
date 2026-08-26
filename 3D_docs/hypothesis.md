@@ -190,3 +190,19 @@ harm remained 56.25%. Thus one 48-step AdamW pass on a single global shared
 basis is not sufficient for reliable metric alignment. Validation was not
 opened. Continuing requires a newly justified training formulation or
 representation, not post-hoc tuning of this fit.
+
+## H15 — Geometry-token-conditioned tangent metric
+
+A single geometry-decoder-conditioned module can make the same one-step,
+one-loss TTT3R update metric-useful by changing the relative contribution of
+the eight shared tangent axes at each spatial token, without changing the
+official recurrent update or adding a learned optimizer, memory, gate, or
+online objective.
+
+Status: **Open.** EXP-052 showed that the fixed eight-dimensional span contains
+metric-useful directions, while EXP-053 showed that one global orientation is
+not reliable across held-scene anchors. EXP-054 is the mandatory zero-fit
+capacity test: an offline token-axis sign oracle must improve realized metric
+utility over the global basis and a spatially shuffled oracle while retaining
+online descent. Until that passes, no conditioner may be fit and no validation
+data may be opened.

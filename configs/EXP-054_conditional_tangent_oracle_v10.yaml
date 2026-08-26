@@ -1,0 +1,42 @@
+experiment: EXP-054
+protocol_revision: v1.0_registered_before_execution
+purpose: train_only_zero_fit_conditional_tangent_capacity
+seed: 5400010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-01, heads/seq-01, chess/seq-01, stairs/seq-01]
+  target_frames: [63, 127, 191, 255]
+  context_frames: 4
+  depth_preparation: revisit3d/results/EXP-052/selected_train_depth_registration_v11.json
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+plasticity:
+  code_dim: 8
+  basis_seed: 5200010
+  patch_size: 16
+  normalized_step: 0.001
+  conditioner: zero_initialized_bias_free_token_axis_scale
+  online_loss: symmetric_canonical_point_consistency
+metric:
+  objective: median_scale_aligned_relative_3d_point_epe
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+bootstrap:
+  samples: 10000
+  seed: 5401010
+success:
+  exact_scenes: 4
+  exact_anchors: 16
+  maximum_zero_code_abs_difference: 0.00001
+  maximum_conditioner_global_abs_difference: 0.00001
+  maximum_token_axis_harm_fraction: 0.25
+output:
+  result: revisit3d/results/EXP-054/conditional_tangent_oracle_v10.json

@@ -77,3 +77,35 @@ No single item is sufficient alone. The novelty is the geometry-specific formula
 - **ICLR path:** requires broader evidence that utility-addressed plasticity is a general learning principle, ideally a second backbone/task and stronger calibration/generalization analysis.
 
 Given the current implementation and desire for one compact paper, the project proceeds on the CVPR path first.
+
+## Current-only conditional-tangent audit (2026-08-26)
+
+The post-EXP-053 current-only branch cannot claim any of the following ideas in
+isolation:
+
+- meta-learning a model so a self-supervised test-time step improves the target
+  task (MT3; DocTTT);
+- amortizing or learning an optimizer from test-time feedback (Rapid Network
+  Adaptation);
+- generating or correcting test-time gradients with a learned function and
+  gradient history (MGTTA/GGTTA);
+- continual test-time adaptation inside a low-dimensional parameter subspace
+  (PACE);
+- interpreting TTT as a recurrent streaming 3D state update (TTT3R).
+
+Primary sources: [MT3](https://proceedings.mlr.press/v151/bartler22a.html),
+[DocTTT](https://openaccess.thecvf.com/content/WACV2025/html/Gu_DocTTT_Test-Time_Training_for_Handwritten_Document_Recognition_using_Meta-Auxiliary_Learning_WACV_2025_paper.html),
+[Rapid Network Adaptation](https://openaccess.thecvf.com/content/ICCV2023/html/Yeo_Rapid_Network_Adaptation_Learning_to_Adapt_Neural_Networks_Using_Test-Time_ICCV_2023_paper.html),
+[MGTTA/GGTTA](https://arxiv.org/abs/2412.16901),
+[PACE](https://arxiv.org/abs/2603.28678), and
+[TTT3R](https://arxiv.org/abs/2509.26645).
+
+The provisional distinction is therefore intentionally conjunctive: a frozen
+streaming 3D recurrent model, one unchanged unlabeled geometry-consistency
+step, and one per-spatial-token tangent metric at the official geometry
+readout whose offline RGB-D supervision only shapes how that same step moves.
+The candidate is not described as a learned optimizer because it neither
+consumes gradients nor emits parameter updates. It is not described as generic
+subspace TTA because its hypothesis concerns spatially varying geometry-token
+tangent axes. EXP-054/055 must demonstrate that token conditioning, rather
+than merely extra parameters, is causally necessary.

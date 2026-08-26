@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-051 registered for the fresh-data TTT3R redesign)
+Last updated: 2026-08-26 (EXP-054 conditional-tangent oracle registered)
 
 ## First objective
 
@@ -504,3 +504,16 @@ current-only paper requires a materially new, still compact update
 representation; alternatively the project must return to explicit
 geometry/visibility evidence memory under controlled missing information. This
 choice changes the method claim and requires user judgment under D136.
+
+The user selected the compact conditional-representation branch. D137 narrows
+it to one geometry-decoder-conditioned tangent metric: a shared 8-to-768 basis
+plus one zero-initialized 768-to-8 token-axis scaler, with no learned optimizer,
+memory, gate, new online loss, or recurrent-state change. Broad meta-TTT,
+learned-gradient, input-conditioning, and low-dimensional-TTA novelty claims
+are prohibited by the updated literature audit.
+
+EXP-054 is now the mandatory train-only no-fit premise. It reuses the 16
+exposed EXP-052 anchors and asks whether an offline token-axis sign oracle beats
+the global basis, a scene-global axis oracle, and a spatially shuffled mask on
+realized relative-3D utility while preserving online descent. The learned
+conditioner may be fit only if this conditional capacity gate passes.

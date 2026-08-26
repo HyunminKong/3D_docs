@@ -1634,3 +1634,34 @@ an explicit method decision: either introduce a more expressive but still
 single-module metric-conditioned update representation with a new novelty and
 complexity audit, or end the current-only branch and return to explicit missing-
 evidence memory. Incremental optimizer tuning is not authorized.
+
+## D137 — Reopen only a geometry-token-conditioned tangent metric
+
+Date: 2026-08-26
+Status: Accepted by explicit user choice before EXP-054
+
+The project selects D136's compact-representation option. The authorized
+change is one conditional tangent module at the already accepted final
+geometry-token interface. A shared 8-to-768 basis remains, while a zero-
+initialized 768-to-8 linear map of each frozen decoder patch token may scale
+the eight code axes locally. This is one conceptual module with 12,288 weights,
+not a router plus plasticity head. Zero code must remain exactly official
+TTT3R, and zero conditioner weights must reproduce the generic shared-basis
+path.
+
+The novelty audit prohibits broad claims of meta-learned TTT, learned
+optimization, gradient generation/correction, input-conditioned adaptation,
+or low-dimensional TTA. MT3 and DocTTT already meta-align self-supervised test
+updates; Rapid Network Adaptation and MGTTA already learn adaptation/gradient
+functions from test-time feedback; PACE already performs continual TTA in a
+low-dimensional subspace. The only candidate distinction is a per-spatial-
+token tangent metric tied to the frozen streaming 3D geometry readout while
+the official TTT3R recurrence and deployed self-supervised step remain intact.
+
+No conditioner fit is authorized yet. EXP-054 first reuses only the 16 exposed
+EXP-052 train anchors and computes a label-only algebraic sign oracle over the
+online/metric code-gradient products. It must establish that token-local axis
+selection has realized benefit beyond the global basis, a scene-global axis
+mask, and a spatially shuffled token mask. RGB-D gradients are offline oracle
+labels only. Failure rejects this minimal conditional representation before
+training; success authorizes one fixed train-only fit protocol, not validation.

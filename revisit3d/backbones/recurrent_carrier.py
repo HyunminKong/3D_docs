@@ -43,13 +43,26 @@ class LocalTokenResidual(nn.Module):
         with torch.no_grad():
             self.projection.weight.copy_(basis)
 
-    def forward(self, code: Tensor) -> Tensor:
+    def forward(self, code: Tensor, axis_scale: Tensor | None = None) -> Tensor:
         if code.ndim != 3 or code.shape[-1] != self.code_dim:
             raise ValueError(f"expected [B,N,{self.code_dim}] code, got {tuple(code.shape)}")
+        if axis_scale is not None:
+            if axis_scale.shape != code.shape:
+                raise ValueError(
+                    f"axis scale has {tuple(axis_scale.shape)}, expected {tuple(code.shape)}"
+                )
+            code = code * axis_scale.to(device=code.device, dtype=code.dtype)
         return self.projection(code)
 
-    def inject(self, head_input: list[Tensor], code: Tensor | None) -> list[Tensor]:
+    def inject(
+        self,
+        head_input: list[Tensor],
+        code: Tensor | None,
+        axis_scale: Tensor | None = None,
+    ) -> list[Tensor]:
         if code is None:
+            if axis_scale is not None:
+                raise ValueError("axis_scale requires a non-null code")
             return head_input
         final_tokens = head_input[-1]
         patch_tokens = final_tokens.shape[1] - 1
@@ -57,12 +70,39 @@ class LocalTokenResidual(nn.Module):
             raise ValueError(
                 f"code has {tuple(code.shape[:2])}, expected {(final_tokens.shape[0], patch_tokens)}"
             )
-        residual = self(code).to(final_tokens.dtype)
+        residual = self(code, axis_scale=axis_scale).to(final_tokens.dtype)
         modified = list(head_input)
         modified[-1] = torch.cat(
             (final_tokens[:, :1], final_tokens[:, 1:] + residual), dim=1
         )
         return modified
+
+
+class TokenAxisConditioner(nn.Module):
+    """Minimal per-token metric over the shared plasticity axes.
+
+    The zero initialization returns unit scale exactly, so adding this module
+    does not change the existing generic-basis path before fitting. Frozen
+    decoder tokens are normalized without learned affine parameters.
+    """
+
+    def __init__(self, token_dim: int = 768, code_dim: int = 8) -> None:
+        super().__init__()
+        if token_dim <= 0 or code_dim <= 0:
+            raise ValueError("token_dim and code_dim must be positive")
+        self.token_dim = int(token_dim)
+        self.code_dim = int(code_dim)
+        self.projection = nn.Linear(self.token_dim, self.code_dim, bias=False)
+        nn.init.zeros_(self.projection.weight)
+
+    def forward(self, tokens: Tensor) -> Tensor:
+        if tokens.ndim != 3 or tokens.shape[-1] != self.token_dim:
+            raise ValueError(
+                f"expected [B,N,{self.token_dim}] tokens, got {tuple(tokens.shape)}"
+            )
+        normalized = F.layer_norm(tokens.float(), (self.token_dim,))
+        scale = 1.0 + torch.tanh(self.projection(normalized))
+        return scale.to(tokens.dtype)
 
 
 class FrozenCUT3RCarrier(nn.Module):
@@ -127,6 +167,7 @@ class FrozenCUT3RCarrier(nn.Module):
         state: RecurrentCarrierState | None,
         *,
         code: Tensor | None = None,
+        axis_scale: Tensor | None = None,
     ) -> tuple[dict[str, Tensor], RecurrentCarrierState, dict[str, Any]]:
         device = next(self.model.parameters()).device
         with torch.no_grad():
@@ -230,7 +271,7 @@ class FrozenCUT3RCarrier(nn.Module):
             "head_input": [tensor.detach() for tensor in head_input],
             "shape": shape.detach(),
         }
-        prediction = self.readout(auxiliary, code=code)
+        prediction = self.readout(auxiliary, code=code, axis_scale=axis_scale)
         next_state = RecurrentCarrierState(
             state_feat=next_state_feat.detach(),
             state_pos=state_pos.detach(),
@@ -242,10 +283,16 @@ class FrozenCUT3RCarrier(nn.Module):
         return prediction, next_state, auxiliary
 
     def readout(
-        self, auxiliary: dict[str, Any], *, code: Tensor | None = None
+        self,
+        auxiliary: dict[str, Any],
+        *,
+        code: Tensor | None = None,
+        axis_scale: Tensor | None = None,
     ) -> dict[str, Tensor]:
         """Apply a code through the official head using one frozen rollout cache."""
-        injected = self.residual.inject(auxiliary["head_input"], code)
+        injected = self.residual.inject(
+            auxiliary["head_input"], code, axis_scale=axis_scale
+        )
         if code is None or not torch.is_grad_enabled():
             with torch.no_grad():
                 return self.model._downstream_head(
