@@ -291,3 +291,14 @@ qualified evidence without repair. The only active candidate object is thus a
 stored predicted pointmap plus predicted-pose projection and z-buffering inside
 a supplied invalid-observation mask. This is a diagnostic object, not yet a
 paper method, and generic explicit surface memory is prior art.
+
+## Missing-evidence plasticity premise
+
+EXP-060 is not a method addition. It tests whether the original plasticity
+object survives the information-insufficient regime that makes explicit past
+surface useful. The candidate record contains only an 8-D code at each source
+patch and its predicted canonical patch coordinate. At the oracle-paired target,
+nearest-3D transport moves the code, a supplied erasure mask zeros non-missing
+target patches, and the result is added to one current code step. No explicit
+surface payload is read out. Until this beats equal current compute and spatial
+controls, there is no active adaptation-memory architecture.

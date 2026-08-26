@@ -1866,3 +1866,27 @@ itself. Generic explicit surface projection is already occupied prior art and
 would abandon the project's plasticity-memory claim. The next premise must
 directly test whether an oracle-paired past local TTT code has unique utility
 under the same missing-evidence condition before selecting a method object.
+
+## D145 — Test plasticity memory before surface-memory architecture
+
+Date: 2026-08-26
+Status: Accepted before EXP-060
+
+The project will not convert EXP-057/058 directly into a generic stored-pointmap
+method. That result is scientifically useful but collides with explicit spatial
+memory and persistent-map literature. The next test returns to the original
+adaptation-experience claim.
+
+EXP-060 stores one generic 8-D local code computed at the last clean source,
+transports it to the erased target by predicted canonical 3D, masks it to the
+known missing target patches, and adds it to exactly one current code step. It
+must beat a second current step, the untransported source-grid code, and a
+within-mask spatial shuffle in every scene with positive intervals and at most
+25% harm. The source is oracle paired, so success proves only that a useful
+plasticity object exists; retrieval remains unopened.
+
+No pose, RGB, pointmap, depth, feature payload, learned basis, strength, router,
+threshold, or bank is added. Failure ends the current plasticity-memory object
+even in the controlled information-insufficient regime. It may not be repaired
+by changing transport, step size, basis seed, mask, or loss on these exposed
+anchors.

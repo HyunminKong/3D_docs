@@ -247,3 +247,19 @@ reproduction guard by at most `1.97e-5`; EXP-059 localized that drift after
 adaptation while data, support, and the erased baseline matched exactly. A
 known synthetic erasure mask remains, and no natural visibility rule or
 multi-frame address is established.
+
+## H18 — Reusable local plasticity under missing current evidence
+
+When a static surface is visible in a clean source observation, the spatially
+local TTT code induced by that observation retains surface-specific adaptation
+experience. After predicted-3D transport to a later observation where the same
+surface evidence is erased, that code improves target geometry beyond both an
+equal second current local-TTT step and a spatially shuffled identical code.
+
+Status: **Open; EXP-060 registered.** This is deliberately stronger and more
+specific than H17. H17 establishes that storing the surface itself adds missing
+information, which is expected and overlaps explicit 3D-memory prior art.
+H18 asks whether the compact update experience that motivated this project
+also carries unique value. The first test uses an oracle-paired immediately
+previous source and a fixed generic code; it fits no method and cannot establish
+retrieval or generalization.

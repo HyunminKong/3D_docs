@@ -617,3 +617,10 @@ transported code cannot beat an equal second current step and its spatial
 shuffle, the adaptation-memory claim should be rejected for this controlled
 missing-information setting rather than replaced silently by generic geometry
 fusion.
+
+H18 and EXP-060 now formalize that decision. The experiment stores only one
+8-D per-patch update code from the last clean observation, transports it by
+predicted canonical 3D, and applies it inside the known erased patch region on
+top of one current step. It must beat a second current step, untransported code,
+and spatial shuffle before any address, bank, validation, or learned component
+is authorized.
