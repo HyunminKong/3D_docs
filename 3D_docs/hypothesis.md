@@ -233,10 +233,17 @@ visible in the immediately preceding clean observation, explicitly retained
 past surface geometry contains information that cannot be recovered by the
 frozen recurrent TTT3R state plus an equal second current local-TTT step.
 
-Status: **Supported under controlled erasure and oracle alignment.** EXP-057
+Status: **Supported under controlled erasure; predicted-pose deployment evidence
+is qualified positive.** EXP-057
 passed every gate. Erasure increased error in every train scene, while
 predicted past-surface fusion beat second-current TTT by `0.408` mean relative
 3D EPE with CI `[0.292, 0.525]`, beat spatial shuffle by `0.129` with CI
 `[0.091, 0.174]`, and harmed 0% of anchors at 89.5% mean coverage. GT pose,
-scale, visibility, and known erasure remain oracle dependencies; deployable
-evidence fusion is not yet established.
+scale, and visibility were then removed from the fusion policy in EXP-058.
+Predicted-pose/native-scale fusion retained 97.6% of the oracle gain, beat
+second-current and spatial shuffle in every scene, and harmed 0%. Its literal
+gate failed only because repeated local TTT missed the `1e-5` EXP-057
+reproduction guard by at most `1.97e-5`; EXP-059 localized that drift after
+adaptation while data, support, and the erased baseline matched exactly. A
+known synthetic erasure mask remains, and no natural visibility rule or
+multi-frame address is established.

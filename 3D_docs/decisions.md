@@ -1841,3 +1841,28 @@ in every scene with positive intervals and at most 25% harm. Failure localizes
 the next bottleneck to deployable pose/scale/visibility rather than memory
 capacity and prevents head or bank design. Success authorizes one minimal
 visibility/address mechanism, not validation.
+
+## D144 — Preserve EXP-058 as qualified dependency evidence
+
+Date: 2026-08-26
+Status: Accepted after EXP-058 and EXP-059
+
+EXP-058's fusion policy no longer uses GT pose, past metric scale, or GT
+visibility. It retains 97.59% of EXP-057's mean oracle gain, beats second-current
+TTT and identical-payload spatial shuffle in all four scenes with wholly
+positive intervals, achieves 89.57% mean coverage, and causes zero observed
+harm. These functional results establish that the three removed dependencies
+are not the bottleneck in the controlled task.
+
+The experiment is not reclassified as a pass. Four second-current rows missed
+the registered `1e-5` EXP-057 reproduction guard, with maximum discrepancy
+`1.96695e-5`. EXP-059 pins both source hashes and shows exact row/support
+identity and bit-exact erased baselines; only the local-code-adapted controls
+drift. The maximum discrepancy is 0.00499% of the internally matched mean
+fusion gain. No rerun, tolerance repair, or result mutation is authorized.
+
+The qualified result does not authorize a visibility head or geometry bank by
+itself. Generic explicit surface projection is already occupied prior art and
+would abandon the project's plasticity-memory claim. The next premise must
+directly test whether an oracle-paired past local TTT code has unique utility
+under the same missing-evidence condition before selecting a method object.

@@ -281,3 +281,13 @@ TTT does not. The accepted result is still an oracle-aligned premise. D143
 authorizes EXP-058 to use frozen TTT3R predicted source/target poses, their
 native common scale, a known erasure mask, and z-buffer validity. No learned
 visibility, fusion, or bank module exists.
+
+EXP-058 removes GT pose, past scale, and GT visibility from the fusion policy.
+Its predicted-only surface projection retains 97.6% of the EXP-057 oracle gain
+and passes every functional comparison with 0% harm. The experiment is not a
+literal pass because its repeated second-current control exceeded the fixed
+reproduction tolerance by at most `1.97e-5`; EXP-059 preserves this as
+qualified evidence without repair. The only active candidate object is thus a
+stored predicted pointmap plus predicted-pose projection and z-buffering inside
+a supplied invalid-observation mask. This is a diagnostic object, not yet a
+paper method, and generic explicit surface memory is prior art.

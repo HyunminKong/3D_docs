@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-057 passed; EXP-058 dependency audit registered)
+Last updated: 2026-08-26 (EXP-058/059 dependency evidence qualified)
 
 ## First objective
 
@@ -591,3 +591,29 @@ The result remains oracle-aligned. D143 registers EXP-058 to remove GT pose,
 past metric scale, and GT visibility using frozen TTT3R predicted poses, native
 predicted scale, the known synthetic erasure mask, and z-buffer validity. No
 model component is fit and validation/terminal remain closed.
+
+EXP-058 removed those three fusion-side GT dependencies. Predicted-only fusion
+retained 97.6% of EXP-057's oracle gain, improved over second-current TTT by
+`0.3940` with CI `[0.2866, 0.5054]`, beat spatial shuffle by `0.1188` with CI
+`[0.0815, 0.1617]`, improved every scene, and harmed 0% of anchors. Its
+registered gate is still false because four repeated second-current rows missed
+the fixed `1e-5` reproduction tolerance, by at most `1.97e-5`.
+
+EXP-059 audited the immutable artifacts without sensor/model access. All 16 row
+identities and evaluation supports match, the erased baseline is exact, and
+the discrepancy occurs only after local-code adaptation. The maximum drift is
+0.00499% of the mean fusion gain. The result is qualified positive deployment-
+dependency evidence, not a repaired pass.
+
+## Current decision after EXP-059
+
+The explicit surface premise is strong, but it does not by itself recover the
+project's adaptation-experience novelty: storing and projecting scene geometry
+collides with Point3R, LONG3R, Mem3R, and persistent-map systems. Before any
+visibility head, bank, or validation run, the next train-only premise must ask
+whether a past local TTT code learned while the surface was visible has unique
+value when the current region is erased. If even an oracle-paired, correctly
+transported code cannot beat an equal second current step and its spatial
+shuffle, the adaptation-memory claim should be rejected for this controlled
+missing-information setting rather than replaced silently by generic geometry
+fusion.

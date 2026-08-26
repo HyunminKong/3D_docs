@@ -1,6 +1,6 @@
 # EXP-058 — Predicted-Surface Dependency Audit
 
-Status: Registered; train-only no-fit dependency decomposition
+Status: Completed; all functional gates passed, reproduction guard failed
 Purpose: Determine whether EXP-057's explicit-surface advantage survives after
 removing GT pose, past metric scale, and GT visibility from fusion
 
@@ -57,3 +57,32 @@ learned fusion or bank construction.
 - Config: `configs/EXP-058_predicted_surface_dependency_audit_v10.yaml`
 - Runner: `revisit3d/scripts/evaluate_exp058_predicted_surface_dependency_audit.py`
 - Result: `revisit3d/results/EXP-058/predicted_surface_dependency_audit_v10.json`
+
+Result SHA-256:
+`bae3edafd5dd72b664debd486f5b1827eec6af843c2654d29927a40d800cbac7`.
+
+## Result
+
+Predicted-pose/native-scale fusion achieved 89.57% mean evaluation coverage.
+It improved relative 3D EPE over second-current TTT by `0.3940`, with paired
+anchor-bootstrap CI `[0.2866, 0.5054]`, and beat the identical-payload spatial
+shuffle by `0.1188`, CI `[0.0815, 0.1617]`. Both gains were positive in every
+scene, observed harm was 0%, and the mean gain retained 97.59% of EXP-057's
+GT-aligned predicted-surface oracle gain.
+
+The registered gate nevertheless failed. Four of 16 repeated second-current
+errors differed from EXP-057 by more than the fixed `1e-5` tolerance; the
+maximum was `1.96695e-5`. No tolerance, result, or gate was changed and the
+experiment was not rerun.
+
+## Interpretation
+
+The dependency-removal mechanism itself passes every registered functional
+comparison by a large margin: GT relative pose, past scale, and GT visibility
+are not needed for the controlled fusion result. EXP-059 separately establishes
+that row identities and evaluation support match and that the pre-adaptation
+erased baseline is bit-exact; the small guard miss appears only after repeated
+local-code differentiation. EXP-058 therefore remains a literal failed gate
+but supplies qualified positive dependency evidence. It does not establish a
+deployable natural visibility rule, a multi-frame address, or a novel generic
+geometry memory.

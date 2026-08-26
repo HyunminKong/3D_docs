@@ -1,0 +1,233 @@
+{
+  "experiment": "EXP-059",
+  "stage": "immutable_artifact_reproduction_accounting",
+  "protocol_revision": "v1.0_artifact_only",
+  "config": "configs/EXP-059_exp058_reproduction_accounting_v10.yaml",
+  "sources": {
+    "exp057": "revisit3d/results/EXP-057/explicit_missing_surface_oracle_v10.json",
+    "exp058": "revisit3d/results/EXP-058/predicted_surface_dependency_audit_v10.json",
+    "sha256": {
+      "exp057": "6d9b142d1f327887dafa238740e4d5f95a5eaf5cf393a00b1789ff9e5da080e3",
+      "exp058": "bae3edafd5dd72b664debd486f5b1827eec6af843c2654d29927a40d800cbac7"
+    }
+  },
+  "sensor_or_model_access": false,
+  "model_rerun": false,
+  "gate_or_tolerance_changed": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "counts": {
+    "matched_rows": 16,
+    "matched_support_rows": 16,
+    "second_current_rows_over_registered_tolerance": 4
+  },
+  "registered_exp058_tolerance": 1e-05,
+  "maximum_absolute_differences": {
+    "erased_abs_difference": 0.0,
+    "current_one_abs_difference": 1.6197562217712402e-05,
+    "current_two_abs_difference": 1.9669532775878906e-05
+  },
+  "second_current_rows_over_registered_tolerance": [
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 2.5033950805664062e-06,
+      "current_two_abs_difference": 1.2755393981933594e-05
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 191,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 8.940696716308594e-06,
+      "current_two_abs_difference": 1.1444091796875e-05
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.496906280517578e-06,
+      "current_two_abs_difference": 1.1026859283447266e-05
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 255,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.556510925292969e-07,
+      "current_two_abs_difference": 1.9669532775878906e-05
+    }
+  ],
+  "scale_accounting": {
+    "exp058_mean_predicted_only_gain_vs_second": 0.3940348173491657,
+    "exp058_lower_ci_predicted_only_gain_vs_second": 0.2865575370960869,
+    "minimum_exp058_scene_gain_vs_second": 0.10854359157383442,
+    "max_second_drift_fraction_of_mean_gain": 4.991826079787554e-05,
+    "max_second_drift_fraction_of_lower_ci": 6.864077970241428e-05,
+    "max_second_drift_fraction_of_minimum_scene_gain": 0.0001812132111226404
+  },
+  "audit_checks": {
+    "immutable_source_hashes_match": true,
+    "all_row_identities_match": true,
+    "all_evaluation_support_matches": true,
+    "pre_adaptation_erased_baseline_is_exact": true,
+    "difference_is_localized_after_local_code_adaptation": true,
+    "exp058_registered_gate_remains_failed": true,
+    "all_exp058_functional_method_checks_pass": true
+  },
+  "classification": "qualified_positive_not_literal_pass",
+  "interpretation": "EXP-058 remains a registered-gate failure. Row identities, scoring support, and the pre-adaptation erased prediction reproduce exactly; the guard miss is confined to repeated local-code gradient steps. All within-run surface-fusion comparisons pass by margins orders of magnitude larger than the observed drift, so the immutable result is qualified positive dependency evidence rather than a repaired pass.",
+  "rows": [
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 63,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 5.841255187988281e-06,
+      "current_two_abs_difference": 2.086162567138672e-06
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 2.5033950805664062e-06,
+      "current_two_abs_difference": 1.2755393981933594e-05
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 191,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 8.940696716308594e-06,
+      "current_two_abs_difference": 1.1444091796875e-05
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 255,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 2.1457672119140625e-06,
+      "current_two_abs_difference": 3.814697265625e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 63,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.020069122314453e-06,
+      "current_two_abs_difference": 4.291534423828125e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.496906280517578e-06,
+      "current_two_abs_difference": 1.1026859283447266e-05
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 191,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 4.559755325317383e-06,
+      "current_two_abs_difference": 8.225440979003906e-06
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 255,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.556510925292969e-07,
+      "current_two_abs_difference": 1.9669532775878906e-05
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 63,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 1.6197562217712402e-05,
+      "current_two_abs_difference": 9.611248970031738e-06
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 3.814697265625e-06,
+      "current_two_abs_difference": 4.4852495193481445e-06
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 191,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 9.551644325256348e-06,
+      "current_two_abs_difference": 5.990266799926758e-06
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 255,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 5.513429641723633e-07,
+      "current_two_abs_difference": 1.475214958190918e-06
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 63,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 1.2516975402832031e-05,
+      "current_two_abs_difference": 5.960464477539063e-08
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 127,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 1.7285346984863281e-06,
+      "current_two_abs_difference": 4.76837158203125e-07
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 191,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 8.344650268554688e-07,
+      "current_two_abs_difference": 1.9073486328125e-06
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 255,
+      "supported_pixels_equal": true,
+      "erased_abs_difference": 0.0,
+      "current_one_abs_difference": 6.407499313354492e-06,
+      "current_two_abs_difference": 5.27501106262207e-06
+    }
+  ]
+}

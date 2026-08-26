@@ -1,0 +1,13 @@
+experiment: EXP-059
+protocol_revision: v1.0_artifact_only
+
+sources:
+  exp057: revisit3d/results/EXP-057/explicit_missing_surface_oracle_v10.json
+  exp057_sha256: 6d9b142d1f327887dafa238740e4d5f95a5eaf5cf393a00b1789ff9e5da080e3
+  exp058: revisit3d/results/EXP-058/predicted_surface_dependency_audit_v10.json
+  exp058_sha256: bae3edafd5dd72b664debd486f5b1827eec6af843c2654d29927a40d800cbac7
+
+registered_exp058_tolerance: 1.0e-5
+
+output:
+  result: revisit3d/results/EXP-059/exp058_reproduction_accounting_v10.json
