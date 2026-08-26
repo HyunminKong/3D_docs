@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-056 pairwise-residual observability registered)
+Last updated: 2026-08-26 (EXP-056 failed; current-only TTT3R branch stopped)
 
 ## First objective
 
@@ -553,3 +553,21 @@ predicted-point residual to the condition input and evaluates leave-one-scene-
 out moment-linear scores on the same 16 exposed train anchors. It must beat
 token-only, global, and spatially shuffled-residual controls on realized metric
 utility before another end-to-end fit can be designed.
+
+EXP-056 failed. Combined oracle-label accuracy was chance and below spatial
+shuffle, combined harm was 50%, one scene had negative gain, and intervals over
+global and shuffled controls crossed zero. No checkpoint was created.
+
+## Current stop condition after EXP-056
+
+The current-only branch has exhausted its registered compact explanations. A
+spatial token-axis oracle is strong, but neither the frozen current token nor a
+minimal current/previous predicted-geometry residual makes that oracle
+observable across scenes. D141 prohibits feature engineering, nonlinear-head,
+threshold, optimizer, or direct-label repair on these anchors. EXP-051
+validation and both terminal partitions remain unopened.
+
+The next action requires user judgment: pivot to explicit past geometry and
+visibility evidence in a controlled missing-information task, accepting a new
+paper problem, or close this line and choose a different compact research
+question. There is no active paper-ready model.

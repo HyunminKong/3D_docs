@@ -1,0 +1,1066 @@
+{
+  "experiment": "EXP-056",
+  "stage": "train_only_scene_oof_pairwise_geometry_observability",
+  "protocol_revision": "v1.0_registered_before_execution",
+  "config": "configs/EXP-056_pairwise_geometry_observability_v10.yaml",
+  "means": {
+    "global": {
+      "online_loss_gain": 5.020730895921588e-05,
+      "metric_gain": 8.094357326626778e-07
+    },
+    "token": {
+      "online_loss_gain": 5.855760537087917e-05,
+      "metric_gain": 2.6437919586896896e-07
+    },
+    "geometry": {
+      "online_loss_gain": 5.59450127184391e-05,
+      "metric_gain": 1.994892954826355e-06
+    },
+    "combined": {
+      "online_loss_gain": 5.9177225921303034e-05,
+      "metric_gain": 2.2436724975705147e-06
+    },
+    "shuffled_geometry": {
+      "online_loss_gain": 5.9256155509501696e-05,
+      "metric_gain": 9.646173566579819e-07
+    },
+    "oracle": {
+      "online_loss_gain": 3.538059536367655e-05,
+      "metric_gain": 2.0386185497045517e-05
+    }
+  },
+  "scene_means": {
+    "global": {
+      "online_loss_gain": {
+        "chess": 5.98379410803318e-05,
+        "heads": 3.227987326681614e-05,
+        "pumpkin": 5.9285201132297516e-05,
+        "stairs": 4.942622035741806e-05
+      },
+      "metric_gain": {
+        "chess": 8.568167686462402e-08,
+        "heads": 4.264991730451584e-06,
+        "pumpkin": -3.5623088479042053e-06,
+        "stairs": 2.4493783712387085e-06
+      }
+    },
+    "token": {
+      "online_loss_gain": {
+        "chess": 6.67455606162548e-05,
+        "heads": 3.6463141441345215e-05,
+        "pumpkin": 6.716465577483177e-05,
+        "stairs": 6.38570636510849e-05
+      },
+      "metric_gain": {
+        "chess": -3.157183527946472e-07,
+        "heads": 4.012603312730789e-06,
+        "pumpkin": -4.542991518974304e-06,
+        "stairs": 1.903623342514038e-06
+      }
+    },
+    "geometry": {
+      "online_loss_gain": {
+        "chess": 7.690442726016045e-05,
+        "heads": 3.539491444826126e-05,
+        "pumpkin": 5.827145650982857e-05,
+        "stairs": 5.3209252655506134e-05
+      },
+      "metric_gain": {
+        "chess": 6.239861249923706e-07,
+        "heads": 4.858709871768951e-06,
+        "pumpkin": -3.2614916563034058e-06,
+        "stairs": 5.758367478847504e-06
+      }
+    },
+    "combined": {
+      "online_loss_gain": {
+        "chess": 6.809644401073456e-05,
+        "heads": 3.522518090903759e-05,
+        "pumpkin": 6.961310282349586e-05,
+        "stairs": 6.377417594194412e-05
+      },
+      "metric_gain": {
+        "chess": 2.462416887283325e-06,
+        "heads": 5.666632205247879e-06,
+        "pumpkin": -2.6151537895202637e-06,
+        "stairs": 3.460794687271118e-06
+      }
+    },
+    "shuffled_geometry": {
+      "online_loss_gain": {
+        "chess": 6.738118827342987e-05,
+        "heads": 3.635953180491924e-05,
+        "pumpkin": 7.181894034147263e-05,
+        "stairs": 6.146496161818504e-05
+      },
+      "metric_gain": {
+        "chess": -1.7527490854263306e-06,
+        "heads": 6.807968020439148e-07,
+        "pumpkin": -1.41095370054245e-06,
+        "stairs": 6.341375410556793e-06
+      }
+    },
+    "oracle": {
+      "online_loss_gain": {
+        "chess": 4.222337156534195e-05,
+        "heads": 2.244953066110611e-05,
+        "pumpkin": 3.844965249300003e-05,
+        "stairs": 3.83998267352581e-05
+      },
+      "metric_gain": {
+        "chess": 2.231728285551071e-05,
+        "heads": 2.2496096789836884e-05,
+        "pumpkin": 1.615658402442932e-05,
+        "stairs": 2.057477831840515e-05
+      }
+    }
+  },
+  "accuracy_means": {
+    "token_balanced_accuracy": 0.5020609261107308,
+    "geometry_balanced_accuracy": 0.4948268495517587,
+    "combined_balanced_accuracy": 0.5020419021233223,
+    "shuffled_geometry_balanced_accuracy": 0.5024007286474244
+  },
+  "accuracy_scene_means": {
+    "token_balanced_accuracy": {
+      "chess": 0.5018648710796225,
+      "heads": 0.49093542851235084,
+      "pumpkin": 0.5041411867352896,
+      "stairs": 0.5113022181156602
+    },
+    "geometry_balanced_accuracy": {
+      "chess": 0.4967732155201053,
+      "heads": 0.4789917231805946,
+      "pumpkin": 0.5045970996959859,
+      "stairs": 0.4989453598103491
+    },
+    "combined_balanced_accuracy": {
+      "chess": 0.5019090709173917,
+      "heads": 0.4908165052917167,
+      "pumpkin": 0.5041678696781141,
+      "stairs": 0.5112741626060667
+    },
+    "shuffled_geometry_balanced_accuracy": {
+      "chess": 0.5024416503125495,
+      "heads": 0.49094782522200614,
+      "pumpkin": 0.5047038091798399,
+      "stairs": 0.5115096298753017
+    }
+  },
+  "paired_comparisons": {
+    "combined_minus_global": {
+      "mean": 1.434236764907837e-06,
+      "ci95": [
+        -8.533650543540716e-07,
+        3.84578015655279e-06
+      ]
+    },
+    "combined_minus_token": {
+      "mean": 1.9792933017015457e-06,
+      "ci95": [
+        4.854286089539528e-07,
+        3.7809542845934627e-06
+      ]
+    },
+    "combined_minus_shuffled_geometry": {
+      "mean": 1.2790551409125328e-06,
+      "ci95": [
+        -1.8576334696263074e-06,
+        4.887359682470558e-06
+      ]
+    }
+  },
+  "combined_harm_fraction": 0.5,
+  "peak_allocated_gib": 4.636703968048096,
+  "registered_gate": {
+    "checks": {
+      "exact_coverage": true,
+      "finite": true,
+      "zero_code_parity": true,
+      "combined_accuracy_beats_token": false,
+      "combined_accuracy_beats_shuffle": false,
+      "combined_online_descent_all_scenes": true,
+      "combined_metric_gain_all_scenes": false,
+      "combined_beats_global_all_scenes": true,
+      "combined_beats_token_all_scenes": true,
+      "combined_beats_shuffle_all_scenes": false,
+      "combined_vs_global_positive_ci": false,
+      "combined_vs_token_positive_ci": true,
+      "combined_vs_shuffle_positive_ci": false,
+      "combined_harm_within_bound": false,
+      "no_method_checkpoint": true,
+      "no_validation_access": true,
+      "no_terminal_access": true
+    },
+    "passed": false
+  },
+  "method_checkpoint_created": false,
+  "validation_accessed": false,
+  "terminal_accessed": false,
+  "rows": [
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 63,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5063087568852616,
+      "geometry_balanced_accuracy": 0.5344101758593974,
+      "combined_balanced_accuracy": 0.5059697738344141,
+      "shuffled_geometry_balanced_accuracy": 0.5066347919297836,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.02615414559841156,
+          "online_loss_gain": 6.543658673763275e-05,
+          "metric_after": 0.6553292870521545,
+          "metric_gain": -5.364418029785156e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.02615831233561039,
+          "online_loss_gain": 6.12698495388031e-05,
+          "metric_after": 0.6553281545639038,
+          "metric_gain": -4.231929779052734e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.02615411765873432,
+          "online_loss_gain": 6.546452641487122e-05,
+          "metric_after": 0.6553360223770142,
+          "metric_gain": -1.2099742889404297e-05,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.026150964200496674,
+          "online_loss_gain": 6.861798465251923e-05,
+          "metric_after": 0.6553279161453247,
+          "metric_gain": -3.993511199951172e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.02614997886121273,
+          "online_loss_gain": 6.96033239364624e-05,
+          "metric_after": 0.6553266644477844,
+          "metric_gain": -2.7418136596679688e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.026177622377872467,
+          "online_loss_gain": 4.195980727672577e-05,
+          "metric_after": 0.6553013920783997,
+          "metric_gain": 2.2530555725097656e-05,
+          "active_fraction": 0.5198568105697632
+        }
+      }
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 127,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5199423574381989,
+      "geometry_balanced_accuracy": 0.5087214927318772,
+      "combined_balanced_accuracy": 0.5199313245568177,
+      "shuffled_geometry_balanced_accuracy": 0.5202682517805374,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.02538059651851654,
+          "online_loss_gain": 6.458908319473267e-05,
+          "metric_after": 0.04857034236192703,
+          "metric_gain": -2.9243528842926025e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.025364531204104424,
+          "online_loss_gain": 8.065439760684967e-05,
+          "metric_after": 0.04857324808835983,
+          "metric_gain": -5.8300793170928955e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.025373341515660286,
+          "online_loss_gain": 7.184408605098724e-05,
+          "metric_after": 0.048575565218925476,
+          "metric_gain": -8.147209882736206e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.02536497637629509,
+          "online_loss_gain": 8.020922541618347e-05,
+          "metric_after": 0.04857412353157997,
+          "metric_gain": -6.705522537231445e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.025359824299812317,
+          "online_loss_gain": 8.53613018989563e-05,
+          "metric_after": 0.04857005178928375,
+          "metric_gain": -2.6337802410125732e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.025404520332813263,
+          "online_loss_gain": 4.0665268898010254e-05,
+          "metric_after": 0.048562925308942795,
+          "metric_gain": 4.492700099945068e-06,
+          "active_fraction": 0.5169271230697632
+        }
+      }
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 191,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.4804901973773116,
+      "geometry_balanced_accuracy": 0.4696432158007838,
+      "combined_balanced_accuracy": 0.4809860651459066,
+      "shuffled_geometry_balanced_accuracy": 0.4816522036359397,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.018588831648230553,
+          "online_loss_gain": 5.5419281125068665e-05,
+          "metric_after": 0.04128909856081009,
+          "metric_gain": 8.881092071533203e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.01858166605234146,
+          "online_loss_gain": 6.258487701416016e-05,
+          "metric_after": 0.041298847645521164,
+          "metric_gain": -8.67992639541626e-07,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.018598202615976334,
+          "online_loss_gain": 4.604831337928772e-05,
+          "metric_after": 0.041284073144197464,
+          "metric_gain": 1.3906508684158325e-05,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.01857738569378853,
+          "online_loss_gain": 6.68652355670929e-05,
+          "metric_after": 0.041296087205410004,
+          "metric_gain": 1.8924474716186523e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.018576838076114655,
+          "online_loss_gain": 6.74128532409668e-05,
+          "metric_after": 0.041291408240795135,
+          "metric_gain": 6.571412086486816e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.018603937700390816,
+          "online_loss_gain": 4.03132289648056e-05,
+          "metric_after": 0.041273683309555054,
+          "metric_gain": 2.4296343326568604e-05,
+          "active_fraction": 0.5076497793197632
+        }
+      }
+    },
+    {
+      "scene": "pumpkin",
+      "sequence": "pumpkin/seq-01",
+      "target_frame": 255,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5098234352403863,
+      "geometry_balanced_accuracy": 0.505613514391885,
+      "combined_balanced_accuracy": 0.5097843151753181,
+      "shuffled_geometry_balanced_accuracy": 0.5102599893730988,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.03160540759563446,
+          "online_loss_gain": 5.169585347175598e-05,
+          "metric_after": 0.12549160420894623,
+          "metric_gain": -1.4841556549072266e-05,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.0315929539501667,
+          "online_loss_gain": 6.414949893951416e-05,
+          "metric_after": 0.12548400461673737,
+          "metric_gain": -7.241964340209961e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.03160737454891205,
+          "online_loss_gain": 4.972890019416809e-05,
+          "metric_after": 0.1254834681749344,
+          "metric_gain": -6.705522537231445e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.03159434348344803,
+          "online_loss_gain": 6.275996565818787e-05,
+          "metric_after": 0.12547841668128967,
+          "metric_gain": -1.6540288925170898e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.03159220516681671,
+          "online_loss_gain": 6.4898282289505e-05,
+          "metric_after": 0.12548360228538513,
+          "metric_gain": -6.839632987976074e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.03162624314427376,
+          "online_loss_gain": 3.0860304832458496e-05,
+          "metric_after": 0.12546345591545105,
+          "metric_gain": 1.3306736946105957e-05,
+          "active_fraction": 0.4407552182674408
+        }
+      }
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 63,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.47789900128806234,
+      "geometry_balanced_accuracy": 0.45878274664062635,
+      "combined_balanced_accuracy": 0.4775783368153228,
+      "shuffled_geometry_balanced_accuracy": 0.47806786408955293,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.019866809248924255,
+          "online_loss_gain": 2.460181713104248e-05,
+          "metric_after": 0.1442311555147171,
+          "metric_gain": -6.92903995513916e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.01986515149474144,
+          "online_loss_gain": 2.6259571313858032e-05,
+          "metric_after": 0.14423063397407532,
+          "metric_gain": -6.407499313354492e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.019864525645971298,
+          "online_loss_gain": 2.6885420083999634e-05,
+          "metric_after": 0.1442309319972992,
+          "metric_gain": -6.705522537231445e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.01986381597816944,
+          "online_loss_gain": 2.759508788585663e-05,
+          "metric_after": 0.14423082768917084,
+          "metric_gain": -6.601214408874512e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.019865162670612335,
+          "online_loss_gain": 2.6248395442962646e-05,
+          "metric_after": 0.1442459672689438,
+          "metric_gain": -2.174079418182373e-05,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.019874190911650658,
+          "online_loss_gain": 1.7220154404640198e-05,
+          "metric_after": 0.14420948922634125,
+          "metric_gain": 1.4737248420715332e-05,
+          "active_fraction": 0.4962565302848816
+        }
+      }
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 127,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.47946313561921117,
+      "geometry_balanced_accuracy": 0.4484450714592406,
+      "combined_balanced_accuracy": 0.47865679118362675,
+      "shuffled_geometry_balanced_accuracy": 0.47918200126766036,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.008746393956243992,
+          "online_loss_gain": 3.660563379526138e-05,
+          "metric_after": 0.029927005991339684,
+          "metric_gain": 1.3036653399467468e-05,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.008741745725274086,
+          "online_loss_gain": 4.1253864765167236e-05,
+          "metric_after": 0.029928533360362053,
+          "metric_gain": 1.1509284377098083e-05,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.008744323626160622,
+          "online_loss_gain": 3.867596387863159e-05,
+          "metric_after": 0.029929853975772858,
+          "metric_gain": 1.0188668966293335e-05,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.008746054954826832,
+          "online_loss_gain": 3.694463521242142e-05,
+          "metric_after": 0.029926905408501625,
+          "metric_gain": 1.313723623752594e-05,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.008743217214941978,
+          "online_loss_gain": 3.978237509727478e-05,
+          "metric_after": 0.029927827417850494,
+          "metric_gain": 1.2215226888656616e-05,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.008756909519433975,
+          "online_loss_gain": 2.6090070605278015e-05,
+          "metric_after": 0.029907848685979843,
+          "metric_gain": 3.219395875930786e-05,
+          "active_fraction": 0.53515625
+        }
+      }
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 191,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.50498787970046,
+      "geometry_balanced_accuracy": 0.4968266659314604,
+      "combined_balanced_accuracy": 0.5053136326329787,
+      "shuffled_geometry_balanced_accuracy": 0.5044949026876737,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.02733888477087021,
+          "online_loss_gain": 2.4877488613128662e-05,
+          "metric_after": 0.07608422636985779,
+          "metric_gain": 9.819865226745605e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.027336714789271355,
+          "online_loss_gain": 2.7047470211982727e-05,
+          "metric_after": 0.0760890394449234,
+          "metric_gain": 5.0067901611328125e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.02733498066663742,
+          "online_loss_gain": 2.8781592845916748e-05,
+          "metric_after": 0.07608507573604584,
+          "metric_gain": 8.970499038696289e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.02733735740184784,
+          "online_loss_gain": 2.6404857635498047e-05,
+          "metric_after": 0.07608196139335632,
+          "metric_gain": 1.208484172821045e-05,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.02733645960688591,
+          "online_loss_gain": 2.7302652597427368e-05,
+          "metric_after": 0.07608766853809357,
+          "metric_gain": 6.377696990966797e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.02734454721212387,
+          "online_loss_gain": 1.9215047359466553e-05,
+          "metric_after": 0.07607255131006241,
+          "metric_gain": 2.1494925022125244e-05,
+          "active_fraction": 0.5133463740348816
+        }
+      }
+    },
+    {
+      "scene": "heads",
+      "sequence": "heads/seq-01",
+      "target_frame": 255,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5013916974416697,
+      "geometry_balanced_accuracy": 0.5119124086910509,
+      "combined_balanced_accuracy": 0.5017172605349387,
+      "shuffled_geometry_balanced_accuracy": 0.5020465328431376,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.015533754602074623,
+          "online_loss_gain": 4.303455352783203e-05,
+          "metric_after": 0.046370476484298706,
+          "metric_gain": 1.1324882507324219e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.015525497496128082,
+          "online_loss_gain": 5.1291659474372864e-05,
+          "metric_after": 0.04636566713452339,
+          "metric_gain": 5.941838026046753e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.015529552474617958,
+          "online_loss_gain": 4.723668098449707e-05,
+          "metric_after": 0.04636462777853012,
+          "metric_gain": 6.981194019317627e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.015526833012700081,
+          "online_loss_gain": 4.995614290237427e-05,
+          "metric_after": 0.04636756330728531,
+          "metric_gain": 4.045665264129639e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.015524684451520443,
+          "online_loss_gain": 5.2104704082012177e-05,
+          "metric_after": 0.04636573791503906,
+          "metric_gain": 5.8710575103759766e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.015549516305327415,
+          "online_loss_gain": 2.7272850275039673e-05,
+          "metric_after": 0.04635005071759224,
+          "metric_gain": 2.1558254957199097e-05,
+          "active_fraction": 0.5056966543197632
+        }
+      }
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 63,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5220744657178207,
+      "geometry_balanced_accuracy": 0.5091448179047313,
+      "combined_balanced_accuracy": 0.5227236025121149,
+      "shuffled_geometry_balanced_accuracy": 0.5220731941472149,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.0455564446747303,
+          "online_loss_gain": 7.24494457244873e-05,
+          "metric_after": 0.0670088455080986,
+          "metric_gain": 5.587935447692871e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.045540228486061096,
+          "online_loss_gain": 8.866563439369202e-05,
+          "metric_after": 0.06700653582811356,
+          "metric_gain": 7.897615432739258e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.045532871037721634,
+          "online_loss_gain": 9.60230827331543e-05,
+          "metric_after": 0.06700737774372101,
+          "metric_gain": 7.055699825286865e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.045537933707237244,
+          "online_loss_gain": 9.096041321754456e-05,
+          "metric_after": 0.06700659543275833,
+          "metric_gain": 7.838010787963867e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.04553903639316559,
+          "online_loss_gain": 8.985772728919983e-05,
+          "metric_after": 0.06700680404901505,
+          "metric_gain": 7.62939453125e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.04557280242443085,
+          "online_loss_gain": 5.609169602394104e-05,
+          "metric_after": 0.06699519604444504,
+          "metric_gain": 1.9237399101257324e-05,
+          "active_fraction": 0.5009765625
+        }
+      }
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 127,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.47431709581526876,
+      "geometry_balanced_accuracy": 0.48087974753626395,
+      "combined_balanced_accuracy": 0.474537064640597,
+      "shuffled_geometry_balanced_accuracy": 0.4753660468642198,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.017125792801380157,
+          "online_loss_gain": 5.402788519859314e-05,
+          "metric_after": 0.057855091989040375,
+          "metric_gain": 1.8402934074401855e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.017117032781243324,
+          "online_loss_gain": 6.278790533542633e-05,
+          "metric_after": 0.05785852298140526,
+          "metric_gain": -1.5906989574432373e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.017117250710725784,
+          "online_loss_gain": 6.256997585296631e-05,
+          "metric_after": 0.05784941092133522,
+          "metric_gain": 7.5213611125946045e-06,
+          "active_fraction": 0.9982096552848816
+        },
+        "combined": {
+          "online_loss_after": 0.01711646467447281,
+          "online_loss_gain": 6.335601210594177e-05,
+          "metric_after": 0.0578470379114151,
+          "metric_gain": 9.894371032714844e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.017117131501436234,
+          "online_loss_gain": 6.268918514251709e-05,
+          "metric_after": 0.0578661672770977,
+          "metric_gain": -9.234994649887085e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.01714254543185234,
+          "online_loss_gain": 3.727525472640991e-05,
+          "metric_after": 0.05782286822795868,
+          "metric_gain": 3.406405448913574e-05,
+          "active_fraction": 0.5345052480697632
+        }
+      }
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 191,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.49893897686335154,
+      "geometry_balanced_accuracy": 0.48057902221911686,
+      "combined_balanced_accuracy": 0.4980288931356486,
+      "shuffled_geometry_balanced_accuracy": 0.4999962492869626,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.02387097291648388,
+          "online_loss_gain": 5.662254989147186e-05,
+          "metric_after": 0.049456898123025894,
+          "metric_gain": 4.731118679046631e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.02387155592441559,
+          "online_loss_gain": 5.603954195976257e-05,
+          "metric_after": 0.04946208372712135,
+          "metric_gain": -4.544854164123535e-07,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.02385234832763672,
+          "online_loss_gain": 7.52471387386322e-05,
+          "metric_after": 0.04946184158325195,
+          "metric_gain": -2.123415470123291e-07,
+          "active_fraction": 0.9773763418197632
+        },
+        "combined": {
+          "online_loss_after": 0.02386992797255516,
+          "online_loss_gain": 5.766749382019043e-05,
+          "metric_after": 0.04946267232298851,
+          "metric_gain": -1.043081283569336e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.023870982229709625,
+          "online_loss_gain": 5.661323666572571e-05,
+          "metric_after": 0.04946085065603256,
+          "metric_gain": 7.7858567237854e-07,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.023888293653726578,
+          "online_loss_gain": 3.930181264877319e-05,
+          "metric_after": 0.049443431198596954,
+          "metric_gain": 1.819804310798645e-05,
+          "active_fraction": 0.5528971552848816
+        }
+      }
+    },
+    {
+      "scene": "chess",
+      "sequence": "chess/seq-01",
+      "target_frame": 255,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5121289459220493,
+      "geometry_balanced_accuracy": 0.5164892744203089,
+      "combined_balanced_accuracy": 0.5123467233812061,
+      "shuffled_geometry_balanced_accuracy": 0.5123311109518006,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.030389774590730667,
+          "online_loss_gain": 5.62518835067749e-05,
+          "metric_after": 0.06542564928531647,
+          "metric_gain": -1.1816620826721191e-05,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.030386537313461304,
+          "online_loss_gain": 5.9489160776138306e-05,
+          "metric_after": 0.06542094796895981,
+          "metric_gain": -7.115304470062256e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.030372248962521553,
+          "online_loss_gain": 7.377751171588898e-05,
+          "metric_after": 0.06542570143938065,
+          "metric_gain": -1.1868774890899658e-05,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.03038562461733818,
+          "online_loss_gain": 6.0401856899261475e-05,
+          "metric_after": 0.06542067229747772,
+          "metric_gain": -6.839632987976074e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.030385661870241165,
+          "online_loss_gain": 6.0364603996276855e-05,
+          "metric_after": 0.06542001664638519,
+          "metric_gain": -6.183981895446777e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.0304098017513752,
+          "online_loss_gain": 3.622472286224365e-05,
+          "metric_after": 0.06539606302976608,
+          "metric_gain": 1.776963472366333e-05,
+          "active_fraction": 0.47607421875
+        }
+      }
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 63,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5121188551728487,
+      "geometry_balanced_accuracy": 0.4930033669325878,
+      "combined_balanced_accuracy": 0.5117927044803996,
+      "shuffled_geometry_balanced_accuracy": 0.5122890969161241,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.047394827008247375,
+          "online_loss_gain": 5.579367280006409e-05,
+          "metric_after": 0.05160181224346161,
+          "metric_gain": 2.2836029529571533e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.047386862337589264,
+          "online_loss_gain": 6.375834345817566e-05,
+          "metric_after": 0.05160826817154884,
+          "metric_gain": -4.172325134277344e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.04738925024867058,
+          "online_loss_gain": 6.137043237686157e-05,
+          "metric_after": 0.051589760929346085,
+          "metric_gain": 1.4334917068481445e-05,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.04738791286945343,
+          "online_loss_gain": 6.27078115940094e-05,
+          "metric_after": 0.05160532891750336,
+          "metric_gain": -1.2330710887908936e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.04739033803343773,
+          "online_loss_gain": 6.028264760971069e-05,
+          "metric_after": 0.051595062017440796,
+          "metric_gain": 9.033828973770142e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.04739968478679657,
+          "online_loss_gain": 5.093589425086975e-05,
+          "metric_after": 0.05157630890607834,
+          "metric_gain": 2.7786940336227417e-05,
+          "active_fraction": 0.52197265625
+        }
+      }
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 127,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5337155998584767,
+      "geometry_balanced_accuracy": 0.5030592859230545,
+      "combined_balanced_accuracy": 0.5339239107583286,
+      "shuffled_geometry_balanced_accuracy": 0.5340437696453202,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.06378921866416931,
+          "online_loss_gain": 5.2034854888916016e-05,
+          "metric_after": 0.07438355684280396,
+          "metric_gain": 7.2196125984191895e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.06376597285270691,
+          "online_loss_gain": 7.528066635131836e-05,
+          "metric_after": 0.07438407093286514,
+          "metric_gain": 6.705522537231445e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.06378583610057831,
+          "online_loss_gain": 5.5417418479919434e-05,
+          "metric_after": 0.07438454031944275,
+          "metric_gain": 6.236135959625244e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.06375977396965027,
+          "online_loss_gain": 8.147954940795898e-05,
+          "metric_after": 0.07438047230243683,
+          "metric_gain": 1.0304152965545654e-05,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.06376788765192032,
+          "online_loss_gain": 7.336586713790894e-05,
+          "metric_after": 0.07437992841005325,
+          "metric_gain": 1.0848045349121094e-05,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.06380178034305573,
+          "online_loss_gain": 3.947317600250244e-05,
+          "metric_after": 0.07436950504779816,
+          "metric_gain": 2.127140760421753e-05,
+          "active_fraction": 0.544921875
+        }
+      }
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 191,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.5121898376946008,
+      "geometry_balanced_accuracy": 0.48459452798940045,
+      "combined_balanced_accuracy": 0.5121954554488242,
+      "shuffled_geometry_balanced_accuracy": 0.5125210732030474,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.029665570706129074,
+          "online_loss_gain": 4.7344714403152466e-05,
+          "metric_after": 0.044869206845760345,
+          "metric_gain": 2.1569430828094482e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.029648106545209885,
+          "online_loss_gain": 6.480887532234192e-05,
+          "metric_after": 0.04486623778939247,
+          "metric_gain": 5.125999450683594e-06,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.029659494757652283,
+          "online_loss_gain": 5.342066287994385e-05,
+          "metric_after": 0.04486877843737602,
+          "metric_gain": 2.5853514671325684e-06,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.02965276502072811,
+          "online_loss_gain": 6.0150399804115295e-05,
+          "metric_after": 0.04486655443906784,
+          "metric_gain": 4.809349775314331e-06,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.02965160459280014,
+          "online_loss_gain": 6.131082773208618e-05,
+          "metric_after": 0.04486597329378128,
+          "metric_gain": 5.39049506187439e-06,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.02967938780784607,
+          "online_loss_gain": 3.3527612686157227e-05,
+          "metric_after": 0.044854193925857544,
+          "metric_gain": 1.7169862985610962e-05,
+          "active_fraction": 0.5086263418197632
+        }
+      }
+    },
+    {
+      "scene": "stairs",
+      "sequence": "stairs/seq-01",
+      "target_frame": 255,
+      "zero_code_max_abs_difference": 0.0,
+      "token_balanced_accuracy": 0.4871845797367148,
+      "geometry_balanced_accuracy": 0.5151242583963538,
+      "combined_balanced_accuracy": 0.4871845797367148,
+      "shuffled_geometry_balanced_accuracy": 0.4871845797367148,
+      "policies": {
+        "global": {
+          "online_loss_after": 0.029907751828432083,
+          "online_loss_gain": 4.253163933753967e-05,
+          "metric_after": 0.05035055801272392,
+          "metric_gain": -1.862645149230957e-06,
+          "active_fraction": 1.0
+        },
+        "token": {
+          "online_loss_after": 0.02989870309829712,
+          "online_loss_gain": 5.158036947250366e-05,
+          "metric_after": 0.05034874007105827,
+          "metric_gain": -4.470348358154297e-08,
+          "active_fraction": 1.0
+        },
+        "geometry": {
+          "online_loss_after": 0.029907654970884323,
+          "online_loss_gain": 4.262849688529968e-05,
+          "metric_after": 0.05034881830215454,
+          "metric_gain": -1.2293457984924316e-07,
+          "active_fraction": 1.0
+        },
+        "combined": {
+          "online_loss_after": 0.02989952452480793,
+          "online_loss_gain": 5.075894296169281e-05,
+          "metric_after": 0.050348732620477676,
+          "metric_gain": -3.725290298461914e-08,
+          "active_fraction": 1.0
+        },
+        "shuffled_geometry": {
+          "online_loss_after": 0.02989938296377659,
+          "online_loss_gain": 5.090050399303436e-05,
+          "metric_after": 0.05034860223531723,
+          "metric_gain": 9.313225746154785e-08,
+          "active_fraction": 1.0
+        },
+        "oracle": {
+          "online_loss_after": 0.02992062084376812,
+          "online_loss_gain": 2.966262400150299e-05,
+          "metric_after": 0.05033262446522713,
+          "metric_gain": 1.6070902347564697e-05,
+          "active_fraction": 0.517578125
+        }
+      }
+    }
+  ]
+}

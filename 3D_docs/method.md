@@ -252,3 +252,10 @@ token-only, residual-only, global, and spatial-shuffle controls using
 leave-one-scene-out offline oracle labels. This predictor is not an accepted
 head and is not saved for deployment. It may justify a later one-module fit
 only if its actual geometry update, not merely its mask accuracy, passes.
+
+EXP-056 rejected this input. Scene-OOF oracle-label accuracy was chance and no
+better than spatial shuffle; realized metric utility was unsafe and not
+significantly better than global or shuffled controls. The pairwise-residual
+predictor is not an accepted head. D141 stops the complete fresh-data current-
+only v3 branch before validation; there remains no accepted v3 method or
+checkpoint.

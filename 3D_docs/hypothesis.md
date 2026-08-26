@@ -218,9 +218,10 @@ nearest previous predicted point contains spatial evidence about which shared
 plasticity axes align the online consistency step with absolute geometry,
 beyond the frozen current decoder token alone.
 
-Status: **Open.** EXP-056 uses leave-one-scene-out prediction of EXP-054's
-offline token-axis labels on the same 16 exposed train anchors. The decisive
-test is realized one-step relative-3D utility, not label accuracy alone. A
-combined token/residual conditioner must beat token-only, global, and spatially
-shuffled-residual controls while preserving online descent. No method
-checkpoint or validation access is authorized by this diagnostic.
+Status: **Rejected for the registered minimal residual.** EXP-056's scene-OOF
+combined balanced accuracy was `50.20%`, below the `50.24%` spatial-shuffle
+control and essentially chance. Its realized gain was positive on average but
+negative in `pumpkin`, harm was 50%, and paired intervals over global and
+shuffled geometry crossed zero. Only the comparison with token-only was
+positive. Thus the nearest-point residual does not expose the oracle axis label
+reliably across scenes and cannot justify another conditioner fit.

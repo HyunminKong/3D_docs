@@ -1748,3 +1748,31 @@ with positive paired anchor-bootstrap intervals, at most 25% harm, and online
 descent in every scene. Failure rejects pairwise residual observability for
 this minimal linear realization without optimizer or feature tuning. Success
 authorizes design of one final conditioner-training protocol but not validation.
+
+## D141 — Reject minimal pairwise-residual conditioning and stop current-only repair
+
+Date: 2026-08-26
+Status: Accepted after EXP-056
+
+EXP-056 completed all four scene-OOF folds and preserved online descent, but
+the new residual signal was not observably tied to the token-axis oracle.
+Combined balanced accuracy was `50.20%`, effectively chance and below the
+spatially shuffled-residual control. Combined realized metric gain was
+`2.24e-6`, but it was negative in one of four scenes, harmed 50% of anchors,
+and had intervals crossing zero versus both global and shuffled-residual
+controls. No checkpoint was created and validation remains closed.
+
+The only positive comparison was combined versus token-only, which is
+insufficient because spatial shuffle explains the same effect. Nearest-neighbor
+choice, residual normalization, feature additions, nonlinear classifiers,
+score transforms, thresholds, or direct oracle-label training may not be tuned
+on these exposed anchors.
+
+Together, EXP-054--056 establish a strong label-derived tangent capacity but no
+source-safe deployable observable among current tokens or minimal pairwise
+predicted geometry. The fresh-data current-only TTT3R branch is stopped as a
+paper method candidate before validation. Continuing now requires a material
+project decision: return to explicit past geometry/visibility evidence under a
+controlled missing-information task, or close this research line and select a
+different compact paper problem. It is not scientifically permissible to infer
+either pivot from this failed diagnostic.

@@ -1,6 +1,6 @@
 # EXP-056 — Pairwise Geometry Residual Observability
 
-Status: Registered; train-only scene-OOF diagnostic
+Status: Completed; registered gate failed and no checkpoint was created
 Purpose: Test whether current/previous predicted-geometry residuals expose the
 token-axis oracle structure that current tokens failed to learn
 
@@ -59,3 +59,26 @@ feature, score, or optimizer tuning.
 - Config: `configs/EXP-056_pairwise_geometry_observability_v10.yaml`
 - Runner: `revisit3d/scripts/evaluate_exp056_pairwise_geometry_observability.py`
 - Result: `revisit3d/results/EXP-056/pairwise_geometry_observability_v10.json`
+
+## Result
+
+All 16 anchors and four leave-one-scene-out folds completed with exact
+zero-code parity, finite values, positive combined online descent in every
+scene, and no validation or terminal access.
+
+The combined token/residual score did not predict the oracle labels. Its mean
+balanced accuracy was `50.204%`, versus `50.206%` for token-only, `49.483%` for
+geometry-only, and `50.240%` after spatially shuffling geometry. The residual
+therefore supplies no scene-general label information under this linear
+diagnostic.
+
+Realized combined metric gain was `2.244e-6`, compared with `0.809e-6` for
+global, `0.264e-6` for token-only, and `0.965e-6` for shuffled geometry. The
+combined-minus-token interval was positive, but combined-minus-global CI
+`[-0.853e-6, 3.846e-6]` and combined-minus-shuffle CI
+`[-1.858e-6, 4.887e-6]` crossed zero. `pumpkin` remained negative and combined
+harm was 50%. By contrast, the offline oracle retained `20.386e-6` mean gain.
+
+The registered gate fails. H16 is rejected for this minimal residual, no
+method checkpoint exists, and D141 stops feature or classifier repair on these
+anchors.
