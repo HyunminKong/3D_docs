@@ -377,3 +377,21 @@ passes and no query RGB or update is used. Thus binary historical visibility is
 not a stable risk partition here, and nearest predicted-history geometry does
 not add complementary reliability. No alternate-distance or learned-head repair
 is authorized on these contexts.
+
+## H23 — Function-space transport resolves plasticity-coordinate mismatch
+
+Let `P_x(z)` be the pointmap decoded at observation `x` from local adaptation
+coordinate `z`. Directly transporting a source update `delta z_s` assumes that
+the source and target decoder Jacobians assign it the same geometric meaning,
+which EXP-040--060 contradict. The induced source displacement
+
+`delta P_s = P_s(delta z_s) - P_s(0)`
+
+is instead a function-space object. Transporting this displacement by predicted
+3D correspondence and pulling it back with one target gradient should preserve
+the intended 3D change despite observation-dependent coordinate charts.
+
+Status: **Registered, not yet tested.** EXP-067 compares this zero-fit operator
+with direct code transport, an equal-compute second current step, untransported
+function payload, and spatial shuffle on 16 pose-selected train revisits. It is
+an oracle-paired capacity test, not a deployable address or accepted method.

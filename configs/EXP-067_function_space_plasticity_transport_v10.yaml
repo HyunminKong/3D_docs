@@ -1,0 +1,62 @@
+experiment: EXP-067
+protocol_revision: v1.0
+purpose: train_only_no_fit_function_space_plasticity_transport
+seed: 6700010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  pairs:
+    - {sequence: pumpkin/seq-07, source: 531, target: 843}
+    - {sequence: pumpkin/seq-07, source: 278, target: 512}
+    - {sequence: pumpkin/seq-07, source: 551, target: 797}
+    - {sequence: pumpkin/seq-07, source: 188, target: 734}
+    - {sequence: heads/seq-02, source: 395, target: 844}
+    - {sequence: heads/seq-02, source: 249, target: 664}
+    - {sequence: heads/seq-02, source: 343, target: 929}
+    - {sequence: heads/seq-02, source: 2, target: 52}
+    - {sequence: chess/seq-04, source: 158, target: 259}
+    - {sequence: chess/seq-04, source: 239, target: 965}
+    - {sequence: chess/seq-04, source: 570, target: 751}
+    - {sequence: chess/seq-04, source: 29, target: 624}
+    - {sequence: stairs/seq-04, source: 328, target: 378}
+    - {sequence: stairs/seq-04, source: 100, target: 290}
+    - {sequence: stairs/seq-04, source: 440, target: 490}
+    - {sequence: stairs/seq-04, source: 368, target: 418}
+  pair_selection:
+    minimum_temporal_gap: 50
+    score_translation_plus_rotation_degrees_coefficient: 0.01
+    minimum_target_separation: 40
+    minimum_source_separation: 20
+    metadata_only: true
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+plasticity:
+  code_dim: 8
+  basis_seed: 5200010
+  patch_size: 16
+  normalized_step: 0.001
+controls:
+  spatial_shuffle_seed: 6701010
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+  minimum_valid_pixels: 8192
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_seed: 6702010
+success:
+  exact_scenes: 4
+  exact_pairs: 16
+  maximum_zero_code_abs_difference: 0.000001
+  minimum_relative_gain_vs_second_current: 0.01
+  maximum_harm_fraction: 0.25
+output:
+  depth_preparation: revisit3d/results/EXP-067/selected_train_depth_registration_v10.json
+  result: revisit3d/results/EXP-067/function_space_plasticity_transport_v10.json

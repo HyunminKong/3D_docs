@@ -9,6 +9,7 @@
 - `3D_docs/literature/order_robust_streaming_audit.md` — collision audit for recurrent update commutativity and order robustness.
 - `3D_docs/literature/dynamic_intrinsics_streaming_audit.md` — dynamic-intrinsics, camera-prior, and recurrent state-poisoning collision audit.
 - `3D_docs/literature/evidence_provenance_audit.md` — causal observation support/provenance in RGB-free streaming pointmap queries.
+- `3D_docs/literature/function_space_plasticity_transport_audit.md` — function-space versus coordinate-space transport of local TTT experience.
 
 ## Local reference repositories
 

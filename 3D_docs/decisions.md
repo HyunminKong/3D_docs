@@ -2201,3 +2201,27 @@ complement to native confidence in this setting. The stop rule applies. No
 support tolerance, query spacing, alternate distance, fusion coefficient,
 threshold, learned provenance head, validation run, or memory system may be
 selected using these exposed contexts. H22 is closed and no method is accepted.
+
+## D159 — Select function-space plasticity transport and register EXP-067
+
+Date: 2026-08-26
+Status: Accepted before EXP-067
+
+Dynamic-state contamination is excluded because RayMap3R already contrasts
+image and ray-only branches to identify dynamics and suppress memory writes.
+Long-stream retention and loop closure are likewise occupied by LONG3R,
+Point3R, Anchor3R, LingBot-Map, and classical dense SLAM. A generic uncertainty
+or another reliability gate is also prohibited after H19/H21/H22.
+
+The selected candidate instead addresses the repeated adaptation-memory failure
+mechanistically. An 8-D code is observation-coordinate dependent because its
+3D effect is mediated by the current decoder Jacobian. EXP-067 stores the 3D
+point displacement actually induced at the source, transports that displacement
+at an oracle-paired revisit, and uses one target gradient to pull it back into
+the target code. This is one push-forward/3D-transport/pull-back operator, not a
+new head, learned loss, bank, router, or threshold.
+
+Sixteen train-only pairs are frozen from pose metadata before RGB/depth/model
+access. Failure stops the operator without tuning or validation. Success
+authorizes only a compact deployability design and does not establish continual
+memory or retrieval.

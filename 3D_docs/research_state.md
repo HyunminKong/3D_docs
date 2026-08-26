@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-26 (EXP-066 completed; H22 closed, no active method)
+Last updated: 2026-08-26 (H23/EXP-067 registered; no accepted method)
 
 ## First objective
 
@@ -765,3 +765,18 @@ native confidence. Replay is exact and the causal/query contract passes, so the
 result closes H22 rather than exposing an implementation or data-use failure.
 D158 prohibits alternate distances, fusion weights, thresholds, contexts,
 heads, or validation access. There is no active paper method.
+
+## Active function-space plasticity premise
+
+D159 excludes dynamic-state filtering and long-stream memory as occupied, then
+returns to the project's original TTT-experience question with a different
+mathematical object. Previous experiments transported a local coordinate update
+whose geometric effect changes with the observation-conditioned decoder. H23
+instead transports the 3D output displacement induced by that update and uses
+the target decoder Jacobian to pull it back into the current local coordinate.
+
+EXP-067 freezes 16 train-only revisits selected from pose metadata before model
+access. It adds no learned component and compares function-space transport with
+direct code transport, equal current compute, untransported displacement, and
+spatial shuffle. No validation/terminal access, bank, address, router, or method
+claim is authorized until every registered capacity gate passes.
