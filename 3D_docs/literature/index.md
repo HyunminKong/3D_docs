@@ -16,6 +16,9 @@
 - `3D_docs/literature/query_integrity_metric_audit.md` — pointwise WorldTrack
   metrics versus counterfactual query-integrity ranking, including the August
   2026 UniQuery4R collision update and EXP-069 boundary.
+- `3D_docs/literature/causal_fastweight_4d_audit.md` — direct collision audit
+  for TTT + continual consolidation + queryable streaming 4D, and the narrow
+  spatiotemporally distal functional-interference boundary tested by EXP-070.
 
 ## Local reference repositories
 

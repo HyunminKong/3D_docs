@@ -444,3 +444,31 @@ Thus pointwise APD can locally misrank query integrity but does not
 systematically reward the less stable context. No benchmark expansion, metric
 repair, equivalence loss, or terminal access is authorized. The structural
 residual from H24/25 remains useful diagnostic evidence only.
+
+## H26 — Spatiotemporally distal functional interference in 4D fast weights
+
+Let `f_theta(a)` be the rendered answer for an already supported view-time
+query `a`, and let `Delta theta_b` be the LaCET fast-weight update induced by a
+later, temporally distant observation block `b`. Because LaCET uses shared MLP
+matrices and query-independent diagonal consolidation, the first-order change
+
+\[
+f_{\theta+\Delta\theta_b}(a)-f_\theta(a)
+\simeq J_\theta f_\theta(a)\Delta\theta_b
+\]
+
+need not be local to content changed by `b`. On fixed-camera dynamic videos,
+adding distant future observations should therefore worsen an identical
+past-time query even in the target image's lowest temporal-change quartile,
+relative to both the original supporting history and an equal-size near-time
+history.
+
+Status: **Rejected.** EXP-070 used a released FSM-4DLVSM-LaCET checkpoint
+without fitting on 24 freshly assigned PStudio premise sequences. Distant
+history improved stable-region MSE over A-only by 29.32%, with CI
+`[-38.13%, -20.06%]`, and worsened only 3/24 sequences. Near evidence improved
+more, but distant output drift from A was only `0.551x` near-output drift. Thus
+the far-versus-near difference reflects evidence utility, not catastrophic
+retention loss. Exact replay and carrier quality pass, so the reversed result
+is not an execution failure. No locality mechanism, router, bank, new loss,
+frame search, EWC tuning, validation, or terminal access is authorized.

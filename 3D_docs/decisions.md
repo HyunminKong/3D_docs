@@ -2375,3 +2375,61 @@ bound. These are the sole failures among 17 gates. Therefore APD sometimes
 misranks query integrity but does not systematically reward the structurally
 worse context. H25 is closed; no multi-model benchmark, modified statistic,
 equivalence loss, or terminal run is authorized.
+
+## D166 — Reject the broad TTT+CL+4D claim and register a locality premise
+
+Date: 2026-08-27
+
+Status: Accepted before deserializing any EXP-070 premise file
+
+The current primary-source audit finds a direct collision that was missing from
+the earlier project framing. Fast Spatial Memory (ECCV 2026) already combines
+LaCT fast weights, EWC-inspired continual consolidation, long observation
+sequences, and arbitrary novel view-time 4D reconstruction. ZipMap/tttLRM
+occupy TTT spatial state, while Point4Cast, StreamVGGT, S-4RC, and UniQuery4R
+jointly occupy causal 4D state and sparse/time-conditioned querying.
+
+The project therefore retires `TTT + CL + streaming 4D` as a novelty claim.
+Reimplementing those components from scratch would still be a combination of
+occupied functions, not a new paper thesis.
+
+One narrower premise remains. FSM's diagonal EWC/EMA consolidation is shared
+across queries and does not enforce spatiotemporal functional locality.
+EXP-070 tests whether distant writes alter an identical retained query in the
+lowest temporal-change image quartile. It uses the released checkpoint, fixed
+frame sets, a matched near-context control, and a matched non-elastic LaCT
+control on 24 newly frozen PStudio sequences. Only filenames were used for role
+assignment; three schema-inspected files are excluded. Validation and terminal
+roles remain closed.
+
+Failure stops the locality direction without repair. Success authorizes only
+one locality mechanism using the existing objective; it does not authorize a
+memory bank, learned router, new head, extra loss, EWC search, or broad 4D
+framework claim.
+
+## D167 — Reject the fast-weight distal-interference premise
+
+Date: 2026-08-27
+
+Status: Accepted after the single EXP-070 premise run
+
+EXP-070 completes all 24 frozen PStudio premise sequences with strict
+checkpoint loading, exact replay, mean A-only PSNR `32.718 dB`, no fitting, and
+no validation or terminal access. Its primary prediction is reversed. Adding
+distant frames improves stable-region MSE over A-only by 29.32%, with sequence
+CI `[-38.13%, -20.06%]`, and causes damage in only 3/24 sequences.
+
+Near context is more useful than distant context, so distant-minus-near damage
+is positive on average. That comparison does not establish forgetting because
+the identical distant condition is substantially better than A-only. The
+functional control agrees: distant output drifts only `0.551x` as far from the
+A-only answer as near output, and the drift-difference interval is wholly
+negative. LaCET also does not outperform matched LaCT on this stable-region
+mean.
+
+H26 is rejected and its stop rule applies. No local fast-weight partition,
+router, bank, extra loss, EWC search, frame repair, validation run, or terminal
+run is accepted. Combined with the FSM collision, this closes both the broad
+`TTT + CL + 4D` claim and the tested query-locality escape hatch. The next paper
+candidate must be selected from a different empirically testable failure, not
+another fast-weight consolidation variant.

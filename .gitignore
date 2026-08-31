@@ -31,6 +31,7 @@ venv/
 # External reference repositories; install/clone separately
 /CUT3R/
 /FastVGGT/
+/fast-spatial-mem/
 /Open-d4rt/
 /TTT3R/
 /UniSplat/

@@ -42,7 +42,7 @@ For method or architecture work also read `3D_docs/method.md`. For literature wo
 - Research source documents: `3D_docs/`
 - Hypothesis retrospectives: `3D_docs/analysis/`
 - Preserved long-form notes: `Research/`
-- External reference repositories: `CUT3R/`, `FastVGGT/`, `Open-d4rt/`, `TTT3R/`, `UniSplat/`, `dust3r/`, `gaussian-splatting/`, `tttLRM/`, `vggt/`
+- External reference repositories: `CUT3R/`, `FastVGGT/`, `Open-d4rt/`, `TTT3R/`, `UniSplat/`, `dust3r/`, `fast-spatial-mem/`, `gaussian-splatting/`, `tttLRM/`, `vggt/`
 
 Do not edit external reference repositories unless a task explicitly requires it.
 

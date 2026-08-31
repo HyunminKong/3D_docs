@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-27 (EXP-069 completed; query-integrity paper premise closed)
+Last updated: 2026-08-27 (EXP-070 completed; fast-weight locality premise rejected)
 
 ## First objective
 
@@ -12,12 +12,30 @@ dissertation architecture is deferred.
 
 ## Current research question
 
-There is no accepted paper method or active premise. H24 established a real
-cross-clip non-gauge residual but failed its APD-blindness gate. H25 then tested
-a distinct ranking contradiction on untouched files: frequent local inversions
-recurred, but mean signed APD gain was negative with an interval crossing zero.
-D165 closes the query-integrity evaluation branch without a loss, model, or
-terminal access.
+There is no accepted paper method. H24 established a real cross-clip non-gauge
+residual but failed its APD-blindness gate. H25 then tested a distinct ranking
+contradiction on untouched files: frequent local inversions recurred, but mean
+signed APD gain was negative with an interval crossing zero. D165 closes that
+branch without a loss, model, or terminal access.
+
+D166 records a newly decisive literature collision: Fast Spatial Memory
+(ECCV 2026) already combines LaCT fast weights, EWC-style continual
+consolidation, and long-context 4D view-time reconstruction. The broad
+`TTT + CL + streaming 4D` proposal is retired as a novelty claim.
+
+H26/EXP-070 tested whether FSM's shared, query-independent fast-weight
+consolidation permits spatiotemporally distant writes to damage an identical
+past query in visually stable pixels. It completed 24 fresh PStudio premise
+sequences with exact replay and no validation, terminal, or fitting access.
+The prediction was reversed: distant evidence improved stable-region MSE over
+A-only by 29.32% with a wholly negative damage interval and harmed only 3/24
+sequences. Distant output also drifted less than near output. D167 rejects H26
+and prohibits a local partition, router, bank, added loss, or EWC repair.
+
+There is again no accepted paper method or active premise. The next candidate
+must be a different empirical problem. It cannot claim generic TTT+CL+4D,
+fast-weight consolidation, query-locality repair, or another D4RT fixed-window
+metric variant.
 
 ## Archived order-robustness novelty boundary
 

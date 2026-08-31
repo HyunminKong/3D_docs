@@ -1,0 +1,91 @@
+experiment:
+  id: EXP-070
+  version: "1.0"
+  hypothesis: H26
+  seed: 20260827
+  purpose: no-fit premise for spatiotemporally distal functional interference
+
+source:
+  dataset_root: Open-d4rt/data/tapvid3d/pstudio
+  manifest: revisit3d/results/EXP-070/role_manifest_v10.json
+  manifest_canonical_sha256: 0e8d0e672260ee603bbe08caed82d8bcbe5dfb9a2c53e03a22526927e8c1f3fb
+  role: premise
+  exact_sequences: 24
+  validation_access: false
+  terminal_access: false
+  fixed_camera_c2w: identity
+
+carrier:
+  name: FSM-4DLVSM-LaCET-res128
+  reference_repo: fast-spatial-mem
+  reference_commit: 499464ecd971dc096cc9a27d197aa0b5995f123a
+  checkpoint_filename: fsm_4dlvsm_patch8_res128.pth
+  checkpoint_sha256: 4cedb490e4cbfcbade3ed26745b9c63f32d7d37bbaf15df600708571c0a48ee4
+  resolution: 128
+  patch_size: 8
+  max_frames: 256
+  fastweight_chunk_size: 2048
+  ewc:
+    enabled: true
+    lambda_prox: 0.5
+    fisher_alpha: 0.5
+    mode: si
+    anchor_policy: streaming-ema
+    anchor_beta: 0.5
+
+query:
+  target_frame: 32
+  core_A_frames: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+  near_C_frames: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31]
+  distant_B_frames: [64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94]
+  target_is_never_an_input: true
+
+conditions:
+  - A_only_LaCET
+  - A_plus_near_LaCET
+  - A_plus_distant_LaCET
+  - A_plus_distant_LaCT
+  - exact_replay_A_only_LaCET
+
+masks:
+  temporal_change_score: median_B_frame_RGB_L1_to_target
+  stable_quantile: 0.25
+  changing_quantile: 0.75
+  mask_is_offline_evaluation_only: true
+
+statistics:
+  component: sequence
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 70070
+  interval: percentile_95
+
+gates:
+  exact_premise_sequences: 24
+  maximum_exact_replay_abs_difference: 1.0e-6
+  minimum_mean_A_only_psnr_db: 15.0
+  minimum_mean_stable_relative_damage_far_vs_A: 0.02
+  stable_relative_damage_far_vs_A_ci_lower_strictly_positive: true
+  minimum_positive_sequences_far_vs_A: 18
+  minimum_mean_stable_relative_damage_far_vs_near: 0.02
+  stable_relative_damage_far_vs_near_ci_lower_strictly_positive: true
+  minimum_positive_sequences_far_vs_near: 18
+  minimum_far_to_near_stable_output_drift_ratio: 1.25
+  stable_output_drift_difference_ci_lower_strictly_positive: true
+  minimum_stable_to_changing_damage_ratio: 0.25
+  no_model_or_threshold_fit: true
+  validation_not_accessed: true
+  terminal_not_accessed: true
+
+stop_rule:
+  pass: authorize one parameter-free or one-trained locality mechanism with no new loss
+  fail: close fastweight locality as the immediate paper premise
+  prohibited_repairs:
+    - frame search
+    - quantile search
+    - EWC hyperparameter search
+    - alternate checkpoint
+    - sequence replacement
+    - validation access
+    - terminal access
+    - learned router
+    - memory bank
