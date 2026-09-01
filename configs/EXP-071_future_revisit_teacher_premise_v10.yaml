@@ -1,0 +1,41 @@
+experiment: EXP-071
+protocol_revision: v1.0
+purpose: train_only_zero_fit_future_revisit_teacher_premise
+seed: 7100010
+data:
+  root: FastVGGT/data/7scenes_raw
+  train_manifest: revisit3d/manifests/7scenes_metric_train_exp051_v10.json
+  train_manifest_sha256: f03232b8a36f09eeb869875c43c616bca1d4e9c0bc4477f8902bc31b01162f9a
+  sequences: [pumpkin/seq-06, pumpkin/seq-08, chess/seq-05, chess/seq-06, stairs/seq-05, stairs/seq-06]
+  window_starts: [64, 224, 384]
+  window_length: 16
+  target_offsets: [3, 7, 11]
+  validation_access: false
+  terminal_access: false
+carrier:
+  repository: TTT3R
+  checkpoint: TTT3R/src/cut3r_512_dpt_4_64.pth
+  checkpoint_sha256: 45f7e98a0a64dbeb54901ae2b878cd8cd125f20a4497316483f0bd6f109f8103
+  mode: ttt3r
+  resolution: [512, 384]
+metric:
+  minimum_depth_m: 0.2
+  maximum_depth_m: 10.0
+  minimum_valid_pixels: 4096
+statistics:
+  bootstrap_samples: 10000
+  bootstrap_unit: context_stratified_by_sequence
+success:
+  exact_scenes: 3
+  exact_sequences: 6
+  exact_contexts: 18
+  exact_targets: 54
+  exact_replay_checks: 18
+  maximum_replay_abs_difference: 0.00001
+  require_future_gain_over_prefix_all_scenes: true
+  require_bootstrap_lower_positive: true
+  minimum_relative_future_over_prefix_gain: 0.05
+  minimum_target_win_fraction: 0.6666666666666666
+  minimum_correction_oracle_cosine: 0.20
+output:
+  result: revisit3d/results/EXP-071/future_revisit_teacher_premise_v10.json

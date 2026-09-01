@@ -2433,3 +2433,25 @@ run is accepted. Combined with the FSM collision, this closes both the broad
 `TTT + CL + 4D` claim and the tested query-locality escape hatch. The next paper
 candidate must be selected from a different empirically testable failure, not
 another fast-weight consolidation variant.
+
+## D168 — Register future-revisit geometry as a zero-fit premise
+
+Date: 2026-09-01
+
+Status: Accepted before decoding any EXP-071 RGB-D frame
+
+The post-EXP-070 collision audit rejects generic future-to-causal distillation
+as a novelty claim: FTKD already transfers future-frame knowledge to an online
+3D detector, while Point4Cast trains a streaming state to read past geometry
+after later evidence. CUT3R itself also occupies repeated revisit inference.
+
+A narrower empirical question remains. On the same frozen TTT3R carrier and
+identical query RGB, later state evidence may induce a gauge-normalized dense
+geometry correction that improves over a matched self-reread and points toward
+the absolute 3D residual. EXP-071 freezes six previously sensor-unopened train
+sequences, three windows, three target offsets, and six gates before access.
+No fitting, validation, terminal, frame search, new head, or method is allowed.
+
+Failure closes the direction. Success authorizes only a train-only test of
+whether the future correction can be predicted from the causal information
+set using one geometry target and unchanged inference architecture.

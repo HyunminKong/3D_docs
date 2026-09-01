@@ -472,3 +472,26 @@ the far-versus-near difference reflects evidence utility, not catastrophic
 retention loss. Exact replay and carrier quality pass, so the reversed result
 is not an execution failure. No locality mechanism, router, bank, new loss,
 frame search, EWC tuning, validation, or terminal access is authorized.
+
+## H27 — Future-revisit geometry correction is a useful causal teacher
+
+Let `P_t^0` be the first-pass pointmap for RGB frame `I_t`, `P_t^self` the
+same RGB reread without writing from the state immediately after `I_t`, and
+`P_t^T` the same non-writing readout after later observations through `T` have
+updated the state. After removing each output's monocular scale gauge, the
+future-only correction
+
+\[
+\Delta_t^T = \bar P_t^T - \bar P_t^{self}
+\]
+
+should reduce absolute 3D error and align with the metric residual from
+`P_t^self` to ground truth. If so, later observations provide a dense offline
+training target that is absent at causal inference, while the deployed model
+can remain a single-pass causal reconstructor.
+
+Status: **Registered; untested.** EXP-071 is a frozen-carrier, train-only,
+zero-fit premise. Generic future knowledge distillation, future-state past
+readout, and revisit inference are already occupied; only geometry-specific
+future-correction amortization remains conditionally open. Passing does not
+accept a method and authorizes only a causal-predictability experiment.

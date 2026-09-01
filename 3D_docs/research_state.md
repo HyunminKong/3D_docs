@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-08-27 (EXP-070 completed; fast-weight locality premise rejected)
+Last updated: 2026-09-01 (EXP-071 future-revisit premise registered)
 
 ## First objective
 
@@ -32,10 +32,20 @@ A-only by 29.32% with a wholly negative damage interval and harmed only 3/24
 sequences. Distant output also drifted less than near output. D167 rejects H26
 and prohibits a local partition, router, bank, added loss, or EWC repair.
 
-There is again no accepted paper method or active premise. The next candidate
-must be a different empirical problem. It cannot claim generic TTT+CL+4D,
-fast-weight consolidation, query-locality repair, or another D4RT fixed-window
-metric variant.
+There is no accepted paper method. D168 registers H27/EXP-071 as a different,
+zero-fit premise: whether the same frozen TTT3R carrier's final-state reread of
+an earlier RGB frame improves absolute geometry beyond a matched prefix-state
+reread and points toward the metric residual. Six previously sensor-unopened
+7Scenes train sequences, all frames, targets, metrics, and gates are frozen.
+Validation and terminal remain closed.
+
+Generic future-to-causal knowledge distillation is already occupied by FTKD;
+future-state past-time readout is occupied by Point4Cast; repeated revisit
+inference is occupied by CUT3R. Therefore even a passing EXP-071 would authorize
+only a train-only causal-predictability test of geometry-specific correction
+amortization, not an accepted novelty or method. It cannot add a decoder,
+confidence head, memory, router, extra test-time pass, or future input at
+deployment.
 
 ## Archived order-robustness novelty boundary
 

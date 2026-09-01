@@ -19,6 +19,9 @@
 - `3D_docs/literature/causal_fastweight_4d_audit.md` — direct collision audit
   for TTT + continual consolidation + queryable streaming 4D, and the narrow
   spatiotemporally distal functional-interference boundary tested by EXP-070.
+- `3D_docs/literature/future_revisit_distillation_audit.md` — collision audit
+  for future-to-causal distillation, future-state past readout, and the narrow
+  geometry-correction premise tested by EXP-071.
 
 ## Local reference repositories
 
