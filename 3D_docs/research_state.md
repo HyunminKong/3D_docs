@@ -1,6 +1,6 @@
 # Current Research State
 
-Last updated: 2026-09-01 (EXP-071 future-revisit premise registered)
+Last updated: 2026-09-01 (EXP-071 v1.1 operational correction registered)
 
 ## First objective
 
@@ -46,6 +46,11 @@ only a train-only causal-predictability test of geometry-specific correction
 amortization, not an accepted novelty or method. It cannot add a decoder,
 confidence head, memory, router, extra test-time pass, or future input at
 deployment.
+
+The v1.0 process aborted before its first carrier step because projected depth
+had not been prepared for the new train sequences. D169 preserves that abort
+and authorizes v1.1 to register depth for exactly the same 288 frozen frames;
+no scientific variable or gate changes.
 
 ## Archived order-robustness novelty boundary
 

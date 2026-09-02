@@ -2,7 +2,7 @@
 
 ## Status
 
-Registered; not yet executed.
+Corrected v1.1 registered; v1.0 aborted before first model inference.
 
 ## Question
 
@@ -79,5 +79,26 @@ repair or validation access.
 - Literature boundary:
   `3D_docs/literature/future_revisit_distillation_audit.md`
 - Config: `configs/EXP-071_future_revisit_teacher_premise_v10.yaml`
+- Corrected config:
+  `configs/EXP-071_future_revisit_teacher_premise_v11.yaml`
+- Depth preparation:
+  `revisit3d/scripts/prepare_exp071_selected_train_depth.py`
 - Evaluator: `revisit3d/scripts/evaluate_exp071_future_revisit_teacher_premise.py`
-- Result: `revisit3d/results/EXP-071/future_revisit_teacher_premise_v10.json`
+- Corrected result:
+  `revisit3d/results/EXP-071/future_revisit_teacher_premise_v11.json`
+- Preserved v1.0 abort:
+  `revisit3d/results/EXP-071/aborted_v10.json`
+
+## v1.1 operational correction
+
+The v1.0 process loaded the frozen checkpoint, then aborted on the first
+selected frame before carrier inference or metric computation because the
+official 7Scenes loader requires a derived RGB-registered
+`depth.proj.png` file. No aggregate result was written. The abort is preserved
+in `revisit3d/results/EXP-071/aborted_v10.json`.
+
+Version 1.1 adds only the same deterministic depth-registration preparation
+used by EXP-061/062 for the already frozen 288 train frames. It changes no
+sequence, frame, target, carrier, metric, statistic, threshold, or gate. Its
+result path is versioned separately as
+`future_revisit_teacher_premise_v11.json`.

@@ -1,0 +1,13 @@
+{
+  "experiment": "EXP-071",
+  "protocol_revision": "v1.0",
+  "status": "aborted_before_first_model_inference",
+  "reason": "The official 7Scenes evaluator required a derived frame-000064.depth.proj.png file that had not been generated for the newly selected sequence.",
+  "scientific_metrics_computed": false,
+  "aggregate_result_written": false,
+  "frames_changed_in_v1.1": false,
+  "targets_changed_in_v1.1": false,
+  "gates_changed_in_v1.1": false,
+  "validation_accessed": false,
+  "terminal_accessed": false
+}

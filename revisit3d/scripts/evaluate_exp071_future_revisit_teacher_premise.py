@@ -141,7 +141,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--config",
-        default="configs/EXP-071_future_revisit_teacher_premise_v10.yaml",
+        default="configs/EXP-071_future_revisit_teacher_premise_v11.yaml",
     )
     parser.add_argument(
         "--confirm-train-rgbd-future-revisit-premise", action="store_true"
@@ -155,10 +155,14 @@ def main() -> None:
     config_path = Path(args.config)
     config = yaml.safe_load(config_path.read_text())
     output = Path(config["output"]["result"])
+    preparation_path = Path(config["output"]["depth_preparation"])
     manifest_path = Path(config["data"]["train_manifest"])
     checkpoint = Path(config["carrier"]["checkpoint"])
     if output.exists():
         raise RuntimeError("EXP-071 immutable result already exists")
+    if not preparation_path.is_file():
+        raise RuntimeError("EXP-071 projected-depth preparation is missing")
+    preparation = json.loads(preparation_path.read_text())
     manifest = json.loads(manifest_path.read_text())
     allowed_sequences = {item["relative_path"] for item in manifest["sequences"]}
     sequences = list(config["data"]["sequences"])
@@ -166,7 +170,8 @@ def main() -> None:
     target_offsets = [int(value) for value in config["data"]["target_offsets"]]
     window_length = int(config["data"]["window_length"])
     if not (
-        manifest["role"] == "train"
+        config["protocol_revision"] == "v1.1"
+        and manifest["role"] == "train"
         and manifest["terminal_accessed"] is False
         and _sha256(manifest_path) == config["data"]["train_manifest_sha256"]
         and _sha256(checkpoint) == config["carrier"]["checkpoint_sha256"]
@@ -178,6 +183,10 @@ def main() -> None:
         and config["data"]["validation_access"] is False
         and config["data"]["terminal_access"] is False
         and config["carrier"]["mode"] == "ttt3r"
+        and preparation["selected_frames"]
+        == len(sequences) * len(starts) * window_length
+        and preparation["validation_accessed"] is False
+        and preparation["terminal_accessed"] is False
     ):
         raise RuntimeError("EXP-071 source-safe frozen contract failed")
 
@@ -440,6 +449,7 @@ def main() -> None:
         "config_sha256": _sha256(config_path),
         "checkpoint_sha256": _sha256(checkpoint),
         "train_manifest_sha256": _sha256(manifest_path),
+        "depth_preparation_sha256": _sha256(preparation_path),
         "validation_accessed": False,
         "terminal_accessed": False,
         "model_fitted": False,

@@ -2455,3 +2455,20 @@ No fitting, validation, terminal, frame search, new head, or method is allowed.
 Failure closes the direction. Success authorizes only a train-only test of
 whether the future correction can be predicted from the causal information
 set using one geometry target and unchanged inference architecture.
+
+## D169 — Correct EXP-071 projected-depth preparation before inference
+
+Date: 2026-09-01
+
+Status: Accepted after the v1.0 loader abort and before any EXP-071 inference
+
+The v1.0 process loaded the frozen model but the official 7Scenes loader
+aborted on the first frame because that newly selected train sequence lacked
+the derived `depth.proj.png` file. No carrier step, metric, aggregate, or
+result file was produced. The failure is preserved in `aborted_v10.json`.
+
+Version 1.1 deterministically registers raw depth for exactly the already
+frozen 288 frames, then requires a source-safe preparation artifact. All
+scientific variables and gates remain byte-for-byte equivalent in value. No
+frame replacement, validation, terminal, model fit, or threshold change is
+authorized.
